@@ -1,0 +1,45 @@
+name: Actualizar Mundial 2026
+
+on:
+  schedule:
+    # Cada 30 minutos. GitHub no garantiza el minuto exacto (puede retrasarse
+    # unos minutos en horas punta), pero para una bolilla de fútbol sobra.
+    - cron: "*/30 * * * *"
+  workflow_dispatch: {}   # también se puede lanzar a mano desde la pestaña "Actions"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actualizar-mundial
+  cancel-in-progress: false   # deja que la ejecución en curso termine en vez de cortarla a medias
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: pip install requests
+
+      - name: Ejecutar actualizador (Wikipedia -> matches.json -> data.json)
+        run: python actualizar_mundial.py
+
+      - name: Publicar cambios si los hay
+        run: |
+          git config user.name "mundial-bot"
+          git config user.email "mundial-bot@users.noreply.github.com"
+          git add matches.json site/data.json
+          if git diff --cached --quiet; then
+            echo "Sin cambios, nada que publicar."
+          else
+            git commit -m "Actualización automática $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
