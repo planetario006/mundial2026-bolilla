@@ -43,7 +43,7 @@ import mundial_core as core
 BASE_DIR = Path(__file__).parent
 MATCHES_PATH = BASE_DIR / "matches.json"
 MANUAL_PATH = BASE_DIR / "manual_overrides.json"
-SALIDA_PATH = BASE_DIR / "site" / "data.json"
+SALIDA_PATH = BASE_DIR / "docs" / "data.json"
 LOG_PATH = BASE_DIR / "log_mundial.txt"
 
 API_ES = "https://es.wikipedia.org/w/api.php"
