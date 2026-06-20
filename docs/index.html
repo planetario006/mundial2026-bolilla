@@ -96,6 +96,44 @@
   .breakdown-grid{display:grid; grid-template-columns:1fr auto; gap:6px 10px; padding-top:8px; border-top:1px solid var(--line);}
   .breakdown-grid div:nth-child(odd){color:var(--chalk-dim);}
   .breakdown-grid div:nth-child(even){text-align:right; font-family:'JetBrains Mono',monospace; color:var(--chalk);}
+  .breakdown-grid div.excluido{opacity:0.32; text-decoration:line-through; text-decoration-color:var(--chalk-dim);}
+  .breakdown-total{margin-top:9px; padding-top:9px; border-top:1px dashed var(--line); display:flex; justify-content:space-between; align-items:center; font-size:12.5px; color:var(--chalk-dim); font-weight:600;}
+  .breakdown-total span{font-family:'JetBrains Mono',monospace; font-weight:700;}
+  .breakdown-total span.pos{color:var(--win);} .breakdown-total span.neg{color:var(--loss);} .breakdown-total span.zero{color:var(--chalk-dim);}
+
+  /* ---------- Ranking: toolbar (Lista/Tabla + Filtro) ---------- */
+  .ranking-toolbar{display:flex; align-items:center; justify-content:space-between; gap:8px; margin:0 2px 10px; flex-wrap:wrap;}
+  .segmented{display:flex; background:var(--turf); border:1px solid var(--line); border-radius:20px; padding:2px;}
+  .segmented button{border:none; background:none; color:var(--chalk-dim); font-family:'Oswald',sans-serif; font-size:12px; letter-spacing:0.03em; padding:6px 15px; border-radius:18px;}
+  .segmented button.active{background:var(--amber); color:#1a1304; font-weight:600;}
+  .filtro-btn{display:flex; align-items:center; gap:6px; background:var(--turf); border:1px solid var(--line); border-radius:20px; padding:7px 12px; color:var(--chalk-dim); font-size:12px; font-weight:600; font-family:'Inter',sans-serif;}
+  .filtro-btn.activo{border-color:var(--amber); color:var(--amber);}
+  .filtro-badge{font-family:'JetBrains Mono',monospace; font-size:10px; background:var(--plate); padding:1px 6px; border-radius:8px;}
+
+  .filtro-panel{background:var(--turf); border:1px solid var(--line); border-radius:var(--radius); padding:12px; margin:0 2px 12px;}
+  .filtro-actions{display:flex; gap:8px; margin-bottom:10px;}
+  .filtro-actions button{flex:1; background:var(--turf-soft); border:1px solid var(--line); color:var(--chalk-dim); border-radius:8px; padding:7px; font-size:11px; font-weight:600; font-family:'Inter',sans-serif;}
+  .filtro-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(86px,1fr)); gap:7px;}
+  .filtro-chip{background:var(--turf-soft); border:1px solid var(--line); color:var(--chalk-dim); border-radius:8px; padding:8px 4px; font-size:11px; font-weight:600; text-align:center; font-family:'Inter',sans-serif;}
+  .filtro-chip.active{background:var(--amber); border-color:var(--amber); color:#1a1304;}
+  .filtro-nota{margin-top:10px; padding-top:10px; border-top:1px solid var(--line); font-size:11px; color:var(--chalk-dim); display:flex; align-items:center; justify-content:space-between; gap:8px;}
+  .filtro-reset{flex-shrink:0; background:none; border:1px solid var(--amber); color:var(--amber); border-radius:14px; padding:4px 11px; font-size:10.5px; font-weight:600; font-family:'Inter',sans-serif;}
+
+  /* ---------- Ranking: vista Tabla ---------- */
+  .table-scroll-hint{font-size:10.5px; color:var(--chalk-dim); text-align:center; padding:0 0 8px;}
+  .table-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  table.ranking-table{border-collapse:collapse; font-family:'JetBrains Mono',monospace; font-size:11.5px; white-space:nowrap;}
+  .ranking-table th, .ranking-table td{padding:9px 8px; text-align:center; border-bottom:1px solid var(--line);}
+  .ranking-table thead th{font-family:'Inter',sans-serif; font-size:9.5px; color:var(--chalk-dim); text-transform:uppercase; letter-spacing:0.03em; font-weight:700;}
+  .ranking-table td.team-cell{font-family:'Inter',sans-serif; font-weight:600; text-align:left; font-size:12.5px; padding-left:10px;}
+  .ranking-table .sticky-col{position:sticky; background:var(--turf); z-index:2;}
+  .ranking-table th.sticky-col{background:var(--turf-soft); z-index:3;}
+  .ranking-table td:first-child, .ranking-table th:first-child{left:0; min-width:24px;}
+  .ranking-table td:nth-child(2), .ranking-table th:nth-child(2){left:24px; min-width:98px; box-shadow:4px 0 6px -4px rgba(0,0,0,0.45);}
+  .ranking-table td.excluido, .ranking-table th.excluido{opacity:0.3;}
+  .ranking-table td.total-cell{font-weight:700;}
+  .ranking-table tbody tr:last-child td{border-bottom:none;}
+  .ranking-table .rank-cell.top3{color:var(--amber); font-weight:700;}
 
   .tag{display:inline-block; background:var(--turf-soft); border:1px solid var(--line); border-radius:5px; padding:1px 6px; font-size:10.5px; color:var(--chalk-dim); margin-right:5px;}
 
@@ -203,6 +241,28 @@ const $$ = (sel, el=document) => Array.from(el.querySelectorAll(sel));
 
 let DATA = null;
 let grupoActivo = null;
+let vistaRanking = 'lista';      // 'lista' | 'tabla'
+let filtroAbierto = false;
+
+// Cada categoría de puntos que se puede activar/desactivar en el filtro.
+// calc(f) usa los campos crudos de DATA.ranking y aplica el mismo peso que
+// mundial_core.py, así que con todas activas el total coincide exactamente
+// con puntos_totales.
+const CATEGORIAS = [
+  { key:'gf',              label:'Goles a favor',        short:'GF',  icon:'⚽', calc:f=>f.gf*1 },
+  { key:'gc',              label:'Goles en contra',      short:'GC',  icon:'🥅', calc:f=>f.gc*-3 },
+  { key:'ta',               label:'Tarjetas amarillas',   short:'TA',  icon:'🟨', calc:f=>f.ta*-3 },
+  { key:'doblea',          label:'2ª amarilla',          short:'2A',  icon:'🟧', calc:f=>f.doblea*-7 },
+  { key:'rd',               label:'Roja directa',         short:'RD',  icon:'🟥', calc:f=>f.rd*-12 },
+  { key:'penfall',         label:'Penaltis fallados',    short:'PF',  icon:'❌', calc:f=>f.penfall*-10 },
+  { key:'penpar',          label:'Penaltis parados',     short:'PP',  icon:'🧤', calc:f=>f.penpar*5 },
+  { key:'bonus_resultado', label:'Resultado de partidos', short:'RES', icon:'🏁', calc:f=>f.bonus_resultado },
+  { key:'bonus_grupo',     label:'Posición de grupo',    short:'GRP', icon:'📊', calc:f=>f.bonus_grupo },
+  { key:'bonus_ronda',     label:'Rondas superadas',     short:'RND', icon:'🏆', calc:f=>f.bonus_ronda },
+  { key:'premio_final',    label:'Premio final',         short:'PRE', icon:'🥇', calc:f=>f.premio_final },
+  { key:'goleador',        label:'Máximo goleador',      short:'GOL', icon:'👟', calc:f=>f.goleador },
+];
+let filtroSel = new Set(CATEGORIAS.map(c=>c.key));   // por defecto: todas activas
 
 function scoreClass(n){
   if(n > 0) return 'pos';
@@ -271,38 +331,122 @@ function render(){
   });
 }
 
+function filtroEsDefault(){ return filtroSel.size === CATEGORIAS.length; }
+
+function totalFiltrado(f){
+  if(filtroEsDefault()) return f.puntos_totales; // sin filtro -> el total real, ya calculado en servidor
+  let t = 0;
+  CATEGORIAS.forEach(c => { if(filtroSel.has(c.key)) t += c.calc(f); });
+  return t;
+}
+
+function equiposOrdenados(){
+  const conTotal = DATA.ranking.map(f => ({ ...f, _total: totalFiltrado(f) }));
+  conTotal.sort((a,b) => b._total - a._total);
+  conTotal.forEach((f,i) => { f._pos = i+1; });
+  return conTotal;
+}
+
 function renderRanking(){
   const el = $('#view-ranking');
-  const rows = DATA.ranking.map(f=>{
-    const cls = f.pos<=3 ? 'top3' : '';
+  const equipos = equiposOrdenados();
+  const esDefault = filtroEsDefault();
+
+  el.innerHTML = `
+    <div class="section-title">Clasificación general · ${DATA.ranking.length} selecciones</div>
+    <div class="ranking-toolbar">
+      <div class="segmented" id="vista-toggle">
+        <button data-vista="lista" class="${vistaRanking==='lista'?'active':''}">Lista</button>
+        <button data-vista="tabla" class="${vistaRanking==='tabla'?'active':''}">Tabla</button>
+      </div>
+      <button class="filtro-btn ${esDefault?'':'activo'}" id="filtro-toggle-btn">
+        <svg viewBox="0 0 24 24" width="13" height="13" stroke="currentColor" stroke-width="2" fill="none"><path d="M4 6h16M7 12h10M10 18h4"/></svg>
+        Filtro <span class="filtro-badge">${filtroSel.size}/${CATEGORIAS.length}</span>
+      </button>
+    </div>
+    <div class="filtro-panel" id="filtro-panel" style="display:${filtroAbierto?'block':'none'}">
+      <div class="filtro-actions">
+        <button data-accion="todas">Marcar todas</button>
+        <button data-accion="ninguna">Quitar todas</button>
+      </div>
+      <div class="filtro-grid">
+        ${CATEGORIAS.map(c=>`<button class="filtro-chip ${filtroSel.has(c.key)?'active':''}" data-key="${c.key}">${c.icon} ${c.short}</button>`).join('')}
+      </div>
+      ${esDefault ? '<div class="filtro-nota">Todos los conceptos cuentan — este es el ranking real.</div>' : `
+        <div class="filtro-nota">
+          <span>Ranking recalculado solo con lo marcado arriba.</span>
+          <button class="filtro-reset" id="filtro-reset">Restablecer</button>
+        </div>`}
+    </div>
+    <div id="ranking-contenido">${vistaRanking==='lista' ? rankingListaHTML(equipos, esDefault) : rankingTablaHTML(equipos, esDefault)}</div>
+  `;
+
+  $$('#vista-toggle button').forEach(b=>{
+    b.addEventListener('click', ()=>{ vistaRanking = b.dataset.vista; renderRanking(); });
+  });
+  $('#filtro-toggle-btn').addEventListener('click', ()=>{ filtroAbierto = !filtroAbierto; renderRanking(); });
+  $$('.filtro-chip').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      const k = b.dataset.key;
+      filtroSel.has(k) ? filtroSel.delete(k) : filtroSel.add(k);
+      renderRanking();
+    });
+  });
+  const btnTodas = $('[data-accion="todas"]');
+  if(btnTodas) btnTodas.addEventListener('click', ()=>{ filtroSel = new Set(CATEGORIAS.map(c=>c.key)); renderRanking(); });
+  const btnNinguna = $('[data-accion="ninguna"]');
+  if(btnNinguna) btnNinguna.addEventListener('click', ()=>{ filtroSel = new Set(); renderRanking(); });
+  const btnReset = $('#filtro-reset');
+  if(btnReset) btnReset.addEventListener('click', ()=>{ filtroSel = new Set(CATEGORIAS.map(c=>c.key)); renderRanking(); });
+}
+
+function rankingListaHTML(equipos, esDefault){
+  const rows = equipos.map(f=>{
+    const cls = f._pos<=3 ? 'top3' : '';
     return `
     <details class="rank-row">
       <summary>
-        <div class="rank-num ${cls}">${f.pos}</div>
+        <div class="rank-num ${cls}">${f._pos}</div>
         <div class="rank-team">
           <div class="name">${f.equipo}</div>
           <div class="tags">${f.bombo} · Grupo ${f.grupo}</div>
         </div>
-        <div class="scorebox ${scoreClass(f.puntos_totales)}">${fmtPts(f.puntos_totales)}</div>
+        <div class="scorebox ${scoreClass(f._total)}">${fmtPts(f._total)}</div>
       </summary>
       <div class="breakdown">
         <div class="breakdown-grid">
-          <div>Goles a favor / en contra</div><div>${f.gf} / ${f.gc}</div>
-          <div>Amarillas / 2ª amarilla / Rojas</div><div>${f.ta} / ${f.doblea} / ${f.rd}</div>
-          <div>Penaltis fallados / parados</div><div>${f.penfall} / ${f.penpar}</div>
-          <div>Bonus resultados de partido</div><div>${fmtPts(f.bonus_resultado)}</div>
-          <div>Bonus posición de grupo</div><div>${fmtPts(f.bonus_grupo)}</div>
-          <div>Bonus rondas superadas</div><div>${fmtPts(f.bonus_ronda)}</div>
-          ${f.premio_final ? `<div>Premio final</div><div>${fmtPts(f.premio_final)}</div>` : ''}
-          ${f.goleador ? `<div>Máximo goleador</div><div>${fmtPts(f.goleador)}</div>` : ''}
+          ${CATEGORIAS.map(c=>{
+            const excluido = !filtroSel.has(c.key);
+            return `<div class="${excluido?'excluido':''}">${c.icon} ${c.label}</div><div class="${excluido?'excluido':''}">${fmtPts(c.calc(f))}</div>`;
+          }).join('')}
         </div>
+        ${esDefault ? '' : `<div class="breakdown-total">Total filtrado <span class="${scoreClass(f._total)}">${fmtPts(f._total)}</span></div>`}
       </div>
     </details>`;
   }).join('');
+  return `<div class="card">${rows}</div>`;
+}
 
-  el.innerHTML = `
-    <div class="section-title">Clasificación general · ${DATA.ranking.length} selecciones</div>
-    <div class="card">${rows}</div>
+function rankingTablaHTML(equipos, esDefault){
+  const headers = CATEGORIAS.map(c=>`<th class="${filtroSel.has(c.key)?'':'excluido'}" title="${c.label}">${c.short}</th>`).join('');
+  const filas = equipos.map(f=>{
+    const cls = f._pos<=3 ? 'top3' : '';
+    const celdas = CATEGORIAS.map(c=>`<td class="${filtroSel.has(c.key)?'':'excluido'}">${fmtPts(c.calc(f))}</td>`).join('');
+    return `<tr>
+      <td class="sticky-col rank-cell ${cls}">${f._pos}</td>
+      <td class="sticky-col team-cell">${f.equipo}</td>
+      ${celdas}
+      <td class="total-cell ${scoreClass(f._total)}">${fmtPts(f._total)}</td>
+    </tr>`;
+  }).join('');
+  return `
+    <div class="table-scroll-hint">⟷ desliza para ver todo el desglose</div>
+    <div class="card table-wrap">
+      <table class="ranking-table">
+        <thead><tr><th class="sticky-col">#</th><th class="sticky-col" style="text-align:left;">Equipo</th>${headers}<th>TOTAL</th></tr></thead>
+        <tbody>${filas}</tbody>
+      </table>
+    </div>
   `;
 }
 
