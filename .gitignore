@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+log_mundial.txt
+.DS_Store
