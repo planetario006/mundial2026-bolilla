@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-06-21T19:03:02+00:00",
+    "actualizado": "2026-06-21T20:53:59+00:00",
     "total_partidos_jugados": 37,
     "total_partidos": 37
   },
@@ -671,25 +671,6 @@
       "pos": 35
     },
     {
-      "equipo": "Arabia Saudí",
-      "grupo": "H",
-      "bombo": "Bombo 5",
-      "gf": 1,
-      "gc": 5,
-      "ta": 1,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": -6,
-      "bonus_grupo": 5,
-      "bonus_ronda": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": -18,
-      "pos": 36
-    },
-    {
       "equipo": "Croacia",
       "grupo": "L",
       "bombo": "Bombo 2",
@@ -706,7 +687,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -18,
-      "pos": 37
+      "pos": 36
     },
     {
       "equipo": "Suecia",
@@ -725,7 +706,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -19,
-      "pos": 38
+      "pos": 37
     },
     {
       "equipo": "Uzbekistán",
@@ -744,7 +725,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -19,
-      "pos": 39
+      "pos": 38
     },
     {
       "equipo": "Irak",
@@ -763,6 +744,25 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -22,
+      "pos": 39
+    },
+    {
+      "equipo": "Arabia Saudí",
+      "grupo": "H",
+      "bombo": "Bombo 5",
+      "gf": 1,
+      "gc": 5,
+      "ta": 3,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": -6,
+      "bonus_grupo": 5,
+      "bonus_ronda": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": -24,
       "pos": 40
     },
     {
@@ -1615,7 +1615,7 @@
       "ta_local": 0,
       "doblea_local": 0,
       "rd_local": 0,
-      "ta_visit": 0,
+      "ta_visit": 2,
       "doblea_visit": 0,
       "rd_visit": 0,
       "pen_tanda_local": null,
@@ -2678,7 +2678,7 @@
           "ta_local": 0,
           "doblea_local": 0,
           "rd_local": 0,
-          "ta_visit": 0,
+          "ta_visit": 2,
           "doblea_visit": 0,
           "rd_visit": 0,
           "pen_tanda_local": null,
@@ -3219,7 +3219,7 @@
       },
       {
         "equipo": "Arabia Saudí",
-        "puntos": -18
+        "puntos": -24
       },
       {
         "equipo": "Turquía",
