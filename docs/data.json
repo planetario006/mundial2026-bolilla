@@ -1,8 +1,8 @@
 {
   "meta": {
-    "actualizado": "2026-06-21T17:08:27+00:00",
-    "total_partidos_jugados": 36,
-    "total_partidos": 36
+    "actualizado": "2026-06-21T19:03:02+00:00",
+    "total_partidos_jugados": 37,
+    "total_partidos": 37
   },
   "ranking": [
     {
@@ -44,6 +44,25 @@
       "pos": 2
     },
     {
+      "equipo": "España",
+      "grupo": "H",
+      "bombo": "Bombo 1",
+      "gf": 4,
+      "gc": 0,
+      "ta": 1,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": 7,
+      "bonus_grupo": 15,
+      "bonus_ronda": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": 23,
+      "pos": 3
+    },
+    {
       "equipo": "Noruega",
       "grupo": "I",
       "bombo": "Bombo 3",
@@ -60,7 +79,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": 21,
-      "pos": 3
+      "pos": 4
     },
     {
       "equipo": "Inglaterra",
@@ -79,7 +98,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": 18,
-      "pos": 4
+      "pos": 5
     },
     {
       "equipo": "Canadá",
@@ -98,7 +117,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": 17,
-      "pos": 5
+      "pos": 6
     },
     {
       "equipo": "Colombia",
@@ -117,7 +136,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": 17,
-      "pos": 6
+      "pos": 7
     },
     {
       "equipo": "Japón",
@@ -136,7 +155,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": 17,
-      "pos": 7
+      "pos": 8
     },
     {
       "equipo": "EE.UU.",
@@ -155,7 +174,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": 16,
-      "pos": 8
+      "pos": 9
     },
     {
       "equipo": "Francia",
@@ -170,25 +189,6 @@
       "penpar": 0,
       "bonus_resultado": 5,
       "bonus_grupo": 10,
-      "bonus_ronda": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": 15,
-      "pos": 9
-    },
-    {
-      "equipo": "Uruguay",
-      "grupo": "H",
-      "bombo": "Bombo 3",
-      "gf": 1,
-      "gc": 1,
-      "ta": 0,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": 2,
-      "bonus_grupo": 15,
       "bonus_ronda": 0,
       "premio_final": 0,
       "goleador": 0,
@@ -348,12 +348,12 @@
       "pos": 18
     },
     {
-      "equipo": "Arabia Saudí",
+      "equipo": "Uruguay",
       "grupo": "H",
-      "bombo": "Bombo 5",
+      "bombo": "Bombo 3",
       "gf": 1,
       "gc": 1,
-      "ta": 1,
+      "ta": 0,
       "doblea": 0,
       "rd": 0,
       "penfall": 0,
@@ -363,7 +363,7 @@
       "bonus_ronda": 0,
       "premio_final": 0,
       "goleador": 0,
-      "puntos_totales": 7,
+      "puntos_totales": 10,
       "pos": 19
     },
     {
@@ -405,25 +405,6 @@
       "pos": 21
     },
     {
-      "equipo": "España",
-      "grupo": "H",
-      "bombo": "Bombo 1",
-      "gf": 0,
-      "gc": 0,
-      "ta": 1,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": 2,
-      "bonus_grupo": 5,
-      "bonus_ronda": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": 4,
-      "pos": 22
-    },
-    {
       "equipo": "Bélgica",
       "grupo": "G",
       "bombo": "Bombo 2",
@@ -440,7 +421,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -1,
-      "pos": 23
+      "pos": 22
     },
     {
       "equipo": "Cabo Verde",
@@ -459,7 +440,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -1,
-      "pos": 24
+      "pos": 23
     },
     {
       "equipo": "Portugal",
@@ -478,7 +459,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -4,
-      "pos": 25
+      "pos": 24
     },
     {
       "equipo": "Corea del Sur",
@@ -497,7 +478,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -6,
-      "pos": 26
+      "pos": 25
     },
     {
       "equipo": "Costa de Marfil",
@@ -516,7 +497,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -6,
-      "pos": 27
+      "pos": 26
     },
     {
       "equipo": "Egipto",
@@ -535,7 +516,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -6,
-      "pos": 28
+      "pos": 27
     },
     {
       "equipo": "Chequia",
@@ -554,7 +535,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -8,
-      "pos": 29
+      "pos": 28
     },
     {
       "equipo": "Australia",
@@ -573,7 +554,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -9,
-      "pos": 30
+      "pos": 29
     },
     {
       "equipo": "Ecuador",
@@ -592,7 +573,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -10,
-      "pos": 31
+      "pos": 30
     },
     {
       "equipo": "Jordania",
@@ -611,7 +592,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -11,
-      "pos": 32
+      "pos": 31
     },
     {
       "equipo": "Senegal",
@@ -630,7 +611,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -11,
-      "pos": 33
+      "pos": 32
     },
     {
       "equipo": "Escocia",
@@ -649,7 +630,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -12,
-      "pos": 34
+      "pos": 33
     },
     {
       "equipo": "Panamá",
@@ -668,7 +649,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -12,
-      "pos": 35
+      "pos": 34
     },
     {
       "equipo": "Argelia",
@@ -687,6 +668,25 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -17,
+      "pos": 35
+    },
+    {
+      "equipo": "Arabia Saudí",
+      "grupo": "H",
+      "bombo": "Bombo 5",
+      "gf": 1,
+      "gc": 5,
+      "ta": 1,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": -6,
+      "bonus_grupo": 5,
+      "bonus_ronda": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": -18,
       "pos": 36
     },
     {
@@ -1593,6 +1593,25 @@
       "visitante": "Japón",
       "gf_local": 0,
       "gf_visit": 4,
+      "ta_local": 0,
+      "doblea_local": 0,
+      "rd_local": 0,
+      "ta_visit": 0,
+      "doblea_visit": 0,
+      "rd_visit": 0,
+      "pen_tanda_local": null,
+      "pen_tanda_visit": null,
+      "jugado": true
+    },
+    {
+      "id": 37,
+      "fecha": "2026-06-21",
+      "fase": "Fase de Grupos",
+      "grupo": "H",
+      "local": "España",
+      "visitante": "Arabia Saudí",
+      "gf_local": 4,
+      "gf_visit": 0,
       "ta_local": 0,
       "doblea_local": 0,
       "rd_local": 0,
@@ -2557,6 +2576,19 @@
       "tabla": [
         {
           "pos": 1,
+          "equipo": "España",
+          "pj": 2,
+          "pg": 1,
+          "pe": 1,
+          "pp": 0,
+          "gf": 4,
+          "gc": 0,
+          "dg": 4,
+          "pts": 4,
+          "empate_no_resuelto": false
+        },
+        {
+          "pos": 2,
           "equipo": "Uruguay",
           "pj": 1,
           "pg": 0,
@@ -2569,30 +2601,17 @@
           "empate_no_resuelto": false
         },
         {
-          "pos": 2,
+          "pos": 3,
           "equipo": "Arabia Saudí",
-          "pj": 1,
+          "pj": 2,
           "pg": 0,
           "pe": 1,
-          "pp": 0,
+          "pp": 1,
           "gf": 1,
-          "gc": 1,
-          "dg": 0,
+          "gc": 5,
+          "dg": -4,
           "pts": 1,
           "empate_no_resuelto": false
-        },
-        {
-          "pos": 3,
-          "equipo": "España",
-          "pj": 1,
-          "pg": 0,
-          "pe": 1,
-          "pp": 0,
-          "gf": 0,
-          "gc": 0,
-          "dg": 0,
-          "pts": 1,
-          "empate_no_resuelto": true
         },
         {
           "pos": 4,
@@ -2605,7 +2624,7 @@
           "gc": 0,
           "dg": 0,
           "pts": 1,
-          "empate_no_resuelto": true
+          "empate_no_resuelto": false
         }
       ],
       "partidos": [
@@ -2638,6 +2657,25 @@
           "gf_local": 1,
           "gf_visit": 1,
           "ta_local": 1,
+          "doblea_local": 0,
+          "rd_local": 0,
+          "ta_visit": 0,
+          "doblea_visit": 0,
+          "rd_visit": 0,
+          "pen_tanda_local": null,
+          "pen_tanda_visit": null,
+          "jugado": true
+        },
+        {
+          "id": 37,
+          "fecha": "2026-06-21",
+          "fase": "Fase de Grupos",
+          "grupo": "H",
+          "local": "España",
+          "visitante": "Arabia Saudí",
+          "gf_local": 4,
+          "gf_visit": 0,
+          "ta_local": 0,
           "doblea_local": 0,
           "rd_local": 0,
           "ta_visit": 0,
@@ -3072,6 +3110,10 @@
         "puntos": 28
       },
       {
+        "equipo": "España",
+        "puntos": 23
+      },
+      {
         "equipo": "Argentina",
         "puntos": 23
       },
@@ -3086,10 +3128,6 @@
       {
         "equipo": "Brasil",
         "puntos": 14
-      },
-      {
-        "equipo": "España",
-        "puntos": 4
       }
     ],
     "Bombo 2": [
@@ -3133,7 +3171,7 @@
       },
       {
         "equipo": "Uruguay",
-        "puntos": 15
+        "puntos": 10
       },
       {
         "equipo": "Senegal",
@@ -3172,16 +3210,16 @@
     ],
     "Bombo 5": [
       {
-        "equipo": "Arabia Saudí",
-        "puntos": 7
-      },
-      {
         "equipo": "Corea del Sur",
         "puntos": -6
       },
       {
         "equipo": "Escocia",
         "puntos": -12
+      },
+      {
+        "equipo": "Arabia Saudí",
+        "puntos": -18
       },
       {
         "equipo": "Turquía",

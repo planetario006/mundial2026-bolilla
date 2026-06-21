@@ -862,5 +862,29 @@
     "penpar_visit": 0,
     "pen_tanda_local": null,
     "pen_tanda_visit": null
+  },
+  {
+    "id": 37,
+    "fecha": "2026-06-21",
+    "fase": "Fase de Grupos",
+    "grupo": "H",
+    "local": "España",
+    "gf_local": 4,
+    "gc_local": 0,
+    "ta_local": 0,
+    "doblea_local": 0,
+    "rd_local": 0,
+    "penfall_local": 0,
+    "penpar_local": 0,
+    "visitante": "Arabia Saudí",
+    "gf_visit": 0,
+    "gc_visit": 4,
+    "ta_visit": 0,
+    "doblea_visit": 0,
+    "rd_visit": 0,
+    "penfall_visit": 0,
+    "penpar_visit": 0,
+    "pen_tanda_local": null,
+    "pen_tanda_visit": null
   }
 ]
