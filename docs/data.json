@@ -1,8 +1,8 @@
 {
   "meta": {
-    "actualizado": "2026-06-21T01:59:55+00:00",
-    "total_partidos_jugados": 34,
-    "total_partidos": 34
+    "actualizado": "2026-06-21T07:01:23+00:00",
+    "total_partidos_jugados": 36,
+    "total_partidos": 36
   },
   "ranking": [
     {
@@ -120,6 +120,25 @@
       "pos": 6
     },
     {
+      "equipo": "Japón",
+      "grupo": "F",
+      "bombo": "Bombo 4",
+      "gf": 6,
+      "gc": 2,
+      "ta": 0,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": 7,
+      "bonus_grupo": 10,
+      "bonus_ronda": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": 17,
+      "pos": 7
+    },
+    {
       "equipo": "EE.UU.",
       "grupo": "D",
       "bombo": "Bombo 4",
@@ -136,7 +155,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": 16,
-      "pos": 7
+      "pos": 8
     },
     {
       "equipo": "Francia",
@@ -155,7 +174,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": 15,
-      "pos": 8
+      "pos": 9
     },
     {
       "equipo": "Uruguay",
@@ -174,7 +193,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": 15,
-      "pos": 9
+      "pos": 10
     },
     {
       "equipo": "Brasil",
@@ -193,7 +212,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": 14,
-      "pos": 10
+      "pos": 11
     },
     {
       "equipo": "Ghana",
@@ -212,7 +231,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": 13,
-      "pos": 11
+      "pos": 12
     },
     {
       "equipo": "Marruecos",
@@ -231,7 +250,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": 13,
-      "pos": 12
+      "pos": 13
     },
     {
       "equipo": "México",
@@ -250,7 +269,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": 13,
-      "pos": 13
+      "pos": 14
     },
     {
       "equipo": "Nueva Zelanda",
@@ -269,7 +288,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": 13,
-      "pos": 14
+      "pos": 15
     },
     {
       "equipo": "Austria",
@@ -288,7 +307,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": 12,
-      "pos": 15
+      "pos": 16
     },
     {
       "equipo": "Países Bajos",
@@ -307,7 +326,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": 11,
-      "pos": 16
+      "pos": 17
     },
     {
       "equipo": "Suiza",
@@ -326,7 +345,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": 10,
-      "pos": 17
+      "pos": 18
     },
     {
       "equipo": "Arabia Saudí",
@@ -345,7 +364,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": 7,
-      "pos": 18
+      "pos": 19
     },
     {
       "equipo": "R. D. Congo",
@@ -364,7 +383,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": 7,
-      "pos": 19
+      "pos": 20
     },
     {
       "equipo": "Irán",
@@ -383,7 +402,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": 5,
-      "pos": 20
+      "pos": 21
     },
     {
       "equipo": "España",
@@ -402,25 +421,6 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": 4,
-      "pos": 21
-    },
-    {
-      "equipo": "Japón",
-      "grupo": "F",
-      "bombo": "Bombo 4",
-      "gf": 2,
-      "gc": 2,
-      "ta": 0,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": 2,
-      "bonus_grupo": 5,
-      "bonus_ronda": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": 3,
       "pos": 22
     },
     {
@@ -581,17 +581,17 @@
       "bombo": "Bombo 4",
       "gf": 0,
       "gc": 1,
-      "ta": 1,
+      "ta": 2,
       "doblea": 0,
       "rd": 0,
       "penfall": 0,
       "penpar": 0,
-      "bonus_resultado": -8,
+      "bonus_resultado": -6,
       "bonus_grupo": 5,
       "bonus_ronda": 0,
       "premio_final": 0,
       "goleador": 0,
-      "puntos_totales": -9,
+      "puntos_totales": -10,
       "pos": 31
     },
     {
@@ -671,25 +671,6 @@
       "pos": 35
     },
     {
-      "equipo": "Suecia",
-      "grupo": "F",
-      "bombo": "Bombo 3",
-      "gf": 6,
-      "gc": 6,
-      "ta": 3,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": -3,
-      "bonus_grupo": 10,
-      "bonus_ronda": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": -14,
-      "pos": 36
-    },
-    {
       "equipo": "Argelia",
       "grupo": "J",
       "bombo": "Bombo 7",
@@ -706,7 +687,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -17,
-      "pos": 37
+      "pos": 36
     },
     {
       "equipo": "Croacia",
@@ -725,6 +706,25 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -18,
+      "pos": 37
+    },
+    {
+      "equipo": "Suecia",
+      "grupo": "F",
+      "bombo": "Bombo 3",
+      "gf": 6,
+      "gc": 6,
+      "ta": 3,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": -3,
+      "bonus_grupo": 5,
+      "bonus_ronda": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": -19,
       "pos": 38
     },
     {
@@ -766,44 +766,6 @@
       "pos": 40
     },
     {
-      "equipo": "Túnez",
-      "grupo": "F",
-      "bombo": "Bombo 4",
-      "gf": 1,
-      "gc": 5,
-      "ta": 1,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": -8,
-      "bonus_grupo": 0,
-      "bonus_ronda": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": -25,
-      "pos": 41
-    },
-    {
-      "equipo": "Curazao",
-      "grupo": "E",
-      "bombo": "Bombo 8",
-      "gf": 1,
-      "gc": 7,
-      "ta": 0,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": -8,
-      "bonus_grupo": 0,
-      "bonus_ronda": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": -28,
-      "pos": 42
-    },
-    {
       "equipo": "Turquía",
       "grupo": "D",
       "bombo": "Bombo 5",
@@ -820,7 +782,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -34,
-      "pos": 43
+      "pos": 41
     },
     {
       "equipo": "Paraguay",
@@ -839,7 +801,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -38,
-      "pos": 44
+      "pos": 42
     },
     {
       "equipo": "Haití",
@@ -858,7 +820,7 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -40,
-      "pos": 45
+      "pos": 43
     },
     {
       "equipo": "Bosnia",
@@ -877,7 +839,26 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -41,
-      "pos": 46
+      "pos": 44
+    },
+    {
+      "equipo": "Curazao",
+      "grupo": "E",
+      "bombo": "Bombo 8",
+      "gf": 1,
+      "gc": 7,
+      "ta": 5,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": -6,
+      "bonus_grupo": 0,
+      "bonus_ronda": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": -41,
+      "pos": 45
     },
     {
       "equipo": "Sudáfrica",
@@ -896,6 +877,25 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -44,
+      "pos": 46
+    },
+    {
+      "equipo": "Túnez",
+      "grupo": "F",
+      "bombo": "Bombo 4",
+      "gf": 1,
+      "gc": 9,
+      "ta": 1,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": -16,
+      "bonus_grupo": 0,
+      "bonus_ronda": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": -45,
       "pos": 47
     },
     {
@@ -1564,6 +1564,44 @@
       "pen_tanda_local": null,
       "pen_tanda_visit": null,
       "jugado": true
+    },
+    {
+      "id": 35,
+      "fecha": "2026-06-20",
+      "fase": "Fase de Grupos",
+      "grupo": "E",
+      "local": "Ecuador",
+      "visitante": "Curazao",
+      "gf_local": 0,
+      "gf_visit": 0,
+      "ta_local": 1,
+      "doblea_local": 0,
+      "rd_local": 0,
+      "ta_visit": 5,
+      "doblea_visit": 0,
+      "rd_visit": 0,
+      "pen_tanda_local": null,
+      "pen_tanda_visit": null,
+      "jugado": true
+    },
+    {
+      "id": 36,
+      "fecha": "2026-06-20",
+      "fase": "Fase de Grupos",
+      "grupo": "F",
+      "local": "Túnez",
+      "visitante": "Japón",
+      "gf_local": 0,
+      "gf_visit": 4,
+      "ta_local": 0,
+      "doblea_local": 0,
+      "rd_local": 0,
+      "ta_visit": 0,
+      "doblea_visit": 0,
+      "rd_visit": 0,
+      "pen_tanda_local": null,
+      "pen_tanda_visit": null,
+      "jugado": true
     }
   ],
   "grupos": {
@@ -2164,27 +2202,27 @@
         {
           "pos": 3,
           "equipo": "Ecuador",
-          "pj": 1,
+          "pj": 2,
           "pg": 0,
-          "pe": 0,
+          "pe": 1,
           "pp": 1,
           "gf": 0,
           "gc": 1,
           "dg": -1,
-          "pts": 0,
+          "pts": 1,
           "empate_no_resuelto": false
         },
         {
           "pos": 4,
           "equipo": "Curazao",
-          "pj": 1,
+          "pj": 2,
           "pg": 0,
-          "pe": 0,
+          "pe": 1,
           "pp": 1,
           "gf": 1,
           "gc": 7,
           "dg": -6,
-          "pts": 0,
+          "pts": 1,
           "empate_no_resuelto": false
         }
       ],
@@ -2245,6 +2283,25 @@
           "pen_tanda_local": null,
           "pen_tanda_visit": null,
           "jugado": true
+        },
+        {
+          "id": 35,
+          "fecha": "2026-06-20",
+          "fase": "Fase de Grupos",
+          "grupo": "E",
+          "local": "Ecuador",
+          "visitante": "Curazao",
+          "gf_local": 0,
+          "gf_visit": 0,
+          "ta_local": 1,
+          "doblea_local": 0,
+          "rd_local": 0,
+          "ta_visit": 5,
+          "doblea_visit": 0,
+          "rd_visit": 0,
+          "pen_tanda_local": null,
+          "pen_tanda_visit": null,
+          "jugado": true
         }
       ]
     },
@@ -2271,6 +2328,19 @@
         },
         {
           "pos": 2,
+          "equipo": "Japón",
+          "pj": 2,
+          "pg": 1,
+          "pe": 1,
+          "pp": 0,
+          "gf": 6,
+          "gc": 2,
+          "dg": 4,
+          "pts": 4,
+          "empate_no_resuelto": false
+        },
+        {
+          "pos": 3,
           "equipo": "Suecia",
           "pj": 2,
           "pg": 1,
@@ -2283,28 +2353,15 @@
           "empate_no_resuelto": false
         },
         {
-          "pos": 3,
-          "equipo": "Japón",
-          "pj": 1,
-          "pg": 0,
-          "pe": 1,
-          "pp": 0,
-          "gf": 2,
-          "gc": 2,
-          "dg": 0,
-          "pts": 1,
-          "empate_no_resuelto": false
-        },
-        {
           "pos": 4,
           "equipo": "Túnez",
-          "pj": 1,
+          "pj": 2,
           "pg": 0,
           "pe": 0,
-          "pp": 1,
+          "pp": 2,
           "gf": 1,
-          "gc": 5,
-          "dg": -4,
+          "gc": 9,
+          "dg": -8,
           "pts": 0,
           "empate_no_resuelto": false
         }
@@ -2361,6 +2418,25 @@
           "doblea_local": 0,
           "rd_local": 0,
           "ta_visit": 3,
+          "doblea_visit": 0,
+          "rd_visit": 0,
+          "pen_tanda_local": null,
+          "pen_tanda_visit": null,
+          "jugado": true
+        },
+        {
+          "id": 36,
+          "fecha": "2026-06-20",
+          "fase": "Fase de Grupos",
+          "grupo": "F",
+          "local": "Túnez",
+          "visitante": "Japón",
+          "gf_local": 0,
+          "gf_visit": 4,
+          "ta_local": 0,
+          "doblea_local": 0,
+          "rd_local": 0,
+          "ta_visit": 0,
           "doblea_visit": 0,
           "rd_visit": 0,
           "pen_tanda_local": null,
@@ -3065,10 +3141,14 @@
       },
       {
         "equipo": "Suecia",
-        "puntos": -14
+        "puntos": -19
       }
     ],
     "Bombo 4": [
+      {
+        "equipo": "Japón",
+        "puntos": 17
+      },
       {
         "equipo": "EE.UU.",
         "puntos": 16
@@ -3078,20 +3158,16 @@
         "puntos": 10
       },
       {
-        "equipo": "Japón",
-        "puntos": 3
-      },
-      {
         "equipo": "Chequia",
         "puntos": -8
       },
       {
         "equipo": "Ecuador",
-        "puntos": -9
+        "puntos": -10
       },
       {
         "equipo": "Túnez",
-        "puntos": -25
+        "puntos": -45
       }
     ],
     "Bombo 5": [
@@ -3190,12 +3266,12 @@
         "puntos": -11
       },
       {
-        "equipo": "Curazao",
-        "puntos": -28
-      },
-      {
         "equipo": "Haití",
         "puntos": -40
+      },
+      {
+        "equipo": "Curazao",
+        "puntos": -41
       }
     ]
   },
