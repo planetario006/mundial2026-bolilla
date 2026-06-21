@@ -504,14 +504,18 @@ function renderGrupos(){
 
   function pintar(){
     const g = DATA.grupos[grupoActivo];
-    const filasTabla = g.tabla.map(f=>{
-      const qcls = f.pos===1 ? 'q1' : (f.pos===2 ? 'q2' : '');
+    const filasTabla = g.tabla.map(f => {
+      const qcls = f.pos === 1 ? 'q1' : (f.pos === 2 ? 'q2' : '');
+      
+      const equipoRanking = DATA.ranking.find(r => r.equipo === f.equipo);
+      const puntosTotales = equipoRanking ? equipoRanking.puntos_totales : 0;
+    
       return `<tr class="${qcls}">
         <td class="team">${f.equipo}</td>
         <td>${f.pj}</td><td>${f.pg}</td><td>${f.pe}</td><td>${f.pp}</td>
-        <td>${f.gf}</td><td>${f.gc}</td><td>${f.dg>0?'+':''}${f.dg}</td>
+        <td>${f.gf}</td><td>${f.gc}</td><td>${f.dg > 0 ? '+' : ''}${f.dg}</td>
         <td><b>${f.pts}</b></td>
-        <td><b>${f.puntos_totales || 0}</b></td>
+        <td><b>${puntosTotales}</b></td>
       </tr>`;
     }).join('');
 
