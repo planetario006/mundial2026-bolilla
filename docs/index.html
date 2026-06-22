@@ -261,6 +261,19 @@
     left:0; right:0; top:calc(50% - 0.5px); height:1px;
     background:var(--line);
   }
+  /* Bronze match row */
+  .bracket-bronze-row{
+    display:flex; min-width:max-content;
+    align-items:center; justify-content:center;
+    margin-top:8px; gap:8px;
+  }
+  .bronze-label{
+    font-family:'Oswald',sans-serif; font-size:8px;
+    letter-spacing:0.08em; color:var(--chalk-dim); text-transform:uppercase;
+    white-space:nowrap;
+  }
+  .bc-bronze{width:100px;}
+  .bc-bronze .bc-card{border-color:rgba(169,184,172,0.55);}
   /* Phase selector section */
   .elim-phase-section{margin-top:20px;}
 </style>
@@ -679,6 +692,7 @@ function bracketHTML(elim){
   const qf  = pad(elim['Cuartos de final'], 4);
   const sf  = pad(elim['Semifinales'], 2);
   const fin = pad(elim['Final'], 1);
+  const bronze = pad(elim['Tercer puesto'] || elim['Tercer y cuarto puesto'] || [], 1);
 
   const round = (matches, extraCls='') =>
     `<div class="bc-round${extraCls?(' '+extraCls):''}">` +
@@ -688,6 +702,18 @@ function bracketHTML(elim){
     `<div class="bc-conn ${cls}">` +
     Array(n).fill('<div class="bc-conn-pair"></div>').join('') +
     `</div>`;
+
+  // Spacer columns to align bronze match with Final column
+  // Left side: 4 rounds × (70+16) - 16 connector + 70 round = 4*(70+16) + 70 wait...
+  // Col widths: r32(70) c(16) r16(70) c(16) qf(70) c(16) sf(70) c(16) final(72) c(16) sfr(70) c(16) qfr(70) c(16) r16r(70) c(16) r32r(70)
+  // Left spacer to align bronze under Final: 4*(70+16) = 344px
+  const leftSpacer = `<div style="width:344px;flex-shrink:0;"></div>`;
+  const bronzeHTML = `
+    <div class="bracket-bronze-row">
+      ${leftSpacer}
+      <span class="bronze-label">3er y 4º</span>
+      <div class="bc-bronze">${bcCard(bronze[0])}</div>
+    </div>`;
 
   return `<div class="bracket-tree">
     ${round(r32.slice(0,8))}
@@ -707,7 +733,8 @@ function bracketHTML(elim){
     ${round(r16.slice(4,8))}
     ${conn(4,'right')}
     ${round(r32.slice(8,16))}
-  </div>`;
+  </div>
+  ${bronzeHTML}`;
 }
 /* =========================================================== */
 
@@ -721,8 +748,9 @@ function renderEliminacion(){
     'Cuartos de final',
     'Semifinales',
     'Final',
+    'Tercer puesto',
   ];
-  const LABELS = ['D16','R16','QF','SF','Final'];
+  const LABELS = ['D16','R16','QF','SF','Final','3º/4º'];
 
   // Choose the deepest phase with data as default
   let faseActiva = FASES[0];
