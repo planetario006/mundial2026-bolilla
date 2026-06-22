@@ -67,6 +67,7 @@ FASES_ELIMINACION = [
     "Octavos de final",
     "Cuartos de final",
     "Semifinales",
+    "Tercer puesto",
     "Final",
 ]
 # Clave corta por fase eliminatoria — se usa para exponer el bonus de cada
