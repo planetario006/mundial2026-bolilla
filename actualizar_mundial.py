@@ -152,11 +152,16 @@ NOMBRE_MAP = {
 GRUPOS = list("ABCDEFGHIJKL")
 
 FASES_ELIMINACION = [
-    {"pagina": "Anexo:Dieciseisavos de final de la Copa Mundial de Fútbol de 2026", "fase_txt": "Dieciseisavos de final"},
-    {"pagina": "Anexo:Octavos de final de la Copa Mundial de Fútbol de 2026", "fase_txt": "Octavos de final"},
-    {"pagina": "Anexo:Cuartos de final de la Copa Mundial de Fútbol de 2026", "fase_txt": "Cuartos de final"},
-    {"pagina": "Anexo:Semifinales de la Copa Mundial de Fútbol de 2026", "fase_txt": "Semifinales"},
-    {"pagina": "Anexo:Final de la Copa Mundial de Fútbol de 2026", "fase_txt": "Final"},
+    {"pagina": "Anexo:Dieciseisavos de final de la Copa Mundial de Fútbol de 2026",
+     "fase_txt": "Dieciseisavos de final",},
+    {"pagina": "Anexo:Octavos de final de la Copa Mundial de Fútbol de 2026",
+     "fase_txt": "Octavos de final",},
+    {"pagina": "Anexo:Cuartos de final de la Copa Mundial de Fútbol de 2026",
+     "fase_txt": "Cuartos de final",},
+    {"pagina": "Anexo:Semifinales de la Copa Mundial de Fútbol de 2026",
+     "fase_txt": "Semifinales",},
+    {"pagina": "Anexo:Final de la Copa Mundial de Fútbol de 2026",
+     "fase_txt": "Final",},
 ]
 
 # ─────────────────────────────────────────────────────────────────────────────
