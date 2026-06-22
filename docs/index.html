@@ -124,7 +124,6 @@
   .ranking-table td.total-cell{font-weight:700;}
   .ranking-table tbody tr:last-child td{border-bottom:none;}
   .ranking-table .rank-cell.top3{color:var(--amber); font-weight:700;}
-
   .tag{display:inline-block; background:var(--turf-soft); border:1px solid var(--line); border-radius:5px; padding:1px 6px; font-size:10.5px; color:var(--chalk-dim); margin-right:5px;}
   /* ---------- Partidos ---------- */
   .date-head{font-size:11.5px; color:var(--chalk-dim); letter-spacing:0.08em; margin:16px 2px 7px; text-transform:uppercase;}
@@ -136,6 +135,22 @@
   .meta-fase{text-align:center; font-size:10px;}
   .meta-cards-left{text-align:left;}
   .meta-cards-right{text-align:right;}
+  details.match-item{display:block;}
+  details.match-item summary{list-style:none; cursor:pointer; display:block;}
+  details.match-item summary::-webkit-details-marker{display:none;}
+  .match-item + .match-item{border-top:1px solid var(--line);}
+  .match-points-row{display:flex; align-items:center; justify-content:center; gap:10px; padding:2px 12px 11px;}
+  .match-points-row .scorebox{font-size:12px; padding:3px 8px;}
+  .match-points-hint{font-size:9.5px; color:var(--chalk-dim); letter-spacing:0.03em; display:flex; align-items:center; gap:3px;}
+  .match-points-hint svg{width:10px; height:10px; stroke:var(--chalk-dim); fill:none; stroke-width:2; transition:transform .2s ease;}
+  details.match-item[open] .match-points-hint svg{transform:rotate(180deg);}
+  .match-breakdown{padding:0 12px 13px;}
+  table.match-breakdown-table{border-collapse:collapse; font-family:'JetBrains Mono',monospace; font-size:11px; white-space:nowrap; width:100%;}
+  .match-breakdown-table th, .match-breakdown-table td{padding:7px 7px; text-align:center; border-bottom:1px solid var(--line);}
+  .match-breakdown-table thead th{font-family:'Inter',sans-serif; font-size:9px; color:var(--chalk-dim); text-transform:uppercase; letter-spacing:0.02em; font-weight:700;}
+  .match-breakdown-table td.team-cell{font-family:'Inter',sans-serif; font-weight:600; text-align:left; font-size:11.5px; padding-left:8px; white-space:normal;}
+  .match-breakdown-table tbody tr:last-child td{border-bottom:none;}
+  .match-breakdown-table td.total-cell{font-weight:700;}
   /* ---------- Pills (grupos / fases) ---------- */
   .pillbar{display:flex; gap:7px; overflow-x:auto; padding:2px 2px 4px; scrollbar-width:none;}
   .pillbar::-webkit-scrollbar{display:none;}
@@ -313,7 +328,6 @@
     Bombos
   </button>
 </nav>
-
 <script>
 const $ = (sel, el=document) => el.querySelector(sel);
 const $$ = (sel, el=document) => Array.from(el.querySelectorAll(sel));
@@ -344,6 +358,19 @@ const CATEGORIAS = [
   { key:'goleador',        label:'Máximo goleador',      short:'GOL', icon:'👟', calc:f=>f.goleador },
 ];
 let filtroSel = new Set(CATEGORIAS.map(c=>c.key));   // por defecto: todas activas
+// Subconjunto de conceptos que aplican a UN partido (sin posición de grupo,
+// rondas, premios ni goleador, que no se asignan partido a partido).
+// Coincide con las claves de puntos_local/puntos_visit que manda data.json.
+const MATCH_CATEGORIAS = [
+  { key:'gf',              label:'Goles a favor',       short:'GF',  icon:'⚽' },
+  { key:'gc',              label:'Goles en contra',     short:'GC',  icon:'🥅' },
+  { key:'ta',              label:'Tarjetas amarillas',  short:'TA',  icon:'🟨' },
+  { key:'doblea',          label:'2ª amarilla',         short:'2A',  icon:'🟧' },
+  { key:'rd',               label:'Roja directa',        short:'RD',  icon:'🟥' },
+  { key:'penfall',         label:'Penaltis fallados',   short:'PF',  icon:'❌' },
+  { key:'penpar',          label:'Penaltis parados',    short:'PP',  icon:'🧤' },
+  { key:'bonus_resultado', label:'Resultado del partido', short:'RES', icon:'🏁' },
+];
 function scoreClass(n){
   if(n > 0) return 'pos';
   if(n < 0) return 'neg';
@@ -516,7 +543,6 @@ function rankingTablaHTML(equipos, esDefault){
     </div>
   `;
 }
-
 function renderPartidos(){
   const el = $('#view-partidos');
   if(!DATA.partidos.length){
@@ -545,7 +571,7 @@ function matchRow(p){
     if(rd) s += `🟥${rd>1?rd:''} `;
     return s;
   };
-  return `
+  const cabecera = `
     <div class="match-row">
       <div class="match-team">${p.local}</div>
       <div class="match-score">
@@ -558,6 +584,51 @@ function matchRow(p){
       <div class="meta-fase"><span class="tag">${faseTxt}</span></div>
       <div class="meta-cards-right">${tarjetas(false)}</div>
     </div>
+  `;
+  // Si el partido no se ha jugado, o el data.json todavía no trae el
+  // desglose de puntos (versión antigua de mundial_core.py), se muestra
+  // igual que antes, sin la parte desplegable.
+  if(!p.jugado || !p.puntos_local || !p.puntos_visit){
+    return `<div class="match-item">${cabecera}</div>`;
+  }
+  const pl = p.puntos_local, pv = p.puntos_visit;
+  const filaTabla = (nombre, pts) => `
+    <tr>
+      <td class="team-cell">${nombre}</td>
+      ${MATCH_CATEGORIAS.map(c=>`<td>${fmtPts(pts[c.key])}</td>`).join('')}
+      <td class="total-cell ${scoreClass(pts.total)}">${fmtPts(pts.total)}</td>
+    </tr>`;
+  return `
+    <details class="match-item">
+      <summary>
+        ${cabecera}
+        <div class="match-points-row">
+          <span class="scorebox ${scoreClass(pl.total)}" style="min-width:auto;">${fmtPts(pl.total)}</span>
+          <span class="match-points-hint">
+            puntos del partido
+            <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </span>
+          <span class="scorebox ${scoreClass(pv.total)}" style="min-width:auto;">${fmtPts(pv.total)}</span>
+        </div>
+      </summary>
+      <div class="match-breakdown">
+        <div class="table-wrap">
+          <table class="match-breakdown-table">
+            <thead>
+              <tr>
+                <th style="text-align:left;">Equipo</th>
+                ${MATCH_CATEGORIAS.map(c=>`<th title="${c.label}">${c.short}</th>`).join('')}
+                <th>TOTAL</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${filaTabla(p.local, pl)}
+              ${filaTabla(p.visitante, pv)}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </details>
   `;
 }
 
@@ -813,6 +884,7 @@ function renderEliminacion(){
     if(bo) bo.scrollLeft = (bo.scrollWidth - bo.clientWidth) / 2;
   });
 }
+
 function renderBombos(){
   const el = $('#view-bombos');
   const nombres = Object.keys(DATA.bombos);
