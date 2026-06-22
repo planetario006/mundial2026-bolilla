@@ -164,6 +164,14 @@ FASES_ELIMINACION = [
      "fase_txt": "Final",},
 ]
 
+_PREREQ = {
+    "Dieciseisavos de final": None,
+    "Octavos de final":       "Dieciseisavos de final",
+    "Cuartos de final":       "Octavos de final",
+    "Semifinales":            "Cuartos de final",
+    "Final":                  "Semifinales",
+}
+
 # ─────────────────────────────────────────────────────────────────────────────
 # UTILIDADES DE SCRAPING (idénticas al script original)
 # ─────────────────────────────────────────────────────────────────────────────
@@ -418,15 +426,71 @@ def procesar_grupos(filtro_grupo=None) -> list:
     return todos
 
 
-def procesar_eliminacion(filtro_fase=None) -> list:
-    fases = FASES_ELIMINACION
+def procesar_eliminacion(filtro_fase=None, matches_actuales=None) -> list:
+    """Descarga partidos de las fases eliminatorias de Wikipedia.
+ 
+    Sin filtro_fase aplica lógica eficiente:
+    - Dieciseisavos: siempre (equipos se clasifican durante grupos).
+    - Resto: solo si su fase prerequisito tiene al menos un partido
+      con resultado en matches_actuales.
+ 
+    Caso especial Semifinales: la página contiene los 2 partidos de
+    semis y el partido por el tercer puesto. Los primeros 2 se etiquetan
+    "Semifinales" y el 3º "Tercer puesto" automáticamente.
+ 
+    Con filtro_fase el filtro manual tiene prioridad total.
+    """
+ 
+    def _tiene_resultado(fase_txt: str) -> bool:
+        if not matches_actuales:
+            return False
+        return any(
+            m.get("fase") == fase_txt and m.get("gf_local") is not None
+            for m in matches_actuales
+        )
+ 
     if filtro_fase:
         filtro_norm = filtro_fase.lower()
-        fases = [f for f in FASES_ELIMINACION if filtro_norm in f["fase_txt"].lower()]
+        fases = [f for f in FASES_ELIMINACION
+                 if filtro_norm in f["fase_txt"].lower()]
+    else:
+        fases = []
+        for fase_info in FASES_ELIMINACION:
+            fase_txt = fase_info["fase_txt"]
+            prereq   = _PREREQ.get(fase_txt)
+            if prereq is None:
+                fases.append(fase_info)
+            elif _tiene_resultado(prereq):
+                fases.append(fase_info)
+            else:
+                log.info(
+                    f"  Saltando '{fase_txt}': "
+                    f"'{prereq}' aún sin resultados."
+                )
+ 
     todos = []
     for fase_info in fases:
-        todos.extend(partidos_de_pagina(fase_info["pagina"], fase_info["fase_txt"], ""))
+        fase_txt = fase_info["fase_txt"]
+        log.info(f"  Raspando: {fase_txt}")
+        partidos = partidos_de_pagina(
+            fase_info["pagina"], fase_txt, ""
+        )
+ 
+        if fase_txt == "Semifinales":
+            # La página de Semifinales incluye también el partido por el
+            # tercer puesto (3º y 4º puesto). Wikipedia lo pone al final,
+            # tras los 2 partidos de semis. Reétiquetamos a partir del 3º.
+            for i, p in enumerate(partidos):
+                if i >= 2:
+                    p["fase"] = "Tercer puesto"
+                    log.info(
+                        f"    → Reetiquetado como 'Tercer puesto': "
+                        f"{p.get('team1')} vs {p.get('team2')}"
+                    )
+ 
+        todos.extend(partidos)
         time.sleep(PAUSA_ENTRE_PAGINAS)
+ 
     return todos
 
 
@@ -513,50 +577,69 @@ def fusionar_en_matches(nuevos: list, matches: list) -> tuple[list, int, int]:
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main():
-    parser = argparse.ArgumentParser(description="Actualizador Mundial 2026 (versión nube, sin Excel/Windows)")
-    parser.add_argument("--fase", default=None, help="grupos | eliminacion | dieciseisavos | octavos | cuartos | semifinales | final")
+    parser = argparse.ArgumentParser(
+        description="Actualizador Mundial 2026 (versión nube, sin Excel/Windows)"
+    )
+    parser.add_argument(
+        "--fase", default=None,
+        help=(
+            "grupos | eliminacion | dieciseisavos | octavos "
+            "| cuartos | semifinales | final"
+        ),
+    )
     parser.add_argument("--grupo", default=None, help="Letra de grupo (A-L)")
     args = parser.parse_args()
-
+ 
     log.info("=" * 60)
     log.info("MUNDIAL 2026 · BOLILLA — actualización")
     log.info("=" * 60)
-
-    fase_arg = args.fase.lower() if args.fase else None
+ 
+    fase_arg  = args.fase.lower()  if args.fase  else None
     grupo_arg = args.grupo.upper() if args.grupo else None
-
+ 
+    # Cargar matches ANTES de decidir qué fases eliminar raspar
+    matches = core.cargar_json(MATCHES_PATH, [])
+    log.info(f"Partidos en matches.json al arrancar: {len(matches)}")
+ 
     nuevos = []
+ 
     if grupo_arg:
         log.info(f"Modo: Grupo {grupo_arg}")
         nuevos = procesar_grupos(filtro_grupo=grupo_arg)
+ 
     elif fase_arg in (None, "grupos"):
         log.info("Modo: Fase de Grupos (A-L)")
         nuevos += procesar_grupos()
         if fase_arg is None:
-            log.info("Modo: Fases Eliminatorias")
-            nuevos += procesar_eliminacion()
+            log.info("Modo: Fases Eliminatorias (con lógica de umbral)")
+            nuevos += procesar_eliminacion(matches_actuales=matches)
+ 
     elif fase_arg == "eliminacion":
-        nuevos += procesar_eliminacion()
+        nuevos += procesar_eliminacion(matches_actuales=matches)
+ 
     else:
+        # Filtro manual: sin umbral
         nuevos += procesar_eliminacion(filtro_fase=fase_arg)
-
-    if not nuevos:
-        log.info("No se encontraron partidos con resultado para procesar.")
-        return
-
-    log.info(f"Total partidos con resultado leídos de Wikipedia: {len(nuevos)}")
-
-    matches = core.cargar_json(MATCHES_PATH, [])
-    matches, n_nuevos, n_act = fusionar_en_matches(nuevos, matches)
-    core.guardar_json(MATCHES_PATH, matches)
-
-    log.info(f"Partidos NUEVOS insertados: {n_nuevos}")
-    log.info(f"Partidos actualizados: {n_act}")
-
+ 
+    if nuevos:
+        log.info(f"Total partidos leídos de Wikipedia: {len(nuevos)}")
+        matches, n_nuevos, n_act = fusionar_en_matches(nuevos, matches)
+        core.guardar_json(MATCHES_PATH, matches)
+        log.info(f"Partidos NUEVOS insertados: {n_nuevos}")
+        log.info(f"Partidos actualizados:      {n_act}")
+    else:
+        log.info(
+            "Wikipedia no devolvió partidos nuevos. "
+            "Se regenera data.json por si hay cambios manuales."
+        )
+ 
     data = core.construir_y_guardar(MATCHES_PATH, MANUAL_PATH, SALIDA_PATH)
-    log.info(f"data.json regenerado. Total partidos jugados: {data['meta']['total_partidos_jugados']}")
+    log.info(
+        f"data.json regenerado. "
+        f"Partidos jugados: {data['meta']['total_partidos_jugados']}"
+    )
     log.info("✔ Proceso completado.")
-
-
+ 
+ 
 if __name__ == "__main__":
     main()
