@@ -1,34 +1,11 @@
 {
   "meta": {
-    "actualizado": "2026-06-22T19:38:14+00:00",
+    "actualizado": "2026-06-22T22:07:51+00:00",
     "total_partidos_jugados": 41,
     "total_partidos": 41,
     "fase_grupos_terminada": false
   },
   "ranking": [
-    {
-      "equipo": "Argentina",
-      "grupo": "J",
-      "bombo": "Bombo 1",
-      "gf": 5,
-      "gc": 0,
-      "ta": 0,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": 10,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": 15,
-      "bonus_ronda_dieciseisavos": 0,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 1
-    },
     {
       "equipo": "Alemania",
       "grupo": "E",
@@ -45,6 +22,29 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": 13,
+      "bonus_ronda_dieciseisavos": 0,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 1
+    },
+    {
+      "equipo": "Argentina",
+      "grupo": "J",
+      "bombo": "Bombo 1",
+      "gf": 5,
+      "gc": 0,
+      "ta": 2,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": 10,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": 9,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -513,29 +513,6 @@
       "pos": 22
     },
     {
-      "equipo": "Austria",
-      "grupo": "J",
-      "bombo": "Bombo 6",
-      "gf": 3,
-      "gc": 3,
-      "ta": 1,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": -3,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": -12,
-      "bonus_ronda_dieciseisavos": 0,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 23
-    },
-    {
       "equipo": "Chequia",
       "grupo": "A",
       "bombo": "Bombo 4",
@@ -556,7 +533,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 24
+      "pos": 23
     },
     {
       "equipo": "Ecuador",
@@ -579,7 +556,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 25
+      "pos": 24
     },
     {
       "equipo": "Corea del Sur",
@@ -602,7 +579,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 26
+      "pos": 25
     },
     {
       "equipo": "Costa de Marfil",
@@ -625,7 +602,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 27
+      "pos": 26
     },
     {
       "equipo": "Jordania",
@@ -648,7 +625,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 28
+      "pos": 27
     },
     {
       "equipo": "Senegal",
@@ -671,7 +648,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 29
+      "pos": 28
     },
     {
       "equipo": "Argelia",
@@ -694,7 +671,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 30
+      "pos": 29
     },
     {
       "equipo": "Escocia",
@@ -717,7 +694,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 31
+      "pos": 30
     },
     {
       "equipo": "Panamá",
@@ -735,6 +712,29 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -17,
+      "bonus_ronda_dieciseisavos": 0,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 31
+    },
+    {
+      "equipo": "Austria",
+      "grupo": "J",
+      "bombo": "Bombo 6",
+      "gf": 3,
+      "gc": 3,
+      "ta": 3,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": -3,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": -18,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -1881,10 +1881,10 @@
       "visitante": "Austria",
       "gf_local": 2,
       "gf_visit": 0,
-      "ta_local": 0,
+      "ta_local": 2,
       "doblea_local": 0,
       "rd_local": 0,
-      "ta_visit": 0,
+      "ta_visit": 2,
       "doblea_visit": 0,
       "rd_visit": 0,
       "pen_tanda_local": null,
@@ -3224,10 +3224,10 @@
           "visitante": "Austria",
           "gf_local": 2,
           "gf_visit": 0,
-          "ta_local": 0,
+          "ta_local": 2,
           "doblea_local": 0,
           "rd_local": 0,
-          "ta_visit": 0,
+          "ta_visit": 2,
           "doblea_visit": 0,
           "rd_visit": 0,
           "pen_tanda_local": null,
@@ -3446,17 +3446,18 @@
     "Octavos de final": [],
     "Cuartos de final": [],
     "Semifinales": [],
+    "Tercer puesto": [],
     "Final": []
   },
   "bombos": {
     "Bombo 1": [
       {
-        "equipo": "Argentina",
-        "puntos": 15
-      },
-      {
         "equipo": "Alemania",
         "puntos": 13
+      },
+      {
+        "equipo": "Argentina",
+        "puntos": 9
       },
       {
         "equipo": "España",
@@ -3585,12 +3586,12 @@
         "puntos": -4
       },
       {
-        "equipo": "Austria",
-        "puntos": -12
-      },
-      {
         "equipo": "Costa de Marfil",
         "puntos": -16
+      },
+      {
+        "equipo": "Austria",
+        "puntos": -18
       },
       {
         "equipo": "Australia",
