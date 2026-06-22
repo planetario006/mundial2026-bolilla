@@ -690,32 +690,13 @@ function renderGrupos(){
 
 /* ===================== BRACKET HELPERS ===================== */
 const PAIS_ISO = {
-  'México':'mx','Canadá':'ca','Estados Unidos':'us',
-  'Brasil':'br','Argentina':'ar','Uruguay':'uy','Colombia':'co',
-  'Ecuador':'ec','Venezuela':'ve','Paraguay':'py','Chile':'cl',
-  'Bolivia':'bo','Perú':'pe',
-  'España':'es','Francia':'fr','Alemania':'de','Portugal':'pt',
-  'Inglaterra':'gb-eng','Gales':'gb-wls','Escocia':'gb-sct','Irlanda del Norte':'gb-nir',
-  'Italia':'it','Países Bajos':'nl','Holanda':'nl','Bélgica':'be','Croacia':'hr',
-  'Serbia':'rs','Suiza':'ch','Austria':'at','Turquía':'tr','Dinamarca':'dk',
-  'Rumanía':'ro','Eslovenia':'si','Ucrania':'ua',
-  'República Checa':'cz','Hungría':'hu','Eslovaquia':'sk',
-  'Polonia':'pl','Albania':'al','Georgia':'ge',
-  'Marruecos':'ma','Senegal':'sn','Nigeria':'ng','Egipto':'eg',
-  'Sudáfrica':'za','Costa de Marfil':'ci','Camerún':'cm','Argelia':'dz',
-  'Japón':'jp','Corea del Sur':'kr','Australia':'au',
-  'Arabia Saudita':'sa','Irán':'ir','Qatar':'qa','China':'cn',
-  'Indonesia':'id','Uzbekistán':'uz','Jordania':'jo','Iraq':'iq',
-  'Costa Rica':'cr','Panamá':'pa','Jamaica':'jm','Honduras':'hn',
-  'Nueva Zelanda':'nz','Islas Fiyi':'fj','Tahití':'pf',
-  'República de Irlanda':'ie','Irlanda':'ie',
-  'Grecia':'gr','Islandia':'is','Noruega':'no','Suecia':'se',
-  'Montenegro':'me','Bosnia y Herzegovina':'ba','Bosnia':'ba',
-  'Israel':'il','Armenia':'am',
-  'Ghana':'gh','Túnez':'tn','Mali':'ml','Tanzania':'tz',
-  'Zimbabwe':'zw','Kenia':'ke','Angola':'ao',
-  'El Salvador':'sv','Guatemala':'gt','Cuba':'cu',
-  'Trinidad y Tobago':'tt','Haití':'ht',
+  'México': 'mx','Canadá': 'ca','Estados Unidos': 'us',
+  'Argentina': 'ar','Brasil': 'br','Colombia': 'co','Ecuador': 'ec','Paraguay': 'py','Uruguay': 'uy',
+  'Alemania': 'de','Austria': 'at','Bélgica': 'be','Bosnia y Herzegovina': 'ba','Croacia': 'hr','Escocia': 'gb-sct','España': 'es','Francia': 'fr',
+  'Inglaterra': 'gb-eng','Noruega': 'no','Países Bajos': 'nl','Portugal': 'pt','República Checa': 'cz','Suecia': 'se','Suiza': 'ch','Turquía': 'tr',
+  'Argelia': 'dz','Cabo Verde': 'cv','Costa de Marfil': 'ci','Egipto': 'eg','Ghana': 'gh','Marruecos': 'ma','RD Congo': 'cd','Senegal': 'sn','Sudáfrica': 'za','Túnez': 'tn',
+  'Arabia Saudita': 'sa','Australia': 'au','Irán': 'ir','Irak': 'iq','Japón': 'jp','Jordania': 'jo','Nueva Zelanda': 'nz','Qatar': 'qa','Corea del Sur': 'kr','Uzbekistán': 'uz',
+  'Curazao': 'cw','Haití': 'ht','Panamá': 'pa'
 };
 const PAIS_SHORT = {
   'Estados Unidos':'EE.UU.',
@@ -726,8 +707,6 @@ const PAIS_SHORT = {
   'República Checa':'Rep.Checa',
   'Nueva Zelanda':'N.Zelanda',
   'Bosnia y Herzegovina':'Bosnia',
-  'Irlanda del Norte':'Irl.Norte',
-  'Trinidad y Tobago':'Trin.&Tob',
 };
 function flagSrc(pais){
   const iso = PAIS_ISO[pais];
