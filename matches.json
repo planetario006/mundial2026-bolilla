@@ -958,5 +958,29 @@
     "penpar_visit": 0,
     "pen_tanda_local": null,
     "pen_tanda_visit": null
+  },
+  {
+    "id": 41,
+    "fecha": "2026-06-22",
+    "fase": "Fase de Grupos",
+    "grupo": "J",
+    "local": "Argentina",
+    "gf_local": 2,
+    "gc_local": 0,
+    "ta_local": 0,
+    "doblea_local": 0,
+    "rd_local": 0,
+    "penfall_local": 0,
+    "penpar_local": 0,
+    "visitante": "Austria",
+    "gf_visit": 0,
+    "gc_visit": 2,
+    "ta_visit": 0,
+    "doblea_visit": 0,
+    "rd_visit": 0,
+    "penfall_visit": 0,
+    "penpar_visit": 0,
+    "pen_tanda_local": null,
+    "pen_tanda_visit": null
   }
 ]
