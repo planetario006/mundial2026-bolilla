@@ -571,19 +571,24 @@ function matchRow(p){
     if(rd) s += `🟥${rd>1?rd:''} `;
     return s;
   };
+  const golesLocal = (p.gf_local !== null) ? p.gf_local : "";
+  const golesVisitante = (p.gf_visit !== null) ? p.gf_visit : "";
+  
+  const displayScore = `${golesLocal} - ${golesVisitante}`;
+  
   const cabecera = `
-    <div class="match-row">
-      <div class="match-team">${p.local}</div>
-      <div class="match-score">
-        <span class="scorebox amber">${p.gf_local} - ${p.gf_visit}</span>
+      <div class="match-row">
+        <div class="match-team">${p.local}</div>
+        <div class="match-score">
+          <span class="scorebox amber">${displayScore}</span>
+        </div>
+        <div class="match-team right">${p.visitante}</div>
       </div>
-      <div class="match-team right">${p.visitante}</div>
-    </div>
-    <div class="match-meta">
-      <div class="meta-cards-left">${tarjetas(true)}</div>
-      <div class="meta-fase"><span class="tag">${faseTxt}</span></div>
-      <div class="meta-cards-right">${tarjetas(false)}</div>
-    </div>
+      <div class="match-meta">
+        <div class="meta-cards-left">${tarjetas(true)}</div>
+        <div class="meta-fase"><span class="tag">${faseTxt}</span></div>
+        <div class="meta-cards-right">${tarjetas(false)}</div>
+      </div>
   `;
   // Si el partido no se ha jugado, o el data.json todavía no trae el
   // desglose de puntos (versión antigua de mundial_core.py), se muestra
