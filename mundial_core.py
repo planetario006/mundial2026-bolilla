@@ -60,19 +60,13 @@ BOMBOS = {
 EQUIPO_A_GRUPO = {eq: g for g, eqs in GRUPOS.items() for eq in eqs}
 EQUIPO_A_BOMBO = {eq: b for b, eqs in BOMBOS.items() for eq in eqs}
 TODOS_LOS_EQUIPOS = sorted(EQUIPO_A_GRUPO.keys())
-# Orden e identificación de las fases eliminatorias (debe coincidir con el
-# texto exacto que se guarda en el campo "fase" de cada partido)
 FASES_ELIMINACION = [
     "Dieciseisavos de final",
     "Octavos de final",
     "Cuartos de final",
     "Semifinales",
-    "Tercer puesto",
     "Final",
 ]
-# Clave corta por fase eliminatoria — se usa para exponer el bonus de cada
-# ronda por separado (en vez de un único "bonus_ronda" agregado) tanto en
-# data.json como en el desglose de la app.
 FASES_KEYS = {
     "Dieciseisavos de final": "dieciseisavos",
     "Octavos de final": "octavos",
@@ -81,9 +75,6 @@ FASES_KEYS = {
     "Final": "final",
 }
 FASE_GRUPOS_TXT = "Fase de Grupos"
-# Cuántos de los 12 terceros de grupo pasan a dieciseisavos (formato de
-# 48 equipos / 12 grupos de 4: los 2 primeros de cada grupo + los 8
-# mejores terceros).
 N_TERCEROS_CLASIFICAN = 8
 # ─────────────────────────────────────────────────────────────────────────
 # SISTEMA DE PUNTUACIÓN OFICIAL (hoja "Sistema Puntuación")
@@ -113,7 +104,6 @@ PUNTOS_PREMIO_FINAL = {
     "cuarto": 60,
 }
 PUNTOS_MAXIMO_GOLEADOR = 25
-
 # ─────────────────────────────────────────────────────────────────────────
 # AGREGADOS POR EQUIPO A PARTIR DE LOS PARTIDOS
 # ─────────────────────────────────────────────────────────────────────────
@@ -136,13 +126,6 @@ def resultado_local(p: dict) -> str:
         return "L"
     return "E"
 def calcular_stats_globales(matches: list[dict]) -> dict:
-    """Estadísticas acumuladas de TODOS los partidos de la lista recibida,
-    una entrada por cada uno de los 48 equipos.
-    Importante: esta función es agnóstica de fase — agrega lo que se le
-    pase. Quien la llama decide si le pasa todos los partidos del torneo
-    (para el desglose total de puntos de la bolilla) o solo los de fase
-    de grupos (para clasificar grupos y para elegir a los mejores
-    terceros), ver `calcular_puntos_totales`."""
     stats = {eq: _nuevo_marcador() for eq in TODOS_LOS_EQUIPOS}
     for p in matches:
         if not jugado(p):
@@ -178,26 +161,8 @@ def calcular_stats_globales(matches: list[dict]) -> dict:
         s["Pts"] = s["PG"] * 3 + s["PE"] * 1
         s["DG"] = s["GF"] - s["GC"]
         s["FairPlay"] = -(s["TA"] * 1 + s["DA"] * 3 + s["RD"] * 4)
-
     return stats
-# ─────────────────────────────────────────────────────────────────────────
-# CLASIFICACIÓN DE GRUPO — CRITERIOS OFICIALES FIFA (réplica de la VBA)
-#   1-3. Enfrentamientos directos (puntos, DG, GF), reaplicados de forma
-#        recursiva al subconjunto que siga empatado.
-#   4-5. Diferencia de goles / goles a favor en TODOS los partidos del grupo.
-#   6.   Fair Play (amarilla -1 / doble amarilla -3 / roja directa -4).
-#   7.   Ranking FIFA — no disponible automáticamente; si llega aquí el
-#        empate queda señalado para resolver a mano.
-#
-# IMPORTANTE: el parámetro `stats` que recibe `clasificar_grupo` debe venir
-# calculado SOLO con partidos de fase de grupos (`stats_grupos` en
-# `calcular_puntos_totales`), nunca con las estadísticas de todo el
-# torneo — si no, en cuanto empezara la eliminatoria, los goles/tarjetas
-# de octavos, cuartos, etc. se colarían en el desempate de un grupo que ya
-# terminó hace semanas.
-# ─────────────────────────────────────────────────────────────────────────
 def _mini_stats(equipos: list[str], partidos_grupo: list[dict]) -> dict:
-    """Mini-tabla calculada SOLO con los enfrentamientos directos entre 'equipos'."""
     mini = {eq: {"Pts": 0, "DG": 0, "GF": 0} for eq in equipos}
     eq_set = set(equipos)
     for p in partidos_grupo:
@@ -216,8 +181,6 @@ def _mini_stats(equipos: list[str], partidos_grupo: list[dict]) -> dict:
                 mini[p["visitante"]]["Pts"] += 3
     return mini
 def _resolver_empate_h2h(equipos: list[str], partidos_grupo: list[dict]) -> list[list[str]]:
-    """Devuelve una lista de "clusters": cada cluster de tamaño 1 está resuelto;
-    uno de tamaño >1 sigue empatado tras agotar enfrentamiento directo."""
     if len(equipos) <= 1:
         return [list(equipos)]
     mini = _mini_stats(equipos, partidos_grupo)
@@ -231,20 +194,12 @@ def _resolver_empate_h2h(equipos: list[str], partidos_grupo: list[dict]) -> list
             j += 1
         bloque = orden[i:j]
         if len(bloque) == len(equipos) or len(bloque) == 1:
-            # El enfrentamiento directo no separó a nadie (o ya está resuelto)
             resultado.append(bloque)
         else:
-            # Progreso parcial: reaplicar SOLO a este subconjunto
             resultado.extend(_resolver_empate_h2h(bloque, partidos_grupo))
         i = j
     return resultado
 def _criterios_globales(equipos: list[str], stats: dict) -> list[tuple[str, bool]]:
-    """Criterios 4-6: DG global, GF global, Fair Play (criterio 7, ranking FIFA, se omite).
-    Devuelve pares (equipo, sigue_empatado): 'sigue_empatado' solo es True si,
-    incluso tras estos tres criterios, dos o más equipos siguen teniendo
-    exactamente la misma terna (DG, GF, FairPlay) — ahí ya no hay forma
-    automática de deshacer el empate y hace falta el Ranking FIFA o resolverlo
-    a mano."""
     orden = sorted(
         equipos,
         key=lambda eq: (stats[eq]["DG"], stats[eq]["GF"], stats[eq]["FairPlay"]),
@@ -256,9 +211,6 @@ def _criterios_globales(equipos: list[str], stats: dict) -> list[tuple[str, bool
         for eq, terna in zip(orden, ternas)
     ]
 def clasificar_grupo(letra: str, matches: list[dict], stats: dict) -> list[dict]:
-    """Devuelve la tabla del grupo `letra` ordenada con criterios FIFA,
-    incluyendo PJ/PG/PE/PP/GF/GC/DG/Pts y 'empate_sin_resolver' si procede.
-    `stats` debe venir calculado SOLO con partidos de fase de grupos."""
     equipos = GRUPOS[letra]
     partidos_grupo = [
         p for p in matches
@@ -294,15 +246,6 @@ def clasificar_grupo(letra: str, matches: list[dict], stats: dict) -> list[dict]
             "empate_no_resuelto": posible_empate,
         })
     return resultado
-
-# ─────────────────────────────────────────────────────────────────────────
-# FASE DE GRUPOS: ¿YA HA TERMINADO?
-#   matches.json solo contiene partidos que YA se jugaron (el actualizador
-#   nunca precarga partidos futuros con marcador nulo), así que para saber
-#   si la fase de grupos ha terminado comparamos cuántos partidos de fase
-#   de grupos hay jugados contra cuántos se esperan en total (round-robin
-#   completo en los 12 grupos).
-# ─────────────────────────────────────────────────────────────────────────
 def _partidos_esperados_grupo(n_equipos: int) -> int:
     return n_equipos * (n_equipos - 1) // 2
 def fase_grupos_terminada(matches: list[dict]) -> bool:
@@ -312,23 +255,6 @@ def fase_grupos_terminada(matches: list[dict]) -> bool:
         if p.get("fase") == FASE_GRUPOS_TXT and jugado(p)
     )
     return jugados >= esperados
-
-# ─────────────────────────────────────────────────────────────────────────
-# MEJORES TERCEROS — quiénes de los 12 terceros de grupo pasan a
-# dieciseisavos (los 8 mejores). Mismos criterios que dentro de un grupo
-# cuando se agota el enfrentamiento directo (no aplica aquí, son equipos de
-# grupos distintos): Pts, DG, GF, Fair Play — y si DOS O MÁS equipos siguen
-# empatados en eso justo en la frontera de los 8 (es decir, el empate
-# afecta a quién pasa o no), se desempata por Ranking FIFA
-# (manual_overrides.json -> "ranking_fifa": {"España": 1, ...}, más bajo
-# es mejor). Si ese dato falta o también está repetido, el bloque entero
-# se marca "empate_no_resuelto" y, por prudencia, ninguno de esos equipos
-# cobra los 5 puntos de tercero hasta que se resuelva a mano.
-# Los empates que NO afectan a la frontera (p.ej. dos equipos empatados
-# pero ambos claramente dentro o ambos claramente fuera de los 8) no
-# necesitan desempate: todos los del bloque comparten el mismo resultado
-# de clasificación.
-# ─────────────────────────────────────────────────────────────────────────
 def _fila_tercero(eq: str, stats: dict, ranking_fifa: dict, clasifica: bool, empate: bool) -> dict:
     s = stats[eq]
     return {
@@ -340,22 +266,15 @@ def _fila_tercero(eq: str, stats: dict, ranking_fifa: dict, clasifica: bool, emp
         "empate_no_resuelto": empate,
     }
 def calcular_mejores_terceros(clasificaciones: dict, stats: dict, ranking_fifa: dict) -> tuple[set[str], list[dict]]:
-    """`stats` debe venir calculado SOLO con partidos de fase de grupos.
-    Devuelve (conjunto de equipos que clasifican, tabla ordenada de los 12
-    terceros con el detalle de cada uno)."""
     terceros = []
     for tabla in clasificaciones.values():
         fila3 = next((f for f in tabla if f["pos"] == 3), None)
         if fila3:
             terceros.append(fila3["equipo"])
-
     def terna(eq):
         s = stats[eq]
         return (s["Pts"], s["DG"], s["GF"], s["FairPlay"])
-
     orden = sorted(terceros, key=terna, reverse=True)
-
-    # Agrupar en bloques empatados en la terna (Pts, DG, GF, FairPlay)
     bloques = []
     i = 0
     while i < len(orden):
@@ -365,35 +284,23 @@ def calcular_mejores_terceros(clasificaciones: dict, stats: dict, ranking_fifa: 
             j += 1
         bloques.append(orden[i:j])
         i = j
-
     tabla = []
-    ocupadas = 0                       # plazas ya asignadas como "clasifica"
-    frontera_sin_resolver = False      # un bloque anterior cruzó la frontera y no se pudo desempatar
+    ocupadas = 0
+    frontera_sin_resolver = False
     for bloque in bloques:
         if frontera_sin_resolver:
-            # Cualquier equipo peor que un bloque ya irresoluble queda
-            # fuera con seguridad (es estrictamente peor en Pts/DG/GF/FP).
             for eq in bloque:
                 tabla.append(_fila_tercero(eq, stats, ranking_fifa, False, True))
             continue
-
         inicio, fin = ocupadas + 1, ocupadas + len(bloque)
-
         if fin <= N_TERCEROS_CLASIFICAN:
-            # Todo el bloque clasifica — el empate (si lo hay) es cosmético,
-            # no afecta a quién pasa.
             for eq in bloque:
                 tabla.append(_fila_tercero(eq, stats, ranking_fifa, True, len(bloque) > 1))
             ocupadas = fin
-
         elif inicio > N_TERCEROS_CLASIFICAN:
-            # Todo el bloque queda fuera, tampoco hace falta desempatar.
             for eq in bloque:
                 tabla.append(_fila_tercero(eq, stats, ranking_fifa, False, len(bloque) > 1))
-
         else:
-            # El bloque cruza la frontera de los 8: aquí el empate SÍ
-            # decide quién pasa. Intentamos resolverlo con Ranking FIFA.
             huecos_libres = N_TERCEROS_CLASIFICAN - ocupadas
             con_fifa = {eq: ranking_fifa[eq] for eq in bloque if eq in ranking_fifa}
             resoluble = (
@@ -401,25 +308,16 @@ def calcular_mejores_terceros(clasificaciones: dict, stats: dict, ranking_fifa: 
                 and len(set(con_fifa.values())) == len(bloque)
             )
             if resoluble:
-                orden_bloque = sorted(bloque, key=lambda eq: con_fifa[eq])  # menor = mejor
+                orden_bloque = sorted(bloque, key=lambda eq: con_fifa[eq])
                 for k, eq in enumerate(orden_bloque):
                     tabla.append(_fila_tercero(eq, stats, ranking_fifa, k < huecos_libres, False))
                 ocupadas = N_TERCEROS_CLASIFICAN
             else:
-                # Falta el dato de Ranking FIFA de alguno, o hay un empate
-                # también ahí: no hay forma automática de decidir. Nadie
-                # del bloque cobra los puntos hasta que se rellene/corrija
-                # "ranking_fifa" en manual_overrides.json.
                 for eq in bloque:
                     tabla.append(_fila_tercero(eq, stats, ranking_fifa, False, True))
                 frontera_sin_resolver = True
-
     pasan = {f["equipo"] for f in tabla if f["clasifica"]}
     return pasan, tabla
-
-# ─────────────────────────────────────────────────────────────────────────
-# BONUS POR POSICIÓN DE GRUPO Y POR RONDA ELIMINATORIA
-# ─────────────────────────────────────────────────────────────────────────
 def equipos_que_jugaron_fase(matches: list[dict], fase: str) -> set[str]:
     s = set()
     for p in matches:
@@ -428,10 +326,6 @@ def equipos_que_jugaron_fase(matches: list[dict], fase: str) -> set[str]:
             s.add(p["visitante"])
     return s
 def calcular_bonus_ronda(matches: list[dict]) -> dict:
-    """Devuelve, por equipo, un dict {clave_fase: puntos} — el bonus de
-    CADA ronda eliminatoria por separado, en vez de un único total
-    agregado, para que el desglose de la app pueda mostrar una fila por
-    ronda (Dieciseisavos, Octavos, Cuartos, Semifinal, Final)."""
     bonus = {eq: {fk: 0 for fk in FASES_KEYS.values()} for eq in TODOS_LOS_EQUIPOS}
     for fase, puntos in PUNTOS_BONUS_RONDA.items():
         fase_key = FASES_KEYS[fase]
@@ -441,13 +335,6 @@ def calcular_bonus_ronda(matches: list[dict]) -> dict:
             bonus[eq][fase_key] = puntos
     return bonus
 def calcular_bonus_grupo(matches: list[dict], clasificaciones: dict, mejores_terceros: set[str]) -> dict:
-    """Puntos por posición de grupo (1º/2º/3º/4º).
-    Mientras la fase de grupos no ha terminado, NADIE cobra todavía estos
-    puntos (las cuatro posiciones están a 0) — la clasificación de un
-    grupo a mitad de fase es provisional y no debe puntuar.
-    Una vez termina, 1º/2º/4º puntúan como siempre, y el 3º solo puntúa
-    si ese equipo está entre los 8 mejores terceros que pasan a
-    dieciseisavos (los otros 4 terceros se quedan en 0)."""
     bonus = {}
     if not fase_grupos_terminada(matches):
         for tabla in clasificaciones.values():
@@ -462,26 +349,17 @@ def calcular_bonus_grupo(matches: list[dict], clasificaciones: dict, mejores_ter
             else:
                 bonus[eq] = PUNTOS_POS_GRUPO.get(pos, 0)
     return bonus
+
 def calcular_puntos_totales(matches: list[dict], manual: dict):
-    """Devuelve (puntos_por_equipo, clasificaciones, tabla_mejores_terceros)."""
-    # Estadísticas de TODO el torneo — para el desglose total de puntos de
-    # la bolilla (goles, tarjetas, resultados... de cualquier fase).
     stats = calcular_stats_globales(matches)
-    # Estadísticas SOLO de fase de grupos — para clasificar grupos y para
-    # elegir a los mejores terceros (no deben contaminarse con goles o
-    # tarjetas de la eliminatoria, que es una fase posterior y ajena al
-    # grupo ya cerrado).
     partidos_grupos = [p for p in matches if p.get("fase") == FASE_GRUPOS_TXT]
     stats_grupos = calcular_stats_globales(partidos_grupos)
-
     clasificaciones = {letra: clasificar_grupo(letra, matches, stats_grupos) for letra in GRUPOS}
-
     ranking_fifa = manual.get("ranking_fifa", {})
     if fase_grupos_terminada(matches):
         mejores_terceros, tabla_terceros = calcular_mejores_terceros(clasificaciones, stats_grupos, ranking_fifa)
     else:
         mejores_terceros, tabla_terceros = set(), []
-
     bonus_grupo = calcular_bonus_grupo(matches, clasificaciones, mejores_terceros)
     bonus_ronda = calcular_bonus_ronda(matches)
     premios = manual.get("premios_finales", {})
@@ -527,11 +405,41 @@ def calcular_puntos_totales(matches: list[dict], manual: dict):
             fila[f"bonus_ronda_{fase_key}"] = b_ronda_fases.get(fase_key, 0)
         resultado[eq] = fila
     return resultado, clasificaciones, tabla_terceros
-# ─────────────────────────────────────────────────────────────────────────
-# CONSTRUCCIÓN DE data.json (lo que consume el dashboard móvil)
-# ─────────────────────────────────────────────────────────────────────────
+def _desglose_puntos_partido(gf: int, gc: int, ta: int, da: int, rd: int, pf: int, pp: int, pts_resultado: int) -> dict:
+    """Desglose de puntos fantasy que aporta UN equipo en UN partido concreto.
+    Usa exactamente las mismas constantes que calcular_puntos_totales, así que
+    sumando esto mismo partido a partido para un equipo se obtiene el mismo
+    total que sale en el ranking (gf/gc/tarjetas/penaltis + resultado del
+    partido). No incluye bonus de grupo, ronda, premio final ni goleador
+    porque esos no se asignan partido a partido, sino al final de una fase
+    o del torneo."""
+    d = {
+        "gf": gf * PUNTOS_GOL_FAVOR,
+        "gc": gc * PUNTOS_GOL_CONTRA,
+        "ta": ta * PUNTOS_TARJETA_AMARILLA,
+        "doblea": da * PUNTOS_DOBLE_AMARILLA,
+        "rd": rd * PUNTOS_ROJA_DIRECTA,
+        "penfall": pf * PUNTOS_PENALTI_FALLADO,
+        "penpar": pp * PUNTOS_PENALTI_PARADO,
+        "bonus_resultado": pts_resultado,
+    }
+    d["total"] = sum(d.values())
+    return d
 def _partido_resumen(p: dict) -> dict:
     j = jugado(p)
+    ta_l, da_l, rd_l = p.get("ta_local", 0), p.get("doblea_local", 0), p.get("rd_local", 0)
+    ta_v, da_v, rd_v = p.get("ta_visit", 0), p.get("doblea_visit", 0), p.get("rd_visit", 0)
+    pf_l, pp_l = p.get("penfall_local", 0), p.get("penpar_local", 0)
+    pf_v, pp_v = p.get("penfall_visit", 0), p.get("penpar_visit", 0)
+    puntos_local = puntos_visit = None
+    if j:
+        res = resultado_local(p)
+        pts_res_l = {"V": PUNTOS_PARTIDO_GANADO, "E": PUNTOS_PARTIDO_EMPATADO, "L": PUNTOS_PARTIDO_PERDIDO}[res]
+        pts_res_v = {"V": PUNTOS_PARTIDO_PERDIDO, "E": PUNTOS_PARTIDO_EMPATADO, "L": PUNTOS_PARTIDO_GANADO}[res]
+        gc_l = p.get("gc_local", p.get("gf_visit", 0))
+        gc_v = p.get("gc_visit", p.get("gf_local", 0))
+        puntos_local = _desglose_puntos_partido(p.get("gf_local", 0), gc_l, ta_l, da_l, rd_l, pf_l, pp_l, pts_res_l)
+        puntos_visit = _desglose_puntos_partido(p.get("gf_visit", 0), gc_v, ta_v, da_v, rd_v, pf_v, pp_v, pts_res_v)
     return {
         "id": p["id"],
         "fecha": p.get("fecha"),
@@ -541,23 +449,24 @@ def _partido_resumen(p: dict) -> dict:
         "visitante": p["visitante"],
         "gf_local": p.get("gf_local"),
         "gf_visit": p.get("gf_visit"),
-        "ta_local": p.get("ta_local", 0), "doblea_local": p.get("doblea_local", 0), "rd_local": p.get("rd_local", 0),
-        "ta_visit": p.get("ta_visit", 0), "doblea_visit": p.get("doblea_visit", 0), "rd_visit": p.get("rd_visit", 0),
+        "ta_local": ta_l, "doblea_local": da_l, "rd_local": rd_l,
+        "ta_visit": ta_v, "doblea_visit": da_v, "rd_visit": rd_v,
+        "penfall_local": pf_l, "penpar_local": pp_l,
+        "penfall_visit": pf_v, "penpar_visit": pp_v,
         "pen_tanda_local": p.get("pen_tanda_local"),
         "pen_tanda_visit": p.get("pen_tanda_visit"),
         "jugado": j,
+        "puntos_local": puntos_local,
+        "puntos_visit": puntos_visit,
     }
 def generar_data_json(matches: list[dict], manual: dict) -> dict:
     puntos, clasificaciones, tabla_terceros = calcular_puntos_totales(matches, manual)
-    # --- Ranking general (ordenado, con posición ya calculada) ---
     ranking = sorted(puntos.values(), key=lambda d: d["puntos_totales"], reverse=True)
     for i, fila in enumerate(ranking, start=1):
         fila["pos"] = i
-    # --- Partidos jugados (orden cronológico) ---
     jugados = [p for p in matches if jugado(p)]
     jugados.sort(key=lambda p: (p.get("fecha") or "", p["id"]))
     partidos_jugados = [_partido_resumen(p) for p in jugados]
-    # --- Grupos: tabla + sus partidos (jugados y pendientes) ---
     grupos_out = {}
     for letra in GRUPOS:
         partidos_del_grupo = [
@@ -570,7 +479,6 @@ def generar_data_json(matches: list[dict], manual: dict) -> dict:
             "tabla": clasificaciones[letra],
             "partidos": partidos_del_grupo,
         }
-    # --- Eliminatoria: partidos por fase ---
     eliminacion_out = {}
     for fase in FASES_ELIMINACION:
         partidos_fase = [
@@ -578,7 +486,6 @@ def generar_data_json(matches: list[dict], manual: dict) -> dict:
         ]
         partidos_fase.sort(key=lambda p: (p.get("fecha") or "", p["id"]))
         eliminacion_out[fase] = partidos_fase
-    # --- Bombos con puntos actuales, ordenados de mayor a menor dentro de cada bombo ---
     bombos_out = {}
     for nombre, equipos in BOMBOS.items():
         fila = sorted(
@@ -602,10 +509,6 @@ def generar_data_json(matches: list[dict], manual: dict) -> dict:
         "premios_finales": manual.get("premios_finales", {}),
         "goleador_equipo": manual.get("goleador_equipo"),
     }
-
-# ─────────────────────────────────────────────────────────────────────────
-# IO helpers
-# ─────────────────────────────────────────────────────────────────────────
 def cargar_json(path: Path, default):
     if not Path(path).exists():
         return default
