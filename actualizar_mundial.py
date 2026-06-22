@@ -373,8 +373,8 @@ def parsear_bloque(bloque: str, fase_txt: str, grupo_letra: str) -> dict | None:
             gf2 = int(re.search(r"\d+", g2_raw).group()) if re.search(r"\d+", g2_raw) else None
         except (AttributeError, ValueError):
             pass
-    if gf1 is None or gf2 is None:
-        return None
+    #if gf1 is None or gf2 is None:
+    #    return None
 
     fecha_raw = _campo(bloque, "fecha") or _campo(bloque, "date") or ""
     m_tpl_fecha = re.search(r"\{\{\s*fecha\s*\|\s*(\d{1,2})\s*\|\s*(\d{1,2})\s*\|\s*(\d{4})", fecha_raw, re.IGNORECASE)
