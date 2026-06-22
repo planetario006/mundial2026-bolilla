@@ -86,10 +86,13 @@
   details.rank-row{padding:0;}
   details.rank-row > summary{padding:11px 12px;}
   .breakdown{padding:0 14px 14px; font-size:12.5px; color:var(--chalk-dim);}
-  .breakdown-grid{display:grid; grid-template-columns:1fr auto; gap:6px 10px; padding-top:8px; border-top:1px solid var(--line);}
-  .breakdown-grid div:nth-child(odd){color:var(--chalk-dim);}
-  .breakdown-grid div:nth-child(even){text-align:right; font-family:'JetBrains Mono',monospace; color:var(--chalk);}
-  .breakdown-grid div.excluido{opacity:0.32; text-decoration:line-through; text-decoration-color:var(--chalk-dim);}
+  .breakdown-hint{font-size:10px; color:var(--chalk-dim); text-align:center; padding-top:8px;}
+  .breakdown-h{display:flex; gap:16px; overflow-x:auto; -webkit-overflow-scrolling:touch; padding:8px 2px 4px; border-top:1px solid var(--line); scrollbar-width:thin; scrollbar-color:var(--line) transparent;}
+  .breakdown-h-item{display:flex; flex-direction:column; align-items:center; gap:5px; flex-shrink:0; min-width:46px;}
+  .breakdown-h-item .lbl{font-size:9.5px; color:var(--chalk-dim); text-align:center; white-space:nowrap; letter-spacing:0.02em;}
+  .breakdown-h-item .val{font-family:'JetBrains Mono',monospace; font-weight:700; font-size:13px; color:var(--chalk); white-space:nowrap;}
+  .breakdown-h-item.excluido{opacity:0.32;}
+  .breakdown-h-item.excluido .val{text-decoration:line-through; text-decoration-color:var(--chalk-dim);}
   .breakdown-total{margin-top:9px; padding-top:9px; border-top:1px dashed var(--line); display:flex; justify-content:space-between; align-items:center; font-size:12.5px; color:var(--chalk-dim); font-weight:600;}
   .breakdown-total span{font-family:'JetBrains Mono',monospace; font-weight:700;}
   .breakdown-total span.pos{color:var(--win);} .breakdown-total span.neg{color:var(--loss);} .breakdown-total span.zero{color:var(--chalk-dim);}
@@ -156,7 +159,9 @@
   .pillbar::-webkit-scrollbar{display:none;}
   .pill{flex-shrink:0; padding:7px 14px; border-radius:20px; background:var(--turf); border:1px solid var(--line); color:var(--chalk-dim); font-family:'Oswald',sans-serif; font-size:13px; letter-spacing:0.04em; cursor:pointer;}
   .pill.active{background:var(--amber); border-color:var(--amber); color:#1a1304; font-weight:600;}
-  table.standings{width:100%; border-collapse:collapse; font-size:12.5px;}
+  .standings-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  table.standings{width:100%; min-width:460px; border-collapse:collapse; font-size:12.5px;}
+  table.standings td.team, table.standings th:first-child{position:sticky; left:0; background:var(--turf); z-index:2; box-shadow:4px 0 6px -4px rgba(0,0,0,0.45);}
   table.standings th{font-weight:500; color:var(--chalk-dim); font-size:10.5px; text-transform:uppercase; letter-spacing:0.04em; padding:8px 6px; text-align:center; border-bottom:1px solid var(--line);}
   table.standings th:first-child, table.standings td:first-child{text-align:left; padding-left:12px;}
   table.standings td{padding:9px 6px; text-align:center; font-family:'JetBrains Mono',monospace;}
@@ -279,16 +284,18 @@
   /* Bronze match row */
   .bracket-bronze-row{
     display:flex; min-width:max-content;
-    align-items:center; justify-content:center;
-    margin-top:8px; gap:8px;
+    margin-top:10px;
+  }
+  .bc-bronze-col{
+    width:72px; flex-shrink:0;
+    display:flex; flex-direction:column; align-items:center; gap:6px;
   }
   .bronze-label{
-    font-family:'Oswald',sans-serif; font-size:8px;
-    letter-spacing:0.08em; color:var(--chalk-dim); text-transform:uppercase;
+    font-family:'Oswald',sans-serif; font-size:8.5px;
+    letter-spacing:0.08em; color:var(--amber); text-transform:uppercase;
     white-space:nowrap;
   }
-  .bc-bronze{width:100px;}
-  .bc-bronze .bc-card{border-color:rgba(169,184,172,0.55);}
+  .bc-bronze-col .bc-card{width:100%; border-color:var(--amber-dim); box-shadow:0 0 8px rgba(255,182,39,0.15);}
   /* Phase selector section */
   .elim-phase-section{margin-top:20px;}
 </style>
@@ -509,12 +516,16 @@ function rankingListaHTML(equipos, esDefault){
         <div class="scorebox ${scoreClass(f._total)}">${fmtPts(f._total)}</div>
       </summary>
       <div class="breakdown">
-        <div class="breakdown-grid">
+        <div class="breakdown-h">
           ${CATEGORIAS.map(c=>{
             const excluido = !filtroSel.has(c.key);
-            return `<div class="${excluido?'excluido':''}">${c.icon} ${c.label}</div><div class="${excluido?'excluido':''}">${fmtPts(c.calc(f))}</div>`;
+            return `<div class="breakdown-h-item ${excluido?'excluido':''}" title="${c.label}">
+              <div class="lbl">${c.icon} ${c.short}</div>
+              <div class="val">${fmtPts(c.calc(f))}</div>
+            </div>`;
           }).join('')}
         </div>
+        <div class="breakdown-hint">⟷ desliza para ver todo el desglose</div>
         ${esDefault ? '' : `<div class="breakdown-total">Total filtrado <span class="${scoreClass(f._total)}">${fmtPts(f._total)}</span></div>`}
       </div>
     </details>`;
@@ -660,9 +671,10 @@ function renderGrupos(){
       ? `<div class="card" style="margin-top:10px;">${g.partidos.map(matchRow).join('')}</div>`
       : `<div class="empty-note">Aún no se ha jugado ningún partido de este grupo.</div>`;
     $('#grupo-contenido').innerHTML = `
-      <div class="card">
+      <div class="table-scroll-hint">⟷ desliza para ver toda la tabla</div>
+      <div class="card standings-wrap">
         <table class="standings">
-          <thead><tr><th>Equipo</th><th>PJ</th><th>PG</th><th>PE</th><th>PP</th><th>GF</th><th>GC</th><th>DG</th><th>Pts</th></tr></thead>
+          <thead><tr><th>Equipo</th><th>PJ</th><th>PG</th><th>PE</th><th>PP</th><th>GF</th><th>GC</th><th>DG</th><th>Pts</th><th>Total</th></tr></thead>
           <tbody>${filasTabla}</tbody>
         </table>
       </div>
@@ -766,16 +778,16 @@ function bracketHTML(elim){
     Array(n).fill('<div class="bc-conn-pair"></div>').join('') +
     `</div>`;
 
-  // Spacer columns to align bronze match with Final column
-  // Left side: 4 rounds × (70+16) - 16 connector + 70 round = 4*(70+16) + 70 wait...
-  // Col widths: r32(70) c(16) r16(70) c(16) qf(70) c(16) sf(70) c(16) final(72) c(16) sfr(70) c(16) qfr(70) c(16) r16r(70) c(16) r32r(70)
-  // Left spacer to align bronze under Final: 4*(70+16) = 344px
+  // Spacer to align bronze match exactly under the Final column.
+  // Left side before Final: 4 rounds × (70 round width + 16 connector width) = 344px
   const leftSpacer = `<div style="width:344px;flex-shrink:0;"></div>`;
   const bronzeHTML = `
     <div class="bracket-bronze-row">
       ${leftSpacer}
-      <span class="bronze-label">3er y 4º</span>
-      <div class="bc-bronze">${bcCard(bronze[0])}</div>
+      <div class="bc-bronze-col">
+        <span class="bronze-label">3er y 4º</span>
+        ${bcCard(bronze[0])}
+      </div>
     </div>`;
 
   return `<div class="bracket-tree">
