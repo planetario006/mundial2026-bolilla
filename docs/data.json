@@ -2940,7 +2940,7 @@
         "ta": -6,
         "doblea": 0,
         "rd": 0,
-        "penfall": 1,
+        "penfall": -10,
         "penpar": 0,
         "bonus_resultado": 5,
         "total": -9
@@ -2952,7 +2952,7 @@
         "doblea": 0,
         "rd": 0,
         "penfall": 0,
-        "penpar": 1,
+        "penpar": 5,
         "bonus_resultado": -8,
         "total": -15
       }
