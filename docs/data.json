@@ -67,7 +67,7 @@
       "bonus_grupo": 0,
       "premio_final": 0,
       "goleador": 0,
-      "puntos_totales": 9,
+      "puntos_totales": -1,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -435,7 +435,7 @@
       "bonus_grupo": 0,
       "premio_final": 0,
       "goleador": 0,
-      "puntos_totales": -6,
+      "puntos_totales": -9,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -688,7 +688,7 @@
       "bonus_grupo": 0,
       "premio_final": 0,
       "goleador": 0,
-      "puntos_totales": -18,
+      "puntos_totales": -13,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -2903,13 +2903,13 @@
       "puntos_visit": {
         "gf": 2,
         "gc": -6,
-        "ta": -3,
+        "ta": -6,
         "doblea": 0,
         "rd": 0,
         "penfall": 0,
         "penpar": 0,
         "bonus_resultado": 2,
-        "total": -5
+        "total": -8
       }
     },
     {
@@ -2940,10 +2940,10 @@
         "ta": -6,
         "doblea": 0,
         "rd": 0,
-        "penfall": 0,
+        "penfall": 1,
         "penpar": 0,
         "bonus_resultado": 5,
-        "total": 1
+        "total": -9
       },
       "puntos_visit": {
         "gf": 0,
@@ -2952,9 +2952,9 @@
         "doblea": 0,
         "rd": 0,
         "penfall": 0,
-        "penpar": 0,
+        "penpar": 1,
         "bonus_resultado": -8,
-        "total": -20
+        "total": -15
       }
     },
     {
@@ -6988,7 +6988,7 @@
       },
       {
         "equipo": "Argentina",
-        "puntos": 9
+        "puntos": -1
       },
       {
         "equipo": "España",
@@ -7118,7 +7118,7 @@
       },
       {
         "equipo": "Austria",
-        "puntos": -18
+        "puntos": -13
       },
       {
         "equipo": "Australia",
@@ -7170,7 +7170,7 @@
       },
       {
         "equipo": "Cabo Verde",
-        "puntos": -6
+        "puntos": -9
       },
       {
         "equipo": "Jordania",
