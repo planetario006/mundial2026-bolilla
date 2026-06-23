@@ -6987,16 +6987,16 @@
         "puntos": 13
       },
       {
-        "equipo": "Argentina",
-        "puntos": -1
-      },
-      {
         "equipo": "España",
         "puntos": 8
       },
       {
         "equipo": "Inglaterra",
         "puntos": 3
+      },
+      {
+        "equipo": "Argentina",
+        "puntos": -1
       },
       {
         "equipo": "Brasil",
@@ -7113,12 +7113,12 @@
         "puntos": -4
       },
       {
-        "equipo": "Costa de Marfil",
-        "puntos": -16
-      },
-      {
         "equipo": "Austria",
         "puntos": -13
+      },
+      {
+        "equipo": "Costa de Marfil",
+        "puntos": -16
       },
       {
         "equipo": "Australia",
