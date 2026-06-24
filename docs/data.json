@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-06-24T21:54:44+00:00",
+    "actualizado": "2026-06-24T21:59:37+00:00",
     "total_partidos_jugados": 50,
     "total_partidos": 91,
     "fase_grupos_terminada": false
@@ -927,29 +927,6 @@
       "pos": 40
     },
     {
-      "equipo": "Bosnia",
-      "grupo": "B",
-      "bombo": "Bombo 5",
-      "gf": 5,
-      "gc": 6,
-      "ta": 5,
-      "doblea": 0,
-      "rd": 1,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": -1,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": -41,
-      "bonus_ronda_dieciseisavos": 0,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 41
-    },
-    {
       "equipo": "Curazao",
       "grupo": "E",
       "bombo": "Bombo 8",
@@ -970,7 +947,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 42
+      "pos": 41
     },
     {
       "equipo": "Irak",
@@ -993,7 +970,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 43
+      "pos": 42
     },
     {
       "equipo": "Paraguay",
@@ -1011,6 +988,29 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -43,
+      "bonus_ronda_dieciseisavos": 0,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 43
+    },
+    {
+      "equipo": "Bosnia",
+      "grupo": "B",
+      "bombo": "Bombo 5",
+      "gf": 5,
+      "gc": 6,
+      "ta": 6,
+      "doblea": 0,
+      "rd": 1,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": -1,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": -44,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -1093,7 +1093,7 @@
       "bombo": "Bombo 7",
       "gf": 2,
       "gc": 10,
-      "ta": 3,
+      "ta": 4,
       "doblea": 0,
       "rd": 2,
       "penfall": 0,
@@ -1102,7 +1102,7 @@
       "bonus_grupo": 0,
       "premio_final": 0,
       "goleador": 0,
-      "puntos_totales": -75,
+      "puntos_totales": -78,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -3376,10 +3376,10 @@
       "visitante": "Catar",
       "gf_local": 3,
       "gf_visit": 1,
-      "ta_local": 0,
+      "ta_local": 1,
       "doblea_local": 0,
       "rd_local": 0,
-      "ta_visit": 0,
+      "ta_visit": 1,
       "doblea_visit": 0,
       "rd_visit": 0,
       "penfall_local": 0,
@@ -3392,24 +3392,24 @@
       "puntos_local": {
         "gf": 3,
         "gc": -3,
-        "ta": 0,
+        "ta": -3,
         "doblea": 0,
         "rd": 0,
         "penfall": 0,
         "penpar": 0,
         "bonus_resultado": 5,
-        "total": 5
+        "total": 2
       },
       "puntos_visit": {
         "gf": 1,
         "gc": -9,
-        "ta": 0,
+        "ta": -3,
         "doblea": 0,
         "rd": 0,
         "penfall": 0,
         "penpar": 0,
         "bonus_resultado": -8,
-        "total": -16
+        "total": -19
       }
     }
   ],
@@ -4016,10 +4016,10 @@
           "visitante": "Catar",
           "gf_local": 3,
           "gf_visit": 1,
-          "ta_local": 0,
+          "ta_local": 1,
           "doblea_local": 0,
           "rd_local": 0,
-          "ta_visit": 0,
+          "ta_visit": 1,
           "doblea_visit": 0,
           "rd_visit": 0,
           "penfall_local": 0,
@@ -4032,24 +4032,24 @@
           "puntos_local": {
             "gf": 3,
             "gc": -3,
-            "ta": 0,
+            "ta": -3,
             "doblea": 0,
             "rd": 0,
             "penfall": 0,
             "penpar": 0,
             "bonus_resultado": 5,
-            "total": 5
+            "total": 2
           },
           "puntos_visit": {
             "gf": 1,
             "gc": -9,
-            "ta": 0,
+            "ta": -3,
             "doblea": 0,
             "rd": 0,
             "penfall": 0,
             "penpar": 0,
             "bonus_resultado": -8,
-            "total": -16
+            "total": -19
           }
         }
       ]
@@ -7680,12 +7680,12 @@
         "puntos": -34
       },
       {
-        "equipo": "Bosnia",
-        "puntos": -41
-      },
-      {
         "equipo": "Paraguay",
         "puntos": -43
+      },
+      {
+        "equipo": "Bosnia",
+        "puntos": -44
       }
     ],
     "Bombo 6": [
@@ -7737,7 +7737,7 @@
       },
       {
         "equipo": "Catar",
-        "puntos": -75
+        "puntos": -78
       }
     ],
     "Bombo 8": [
