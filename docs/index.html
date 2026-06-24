@@ -83,16 +83,13 @@
   .rank-team{flex:1; min-width:0;}
   .rank-team .name{font-weight:600; font-size:15px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
   .rank-team .tags{font-size:11px; color:var(--chalk-dim); margin-top:1px;}
-  details.rank-row{padding:0; display:block;}
+  details.rank-row{padding:0;}
   details.rank-row > summary{padding:11px 12px;}
   .breakdown{padding:0 14px 14px; font-size:12.5px; color:var(--chalk-dim);}
-  .breakdown-hint{font-size:10px; color:var(--chalk-dim); text-align:center; padding-top:8px;}
-  .breakdown-h{display:flex; gap:16px; overflow-x:auto; -webkit-overflow-scrolling:touch; padding:8px 2px 4px; border-top:1px solid var(--line); scrollbar-width:thin; scrollbar-color:var(--line) transparent;}
-  .breakdown-h-item{display:flex; flex-direction:column; align-items:center; gap:5px; flex-shrink:0; min-width:46px;}
-  .breakdown-h-item .lbl{font-size:9.5px; color:var(--chalk-dim); text-align:center; white-space:nowrap; letter-spacing:0.02em;}
-  .breakdown-h-item .val{font-family:'JetBrains Mono',monospace; font-weight:700; font-size:13px; color:var(--chalk); white-space:nowrap;}
-  .breakdown-h-item.excluido{opacity:0.32;}
-  .breakdown-h-item.excluido .val{text-decoration:line-through; text-decoration-color:var(--chalk-dim);}
+  .breakdown-grid{display:grid; grid-template-columns:1fr auto; gap:6px 10px; padding-top:8px; border-top:1px solid var(--line);}
+  .breakdown-grid div:nth-child(odd){color:var(--chalk-dim);}
+  .breakdown-grid div:nth-child(even){text-align:right; font-family:'JetBrains Mono',monospace; color:var(--chalk);}
+  .breakdown-grid div.excluido{opacity:0.32; text-decoration:line-through; text-decoration-color:var(--chalk-dim);}
   .breakdown-total{margin-top:9px; padding-top:9px; border-top:1px dashed var(--line); display:flex; justify-content:space-between; align-items:center; font-size:12.5px; color:var(--chalk-dim); font-weight:600;}
   .breakdown-total span{font-family:'JetBrains Mono',monospace; font-weight:700;}
   .breakdown-total span.pos{color:var(--win);} .breakdown-total span.neg{color:var(--loss);} .breakdown-total span.zero{color:var(--chalk-dim);}
@@ -127,6 +124,7 @@
   .ranking-table td.total-cell{font-weight:700;}
   .ranking-table tbody tr:last-child td{border-bottom:none;}
   .ranking-table .rank-cell.top3{color:var(--amber); font-weight:700;}
+
   .tag{display:inline-block; background:var(--turf-soft); border:1px solid var(--line); border-radius:5px; padding:1px 6px; font-size:10.5px; color:var(--chalk-dim); margin-right:5px;}
   /* ---------- Partidos ---------- */
   .date-head{font-size:11.5px; color:var(--chalk-dim); letter-spacing:0.08em; margin:16px 2px 7px; text-transform:uppercase;}
@@ -138,30 +136,12 @@
   .meta-fase{text-align:center; font-size:10px;}
   .meta-cards-left{text-align:left;}
   .meta-cards-right{text-align:right;}
-  details.match-item{display:block;}
-  details.match-item summary{list-style:none; cursor:pointer; display:block;}
-  details.match-item summary::-webkit-details-marker{display:none;}
-  .match-item + .match-item{border-top:1px solid var(--line);}
-  .match-points-row{display:flex; align-items:center; justify-content:center; gap:10px; padding:2px 12px 11px;}
-  .match-points-row .scorebox{font-size:12px; padding:3px 8px;}
-  .match-points-hint{font-size:9.5px; color:var(--chalk-dim); letter-spacing:0.03em; display:flex; align-items:center; gap:3px;}
-  .match-points-hint svg{width:10px; height:10px; stroke:var(--chalk-dim); fill:none; stroke-width:2; transition:transform .2s ease;}
-  details.match-item[open] .match-points-hint svg{transform:rotate(180deg);}
-  .match-breakdown{padding:0 12px 13px;}
-  table.match-breakdown-table{border-collapse:collapse; font-family:'JetBrains Mono',monospace; font-size:11px; white-space:nowrap; width:100%;}
-  .match-breakdown-table th, .match-breakdown-table td{padding:7px 7px; text-align:center; border-bottom:1px solid var(--line);}
-  .match-breakdown-table thead th{font-family:'Inter',sans-serif; font-size:9px; color:var(--chalk-dim); text-transform:uppercase; letter-spacing:0.02em; font-weight:700;}
-  .match-breakdown-table td.team-cell{font-family:'Inter',sans-serif; font-weight:600; text-align:left; font-size:11.5px; padding-left:8px; white-space:normal;}
-  .match-breakdown-table tbody tr:last-child td{border-bottom:none;}
-  .match-breakdown-table td.total-cell{font-weight:700;}
   /* ---------- Pills (grupos / fases) ---------- */
   .pillbar{display:flex; gap:7px; overflow-x:auto; padding:2px 2px 4px; scrollbar-width:none;}
   .pillbar::-webkit-scrollbar{display:none;}
   .pill{flex-shrink:0; padding:7px 14px; border-radius:20px; background:var(--turf); border:1px solid var(--line); color:var(--chalk-dim); font-family:'Oswald',sans-serif; font-size:13px; letter-spacing:0.04em; cursor:pointer;}
   .pill.active{background:var(--amber); border-color:var(--amber); color:#1a1304; font-weight:600;}
-  .standings-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch;}
-  table.standings{width:100%; min-width:460px; border-collapse:collapse; font-size:12.5px;}
-  table.standings td.team, table.standings th:first-child{position:sticky; left:0; background:var(--turf); z-index:2; box-shadow:4px 0 6px -4px rgba(0,0,0,0.45);}
+  table.standings{width:100%; border-collapse:collapse; font-size:12.5px;}
   table.standings th{font-weight:500; color:var(--chalk-dim); font-size:10.5px; text-transform:uppercase; letter-spacing:0.04em; padding:8px 6px; text-align:center; border-bottom:1px solid var(--line);}
   table.standings th:first-child, table.standings td:first-child{text-align:left; padding-left:12px;}
   table.standings td{padding:9px 6px; text-align:center; font-family:'JetBrains Mono',monospace;}
@@ -284,18 +264,16 @@
   /* Bronze match row */
   .bracket-bronze-row{
     display:flex; min-width:max-content;
-    margin-top:10px;
-  }
-  .bc-bronze-col{
-    width:72px; flex-shrink:0;
-    display:flex; flex-direction:column; align-items:center; gap:6px;
+    align-items:center; justify-content:center;
+    margin-top:8px; gap:8px;
   }
   .bronze-label{
-    font-family:'Oswald',sans-serif; font-size:8.5px;
-    letter-spacing:0.08em; color:var(--amber); text-transform:uppercase;
+    font-family:'Oswald',sans-serif; font-size:8px;
+    letter-spacing:0.08em; color:var(--chalk-dim); text-transform:uppercase;
     white-space:nowrap;
   }
-  .bc-bronze-col .bc-card{width:100%; border-color:var(--amber-dim); box-shadow:0 0 8px rgba(255,182,39,0.15);}
+  .bc-bronze{width:100px;}
+  .bc-bronze .bc-card{border-color:rgba(169,184,172,0.55);}
   /* Phase selector section */
   .elim-phase-section{margin-top:20px;}
 </style>
@@ -335,6 +313,7 @@
     Bombos
   </button>
 </nav>
+
 <script>
 const $ = (sel, el=document) => el.querySelector(sel);
 const $$ = (sel, el=document) => Array.from(el.querySelectorAll(sel));
@@ -365,19 +344,6 @@ const CATEGORIAS = [
   { key:'goleador',        label:'Máximo goleador',      short:'GOL', icon:'👟', calc:f=>f.goleador },
 ];
 let filtroSel = new Set(CATEGORIAS.map(c=>c.key));   // por defecto: todas activas
-// Subconjunto de conceptos que aplican a UN partido (sin posición de grupo,
-// rondas, premios ni goleador, que no se asignan partido a partido).
-// Coincide con las claves de puntos_local/puntos_visit que manda data.json.
-const MATCH_CATEGORIAS = [
-  { key:'gf',              label:'Goles a favor',       short:'GF',  icon:'⚽' },
-  { key:'gc',              label:'Goles en contra',     short:'GC',  icon:'🥅' },
-  { key:'ta',              label:'Tarjetas amarillas',  short:'TA',  icon:'🟨' },
-  { key:'doblea',          label:'2ª amarilla',         short:'2A',  icon:'🟧' },
-  { key:'rd',               label:'Roja directa',        short:'RD',  icon:'🟥' },
-  { key:'penfall',         label:'Penaltis fallados',   short:'PF',  icon:'❌' },
-  { key:'penpar',          label:'Penaltis parados',    short:'PP',  icon:'🧤' },
-  { key:'bonus_resultado', label:'Resultado del partido', short:'RES', icon:'🏁' },
-];
 function scoreClass(n){
   if(n > 0) return 'pos';
   if(n < 0) return 'neg';
@@ -516,16 +482,12 @@ function rankingListaHTML(equipos, esDefault){
         <div class="scorebox ${scoreClass(f._total)}">${fmtPts(f._total)}</div>
       </summary>
       <div class="breakdown">
-        <div class="breakdown-h">
+        <div class="breakdown-grid">
           ${CATEGORIAS.map(c=>{
             const excluido = !filtroSel.has(c.key);
-            return `<div class="breakdown-h-item ${excluido?'excluido':''}" title="${c.label}">
-              <div class="lbl">${c.icon} ${c.short}</div>
-              <div class="val">${fmtPts(c.calc(f))}</div>
-            </div>`;
+            return `<div class="${excluido?'excluido':''}">${c.icon} ${c.label}</div><div class="${excluido?'excluido':''}">${fmtPts(c.calc(f))}</div>`;
           }).join('')}
         </div>
-        <div class="breakdown-hint">⟷ desliza para ver todo el desglose</div>
         ${esDefault ? '' : `<div class="breakdown-total">Total filtrado <span class="${scoreClass(f._total)}">${fmtPts(f._total)}</span></div>`}
       </div>
     </details>`;
@@ -554,6 +516,7 @@ function rankingTablaHTML(equipos, esDefault){
     </div>
   `;
 }
+
 function renderPartidos(){
   const el = $('#view-partidos');
   if(!DATA.partidos.length){
@@ -582,69 +545,19 @@ function matchRow(p){
     if(rd) s += `🟥${rd>1?rd:''} `;
     return s;
   };
-  const golesLocal = (p.gf_local !== null) ? p.gf_local : "";
-  const golesVisitante = (p.gf_visit !== null) ? p.gf_visit : "";
-  
-  const displayScore = `${golesLocal} - ${golesVisitante}`;
-  
-  const cabecera = `
-      <div class="match-row">
-        <div class="match-team">${p.local}</div>
-        <div class="match-score">
-          <span class="scorebox amber">${displayScore}</span>
-        </div>
-        <div class="match-team right">${p.visitante}</div>
-      </div>
-      <div class="match-meta">
-        <div class="meta-cards-left">${tarjetas(true)}</div>
-        <div class="meta-fase"><span class="tag">${faseTxt}</span></div>
-        <div class="meta-cards-right">${tarjetas(false)}</div>
-      </div>
-  `;
-  // Si el partido no se ha jugado, o el data.json todavía no trae el
-  // desglose de puntos (versión antigua de mundial_core.py), se muestra
-  // igual que antes, sin la parte desplegable.
-  if(!p.jugado || !p.puntos_local || !p.puntos_visit){
-    return `<div class="match-item">${cabecera}</div>`;
-  }
-  const pl = p.puntos_local, pv = p.puntos_visit;
-  const filaTabla = (nombre, pts) => `
-    <tr>
-      <td class="team-cell">${nombre}</td>
-      ${MATCH_CATEGORIAS.map(c=>`<td>${fmtPts(pts[c.key])}</td>`).join('')}
-      <td class="total-cell ${scoreClass(pts.total)}">${fmtPts(pts.total)}</td>
-    </tr>`;
   return `
-    <details class="match-item">
-      <summary>
-        ${cabecera}
-        <div class="match-points-row">
-          <span class="scorebox ${scoreClass(pl.total)}" style="min-width:auto;">${fmtPts(pl.total)}</span>
-          <span class="match-points-hint">
-            puntos del partido
-            <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
-          </span>
-          <span class="scorebox ${scoreClass(pv.total)}" style="min-width:auto;">${fmtPts(pv.total)}</span>
-        </div>
-      </summary>
-      <div class="match-breakdown">
-        <div class="table-wrap">
-          <table class="match-breakdown-table">
-            <thead>
-              <tr>
-                <th style="text-align:left;">Equipo</th>
-                ${MATCH_CATEGORIAS.map(c=>`<th title="${c.label}">${c.short}</th>`).join('')}
-                <th>TOTAL</th>
-              </tr>
-            </thead>
-            <tbody>
-              ${filaTabla(p.local, pl)}
-              ${filaTabla(p.visitante, pv)}
-            </tbody>
-          </table>
-        </div>
+    <div class="match-row">
+      <div class="match-team">${p.local}</div>
+      <div class="match-score">
+        <span class="scorebox amber">${p.gf_local} - ${p.gf_visit}</span>
       </div>
-    </details>
+      <div class="match-team right">${p.visitante}</div>
+    </div>
+    <div class="match-meta">
+      <div class="meta-cards-left">${tarjetas(true)}</div>
+      <div class="meta-fase"><span class="tag">${faseTxt}</span></div>
+      <div class="meta-cards-right">${tarjetas(false)}</div>
+    </div>
   `;
 }
 
@@ -671,10 +584,9 @@ function renderGrupos(){
       ? `<div class="card" style="margin-top:10px;">${g.partidos.map(matchRow).join('')}</div>`
       : `<div class="empty-note">Aún no se ha jugado ningún partido de este grupo.</div>`;
     $('#grupo-contenido').innerHTML = `
-      <div class="table-scroll-hint">⟷ desliza para ver toda la tabla</div>
-      <div class="card standings-wrap">
+      <div class="card">
         <table class="standings">
-          <thead><tr><th>Equipo</th><th>PJ</th><th>PG</th><th>PE</th><th>PP</th><th>GF</th><th>GC</th><th>DG</th><th>Pts</th><th>Total</th></tr></thead>
+          <thead><tr><th>Equipo</th><th>PJ</th><th>PG</th><th>PE</th><th>PP</th><th>GF</th><th>GC</th><th>DG</th><th>Pts</th></tr></thead>
           <tbody>${filasTabla}</tbody>
         </table>
       </div>
@@ -702,21 +614,32 @@ function renderGrupos(){
 
 /* ===================== BRACKET HELPERS ===================== */
 const PAIS_ISO = {
-  // === Correcciones de consistencia con NOMBRE_MAP ===
-  'Chequia': 'cz',
-  'EE.UU.': 'us',
-  'R. D. Congo': 'cd',
-  'Bosnia': 'ba',
-  'Arabia Saudí': 'sa',
-  'Catar': 'qa',
-
-  'México': 'mx','Canadá': 'ca','Estados Unidos': 'us',
-  'Argentina': 'ar','Brasil': 'br','Colombia': 'co','Ecuador': 'ec','Paraguay': 'py','Uruguay': 'uy',
-  'Alemania': 'de','Austria': 'at','Bélgica': 'be','Bosnia y Herzegovina': 'ba','Croacia': 'hr','Escocia': 'gb-sct','España': 'es','Francia': 'fr',
-  'Inglaterra': 'gb-eng','Noruega': 'no','Países Bajos': 'nl','Portugal': 'pt','República Checa': 'cz','Suecia': 'se','Suiza': 'ch','Turquía': 'tr',
-  'Argelia': 'dz','Cabo Verde': 'cv','Costa de Marfil': 'ci','Egipto': 'eg','Ghana': 'gh','Marruecos': 'ma','RD Congo': 'cd','Senegal': 'sn','Sudáfrica': 'za','Túnez': 'tn',
-  'Arabia Saudita': 'sa','Australia': 'au','Irán': 'ir','Irak': 'iq','Japón': 'jp','Jordania': 'jo','Nueva Zelanda': 'nz','Qatar': 'qa','Corea del Sur': 'kr','Uzbekistán': 'uz',
-  'Curazao': 'cw','Haití': 'ht','Panamá': 'pa'
+  'México':'mx','Canadá':'ca','Estados Unidos':'us',
+  'Brasil':'br','Argentina':'ar','Uruguay':'uy','Colombia':'co',
+  'Ecuador':'ec','Venezuela':'ve','Paraguay':'py','Chile':'cl',
+  'Bolivia':'bo','Perú':'pe',
+  'España':'es','Francia':'fr','Alemania':'de','Portugal':'pt',
+  'Inglaterra':'gb-eng','Gales':'gb-wls','Escocia':'gb-sct','Irlanda del Norte':'gb-nir',
+  'Italia':'it','Países Bajos':'nl','Holanda':'nl','Bélgica':'be','Croacia':'hr',
+  'Serbia':'rs','Suiza':'ch','Austria':'at','Turquía':'tr','Dinamarca':'dk',
+  'Rumanía':'ro','Eslovenia':'si','Ucrania':'ua',
+  'República Checa':'cz','Hungría':'hu','Eslovaquia':'sk',
+  'Polonia':'pl','Albania':'al','Georgia':'ge',
+  'Marruecos':'ma','Senegal':'sn','Nigeria':'ng','Egipto':'eg',
+  'Sudáfrica':'za','Costa de Marfil':'ci','Camerún':'cm','Argelia':'dz',
+  'Japón':'jp','Corea del Sur':'kr','Australia':'au',
+  'Arabia Saudita':'sa','Irán':'ir','Qatar':'qa','China':'cn',
+  'Indonesia':'id','Uzbekistán':'uz','Jordania':'jo','Iraq':'iq',
+  'Costa Rica':'cr','Panamá':'pa','Jamaica':'jm','Honduras':'hn',
+  'Nueva Zelanda':'nz','Islas Fiyi':'fj','Tahití':'pf',
+  'República de Irlanda':'ie','Irlanda':'ie',
+  'Grecia':'gr','Islandia':'is','Noruega':'no','Suecia':'se',
+  'Montenegro':'me','Bosnia y Herzegovina':'ba','Bosnia':'ba',
+  'Israel':'il','Armenia':'am',
+  'Ghana':'gh','Túnez':'tn','Mali':'ml','Tanzania':'tz',
+  'Zimbabwe':'zw','Kenia':'ke','Angola':'ao',
+  'El Salvador':'sv','Guatemala':'gt','Cuba':'cu',
+  'Trinidad y Tobago':'tt','Haití':'ht',
 };
 const PAIS_SHORT = {
   'Estados Unidos':'EE.UU.',
@@ -727,6 +650,8 @@ const PAIS_SHORT = {
   'República Checa':'Rep.Checa',
   'Nueva Zelanda':'N.Zelanda',
   'Bosnia y Herzegovina':'Bosnia',
+  'Irlanda del Norte':'Irl.Norte',
+  'Trinidad y Tobago':'Trin.&Tob',
 };
 function flagSrc(pais){
   const iso = PAIS_ISO[pais];
@@ -760,17 +685,67 @@ function bcCard(match){
     ${mkTeam(match.visitante, rV)}
   </div>`;
 }
+// Mapa fijo de slots del cuadro FIFA 2026.
+// Cada número es el "partido" de Wikipedia (M74, M73…).
+// Orden: de arriba a abajo dentro de cada ronda/lado.
+// Verificado contra imagen oficial del sorteo.
+const BRACKET_SLOTS = {
+  r32L:  [74, 77, 73, 75, 83, 84, 81, 82],
+  r16L:  [89, 90, 93, 94],
+  qfL:   [97, 98],
+  sfL:   [101],
+  final: [104],
+  sfR:   [102],
+  qfR:   [99, 100],
+  r16R:  [91, 92, 95, 96],
+  r32R:  [76, 78, 79, 80, 86, 88, 85, 87],
+  bronze:[103],
+};
+
 function bracketHTML(elim){
   const pad = (arr, n) => { const a=[...(arr||[])]; while(a.length<n) a.push(null); return a; };
-  const r32 = pad(elim['Dieciseisavos de final'], 16);
-  const r16 = pad(elim['Octavos de final'], 8);
-  const qf  = pad(elim['Cuartos de final'], 4);
-  const sf  = pad(elim['Semifinales'], 2);
-  const fin = pad(elim['Final'], 1);
-  const bronze = pad(elim['Tercer puesto'] || elim['Tercer y cuarto puesto'] || [], 1);
 
+  // ── Construir índice match_num → partido ──────────────────
+  const byNum = {};
+  Object.values(elim).forEach(arr =>
+    (arr||[]).forEach(m => { if(m && m.match_num != null) byNum[m.match_num] = m; })
+  );
+  const hasNums = Object.keys(byNum).length > 0;
+
+  // slot(n): devuelve el partido con ese número, o null si aún no existe
+  const slot  = n  => byNum[n] || null;
+  const slots = ns => ns.map(slot);
+
+  // ── Fallback: orden de array cuando aún no hay match_num ──
+  let r32L, r16L, qfL, sfL, finalM, sfR, qfR, r16R, r32R, bronze;
+  if(hasNums){
+    r32L   = slots(BRACKET_SLOTS.r32L);
+    r16L   = slots(BRACKET_SLOTS.r16L);
+    qfL    = slots(BRACKET_SLOTS.qfL);
+    sfL    = slots(BRACKET_SLOTS.sfL);
+    finalM = slots(BRACKET_SLOTS.final);
+    sfR    = slots(BRACKET_SLOTS.sfR);
+    qfR    = slots(BRACKET_SLOTS.qfR);
+    r16R   = slots(BRACKET_SLOTS.r16R);
+    r32R   = slots(BRACKET_SLOTS.r32R);
+    bronze = slots(BRACKET_SLOTS.bronze);
+  } else {
+    // Sin match_num todavía: reparto por mitades (comportamiento anterior)
+    const r32a = pad(elim['Dieciseisavos de final'], 16);
+    const r16a = pad(elim['Octavos de final'], 8);
+    const qfa  = pad(elim['Cuartos de final'], 4);
+    const sfa  = pad(elim['Semifinales'], 2);
+    r32L = r32a.slice(0,8); r32R = r32a.slice(8);
+    r16L = r16a.slice(0,4); r16R = r16a.slice(4);
+    qfL  = qfa.slice(0,2);  qfR  = qfa.slice(2);
+    sfL  = sfa.slice(0,1);  sfR  = sfa.slice(1);
+    finalM = pad(elim['Final'], 1);
+    bronze = pad(elim['Tercer puesto'] || [], 1);
+  }
+
+  // ── Helpers de renderizado ────────────────────────────────
   const round = (matches, extraCls='') =>
-    `<div class="bc-round${extraCls?(' '+extraCls):''}">` +
+    `<div class="bc-round${extraCls?' '+extraCls:''}">` +
     matches.map(m=>`<div class="bc-zone">${bcCard(m)}</div>`).join('') +
     `</div>`;
   const conn = (n, cls) =>
@@ -778,36 +753,34 @@ function bracketHTML(elim){
     Array(n).fill('<div class="bc-conn-pair"></div>').join('') +
     `</div>`;
 
-  // Spacer to align bronze match exactly under the Final column.
-  // Left side before Final: 4 rounds × (70 round width + 16 connector width) = 344px
+  // Spacer para centrar el bronce bajo la columna Final.
+  // Ancho izquierdo: 4 rondas × (70 col + 16 conn) = 344 px
   const leftSpacer = `<div style="width:344px;flex-shrink:0;"></div>`;
   const bronzeHTML = `
     <div class="bracket-bronze-row">
       ${leftSpacer}
-      <div class="bc-bronze-col">
-        <span class="bronze-label">3er y 4º</span>
-        ${bcCard(bronze[0])}
-      </div>
+      <span class="bronze-label">3er y 4º</span>
+      <div class="bc-bronze">${bcCard(bronze[0])}</div>
     </div>`;
 
   return `<div class="bracket-tree">
-    ${round(r32.slice(0,8))}
+    ${round(r32L)}
     ${conn(4,'left')}
-    ${round(r16.slice(0,4))}
+    ${round(r16L)}
     ${conn(2,'left')}
-    ${round(qf.slice(0,2))}
+    ${round(qfL)}
     ${conn(1,'left')}
-    ${round(sf.slice(0,1))}
+    ${round(sfL)}
     ${conn(1,'simple')}
-    ${round(fin,'bc-final-col')}
+    ${round(finalM,'bc-final-col')}
     ${conn(1,'simple')}
-    ${round(sf.slice(1,2))}
+    ${round(sfR)}
     ${conn(1,'right')}
-    ${round(qf.slice(2,4))}
+    ${round(qfR)}
     ${conn(2,'right')}
-    ${round(r16.slice(4,8))}
+    ${round(r16R)}
     ${conn(4,'right')}
-    ${round(r32.slice(8,16))}
+    ${round(r32R)}
   </div>
   ${bronzeHTML}`;
 }
@@ -825,7 +798,7 @@ function renderEliminacion(){
     'Final',
     'Tercer puesto',
   ];
-  const LABELS = ['D16','R16','QF','SF','3º/4º','Final'];
+  const LABELS = ['D16','R16','QF','SF','Final','3º/4º'];
 
   // Choose the deepest phase with data as default
   let faseActiva = FASES[0];
@@ -888,7 +861,6 @@ function renderEliminacion(){
     if(bo) bo.scrollLeft = (bo.scrollWidth - bo.clientWidth) / 2;
   });
 }
-
 function renderBombos(){
   const el = $('#view-bombos');
   const nombres = Object.keys(DATA.bombos);
