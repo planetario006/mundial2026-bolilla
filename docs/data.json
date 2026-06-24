@@ -1,8 +1,8 @@
 {
   "meta": {
-    "actualizado": "2026-06-24T20:18:51+00:00",
-    "total_partidos_jugados": 48,
-    "total_partidos": 89,
+    "actualizado": "2026-06-24T21:54:44+00:00",
+    "total_partidos_jugados": 50,
+    "total_partidos": 91,
     "fase_grupos_terminada": false
   },
   "ranking": [
@@ -145,29 +145,6 @@
       "pos": 6
     },
     {
-      "equipo": "Canadá",
-      "grupo": "B",
-      "bombo": "Bombo 3",
-      "gf": 7,
-      "gc": 1,
-      "ta": 3,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": 7,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": 2,
-      "bonus_ronda_dieciseisavos": 0,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 7
-    },
-    {
       "equipo": "Colombia",
       "grupo": "K",
       "bombo": "Bombo 3",
@@ -188,7 +165,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 8
+      "pos": 7
     },
     {
       "equipo": "Ghana",
@@ -211,7 +188,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 9
+      "pos": 8
     },
     {
       "equipo": "Inglaterra",
@@ -234,7 +211,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 10
+      "pos": 9
     },
     {
       "equipo": "EE.UU.",
@@ -257,30 +234,30 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 11
+      "pos": 10
     },
     {
       "equipo": "Suiza",
       "grupo": "B",
       "bombo": "Bombo 4",
-      "gf": 5,
-      "gc": 2,
-      "ta": 2,
+      "gf": 7,
+      "gc": 3,
+      "ta": 3,
       "doblea": 0,
       "rd": 0,
       "penfall": 0,
       "penpar": 0,
-      "bonus_resultado": 7,
+      "bonus_resultado": 12,
       "bonus_grupo": 0,
       "premio_final": 0,
       "goleador": 0,
-      "puntos_totales": 0,
+      "puntos_totales": 1,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 12
+      "pos": 11
     },
     {
       "equipo": "Argentina",
@@ -303,7 +280,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 13
+      "pos": 12
     },
     {
       "equipo": "Brasil",
@@ -326,7 +303,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 14
+      "pos": 13
     },
     {
       "equipo": "México",
@@ -349,7 +326,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 15
+      "pos": 14
     },
     {
       "equipo": "Portugal",
@@ -372,7 +349,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 16
+      "pos": 15
     },
     {
       "equipo": "Egipto",
@@ -395,7 +372,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 17
+      "pos": 16
     },
     {
       "equipo": "Países Bajos",
@@ -418,7 +395,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 18
+      "pos": 17
     },
     {
       "equipo": "Cabo Verde",
@@ -441,7 +418,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 19
+      "pos": 18
     },
     {
       "equipo": "Irán",
@@ -464,7 +441,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 20
+      "pos": 19
     },
     {
       "equipo": "Uruguay",
@@ -487,7 +464,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 21
+      "pos": 20
     },
     {
       "equipo": "Austria",
@@ -510,7 +487,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 22
+      "pos": 21
     },
     {
       "equipo": "Chequia",
@@ -533,7 +510,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 23
+      "pos": 22
     },
     {
       "equipo": "Croacia",
@@ -556,7 +533,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 24
+      "pos": 23
     },
     {
       "equipo": "Ecuador",
@@ -579,7 +556,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 25
+      "pos": 24
     },
     {
       "equipo": "Argelia",
@@ -602,7 +579,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 26
+      "pos": 25
     },
     {
       "equipo": "Corea del Sur",
@@ -625,7 +602,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 27
+      "pos": 26
     },
     {
       "equipo": "Costa de Marfil",
@@ -643,6 +620,29 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -16,
+      "bonus_ronda_dieciseisavos": 0,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 27
+    },
+    {
+      "equipo": "Canadá",
+      "grupo": "B",
+      "bombo": "Bombo 3",
+      "gf": 8,
+      "gc": 3,
+      "ta": 5,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": -1,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": -17,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -927,6 +927,29 @@
       "pos": 40
     },
     {
+      "equipo": "Bosnia",
+      "grupo": "B",
+      "bombo": "Bombo 5",
+      "gf": 5,
+      "gc": 6,
+      "ta": 5,
+      "doblea": 0,
+      "rd": 1,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": -1,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": -41,
+      "bonus_ronda_dieciseisavos": 0,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 41
+    },
+    {
       "equipo": "Curazao",
       "grupo": "E",
       "bombo": "Bombo 8",
@@ -947,7 +970,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 41
+      "pos": 42
     },
     {
       "equipo": "Irak",
@@ -970,7 +993,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 42
+      "pos": 43
     },
     {
       "equipo": "Paraguay",
@@ -993,7 +1016,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 43
+      "pos": 44
     },
     {
       "equipo": "Sudáfrica",
@@ -1016,7 +1039,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 44
+      "pos": 45
     },
     {
       "equipo": "Túnez",
@@ -1039,7 +1062,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 45
+      "pos": 46
     },
     {
       "equipo": "Uzbekistán",
@@ -1062,47 +1085,24 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 46
-    },
-    {
-      "equipo": "Bosnia",
-      "grupo": "B",
-      "bombo": "Bombo 5",
-      "gf": 2,
-      "gc": 5,
-      "ta": 5,
-      "doblea": 0,
-      "rd": 1,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": -6,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": -46,
-      "bonus_ronda_dieciseisavos": 0,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
       "pos": 47
     },
     {
       "equipo": "Catar",
       "grupo": "B",
       "bombo": "Bombo 7",
-      "gf": 1,
-      "gc": 7,
+      "gf": 2,
+      "gc": 10,
       "ta": 3,
       "doblea": 0,
       "rd": 2,
       "penfall": 0,
       "penpar": 0,
-      "bonus_resultado": -6,
+      "bonus_resultado": -14,
       "bonus_grupo": 0,
       "premio_final": 0,
       "goleador": 0,
-      "puntos_totales": -59,
+      "puntos_totales": -75,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -1114,6 +1114,7 @@
   "partidos": [
     {
       "id": 1,
+      "match_num": null,
       "fecha": "2026-06-11",
       "fase": "Fase de Grupos",
       "grupo": "A",
@@ -1159,6 +1160,7 @@
     },
     {
       "id": 2,
+      "match_num": null,
       "fecha": "2026-06-11",
       "fase": "Fase de Grupos",
       "grupo": "A",
@@ -1204,6 +1206,7 @@
     },
     {
       "id": 3,
+      "match_num": null,
       "fecha": "2026-06-12",
       "fase": "Fase de Grupos",
       "grupo": "B",
@@ -1249,6 +1252,7 @@
     },
     {
       "id": 7,
+      "match_num": null,
       "fecha": "2026-06-12",
       "fase": "Fase de Grupos",
       "grupo": "D",
@@ -1294,6 +1298,7 @@
     },
     {
       "id": 4,
+      "match_num": null,
       "fecha": "2026-06-13",
       "fase": "Fase de Grupos",
       "grupo": "B",
@@ -1339,6 +1344,7 @@
     },
     {
       "id": 5,
+      "match_num": null,
       "fecha": "2026-06-13",
       "fase": "Fase de Grupos",
       "grupo": "C",
@@ -1384,6 +1390,7 @@
     },
     {
       "id": 6,
+      "match_num": null,
       "fecha": "2026-06-13",
       "fase": "Fase de Grupos",
       "grupo": "C",
@@ -1429,6 +1436,7 @@
     },
     {
       "id": 8,
+      "match_num": null,
       "fecha": "2026-06-13",
       "fase": "Fase de Grupos",
       "grupo": "D",
@@ -1474,6 +1482,7 @@
     },
     {
       "id": 9,
+      "match_num": null,
       "fecha": "2026-06-14",
       "fase": "Fase de Grupos",
       "grupo": "E",
@@ -1519,6 +1528,7 @@
     },
     {
       "id": 10,
+      "match_num": null,
       "fecha": "2026-06-14",
       "fase": "Fase de Grupos",
       "grupo": "E",
@@ -1564,6 +1574,7 @@
     },
     {
       "id": 11,
+      "match_num": null,
       "fecha": "2026-06-14",
       "fase": "Fase de Grupos",
       "grupo": "F",
@@ -1609,6 +1620,7 @@
     },
     {
       "id": 12,
+      "match_num": null,
       "fecha": "2026-06-14",
       "fase": "Fase de Grupos",
       "grupo": "F",
@@ -1654,6 +1666,7 @@
     },
     {
       "id": 13,
+      "match_num": null,
       "fecha": "2026-06-15",
       "fase": "Fase de Grupos",
       "grupo": "G",
@@ -1699,6 +1712,7 @@
     },
     {
       "id": 14,
+      "match_num": null,
       "fecha": "2026-06-15",
       "fase": "Fase de Grupos",
       "grupo": "G",
@@ -1744,6 +1758,7 @@
     },
     {
       "id": 15,
+      "match_num": null,
       "fecha": "2026-06-15",
       "fase": "Fase de Grupos",
       "grupo": "H",
@@ -1789,6 +1804,7 @@
     },
     {
       "id": 16,
+      "match_num": null,
       "fecha": "2026-06-15",
       "fase": "Fase de Grupos",
       "grupo": "H",
@@ -1834,6 +1850,7 @@
     },
     {
       "id": 17,
+      "match_num": null,
       "fecha": "2026-06-16",
       "fase": "Fase de Grupos",
       "grupo": "I",
@@ -1879,6 +1896,7 @@
     },
     {
       "id": 18,
+      "match_num": null,
       "fecha": "2026-06-16",
       "fase": "Fase de Grupos",
       "grupo": "I",
@@ -1924,6 +1942,7 @@
     },
     {
       "id": 19,
+      "match_num": null,
       "fecha": "2026-06-16",
       "fase": "Fase de Grupos",
       "grupo": "J",
@@ -1969,6 +1988,7 @@
     },
     {
       "id": 20,
+      "match_num": null,
       "fecha": "2026-06-16",
       "fase": "Fase de Grupos",
       "grupo": "J",
@@ -2014,6 +2034,7 @@
     },
     {
       "id": 21,
+      "match_num": null,
       "fecha": "2026-06-17",
       "fase": "Fase de Grupos",
       "grupo": "K",
@@ -2059,6 +2080,7 @@
     },
     {
       "id": 22,
+      "match_num": null,
       "fecha": "2026-06-17",
       "fase": "Fase de Grupos",
       "grupo": "L",
@@ -2104,6 +2126,7 @@
     },
     {
       "id": 23,
+      "match_num": null,
       "fecha": "2026-06-17",
       "fase": "Fase de Grupos",
       "grupo": "K",
@@ -2149,6 +2172,7 @@
     },
     {
       "id": 24,
+      "match_num": null,
       "fecha": "2026-06-17",
       "fase": "Fase de Grupos",
       "grupo": "L",
@@ -2194,6 +2218,7 @@
     },
     {
       "id": 25,
+      "match_num": null,
       "fecha": "2026-06-18",
       "fase": "Fase de Grupos",
       "grupo": "A",
@@ -2239,6 +2264,7 @@
     },
     {
       "id": 26,
+      "match_num": null,
       "fecha": "2026-06-18",
       "fase": "Fase de Grupos",
       "grupo": "B",
@@ -2284,6 +2310,7 @@
     },
     {
       "id": 27,
+      "match_num": null,
       "fecha": "2026-06-18",
       "fase": "Fase de Grupos",
       "grupo": "A",
@@ -2329,6 +2356,7 @@
     },
     {
       "id": 28,
+      "match_num": null,
       "fecha": "2026-06-18",
       "fase": "Fase de Grupos",
       "grupo": "B",
@@ -2374,6 +2402,7 @@
     },
     {
       "id": 29,
+      "match_num": null,
       "fecha": "2026-06-19",
       "fase": "Fase de Grupos",
       "grupo": "C",
@@ -2419,6 +2448,7 @@
     },
     {
       "id": 30,
+      "match_num": null,
       "fecha": "2026-06-19",
       "fase": "Fase de Grupos",
       "grupo": "C",
@@ -2464,6 +2494,7 @@
     },
     {
       "id": 31,
+      "match_num": null,
       "fecha": "2026-06-19",
       "fase": "Fase de Grupos",
       "grupo": "D",
@@ -2509,6 +2540,7 @@
     },
     {
       "id": 32,
+      "match_num": null,
       "fecha": "2026-06-19",
       "fase": "Fase de Grupos",
       "grupo": "D",
@@ -2554,6 +2586,7 @@
     },
     {
       "id": 33,
+      "match_num": null,
       "fecha": "2026-06-20",
       "fase": "Fase de Grupos",
       "grupo": "F",
@@ -2599,6 +2632,7 @@
     },
     {
       "id": 34,
+      "match_num": null,
       "fecha": "2026-06-20",
       "fase": "Fase de Grupos",
       "grupo": "E",
@@ -2644,6 +2678,7 @@
     },
     {
       "id": 35,
+      "match_num": null,
       "fecha": "2026-06-20",
       "fase": "Fase de Grupos",
       "grupo": "E",
@@ -2689,6 +2724,7 @@
     },
     {
       "id": 36,
+      "match_num": null,
       "fecha": "2026-06-20",
       "fase": "Fase de Grupos",
       "grupo": "F",
@@ -2734,6 +2770,7 @@
     },
     {
       "id": 37,
+      "match_num": null,
       "fecha": "2026-06-21",
       "fase": "Fase de Grupos",
       "grupo": "H",
@@ -2779,6 +2816,7 @@
     },
     {
       "id": 38,
+      "match_num": null,
       "fecha": "2026-06-21",
       "fase": "Fase de Grupos",
       "grupo": "G",
@@ -2824,6 +2862,7 @@
     },
     {
       "id": 39,
+      "match_num": null,
       "fecha": "2026-06-21",
       "fase": "Fase de Grupos",
       "grupo": "G",
@@ -2869,6 +2908,7 @@
     },
     {
       "id": 40,
+      "match_num": null,
       "fecha": "2026-06-21",
       "fase": "Fase de Grupos",
       "grupo": "H",
@@ -2914,6 +2954,7 @@
     },
     {
       "id": 41,
+      "match_num": null,
       "fecha": "2026-06-22",
       "fase": "Fase de Grupos",
       "grupo": "J",
@@ -2959,6 +3000,7 @@
     },
     {
       "id": 58,
+      "match_num": null,
       "fecha": "2026-06-22",
       "fase": "Fase de Grupos",
       "grupo": "I",
@@ -3004,6 +3046,7 @@
     },
     {
       "id": 59,
+      "match_num": null,
       "fecha": "2026-06-22",
       "fase": "Fase de Grupos",
       "grupo": "I",
@@ -3049,6 +3092,7 @@
     },
     {
       "id": 62,
+      "match_num": null,
       "fecha": "2026-06-22",
       "fase": "Fase de Grupos",
       "grupo": "J",
@@ -3094,6 +3138,7 @@
     },
     {
       "id": 65,
+      "match_num": null,
       "fecha": "2026-06-23",
       "fase": "Fase de Grupos",
       "grupo": "K",
@@ -3139,6 +3184,7 @@
     },
     {
       "id": 66,
+      "match_num": null,
       "fecha": "2026-06-23",
       "fase": "Fase de Grupos",
       "grupo": "K",
@@ -3184,6 +3230,7 @@
     },
     {
       "id": 69,
+      "match_num": null,
       "fecha": "2026-06-23",
       "fase": "Fase de Grupos",
       "grupo": "L",
@@ -3229,6 +3276,7 @@
     },
     {
       "id": 70,
+      "match_num": null,
       "fecha": "2026-06-23",
       "fase": "Fase de Grupos",
       "grupo": "L",
@@ -3270,6 +3318,98 @@
         "penpar": 0,
         "bonus_resultado": 5,
         "total": 3
+      }
+    },
+    {
+      "id": 44,
+      "match_num": null,
+      "fecha": "2026-06-24",
+      "fase": "Fase de Grupos",
+      "grupo": "B",
+      "local": "Suiza",
+      "visitante": "Canadá",
+      "gf_local": 2,
+      "gf_visit": 1,
+      "ta_local": 1,
+      "doblea_local": 0,
+      "rd_local": 0,
+      "ta_visit": 2,
+      "doblea_visit": 0,
+      "rd_visit": 0,
+      "penfall_local": 0,
+      "penpar_local": 0,
+      "penfall_visit": 0,
+      "penpar_visit": 0,
+      "pen_tanda_local": null,
+      "pen_tanda_visit": null,
+      "jugado": true,
+      "puntos_local": {
+        "gf": 2,
+        "gc": -3,
+        "ta": -3,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": 5,
+        "total": 1
+      },
+      "puntos_visit": {
+        "gf": 1,
+        "gc": -6,
+        "ta": -6,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": -8,
+        "total": -19
+      }
+    },
+    {
+      "id": 45,
+      "match_num": null,
+      "fecha": "2026-06-24",
+      "fase": "Fase de Grupos",
+      "grupo": "B",
+      "local": "Bosnia",
+      "visitante": "Catar",
+      "gf_local": 3,
+      "gf_visit": 1,
+      "ta_local": 0,
+      "doblea_local": 0,
+      "rd_local": 0,
+      "ta_visit": 0,
+      "doblea_visit": 0,
+      "rd_visit": 0,
+      "penfall_local": 0,
+      "penpar_local": 0,
+      "penfall_visit": 0,
+      "penpar_visit": 0,
+      "pen_tanda_local": null,
+      "pen_tanda_visit": null,
+      "jugado": true,
+      "puntos_local": {
+        "gf": 3,
+        "gc": -3,
+        "ta": 0,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": 5,
+        "total": 5
+      },
+      "puntos_visit": {
+        "gf": 1,
+        "gc": -9,
+        "ta": 0,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": -8,
+        "total": -16
       }
     }
   ],
@@ -3338,6 +3478,7 @@
       "partidos": [
         {
           "id": 1,
+          "match_num": null,
           "fecha": "2026-06-11",
           "fase": "Fase de Grupos",
           "grupo": "A",
@@ -3383,6 +3524,7 @@
         },
         {
           "id": 2,
+          "match_num": null,
           "fecha": "2026-06-11",
           "fase": "Fase de Grupos",
           "grupo": "A",
@@ -3428,6 +3570,7 @@
         },
         {
           "id": 25,
+          "match_num": null,
           "fecha": "2026-06-18",
           "fase": "Fase de Grupos",
           "grupo": "A",
@@ -3473,6 +3616,7 @@
         },
         {
           "id": 27,
+          "match_num": null,
           "fecha": "2026-06-18",
           "fase": "Fase de Grupos",
           "grupo": "A",
@@ -3518,6 +3662,7 @@
         },
         {
           "id": 42,
+          "match_num": null,
           "fecha": "2026-06-24",
           "fase": "Fase de Grupos",
           "grupo": "A",
@@ -3543,6 +3688,7 @@
         },
         {
           "id": 43,
+          "match_num": null,
           "fecha": "2026-06-24",
           "fase": "Fase de Grupos",
           "grupo": "A",
@@ -3578,53 +3724,53 @@
       "tabla": [
         {
           "pos": 1,
-          "equipo": "Canadá",
-          "pj": 2,
-          "pg": 1,
+          "equipo": "Suiza",
+          "pj": 3,
+          "pg": 2,
           "pe": 1,
           "pp": 0,
           "gf": 7,
-          "gc": 1,
-          "dg": 6,
-          "pts": 4,
+          "gc": 3,
+          "dg": 4,
+          "pts": 7,
           "empate_no_resuelto": false
         },
         {
           "pos": 2,
-          "equipo": "Suiza",
-          "pj": 2,
+          "equipo": "Canadá",
+          "pj": 3,
           "pg": 1,
           "pe": 1,
-          "pp": 0,
-          "gf": 5,
-          "gc": 2,
-          "dg": 3,
+          "pp": 1,
+          "gf": 8,
+          "gc": 3,
+          "dg": 5,
           "pts": 4,
           "empate_no_resuelto": false
         },
         {
           "pos": 3,
           "equipo": "Bosnia",
-          "pj": 2,
-          "pg": 0,
+          "pj": 3,
+          "pg": 1,
           "pe": 1,
           "pp": 1,
-          "gf": 2,
-          "gc": 5,
-          "dg": -3,
-          "pts": 1,
+          "gf": 5,
+          "gc": 6,
+          "dg": -1,
+          "pts": 4,
           "empate_no_resuelto": false
         },
         {
           "pos": 4,
           "equipo": "Catar",
-          "pj": 2,
+          "pj": 3,
           "pg": 0,
           "pe": 1,
-          "pp": 1,
-          "gf": 1,
-          "gc": 7,
-          "dg": -6,
+          "pp": 2,
+          "gf": 2,
+          "gc": 10,
+          "dg": -8,
           "pts": 1,
           "empate_no_resuelto": false
         }
@@ -3632,6 +3778,7 @@
       "partidos": [
         {
           "id": 3,
+          "match_num": null,
           "fecha": "2026-06-12",
           "fase": "Fase de Grupos",
           "grupo": "B",
@@ -3677,6 +3824,7 @@
         },
         {
           "id": 4,
+          "match_num": null,
           "fecha": "2026-06-13",
           "fase": "Fase de Grupos",
           "grupo": "B",
@@ -3722,6 +3870,7 @@
         },
         {
           "id": 26,
+          "match_num": null,
           "fecha": "2026-06-18",
           "fase": "Fase de Grupos",
           "grupo": "B",
@@ -3767,6 +3916,7 @@
         },
         {
           "id": 28,
+          "match_num": null,
           "fecha": "2026-06-18",
           "fase": "Fase de Grupos",
           "grupo": "B",
@@ -3812,17 +3962,18 @@
         },
         {
           "id": 44,
+          "match_num": null,
           "fecha": "2026-06-24",
           "fase": "Fase de Grupos",
           "grupo": "B",
           "local": "Suiza",
           "visitante": "Canadá",
-          "gf_local": null,
-          "gf_visit": null,
-          "ta_local": 0,
+          "gf_local": 2,
+          "gf_visit": 1,
+          "ta_local": 1,
           "doblea_local": 0,
           "rd_local": 0,
-          "ta_visit": 0,
+          "ta_visit": 2,
           "doblea_visit": 0,
           "rd_visit": 0,
           "penfall_local": 0,
@@ -3831,19 +3982,40 @@
           "penpar_visit": 0,
           "pen_tanda_local": null,
           "pen_tanda_visit": null,
-          "jugado": false,
-          "puntos_local": null,
-          "puntos_visit": null
+          "jugado": true,
+          "puntos_local": {
+            "gf": 2,
+            "gc": -3,
+            "ta": -3,
+            "doblea": 0,
+            "rd": 0,
+            "penfall": 0,
+            "penpar": 0,
+            "bonus_resultado": 5,
+            "total": 1
+          },
+          "puntos_visit": {
+            "gf": 1,
+            "gc": -6,
+            "ta": -6,
+            "doblea": 0,
+            "rd": 0,
+            "penfall": 0,
+            "penpar": 0,
+            "bonus_resultado": -8,
+            "total": -19
+          }
         },
         {
           "id": 45,
+          "match_num": null,
           "fecha": "2026-06-24",
           "fase": "Fase de Grupos",
           "grupo": "B",
           "local": "Bosnia",
           "visitante": "Catar",
-          "gf_local": null,
-          "gf_visit": null,
+          "gf_local": 3,
+          "gf_visit": 1,
           "ta_local": 0,
           "doblea_local": 0,
           "rd_local": 0,
@@ -3856,9 +4028,29 @@
           "penpar_visit": 0,
           "pen_tanda_local": null,
           "pen_tanda_visit": null,
-          "jugado": false,
-          "puntos_local": null,
-          "puntos_visit": null
+          "jugado": true,
+          "puntos_local": {
+            "gf": 3,
+            "gc": -3,
+            "ta": 0,
+            "doblea": 0,
+            "rd": 0,
+            "penfall": 0,
+            "penpar": 0,
+            "bonus_resultado": 5,
+            "total": 5
+          },
+          "puntos_visit": {
+            "gf": 1,
+            "gc": -9,
+            "ta": 0,
+            "doblea": 0,
+            "rd": 0,
+            "penfall": 0,
+            "penpar": 0,
+            "bonus_resultado": -8,
+            "total": -16
+          }
         }
       ]
     },
@@ -3926,6 +4118,7 @@
       "partidos": [
         {
           "id": 5,
+          "match_num": null,
           "fecha": "2026-06-13",
           "fase": "Fase de Grupos",
           "grupo": "C",
@@ -3971,6 +4164,7 @@
         },
         {
           "id": 6,
+          "match_num": null,
           "fecha": "2026-06-13",
           "fase": "Fase de Grupos",
           "grupo": "C",
@@ -4016,6 +4210,7 @@
         },
         {
           "id": 29,
+          "match_num": null,
           "fecha": "2026-06-19",
           "fase": "Fase de Grupos",
           "grupo": "C",
@@ -4061,6 +4256,7 @@
         },
         {
           "id": 30,
+          "match_num": null,
           "fecha": "2026-06-19",
           "fase": "Fase de Grupos",
           "grupo": "C",
@@ -4106,6 +4302,7 @@
         },
         {
           "id": 46,
+          "match_num": null,
           "fecha": "2026-06-24",
           "fase": "Fase de Grupos",
           "grupo": "C",
@@ -4131,6 +4328,7 @@
         },
         {
           "id": 47,
+          "match_num": null,
           "fecha": "2026-06-24",
           "fase": "Fase de Grupos",
           "grupo": "C",
@@ -4220,6 +4418,7 @@
       "partidos": [
         {
           "id": 7,
+          "match_num": null,
           "fecha": "2026-06-12",
           "fase": "Fase de Grupos",
           "grupo": "D",
@@ -4265,6 +4464,7 @@
         },
         {
           "id": 8,
+          "match_num": null,
           "fecha": "2026-06-13",
           "fase": "Fase de Grupos",
           "grupo": "D",
@@ -4310,6 +4510,7 @@
         },
         {
           "id": 31,
+          "match_num": null,
           "fecha": "2026-06-19",
           "fase": "Fase de Grupos",
           "grupo": "D",
@@ -4355,6 +4556,7 @@
         },
         {
           "id": 32,
+          "match_num": null,
           "fecha": "2026-06-19",
           "fase": "Fase de Grupos",
           "grupo": "D",
@@ -4400,6 +4602,7 @@
         },
         {
           "id": 48,
+          "match_num": null,
           "fecha": "2026-06-25",
           "fase": "Fase de Grupos",
           "grupo": "D",
@@ -4425,6 +4628,7 @@
         },
         {
           "id": 49,
+          "match_num": null,
           "fecha": "2026-06-25",
           "fase": "Fase de Grupos",
           "grupo": "D",
@@ -4514,6 +4718,7 @@
       "partidos": [
         {
           "id": 9,
+          "match_num": null,
           "fecha": "2026-06-14",
           "fase": "Fase de Grupos",
           "grupo": "E",
@@ -4559,6 +4764,7 @@
         },
         {
           "id": 10,
+          "match_num": null,
           "fecha": "2026-06-14",
           "fase": "Fase de Grupos",
           "grupo": "E",
@@ -4604,6 +4810,7 @@
         },
         {
           "id": 34,
+          "match_num": null,
           "fecha": "2026-06-20",
           "fase": "Fase de Grupos",
           "grupo": "E",
@@ -4649,6 +4856,7 @@
         },
         {
           "id": 35,
+          "match_num": null,
           "fecha": "2026-06-20",
           "fase": "Fase de Grupos",
           "grupo": "E",
@@ -4694,6 +4902,7 @@
         },
         {
           "id": 50,
+          "match_num": null,
           "fecha": "2026-06-25",
           "fase": "Fase de Grupos",
           "grupo": "E",
@@ -4719,6 +4928,7 @@
         },
         {
           "id": 51,
+          "match_num": null,
           "fecha": "2026-06-25",
           "fase": "Fase de Grupos",
           "grupo": "E",
@@ -4808,6 +5018,7 @@
       "partidos": [
         {
           "id": 11,
+          "match_num": null,
           "fecha": "2026-06-14",
           "fase": "Fase de Grupos",
           "grupo": "F",
@@ -4853,6 +5064,7 @@
         },
         {
           "id": 12,
+          "match_num": null,
           "fecha": "2026-06-14",
           "fase": "Fase de Grupos",
           "grupo": "F",
@@ -4898,6 +5110,7 @@
         },
         {
           "id": 33,
+          "match_num": null,
           "fecha": "2026-06-20",
           "fase": "Fase de Grupos",
           "grupo": "F",
@@ -4943,6 +5156,7 @@
         },
         {
           "id": 36,
+          "match_num": null,
           "fecha": "2026-06-20",
           "fase": "Fase de Grupos",
           "grupo": "F",
@@ -4988,6 +5202,7 @@
         },
         {
           "id": 52,
+          "match_num": null,
           "fecha": "2026-06-25",
           "fase": "Fase de Grupos",
           "grupo": "F",
@@ -5013,6 +5228,7 @@
         },
         {
           "id": 53,
+          "match_num": null,
           "fecha": "2026-06-25",
           "fase": "Fase de Grupos",
           "grupo": "F",
@@ -5102,6 +5318,7 @@
       "partidos": [
         {
           "id": 13,
+          "match_num": null,
           "fecha": "2026-06-15",
           "fase": "Fase de Grupos",
           "grupo": "G",
@@ -5147,6 +5364,7 @@
         },
         {
           "id": 14,
+          "match_num": null,
           "fecha": "2026-06-15",
           "fase": "Fase de Grupos",
           "grupo": "G",
@@ -5192,6 +5410,7 @@
         },
         {
           "id": 38,
+          "match_num": null,
           "fecha": "2026-06-21",
           "fase": "Fase de Grupos",
           "grupo": "G",
@@ -5237,6 +5456,7 @@
         },
         {
           "id": 39,
+          "match_num": null,
           "fecha": "2026-06-21",
           "fase": "Fase de Grupos",
           "grupo": "G",
@@ -5282,6 +5502,7 @@
         },
         {
           "id": 54,
+          "match_num": null,
           "fecha": "2026-06-26",
           "fase": "Fase de Grupos",
           "grupo": "G",
@@ -5307,6 +5528,7 @@
         },
         {
           "id": 55,
+          "match_num": null,
           "fecha": "2026-06-26",
           "fase": "Fase de Grupos",
           "grupo": "G",
@@ -5396,6 +5618,7 @@
       "partidos": [
         {
           "id": 15,
+          "match_num": null,
           "fecha": "2026-06-15",
           "fase": "Fase de Grupos",
           "grupo": "H",
@@ -5441,6 +5664,7 @@
         },
         {
           "id": 16,
+          "match_num": null,
           "fecha": "2026-06-15",
           "fase": "Fase de Grupos",
           "grupo": "H",
@@ -5486,6 +5710,7 @@
         },
         {
           "id": 37,
+          "match_num": null,
           "fecha": "2026-06-21",
           "fase": "Fase de Grupos",
           "grupo": "H",
@@ -5531,6 +5756,7 @@
         },
         {
           "id": 40,
+          "match_num": null,
           "fecha": "2026-06-21",
           "fase": "Fase de Grupos",
           "grupo": "H",
@@ -5576,6 +5802,7 @@
         },
         {
           "id": 56,
+          "match_num": null,
           "fecha": "2026-06-26",
           "fase": "Fase de Grupos",
           "grupo": "H",
@@ -5601,6 +5828,7 @@
         },
         {
           "id": 57,
+          "match_num": null,
           "fecha": "2026-06-26",
           "fase": "Fase de Grupos",
           "grupo": "H",
@@ -5690,6 +5918,7 @@
       "partidos": [
         {
           "id": 17,
+          "match_num": null,
           "fecha": "2026-06-16",
           "fase": "Fase de Grupos",
           "grupo": "I",
@@ -5735,6 +5964,7 @@
         },
         {
           "id": 18,
+          "match_num": null,
           "fecha": "2026-06-16",
           "fase": "Fase de Grupos",
           "grupo": "I",
@@ -5780,6 +6010,7 @@
         },
         {
           "id": 58,
+          "match_num": null,
           "fecha": "2026-06-22",
           "fase": "Fase de Grupos",
           "grupo": "I",
@@ -5825,6 +6056,7 @@
         },
         {
           "id": 59,
+          "match_num": null,
           "fecha": "2026-06-22",
           "fase": "Fase de Grupos",
           "grupo": "I",
@@ -5870,6 +6102,7 @@
         },
         {
           "id": 60,
+          "match_num": null,
           "fecha": "2026-06-26",
           "fase": "Fase de Grupos",
           "grupo": "I",
@@ -5895,6 +6128,7 @@
         },
         {
           "id": 61,
+          "match_num": null,
           "fecha": "2026-06-26",
           "fase": "Fase de Grupos",
           "grupo": "I",
@@ -5984,6 +6218,7 @@
       "partidos": [
         {
           "id": 19,
+          "match_num": null,
           "fecha": "2026-06-16",
           "fase": "Fase de Grupos",
           "grupo": "J",
@@ -6029,6 +6264,7 @@
         },
         {
           "id": 20,
+          "match_num": null,
           "fecha": "2026-06-16",
           "fase": "Fase de Grupos",
           "grupo": "J",
@@ -6074,6 +6310,7 @@
         },
         {
           "id": 41,
+          "match_num": null,
           "fecha": "2026-06-22",
           "fase": "Fase de Grupos",
           "grupo": "J",
@@ -6119,6 +6356,7 @@
         },
         {
           "id": 62,
+          "match_num": null,
           "fecha": "2026-06-22",
           "fase": "Fase de Grupos",
           "grupo": "J",
@@ -6164,6 +6402,7 @@
         },
         {
           "id": 63,
+          "match_num": null,
           "fecha": "2026-06-27",
           "fase": "Fase de Grupos",
           "grupo": "J",
@@ -6189,6 +6428,7 @@
         },
         {
           "id": 64,
+          "match_num": null,
           "fecha": "2026-06-27",
           "fase": "Fase de Grupos",
           "grupo": "J",
@@ -6278,6 +6518,7 @@
       "partidos": [
         {
           "id": 21,
+          "match_num": null,
           "fecha": "2026-06-17",
           "fase": "Fase de Grupos",
           "grupo": "K",
@@ -6323,6 +6564,7 @@
         },
         {
           "id": 23,
+          "match_num": null,
           "fecha": "2026-06-17",
           "fase": "Fase de Grupos",
           "grupo": "K",
@@ -6368,6 +6610,7 @@
         },
         {
           "id": 65,
+          "match_num": null,
           "fecha": "2026-06-23",
           "fase": "Fase de Grupos",
           "grupo": "K",
@@ -6413,6 +6656,7 @@
         },
         {
           "id": 66,
+          "match_num": null,
           "fecha": "2026-06-23",
           "fase": "Fase de Grupos",
           "grupo": "K",
@@ -6458,6 +6702,7 @@
         },
         {
           "id": 67,
+          "match_num": null,
           "fecha": "2026-06-27",
           "fase": "Fase de Grupos",
           "grupo": "K",
@@ -6483,6 +6728,7 @@
         },
         {
           "id": 68,
+          "match_num": null,
           "fecha": "2026-06-27",
           "fase": "Fase de Grupos",
           "grupo": "K",
@@ -6572,6 +6818,7 @@
       "partidos": [
         {
           "id": 22,
+          "match_num": null,
           "fecha": "2026-06-17",
           "fase": "Fase de Grupos",
           "grupo": "L",
@@ -6617,6 +6864,7 @@
         },
         {
           "id": 24,
+          "match_num": null,
           "fecha": "2026-06-17",
           "fase": "Fase de Grupos",
           "grupo": "L",
@@ -6662,6 +6910,7 @@
         },
         {
           "id": 69,
+          "match_num": null,
           "fecha": "2026-06-23",
           "fase": "Fase de Grupos",
           "grupo": "L",
@@ -6707,6 +6956,7 @@
         },
         {
           "id": 70,
+          "match_num": null,
           "fecha": "2026-06-23",
           "fase": "Fase de Grupos",
           "grupo": "L",
@@ -6752,6 +7002,7 @@
         },
         {
           "id": 71,
+          "match_num": null,
           "fecha": "2026-06-27",
           "fase": "Fase de Grupos",
           "grupo": "L",
@@ -6777,6 +7028,7 @@
         },
         {
           "id": 72,
+          "match_num": null,
           "fecha": "2026-06-27",
           "fase": "Fase de Grupos",
           "grupo": "L",
@@ -6807,6 +7059,7 @@
     "Dieciseisavos de final": [
       {
         "id": 73,
+        "match_num": null,
         "fecha": "2026-06-28",
         "fase": "Dieciseisavos de final",
         "grupo": "",
@@ -6831,7 +7084,34 @@
         "puntos_visit": null
       },
       {
+        "id": 90,
+        "match_num": null,
+        "fecha": "2026-06-28",
+        "fase": "Dieciseisavos de final",
+        "grupo": "",
+        "local": "2A",
+        "visitante": "Canadá",
+        "gf_local": null,
+        "gf_visit": null,
+        "ta_local": 0,
+        "doblea_local": 0,
+        "rd_local": 0,
+        "ta_visit": 0,
+        "doblea_visit": 0,
+        "rd_visit": 0,
+        "penfall_local": 0,
+        "penpar_local": 0,
+        "penfall_visit": 0,
+        "penpar_visit": 0,
+        "pen_tanda_local": null,
+        "pen_tanda_visit": null,
+        "jugado": false,
+        "puntos_local": null,
+        "puntos_visit": null
+      },
+      {
         "id": 74,
+        "match_num": null,
         "fecha": "2026-06-29",
         "fase": "Dieciseisavos de final",
         "grupo": "",
@@ -6857,6 +7137,7 @@
       },
       {
         "id": 75,
+        "match_num": null,
         "fecha": "2026-06-29",
         "fase": "Dieciseisavos de final",
         "grupo": "",
@@ -6882,6 +7163,7 @@
       },
       {
         "id": 76,
+        "match_num": null,
         "fecha": "2026-06-29",
         "fase": "Dieciseisavos de final",
         "grupo": "",
@@ -6907,6 +7189,7 @@
       },
       {
         "id": 77,
+        "match_num": null,
         "fecha": "2026-06-30",
         "fase": "Dieciseisavos de final",
         "grupo": "",
@@ -6932,6 +7215,7 @@
       },
       {
         "id": 78,
+        "match_num": null,
         "fecha": "2026-06-30",
         "fase": "Dieciseisavos de final",
         "grupo": "",
@@ -6957,6 +7241,7 @@
       },
       {
         "id": 79,
+        "match_num": null,
         "fecha": "2026-06-30",
         "fase": "Dieciseisavos de final",
         "grupo": "",
@@ -6982,6 +7267,7 @@
       },
       {
         "id": 80,
+        "match_num": null,
         "fecha": "2026-07-01",
         "fase": "Dieciseisavos de final",
         "grupo": "",
@@ -7007,6 +7293,7 @@
       },
       {
         "id": 81,
+        "match_num": null,
         "fecha": "2026-07-01",
         "fase": "Dieciseisavos de final",
         "grupo": "",
@@ -7032,6 +7319,7 @@
       },
       {
         "id": 82,
+        "match_num": null,
         "fecha": "2026-07-01",
         "fase": "Dieciseisavos de final",
         "grupo": "",
@@ -7057,6 +7345,7 @@
       },
       {
         "id": 83,
+        "match_num": null,
         "fecha": "2026-07-02",
         "fase": "Dieciseisavos de final",
         "grupo": "",
@@ -7082,6 +7371,7 @@
       },
       {
         "id": 84,
+        "match_num": null,
         "fecha": "2026-07-02",
         "fase": "Dieciseisavos de final",
         "grupo": "",
@@ -7107,6 +7397,7 @@
       },
       {
         "id": 85,
+        "match_num": null,
         "fecha": "2026-07-02",
         "fase": "Dieciseisavos de final",
         "grupo": "",
@@ -7131,7 +7422,34 @@
         "puntos_visit": null
       },
       {
+        "id": 91,
+        "match_num": null,
+        "fecha": "2026-07-02",
+        "fase": "Dieciseisavos de final",
+        "grupo": "",
+        "local": "Suiza",
+        "visitante": "3E/F/G/I/J",
+        "gf_local": null,
+        "gf_visit": null,
+        "ta_local": 0,
+        "doblea_local": 0,
+        "rd_local": 0,
+        "ta_visit": 0,
+        "doblea_visit": 0,
+        "rd_visit": 0,
+        "penfall_local": 0,
+        "penpar_local": 0,
+        "penfall_visit": 0,
+        "penpar_visit": 0,
+        "pen_tanda_local": null,
+        "pen_tanda_visit": null,
+        "jugado": false,
+        "puntos_local": null,
+        "puntos_visit": null
+      },
+      {
         "id": 86,
+        "match_num": null,
         "fecha": "2026-07-03",
         "fase": "Dieciseisavos de final",
         "grupo": "",
@@ -7157,6 +7475,7 @@
       },
       {
         "id": 87,
+        "match_num": null,
         "fecha": "2026-07-03",
         "fase": "Dieciseisavos de final",
         "grupo": "",
@@ -7182,6 +7501,7 @@
       },
       {
         "id": 88,
+        "match_num": null,
         "fecha": "2026-07-03",
         "fase": "Dieciseisavos de final",
         "grupo": "",
@@ -7207,6 +7527,7 @@
       },
       {
         "id": 89,
+        "match_num": null,
         "fecha": "2026-07-03",
         "fase": "Dieciseisavos de final",
         "grupo": "",
@@ -7299,12 +7620,12 @@
         "puntos": 2
       },
       {
-        "equipo": "Canadá",
-        "puntos": 2
-      },
-      {
         "equipo": "Uruguay",
         "puntos": -8
+      },
+      {
+        "equipo": "Canadá",
+        "puntos": -17
       },
       {
         "equipo": "Suecia",
@@ -7326,7 +7647,7 @@
       },
       {
         "equipo": "Suiza",
-        "puntos": 0
+        "puntos": 1
       },
       {
         "equipo": "Chequia",
@@ -7359,12 +7680,12 @@
         "puntos": -34
       },
       {
-        "equipo": "Paraguay",
-        "puntos": -43
+        "equipo": "Bosnia",
+        "puntos": -41
       },
       {
-        "equipo": "Bosnia",
-        "puntos": -46
+        "equipo": "Paraguay",
+        "puntos": -43
       }
     ],
     "Bombo 6": [
@@ -7416,7 +7737,7 @@
       },
       {
         "equipo": "Catar",
-        "puntos": -59
+        "puntos": -75
       }
     ],
     "Bombo 8": [
