@@ -356,7 +356,6 @@ def parsear_bloque(bloque: str, fase_txt: str, grupo_letra: str) -> dict | None:
     if not t1_raw or not t2_raw:
         return None
     t1, t2 = traducir(t1_raw), traducir(t2_raw)
-
     res_raw = _campo(bloque, "resultado") or _campo(bloque, "marcador") or _campo(bloque, "score") or ""
     res_limpio = re.sub(r"\{\{[^}]+\}\}", "", res_raw).strip()
     res_limpio = re.sub(r"\([^)]*\)", "", res_limpio)
@@ -373,9 +372,6 @@ def parsear_bloque(bloque: str, fase_txt: str, grupo_letra: str) -> dict | None:
             gf2 = int(re.search(r"\d+", g2_raw).group()) if re.search(r"\d+", g2_raw) else None
         except (AttributeError, ValueError):
             pass
-    #if gf1 is None or gf2 is None:
-    #    return None
-
     fecha_raw = _campo(bloque, "fecha") or _campo(bloque, "date") or ""
     m_tpl_fecha = re.search(r"\{\{\s*fecha\s*\|\s*(\d{1,2})\s*\|\s*(\d{1,2})\s*\|\s*(\d{4})", fecha_raw, re.IGNORECASE)
     if m_tpl_fecha:
@@ -392,12 +388,27 @@ def parsear_bloque(bloque: str, fase_txt: str, grupo_letra: str) -> dict | None:
             fecha = f"{anio}-{str(mes).zfill(2)}-{str(dia).zfill(2)}" if mes else ""
         else:
             fecha = ""
-
     cards1, cards2 = extraer_tarjetas_desde_bloque(bloque)
-
+ 
+    # ── NUEVO: número de partido (M73, M74…) ──────────────────────
+    # Wikipedia almacena el número del partido en el campo "partido"
+    # de la plantilla. Se prueban nombres alternativos por robustez.
+    num_raw = (
+        _campo(bloque, "partido")
+        or _campo(bloque, "número")
+        or _campo(bloque, "numero")
+        or _campo(bloque, "match")
+        or _campo(bloque, "id")
+        or ""
+    )
+    num_str = re.sub(r"\D", "", num_raw.strip())
+    match_num = int(num_str) if num_str else None
+    # ──────────────────────────────────────────────────────────────
+ 
     return {
         "team1": t1, "team2": t2, "fecha": fecha, "gf1": gf1, "gf2": gf2,
         "cards1": cards1, "cards2": cards2, "fase": fase_txt, "grupo": grupo_letra,
+        "match_num": match_num,   # ← NUEVO
     }
 
 
@@ -503,26 +514,22 @@ def fusionar_en_matches(nuevos: list, matches: list) -> tuple[list, int, int]:
     Empareja por (equipo local, equipo visitante) sin importar el orden, ya
     que Wikipedia puede listar el mismo cruce como local/visitante distinto
     según la fase. Nunca toca penfall_*/penpar_*."""
-
     def clave(local, visit):
         return tuple(sorted([local, visit]))
-
     indice = {clave(m["local"], m["visitante"]): m for m in matches}
     siguiente_id = (max((m["id"] for m in matches), default=0)) + 1
-
     nuevos_insertados = 0
     actualizados = 0
-
     for p in nuevos:
         k = clave(p["team1"], p["team2"])
         existente = indice.get(k)
-
         if existente is None:
             m = {
                 "id": siguiente_id,
                 "fecha": p["fecha"],
                 "fase": p["fase"],
                 "grupo": p["grupo"],
+                "match_num": p.get("match_num"),          # ← NUEVO
                 "local": p["team1"],
                 "gf_local": p["gf1"], "gc_local": p["gf2"],
                 "ta_local": p["cards1"]["ta"], "doblea_local": p["cards1"]["doble_a"], "rd_local": p["cards1"]["rd"],
@@ -541,16 +548,14 @@ def fusionar_en_matches(nuevos: list, matches: list) -> tuple[list, int, int]:
         else:
             invertido = existente["local"] != p["team1"]
             cambios = []
-
             def _set(campo, valor):
                 if existente.get(campo) != valor:
                     existente[campo] = valor
                     cambios.append(campo)
-
             _set("fecha", p["fecha"])
             _set("fase", p["fase"])
             _set("grupo", p["grupo"])
-
+            _set("match_num", p.get("match_num"))         # ← NUEVO
             if not invertido:
                 _set("gf_local", p["gf1"]); _set("gc_local", p["gf2"])
                 _set("ta_local", p["cards1"]["ta"]); _set("doblea_local", p["cards1"]["doble_a"]); _set("rd_local", p["cards1"]["rd"])
@@ -561,14 +566,11 @@ def fusionar_en_matches(nuevos: list, matches: list) -> tuple[list, int, int]:
                 _set("ta_local", p["cards2"]["ta"]); _set("doblea_local", p["cards2"]["doble_a"]); _set("rd_local", p["cards2"]["rd"])
                 _set("gf_visit", p["gf1"]); _set("gc_visit", p["gf2"])
                 _set("ta_visit", p["cards1"]["ta"]); _set("doblea_visit", p["cards1"]["doble_a"]); _set("rd_visit", p["cards1"]["rd"])
-
             # penfall_*/penpar_* NUNCA se tocan aquí (se quedan con lo que ya
             # hubiera, manual). Si la fila es nueva, ya se crearon a 0 arriba.
-
             if cambios:
                 actualizados += 1
                 log.info(f"  UPD    {existente['local']} vs {existente['visitante']} -> {', '.join(cambios)}")
-
     return matches, nuevos_insertados, actualizados
 
 
