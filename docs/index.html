@@ -334,10 +334,6 @@
     <svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="3"/><circle cx="8.3" cy="8.3" r="1.1" fill="currentColor" stroke="none"/><circle cx="15.7" cy="8.3" r="1.1" fill="currentColor" stroke="none"/><circle cx="8.3" cy="15.7" r="1.1" fill="currentColor" stroke="none"/><circle cx="15.7" cy="15.7" r="1.1" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.1" fill="currentColor" stroke="none"/></svg>
     Bombos
   </button>
-  <button data-view="seleccion">
-    <svg viewBox="0 0 24 24"><path d="M12 20.5l-7-3V7l7-3 7 3v10.5z" stroke="currentColor" fill="none" stroke-width="2"/><path d="M9 12l2 2 4-4" stroke="currentColor" fill="none" stroke-width="2"/></svg>
-    Selección
-  </button>
 </nav>
 <script>
 const $ = (sel, el=document) => el.querySelector(sel);
@@ -427,15 +423,12 @@ function render(){
     <div class="view" id="view-grupos"></div>
     <div class="view" id="view-eliminacion"></div>
     <div class="view" id="view-bombos"></div>
-    <div class="view" id="view-seleccion"></div>
   `;
   renderRanking();
   renderPartidos();
   renderGrupos();
   renderEliminacion();
   renderBombos();
-  renderSeleccion();
-  
   $$('nav.tabbar button').forEach(btn=>{
     btn.addEventListener('click', ()=>{
       $$('nav.tabbar button').forEach(b=>b.classList.remove('active'));
@@ -918,85 +911,6 @@ function renderBombos(){
     }).join('')}
   `;
 }
-
-// ===================== LÓGICA DE MI SELECCIÓN =====================
-let miSeleccion = {}; 
-
-function renderSeleccion() {
-  const el = $('#view-seleccion');
-  const letras = Object.keys(DATA.grupos); // Obtenemos las letras de los grupos (A, B, C...)
-
-  // Contenedor principal y marcador total
-  el.innerHTML = `
-    <div class="section-title">Mi Quiniela · Elige 1 por grupo</div>
-    <div class="card" style="padding: 14px; margin-bottom: 14px; background:var(--turf-soft);">
-      <div style="display:flex; justify-content:space-between; align-items:center;">
-        <span style="font-weight:600; font-size:14px; font-family:'Oswald',sans-serif; text-transform:uppercase;">Puntos Totales:</span>
-        <span id="total-seleccion" class="scorebox zero" style="font-size:18px;">0</span>
-      </div>
-    </div>
-    <div id="lista-grupos-seleccion"></div>
-  `;
-
-  const lista = $('#lista-grupos-seleccion');
-  let htmlGrupos = '';
-  
-  // Generar un selector (dropdown) por cada grupo
-  letras.forEach(letra => {
-    const equipos = DATA.grupos[letra].tabla.map(t => t.equipo);
-    htmlGrupos += `
-      <div class="card" style="padding: 12px; margin-bottom: 10px;">
-        <label style="font-size:12.5px; color:var(--chalk-dim); font-weight:600; margin-bottom:8px; display:block;">Grupo ${letra}</label>
-        <select class="seleccionar-equipo" data-grupo="${letra}" style="width:100%; padding:9px; border-radius:8px; background:var(--pitch); color:var(--chalk); border:1px solid var(--line); font-family:'Inter',sans-serif; font-size:14px; outline:none;">
-          <option value="">-- Selecciona un equipo --</option>
-          ${equipos.map(eq => `<option value="${eq}" ${miSeleccion[letra] === eq ? 'selected' : ''}>${eq}</option>`).join('')}
-        </select>
-        <div id="pts-grupo-${letra}" style="margin-top:8px; font-size:12px; font-family:'JetBrains Mono',monospace; color:var(--chalk-dim); text-align:right;"></div>
-      </div>
-    `;
-  });
-  lista.innerHTML = htmlGrupos;
-
-  // Escuchar cuando el usuario cambia su selección
-  $$('.seleccionar-equipo').forEach(select => {
-    select.addEventListener('change', (e) => {
-      const grupo = e.target.dataset.grupo;
-      const equipo = e.target.value;
-      miSeleccion[grupo] = equipo;
-      actualizarPuntosSeleccion(); // Recalcular total al cambiar
-    });
-  });
-
-  // Calcular si ya hay datos guardados previamente
-  actualizarPuntosSeleccion();
-}
-
-function actualizarPuntosSeleccion() {
-  let total = 0;
-  const letras = Object.keys(DATA.grupos); 
-  
-  letras.forEach(letra => {
-    const equipoElegido = miSeleccion[letra];
-    const elPts = $('#pts-grupo-' + letra); 
-    
-    if (equipoElegido) {
-      // Buscar el equipo en el ranking general para obtener sus puntos oficiales
-      const info = DATA.ranking.find(r => r.equipo === equipoElegido);
-      const pts = info ? info.puntos_totales : 0;
-      total += pts;
-      elPts.innerHTML = `Puntos: <span class="${scoreClass(pts)}" style="font-weight:700;">${fmtPts(pts)}</span>`;
-    } else {
-      elPts.textContent = 'Puntos: 0';
-    }
-  });
-
-  // Actualizar el marcador gigante
-  const totalEl = $('#total-seleccion');
-  totalEl.textContent = fmtPts(total);
-  totalEl.className = `scorebox ${scoreClass(total)}`;
-}
-// ==================================================================
-
 cargar();
 if('serviceWorker' in navigator){
   window.addEventListener('load', ()=> navigator.serviceWorker.register('sw.js').catch(()=>{}));
