@@ -442,7 +442,6 @@ def _partido_resumen(p: dict) -> dict:
         puntos_visit = _desglose_puntos_partido(p.get("gf_visit", 0), gc_v, ta_v, da_v, rd_v, pf_v, pp_v, pts_res_v)
     return {
         "id": p["id"],
-        "match_num": p.get("match_num"),
         "fecha": p.get("fecha"),
         "fase": p.get("fase"),
         "grupo": p.get("grupo"),
@@ -485,14 +484,12 @@ def generar_data_json(matches: list[dict], manual: dict) -> dict:
         partidos_fase = [
             _partido_resumen(p) for p in matches if p.get("fase") == fase
         ]
-        partidos_fase.sort(
-            key=lambda p: (p.get("match_num") or 9999, p.get("fecha") or "", p["id"])
-        )
+        partidos_fase.sort(key=lambda p: (p.get("fecha") or "", p["id"]))
         eliminacion_out[fase] = partidos_fase
     bombos_out = {}
     for nombre, equipos in BOMBOS.items():
         fila = sorted(
-            (({"equipo": eq, "puntos": puntos[eq]["puntos_totales"]} for eq in equipos)),
+            ({"equipo": eq, "puntos": puntos[eq]["puntos_totales"]} for eq in equipos),
             key=lambda d: d["puntos"], reverse=True,
         )
         bombos_out[nombre] = fila
