@@ -1,7 +1,7 @@
 {
   "meta": {
-    "actualizado": "2026-06-23T22:48:17+00:00",
-    "total_partidos_jugados": 44,
+    "actualizado": "2026-06-24T00:02:56+00:00",
+    "total_partidos_jugados": 45,
     "total_partidos": 89,
     "fase_grupos_terminada": false
   },
@@ -132,11 +132,11 @@
       "rd": 0,
       "penfall": 0,
       "penpar": 0,
-      "bonus_resultado": 5,
+      "bonus_resultado": 7,
       "bonus_grupo": 0,
       "premio_final": 0,
       "goleador": 0,
-      "puntos_totales": 3,
+      "puntos_totales": 5,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -155,11 +155,11 @@
       "rd": 0,
       "penfall": 0,
       "penpar": 0,
-      "bonus_resultado": 5,
+      "bonus_resultado": 7,
       "bonus_grupo": 0,
       "premio_final": 0,
       "goleador": 0,
-      "puntos_totales": 3,
+      "puntos_totales": 5,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -3090,6 +3090,51 @@
         "penpar": 0,
         "bonus_resultado": 5,
         "total": 4
+      }
+    },
+    {
+      "id": 69,
+      "fecha": "2026-06-23",
+      "fase": "Fase de Grupos",
+      "grupo": "L",
+      "local": "Inglaterra",
+      "visitante": "Ghana",
+      "gf_local": 0,
+      "gf_visit": 0,
+      "ta_local": 0,
+      "doblea_local": 0,
+      "rd_local": 0,
+      "ta_visit": 0,
+      "doblea_visit": 0,
+      "rd_visit": 0,
+      "penfall_local": 0,
+      "penpar_local": 0,
+      "penfall_visit": 0,
+      "penpar_visit": 0,
+      "pen_tanda_local": null,
+      "pen_tanda_visit": null,
+      "jugado": true,
+      "puntos_local": {
+        "gf": 0,
+        "gc": 0,
+        "ta": 0,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": 2,
+        "total": 2
+      },
+      "puntos_visit": {
+        "gf": 0,
+        "gc": 0,
+        "ta": 0,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": 2,
+        "total": 2
       }
     }
   ],
@@ -6299,27 +6344,27 @@
         {
           "pos": 1,
           "equipo": "Inglaterra",
-          "pj": 1,
+          "pj": 2,
           "pg": 1,
-          "pe": 0,
+          "pe": 1,
           "pp": 0,
           "gf": 4,
           "gc": 2,
           "dg": 2,
-          "pts": 3,
+          "pts": 4,
           "empate_no_resuelto": false
         },
         {
           "pos": 2,
           "equipo": "Ghana",
-          "pj": 1,
+          "pj": 2,
           "pg": 1,
-          "pe": 0,
+          "pe": 1,
           "pp": 0,
           "gf": 1,
           "gc": 0,
           "dg": 1,
-          "pts": 3,
+          "pts": 4,
           "empate_no_resuelto": false
         },
         {
@@ -6447,8 +6492,8 @@
           "grupo": "L",
           "local": "Inglaterra",
           "visitante": "Ghana",
-          "gf_local": null,
-          "gf_visit": null,
+          "gf_local": 0,
+          "gf_visit": 0,
           "ta_local": 0,
           "doblea_local": 0,
           "rd_local": 0,
@@ -6461,9 +6506,29 @@
           "penpar_visit": 0,
           "pen_tanda_local": null,
           "pen_tanda_visit": null,
-          "jugado": false,
-          "puntos_local": null,
-          "puntos_visit": null
+          "jugado": true,
+          "puntos_local": {
+            "gf": 0,
+            "gc": 0,
+            "ta": 0,
+            "doblea": 0,
+            "rd": 0,
+            "penfall": 0,
+            "penpar": 0,
+            "bonus_resultado": 2,
+            "total": 2
+          },
+          "puntos_visit": {
+            "gf": 0,
+            "gc": 0,
+            "ta": 0,
+            "doblea": 0,
+            "rd": 0,
+            "penfall": 0,
+            "penpar": 0,
+            "bonus_resultado": 2,
+            "total": 2
+          }
         },
         {
           "id": 70,
@@ -6992,7 +7057,7 @@
       },
       {
         "equipo": "Inglaterra",
-        "puntos": 3
+        "puntos": 5
       },
       {
         "equipo": "Brasil",
@@ -7162,7 +7227,7 @@
     "Bombo 8": [
       {
         "equipo": "Ghana",
-        "puntos": 3
+        "puntos": 5
       },
       {
         "equipo": "Irán",
