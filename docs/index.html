@@ -761,16 +761,75 @@ function bcCard(match){
   </div>`;
 }
 function bracketHTML(elim){
-  const pad = (arr, n) => { const a=[...(arr||[])]; while(a.length<n) a.push(null); return a; };
-  const r32 = pad(elim['Dieciseisavos de final'], 16);
-  const r16 = pad(elim['Octavos de final'], 8);
-  const qf  = pad(elim['Cuartos de final'], 4);
-  const sf  = pad(elim['Semifinales'], 2);
-  const fin = pad(elim['Final'], 1);
-  const bronze = pad(elim['Tercer puesto'] || elim['Tercer y cuarto puesto'] || [], 1);
+  const norm = s => (s||'').toLowerCase().replace(/[\s/\.°º]/g,'');
+  const byNum = {};
+  
+  // Extraemos todos los partidos que tengan un match_num asignado
+  Object.values(elim).forEach(arr => (arr||[]).forEach(m => { 
+    if(m?.match_num != null) byNum[m.match_num] = m; 
+  }));
+
+  const byTeam = {};
+  (elim['Dieciseisavos de final']||[]).forEach(m => {
+    if(!m) return;
+    const nl = norm(m.local), nv = norm(m.visitante);
+    if(nl) byTeam[nl] = m;
+    if(nv) byTeam[nv] = m;
+  });
+
+  const TEAM_D16 = window.TEAM_D16 || {};
+
+  const slotD16 = num => {
+    if(byNum[num]) return byNum[num];
+    const keys = Object.entries(TEAM_D16).filter(([,n])=>n===num).map(([t])=>t);
+    for(const k of keys){ if(byTeam[k]) return byTeam[k]; }
+    return null;
+  };
+  const slot = n => byNum[n] || null;
+
+  const mnSort = fase => [...(elim[fase]||[])].sort((a,b)=>{
+    const ma = a?.match_num ?? 9999, mb = b?.match_num ?? 9999;
+    if(ma !== mb) return ma - mb;
+    return (a?.id||0) - (b?.id||0);
+  });
+  const byPos = (arr, pos) => pos.map(p => arr[p]||null);
+
+  const r16s = mnSort('Octavos de final');
+  const qfs  = mnSort('Cuartos de final');
+  const sfs  = mnSort('Semifinales');
+  const fins = mnSort('Final');
+  // Ajuste para que reconozca el tercer puesto
+  const bron = mnSort('Tercer puesto').length ? mnSort('Tercer puesto') : mnSort('Tercer y cuarto puesto');
+
+  const BRACKET_SLOTS = {
+    r32L:  [74, 77, 73, 75, 83, 84, 81, 82],
+    r16L:  [89, 90, 93, 94],
+    qfL:   [97, 98],
+    sfL:   [101],
+    final: [104],
+    sfR:   [102],
+    qfR:   [99, 100],
+    r16R:  [91, 92, 95, 96],
+    r32R:  [76, 78, 79, 80, 86, 88, 85, 87],
+  };
+
+  const hasR16n = r16s.some(m=>m?.match_num!=null);
+  const hasQFn  = qfs.some(m=>m?.match_num!=null);
+  const hasSFn  = sfs.some(m=>m?.match_num!=null);
+
+  const r32L = BRACKET_SLOTS.r32L.map(slotD16);
+  const r32R = BRACKET_SLOTS.r32R.map(slotD16);
+  const r16L = hasR16n ? BRACKET_SLOTS.r16L.map(slot) : byPos(r16s,[0,1,4,5]);
+  const r16R = hasR16n ? BRACKET_SLOTS.r16R.map(slot) : byPos(r16s,[2,3,6,7]);
+  const qfL  = hasQFn  ? BRACKET_SLOTS.qfL.map(slot)  : byPos(qfs,[0,1]);
+  const qfR  = hasQFn  ? BRACKET_SLOTS.qfR.map(slot)  : byPos(qfs,[2,3]);
+  const sfL  = hasSFn  ? BRACKET_SLOTS.sfL.map(slot)  : byPos(sfs,[0]);
+  const sfR  = hasSFn  ? BRACKET_SLOTS.sfR.map(slot)  : byPos(sfs,[1]);
+  const finalM = byNum[104] ? [byNum[104]] : byPos(fins,[0]);
+  const bronze = byNum[103] ? [byNum[103]] : bron.length ? [bron[0]] : [null];
 
   const round = (matches, extraCls='') =>
-    `<div class="bc-round${extraCls?(' '+extraCls):''}">` +
+    `<div class="bc-round${extraCls?' '+extraCls:''}">` +
     matches.map(m=>`<div class="bc-zone">${bcCard(m)}</div>`).join('') +
     `</div>`;
   const conn = (n, cls) =>
@@ -778,9 +837,10 @@ function bracketHTML(elim){
     Array(n).fill('<div class="bc-conn-pair"></div>').join('') +
     `</div>`;
 
-  // Spacer to align bronze match exactly under the Final column.
-  // Left side before Final: 4 rounds × (70 round width + 16 connector width) = 344px
+  // Espaciador para centrar el partido de bronce
   const leftSpacer = `<div style="width:344px;flex-shrink:0;"></div>`;
+  
+  // --- MANTENEMOS LA ESTÉTICA DE TU INDEX ORIGINAL AQUÍ ---
   const bronzeHTML = `
     <div class="bracket-bronze-row">
       ${leftSpacer}
@@ -791,23 +851,15 @@ function bracketHTML(elim){
     </div>`;
 
   return `<div class="bracket-tree">
-    ${round(r32.slice(0,8))}
-    ${conn(4,'left')}
-    ${round(r16.slice(0,4))}
-    ${conn(2,'left')}
-    ${round(qf.slice(0,2))}
-    ${conn(1,'left')}
-    ${round(sf.slice(0,1))}
-    ${conn(1,'simple')}
-    ${round(fin,'bc-final-col')}
-    ${conn(1,'simple')}
-    ${round(sf.slice(1,2))}
-    ${conn(1,'right')}
-    ${round(qf.slice(2,4))}
-    ${conn(2,'right')}
-    ${round(r16.slice(4,8))}
-    ${conn(4,'right')}
-    ${round(r32.slice(8,16))}
+    ${round(r32L)}     ${conn(4,'left')}
+    ${round(r16L)}     ${conn(2,'left')}
+    ${round(qfL)}      ${conn(1,'left')}
+    ${round(sfL)}      ${conn(1,'simple')}
+    ${round(finalM,'bc-final-col')}
+    ${conn(1,'simple')}${round(sfR)}
+    ${conn(1,'right')} ${round(qfR)}
+    ${conn(2,'right')} ${round(r16R)}
+    ${conn(4,'right')} ${round(r32R)}
   </div>
   ${bronzeHTML}`;
 }
@@ -825,7 +877,7 @@ function renderEliminacion(){
     'Final',
     'Tercer puesto',
   ];
-  const LABELS = ['D16','R16','QF','SF','3º/4º','Final'];
+  const LABELS = ['R32','R16','QF','SF','3º/4º','Final'];
 
   // Choose the deepest phase with data as default
   let faseActiva = FASES[0];
@@ -835,12 +887,12 @@ function renderEliminacion(){
 
   // Header labels row (mirrors the bracket columns)
   const headerCols = [
-    {w:70,lbl:'D16'},{w:16,lbl:''},{w:70,lbl:'R16'},{w:16,lbl:''},
+    {w:70,lbl:'R32'},{w:16,lbl:''},{w:70,lbl:'R16'},{w:16,lbl:''},
     {w:70,lbl:'QF'},{w:16,lbl:''},{w:70,lbl:'SF'},{w:16,lbl:''},
     {w:72,lbl:'Final',cls:'final-lbl'},
     {w:16,lbl:''},{w:70,lbl:'SF'},{w:16,lbl:''},
     {w:70,lbl:'QF'},{w:16,lbl:''},{w:70,lbl:'R16'},{w:16,lbl:''},
-    {w:70,lbl:'D16'},
+    {w:70,lbl:'R32'},
   ];
   const headerHTML = headerCols.map(c=>
     c.lbl===''
