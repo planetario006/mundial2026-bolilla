@@ -30,6 +30,9 @@ from __future__ import annotations
 import json
 from pathlib import Path
 from datetime import datetime, timezone
+import sys
+import shutil
+from pathlib import Path
 # ─────────────────────────────────────────────────────────────────────────
 # ESTRUCTURA FIJA DEL TORNEO (Mundial 2026 · 48 equipos · 12 grupos de 4)
 # ─────────────────────────────────────────────────────────────────────────
@@ -442,6 +445,7 @@ def _partido_resumen(p: dict) -> dict:
         puntos_visit = _desglose_puntos_partido(p.get("gf_visit", 0), gc_v, ta_v, da_v, rd_v, pf_v, pp_v, pts_res_v)
     return {
         "id": p["id"],
+        "match_num": p.get("match_num"),
         "fecha": p.get("fecha"),
         "fase": p.get("fase"),
         "grupo": p.get("grupo"),
@@ -517,10 +521,19 @@ def cargar_json(path: Path, default):
 def guardar_json(path: Path, data):
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
-def construir_y_guardar(matches_path: Path, manual_path: Path, salida_path: Path) -> dict:
+def construir_y_guardar(
+    matches_path: Path, manual_path: Path, salida_path: Path,
+    goleadores_path: Path | None = None,
+) -> dict:
     matches = cargar_json(matches_path, [])
     manual = cargar_json(manual_path, {"premios_finales": {}, "goleador_equipo": None, "ranking_fifa": {}})
     data = generar_data_json(matches, manual)
+    if goleadores_path is not None:
+        # Import diferido para no crear un ciclo de imports: goleadores.py
+        # importa cargar_json/guardar_json de aquí mismo.
+        import goleadores as _goleadores
+        datos_goleadores = cargar_json(goleadores_path, {})
+        data["goleadores"] = _goleadores.tabla_goleadores(datos_goleadores)
     guardar_json(salida_path, data)
     return data
 if __name__ == "__main__":
@@ -529,6 +542,7 @@ if __name__ == "__main__":
     data = construir_y_guardar(
         base / "matches.json",
         base / "manual_overrides.json",
-        base / "site" / "data.json",
+        base / "docs" / "data.json",
+        base / "goleadores_por_partido.json",
     )
     print(f"data.json generado. Partidos jugados: {data['meta']['total_partidos_jugados']}")
