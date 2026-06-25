@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-06-25T00:27:55+00:00",
+    "actualizado": "2026-06-25T00:30:47+00:00",
     "total_partidos_jugados": 52,
     "total_partidos": 93,
     "fase_grupos_terminada": false
@@ -1070,7 +1070,7 @@
       "bombo": "Bombo 8",
       "gf": 2,
       "gc": 8,
-      "ta": 6,
+      "ta": 7,
       "doblea": 0,
       "rd": 0,
       "penfall": 0,
@@ -1079,7 +1079,7 @@
       "bonus_grupo": 0,
       "premio_final": 0,
       "goleador": 0,
-      "puntos_totales": -64,
+      "puntos_totales": -67,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -3419,7 +3419,7 @@
       "ta_local": 0,
       "doblea_local": 0,
       "rd_local": 0,
-      "ta_visit": 2,
+      "ta_visit": 3,
       "doblea_visit": 0,
       "rd_visit": 0,
       "penfall_local": 0,
@@ -3443,13 +3443,13 @@
       "puntos_visit": {
         "gf": 2,
         "gc": -12,
-        "ta": -6,
+        "ta": -9,
         "doblea": 0,
         "rd": 0,
         "penfall": 0,
         "penpar": 0,
         "bonus_resultado": -8,
-        "total": -24
+        "total": -27
       }
     }
   ],
@@ -4381,7 +4381,7 @@
           "ta_local": 0,
           "doblea_local": 0,
           "rd_local": 0,
-          "ta_visit": 2,
+          "ta_visit": 3,
           "doblea_visit": 0,
           "rd_visit": 0,
           "penfall_local": 0,
@@ -4405,13 +4405,13 @@
           "puntos_visit": {
             "gf": 2,
             "gc": -12,
-            "ta": -6,
+            "ta": -9,
             "doblea": 0,
             "rd": 0,
             "penfall": 0,
             "penpar": 0,
             "bonus_resultado": -8,
-            "total": -24
+            "total": -27
           }
         }
       ]
@@ -7802,7 +7802,7 @@
       },
       {
         "equipo": "Haití",
-        "puntos": -64
+        "puntos": -67
       }
     ]
   },
