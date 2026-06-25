@@ -1,8 +1,8 @@
 {
   "meta": {
-    "actualizado": "2026-06-24T23:08:46+00:00",
-    "total_partidos_jugados": 50,
-    "total_partidos": 91,
+    "actualizado": "2026-06-25T00:27:55+00:00",
+    "total_partidos_jugados": 52,
+    "total_partidos": 93,
     "fase_grupos_terminada": false
   },
   "ranking": [
@@ -125,18 +125,18 @@
       "equipo": "Marruecos",
       "grupo": "C",
       "bombo": "Bombo 2",
-      "gf": 2,
-      "gc": 1,
+      "gf": 6,
+      "gc": 3,
       "ta": 1,
       "doblea": 0,
       "rd": 0,
       "penfall": 0,
       "penpar": 0,
-      "bonus_resultado": 7,
+      "bonus_resultado": 12,
       "bonus_grupo": 0,
       "premio_final": 0,
       "goleador": 0,
-      "puntos_totales": 3,
+      "puntos_totales": 6,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -214,6 +214,29 @@
       "pos": 9
     },
     {
+      "equipo": "Brasil",
+      "grupo": "C",
+      "bombo": "Bombo 1",
+      "gf": 7,
+      "gc": 1,
+      "ta": 5,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": 12,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": 1,
+      "bonus_ronda_dieciseisavos": 0,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 10
+    },
+    {
       "equipo": "EE.UU.",
       "grupo": "D",
       "bombo": "Bombo 4",
@@ -234,7 +257,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 10
+      "pos": 11
     },
     {
       "equipo": "Suiza",
@@ -257,7 +280,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 11
+      "pos": 12
     },
     {
       "equipo": "Argentina",
@@ -271,29 +294,6 @@
       "penfall": 1,
       "penpar": 0,
       "bonus_resultado": 10,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": -1,
-      "bonus_ronda_dieciseisavos": 0,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 12
-    },
-    {
-      "equipo": "Brasil",
-      "grupo": "C",
-      "bombo": "Bombo 1",
-      "gf": 4,
-      "gc": 1,
-      "ta": 3,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": 7,
       "bonus_grupo": 0,
       "premio_final": 0,
       "goleador": 0,
@@ -651,29 +651,6 @@
       "pos": 28
     },
     {
-      "equipo": "Escocia",
-      "grupo": "C",
-      "bombo": "Bombo 5",
-      "gf": 1,
-      "gc": 1,
-      "ta": 4,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": -3,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": -17,
-      "bonus_ronda_dieciseisavos": 0,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 29
-    },
-    {
       "equipo": "R. D. Congo",
       "grupo": "K",
       "bombo": "Bombo 7",
@@ -694,7 +671,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 30
+      "pos": 29
     },
     {
       "equipo": "Australia",
@@ -717,7 +694,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 31
+      "pos": 30
     },
     {
       "equipo": "Bélgica",
@@ -740,7 +717,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 32
+      "pos": 31
     },
     {
       "equipo": "Nueva Zelanda",
@@ -763,7 +740,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 33
+      "pos": 32
     },
     {
       "equipo": "Suecia",
@@ -786,7 +763,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 34
+      "pos": 33
     },
     {
       "equipo": "Arabia Saudí",
@@ -809,7 +786,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 35
+      "pos": 34
     },
     {
       "equipo": "Panamá",
@@ -832,7 +809,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 36
+      "pos": 35
     },
     {
       "equipo": "Senegal",
@@ -855,7 +832,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 37
+      "pos": 36
     },
     {
       "equipo": "Jordania",
@@ -878,7 +855,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 38
+      "pos": 37
     },
     {
       "equipo": "Turquía",
@@ -901,30 +878,30 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 39
+      "pos": 38
     },
     {
-      "equipo": "Haití",
+      "equipo": "Escocia",
       "grupo": "C",
-      "bombo": "Bombo 8",
-      "gf": 0,
+      "bombo": "Bombo 5",
+      "gf": 1,
       "gc": 4,
-      "ta": 4,
+      "ta": 5,
       "doblea": 0,
       "rd": 0,
       "penfall": 0,
       "penpar": 0,
-      "bonus_resultado": -16,
+      "bonus_resultado": -11,
       "bonus_grupo": 0,
       "premio_final": 0,
       "goleador": 0,
-      "puntos_totales": -40,
+      "puntos_totales": -37,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 40
+      "pos": 39
     },
     {
       "equipo": "Curazao",
@@ -947,7 +924,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 41
+      "pos": 40
     },
     {
       "equipo": "Irak",
@@ -970,7 +947,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 42
+      "pos": 41
     },
     {
       "equipo": "Paraguay",
@@ -993,7 +970,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 43
+      "pos": 42
     },
     {
       "equipo": "Bosnia",
@@ -1016,7 +993,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 44
+      "pos": 43
     },
     {
       "equipo": "Sudáfrica",
@@ -1039,7 +1016,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 45
+      "pos": 44
     },
     {
       "equipo": "Túnez",
@@ -1062,7 +1039,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 46
+      "pos": 45
     },
     {
       "equipo": "Uzbekistán",
@@ -1080,6 +1057,29 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -45,
+      "bonus_ronda_dieciseisavos": 0,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 46
+    },
+    {
+      "equipo": "Haití",
+      "grupo": "C",
+      "bombo": "Bombo 8",
+      "gf": 2,
+      "gc": 8,
+      "ta": 6,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": -24,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": -64,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -3361,6 +3361,96 @@
         "bonus_resultado": -8,
         "total": -19
       }
+    },
+    {
+      "id": 46,
+      "fecha": "2026-06-24",
+      "fase": "Fase de Grupos",
+      "grupo": "C",
+      "local": "Escocia",
+      "visitante": "Brasil",
+      "gf_local": 0,
+      "gf_visit": 3,
+      "ta_local": 1,
+      "doblea_local": 0,
+      "rd_local": 0,
+      "ta_visit": 2,
+      "doblea_visit": 0,
+      "rd_visit": 0,
+      "penfall_local": 0,
+      "penpar_local": 0,
+      "penfall_visit": 0,
+      "penpar_visit": 0,
+      "pen_tanda_local": null,
+      "pen_tanda_visit": null,
+      "jugado": true,
+      "puntos_local": {
+        "gf": 0,
+        "gc": -9,
+        "ta": -3,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": -8,
+        "total": -20
+      },
+      "puntos_visit": {
+        "gf": 3,
+        "gc": 0,
+        "ta": -6,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": 5,
+        "total": 2
+      }
+    },
+    {
+      "id": 47,
+      "fecha": "2026-06-24",
+      "fase": "Fase de Grupos",
+      "grupo": "C",
+      "local": "Marruecos",
+      "visitante": "Haití",
+      "gf_local": 4,
+      "gf_visit": 2,
+      "ta_local": 0,
+      "doblea_local": 0,
+      "rd_local": 0,
+      "ta_visit": 2,
+      "doblea_visit": 0,
+      "rd_visit": 0,
+      "penfall_local": 0,
+      "penpar_local": 0,
+      "penfall_visit": 0,
+      "penpar_visit": 0,
+      "pen_tanda_local": null,
+      "pen_tanda_visit": null,
+      "jugado": true,
+      "puntos_local": {
+        "gf": 4,
+        "gc": -6,
+        "ta": 0,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": 5,
+        "total": 3
+      },
+      "puntos_visit": {
+        "gf": 2,
+        "gc": -12,
+        "ta": -6,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": -8,
+        "total": -24
+      }
     }
   ],
   "grupos": {
@@ -4003,52 +4093,52 @@
         {
           "pos": 1,
           "equipo": "Brasil",
-          "pj": 2,
-          "pg": 1,
+          "pj": 3,
+          "pg": 2,
           "pe": 1,
           "pp": 0,
-          "gf": 4,
+          "gf": 7,
           "gc": 1,
-          "dg": 3,
-          "pts": 4,
+          "dg": 6,
+          "pts": 7,
           "empate_no_resuelto": false
         },
         {
           "pos": 2,
           "equipo": "Marruecos",
-          "pj": 2,
-          "pg": 1,
+          "pj": 3,
+          "pg": 2,
           "pe": 1,
           "pp": 0,
-          "gf": 2,
-          "gc": 1,
-          "dg": 1,
-          "pts": 4,
+          "gf": 6,
+          "gc": 3,
+          "dg": 3,
+          "pts": 7,
           "empate_no_resuelto": false
         },
         {
           "pos": 3,
           "equipo": "Escocia",
-          "pj": 2,
+          "pj": 3,
           "pg": 1,
           "pe": 0,
-          "pp": 1,
+          "pp": 2,
           "gf": 1,
-          "gc": 1,
-          "dg": 0,
+          "gc": 4,
+          "dg": -3,
           "pts": 3,
           "empate_no_resuelto": false
         },
         {
           "pos": 4,
           "equipo": "Haití",
-          "pj": 2,
+          "pj": 3,
           "pg": 0,
           "pe": 0,
-          "pp": 2,
-          "gf": 0,
-          "gc": 4,
-          "dg": -4,
+          "pp": 3,
+          "gf": 2,
+          "gc": 8,
+          "dg": -6,
           "pts": 0,
           "empate_no_resuelto": false
         }
@@ -4241,12 +4331,12 @@
           "grupo": "C",
           "local": "Escocia",
           "visitante": "Brasil",
-          "gf_local": null,
-          "gf_visit": null,
-          "ta_local": 0,
+          "gf_local": 0,
+          "gf_visit": 3,
+          "ta_local": 1,
           "doblea_local": 0,
           "rd_local": 0,
-          "ta_visit": 0,
+          "ta_visit": 2,
           "doblea_visit": 0,
           "rd_visit": 0,
           "penfall_local": 0,
@@ -4255,9 +4345,29 @@
           "penpar_visit": 0,
           "pen_tanda_local": null,
           "pen_tanda_visit": null,
-          "jugado": false,
-          "puntos_local": null,
-          "puntos_visit": null
+          "jugado": true,
+          "puntos_local": {
+            "gf": 0,
+            "gc": -9,
+            "ta": -3,
+            "doblea": 0,
+            "rd": 0,
+            "penfall": 0,
+            "penpar": 0,
+            "bonus_resultado": -8,
+            "total": -20
+          },
+          "puntos_visit": {
+            "gf": 3,
+            "gc": 0,
+            "ta": -6,
+            "doblea": 0,
+            "rd": 0,
+            "penfall": 0,
+            "penpar": 0,
+            "bonus_resultado": 5,
+            "total": 2
+          }
         },
         {
           "id": 47,
@@ -4266,12 +4376,12 @@
           "grupo": "C",
           "local": "Marruecos",
           "visitante": "Haití",
-          "gf_local": null,
-          "gf_visit": null,
+          "gf_local": 4,
+          "gf_visit": 2,
           "ta_local": 0,
           "doblea_local": 0,
           "rd_local": 0,
-          "ta_visit": 0,
+          "ta_visit": 2,
           "doblea_visit": 0,
           "rd_visit": 0,
           "penfall_local": 0,
@@ -4280,9 +4390,29 @@
           "penpar_visit": 0,
           "pen_tanda_local": null,
           "pen_tanda_visit": null,
-          "jugado": false,
-          "puntos_local": null,
-          "puntos_visit": null
+          "jugado": true,
+          "puntos_local": {
+            "gf": 4,
+            "gc": -6,
+            "ta": 0,
+            "doblea": 0,
+            "rd": 0,
+            "penfall": 0,
+            "penpar": 0,
+            "bonus_resultado": 5,
+            "total": 3
+          },
+          "puntos_visit": {
+            "gf": 2,
+            "gc": -12,
+            "ta": -6,
+            "doblea": 0,
+            "rd": 0,
+            "penfall": 0,
+            "penpar": 0,
+            "bonus_resultado": -8,
+            "total": -24
+          }
         }
       ]
     },
@@ -7061,6 +7191,56 @@
         "puntos_visit": null
       },
       {
+        "id": 92,
+        "fecha": "2026-06-29",
+        "fase": "Dieciseisavos de final",
+        "grupo": "",
+        "local": "Brasil",
+        "visitante": "2F",
+        "gf_local": null,
+        "gf_visit": null,
+        "ta_local": 0,
+        "doblea_local": 0,
+        "rd_local": 0,
+        "ta_visit": 0,
+        "doblea_visit": 0,
+        "rd_visit": 0,
+        "penfall_local": 0,
+        "penpar_local": 0,
+        "penfall_visit": 0,
+        "penpar_visit": 0,
+        "pen_tanda_local": null,
+        "pen_tanda_visit": null,
+        "jugado": false,
+        "puntos_local": null,
+        "puntos_visit": null
+      },
+      {
+        "id": 93,
+        "fecha": "2026-06-29",
+        "fase": "Dieciseisavos de final",
+        "grupo": "",
+        "local": "1F",
+        "visitante": "Marruecos",
+        "gf_local": null,
+        "gf_visit": null,
+        "ta_local": 0,
+        "doblea_local": 0,
+        "rd_local": 0,
+        "ta_visit": 0,
+        "doblea_visit": 0,
+        "rd_visit": 0,
+        "penfall_local": 0,
+        "penpar_local": 0,
+        "penfall_visit": 0,
+        "penpar_visit": 0,
+        "pen_tanda_local": null,
+        "pen_tanda_visit": null,
+        "jugado": false,
+        "puntos_local": null,
+        "puntos_visit": null
+      },
+      {
         "id": 77,
         "fecha": "2026-06-30",
         "fase": "Dieciseisavos de final",
@@ -7436,7 +7616,7 @@
       },
       {
         "equipo": "Brasil",
-        "puntos": -1
+        "puntos": 1
       },
       {
         "equipo": "Argentina",
@@ -7446,7 +7626,7 @@
     "Bombo 2": [
       {
         "equipo": "Marruecos",
-        "puntos": 3
+        "puntos": 6
       },
       {
         "equipo": "Portugal",
@@ -7527,16 +7707,16 @@
         "puntos": -16
       },
       {
-        "equipo": "Escocia",
-        "puntos": -17
-      },
-      {
         "equipo": "Arabia Saudí",
         "puntos": -29
       },
       {
         "equipo": "Turquía",
         "puntos": -34
+      },
+      {
+        "equipo": "Escocia",
+        "puntos": -37
       },
       {
         "equipo": "Paraguay",
@@ -7617,12 +7797,12 @@
         "puntos": -32
       },
       {
-        "equipo": "Haití",
-        "puntos": -40
-      },
-      {
         "equipo": "Curazao",
         "puntos": -41
+      },
+      {
+        "equipo": "Haití",
+        "puntos": -64
       }
     ]
   },
