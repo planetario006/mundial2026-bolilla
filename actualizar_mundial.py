@@ -34,17 +34,26 @@ import time
 import random
 import argparse
 import logging
+import unicodedata
+import datetime as _dt
 from pathlib import Path
 
 import requests
 
 import mundial_core as core
+from nombres_equipos import NOMBRE_MAP, traducir
+import conciliacion as conc
+import espn_scraper as espn
+import goleadores as gol
 
 BASE_DIR = Path(__file__).parent
 MATCHES_PATH = BASE_DIR / "matches.json"
 MANUAL_PATH = BASE_DIR / "manual_overrides.json"
 SALIDA_PATH = BASE_DIR / "docs" / "data.json"
 LOG_PATH = BASE_DIR / "log_mundial.txt"
+ESTADO_PATH = BASE_DIR / "estado_reconciliacion.json"
+DISCREPANCIAS_PATH = BASE_DIR / "discrepancias.json"
+GOLEADORES_PATH = BASE_DIR / "goleadores_por_partido.json"
 
 API_ES = "https://es.wikipedia.org/w/api.php"
 
@@ -102,7 +111,8 @@ if "TU-USUARIO" in CONTACTO:
 # MAPAS DE NOMBRES Y FASES  (idénticos al script original)
 # ─────────────────────────────────────────────────────────────────────────────
 
-from team_names import NOMBRE_MAP, traducir
+# NOMBRE_MAP y traducir() viven ahora en nombres_equipos.py (importado arriba)
+# para poder reutilizarlos también desde espn_scraper.py.
 
 # Grupos del Mundial 2026: A-L, 12 grupos.
 # (El script original solo cubría A-K — 11 — y se dejaba el Grupo L sin
@@ -299,6 +309,93 @@ def extraer_tarjetas_desde_bloque(bloque: str):
     return tarjetas_local, tarjetas_visit
 
 
+# ─────────────────────────────────────────────────────────────────────────────
+# ESTADIOS — identificación canónica de sede
+# ─────────────────────────────────────────────────────────────────────────────
+# Wikipedia puede referirse a cada estadio de varias formas distintas:
+#   - Con el nombre comercial habitual (p.ej. "SoFi Stadium").
+#   - Con el nombre alternativo sin patrocinio que impone la FIFA durante el
+#     torneo (p.ej. "Estadio de Los Ángeles" / "Los Angeles Stadium"), tal
+#     y como advierte la propia Wikipedia: "Debido a las normas de la FIFA
+#     sobre el patrocinio de estadios, las sedes utilizan nombres
+#     alternativos durante el torneo".
+#   - Solo con la ciudad/área metropolitana, en el campo "ciudad".
+# Como cada una de las 16 sedes del Mundial 2026 está en una ciudad/área
+# distinta, basta con detectar CUALQUIERA de los alias (nombre comercial,
+# nombre FIFA o ciudad) para identificar la sede de forma inequívoca.
+#
+# Las claves de este diccionario (p.ej. "boston", "dallas"...) son los
+# identificadores internos de estadio usados en _MATCH_NUM_CALENDAR.
+# ─────────────────────────────────────────────────────────────────────────────
+
+_ESTADIOS_ALIASES_RAW: dict[str, list[str]] = {
+    "boston":   ["Gillette Stadium", "Estadio de Boston", "Boston Stadium",
+                 "Foxborough", "Boston"],
+    "nynj":     ["MetLife Stadium", "Estadio de Nueva York Nueva Jersey",
+                 "New York New Jersey Stadium", "East Rutherford",
+                 "Nueva York/Nueva Jersey", "Nueva Jersey"],
+    "la":       ["SoFi Stadium", "Estadio de Los Ángeles", "Los Angeles Stadium",
+                 "Inglewood", "Los Ángeles"],
+    "monterrey": ["Estadio BBVA", "Estadio Monterrey", "Monterrey"],
+    "toronto":  ["BMO Field", "Estadio de Toronto", "Toronto Stadium", "Toronto"],
+    "bayarea":  ["Levi's Stadium", "Levis Stadium",
+                 "Estadio del Área de la Bahía de San Francisco",
+                 "San Francisco Bay Area Stadium", "Santa Clara",
+                 "Bay Area", "San Francisco"],
+    "seattle":  ["Lumen Field", "Estadio de Seattle", "Seattle Stadium", "Seattle"],
+    "houston":  ["NRG Stadium", "Estadio de Houston", "Houston Stadium", "Houston"],
+    "dallas":   ["AT&T Stadium", "Estadio de Dallas", "Dallas Stadium",
+                 "Arlington", "Dallas"],
+    "cdmx":     ["Estadio Azteca", "Estadio Ciudad de México",
+                 "Mexico City Stadium", "Ciudad de México"],
+    "atlanta":  ["Mercedes-Benz Stadium", "Estadio de Atlanta",
+                 "Atlanta Stadium", "Atlanta"],
+    "miami":    ["Hard Rock Stadium", "Estadio de Miami", "Miami Stadium",
+                 "Miami Gardens", "Miami"],
+    "vancouver": ["BC Place", "Estadio de Vancouver", "Vancouver Stadium", "Vancouver"],
+    "kc":       ["GEHA Field at Arrowhead Stadium", "Arrowhead Stadium",
+                 "Estadio de Kansas City", "Kansas City Stadium", "Kansas City"],
+    "philly":   ["Lincoln Financial Field", "Estadio de Filadelfia",
+                 "Philadelphia Stadium", "Filadelfia", "Philadelphia"],
+}
+
+
+def _normalizar(s: str) -> str:
+    """minúsculas, sin acentos, sin puntuación — para comparar a prueba de
+    variaciones de tipeo/formato entre Wikipedia y nuestras tablas."""
+    if not s:
+        return ""
+    s = s.lower()
+    s = unicodedata.normalize("NFKD", s)
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    s = re.sub(r"[^a-z0-9]+", " ", s)
+    return s.strip()
+
+
+# Alias ya normalizados, ordenados de más largo a más corto para que al
+# buscar coincidencias se prefiera siempre el alias más específico (p.ej.
+# "sofi stadium" antes que el genérico "los angeles" si ambos aparecieran).
+_ESTADIOS_ALIASES: dict[str, list[str]] = {
+    eid: sorted({_normalizar(a) for a in aliases}, key=len, reverse=True)
+    for eid, aliases in _ESTADIOS_ALIASES_RAW.items()
+}
+
+
+def _detectar_estadio_id(estadio_raw: str, ciudad_raw: str = "") -> str | None:
+    """Identifica la sede (uno de los 16 identificadores internos) a partir
+    del texto de los campos 'estadio'/'sede' y 'ciudad' tal como vienen del
+    wikitext. Devuelve None si no se reconoce ninguno de los alias."""
+    texto = _normalizar(f"{estadio_raw} {ciudad_raw}")
+    if not texto:
+        return None
+    mejor_id, mejor_len = None, 0
+    for eid, aliases in _ESTADIOS_ALIASES.items():
+        for alias in aliases:
+            if alias and alias in texto and len(alias) > mejor_len:
+                mejor_id, mejor_len = eid, len(alias)
+    return mejor_id
+
+
 def parsear_bloque(bloque: str, fase_txt: str, grupo_letra: str) -> dict | None:
     t1_raw = _campo(bloque, "equipo1") or _campo(bloque, "team1") or _campo(bloque, "local") or ""
     t2_raw = _campo(bloque, "equipo2") or _campo(bloque, "team2") or _campo(bloque, "visitante") or _campo(bloque, "visita") or ""
@@ -330,27 +427,45 @@ def parsear_bloque(bloque: str, fase_txt: str, grupo_letra: str) -> dict | None:
     #    return None
 
     fecha_raw = _campo(bloque, "fecha") or _campo(bloque, "date") or ""
-    m_tpl_fecha = re.search(r"\{\{\s*fecha\s*\|\s*(\d{1,2})\s*\|\s*(\d{1,2})\s*\|\s*(\d{4})", fecha_raw, re.IGNORECASE)
+    m_tpl_fecha = re.search(r"\{\{\s*fecha\s*\|\s*(\d{1,2})(?:\s*\|\s*(\d{1,2}))?(?:\s*\|\s*(\d{4}))?", fecha_raw, re.IGNORECASE)
     if m_tpl_fecha:
-        dia, mes, anio = int(m_tpl_fecha.group(1)), int(m_tpl_fecha.group(2)), int(m_tpl_fecha.group(3))
+        dia = int(m_tpl_fecha.group(1))
+        mes = int(m_tpl_fecha.group(2)) if m_tpl_fecha.group(2) else 1
+        anio = int(m_tpl_fecha.group(3)) if m_tpl_fecha.group(3) else 2026
         fecha = f"{anio}-{mes:02d}-{dia:02d}"
     else:
         MESES = {"enero": 1, "febrero": 2, "marzo": 3, "abril": 4, "mayo": 5, "junio": 6,
-                  "julio": 7, "agosto": 8, "septiembre": 9, "octubre": 10, "noviembre": 11, "diciembre": 12}
-        m_fecha2 = re.search(r"(\d{1,2})\s+de\s+(\w+)\s+de\s+(\d{4})", fecha_raw, re.IGNORECASE)
+                "julio": 7, "agosto": 8, "septiembre": 9, "octubre": 10, "noviembre": 11, "diciembre": 12}
+        m_fecha2 = re.search(r"(\d{1,2})\s+de\s+(\w+)(?:\s+de\s+(\d{4}))?", fecha_raw, re.IGNORECASE)
         if m_fecha2:
             dia = int(m_fecha2.group(1))
             mes = MESES.get(m_fecha2.group(2).lower(), 0)
-            anio = int(m_fecha2.group(3))
+            anio = int(m_fecha2.group(3)) if m_fecha2.group(3) else 2026
+            
             fecha = f"{anio}-{str(mes).zfill(2)}-{str(dia).zfill(2)}" if mes else ""
         else:
             fecha = ""
 
     cards1, cards2 = extraer_tarjetas_desde_bloque(bloque)
 
+    # ── Estadio / sede del partido ──────────────────────────────────────
+    # Necesario para asignar match_num en fases eliminatorias (ver
+    # _asignar_match_num): el estadio es mucho más fiable que el orden
+    # cronológico, porque Wikipedia no siempre lista los partidos de una
+    # fase en el orden en que se juegan.
+    estadio_raw = (_campo(bloque, "estadio") or _campo(bloque, "sede")
+                   or _campo(bloque, "venue") or _campo(bloque, "stadium") or "")
+    ciudad_raw = (_campo(bloque, "ciudad") or _campo(bloque, "city")
+                  or _campo(bloque, "ubicación") or _campo(bloque, "ubicacion")
+                  or _campo(bloque, "location") or "")
+    estadio_raw = _limpiar_plantillas(estadio_raw)
+    ciudad_raw = _limpiar_plantillas(ciudad_raw)
+    estadio_id = _detectar_estadio_id(estadio_raw, ciudad_raw)
+
     return {
         "team1": t1, "team2": t2, "fecha": fecha, "gf1": gf1, "gf2": gf2,
         "cards1": cards1, "cards2": cards2, "fase": fase_txt, "grupo": grupo_letra,
+        "estadio_raw": estadio_raw, "ciudad_raw": ciudad_raw, "estadio_id": estadio_id,
     }
 
 
@@ -448,14 +563,208 @@ def procesar_eliminacion(filtro_fase=None, matches_actuales=None) -> list:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# FUSIÓN CON matches.json
+# CALENDARIO CANÓNICO DE match_num — fuente de verdad única
+# ─────────────────────────────────────────────────────────────────────────────
+# Cambio de criterio (antes: fecha+hora / equipos / fecha+orden):
+#
+# En las fases eliminatorias los partidos NO siempre aparecen en Wikipedia
+# en orden cronológico, así que ni "orden de aparición" ni "equipos en ese
+# momento" (que dependen de quién haya clasificado) son fiables para
+# determinar el match_num oficial FIFA. Lo que SÍ es fiable es la sede:
+# cada partido del Mundial 2026 se juega en un estadio distinto, así que
+# (fecha, estadio) identifica un partido sin ambigüedad.
+#
+# Estrategias en orden de prioridad:
+#   1. (fase, fecha exacta, estadio) → determinista al 100 %.
+#   2. (fase, estadio) único en esa fase → si esa sede solo se usa una vez
+#      en la fase, no hace falta ni la fecha (cubre errores de fecha,
+#      incluido el caso típico de que la hora esté mal y caiga un día
+#      antes/después por el cambio de zona horaria).
+#   3. (fase, estadio) con varias fechas → se elige la fecha más cercana a
+#      la que trae Wikipedia (cubre el caso "falla la fecha por un día").
+#   4. Frozenset de equipos → fallback legado, útil sobre todo en
+#      Dieciseisavos cuando los cruces ya tienen equipos reales.
+#   5. Fecha sola + orden de aparición → último recurso, si ni el estadio
+#      ni los equipos se pudieron identificar.
 # ─────────────────────────────────────────────────────────────────────────────
 
-def fusionar_en_matches(nuevos: list, matches: list) -> tuple[list, int, int]:
+_MATCH_NUM_CALENDAR: list[dict] = [
+    # ── Dieciseisavos de final ─────────────────────────────────────────────
+    {"mn": 73,  "fecha": "2026-06-28", "fase": "Dieciseisavos de final", "estadio": "la"},
+    {"mn": 74,  "fecha": "2026-06-29", "fase": "Dieciseisavos de final", "estadio": "boston"},
+    {"mn": 75,  "fecha": "2026-06-30", "fase": "Dieciseisavos de final", "estadio": "monterrey"},
+    {"mn": 76,  "fecha": "2026-06-29", "fase": "Dieciseisavos de final", "estadio": "houston"},
+    {"mn": 77,  "fecha": "2026-06-30", "fase": "Dieciseisavos de final", "estadio": "nynj"},
+    {"mn": 78,  "fecha": "2026-06-30", "fase": "Dieciseisavos de final", "estadio": "dallas"},
+    {"mn": 79,  "fecha": "2026-07-01", "fase": "Dieciseisavos de final", "estadio": "cdmx"},
+    {"mn": 80,  "fecha": "2026-07-01", "fase": "Dieciseisavos de final", "estadio": "atlanta"},
+    {"mn": 81,  "fecha": "2026-07-02", "fase": "Dieciseisavos de final", "estadio": "bayarea"},
+    {"mn": 82,  "fecha": "2026-07-01", "fase": "Dieciseisavos de final", "estadio": "seattle"},
+    {"mn": 83,  "fecha": "2026-07-03", "fase": "Dieciseisavos de final", "estadio": "toronto"},
+    {"mn": 84,  "fecha": "2026-07-02", "fase": "Dieciseisavos de final", "estadio": "la"},
+    {"mn": 85,  "fecha": "2026-07-03", "fase": "Dieciseisavos de final", "estadio": "vancouver"},
+    {"mn": 86,  "fecha": "2026-07-03", "fase": "Dieciseisavos de final", "estadio": "miami"},
+    {"mn": 87,  "fecha": "2026-07-04", "fase": "Dieciseisavos de final", "estadio": "kc"},
+    {"mn": 88,  "fecha": "2026-07-03", "fase": "Dieciseisavos de final", "estadio": "dallas"},
+    # ── Octavos de final ───────────────────────────────────────────────────
+    {"mn": 89,  "fecha": "2026-07-04", "fase": "Octavos de final", "estadio": "philly"},
+    {"mn": 90,  "fecha": "2026-07-04", "fase": "Octavos de final", "estadio": "houston"},
+    {"mn": 91,  "fecha": "2026-07-05", "fase": "Octavos de final", "estadio": "nynj"},
+    {"mn": 92,  "fecha": "2026-07-06", "fase": "Octavos de final", "estadio": "cdmx"},
+    {"mn": 93,  "fecha": "2026-07-06", "fase": "Octavos de final", "estadio": "dallas"},
+    {"mn": 94,  "fecha": "2026-07-07", "fase": "Octavos de final", "estadio": "seattle"},
+    {"mn": 95,  "fecha": "2026-07-07", "fase": "Octavos de final", "estadio": "atlanta"},
+    {"mn": 96,  "fecha": "2026-07-07", "fase": "Octavos de final", "estadio": "vancouver"},
+    # ── Cuartos de final ───────────────────────────────────────────────────
+    {"mn": 97,  "fecha": "2026-07-09", "fase": "Cuartos de final", "estadio": "boston"},
+    {"mn": 98,  "fecha": "2026-07-10", "fase": "Cuartos de final", "estadio": "la"},
+    {"mn": 99,  "fecha": "2026-07-11", "fase": "Cuartos de final", "estadio": "miami"},
+    {"mn": 100, "fecha": "2026-07-12", "fase": "Cuartos de final", "estadio": "kc"},
+    # ── Semifinales ────────────────────────────────────────────────────────
+    {"mn": 101, "fecha": "2026-07-14", "fase": "Semifinales", "estadio": "dallas"},
+    {"mn": 102, "fecha": "2026-07-15", "fase": "Semifinales", "estadio": "atlanta"},
+    # ── Tercer puesto ──────────────────────────────────────────────────────
+    {"mn": 103, "fecha": "2026-07-18", "fase": "Tercer puesto", "estadio": "miami"},
+    # ── Final ──────────────────────────────────────────────────────────────
+    {"mn": 104, "fecha": "2026-07-19", "fase": "Final", "estadio": "nynj"},
+]
+
+# ── Índices derivados (se construyen una sola vez al cargar el módulo) ─────
+
+
+def _fecha_a_obj(fecha: str):
+    try:
+        return _dt.date.fromisoformat(fecha)
+    except (ValueError, TypeError):
+        return None
+
+
+# Estrategia 1: (fase, fecha, estadio) → match_num exacto
+_MN_BY_FASE_FECHA_ESTADIO: dict[tuple[str, str, str], int] = {
+    (e["fase"], e["fecha"], e["estadio"]): e["mn"]
+    for e in _MATCH_NUM_CALENDAR
+}
+
+# Estrategias 2 y 3: (fase, estadio) → lista de (fecha, match_num)
+_MN_BY_FASE_ESTADIO: dict[tuple[str, str], list[tuple[str, int]]] = {}
+for _e in _MATCH_NUM_CALENDAR:
+    _MN_BY_FASE_ESTADIO.setdefault((_e["fase"], _e["estadio"]), []).append((_e["fecha"], _e["mn"]))
+
+# Estrategia 4: frozenset de equipos → match_num (solo será útil si el
+# llamador nos pasa equipos ya identificados de cruces concretos; se
+# mantiene vacío por defecto y se puede rellenar si se desea reactivar).
+_MN_BY_TEAMS: dict[frozenset, int] = {}
+
+# Estrategia 5: (fase, fecha) sola → lista de match_num en el orden del
+# calendario oficial (no del orden en que aparezcan en Wikipedia).
+_MN_BY_FASE_FECHA: dict[tuple[str, str], list[int]] = {}
+for _e in _MATCH_NUM_CALENDAR:
+    _MN_BY_FASE_FECHA.setdefault((_e["fase"], _e["fecha"]), []).append(_e["mn"])
+
+# Fases con match_num (todas las eliminatorias)
+_FASES_CON_MATCH_NUM: set[str] = {
+    "Dieciseisavos de final", "Octavos de final", "Cuartos de final",
+    "Semifinales", "Tercer puesto", "Final",
+}
+
+
+def _asignar_match_num(p: dict, _usados_por_fecha: dict) -> int | None:
+    """Devuelve el match_num correcto para un partido de fase eliminatoria.
+
+    Prioridad (ver cabecera de _MATCH_NUM_CALENDAR para el detalle):
+      1. (fase, fecha, estadio) exacto.
+      2. (fase, estadio) único en la fase → ignora la fecha.
+      3. (fase, estadio) con varias fechas → la más cercana a la de Wikipedia.
+      4. Frozenset de equipos (fallback legado).
+      5. (fase, fecha) sola + orden de aparición (último recurso).
+    """
+    fase = p.get("fase")
+    if fase not in _FASES_CON_MATCH_NUM:
+        return None
+
+    fecha = p.get("fecha") or ""
+    estadio_id = p.get("estadio_id")
+
+    # Estrategia 1: fase + fecha + estadio ─────────────────────────────────
+    if estadio_id and fecha:
+        mn = _MN_BY_FASE_FECHA_ESTADIO.get((fase, fecha, estadio_id))
+        if mn is not None:
+            return mn
+
+    # Estrategias 2 y 3: fase + estadio (con o sin fecha exacta) ───────────
+    if estadio_id:
+        candidatos = _MN_BY_FASE_ESTADIO.get((fase, estadio_id), [])
+        if len(candidatos) == 1:
+            # Esa sede solo se usa una vez en esta fase: no hace falta
+            # ni que la fecha coincida (cubre errores de fecha/hora).
+            return candidatos[0][1]
+        elif len(candidatos) > 1:
+            fecha_obj = _fecha_a_obj(fecha)
+            if fecha_obj is not None:
+                # Elegir la fecha más cercana (cubre desfases de ±1 día
+                # típicos de errores de zona horaria en la hora del partido).
+                mejor_mn, mejor_dist = None, None
+                for fecha_cand, mn_cand in candidatos:
+                    obj_cand = _fecha_a_obj(fecha_cand)
+                    if obj_cand is None:
+                        continue
+                    dist = abs((obj_cand - fecha_obj).days)
+                    if mejor_dist is None or dist < mejor_dist:
+                        mejor_mn, mejor_dist = mn_cand, dist
+                if mejor_mn is not None:
+                    return mejor_mn
+            # Sin fecha utilizable y más de un candidato: no se puede
+            # desambiguar solo con el estadio, se sigue con el resto de
+            # estrategias.
+
+    # Estrategia 4: frozenset de equipos (fallback legado) ─────────────────
+    if p.get("team1") and p.get("team2"):
+        mn = _MN_BY_TEAMS.get(frozenset({p["team1"], p["team2"]}))
+        if mn is not None:
+            return mn
+
+    # Estrategia 5: fase + fecha sola + posición de aparición ──────────────
+    if fecha:
+        slots = _MN_BY_FASE_FECHA.get((fase, fecha), [])
+        clave_uso = (fase, fecha)
+        idx = _usados_por_fecha.get(clave_uso, 0)
+        if idx < len(slots):
+            _usados_por_fecha[clave_uso] = idx + 1
+            return slots[idx]
+
+    return None
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# FUSIÓN CON matches.json
+
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Campos de estadísticas que Wikipedia puede actualizar. Si Wikipedia cambia
+# alguno de estos en un partido ya verificado, se desverifica para que la
+# siguiente ejecución vuelva a cotejar con ESPN.
+_CAMPOS_STATS_WIKI = frozenset({
+    "gf_local", "gc_local", "ta_local", "doblea_local", "rd_local",
+    "gf_visit", "gc_visit", "ta_visit", "doblea_visit", "rd_visit",
+})
+
+
+def fusionar_en_matches(nuevos: list, matches: list, estado: dict | None = None) -> tuple[list, int, int]:
     """Combina los partidos recién leídos de Wikipedia con lo ya guardado.
     Empareja por (equipo local, equipo visitante) sin importar el orden, ya
     que Wikipedia puede listar el mismo cruce como local/visitante distinto
-    según la fase. Nunca toca penfall_*/penpar_*."""
+    según la fase. Nunca toca penfall_*/penpar_*.
+
+    Si se pasa `estado` (estado_reconciliacion.json ya cargado):
+      - Nunca sobreescribe campos que estén en `campos_bloqueados` (los que
+        el usuario resolvió manualmente con resolver_discrepancia.py).
+      - Si Wikipedia cambia un campo de estadísticas en un partido que ya
+        estaba "verificado", lo desverifica para forzar una recomprobación
+        con ESPN en la siguiente ejecución (en vez de dejar datos inconsistentes).
+
+    Para partidos de fases eliminatorias asigna (y actualiza si falta)
+    el campo match_num con el número de partido oficial FIFA del cuadro.
+    """
 
     def clave(local, visit):
         return tuple(sorted([local, visit]))
@@ -466,7 +775,21 @@ def fusionar_en_matches(nuevos: list, matches: list) -> tuple[list, int, int]:
     nuevos_insertados = 0
     actualizados = 0
 
+    # Contador por fecha: usado por la estrategia-3 de _asignar_match_num
+    # (fecha sola + posición de aparición). Se reinicia en cada llamada.
+    _usados_por_fecha: dict[tuple, int] = {}
+
     for p in nuevos:
+        # match_num para fases eliminatorias (None si no aplica o no se encuentra)
+        match_num = _asignar_match_num(p, _usados_por_fecha)
+
+        if p.get("fase") in _FASES_CON_MATCH_NUM and match_num is None:
+            log.warning(
+                f"  match_num NO asignado para {p.get('team1')} vs {p.get('team2')} "
+                f"[{p.get('fase')}, fecha={p.get('fecha')!r}, "
+                f"estadio_raw={p.get('estadio_raw')!r}, estadio_id={p.get('estadio_id')!r}]"
+            )
+
         k = clave(p["team1"], p["team2"])
         existente = indice.get(k)
 
@@ -486,23 +809,50 @@ def fusionar_en_matches(nuevos: list, matches: list) -> tuple[list, int, int]:
                 "penfall_visit": 0, "penpar_visit": 0,
                 "pen_tanda_local": None, "pen_tanda_visit": None,
             }
+            if match_num is not None:
+                m["match_num"] = match_num
             matches.append(m)
             indice[k] = m
             siguiente_id += 1
             nuevos_insertados += 1
-            log.info(f"  NUEVO  {p['team1']} {p['gf1']}-{p['gf2']} {p['team2']}  [{p['fase']}]")
+            log.info(f"  NUEVO  {p['team1']} {p['gf1']}-{p['gf2']} {p['team2']}  [{p['fase']}]"
+                     + (f"  match_num={match_num}" if match_num else ""))
         else:
             invertido = existente["local"] != p["team1"]
             cambios = []
 
+            # Clave en el formato de estado_reconciliacion.json
+            _clave_est = "|".join(sorted([p["team1"], p["team2"]]))
+            _estado_partido = (estado or {}).get(_clave_est, {})
+            _bloqueados = frozenset(_estado_partido.get("campos_bloqueados", []))
+
             def _set(campo, valor):
-                if existente.get(campo) != valor:
-                    existente[campo] = valor
-                    cambios.append(campo)
+                # 1. Nunca tocar campos que el usuario bloqueó manualmente.
+                if campo in _bloqueados:
+                    return
+                if existente.get(campo) == valor:
+                    return
+                existente[campo] = valor
+                cambios.append(campo)
+                # 2. Si Wikipedia cambia un campo de estadísticas en un partido
+                #    ya verificado, lo desverificamos para que la próxima
+                #    ejecución vuelva a cotejar esos datos con ESPN.
+                if campo in _CAMPOS_STATS_WIKI and estado is not None:
+                    if _estado_partido.get("verificado"):
+                        _estado_partido["verificado"] = False
+                        estado[_clave_est] = _estado_partido  # asegurar escritura en dict
+                        log.info(
+                            f"  DESVERIFICADO {existente['local']} vs {existente['visitante']}: "
+                            f"Wikipedia cambió '{campo}' → se recomprobará con ESPN."
+                        )
 
             _set("fecha", p["fecha"])
             _set("fase", p["fase"])
             _set("grupo", p["grupo"])
+
+            # Asignar match_num si aún no lo tiene (backfill de partidos previos)
+            if match_num is not None and existente.get("match_num") is None:
+                _set("match_num", match_num)
 
             if not invertido:
                 _set("gf_local", p["gf1"]); _set("gc_local", p["gf2"])
@@ -550,8 +900,11 @@ def main():
     fase_arg  = args.fase.lower()  if args.fase  else None
     grupo_arg = args.grupo.upper() if args.grupo else None
  
-    # Cargar matches ANTES de decidir qué fases eliminar raspar
+    # Cargar matches y estado ANTES de decidir qué fases raspar.
+    # El estado se carga aquí (y no más adelante) para que fusionar_en_matches
+    # ya pueda consultarlo y respetar los campos bloqueados por el usuario.
     matches = core.cargar_json(MATCHES_PATH, [])
+    estado = conc.cargar_estado(ESTADO_PATH)
     log.info(f"Partidos en matches.json al arrancar: {len(matches)}")
  
     nuevos = []
@@ -576,8 +929,10 @@ def main():
  
     if nuevos:
         log.info(f"Total partidos leídos de Wikipedia: {len(nuevos)}")
-        matches, n_nuevos, n_act = fusionar_en_matches(nuevos, matches)
+        matches, n_nuevos, n_act = fusionar_en_matches(nuevos, matches, estado)
         core.guardar_json(MATCHES_PATH, matches)
+        # Persistir posibles desverificaciones que haya marcado fusionar_en_matches
+        conc.guardar_estado(ESTADO_PATH, estado)
         log.info(f"Partidos NUEVOS insertados: {n_nuevos}")
         log.info(f"Partidos actualizados:      {n_act}")
     else:
@@ -585,8 +940,54 @@ def main():
             "Wikipedia no devolvió partidos nuevos. "
             "Se regenera data.json por si hay cambios manuales."
         )
- 
-    data = core.construir_y_guardar(MATCHES_PATH, MANUAL_PATH, SALIDA_PATH)
+
+    # ─────────────────────────────────────────────────────────────────
+    # Conciliación con ESPN (segunda fuente)
+    # ─────────────────────────────────────────────────────────────────
+    # Solo se pide a ESPN lo que de verdad hace falta: las fechas de
+    # partidos NO verificados todavía (ver conciliacion.py). Un partido
+    # que ya coincidió entre Wikipedia y ESPN se marca "verificado" en
+    # estado_reconciliacion.json y no se vuelve a tocar nunca más, así
+    # que en ejecuciones sucesivas cada vez se pide menos.
+    log.info("-" * 60)
+    log.info("Conciliación con ESPN")
+    # `estado` ya está cargado desde el inicio de main() (y posiblemente
+    # modificado por fusionar_en_matches si Wikipedia cambió algún dato).
+    discrepancias = conc.cargar_discrepancias(DISCREPANCIAS_PATH)
+    fechas = conc.fechas_pendientes(matches, estado)
+    log.info(f"  Fechas a consultar en ESPN: {len(fechas)}")
+
+    try:
+        resumenes_espn = espn.obtener_partidos_resumen(fechas)
+    except Exception as e:
+        log.error(f"  ESPN no disponible esta vez ({e.__class__.__name__}: {e}). "
+                  f"Se sigue sin conciliar; se reintentará en la próxima ejecución.")
+        resumenes_espn = []
+
+    if resumenes_espn:
+        matches, estado, discrepancias, resumen_conc = conc.conciliar(
+            matches, resumenes_espn, estado, discrepancias
+        )
+        core.guardar_json(MATCHES_PATH, matches)
+        log.info(
+            f"  Verificados nuevos: {resumen_conc['verificados_nuevos']}  ·  "
+            f"Discrepancias nuevas: {resumen_conc['discrepancias_nuevas']}  ·  "
+            f"Penaltis/tanda aplicados desde ESPN: {resumen_conc['penaltis_aplicados']}  ·  "
+            f"ESPN tiene partido y Wikipedia aún no: {resumen_conc['espn_sin_wiki']}"
+        )
+        if discrepancias:
+            log.warning(
+                f"  Hay {len(discrepancias)} discrepancia(s) pendientes — revisa "
+                f"discrepancias.json y resuélvelas con resolver_discrepancia.py"
+            )
+        gol.actualizar_goleadores(resumenes_espn, GOLEADORES_PATH)
+    else:
+        log.info("  ESPN no devolvió partidos completados nuevos para conciliar.")
+
+    conc.guardar_estado(ESTADO_PATH, estado)
+    conc.guardar_discrepancias(DISCREPANCIAS_PATH, discrepancias)
+
+    data = core.construir_y_guardar(MATCHES_PATH, MANUAL_PATH, SALIDA_PATH, GOLEADORES_PATH)
     log.info(
         f"data.json regenerado. "
         f"Partidos jugados: {data['meta']['total_partidos_jugados']}"
