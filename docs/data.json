@@ -1,7 +1,7 @@
 {
   "meta": {
-    "actualizado": "2026-06-25T22:05:28+00:00",
-    "total_partidos_jugados": 55,
+    "actualizado": "2026-06-25T23:03:51+00:00",
+    "total_partidos_jugados": 56,
     "total_partidos": 96,
     "fase_grupos_terminada": false
   },
@@ -490,6 +490,29 @@
       "pos": 21
     },
     {
+      "equipo": "Costa de Marfil",
+      "grupo": "E",
+      "bombo": "Bombo 6",
+      "gf": 4,
+      "gc": 2,
+      "ta": 4,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": 2,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": -12,
+      "bonus_ronda_dieciseisavos": 0,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 22
+    },
+    {
       "equipo": "Austria",
       "grupo": "J",
       "bombo": "Bombo 6",
@@ -510,7 +533,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 22
+      "pos": 23
     },
     {
       "equipo": "Croacia",
@@ -533,7 +556,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 23
+      "pos": 24
     },
     {
       "equipo": "Argelia",
@@ -542,29 +565,6 @@
       "gf": 2,
       "gc": 4,
       "ta": 1,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": -3,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": -16,
-      "bonus_ronda_dieciseisavos": 0,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 24
-    },
-    {
-      "equipo": "Costa de Marfil",
-      "grupo": "E",
-      "bombo": "Bombo 6",
-      "gf": 2,
-      "gc": 2,
-      "ta": 3,
       "doblea": 0,
       "rd": 0,
       "penfall": 0,
@@ -904,29 +904,6 @@
       "pos": 39
     },
     {
-      "equipo": "Curazao",
-      "grupo": "E",
-      "bombo": "Bombo 8",
-      "gf": 1,
-      "gc": 7,
-      "ta": 5,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": -6,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": -41,
-      "bonus_ronda_dieciseisavos": 0,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 40
-    },
-    {
       "equipo": "Sudáfrica",
       "grupo": "A",
       "bombo": "Bombo 6",
@@ -947,7 +924,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 41
+      "pos": 40
     },
     {
       "equipo": "Irak",
@@ -970,7 +947,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 42
+      "pos": 41
     },
     {
       "equipo": "Paraguay",
@@ -993,7 +970,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 43
+      "pos": 42
     },
     {
       "equipo": "Bosnia",
@@ -1016,7 +993,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 44
+      "pos": 43
     },
     {
       "equipo": "Túnez",
@@ -1039,7 +1016,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 45
+      "pos": 44
     },
     {
       "equipo": "Uzbekistán",
@@ -1057,6 +1034,29 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -45,
+      "bonus_ronda_dieciseisavos": 0,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 45
+    },
+    {
+      "equipo": "Curazao",
+      "grupo": "E",
+      "bombo": "Bombo 8",
+      "gf": 1,
+      "gc": 9,
+      "ta": 7,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": -14,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": -61,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -1155,6 +1155,51 @@
         "penpar": 0,
         "bonus_resultado": -8,
         "total": -13
+      }
+    },
+    {
+      "id": 51,
+      "fecha": "",
+      "fase": "Fase de Grupos",
+      "grupo": "E",
+      "local": "Curazao",
+      "visitante": "Costa de Marfil",
+      "gf_local": 0,
+      "gf_visit": 2,
+      "ta_local": 2,
+      "doblea_local": 0,
+      "rd_local": 0,
+      "ta_visit": 1,
+      "doblea_visit": 0,
+      "rd_visit": 0,
+      "penfall_local": 0,
+      "penpar_local": 0,
+      "penfall_visit": 0,
+      "penpar_visit": 0,
+      "pen_tanda_local": null,
+      "pen_tanda_visit": null,
+      "jugado": true,
+      "puntos_local": {
+        "gf": 0,
+        "gc": -6,
+        "ta": -6,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": -8,
+        "total": -20
+      },
+      "puntos_visit": {
+        "gf": 2,
+        "gc": 0,
+        "ta": -3,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": 5,
+        "total": 4
       }
     },
     {
@@ -4908,6 +4953,19 @@
         },
         {
           "pos": 2,
+          "equipo": "Costa de Marfil",
+          "pj": 3,
+          "pg": 2,
+          "pe": 0,
+          "pp": 1,
+          "gf": 4,
+          "gc": 2,
+          "dg": 2,
+          "pts": 6,
+          "empate_no_resuelto": false
+        },
+        {
+          "pos": 3,
           "equipo": "Ecuador",
           "pj": 3,
           "pg": 1,
@@ -4920,28 +4978,15 @@
           "empate_no_resuelto": false
         },
         {
-          "pos": 3,
-          "equipo": "Costa de Marfil",
-          "pj": 2,
-          "pg": 1,
-          "pe": 0,
-          "pp": 1,
-          "gf": 2,
-          "gc": 2,
-          "dg": 0,
-          "pts": 3,
-          "empate_no_resuelto": false
-        },
-        {
           "pos": 4,
           "equipo": "Curazao",
-          "pj": 2,
+          "pj": 3,
           "pg": 0,
           "pe": 1,
-          "pp": 1,
+          "pp": 2,
           "gf": 1,
-          "gc": 7,
-          "dg": -6,
+          "gc": 9,
+          "dg": -8,
           "pts": 1,
           "empate_no_resuelto": false
         }
@@ -4990,6 +5035,51 @@
             "penpar": 0,
             "bonus_resultado": -8,
             "total": -13
+          }
+        },
+        {
+          "id": 51,
+          "fecha": "",
+          "fase": "Fase de Grupos",
+          "grupo": "E",
+          "local": "Curazao",
+          "visitante": "Costa de Marfil",
+          "gf_local": 0,
+          "gf_visit": 2,
+          "ta_local": 2,
+          "doblea_local": 0,
+          "rd_local": 0,
+          "ta_visit": 1,
+          "doblea_visit": 0,
+          "rd_visit": 0,
+          "penfall_local": 0,
+          "penpar_local": 0,
+          "penfall_visit": 0,
+          "penpar_visit": 0,
+          "pen_tanda_local": null,
+          "pen_tanda_visit": null,
+          "jugado": true,
+          "puntos_local": {
+            "gf": 0,
+            "gc": -6,
+            "ta": -6,
+            "doblea": 0,
+            "rd": 0,
+            "penfall": 0,
+            "penpar": 0,
+            "bonus_resultado": -8,
+            "total": -20
+          },
+          "puntos_visit": {
+            "gf": 2,
+            "gc": 0,
+            "ta": -3,
+            "doblea": 0,
+            "rd": 0,
+            "penfall": 0,
+            "penpar": 0,
+            "bonus_resultado": 5,
+            "total": 4
           }
         },
         {
@@ -5171,31 +5261,6 @@
             "bonus_resultado": 2,
             "total": -13
           }
-        },
-        {
-          "id": 51,
-          "fecha": "2026-06-25",
-          "fase": "Fase de Grupos",
-          "grupo": "E",
-          "local": "Curazao",
-          "visitante": "Costa de Marfil",
-          "gf_local": null,
-          "gf_visit": null,
-          "ta_local": 0,
-          "doblea_local": 0,
-          "rd_local": 0,
-          "ta_visit": 0,
-          "doblea_visit": 0,
-          "rd_visit": 0,
-          "penfall_local": 0,
-          "penpar_local": 0,
-          "penfall_visit": 0,
-          "penpar_visit": 0,
-          "pen_tanda_local": null,
-          "pen_tanda_visit": null,
-          "jugado": false,
-          "puntos_local": null,
-          "puntos_visit": null
         }
       ]
     },
@@ -8003,12 +8068,12 @@
         "puntos": -4
       },
       {
-        "equipo": "Austria",
-        "puntos": -13
+        "equipo": "Costa de Marfil",
+        "puntos": -12
       },
       {
-        "equipo": "Costa de Marfil",
-        "puntos": -16
+        "equipo": "Austria",
+        "puntos": -13
       },
       {
         "equipo": "Australia",
@@ -8068,7 +8133,7 @@
       },
       {
         "equipo": "Curazao",
-        "puntos": -41
+        "puntos": -61
       },
       {
         "equipo": "Haití",
