@@ -1,0 +1,98 @@
+name: Resolver discrepancia
+
+on:
+  workflow_dispatch:
+    inputs:
+      accion:
+        description: "¿Qué quieres hacer?"
+        required: true
+        type: choice
+        options:
+          - listar
+          - resolver
+        default: listar
+      indice:
+        description: "Número de la discrepancia (sale al elegir 'listar', en el resumen de esa ejecución)"
+        required: false
+        type: string
+      usar:
+        description: "Qué fuente usar (solo si accion=resolver; se ignora si rellenas 'valor')"
+        required: false
+        type: choice
+        options:
+          - wiki
+          - scraper
+        default: wiki
+      valor:
+        description: "Valor manual a forzar (opcional, en vez de wiki/scraper)"
+        required: false
+        type: string
+
+concurrency:
+  group: mundial-bot
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  resolver:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: pip install requests
+
+      - name: Listar discrepancias pendientes
+        if: ${{ inputs.accion == 'listar' }}
+        run: |
+          {
+            echo "### Discrepancias pendientes"
+            echo "Anota el número \`[N]\` de la que quieras resolver y vuelve a ejecutar"
+            echo "este workflow con accion=resolver, indice=N y usar=wiki o scraper."
+            echo ""
+            echo '```'
+            python resolver_discrepancia.py --listar
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Comprobar que hay índice si vas a resolver
+        if: ${{ inputs.accion == 'resolver' && inputs.indice == '' }}
+        run: |
+          echo "Falta el número de discrepancia (campo 'indice'). Ejecuta primero con accion=listar para verlo." >> "$GITHUB_STEP_SUMMARY"
+          exit 1
+
+      - name: Resolver discrepancia indicada
+        if: ${{ inputs.accion == 'resolver' && inputs.indice != '' }}
+        run: |
+          if [ -n "${{ inputs.valor }}" ]; then
+            python resolver_discrepancia.py --indice "${{ inputs.indice }}" --valor "${{ inputs.valor }}" | tee resultado.txt
+          else
+            python resolver_discrepancia.py --indice "${{ inputs.indice }}" --usar "${{ inputs.usar }}" | tee resultado.txt
+          fi
+          {
+            echo "### Resultado"
+            echo '```'
+            cat resultado.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Regenerar docs/data.json
+        if: ${{ inputs.accion == 'resolver' && inputs.indice != '' }}
+        run: python mundial_core.py
+
+      - name: Commit y push
+        if: ${{ inputs.accion == 'resolver' && inputs.indice != '' }}
+        run: |
+          git config user.name "mundial-bot"
+          git config user.email "mundial-bot@users.noreply.github.com"
+          git add matches.json estado_reconciliacion.json discrepancias.json docs/data.json
+          git diff --cached --quiet || git commit -m "Resolver discrepancia #${{ inputs.indice }} (manual)"
+          git push
