@@ -669,7 +669,10 @@
       "penfall_visit": 0,
       "penpar_local": 0,
       "penpar_visit": 0
-    }
+    },
+    "campos_bloqueados": [
+      "ta_local"
+    ]
   },
   "Japón|Suecia": {
     "verificado": true,

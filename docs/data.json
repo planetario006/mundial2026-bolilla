@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-06-26T10:21:36+00:00",
+    "actualizado": "2026-06-26T10:29:26+00:00",
     "total_partidos_jugados": 60,
     "total_partidos": 97,
     "fase_grupos_terminada": false
@@ -444,29 +444,6 @@
       "pos": 19
     },
     {
-      "equipo": "Ecuador",
-      "grupo": "E",
-      "bombo": "Bombo 4",
-      "gf": 2,
-      "gc": 2,
-      "ta": 2,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": -1,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": -11,
-      "bonus_ronda_dieciseisavos": 0,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 20
-    },
-    {
       "equipo": "Costa de Marfil",
       "grupo": "E",
       "bombo": "Bombo 6",
@@ -487,7 +464,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 21
+      "pos": 20
     },
     {
       "equipo": "Austria",
@@ -510,7 +487,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 22
+      "pos": 21
     },
     {
       "equipo": "Croacia",
@@ -533,7 +510,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 23
+      "pos": 22
     },
     {
       "equipo": "Argelia",
@@ -556,7 +533,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 24
+      "pos": 23
     },
     {
       "equipo": "Canadá",
@@ -579,7 +556,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 25
+      "pos": 24
     },
     {
       "equipo": "EE.UU.",
@@ -602,7 +579,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 26
+      "pos": 25
     },
     {
       "equipo": "R. D. Congo",
@@ -625,7 +602,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 27
+      "pos": 26
     },
     {
       "equipo": "Bélgica",
@@ -648,12 +625,35 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 28
+      "pos": 27
     },
     {
       "equipo": "Australia",
       "grupo": "D",
       "bombo": "Bombo 6",
+      "gf": 2,
+      "gc": 2,
+      "ta": 5,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": -1,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": -20,
+      "bonus_ronda_dieciseisavos": 0,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 28
+    },
+    {
+      "equipo": "Ecuador",
+      "grupo": "E",
+      "bombo": "Bombo 4",
       "gf": 2,
       "gc": 2,
       "ta": 5,
@@ -3698,7 +3698,7 @@
       "visitante": "Alemania",
       "gf_local": 2,
       "gf_visit": 1,
-      "ta_local": 0,
+      "ta_local": 3,
       "doblea_local": 0,
       "rd_local": 0,
       "ta_visit": 0,
@@ -3714,13 +3714,13 @@
       "puntos_local": {
         "gf": 2,
         "gc": -3,
-        "ta": 0,
+        "ta": -9,
         "doblea": 0,
         "rd": 0,
         "penfall": 0,
         "penpar": 0,
         "bonus_resultado": 5,
-        "total": 4
+        "total": -5
       },
       "puntos_visit": {
         "gf": 1,
@@ -5490,7 +5490,7 @@
           "visitante": "Alemania",
           "gf_local": 2,
           "gf_visit": 1,
-          "ta_local": 0,
+          "ta_local": 3,
           "doblea_local": 0,
           "rd_local": 0,
           "ta_visit": 0,
@@ -5506,13 +5506,13 @@
           "puntos_local": {
             "gf": 2,
             "gc": -3,
-            "ta": 0,
+            "ta": -9,
             "doblea": 0,
             "rd": 0,
             "penfall": 0,
             "penpar": 0,
             "bonus_resultado": 5,
-            "total": 4
+            "total": -5
           },
           "puntos_visit": {
             "gf": 1,
@@ -8462,12 +8462,12 @@
         "puntos": 1
       },
       {
-        "equipo": "Ecuador",
-        "puntos": -11
-      },
-      {
         "equipo": "EE.UU.",
         "puntos": -17
+      },
+      {
+        "equipo": "Ecuador",
+        "puntos": -20
       },
       {
         "equipo": "Chequia",

@@ -50,16 +50,6 @@
     "detectado": "2026-06-26T10:21:36+00:00"
   },
   {
-    "ref": "Alemania|Ecuador::ta_local",
-    "match_id": 29,
-    "local": "Ecuador",
-    "visitante": "Alemania",
-    "campo": "ta_local",
-    "valor_wiki": 0,
-    "valor_scraper": 3,
-    "detectado": "2026-06-26T10:21:36+00:00"
-  },
-  {
     "ref": "Alemania|Ecuador::ta_visit",
     "match_id": 29,
     "local": "Ecuador",
