@@ -1,8 +1,8 @@
 {
   "meta": {
-    "actualizado": "2026-06-26T04:08:56+00:00",
-    "total_partidos_jugados": 58,
-    "total_partidos": 92,
+    "actualizado": "2026-06-26T08:10:41+00:00",
+    "total_partidos_jugados": 60,
+    "total_partidos": 97,
     "fase_grupos_terminada": false
   },
   "ranking": [
@@ -237,29 +237,6 @@
       "pos": 10
     },
     {
-      "equipo": "EE.UU.",
-      "grupo": "D",
-      "bombo": "Bombo 4",
-      "gf": 6,
-      "gc": 1,
-      "ta": 4,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": 10,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": 1,
-      "bonus_ronda_dieciseisavos": 0,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 11
-    },
-    {
       "equipo": "Países Bajos",
       "grupo": "F",
       "bombo": "Bombo 2",
@@ -280,7 +257,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 12
+      "pos": 11
     },
     {
       "equipo": "Suiza",
@@ -303,7 +280,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 13
+      "pos": 12
     },
     {
       "equipo": "Alemania",
@@ -326,7 +303,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 14
+      "pos": 13
     },
     {
       "equipo": "Argentina",
@@ -349,7 +326,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 15
+      "pos": 14
     },
     {
       "equipo": "Portugal",
@@ -372,7 +349,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 16
+      "pos": 15
     },
     {
       "equipo": "Egipto",
@@ -395,7 +372,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 17
+      "pos": 16
     },
     {
       "equipo": "Cabo Verde",
@@ -418,7 +395,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 18
+      "pos": 17
     },
     {
       "equipo": "Irán",
@@ -441,7 +418,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 19
+      "pos": 18
     },
     {
       "equipo": "Uruguay",
@@ -464,7 +441,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 20
+      "pos": 19
     },
     {
       "equipo": "Ecuador",
@@ -487,7 +464,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 21
+      "pos": 20
     },
     {
       "equipo": "Costa de Marfil",
@@ -510,7 +487,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 22
+      "pos": 21
     },
     {
       "equipo": "Austria",
@@ -533,7 +510,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 23
+      "pos": 22
     },
     {
       "equipo": "Croacia",
@@ -556,7 +533,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 24
+      "pos": 23
     },
     {
       "equipo": "Argelia",
@@ -579,7 +556,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 25
+      "pos": 24
     },
     {
       "equipo": "Canadá",
@@ -593,6 +570,29 @@
       "penfall": 0,
       "penpar": 0,
       "bonus_resultado": -1,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": -17,
+      "bonus_ronda_dieciseisavos": 0,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 25
+    },
+    {
+      "equipo": "EE.UU.",
+      "grupo": "D",
+      "bombo": "Bombo 4",
+      "gf": 8,
+      "gc": 4,
+      "ta": 5,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": 2,
       "bonus_grupo": 0,
       "premio_final": 0,
       "goleador": 0,
@@ -628,29 +628,6 @@
       "pos": 27
     },
     {
-      "equipo": "Australia",
-      "grupo": "D",
-      "bombo": "Bombo 6",
-      "gf": 2,
-      "gc": 2,
-      "ta": 4,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": -3,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": -19,
-      "bonus_ronda_dieciseisavos": 0,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 28
-    },
-    {
       "equipo": "Bélgica",
       "grupo": "G",
       "bombo": "Bombo 2",
@@ -666,6 +643,29 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -19,
+      "bonus_ronda_dieciseisavos": 0,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 28
+    },
+    {
+      "equipo": "Australia",
+      "grupo": "D",
+      "bombo": "Bombo 6",
+      "gf": 2,
+      "gc": 2,
+      "ta": 5,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": -1,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": -20,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -861,18 +861,18 @@
       "equipo": "Turquía",
       "grupo": "D",
       "bombo": "Bombo 5",
-      "gf": 0,
-      "gc": 3,
+      "gf": 3,
+      "gc": 5,
       "ta": 3,
       "doblea": 0,
       "rd": 0,
       "penfall": 0,
       "penpar": 0,
-      "bonus_resultado": -16,
+      "bonus_resultado": -11,
       "bonus_grupo": 0,
       "premio_final": 0,
       "goleador": 0,
-      "puntos_totales": -34,
+      "puntos_totales": -32,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -950,29 +950,6 @@
       "pos": 41
     },
     {
-      "equipo": "Paraguay",
-      "grupo": "D",
-      "bombo": "Bombo 5",
-      "gf": 2,
-      "gc": 4,
-      "ta": 6,
-      "doblea": 0,
-      "rd": 1,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": -3,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": -43,
-      "bonus_ronda_dieciseisavos": 0,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 42
-    },
-    {
       "equipo": "Bosnia",
       "grupo": "B",
       "bombo": "Bombo 5",
@@ -993,7 +970,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 43
+      "pos": 42
     },
     {
       "equipo": "Uzbekistán",
@@ -1011,6 +988,29 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -45,
+      "bonus_ronda_dieciseisavos": 0,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 43
+    },
+    {
+      "equipo": "Paraguay",
+      "grupo": "D",
+      "bombo": "Bombo 5",
+      "gf": 2,
+      "gc": 4,
+      "ta": 8,
+      "doblea": 0,
+      "rd": 1,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": -1,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": -47,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -2551,7 +2551,7 @@
       "ta_local": 2,
       "doblea_local": 0,
       "rd_local": 0,
-      "ta_visit": 1,
+      "ta_visit": 2,
       "doblea_visit": 0,
       "rd_visit": 1,
       "penfall_local": 0,
@@ -2575,13 +2575,13 @@
       "puntos_visit": {
         "gf": 1,
         "gc": 0,
-        "ta": -3,
+        "ta": -6,
         "doblea": 0,
         "rd": -12,
         "penfall": 0,
         "penpar": 0,
         "bonus_resultado": 5,
-        "total": -9
+        "total": -12
       }
     },
     {
@@ -3594,6 +3594,98 @@
         "penpar": 0,
         "bonus_resultado": -8,
         "total": -27
+      }
+    },
+    {
+      "id": 23,
+      "match_num": null,
+      "fecha": "2026-06-25",
+      "fase": "Fase de Grupos",
+      "grupo": "D",
+      "local": "Turquía",
+      "visitante": "EE.UU.",
+      "gf_local": 3,
+      "gf_visit": 2,
+      "ta_local": 0,
+      "doblea_local": 0,
+      "rd_local": 0,
+      "ta_visit": 1,
+      "doblea_visit": 0,
+      "rd_visit": 0,
+      "penfall_local": 0,
+      "penpar_local": 0,
+      "penfall_visit": 0,
+      "penpar_visit": 0,
+      "pen_tanda_local": null,
+      "pen_tanda_visit": null,
+      "jugado": true,
+      "puntos_local": {
+        "gf": 3,
+        "gc": -6,
+        "ta": 0,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": 5,
+        "total": 2
+      },
+      "puntos_visit": {
+        "gf": 2,
+        "gc": -9,
+        "ta": -3,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": -8,
+        "total": -18
+      }
+    },
+    {
+      "id": 24,
+      "match_num": null,
+      "fecha": "2026-06-25",
+      "fase": "Fase de Grupos",
+      "grupo": "D",
+      "local": "Paraguay",
+      "visitante": "Australia",
+      "gf_local": 0,
+      "gf_visit": 0,
+      "ta_local": 1,
+      "doblea_local": 0,
+      "rd_local": 0,
+      "ta_visit": 1,
+      "doblea_visit": 0,
+      "rd_visit": 0,
+      "penfall_local": 0,
+      "penpar_local": 0,
+      "penfall_visit": 0,
+      "penpar_visit": 0,
+      "pen_tanda_local": null,
+      "pen_tanda_visit": null,
+      "jugado": true,
+      "puntos_local": {
+        "gf": 0,
+        "gc": 0,
+        "ta": -3,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": 2,
+        "total": -1
+      },
+      "puntos_visit": {
+        "gf": 0,
+        "gc": 0,
+        "ta": -3,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": 2,
+        "total": -1
       }
     },
     {
@@ -4813,53 +4905,53 @@
         {
           "pos": 1,
           "equipo": "EE.UU.",
-          "pj": 2,
+          "pj": 3,
           "pg": 2,
           "pe": 0,
-          "pp": 0,
-          "gf": 6,
-          "gc": 1,
-          "dg": 5,
+          "pp": 1,
+          "gf": 8,
+          "gc": 4,
+          "dg": 4,
           "pts": 6,
           "empate_no_resuelto": false
         },
         {
           "pos": 2,
           "equipo": "Australia",
-          "pj": 2,
+          "pj": 3,
           "pg": 1,
-          "pe": 0,
+          "pe": 1,
           "pp": 1,
           "gf": 2,
           "gc": 2,
           "dg": 0,
-          "pts": 3,
+          "pts": 4,
           "empate_no_resuelto": false
         },
         {
           "pos": 3,
           "equipo": "Paraguay",
-          "pj": 2,
+          "pj": 3,
           "pg": 1,
-          "pe": 0,
+          "pe": 1,
           "pp": 1,
           "gf": 2,
           "gc": 4,
           "dg": -2,
-          "pts": 3,
+          "pts": 4,
           "empate_no_resuelto": false
         },
         {
           "pos": 4,
           "equipo": "Turquía",
-          "pj": 2,
-          "pg": 0,
+          "pj": 3,
+          "pg": 1,
           "pe": 0,
           "pp": 2,
-          "gf": 0,
-          "gc": 3,
-          "dg": -3,
-          "pts": 0,
+          "gf": 3,
+          "gc": 5,
+          "dg": -2,
+          "pts": 3,
           "empate_no_resuelto": false
         }
       ],
@@ -5015,7 +5107,7 @@
           "ta_local": 2,
           "doblea_local": 0,
           "rd_local": 0,
-          "ta_visit": 1,
+          "ta_visit": 2,
           "doblea_visit": 0,
           "rd_visit": 1,
           "penfall_local": 0,
@@ -5039,13 +5131,13 @@
           "puntos_visit": {
             "gf": 1,
             "gc": 0,
-            "ta": -3,
+            "ta": -6,
             "doblea": 0,
             "rd": -12,
             "penfall": 0,
             "penpar": 0,
             "bonus_resultado": 5,
-            "total": -9
+            "total": -12
           }
         },
         {
@@ -5056,12 +5148,12 @@
           "grupo": "D",
           "local": "Turquía",
           "visitante": "EE.UU.",
-          "gf_local": null,
-          "gf_visit": null,
+          "gf_local": 3,
+          "gf_visit": 2,
           "ta_local": 0,
           "doblea_local": 0,
           "rd_local": 0,
-          "ta_visit": 0,
+          "ta_visit": 1,
           "doblea_visit": 0,
           "rd_visit": 0,
           "penfall_local": 0,
@@ -5070,9 +5162,29 @@
           "penpar_visit": 0,
           "pen_tanda_local": null,
           "pen_tanda_visit": null,
-          "jugado": false,
-          "puntos_local": null,
-          "puntos_visit": null
+          "jugado": true,
+          "puntos_local": {
+            "gf": 3,
+            "gc": -6,
+            "ta": 0,
+            "doblea": 0,
+            "rd": 0,
+            "penfall": 0,
+            "penpar": 0,
+            "bonus_resultado": 5,
+            "total": 2
+          },
+          "puntos_visit": {
+            "gf": 2,
+            "gc": -9,
+            "ta": -3,
+            "doblea": 0,
+            "rd": 0,
+            "penfall": 0,
+            "penpar": 0,
+            "bonus_resultado": -8,
+            "total": -18
+          }
         },
         {
           "id": 24,
@@ -5082,12 +5194,12 @@
           "grupo": "D",
           "local": "Paraguay",
           "visitante": "Australia",
-          "gf_local": null,
-          "gf_visit": null,
-          "ta_local": 0,
+          "gf_local": 0,
+          "gf_visit": 0,
+          "ta_local": 1,
           "doblea_local": 0,
           "rd_local": 0,
-          "ta_visit": 0,
+          "ta_visit": 1,
           "doblea_visit": 0,
           "rd_visit": 0,
           "penfall_local": 0,
@@ -5096,9 +5208,29 @@
           "penpar_visit": 0,
           "pen_tanda_local": null,
           "pen_tanda_visit": null,
-          "jugado": false,
-          "puntos_local": null,
-          "puntos_visit": null
+          "jugado": true,
+          "puntos_local": {
+            "gf": 0,
+            "gc": 0,
+            "ta": -3,
+            "doblea": 0,
+            "rd": 0,
+            "penfall": 0,
+            "penpar": 0,
+            "bonus_resultado": 2,
+            "total": -1
+          },
+          "puntos_visit": {
+            "gf": 0,
+            "gc": 0,
+            "ta": -3,
+            "doblea": 0,
+            "rd": 0,
+            "penfall": 0,
+            "penpar": 0,
+            "bonus_resultado": 2,
+            "total": -1
+          }
         }
       ]
     },
@@ -7742,6 +7874,32 @@
         "puntos_visit": null
       },
       {
+        "id": 93,
+        "match_num": 74,
+        "fecha": "2026-06-29",
+        "fase": "Dieciseisavos de final",
+        "grupo": "",
+        "local": "Alemania",
+        "visitante": "3C/D/F",
+        "gf_local": null,
+        "gf_visit": null,
+        "ta_local": 0,
+        "doblea_local": 0,
+        "rd_local": 0,
+        "ta_visit": 0,
+        "doblea_visit": 0,
+        "rd_visit": 0,
+        "penfall_local": 0,
+        "penpar_local": 0,
+        "penfall_visit": 0,
+        "penpar_visit": 0,
+        "pen_tanda_local": null,
+        "pen_tanda_visit": null,
+        "jugado": false,
+        "puntos_local": null,
+        "puntos_visit": null
+      },
+      {
         "id": 77,
         "match_num": 78,
         "fecha": "2026-06-30",
@@ -7801,6 +7959,58 @@
         "grupo": "",
         "local": "México",
         "visitante": "3C/E/F/H/I",
+        "gf_local": null,
+        "gf_visit": null,
+        "ta_local": 0,
+        "doblea_local": 0,
+        "rd_local": 0,
+        "ta_visit": 0,
+        "doblea_visit": 0,
+        "rd_visit": 0,
+        "penfall_local": 0,
+        "penpar_local": 0,
+        "penfall_visit": 0,
+        "penpar_visit": 0,
+        "pen_tanda_local": null,
+        "pen_tanda_visit": null,
+        "jugado": false,
+        "puntos_local": null,
+        "puntos_visit": null
+      },
+      {
+        "id": 94,
+        "match_num": 77,
+        "fecha": "2026-06-30",
+        "fase": "Dieciseisavos de final",
+        "grupo": "",
+        "local": "1I",
+        "visitante": "3D/F/G",
+        "gf_local": null,
+        "gf_visit": null,
+        "ta_local": 0,
+        "doblea_local": 0,
+        "rd_local": 0,
+        "ta_visit": 0,
+        "doblea_visit": 0,
+        "rd_visit": 0,
+        "penfall_local": 0,
+        "penpar_local": 0,
+        "penfall_visit": 0,
+        "penpar_visit": 0,
+        "pen_tanda_local": null,
+        "pen_tanda_visit": null,
+        "jugado": false,
+        "puntos_local": null,
+        "puntos_visit": null
+      },
+      {
+        "id": 95,
+        "match_num": 79,
+        "fecha": "2026-06-30",
+        "fase": "Dieciseisavos de final",
+        "grupo": "",
+        "local": "México",
+        "visitante": "3C/E/H",
         "gf_local": null,
         "gf_visit": null,
         "ta_local": 0,
@@ -7905,6 +8115,58 @@
         "grupo": "",
         "local": "EE.UU.",
         "visitante": "Bosnia",
+        "gf_local": null,
+        "gf_visit": null,
+        "ta_local": 0,
+        "doblea_local": 0,
+        "rd_local": 0,
+        "ta_visit": 0,
+        "doblea_visit": 0,
+        "rd_visit": 0,
+        "penfall_local": 0,
+        "penpar_local": 0,
+        "penfall_visit": 0,
+        "penpar_visit": 0,
+        "pen_tanda_local": null,
+        "pen_tanda_visit": null,
+        "jugado": false,
+        "puntos_local": null,
+        "puntos_visit": null
+      },
+      {
+        "id": 96,
+        "match_num": 80,
+        "fecha": "2026-07-01",
+        "fase": "Dieciseisavos de final",
+        "grupo": "",
+        "local": "1L",
+        "visitante": "3E/H/I/K",
+        "gf_local": null,
+        "gf_visit": null,
+        "ta_local": 0,
+        "doblea_local": 0,
+        "rd_local": 0,
+        "ta_visit": 0,
+        "doblea_visit": 0,
+        "rd_visit": 0,
+        "penfall_local": 0,
+        "penpar_local": 0,
+        "penfall_visit": 0,
+        "penpar_visit": 0,
+        "pen_tanda_local": null,
+        "pen_tanda_visit": null,
+        "jugado": false,
+        "puntos_local": null,
+        "puntos_visit": null
+      },
+      {
+        "id": 97,
+        "match_num": 82,
+        "fecha": "2026-07-01",
+        "fase": "Dieciseisavos de final",
+        "grupo": "",
+        "local": "1G",
+        "visitante": "3A/H/I/J",
         "gf_local": null,
         "gf_visit": null,
         "ta_local": 0,
@@ -8196,16 +8458,16 @@
         "puntos": 4
       },
       {
-        "equipo": "EE.UU.",
-        "puntos": 1
-      },
-      {
         "equipo": "Suiza",
         "puntos": 1
       },
       {
         "equipo": "Ecuador",
         "puntos": -11
+      },
+      {
+        "equipo": "EE.UU.",
+        "puntos": -17
       },
       {
         "equipo": "Chequia",
@@ -8227,19 +8489,19 @@
       },
       {
         "equipo": "Turquía",
-        "puntos": -34
+        "puntos": -32
       },
       {
         "equipo": "Escocia",
         "puntos": -37
       },
       {
-        "equipo": "Paraguay",
-        "puntos": -43
-      },
-      {
         "equipo": "Bosnia",
         "puntos": -44
+      },
+      {
+        "equipo": "Paraguay",
+        "puntos": -47
       }
     ],
     "Bombo 6": [
@@ -8257,7 +8519,7 @@
       },
       {
         "equipo": "Australia",
-        "puntos": -19
+        "puntos": -20
       },
       {
         "equipo": "Nueva Zelanda",
