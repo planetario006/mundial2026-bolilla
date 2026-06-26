@@ -341,8 +341,8 @@
   },
   "Australia|EE.UU.": {
     "verificado": true,
-    "ultimo_chequeo": "2026-06-26T11:26:12+00:00",
-    "intentos": 3,
+    "ultimo_chequeo": "2026-06-26T13:31:18+00:00",
+    "intentos": 4,
     "match_id": 21,
     "valores_espn_aplicados": {
       "penfall_local": 0,
@@ -353,8 +353,8 @@
   },
   "Escocia|Marruecos": {
     "verificado": true,
-    "ultimo_chequeo": "2026-06-26T11:26:12+00:00",
-    "intentos": 3,
+    "ultimo_chequeo": "2026-06-26T13:31:18+00:00",
+    "intentos": 4,
     "match_id": 15,
     "valores_espn_aplicados": {
       "penfall_local": 0,
@@ -365,8 +365,8 @@
   },
   "Brasil|Haití": {
     "verificado": true,
-    "ultimo_chequeo": "2026-06-26T11:26:12+00:00",
-    "intentos": 3,
+    "ultimo_chequeo": "2026-06-26T13:31:18+00:00",
+    "intentos": 4,
     "match_id": 16,
     "valores_espn_aplicados": {
       "penfall_local": 0,
@@ -377,8 +377,8 @@
   },
   "Paraguay|Turquía": {
     "verificado": false,
-    "ultimo_chequeo": "2026-06-26T11:26:12+00:00",
-    "intentos": 3,
+    "ultimo_chequeo": "2026-06-26T13:31:18+00:00",
+    "intentos": 4,
     "match_id": 22,
     "valores_espn_aplicados": {
       "penfall_local": 0,
