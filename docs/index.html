@@ -178,6 +178,27 @@
   .bombo-row{display:flex; align-items:center; justify-content:space-between; padding:9px 14px;}
   .bombo-row + .bombo-row{border-top:1px solid var(--line);}
   .bombo-pos{font-family:'JetBrains Mono',monospace; color:var(--chalk-dim); font-size:11px; width:16px;}
+  /* ---------- Bombos: selección "tu combinación" ---------- */
+  .bombo-row.selectable{cursor:pointer; transition:background .12s ease;}
+  .bombo-row.selectable:active{background:var(--turf-soft);}
+  .bombo-row.selected, .bombo-goleador-row.selected{background:rgba(255,182,39,0.08);}
+  .bombo-check{width:18px; height:18px; border-radius:50%; border:1.5px solid var(--line); flex-shrink:0; display:flex; align-items:center; justify-content:center; transition:all .12s ease;}
+  .bombo-row.selected .bombo-check, .bombo-goleador-row.selected .bombo-check{background:var(--amber); border-color:var(--amber);}
+  .bombo-check svg{width:11px; height:11px; opacity:0; transition:opacity .12s ease;}
+  .bombo-row.selected .bombo-check svg{opacity:1;}
+  .bombo-goleador-row{display:flex; align-items:center; gap:9px; padding:9px 14px;}
+  .bombo-goleador-row + .bombo-goleador-row{border-top:1px solid var(--line);}
+  .bombo-goleador-row .info{flex:1; min-width:0;}
+  .bombo-goleador-row .info .jugador{font-weight:600; font-size:13.5px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .bombo-goleador-row .info .equipo{font-size:11px; color:var(--chalk-dim); margin-top:1px;}
+  .bombo-goleador-row .goles{font-family:'JetBrains Mono',monospace; font-size:11.5px; color:var(--chalk-dim); flex-shrink:0;}
+  .bombo-resumen{position:sticky; bottom:calc(78px + var(--safe-bottom) + 10px); z-index:20; margin:14px 2px 0; background:var(--plate); border:1px solid var(--amber-dim); border-radius:var(--radius); padding:13px 15px; box-shadow:0 6px 20px rgba(0,0,0,0.45);}
+  .bombo-resumen-top{display:flex; justify-content:space-between; align-items:center; gap:10px;}
+  .bombo-resumen-label{font-family:'Oswald',sans-serif; font-size:12px; letter-spacing:0.08em; color:var(--chalk-dim); text-transform:uppercase;}
+  .bombo-resumen-pts{font-family:'JetBrains Mono',monospace; font-weight:700; font-size:20px;}
+  .bombo-resumen-progreso{font-size:10.5px; color:var(--chalk-dim); margin-top:6px;}
+  .bombo-resumen-progreso b{color:var(--chalk);}
+  .bombo-reset-sel{background:none; border:1px solid var(--line); color:var(--chalk-dim); border-radius:14px; padding:4px 10px; font-size:10.5px; font-weight:600; font-family:'Inter',sans-serif; flex-shrink:0;}
   .intro-card{padding:14px; font-size:12.5px; color:var(--chalk-dim); line-height:1.5;}
   .intro-card b{color:var(--chalk);}
   /* ---------- Bottom nav ---------- */
@@ -941,27 +962,139 @@ function renderEliminacion(){
   });
 }
 
+// Puntos fijos del bombo "Máximo goleador": solo el 1º del top 5 da puntos.
+const PUNTOS_GOLEADOR_TOP1 = 20;
+
+// Selección del usuario: { [nombreBombo]: equipo, 'Máximo goleador': jugador }
+const BOMBO_SEL_KEY = 'bolilla_seleccion_bombos_v1';
+function cargarSeleccionBombos(){
+  try{
+    const raw = localStorage.getItem(BOMBO_SEL_KEY);
+    return raw ? JSON.parse(raw) : {};
+  }catch(e){ return {}; }
+}
+function guardarSeleccionBombos(sel){
+  try{ localStorage.setItem(BOMBO_SEL_KEY, JSON.stringify(sel)); }catch(e){}
+}
+let seleccionBombos = cargarSeleccionBombos();
+
+function nombreBomboGoleador(){ return 'Máximo goleador'; }
+
 function renderBombos(){
   const el = $('#view-bombos');
   const nombres = Object.keys(DATA.bombos);
+  const top5 = (DATA.goleadores || []).slice(0, 5);
+  const NB_GOL = nombreBomboGoleador();
+  const todosLosBombos = [...nombres, NB_GOL];
+
+  const filaBombo = (nombre, equipo, puntos) => {
+    const sel = seleccionBombos[nombre] === equipo;
+    return `
+      <div class="bombo-row selectable${sel?' selected':''}" data-bombo="${nombre}" data-equipo="${equipo}">
+        <div style="display:flex; align-items:center; gap:9px; min-width:0;">
+          <span class="bombo-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1a1304" stroke-width="3"><path d="M4 12l5 5L20 6"/></svg>
+          </span>
+          <span style="font-weight:600; font-size:13.5px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${equipo}</span>
+        </div>
+        <span class="scorebox ${scoreClass(puntos)}" style="min-width:auto; flex-shrink:0;">${fmtPts(puntos)}</span>
+      </div>`;
+  };
+
+  const cardsBombos = nombres.map(nombre=>{
+    const equipos = DATA.bombos[nombre];
+    const filas = equipos.map(e => filaBombo(nombre, e.equipo, e.puntos)).join('');
+    return `<div class="card bombo-card" style="margin-bottom:10px;">
+      <div class="bombo-head"><span class="name">${nombre}</span></div>
+      ${filas}
+    </div>`;
+  }).join('');
+
+  const filasGoleador = top5.map((g,i)=>{
+    const puntos = i === 0 ? PUNTOS_GOLEADOR_TOP1 : 0;
+    const sel = seleccionBombos[NB_GOL] === g.jugador;
+    return `
+      <div class="bombo-goleador-row selectable${sel?' selected':''}" data-bombo="${NB_GOL}" data-equipo="${g.jugador}">
+        <span class="bombo-pos">${i+1}</span>
+        <span class="bombo-check">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#1a1304" stroke-width="3"><path d="M4 12l5 5L20 6"/></svg>
+        </span>
+        <div class="info">
+          <div class="jugador">${g.jugador}</div>
+          <div class="equipo">${g.equipo}</div>
+        </div>
+        <span class="goles">${g.goles} ${g.goles===1?'gol':'goles'}</span>
+        <span class="scorebox ${scoreClass(puntos)}" style="min-width:auto; flex-shrink:0;">${fmtPts(puntos)}</span>
+      </div>`;
+  }).join('');
+
+  const cardGoleador = `
+    <div class="card bombo-card" style="margin-bottom:10px;">
+      <div class="bombo-head"><span class="name">${NB_GOL}</span></div>
+      ${filasGoleador || `<div class="empty-note" style="padding:14px;">Todavía no hay goleadores registrados.</div>`}
+    </div>`;
+
+  // Resumen de la combinación elegida por el usuario
+  const elegidos = todosLosBombos.filter(n => seleccionBombos[n] != null);
+  let totalSeleccion = 0;
+  for(const nombre of nombres){
+    const eq = seleccionBombos[nombre];
+    if(eq == null) continue;
+    const item = (DATA.bombos[nombre]||[]).find(e=>e.equipo===eq);
+    if(item) totalSeleccion += item.puntos;
+  }
+  if(seleccionBombos[NB_GOL] != null){
+    const idx = top5.findIndex(g=>g.jugador===seleccionBombos[NB_GOL]);
+    if(idx === 0) totalSeleccion += PUNTOS_GOLEADOR_TOP1;
+    // idx > 0 o idx===-1 (ya no está en el top5) suman 0 puntos
+  }
+  const completo = elegidos.length === todosLosBombos.length;
+
+  const resumenHTML = `
+    <div class="bombo-resumen" id="bombo-resumen">
+      <div class="bombo-resumen-top">
+        <div>
+          <div class="bombo-resumen-label">Tu combinación</div>
+          <div class="bombo-resumen-progreso">${elegidos.length}/${todosLosBombos.length} bombos elegidos${completo ? ' · <b>completa</b>' : ''}</div>
+        </div>
+        <div style="display:flex; align-items:center; gap:10px;">
+          <span class="bombo-resumen-pts ${scoreClass(totalSeleccion)}">${fmtPts(totalSeleccion)}</span>
+          <button class="bombo-reset-sel" id="bombo-reset-btn">Borrar</button>
+        </div>
+      </div>
+    </div>`;
+
   el.innerHTML = `
     <div class="section-title">Bombos del sorteo · puntos actuales</div>
-    ${nombres.map(nombre=>{
-      const equipos = DATA.bombos[nombre];
-      const filas = equipos.map((e,i)=>`
-        <div class="bombo-row">
-          <div style="display:flex; align-items:center; gap:9px;">
-            <span class="bombo-pos">${i+1}</span>
-            <span style="font-weight:600; font-size:13.5px;">${e.equipo}</span>
-          </div>
-          <span class="scorebox ${scoreClass(e.puntos)}" style="min-width:auto;">${fmtPts(e.puntos)}</span>
-        </div>`).join('');
-      return `<div class="card bombo-card" style="margin-bottom:10px;">
-        <div class="bombo-head"><span class="name">${nombre}</span></div>
-        ${filas}
-      </div>`;
-    }).join('')}
+    <div class="empty-note" style="margin:0 2px 12px; font-size:11.5px;">Toca un equipo de cada bombo (y un goleador) para armar tu combinación y ver cuántos puntos suma.</div>
+    ${cardsBombos}
+    ${cardGoleador}
+    ${resumenHTML}
   `;
+
+  $$('#view-bombos .bombo-row.selectable, #view-bombos .bombo-goleador-row.selectable').forEach(row=>{
+    row.addEventListener('click', ()=>{
+      const bombo = row.dataset.bombo;
+      const equipo = row.dataset.equipo;
+      if(seleccionBombos[bombo] === equipo){
+        delete seleccionBombos[bombo]; // toca otra vez para deseleccionar
+      }else{
+        seleccionBombos[bombo] = equipo;
+      }
+      guardarSeleccionBombos(seleccionBombos);
+      renderBombos();
+    });
+  });
+
+  const resetBtn = $('#bombo-reset-btn');
+  if(resetBtn){
+    resetBtn.addEventListener('click', (ev)=>{
+      ev.stopPropagation();
+      seleccionBombos = {};
+      guardarSeleccionBombos(seleccionBombos);
+      renderBombos();
+    });
+  }
 }
 cargar();
 if('serviceWorker' in navigator){
