@@ -1,15 +1,5 @@
 [
   {
-    "ref": "Paraguay|Turquía::ta_local",
-    "match_id": 22,
-    "local": "Turquía",
-    "visitante": "Paraguay",
-    "campo": "ta_local",
-    "valor_wiki": 2,
-    "valor_scraper": 1,
-    "detectado": "2026-06-26T13:31:18+00:00"
-  },
-  {
     "ref": "Paraguay|Turquía::ta_visit",
     "match_id": 22,
     "local": "Turquía",
