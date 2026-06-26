@@ -288,7 +288,7 @@
     }
   },
   "Chequia|Sudáfrica": {
-    "verificado": false,
+    "verificado": true,
     "ultimo_chequeo": "2026-06-26T11:26:12+00:00",
     "intentos": 3,
     "match_id": 3,
@@ -299,7 +299,8 @@
       "penpar_visit": 0
     },
     "campos_bloqueados": [
-      "ta_local"
+      "ta_local",
+      "ta_visit"
     ]
   },
   "Bosnia|Suiza": {

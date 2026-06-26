@@ -1,15 +1,5 @@
 [
   {
-    "ref": "Chequia|Sudáfrica::ta_visit",
-    "match_id": 3,
-    "local": "Chequia",
-    "visitante": "Sudáfrica",
-    "campo": "ta_visit",
-    "valor_wiki": 0,
-    "valor_scraper": 2,
-    "detectado": "2026-06-26T11:26:12+00:00"
-  },
-  {
     "ref": "Paraguay|Turquía::ta_local",
     "match_id": 22,
     "local": "Turquía",
