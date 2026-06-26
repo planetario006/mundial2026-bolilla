@@ -1,8 +1,8 @@
 {
   "meta": {
-    "actualizado": "2026-06-26T22:15:12+00:00",
+    "actualizado": "2026-06-26T23:12:19+00:00",
     "total_partidos_jugados": 62,
-    "total_partidos": 99,
+    "total_partidos": 102,
     "fase_grupos_terminada": false
   },
   "ranking": [
@@ -12,7 +12,7 @@
       "bombo": "Bombo 1",
       "gf": 10,
       "gc": 2,
-      "ta": 0,
+      "ta": 1,
       "doblea": 0,
       "rd": 0,
       "penfall": 0,
@@ -21,7 +21,7 @@
       "bonus_grupo": 0,
       "premio_final": 0,
       "goleador": 0,
-      "puntos_totales": 24,
+      "puntos_totales": 21,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -656,7 +656,7 @@
       "bombo": "Bombo 3",
       "gf": 8,
       "gc": 7,
-      "ta": 0,
+      "ta": 1,
       "doblea": 0,
       "rd": 0,
       "penfall": 1,
@@ -665,7 +665,7 @@
       "bonus_grupo": 0,
       "premio_final": 0,
       "goleador": 0,
-      "puntos_totales": -21,
+      "puntos_totales": -24,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -3882,10 +3882,10 @@
       "visitante": "Francia",
       "gf_local": 1,
       "gf_visit": 4,
-      "ta_local": 0,
+      "ta_local": 1,
       "doblea_local": 0,
       "rd_local": 0,
-      "ta_visit": 0,
+      "ta_visit": 1,
       "doblea_visit": 0,
       "rd_visit": 0,
       "penfall_local": 1,
@@ -3898,24 +3898,24 @@
       "puntos_local": {
         "gf": 1,
         "gc": -12,
-        "ta": 0,
+        "ta": -3,
         "doblea": 0,
         "rd": 0,
         "penfall": -10,
         "penpar": 0,
         "bonus_resultado": -8,
-        "total": -29
+        "total": -32
       },
       "puntos_visit": {
         "gf": 4,
         "gc": -3,
-        "ta": 0,
+        "ta": -3,
         "doblea": 0,
         "rd": 0,
         "penfall": 0,
         "penpar": 5,
         "bonus_resultado": 5,
-        "total": 11
+        "total": 8
       }
     },
     {
@@ -6862,10 +6862,10 @@
           "visitante": "Francia",
           "gf_local": 1,
           "gf_visit": 4,
-          "ta_local": 0,
+          "ta_local": 1,
           "doblea_local": 0,
           "rd_local": 0,
-          "ta_visit": 0,
+          "ta_visit": 1,
           "doblea_visit": 0,
           "rd_visit": 0,
           "penfall_local": 1,
@@ -6878,24 +6878,24 @@
           "puntos_local": {
             "gf": 1,
             "gc": -12,
-            "ta": 0,
+            "ta": -3,
             "doblea": 0,
             "rd": 0,
             "penfall": -10,
             "penpar": 0,
             "bonus_resultado": -8,
-            "total": -29
+            "total": -32
           },
           "puntos_visit": {
             "gf": 4,
             "gc": -3,
-            "ta": 0,
+            "ta": -3,
             "doblea": 0,
             "rd": 0,
             "penfall": 0,
             "penpar": 5,
             "bonus_resultado": 5,
-            "total": 11
+            "total": 8
           }
         },
         {
@@ -8214,6 +8214,32 @@
         "puntos_visit": null
       },
       {
+        "id": 100,
+        "match_num": 77,
+        "fecha": "2026-06-30",
+        "fase": "Dieciseisavos de final",
+        "grupo": "",
+        "local": "Francia",
+        "visitante": "3F/G",
+        "gf_local": null,
+        "gf_visit": null,
+        "ta_local": 0,
+        "doblea_local": 0,
+        "rd_local": 0,
+        "ta_visit": 0,
+        "doblea_visit": 0,
+        "rd_visit": 0,
+        "penfall_local": 0,
+        "penpar_local": 0,
+        "penfall_visit": 0,
+        "penpar_visit": 0,
+        "pen_tanda_local": null,
+        "pen_tanda_visit": null,
+        "jugado": false,
+        "puntos_local": null,
+        "puntos_visit": null
+      },
+      {
         "id": 80,
         "match_num": 80,
         "fecha": "2026-07-01",
@@ -8448,6 +8474,32 @@
         "puntos_visit": null
       },
       {
+        "id": 101,
+        "match_num": 85,
+        "fecha": "2026-07-02",
+        "fase": "Dieciseisavos de final",
+        "grupo": "",
+        "local": "Suiza",
+        "visitante": "3E/G/I/J",
+        "gf_local": null,
+        "gf_visit": null,
+        "ta_local": 0,
+        "doblea_local": 0,
+        "rd_local": 0,
+        "ta_visit": 0,
+        "doblea_visit": 0,
+        "rd_visit": 0,
+        "penfall_local": 0,
+        "penpar_local": 0,
+        "penfall_visit": 0,
+        "penpar_visit": 0,
+        "pen_tanda_local": null,
+        "pen_tanda_visit": null,
+        "jugado": false,
+        "puntos_local": null,
+        "puntos_visit": null
+      },
+      {
         "id": 86,
         "match_num": 88,
         "fecha": "2026-07-03",
@@ -8550,6 +8602,32 @@
         "jugado": false,
         "puntos_local": null,
         "puntos_visit": null
+      },
+      {
+        "id": 102,
+        "match_num": 87,
+        "fecha": "2026-07-03",
+        "fase": "Dieciseisavos de final",
+        "grupo": "",
+        "local": "1K",
+        "visitante": "3D/E/I/L",
+        "gf_local": null,
+        "gf_visit": null,
+        "ta_local": 0,
+        "doblea_local": 0,
+        "rd_local": 0,
+        "ta_visit": 0,
+        "doblea_visit": 0,
+        "rd_visit": 0,
+        "penfall_local": 0,
+        "penpar_local": 0,
+        "penfall_visit": 0,
+        "penpar_visit": 0,
+        "pen_tanda_local": null,
+        "pen_tanda_visit": null,
+        "jugado": false,
+        "puntos_local": null,
+        "puntos_visit": null
       }
     ],
     "Octavos de final": [],
@@ -8561,7 +8639,7 @@
     "Bombo 1": [
       {
         "equipo": "Francia",
-        "puntos": 24
+        "puntos": 21
       },
       {
         "equipo": "España",
@@ -8625,7 +8703,7 @@
       },
       {
         "equipo": "Noruega",
-        "puntos": -21
+        "puntos": -24
       },
       {
         "equipo": "Senegal",
