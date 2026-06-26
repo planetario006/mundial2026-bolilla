@@ -1,0 +1,1102 @@
+{
+  "México|Sudáfrica|2026-06-11": [
+    {
+      "jugador": "Julián Quiñones",
+      "equipo": "México",
+      "minuto": "9'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Raúl Jiménez",
+      "equipo": "México",
+      "minuto": "67'",
+      "tipo": "Gol"
+    }
+  ],
+  "Chequia|Corea del Sur|2026-06-12": [
+    {
+      "jugador": "Ladislav Krejcí",
+      "equipo": "Chequia",
+      "minuto": "59'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Hwang In-Beom",
+      "equipo": "Corea del Sur",
+      "minuto": "67'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Oh Hyeon-Gyu",
+      "equipo": "Corea del Sur",
+      "minuto": "80'",
+      "tipo": "Gol"
+    }
+  ],
+  "Bosnia|Canadá|2026-06-12": [
+    {
+      "jugador": "Jovo Lukic",
+      "equipo": "Bosnia",
+      "minuto": "21'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Cyle Larin",
+      "equipo": "Canadá",
+      "minuto": "78'",
+      "tipo": "Gol"
+    }
+  ],
+  "EE.UU.|Paraguay|2026-06-13": [
+    {
+      "jugador": "Folarin Balogun",
+      "equipo": "EE.UU.",
+      "minuto": "31'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Folarin Balogun",
+      "equipo": "EE.UU.",
+      "minuto": "45'+5'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Maurício",
+      "equipo": "Paraguay",
+      "minuto": "73'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Giovanni Reyna",
+      "equipo": "EE.UU.",
+      "minuto": "90'+8'",
+      "tipo": "Gol"
+    }
+  ],
+  "Catar|Suiza|2026-06-13": [
+    {
+      "jugador": "Breel Embolo",
+      "equipo": "Suiza",
+      "minuto": "17'",
+      "tipo": "Penalti"
+    }
+  ],
+  "Brasil|Marruecos|2026-06-13": [
+    {
+      "jugador": "Ismael Saibari",
+      "equipo": "Marruecos",
+      "minuto": "21'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Vinícius Júnior",
+      "equipo": "Brasil",
+      "minuto": "32'",
+      "tipo": "Gol"
+    }
+  ],
+  "Escocia|Haití|2026-06-14": [
+    {
+      "jugador": "John McGinn",
+      "equipo": "Escocia",
+      "minuto": "28'",
+      "tipo": "Gol"
+    }
+  ],
+  "Australia|Turquía|2026-06-14": [
+    {
+      "jugador": "Nestory Irankunda",
+      "equipo": "Australia",
+      "minuto": "27'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Connor Metcalfe",
+      "equipo": "Australia",
+      "minuto": "75'",
+      "tipo": "Gol"
+    }
+  ],
+  "Alemania|Curazao|2026-06-14": [
+    {
+      "jugador": "Felix Nmecha",
+      "equipo": "Alemania",
+      "minuto": "6'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Livano Comenencia",
+      "equipo": "Curazao",
+      "minuto": "21'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Nico Schlotterbeck",
+      "equipo": "Alemania",
+      "minuto": "38'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Kai Havertz",
+      "equipo": "Alemania",
+      "minuto": "45'+5'",
+      "tipo": "Penalti"
+    },
+    {
+      "jugador": "Jamal Musiala",
+      "equipo": "Alemania",
+      "minuto": "47'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Nathaniel Brown",
+      "equipo": "Alemania",
+      "minuto": "68'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Deniz Undav",
+      "equipo": "Alemania",
+      "minuto": "78'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Kai Havertz",
+      "equipo": "Alemania",
+      "minuto": "88'",
+      "tipo": "Gol"
+    }
+  ],
+  "Japón|Países Bajos|2026-06-14": [
+    {
+      "jugador": "Virgil van Dijk",
+      "equipo": "Países Bajos",
+      "minuto": "51'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Keito Nakamura",
+      "equipo": "Japón",
+      "minuto": "57'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Crysencio Summerville",
+      "equipo": "Países Bajos",
+      "minuto": "64'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Daichi Kamada",
+      "equipo": "Japón",
+      "minuto": "89'",
+      "tipo": "Gol"
+    }
+  ],
+  "Costa de Marfil|Ecuador|2026-06-14": [
+    {
+      "jugador": "Amad Diallo",
+      "equipo": "Costa de Marfil",
+      "minuto": "90'",
+      "tipo": "Gol"
+    }
+  ],
+  "Suecia|Túnez|2026-06-15": [
+    {
+      "jugador": "Yasin Ayari",
+      "equipo": "Suecia",
+      "minuto": "7'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Alexander Isak",
+      "equipo": "Suecia",
+      "minuto": "30'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Omar Rekik",
+      "equipo": "Túnez",
+      "minuto": "43'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Viktor Gyökeres",
+      "equipo": "Suecia",
+      "minuto": "59'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Mattias Svanberg",
+      "equipo": "Suecia",
+      "minuto": "84'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Yasin Ayari",
+      "equipo": "Suecia",
+      "minuto": "90'+6'",
+      "tipo": "Gol"
+    }
+  ],
+  "Bélgica|Egipto|2026-06-15": [
+    {
+      "jugador": "Emam Ashour",
+      "equipo": "Egipto",
+      "minuto": "20'",
+      "tipo": "Gol"
+    }
+  ],
+  "Arabia Saudí|Uruguay|2026-06-15": [
+    {
+      "jugador": "Abdulelah Al-Amri",
+      "equipo": "Arabia Saudí",
+      "minuto": "41'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Maxi Araújo",
+      "equipo": "Uruguay",
+      "minuto": "80'",
+      "tipo": "Gol"
+    }
+  ],
+  "Irán|Nueva Zelanda|2026-06-16": [
+    {
+      "jugador": "Elijah Just",
+      "equipo": "Nueva Zelanda",
+      "minuto": "7'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Ramin Rezaeian",
+      "equipo": "Irán",
+      "minuto": "32'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Elijah Just",
+      "equipo": "Nueva Zelanda",
+      "minuto": "54'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Mohammad Mohebbi",
+      "equipo": "Irán",
+      "minuto": "64'",
+      "tipo": "Gol"
+    }
+  ],
+  "Francia|Senegal|2026-06-16": [
+    {
+      "jugador": "Kylian Mbappé",
+      "equipo": "Francia",
+      "minuto": "66'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Bradley Barcola",
+      "equipo": "Francia",
+      "minuto": "82'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Ibrahim Mbaye",
+      "equipo": "Senegal",
+      "minuto": "90'+5'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Kylian Mbappé",
+      "equipo": "Francia",
+      "minuto": "90'+6'",
+      "tipo": "Gol"
+    }
+  ],
+  "Irak|Noruega|2026-06-16": [
+    {
+      "jugador": "Erling Haaland",
+      "equipo": "Noruega",
+      "minuto": "29'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Aymen Hussein",
+      "equipo": "Irak",
+      "minuto": "39'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Erling Haaland",
+      "equipo": "Noruega",
+      "minuto": "43'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Leo Østigard",
+      "equipo": "Noruega",
+      "minuto": "76'",
+      "tipo": "Gol"
+    }
+  ],
+  "Argelia|Argentina|2026-06-17": [
+    {
+      "jugador": "Lionel Messi",
+      "equipo": "Argentina",
+      "minuto": "17'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Lionel Messi",
+      "equipo": "Argentina",
+      "minuto": "60'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Lionel Messi",
+      "equipo": "Argentina",
+      "minuto": "76'",
+      "tipo": "Gol"
+    }
+  ],
+  "Austria|Jordania|2026-06-17": [
+    {
+      "jugador": "Romano Schmid",
+      "equipo": "Austria",
+      "minuto": "21'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Ali Olwan",
+      "equipo": "Jordania",
+      "minuto": "50'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Marko Arnautovic",
+      "equipo": "Austria",
+      "minuto": "90'+12'",
+      "tipo": "Penalti"
+    }
+  ],
+  "Portugal|R. D. Congo|2026-06-17": [
+    {
+      "jugador": "João Neves",
+      "equipo": "Portugal",
+      "minuto": "6'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Yoane Wissa",
+      "equipo": "R. D. Congo",
+      "minuto": "45'+5'",
+      "tipo": "Gol"
+    }
+  ],
+  "Croacia|Inglaterra|2026-06-17": [
+    {
+      "jugador": "Harry Kane",
+      "equipo": "Inglaterra",
+      "minuto": "12'",
+      "tipo": "Penalti"
+    },
+    {
+      "jugador": "Martin Baturina",
+      "equipo": "Croacia",
+      "minuto": "36'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Harry Kane",
+      "equipo": "Inglaterra",
+      "minuto": "42'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Petar Musa",
+      "equipo": "Croacia",
+      "minuto": "45'+5'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Jude Bellingham",
+      "equipo": "Inglaterra",
+      "minuto": "47'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Marcus Rashford",
+      "equipo": "Inglaterra",
+      "minuto": "85'",
+      "tipo": "Gol"
+    }
+  ],
+  "Ghana|Panamá|2026-06-17": [
+    {
+      "jugador": "Caleb Yirenkyi",
+      "equipo": "Ghana",
+      "minuto": "90'+5'",
+      "tipo": "Gol"
+    }
+  ],
+  "Colombia|Uzbekistán|2026-06-18": [
+    {
+      "jugador": "Daniel Muñoz",
+      "equipo": "Colombia",
+      "minuto": "40'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Abbosbek Fayzullaev",
+      "equipo": "Uzbekistán",
+      "minuto": "60'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Luis Díaz",
+      "equipo": "Colombia",
+      "minuto": "65'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Jáminton Campaz",
+      "equipo": "Colombia",
+      "minuto": "90'+9'",
+      "tipo": "Gol"
+    }
+  ],
+  "Chequia|Sudáfrica|2026-06-18": [
+    {
+      "jugador": "Michal Sadílek",
+      "equipo": "Chequia",
+      "minuto": "6'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Teboho Mokoena",
+      "equipo": "Sudáfrica",
+      "minuto": "83'",
+      "tipo": "Penalti"
+    }
+  ],
+  "Bosnia|Suiza|2026-06-18": [
+    {
+      "jugador": "Johan Manzambi",
+      "equipo": "Suiza",
+      "minuto": "74'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Rubén Vargas",
+      "equipo": "Suiza",
+      "minuto": "84'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Johan Manzambi",
+      "equipo": "Suiza",
+      "minuto": "90'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Ermin Mahmic",
+      "equipo": "Bosnia",
+      "minuto": "90'+3'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Granit Xhaka",
+      "equipo": "Suiza",
+      "minuto": "90'+7'",
+      "tipo": "Penalti"
+    }
+  ],
+  "Canadá|Catar|2026-06-18": [
+    {
+      "jugador": "Cyle Larin",
+      "equipo": "Canadá",
+      "minuto": "16'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Jonathan David",
+      "equipo": "Canadá",
+      "minuto": "29'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Jonathan David",
+      "equipo": "Canadá",
+      "minuto": "45'+3'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Nathan Saliba",
+      "equipo": "Canadá",
+      "minuto": "64'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Jonathan David",
+      "equipo": "Canadá",
+      "minuto": "90'+2'",
+      "tipo": "Gol"
+    }
+  ],
+  "Corea del Sur|México|2026-06-19": [
+    {
+      "jugador": "Luis Romo",
+      "equipo": "México",
+      "minuto": "50'",
+      "tipo": "Gol"
+    }
+  ],
+  "Australia|EE.UU.|2026-06-19": [
+    {
+      "jugador": "Alex Freeman",
+      "equipo": "EE.UU.",
+      "minuto": "43'",
+      "tipo": "Gol"
+    }
+  ],
+  "Escocia|Marruecos|2026-06-19": [
+    {
+      "jugador": "Ismael Saibari",
+      "equipo": "Marruecos",
+      "minuto": "2'",
+      "tipo": "Gol"
+    }
+  ],
+  "Brasil|Haití|2026-06-20": [
+    {
+      "jugador": "Matheus Cunha",
+      "equipo": "Brasil",
+      "minuto": "23'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Matheus Cunha",
+      "equipo": "Brasil",
+      "minuto": "36'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Vinícius Júnior",
+      "equipo": "Brasil",
+      "minuto": "45'+3'",
+      "tipo": "Gol"
+    }
+  ],
+  "Paraguay|Turquía|2026-06-20": [
+    {
+      "jugador": "Matías Galarza",
+      "equipo": "Paraguay",
+      "minuto": "2'",
+      "tipo": "Gol"
+    }
+  ],
+  "Países Bajos|Suecia|2026-06-20": [
+    {
+      "jugador": "Brian Brobbey",
+      "equipo": "Países Bajos",
+      "minuto": "5'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Brian Brobbey",
+      "equipo": "Países Bajos",
+      "minuto": "17'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Cody Gakpo",
+      "equipo": "Países Bajos",
+      "minuto": "47'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Cody Gakpo",
+      "equipo": "Países Bajos",
+      "minuto": "54'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Anthony Elanga",
+      "equipo": "Suecia",
+      "minuto": "59'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Crysencio Summerville",
+      "equipo": "Países Bajos",
+      "minuto": "89'",
+      "tipo": "Gol"
+    }
+  ],
+  "Alemania|Costa de Marfil|2026-06-20": [
+    {
+      "jugador": "Franck Kessié",
+      "equipo": "Costa de Marfil",
+      "minuto": "30'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Deniz Undav",
+      "equipo": "Alemania",
+      "minuto": "68'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Deniz Undav",
+      "equipo": "Alemania",
+      "minuto": "90'+4'",
+      "tipo": "Gol"
+    }
+  ],
+  "Japón|Túnez|2026-06-21": [
+    {
+      "jugador": "Daichi Kamada",
+      "equipo": "Japón",
+      "minuto": "4'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Ayase Ueda",
+      "equipo": "Japón",
+      "minuto": "31'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Junya Ito",
+      "equipo": "Japón",
+      "minuto": "69'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Ayase Ueda",
+      "equipo": "Japón",
+      "minuto": "83'",
+      "tipo": "Gol"
+    }
+  ],
+  "Arabia Saudí|España|2026-06-21": [
+    {
+      "jugador": "Lamine Yamal",
+      "equipo": "España",
+      "minuto": "10'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Mikel Oyarzabal",
+      "equipo": "España",
+      "minuto": "21'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Mikel Oyarzabal",
+      "equipo": "España",
+      "minuto": "24'",
+      "tipo": "Gol"
+    }
+  ],
+  "Cabo Verde|Uruguay|2026-06-21": [
+    {
+      "jugador": "Kevin Pina",
+      "equipo": "Cabo Verde",
+      "minuto": "21'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Maxi Araújo",
+      "equipo": "Uruguay",
+      "minuto": "44'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Agustín Canobbio",
+      "equipo": "Uruguay",
+      "minuto": "45'+6'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Hélio Varela",
+      "equipo": "Cabo Verde",
+      "minuto": "61'",
+      "tipo": "Gol"
+    }
+  ],
+  "Egipto|Nueva Zelanda|2026-06-22": [
+    {
+      "jugador": "Finn Surman",
+      "equipo": "Nueva Zelanda",
+      "minuto": "15'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Mostafa Zico",
+      "equipo": "Egipto",
+      "minuto": "58'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Mohamed Salah",
+      "equipo": "Egipto",
+      "minuto": "67'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Trézéguet",
+      "equipo": "Egipto",
+      "minuto": "82'",
+      "tipo": "Gol"
+    }
+  ],
+  "Argentina|Austria|2026-06-22": [
+    {
+      "jugador": "Lionel Messi",
+      "equipo": "Argentina",
+      "minuto": "38'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Lionel Messi",
+      "equipo": "Argentina",
+      "minuto": "90'+5'",
+      "tipo": "Gol"
+    }
+  ],
+  "Francia|Irak|2026-06-22": [
+    {
+      "jugador": "Kylian Mbappé",
+      "equipo": "Francia",
+      "minuto": "14'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Kylian Mbappé",
+      "equipo": "Francia",
+      "minuto": "54'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Ousmane Dembélé",
+      "equipo": "Francia",
+      "minuto": "66'",
+      "tipo": "Gol"
+    }
+  ],
+  "Noruega|Senegal|2026-06-23": [
+    {
+      "jugador": "Marcus Holmgren Pedersen",
+      "equipo": "Noruega",
+      "minuto": "43'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Erling Haaland",
+      "equipo": "Noruega",
+      "minuto": "48'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Ismaïla Sarr",
+      "equipo": "Senegal",
+      "minuto": "53'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Erling Haaland",
+      "equipo": "Noruega",
+      "minuto": "58'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Ismaïla Sarr",
+      "equipo": "Senegal",
+      "minuto": "90'+3'",
+      "tipo": "Gol"
+    }
+  ],
+  "Argelia|Jordania|2026-06-23": [
+    {
+      "jugador": "Nizar Al-Rashdan",
+      "equipo": "Jordania",
+      "minuto": "36'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Nadhir Benbouali",
+      "equipo": "Argelia",
+      "minuto": "69'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Amine Gouiri",
+      "equipo": "Argelia",
+      "minuto": "82'",
+      "tipo": "Gol"
+    }
+  ],
+  "Portugal|Uzbekistán|2026-06-23": [
+    {
+      "jugador": "Cristiano Ronaldo",
+      "equipo": "Portugal",
+      "minuto": "6'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Nuno Mendes",
+      "equipo": "Portugal",
+      "minuto": "17'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Cristiano Ronaldo",
+      "equipo": "Portugal",
+      "minuto": "39'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Rafael Leão",
+      "equipo": "Portugal",
+      "minuto": "87'",
+      "tipo": "Gol"
+    }
+  ],
+  "Croacia|Panamá|2026-06-23": [
+    {
+      "jugador": "Ante Budimir",
+      "equipo": "Croacia",
+      "minuto": "54'",
+      "tipo": "Gol"
+    }
+  ],
+  "Colombia|R. D. Congo|2026-06-24": [
+    {
+      "jugador": "Daniel Muñoz",
+      "equipo": "Colombia",
+      "minuto": "76'",
+      "tipo": "Gol"
+    }
+  ],
+  "Bosnia|Catar|2026-06-24": [
+    {
+      "jugador": "Kerim Alajbegovic",
+      "equipo": "Bosnia",
+      "minuto": "29'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Hassan Al-Haydos",
+      "equipo": "Catar",
+      "minuto": "42'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Ermin Mahmic",
+      "equipo": "Bosnia",
+      "minuto": "80'",
+      "tipo": "Gol"
+    }
+  ],
+  "Canadá|Suiza|2026-06-24": [
+    {
+      "jugador": "Rubén Vargas",
+      "equipo": "Suiza",
+      "minuto": "46'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Johan Manzambi",
+      "equipo": "Suiza",
+      "minuto": "57'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Promise David",
+      "equipo": "Canadá",
+      "minuto": "76'",
+      "tipo": "Gol"
+    }
+  ],
+  "Haití|Marruecos|2026-06-24": [
+    {
+      "jugador": "Achraf Hakimi",
+      "equipo": "Marruecos",
+      "minuto": "39'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Wilson Isidor",
+      "equipo": "Haití",
+      "minuto": "43'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Ismael Saibari",
+      "equipo": "Marruecos",
+      "minuto": "45'+1'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Soufiane Rahimi",
+      "equipo": "Marruecos",
+      "minuto": "78'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Gessime Yassine",
+      "equipo": "Marruecos",
+      "minuto": "89'",
+      "tipo": "Gol"
+    }
+  ],
+  "Brasil|Escocia|2026-06-24": [
+    {
+      "jugador": "Vinícius Júnior",
+      "equipo": "Brasil",
+      "minuto": "7'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Vinícius Júnior",
+      "equipo": "Brasil",
+      "minuto": "45'+3'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Matheus Cunha",
+      "equipo": "Brasil",
+      "minuto": "60'",
+      "tipo": "Gol"
+    }
+  ],
+  "Chequia|México|2026-06-25": [
+    {
+      "jugador": "Mateo Chávez",
+      "equipo": "México",
+      "minuto": "55'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Julián Quiñones",
+      "equipo": "México",
+      "minuto": "61'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Álvaro Fidalgo",
+      "equipo": "México",
+      "minuto": "90'+4'",
+      "tipo": "Gol"
+    }
+  ],
+  "Corea del Sur|Sudáfrica|2026-06-25": [
+    {
+      "jugador": "Thapelo Maseko",
+      "equipo": "Sudáfrica",
+      "minuto": "63'",
+      "tipo": "Gol"
+    }
+  ],
+  "Costa de Marfil|Curazao|2026-06-25": [
+    {
+      "jugador": "Nicolas Pépé",
+      "equipo": "Costa de Marfil",
+      "minuto": "7'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Nicolas Pépé",
+      "equipo": "Costa de Marfil",
+      "minuto": "64'",
+      "tipo": "Gol"
+    }
+  ],
+  "Alemania|Ecuador|2026-06-25": [
+    {
+      "jugador": "Leroy Sané",
+      "equipo": "Alemania",
+      "minuto": "2'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Nilson Angulo",
+      "equipo": "Ecuador",
+      "minuto": "9'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Gonzalo Plata",
+      "equipo": "Ecuador",
+      "minuto": "77'",
+      "tipo": "Gol"
+    }
+  ],
+  "Japón|Suecia|2026-06-25": [
+    {
+      "jugador": "Daizen Maeda",
+      "equipo": "Japón",
+      "minuto": "56'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Anthony Elanga",
+      "equipo": "Suecia",
+      "minuto": "62'",
+      "tipo": "Gol"
+    }
+  ],
+  "Países Bajos|Túnez|2026-06-25": [
+    {
+      "jugador": "Brian Brobbey",
+      "equipo": "Países Bajos",
+      "minuto": "7'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Hazem Mastouri",
+      "equipo": "Túnez",
+      "minuto": "54'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Jan Paul van Hecke",
+      "equipo": "Países Bajos",
+      "minuto": "62'",
+      "tipo": "Gol"
+    }
+  ],
+  "EE.UU.|Turquía|2026-06-26": [
+    {
+      "jugador": "Auston Trusty",
+      "equipo": "EE.UU.",
+      "minuto": "3'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Arda Güler",
+      "equipo": "Turquía",
+      "minuto": "10'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Baris Alper Yilmaz",
+      "equipo": "Turquía",
+      "minuto": "31'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Sebastian Berhalter",
+      "equipo": "EE.UU.",
+      "minuto": "49'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Kaan Ayhan",
+      "equipo": "Turquía",
+      "minuto": "90'+8'",
+      "tipo": "Gol"
+    }
+  ]
+}
