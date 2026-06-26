@@ -2,17 +2,15 @@ name: Actualizar Mundial 2026
 
 on:
   schedule:
-    # Cada 30 minutos. GitHub no garantiza el minuto exacto (puede retrasarse
-    # unos minutos en horas punta), pero para una bolilla de fútbol sobra.
     - cron: "*/30 * * * *"
-  workflow_dispatch: {}   # también se puede lanzar a mano desde la pestaña "Actions"
+  workflow_dispatch: {}
+
+concurrency:
+  group: mundial-bot
+  cancel-in-progress: false
 
 permissions:
   contents: write
-
-concurrency:
-  group: actualizar-mundial
-  cancel-in-progress: false   # deja que la ejecución en curso termine en vez de cortarla a medias
 
 jobs:
   actualizar:
@@ -21,7 +19,7 @@ jobs:
       - name: Descargar el repositorio
         uses: actions/checkout@v4
 
-      - name: Preparar Python
+      - name: Configurar Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -29,17 +27,28 @@ jobs:
       - name: Instalar dependencias
         run: pip install requests
 
-      - name: Ejecutar actualizador (Wikipedia -> matches.json -> data.json)
+      - name: Ejecutar actualizador (Wikipedia + ESPN + conciliación)
         run: python actualizar_mundial.py
 
-      - name: Publicar cambios si los hay
+      - name: Volcar discrepancias pendientes al resumen (si hay)
+        if: always()
+        run: |
+          if [ -s discrepancias.json ] && [ "$(cat discrepancias.json)" != "[]" ]; then
+            {
+              echo "### ⚠️ Hay discrepancias pendientes entre Wikipedia y ESPN"
+              echo '```'
+              python resolver_discrepancia.py --listar
+              echo '```'
+              echo ""
+              echo "Resuélvelas desde **Actions → \"Resolver discrepancia\" → Run workflow**."
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Commit y push si hay cambios
         run: |
           git config user.name "mundial-bot"
           git config user.email "mundial-bot@users.noreply.github.com"
-          git add matches.json docs/data.json
-          if git diff --cached --quiet; then
-            echo "Sin cambios, nada que publicar."
-          else
-            git commit -m "Actualización automática $(date -u +'%Y-%m-%d %H:%M UTC')"
-            git push
-          fi
+          git add matches.json estado_reconciliacion.json discrepancias.json \
+                  goleadores_por_partido.json docs/data.json
+          git diff --cached --quiet || git commit -m "Actualización automática $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
