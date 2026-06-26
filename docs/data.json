@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-06-26T11:26:12+00:00",
+    "actualizado": "2026-06-26T12:11:12+00:00",
     "total_partidos_jugados": 60,
     "total_partidos": 97,
     "fase_grupos_terminada": false
@@ -375,8 +375,8 @@
       "pos": 16
     },
     {
-      "equipo": "Cabo Verde",
-      "grupo": "H",
+      "equipo": "Irán",
+      "grupo": "G",
       "bombo": "Bombo 8",
       "gf": 2,
       "gc": 2,
@@ -398,29 +398,6 @@
       "pos": 17
     },
     {
-      "equipo": "Irán",
-      "grupo": "G",
-      "bombo": "Bombo 8",
-      "gf": 2,
-      "gc": 2,
-      "ta": 2,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": 4,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": -6,
-      "bonus_ronda_dieciseisavos": 0,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 18
-    },
-    {
       "equipo": "Uruguay",
       "grupo": "H",
       "bombo": "Bombo 3",
@@ -436,6 +413,29 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -8,
+      "bonus_ronda_dieciseisavos": 0,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 18
+    },
+    {
+      "equipo": "Cabo Verde",
+      "grupo": "H",
+      "bombo": "Bombo 8",
+      "gf": 2,
+      "gc": 2,
+      "ta": 3,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": 4,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": -9,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -2919,7 +2919,7 @@
       "ta_local": 2,
       "doblea_local": 0,
       "rd_local": 0,
-      "ta_visit": 1,
+      "ta_visit": 2,
       "doblea_visit": 0,
       "rd_visit": 0,
       "penfall_local": 0,
@@ -2943,13 +2943,13 @@
       "puntos_visit": {
         "gf": 2,
         "gc": -6,
-        "ta": -3,
+        "ta": -6,
         "doblea": 0,
         "rd": 0,
         "penfall": 0,
         "penpar": 0,
         "bonus_resultado": 2,
-        "total": -5
+        "total": -8
       }
     },
     {
@@ -6427,7 +6427,7 @@
           "ta_local": 2,
           "doblea_local": 0,
           "rd_local": 0,
-          "ta_visit": 1,
+          "ta_visit": 2,
           "doblea_visit": 0,
           "rd_visit": 0,
           "penfall_local": 0,
@@ -6451,13 +6451,13 @@
           "puntos_visit": {
             "gf": 2,
             "gc": -6,
-            "ta": -3,
+            "ta": -6,
             "doblea": 0,
             "rd": 0,
             "penfall": 0,
             "penpar": 0,
             "bonus_resultado": 2,
-            "total": -5
+            "total": -8
           }
         },
         {
@@ -8567,7 +8567,7 @@
       },
       {
         "equipo": "Cabo Verde",
-        "puntos": -6
+        "puntos": -9
       },
       {
         "equipo": "Jordania",

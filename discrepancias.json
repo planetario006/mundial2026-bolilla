@@ -38,15 +38,5 @@
     "valor_wiki": 2,
     "valor_scraper": 1,
     "detectado": "2026-06-26T11:26:12+00:00"
-  },
-  {
-    "ref": "Cabo Verde|Uruguay::ta_visit",
-    "match_id": 46,
-    "local": "Uruguay",
-    "visitante": "Cabo Verde",
-    "campo": "ta_visit",
-    "valor_wiki": 1,
-    "valor_scraper": 2,
-    "detectado": "2026-06-26T11:26:12+00:00"
   }
 ]
