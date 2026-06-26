@@ -7,7 +7,7 @@
     "campo": "ta_local",
     "valor_wiki": 0,
     "valor_scraper": 1,
-    "detectado": "2026-06-26T21:23:06+00:00"
+    "detectado": "2026-06-26T21:49:07+00:00"
   },
   {
     "ref": "Francia|Noruega::ta_visit",
@@ -17,7 +17,7 @@
     "campo": "ta_visit",
     "valor_wiki": 0,
     "valor_scraper": 1,
-    "detectado": "2026-06-26T21:23:06+00:00"
+    "detectado": "2026-06-26T21:49:07+00:00"
   },
   {
     "ref": "Irak|Senegal::ta_local",
@@ -27,7 +27,7 @@
     "campo": "ta_local",
     "valor_wiki": 0,
     "valor_scraper": 2,
-    "detectado": "2026-06-26T21:23:06+00:00"
+    "detectado": "2026-06-26T21:49:07+00:00"
   },
   {
     "ref": "Irak|Senegal::ta_visit",
@@ -37,7 +37,7 @@
     "campo": "ta_visit",
     "valor_wiki": 0,
     "valor_scraper": 2,
-    "detectado": "2026-06-26T21:23:06+00:00"
+    "detectado": "2026-06-26T21:49:07+00:00"
   },
   {
     "ref": "Irak|Senegal::rd_visit",
@@ -47,6 +47,6 @@
     "campo": "rd_visit",
     "valor_wiki": 0,
     "valor_scraper": 1,
-    "detectado": "2026-06-26T21:23:06+00:00"
+    "detectado": "2026-06-26T21:49:07+00:00"
   }
 ]
