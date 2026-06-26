@@ -1098,5 +1098,69 @@
       "minuto": "90'+8'",
       "tipo": "Gol"
     }
+  ],
+  "Francia|Noruega|2026-06-26": [
+    {
+      "jugador": "Ousmane Dembélé",
+      "equipo": "Francia",
+      "minuto": "7'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Ousmane Dembélé",
+      "equipo": "Francia",
+      "minuto": "20'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Thelo Aasgaard",
+      "equipo": "Noruega",
+      "minuto": "21'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Ousmane Dembélé",
+      "equipo": "Francia",
+      "minuto": "32'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Désiré Doué",
+      "equipo": "Francia",
+      "minuto": "90'+4'",
+      "tipo": "Gol"
+    }
+  ],
+  "Irak|Senegal|2026-06-26": [
+    {
+      "jugador": "Habib Diarra",
+      "equipo": "Senegal",
+      "minuto": "4'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Ismaïla Sarr",
+      "equipo": "Senegal",
+      "minuto": "56'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Pape Gueye",
+      "equipo": "Senegal",
+      "minuto": "59'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Pape Gueye",
+      "equipo": "Senegal",
+      "minuto": "71'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Iliman Ndiaye",
+      "equipo": "Senegal",
+      "minuto": "82'",
+      "tipo": "Gol"
+    }
   ]
 }

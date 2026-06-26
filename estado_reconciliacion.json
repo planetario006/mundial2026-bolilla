@@ -733,5 +733,29 @@
       "penpar_local": 0,
       "penpar_visit": 0
     }
+  },
+  "Francia|Noruega": {
+    "verificado": false,
+    "ultimo_chequeo": "2026-06-26T21:15:25+00:00",
+    "intentos": 1,
+    "match_id": 53,
+    "valores_espn_aplicados": {
+      "penfall_local": 1,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 1
+    }
+  },
+  "Irak|Senegal": {
+    "verificado": false,
+    "ultimo_chequeo": "2026-06-26T21:15:25+00:00",
+    "intentos": 1,
+    "match_id": 54,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
   }
 }
