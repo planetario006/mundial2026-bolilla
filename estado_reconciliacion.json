@@ -736,8 +736,8 @@
   },
   "Francia|Noruega": {
     "verificado": false,
-    "ultimo_chequeo": "2026-06-26T21:49:07+00:00",
-    "intentos": 3,
+    "ultimo_chequeo": "2026-06-26T22:15:12+00:00",
+    "intentos": 4,
     "match_id": 53,
     "valores_espn_aplicados": {
       "penfall_local": 1,
@@ -747,9 +747,9 @@
     }
   },
   "Irak|Senegal": {
-    "verificado": false,
-    "ultimo_chequeo": "2026-06-26T21:49:07+00:00",
-    "intentos": 3,
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-26T22:15:12+00:00",
+    "intentos": 4,
     "match_id": 54,
     "valores_espn_aplicados": {
       "penfall_local": 0,

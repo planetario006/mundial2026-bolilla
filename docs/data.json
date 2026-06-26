@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-06-26T21:49:07+00:00",
+    "actualizado": "2026-06-26T22:15:12+00:00",
     "total_partidos_jugados": 62,
     "total_partidos": 99,
     "fase_grupos_terminada": false
@@ -674,29 +674,6 @@
       "pos": 29
     },
     {
-      "equipo": "Senegal",
-      "grupo": "I",
-      "bombo": "Bombo 3",
-      "gf": 8,
-      "gc": 6,
-      "ta": 0,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": -11,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": -21,
-      "bonus_ronda_dieciseisavos": 0,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 30
-    },
-    {
       "equipo": "Nueva Zelanda",
       "grupo": "G",
       "bombo": "Bombo 6",
@@ -712,6 +689,29 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -24,
+      "bonus_ronda_dieciseisavos": 0,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 30
+    },
+    {
+      "equipo": "Senegal",
+      "grupo": "I",
+      "bombo": "Bombo 3",
+      "gf": 8,
+      "gc": 6,
+      "ta": 2,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": -11,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": -27,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -1042,29 +1042,6 @@
       "pos": 45
     },
     {
-      "equipo": "Irak",
-      "grupo": "I",
-      "bombo": "Bombo 7",
-      "gf": 1,
-      "gc": 12,
-      "ta": 2,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": -24,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": -65,
-      "bonus_ronda_dieciseisavos": 0,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 46
-    },
-    {
       "equipo": "Haití",
       "grupo": "C",
       "bombo": "Bombo 8",
@@ -1085,7 +1062,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 47
+      "pos": 46
     },
     {
       "equipo": "Catar",
@@ -1103,6 +1080,29 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -78,
+      "bonus_ronda_dieciseisavos": 0,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 47
+    },
+    {
+      "equipo": "Irak",
+      "grupo": "I",
+      "bombo": "Bombo 7",
+      "gf": 1,
+      "gc": 12,
+      "ta": 4,
+      "doblea": 0,
+      "rd": 1,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": -24,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": -83,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -3928,12 +3928,12 @@
       "visitante": "Irak",
       "gf_local": 5,
       "gf_visit": 0,
-      "ta_local": 0,
+      "ta_local": 2,
       "doblea_local": 0,
       "rd_local": 0,
-      "ta_visit": 0,
+      "ta_visit": 2,
       "doblea_visit": 0,
-      "rd_visit": 0,
+      "rd_visit": 1,
       "penfall_local": 0,
       "penpar_local": 0,
       "penfall_visit": 0,
@@ -3944,24 +3944,24 @@
       "puntos_local": {
         "gf": 5,
         "gc": 0,
-        "ta": 0,
+        "ta": -6,
         "doblea": 0,
         "rd": 0,
         "penfall": 0,
         "penpar": 0,
         "bonus_resultado": 5,
-        "total": 10
+        "total": 4
       },
       "puntos_visit": {
         "gf": 0,
         "gc": -15,
-        "ta": 0,
+        "ta": -6,
         "doblea": 0,
-        "rd": 0,
+        "rd": -12,
         "penfall": 0,
         "penpar": 0,
         "bonus_resultado": -8,
-        "total": -23
+        "total": -41
       }
     }
   ],
@@ -6908,12 +6908,12 @@
           "visitante": "Irak",
           "gf_local": 5,
           "gf_visit": 0,
-          "ta_local": 0,
+          "ta_local": 2,
           "doblea_local": 0,
           "rd_local": 0,
-          "ta_visit": 0,
+          "ta_visit": 2,
           "doblea_visit": 0,
-          "rd_visit": 0,
+          "rd_visit": 1,
           "penfall_local": 0,
           "penpar_local": 0,
           "penfall_visit": 0,
@@ -6924,24 +6924,24 @@
           "puntos_local": {
             "gf": 5,
             "gc": 0,
-            "ta": 0,
+            "ta": -6,
             "doblea": 0,
             "rd": 0,
             "penfall": 0,
             "penpar": 0,
             "bonus_resultado": 5,
-            "total": 10
+            "total": 4
           },
           "puntos_visit": {
             "gf": 0,
             "gc": -15,
-            "ta": 0,
+            "ta": -6,
             "doblea": 0,
-            "rd": 0,
+            "rd": -12,
             "penfall": 0,
             "penpar": 0,
             "bonus_resultado": -8,
-            "total": -23
+            "total": -41
           }
         }
       ]
@@ -8629,7 +8629,7 @@
       },
       {
         "equipo": "Senegal",
-        "puntos": -21
+        "puntos": -27
       },
       {
         "equipo": "Suecia",
@@ -8732,12 +8732,12 @@
         "puntos": -45
       },
       {
-        "equipo": "Irak",
-        "puntos": -65
-      },
-      {
         "equipo": "Catar",
         "puntos": -78
+      },
+      {
+        "equipo": "Irak",
+        "puntos": -83
       }
     ],
     "Bombo 8": [
