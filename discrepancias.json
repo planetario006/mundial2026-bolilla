@@ -48,15 +48,5 @@
     "valor_wiki": 1,
     "valor_scraper": 2,
     "detectado": "2026-06-26T10:32:42+00:00"
-  },
-  {
-    "ref": "Alemania|Ecuador::ta_visit",
-    "match_id": 29,
-    "local": "Ecuador",
-    "visitante": "Alemania",
-    "campo": "ta_visit",
-    "valor_wiki": 0,
-    "valor_scraper": 1,
-    "detectado": "2026-06-26T10:32:42+00:00"
   }
 ]

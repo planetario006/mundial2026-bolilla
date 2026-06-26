@@ -660,7 +660,7 @@
     }
   },
   "Alemania|Ecuador": {
-    "verificado": false,
+    "verificado": true,
     "ultimo_chequeo": "2026-06-26T10:32:42+00:00",
     "intentos": 2,
     "match_id": 29,
@@ -671,7 +671,8 @@
       "penpar_visit": 0
     },
     "campos_bloqueados": [
-      "ta_local"
+      "ta_local",
+      "ta_visit"
     ]
   },
   "Japón|Suecia": {

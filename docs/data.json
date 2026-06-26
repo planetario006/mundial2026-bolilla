@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-06-26T10:32:42+00:00",
+    "actualizado": "2026-06-26T10:50:05+00:00",
     "total_partidos_jugados": 60,
     "total_partidos": 97,
     "fase_grupos_terminada": false
@@ -283,29 +283,6 @@
       "pos": 12
     },
     {
-      "equipo": "Alemania",
-      "grupo": "E",
-      "bombo": "Bombo 1",
-      "gf": 10,
-      "gc": 4,
-      "ta": 0,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": 2,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": 0,
-      "bonus_ronda_dieciseisavos": 0,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 13
-    },
-    {
       "equipo": "Argentina",
       "grupo": "J",
       "bombo": "Bombo 1",
@@ -326,7 +303,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 14
+      "pos": 13
     },
     {
       "equipo": "Portugal",
@@ -344,6 +321,29 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -2,
+      "bonus_ronda_dieciseisavos": 0,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 14
+    },
+    {
+      "equipo": "Alemania",
+      "grupo": "E",
+      "bombo": "Bombo 1",
+      "gf": 10,
+      "gc": 4,
+      "ta": 1,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": 2,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": -3,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -3701,7 +3701,7 @@
       "ta_local": 3,
       "doblea_local": 0,
       "rd_local": 0,
-      "ta_visit": 0,
+      "ta_visit": 1,
       "doblea_visit": 0,
       "rd_visit": 0,
       "penfall_local": 0,
@@ -3725,13 +3725,13 @@
       "puntos_visit": {
         "gf": 1,
         "gc": -6,
-        "ta": 0,
+        "ta": -3,
         "doblea": 0,
         "rd": 0,
         "penfall": 0,
         "penpar": 0,
         "bonus_resultado": -8,
-        "total": -13
+        "total": -16
       }
     },
     {
@@ -5493,7 +5493,7 @@
           "ta_local": 3,
           "doblea_local": 0,
           "rd_local": 0,
-          "ta_visit": 0,
+          "ta_visit": 1,
           "doblea_visit": 0,
           "rd_visit": 0,
           "penfall_local": 0,
@@ -5517,13 +5517,13 @@
           "puntos_visit": {
             "gf": 1,
             "gc": -6,
-            "ta": 0,
+            "ta": -3,
             "doblea": 0,
             "rd": 0,
             "penfall": 0,
             "penpar": 0,
             "bonus_resultado": -8,
-            "total": -13
+            "total": -16
           }
         },
         {
@@ -8392,12 +8392,12 @@
         "puntos": 1
       },
       {
-        "equipo": "Alemania",
-        "puntos": 0
-      },
-      {
         "equipo": "Argentina",
         "puntos": -1
+      },
+      {
+        "equipo": "Alemania",
+        "puntos": -3
       }
     ],
     "Bombo 2": [
