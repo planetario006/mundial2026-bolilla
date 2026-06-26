@@ -376,7 +376,7 @@
     }
   },
   "Paraguay|Turquía": {
-    "verificado": false,
+    "verificado": true,
     "ultimo_chequeo": "2026-06-26T13:31:18+00:00",
     "intentos": 4,
     "match_id": 22,
@@ -387,7 +387,8 @@
       "penpar_visit": 0
     },
     "campos_bloqueados": [
-      "ta_local"
+      "ta_local",
+      "ta_visit"
     ]
   },
   "Países Bajos|Suecia": {
