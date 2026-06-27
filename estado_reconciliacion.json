@@ -736,8 +736,8 @@
   },
   "Francia|Noruega": {
     "verificado": true,
-    "ultimo_chequeo": "2026-06-27T14:14:52+00:00",
-    "intentos": 14,
+    "ultimo_chequeo": "2026-06-27T15:22:58+00:00",
+    "intentos": 15,
     "match_id": 53,
     "valores_espn_aplicados": {
       "penfall_local": 1,
@@ -748,8 +748,8 @@
   },
   "Irak|Senegal": {
     "verificado": true,
-    "ultimo_chequeo": "2026-06-27T14:14:52+00:00",
-    "intentos": 14,
+    "ultimo_chequeo": "2026-06-27T15:22:58+00:00",
+    "intentos": 15,
     "match_id": 54,
     "valores_espn_aplicados": {
       "penfall_local": 0,
@@ -760,8 +760,8 @@
   },
   "Arabia Saudí|Cabo Verde": {
     "verificado": true,
-    "ultimo_chequeo": "2026-06-27T14:14:52+00:00",
-    "intentos": 8,
+    "ultimo_chequeo": "2026-06-27T15:22:58+00:00",
+    "intentos": 9,
     "match_id": 47,
     "valores_espn_aplicados": {
       "penfall_local": 0,
@@ -772,8 +772,8 @@
   },
   "España|Uruguay": {
     "verificado": true,
-    "ultimo_chequeo": "2026-06-27T14:14:52+00:00",
-    "intentos": 8,
+    "ultimo_chequeo": "2026-06-27T15:22:58+00:00",
+    "intentos": 9,
     "match_id": 48,
     "valores_espn_aplicados": {
       "penfall_local": 0,
@@ -784,8 +784,8 @@
   },
   "Egipto|Irán": {
     "verificado": false,
-    "ultimo_chequeo": "2026-06-27T14:14:52+00:00",
-    "intentos": 7,
+    "ultimo_chequeo": "2026-06-27T15:22:58+00:00",
+    "intentos": 8,
     "match_id": 42,
     "valores_espn_aplicados": {
       "penfall_local": 0,
@@ -796,8 +796,8 @@
   },
   "Bélgica|Nueva Zelanda": {
     "verificado": true,
-    "ultimo_chequeo": "2026-06-27T14:14:52+00:00",
-    "intentos": 7,
+    "ultimo_chequeo": "2026-06-27T15:22:58+00:00",
+    "intentos": 8,
     "match_id": 41,
     "valores_espn_aplicados": {
       "penfall_local": 0,
