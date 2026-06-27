@@ -136,10 +136,16 @@ def calcular_stats_globales(matches: list[dict]) -> dict:
         res = resultado_local(p)
         pts_local = {"V": PUNTOS_PARTIDO_GANADO, "E": PUNTOS_PARTIDO_EMPATADO, "L": PUNTOS_PARTIDO_PERDIDO}[res]
         pts_visit = {"V": PUNTOS_PARTIDO_PERDIDO, "E": PUNTOS_PARTIDO_EMPATADO, "L": PUNTOS_PARTIDO_GANADO}[res]
+        
+        # Leemos los goles a favor de ambos lados de manera segura
+        gfl = p["gf_local"]
+        gfv = p["gf_visit"]
+
+        # Reemplazamos p["gc_local"] por gfv y p["gc_visit"] por gfl
         for lado, equipo, gf, gc, ta, da, rd, pf, pp, ptsres in (
-            ("local", p["local"], p["gf_local"], p["gc_local"], p["ta_local"],
+            ("local", p["local"], gfl, gfv, p["ta_local"],
              p["doblea_local"], p["rd_local"], p["penfall_local"], p["penpar_local"], pts_local),
-            ("visit", p["visitante"], p["gf_visit"], p["gc_visit"], p["ta_visit"],
+            ("visit", p["visitante"], gfv, gfl, p["ta_visit"],
              p["doblea_visit"], p["rd_visit"], p["penfall_visit"], p["penpar_visit"], pts_visit),
         ):
             if equipo not in stats:
@@ -439,8 +445,8 @@ def _partido_resumen(p: dict) -> dict:
         res = resultado_local(p)
         pts_res_l = {"V": PUNTOS_PARTIDO_GANADO, "E": PUNTOS_PARTIDO_EMPATADO, "L": PUNTOS_PARTIDO_PERDIDO}[res]
         pts_res_v = {"V": PUNTOS_PARTIDO_PERDIDO, "E": PUNTOS_PARTIDO_EMPATADO, "L": PUNTOS_PARTIDO_GANADO}[res]
-        gc_l = p.get("gc_local", p.get("gf_visit", 0))
-        gc_v = p.get("gc_visit", p.get("gf_local", 0))
+        gc_l = p["gf_visit"]
+        gc_v = p["gf_local"]
         puntos_local = _desglose_puntos_partido(p.get("gf_local", 0), gc_l, ta_l, da_l, rd_l, pf_l, pp_l, pts_res_l)
         puntos_visit = _desglose_puntos_partido(p.get("gf_visit", 0), gc_v, ta_v, da_v, rd_v, pf_v, pp_v, pts_res_v)
     return {
