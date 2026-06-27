@@ -158,8 +158,9 @@ def conciliar(
         e["match_id"] = m["id"]
         bloqueados = set(e.get("campos_bloqueados", []))
         hay_discrepancia_pendiente = False
-        # 1) Campos que existen en las dos fuentes
-        if m.get("gf_local") is not None and m.get("gf_visit") is not None:
+        
+        # 1) Campos que existen en las dos fuentes (Se activa si AL MENOS UNO no es nulo)
+        if any(m.get(campo) is not None for campo in CAMPOS_COMPARABLES):
             for campo in CAMPOS_COMPARABLES:
                 if campo in bloqueados:
                     # El usuario ya decidió este campo a mano una vez:
@@ -182,8 +183,8 @@ def conciliar(
                         resumen["discrepancias_nuevas"] += 1
                     hay_discrepancia_pendiente = True
         else:
-            # Wikipedia aún no tiene marcador para este partido aunque
-            # exista la fila (fixture); nada que comparar todavía.
+            # Wikipedia no tiene absolutamente ningún dato cargado para este partido 
+            # (todos los campos comparables están en None)
             hay_discrepancia_pendiente = True
 
         # 2) Campos que SOLO trae ESPN (penaltis fallados/parados, tanda)
