@@ -783,7 +783,7 @@
     }
   },
   "Egipto|Irán": {
-    "verificado": false,
+    "verificado": true,
     "ultimo_chequeo": "2026-06-27T15:22:58+00:00",
     "intentos": 8,
     "match_id": 42,
@@ -794,7 +794,8 @@
       "penpar_visit": 0
     },
     "campos_bloqueados": [
-      "gf_local"
+      "gf_local",
+      "gf_visit"
     ]
   },
   "Bélgica|Nueva Zelanda": {

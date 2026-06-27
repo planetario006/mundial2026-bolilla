@@ -997,7 +997,7 @@
     "penfall_local": 0,
     "penpar_local": 1,
     "visitante": "Irán",
-    "gf_visit": null,
+    "gf_visit": 1,
     "gc_visit": null,
     "ta_visit": 4,
     "doblea_visit": 0,
