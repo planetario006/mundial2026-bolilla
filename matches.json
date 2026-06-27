@@ -989,7 +989,7 @@
     "fase": "Fase de Grupos",
     "grupo": "G",
     "local": "Egipto",
-    "gf_local": null,
+    "gf_local": 1,
     "gc_local": null,
     "ta_local": 3,
     "doblea_local": 0,

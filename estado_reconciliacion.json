@@ -792,7 +792,10 @@
       "penfall_visit": 1,
       "penpar_local": 1,
       "penpar_visit": 0
-    }
+    },
+    "campos_bloqueados": [
+      "gf_local"
+    ]
   },
   "Bélgica|Nueva Zelanda": {
     "verificado": true,
