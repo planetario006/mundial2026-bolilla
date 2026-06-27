@@ -1,8 +1,8 @@
 {
   "meta": {
-    "actualizado": "2026-06-27T01:29:31+00:00",
+    "actualizado": "2026-06-27T02:05:52+00:00",
     "total_partidos_jugados": 62,
-    "total_partidos": 102,
+    "total_partidos": 105,
     "fase_grupos_terminada": false
   },
   "ranking": [
@@ -8032,6 +8032,32 @@
         "puntos_visit": null
       },
       {
+        "id": 103,
+        "match_num": 74,
+        "fecha": "2026-06-29",
+        "fase": "Dieciseisavos de final",
+        "grupo": "",
+        "local": "Alemania",
+        "visitante": "Paraguay",
+        "gf_local": null,
+        "gf_visit": null,
+        "ta_local": 0,
+        "doblea_local": 0,
+        "rd_local": 0,
+        "ta_visit": 0,
+        "doblea_visit": 0,
+        "rd_visit": 0,
+        "penfall_local": 0,
+        "penpar_local": 0,
+        "penfall_visit": 0,
+        "penpar_visit": 0,
+        "pen_tanda_local": null,
+        "pen_tanda_visit": null,
+        "jugado": false,
+        "puntos_local": null,
+        "puntos_visit": null
+      },
+      {
         "id": 77,
         "match_num": 78,
         "fecha": "2026-06-30",
@@ -8500,6 +8526,32 @@
         "puntos_visit": null
       },
       {
+        "id": 104,
+        "match_num": 84,
+        "fecha": "2026-07-02",
+        "fase": "Dieciseisavos de final",
+        "grupo": "",
+        "local": "España",
+        "visitante": "2J",
+        "gf_local": null,
+        "gf_visit": null,
+        "ta_local": 0,
+        "doblea_local": 0,
+        "rd_local": 0,
+        "ta_visit": 0,
+        "doblea_visit": 0,
+        "rd_visit": 0,
+        "penfall_local": 0,
+        "penpar_local": 0,
+        "penfall_visit": 0,
+        "penpar_visit": 0,
+        "pen_tanda_local": null,
+        "pen_tanda_visit": null,
+        "jugado": false,
+        "puntos_local": null,
+        "puntos_visit": null
+      },
+      {
         "id": 86,
         "match_num": 88,
         "fecha": "2026-07-03",
@@ -8611,6 +8663,32 @@
         "grupo": "",
         "local": "1K",
         "visitante": "3D/E/I/L",
+        "gf_local": null,
+        "gf_visit": null,
+        "ta_local": 0,
+        "doblea_local": 0,
+        "rd_local": 0,
+        "ta_visit": 0,
+        "doblea_visit": 0,
+        "rd_visit": 0,
+        "penfall_local": 0,
+        "penpar_local": 0,
+        "penfall_visit": 0,
+        "penpar_visit": 0,
+        "pen_tanda_local": null,
+        "pen_tanda_visit": null,
+        "jugado": false,
+        "puntos_local": null,
+        "puntos_visit": null
+      },
+      {
+        "id": 105,
+        "match_num": 86,
+        "fecha": "2026-07-03",
+        "fase": "Dieciseisavos de final",
+        "grupo": "",
+        "local": "Argentina",
+        "visitante": "Cabo Verde",
         "gf_local": null,
         "gf_visit": null,
         "ta_local": 0,
@@ -9599,10 +9677,16 @@
       "pos": 124
     },
     {
+      "jugador": "Álex Baena",
+      "equipo": "España",
+      "goles": 1,
+      "pos": 125
+    },
+    {
       "jugador": "Álvaro Fidalgo",
       "equipo": "México",
       "goles": 1,
-      "pos": 125
+      "pos": 126
     }
   ]
 }
