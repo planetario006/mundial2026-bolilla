@@ -1170,5 +1170,57 @@
       "minuto": "42'",
       "tipo": "Gol"
     }
+  ],
+  "Egipto|Irán|2026-06-27": [
+    {
+      "jugador": "Mahmoud Saber",
+      "equipo": "Egipto",
+      "minuto": "5'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Ramin Rezaeian",
+      "equipo": "Irán",
+      "minuto": "14'",
+      "tipo": "Gol"
+    }
+  ],
+  "Bélgica|Nueva Zelanda|2026-06-27": [
+    {
+      "jugador": "Leandro Trossard",
+      "equipo": "Bélgica",
+      "minuto": "28'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Leandro Trossard",
+      "equipo": "Bélgica",
+      "minuto": "50'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Kevin De Bruyne",
+      "equipo": "Bélgica",
+      "minuto": "66'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Elijah Just",
+      "equipo": "Nueva Zelanda",
+      "minuto": "84'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Romelu Lukaku",
+      "equipo": "Bélgica",
+      "minuto": "86'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Alexis Saelemaekers",
+      "equipo": "Bélgica",
+      "minuto": "90'+4'",
+      "tipo": "Gol"
+    }
   ]
 }
