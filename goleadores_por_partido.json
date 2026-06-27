@@ -1222,5 +1222,39 @@
       "minuto": "90'+4'",
       "tipo": "Gol"
     }
+  ],
+  "Croacia|Ghana|2026-06-27": [
+    {
+      "jugador": "Petar Sucic",
+      "equipo": "Croacia",
+      "minuto": "31'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Derrick Luckassen",
+      "equipo": "Ghana",
+      "minuto": "73'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Nikola Vlasic",
+      "equipo": "Croacia",
+      "minuto": "83'",
+      "tipo": "Gol"
+    }
+  ],
+  "Inglaterra|Panamá|2026-06-27": [
+    {
+      "jugador": "Jude Bellingham",
+      "equipo": "Inglaterra",
+      "minuto": "62'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Harry Kane",
+      "equipo": "Inglaterra",
+      "minuto": "67'",
+      "tipo": "Gol"
+    }
   ]
 }

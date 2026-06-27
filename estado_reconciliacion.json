@@ -809,5 +809,29 @@
       "penpar_local": 0,
       "penpar_visit": 0
     }
+  },
+  "Croacia|Ghana": {
+    "verificado": false,
+    "ultimo_chequeo": "2026-06-27T23:07:45+00:00",
+    "intentos": 1,
+    "match_id": 72,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Inglaterra|Panamá": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-27T23:07:45+00:00",
+    "intentos": 1,
+    "match_id": 71,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
   }
 }

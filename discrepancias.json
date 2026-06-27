@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "ref": "Croacia|Ghana::ta_local",
+    "match_id": 72,
+    "local": "Croacia",
+    "visitante": "Ghana",
+    "campo": "ta_local",
+    "valor_wiki": 0,
+    "valor_scraper": 1,
+    "detectado": "2026-06-27T23:07:45+00:00"
+  },
+  {
+    "ref": "Croacia|Ghana::ta_visit",
+    "match_id": 72,
+    "local": "Croacia",
+    "visitante": "Ghana",
+    "campo": "ta_visit",
+    "valor_wiki": 0,
+    "valor_scraper": 1,
+    "detectado": "2026-06-27T23:07:45+00:00"
+  }
+]
