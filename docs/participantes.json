@@ -1,0 +1,982 @@
+[
+  {
+    "nombre": "José (Cristina)",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Marruecos",
+      "Bombo 3": "Colombia",
+      "Bombo 4": "Suiza",
+      "Bombo 5": "Escocia",
+      "Bombo 6": "Austria",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Jordania",
+      "Máximo goleador": "Harry Kane"
+    }
+  },
+  {
+    "nombre": "Zouhair",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Marruecos",
+      "Bombo 3": "Colombia",
+      "Bombo 4": "Japón",
+      "Bombo 5": "Corea del Sur",
+      "Bombo 6": "Egipto",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Jordania",
+      "Máximo goleador": "Brahim"
+    }
+  },
+  {
+    "nombre": "Dompin",
+    "elecciones": {
+      "Bombo 1": "Francia",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Uruguay",
+      "Bombo 4": "Suiza",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Egipto",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "K. Mbappé"
+    }
+  },
+  {
+    "nombre": "Raúl (Dompin)",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Senegal",
+      "Bombo 4": "EE.UU.",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Costa de Marfil",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "K. Mbappé"
+    }
+  },
+  {
+    "nombre": "Gorka (Dompin)",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Canadá",
+      "Bombo 4": "Suiza",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Egipto",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Irán",
+      "Máximo goleador": "Harry Kane"
+    }
+  },
+  {
+    "nombre": "Richar (Dompin)",
+    "elecciones": {
+      "Bombo 1": "Brasil",
+      "Bombo 2": "Países Bajos",
+      "Bombo 3": "Colombia",
+      "Bombo 4": "Suiza",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Australia",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "Raphinha"
+    }
+  },
+  {
+    "nombre": "Asier (Halta)",
+    "elecciones": {
+      "Bombo 1": "Francia",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Uruguay",
+      "Bombo 4": "Japón",
+      "Bombo 5": "Paraguay",
+      "Bombo 6": "Costa de Marfil",
+      "Bombo 7": "Irak",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "Oyarzabal"
+    }
+  },
+  {
+    "nombre": "Andreina (Halta)",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Colombia",
+      "Bombo 4": "Ecuador",
+      "Bombo 5": "Paraguay",
+      "Bombo 6": "Costa de Marfil",
+      "Bombo 7": "Panamá",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "K. Mbappé"
+    }
+  },
+  {
+    "nombre": "Erlante (Halta)",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Colombia",
+      "Bombo 4": "EE.UU.",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Costa de Marfil",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "Oyarzabal"
+    }
+  },
+  {
+    "nombre": "Oier (Halta)",
+    "elecciones": {
+      "Bombo 1": "Inglaterra",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Uruguay",
+      "Bombo 4": "EE.UU.",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Costa de Marfil",
+      "Bombo 7": "Uzbekistán",
+      "Bombo 8": "Irán",
+      "Máximo goleador": "Harry Kane"
+    }
+  },
+  {
+    "nombre": "Nico (Halta)",
+    "elecciones": {
+      "Bombo 1": "Brasil",
+      "Bombo 2": "Países Bajos",
+      "Bombo 3": "Noruega",
+      "Bombo 4": "Ecuador",
+      "Bombo 5": "Escocia",
+      "Bombo 6": "Costa de Marfil",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "Harry Kane"
+    }
+  },
+  {
+    "nombre": "Ibon (Halta)",
+    "elecciones": {
+      "Bombo 1": "Francia",
+      "Bombo 2": "Países Bajos",
+      "Bombo 3": "Senegal",
+      "Bombo 4": "Japón",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Austria",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "Oyarzabal"
+    }
+  },
+  {
+    "nombre": "Merceros",
+    "elecciones": {
+      "Bombo 1": "Francia",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Uruguay",
+      "Bombo 4": "Japón",
+      "Bombo 5": "Corea del Sur",
+      "Bombo 6": "Sudáfrica",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Irán",
+      "Máximo goleador": "C. Ronaldo"
+    }
+  },
+  {
+    "nombre": "Eli (Tuno)",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Noruega",
+      "Bombo 4": "Ecuador",
+      "Bombo 5": "Paraguay",
+      "Bombo 6": "Austria",
+      "Bombo 7": "Panamá",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "Harry Kane"
+    }
+  },
+  {
+    "nombre": "Cuñado (Tuno)",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Noruega",
+      "Bombo 4": "EE.UU.",
+      "Bombo 5": "Bosnia",
+      "Bombo 6": "Egipto",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "Harry Kane"
+    }
+  },
+  {
+    "nombre": "Gallego (Tuno)",
+    "elecciones": {
+      "Bombo 1": "Francia",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Colombia",
+      "Bombo 4": "Japón",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Australia",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "Harry Kane"
+    }
+  },
+  {
+    "nombre": "Asturiano (Tuno)",
+    "elecciones": {
+      "Bombo 1": "Inglaterra",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Noruega",
+      "Bombo 4": "EE.UU.",
+      "Bombo 5": "Bosnia",
+      "Bombo 6": "Austria",
+      "Bombo 7": "Panamá",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "Harry Kane"
+    }
+  },
+  {
+    "nombre": "Tuno 5",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Colombia",
+      "Bombo 4": "EE.UU.",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Australia",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "Harry Kane"
+    }
+  },
+  {
+    "nombre": "Fran",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Países Bajos",
+      "Bombo 3": "Canadá",
+      "Bombo 4": "Japón",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Australia",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "Haaland"
+    }
+  },
+  {
+    "nombre": "Pumu",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Noruega",
+      "Bombo 4": "Japón",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Egipto",
+      "Bombo 7": "Catar",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "Oyarzabal"
+    }
+  },
+  {
+    "nombre": "Mikel (Porro)",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Uruguay",
+      "Bombo 4": "Japón",
+      "Bombo 5": "Paraguay",
+      "Bombo 6": "Egipto",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Irán",
+      "Máximo goleador": "K. Mbappé"
+    }
+  },
+  {
+    "nombre": "Adolfo",
+    "elecciones": {
+      "Bombo 1": "Francia",
+      "Bombo 2": "Marruecos",
+      "Bombo 3": "Colombia",
+      "Bombo 4": "Túnez",
+      "Bombo 5": "Escocia",
+      "Bombo 6": "Austria",
+      "Bombo 7": "Uzbekistán",
+      "Bombo 8": "Cabo Verde",
+      "Máximo goleador": "Messi"
+    }
+  },
+  {
+    "nombre": "Juanjo (Baracaldo)",
+    "elecciones": {
+      "Bombo 1": "Brasil",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Colombia",
+      "Bombo 4": "EE.UU.",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Egipto",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "Vinicius"
+    }
+  },
+  {
+    "nombre": "Koldo (Aeropuerto)",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Noruega",
+      "Bombo 4": "Chequia",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Costa de Marfil",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Irán",
+      "Máximo goleador": "K. Mbappé"
+    }
+  },
+  {
+    "nombre": "Chaparro",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Noruega",
+      "Bombo 4": "Suiza",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Egipto",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Irán",
+      "Máximo goleador": "Harry Kane"
+    }
+  },
+  {
+    "nombre": "Ruben (Chaparro)",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Noruega",
+      "Bombo 4": "Suiza",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Egipto",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Irán",
+      "Máximo goleador": "K. Mbappé"
+    }
+  },
+  {
+    "nombre": "Geni-Itzi-Cris",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Países Bajos",
+      "Bombo 3": "Uruguay",
+      "Bombo 4": "Suiza",
+      "Bombo 5": "Arabia Saudí",
+      "Bombo 6": "Austria",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Cabo Verde",
+      "Máximo goleador": "Haaland"
+    }
+  },
+  {
+    "nombre": "Kepa (Alambra)",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Marruecos",
+      "Bombo 3": "Uruguay",
+      "Bombo 4": "EE.UU.",
+      "Bombo 5": "Bosnia",
+      "Bombo 6": "Costa de Marfil",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "K. Havertz"
+    }
+  },
+  {
+    "nombre": "Javi (B.M.)",
+    "elecciones": {
+      "Bombo 1": "Francia",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Colombia",
+      "Bombo 4": "Suiza",
+      "Bombo 5": "Paraguay",
+      "Bombo 6": "Nueva Zelanda",
+      "Bombo 7": "Catar",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "K. Mbappé"
+    }
+  },
+  {
+    "nombre": "Rafa",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Colombia",
+      "Bombo 4": "Japón",
+      "Bombo 5": "Paraguay",
+      "Bombo 6": "Austria",
+      "Bombo 7": "R. D. Congo",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "Harry Kane"
+    }
+  },
+  {
+    "nombre": "Unai (Piscinas)",
+    "elecciones": {
+      "Bombo 1": "Argentina",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Uruguay",
+      "Bombo 4": "Suiza",
+      "Bombo 5": "Corea del Sur",
+      "Bombo 6": "Costa de Marfil",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Irán",
+      "Máximo goleador": "J. Álvarez"
+    }
+  },
+  {
+    "nombre": "Jesús Zamora",
+    "elecciones": {
+      "Bombo 1": "Francia",
+      "Bombo 2": "Croacia",
+      "Bombo 3": "Senegal",
+      "Bombo 4": "Japón",
+      "Bombo 5": "Escocia",
+      "Bombo 6": "Costa de Marfil",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Jordania",
+      "Máximo goleador": "Dembélé"
+    }
+  },
+  {
+    "nombre": "Lotero",
+    "elecciones": {
+      "Bombo 1": "Alemania",
+      "Bombo 2": "Bélgica",
+      "Bombo 3": "Senegal",
+      "Bombo 4": "Chequia",
+      "Bombo 5": "Escocia",
+      "Bombo 6": "Costa de Marfil",
+      "Bombo 7": "R. D. Congo",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "C. Ronaldo"
+    }
+  },
+  {
+    "nombre": "Herminio (León)",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Senegal",
+      "Bombo 4": "Suiza",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Australia",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Cabo Verde",
+      "Máximo goleador": "Nico Williams"
+    }
+  },
+  {
+    "nombre": "Fliper",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Colombia",
+      "Bombo 4": "Suiza",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Egipto",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "Oyarzabal"
+    }
+  },
+  {
+    "nombre": "Pala",
+    "elecciones": {
+      "Bombo 1": "Francia",
+      "Bombo 2": "Países Bajos",
+      "Bombo 3": "Uruguay",
+      "Bombo 4": "Japón",
+      "Bombo 5": "Paraguay",
+      "Bombo 6": "Sudáfrica",
+      "Bombo 7": "Irak",
+      "Bombo 8": "Irán",
+      "Máximo goleador": "Vinicius"
+    }
+  },
+  {
+    "nombre": "Merche",
+    "elecciones": {
+      "Bombo 1": "Francia",
+      "Bombo 2": "Croacia",
+      "Bombo 3": "Uruguay",
+      "Bombo 4": "Japón",
+      "Bombo 5": "Corea del Sur",
+      "Bombo 6": "Sudáfrica",
+      "Bombo 7": "R. D. Congo",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "Dembélé"
+    }
+  },
+  {
+    "nombre": "Markel (Alfonso)",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Uruguay",
+      "Bombo 4": "Japón",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Australia",
+      "Bombo 7": "Catar",
+      "Bombo 8": "Irán",
+      "Máximo goleador": "K. Mbappé"
+    }
+  },
+  {
+    "nombre": "Iñaki 85",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Uruguay",
+      "Bombo 4": "Suiza",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Egipto",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "K. Mbappé"
+    }
+  },
+  {
+    "nombre": "Manu (Iñaki 85)",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Colombia",
+      "Bombo 4": "Ecuador",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Austria",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Irán",
+      "Máximo goleador": "Oyarzabal"
+    }
+  },
+  {
+    "nombre": "Cruz (Iñaki 85)",
+    "elecciones": {
+      "Bombo 1": "Inglaterra",
+      "Bombo 2": "México",
+      "Bombo 3": "Canadá",
+      "Bombo 4": "EE.UU.",
+      "Bombo 5": "Corea del Sur",
+      "Bombo 6": "Egipto",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "Harry Kane"
+    }
+  },
+  {
+    "nombre": "Víctor (Quino)",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Uruguay",
+      "Bombo 4": "Ecuador",
+      "Bombo 5": "Corea del Sur",
+      "Bombo 6": "Costa de Marfil",
+      "Bombo 7": "Panamá",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "K. Mbappé"
+    }
+  },
+  {
+    "nombre": "Joserra",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Noruega",
+      "Bombo 4": "Suiza",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Egipto",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Irán",
+      "Máximo goleador": "Haaland"
+    }
+  },
+  {
+    "nombre": "Constán",
+    "elecciones": {
+      "Bombo 1": "Francia",
+      "Bombo 2": "Marruecos",
+      "Bombo 3": "Noruega",
+      "Bombo 4": "Japón",
+      "Bombo 5": "Paraguay",
+      "Bombo 6": "Austria",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "Oyarzabal"
+    }
+  },
+  {
+    "nombre": "Alfonso (Trillizos)",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Colombia",
+      "Bombo 4": "Chequia",
+      "Bombo 5": "Arabia Saudí",
+      "Bombo 6": "Austria",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Haití",
+      "Máximo goleador": "Oyarzabal"
+    }
+  },
+  {
+    "nombre": "J. Reyes",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Marruecos",
+      "Bombo 3": "Senegal",
+      "Bombo 4": "Japón",
+      "Bombo 5": "Paraguay",
+      "Bombo 6": "Egipto",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "K. Mbappé"
+    }
+  },
+  {
+    "nombre": "Aimar (Chaparro)",
+    "elecciones": {
+      "Bombo 1": "Francia",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Noruega",
+      "Bombo 4": "Suiza",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Egipto",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Irán",
+      "Máximo goleador": "K. Mbappé"
+    }
+  },
+  {
+    "nombre": "Jon (Chaparro)",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Noruega",
+      "Bombo 4": "Ecuador",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Egipto",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "K. Mbappé"
+    }
+  },
+  {
+    "nombre": "Fede",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Croacia",
+      "Bombo 3": "Colombia",
+      "Bombo 4": "Japón",
+      "Bombo 5": "Arabia Saudí",
+      "Bombo 6": "Sudáfrica",
+      "Bombo 7": "Panamá",
+      "Bombo 8": "Cabo Verde",
+      "Máximo goleador": "Oyarzabal"
+    }
+  },
+  {
+    "nombre": "Villa Recalde",
+    "elecciones": {
+      "Bombo 1": "Francia",
+      "Bombo 2": "Marruecos",
+      "Bombo 3": "Colombia",
+      "Bombo 4": "Suiza",
+      "Bombo 5": "Escocia",
+      "Bombo 6": "Costa de Marfil",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "K. Mbappé"
+    }
+  },
+  {
+    "nombre": "Bar 97",
+    "elecciones": {
+      "Bombo 1": "Alemania",
+      "Bombo 2": "Países Bajos",
+      "Bombo 3": "Uruguay",
+      "Bombo 4": "Ecuador",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Austria",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "Gakpo"
+    }
+  },
+  {
+    "nombre": "Botas",
+    "elecciones": {
+      "Bombo 1": "Francia",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Colombia",
+      "Bombo 4": "Suiza",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Egipto",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Irán",
+      "Máximo goleador": "K. Mbappé"
+    }
+  },
+  {
+    "nombre": "Eneko",
+    "elecciones": {
+      "Bombo 1": "Argentina",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Colombia",
+      "Bombo 4": "Japón",
+      "Bombo 5": "Corea del Sur",
+      "Bombo 6": "Costa de Marfil",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Irán",
+      "Máximo goleador": "Olise"
+    }
+  },
+  {
+    "nombre": "Txarly",
+    "elecciones": {
+      "Bombo 1": "Alemania",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Colombia",
+      "Bombo 4": "Japón",
+      "Bombo 5": "Paraguay",
+      "Bombo 6": "Egipto",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Irán",
+      "Máximo goleador": "C. Ronaldo"
+    }
+  },
+  {
+    "nombre": "Jonathan",
+    "elecciones": {
+      "Bombo 1": "Francia",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Noruega",
+      "Bombo 4": "Japón",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Egipto",
+      "Bombo 7": "Catar",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "Harry Kane"
+    }
+  },
+  {
+    "nombre": "Izei",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Marruecos",
+      "Bombo 3": "Senegal",
+      "Bombo 4": "Japón",
+      "Bombo 5": "Corea del Sur",
+      "Bombo 6": "Australia",
+      "Bombo 7": "Catar",
+      "Bombo 8": "Curazao",
+      "Máximo goleador": "K. Mbappé"
+    }
+  },
+  {
+    "nombre": "Carlos TT",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Canadá",
+      "Bombo 4": "Japón",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Australia",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Irán",
+      "Máximo goleador": "K. Mbappé"
+    }
+  },
+  {
+    "nombre": "Laso / Josepo",
+    "elecciones": {
+      "Bombo 1": "Alemania",
+      "Bombo 2": "México",
+      "Bombo 3": "Suecia",
+      "Bombo 4": "Japón",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Sudáfrica",
+      "Bombo 7": "R. D. Congo",
+      "Bombo 8": "Irán",
+      "Máximo goleador": "C. Ronaldo"
+    }
+  },
+  {
+    "nombre": "Laso-Josepi",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Colombia",
+      "Bombo 4": "Chequia",
+      "Bombo 5": "Arabia Saudí",
+      "Bombo 6": "Austria",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Haití",
+      "Máximo goleador": "Messi"
+    }
+  },
+  {
+    "nombre": "Javi (Halta)",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Noruega",
+      "Bombo 4": "Suiza",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Egipto",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "K. Mbappé"
+    }
+  },
+  {
+    "nombre": "Ibon 2 (Halta)",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Noruega",
+      "Bombo 4": "Ecuador",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Costa de Marfil",
+      "Bombo 7": "Uzbekistán",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "K. Mbappé"
+    }
+  },
+  {
+    "nombre": "Joseba (Halta)",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Países Bajos",
+      "Bombo 3": "Noruega",
+      "Bombo 4": "Ecuador",
+      "Bombo 5": "Escocia",
+      "Bombo 6": "Costa de Marfil",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "Harry Kane"
+    }
+  },
+  {
+    "nombre": "Yeray (Gus)",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Colombia",
+      "Bombo 4": "Suiza",
+      "Bombo 5": "Escocia",
+      "Bombo 6": "Egipto",
+      "Bombo 7": "Panamá",
+      "Bombo 8": "Jordania",
+      "Máximo goleador": "K. Mbappé"
+    }
+  },
+  {
+    "nombre": "Gus",
+    "elecciones": {
+      "Bombo 1": "Francia",
+      "Bombo 2": "Países Bajos",
+      "Bombo 3": "Colombia",
+      "Bombo 4": "Suiza",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Austria",
+      "Bombo 7": "Panamá",
+      "Bombo 8": "Jordania",
+      "Máximo goleador": "Harry Kane"
+    }
+  },
+  {
+    "nombre": "Mikel (99)",
+    "elecciones": {
+      "Bombo 1": "Brasil",
+      "Bombo 2": "Bélgica",
+      "Bombo 3": "Uruguay",
+      "Bombo 4": "Suiza",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Austria",
+      "Bombo 7": "R. D. Congo",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "K. Mbappé"
+    }
+  },
+  {
+    "nombre": "Botana",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Noruega",
+      "Bombo 4": "Ecuador",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Costa de Marfil",
+      "Bombo 7": "R. D. Congo",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "K. Mbappé"
+    }
+  },
+  {
+    "nombre": "Carlos García (Cristina)",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Colombia",
+      "Bombo 4": "Japón",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Australia",
+      "Bombo 7": "Uzbekistán",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "K. Mbappé"
+    }
+  },
+  {
+    "nombre": "Tú y Yo",
+    "elecciones": {
+      "Bombo 1": "Alemania",
+      "Bombo 2": "Países Bajos",
+      "Bombo 3": "Colombia",
+      "Bombo 4": "Ecuador",
+      "Bombo 5": "Paraguay",
+      "Bombo 6": "Egipto",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Curazao",
+      "Máximo goleador": "Harry Kane"
+    }
+  },
+  {
+    "nombre": "Killo Junior",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Países Bajos",
+      "Bombo 3": "Noruega",
+      "Bombo 4": "Suiza",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Egipto",
+      "Bombo 7": "Argelia",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "Oyarzabal"
+    }
+  },
+  {
+    "nombre": "Jesús Noli (Chaparro)",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Países Bajos",
+      "Bombo 3": "Colombia",
+      "Bombo 4": "Japón",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Egipto",
+      "Bombo 7": "R. D. Congo",
+      "Bombo 8": "Ghana",
+      "Máximo goleador": "Harry Kane"
+    }
+  }
+]
