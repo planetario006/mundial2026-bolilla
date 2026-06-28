@@ -1256,5 +1256,95 @@
       "minuto": "67'",
       "tipo": "Gol"
     }
+  ],
+  "R. D. Congo|Uzbekistán|2026-06-27": [
+    {
+      "jugador": "Eldor Shomurodov",
+      "equipo": "Uzbekistán",
+      "minuto": "10'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Yoane Wissa",
+      "equipo": "R. D. Congo",
+      "minuto": "68'",
+      "tipo": "Penalti"
+    },
+    {
+      "jugador": "Fiston Mayele",
+      "equipo": "R. D. Congo",
+      "minuto": "78'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Yoane Wissa",
+      "equipo": "R. D. Congo",
+      "minuto": "90'+1'",
+      "tipo": "Gol"
+    }
+  ],
+  "Argelia|Austria|2026-06-28": [
+    {
+      "jugador": "Marko Arnautovic",
+      "equipo": "Austria",
+      "minuto": "28'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Rafik Belghali",
+      "equipo": "Argelia",
+      "minuto": "45'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Marcel Sabitzer",
+      "equipo": "Austria",
+      "minuto": "55'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Riyad Mahrez",
+      "equipo": "Argelia",
+      "minuto": "60'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Riyad Mahrez",
+      "equipo": "Argelia",
+      "minuto": "90'+3'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Sasa Kalajdzic",
+      "equipo": "Austria",
+      "minuto": "90'+6'",
+      "tipo": "Gol"
+    }
+  ],
+  "Argentina|Jordania|2026-06-28": [
+    {
+      "jugador": "Giovani Lo Celso",
+      "equipo": "Argentina",
+      "minuto": "19'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Lautaro Martínez",
+      "equipo": "Argentina",
+      "minuto": "31'",
+      "tipo": "Penalti"
+    },
+    {
+      "jugador": "Mousa Al-Tamari",
+      "equipo": "Jordania",
+      "minuto": "55'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Lionel Messi",
+      "equipo": "Argentina",
+      "minuto": "80'",
+      "tipo": "Gol"
+    }
   ]
 }

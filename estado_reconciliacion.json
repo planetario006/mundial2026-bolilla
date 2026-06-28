@@ -812,8 +812,8 @@
   },
   "Croacia|Ghana": {
     "verificado": true,
-    "ultimo_chequeo": "2026-06-28T01:35:05+00:00",
-    "intentos": 2,
+    "ultimo_chequeo": "2026-06-28T06:24:05+00:00",
+    "intentos": 3,
     "match_id": 72,
     "valores_espn_aplicados": {
       "penfall_local": 0,
@@ -824,8 +824,8 @@
   },
   "Inglaterra|Panamá": {
     "verificado": true,
-    "ultimo_chequeo": "2026-06-28T01:35:05+00:00",
-    "intentos": 2,
+    "ultimo_chequeo": "2026-06-28T06:24:05+00:00",
+    "intentos": 3,
     "match_id": 71,
     "valores_espn_aplicados": {
       "penfall_local": 0,
@@ -835,10 +835,46 @@
     }
   },
   "Colombia|Portugal": {
-    "verificado": false,
-    "ultimo_chequeo": "2026-06-28T01:35:05+00:00",
-    "intentos": 1,
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-28T06:24:05+00:00",
+    "intentos": 2,
     "match_id": 65,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "R. D. Congo|Uzbekistán": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-28T06:24:05+00:00",
+    "intentos": 1,
+    "match_id": 66,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Argelia|Austria": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-28T06:24:05+00:00",
+    "intentos": 1,
+    "match_id": 60,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Argentina|Jordania": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-28T06:24:05+00:00",
+    "intentos": 1,
+    "match_id": 59,
     "valores_espn_aplicados": {
       "penfall_local": 0,
       "penfall_visit": 0,
