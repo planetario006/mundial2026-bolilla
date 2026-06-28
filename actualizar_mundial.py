@@ -749,11 +749,44 @@ _CAMPOS_STATS_WIKI = frozenset({
 })
 
 
+def _es_placeholder(nombre: str) -> bool:
+    """Devuelve True si el nombre de equipo es un placeholder provisional
+    (p.ej. '3C/E', '1L', '3E/H/I/J/K', 'Ganador M79', etc.) y no un
+    nombre de selección real.
+
+    Criterios:
+      - Contiene '/' (p.ej. '3C/E', '3B/E/F/I/J')
+      - Es solo una letra más un número, o un número más letras sin espacios
+        del tipo '1L', '2A', '3F' (letra de grupo sola)
+      - Empieza por 'Ganador' o 'Perdedor' (cruces todavía sin resolver)
+    """
+    if not nombre:
+        return False
+    if "/" in nombre:
+        return True
+    if re.fullmatch(r"\d+[A-L]", nombre, re.IGNORECASE):
+        return True
+    if re.match(r"^(Ganador|Perdedor|Winner|Loser)\b", nombre, re.IGNORECASE):
+        return True
+    return False
+
+
 def fusionar_en_matches(nuevos: list, matches: list, estado: dict | None = None) -> tuple[list, int, int]:
     """Combina los partidos recién leídos de Wikipedia con lo ya guardado.
     Empareja por (equipo local, equipo visitante) sin importar el orden, ya
     que Wikipedia puede listar el mismo cruce como local/visitante distinto
     según la fase. Nunca toca penfall_*/penpar_*.
+
+    Lógica adicional para fases eliminatorias:
+      - Si el partido entrante tiene match_num asignado y ya existe en
+        matches un registro con ese mismo match_num (aunque tenga nombres
+        de equipo distintos, p.ej. placeholder '3C/E' → 'Ecuador'), se
+        actualiza ESE registro en lugar de insertar uno nuevo. Esto evita
+        el problema de duplicados que aparece cuando Wikipedia va publicando
+        los cruces de dieciseisavos a medida que se clasifican los equipos.
+      - Al final, se eliminan de matches todos los registros con equipos
+        placeholder que hayan quedado huérfanos (sin match_num o con
+        match_num ya cubierto por otro registro con equipos reales).
 
     Si se pasa `estado` (estado_reconciliacion.json ya cargado):
       - Nunca sobreescribe campos que estén en `campos_bloqueados` (los que
@@ -770,6 +803,11 @@ def fusionar_en_matches(nuevos: list, matches: list, estado: dict | None = None)
         return tuple(sorted([local, visit]))
 
     indice = {clave(m["local"], m["visitante"]): m for m in matches}
+    # Índice secundario por match_num → permite encontrar el registro previo
+    # aunque los equipos hayan cambiado (placeholder → nombre real).
+    indice_mn: dict[int, dict] = {
+        m["match_num"]: m for m in matches if m.get("match_num") is not None
+    }
     siguiente_id = (max((m["id"] for m in matches), default=0)) + 1
 
     nuevos_insertados = 0
@@ -793,6 +831,30 @@ def fusionar_en_matches(nuevos: list, matches: list, estado: dict | None = None)
         k = clave(p["team1"], p["team2"])
         existente = indice.get(k)
 
+        # ── Búsqueda por match_num cuando no hay coincidencia por nombre ──
+        # Caso típico: antes era '3C/E' (placeholder) y ahora es 'Ecuador'
+        # (nombre real). La clave por nombre no coincide, pero el match_num sí.
+        if existente is None and match_num is not None:
+            existente_mn = indice_mn.get(match_num)
+            if existente_mn is not None:
+                viejo_local = existente_mn["local"]
+                viejo_visit = existente_mn["visitante"]
+                if _es_placeholder(viejo_local) or _es_placeholder(viejo_visit):
+                    log.info(
+                        f"  PLACEHOLDER→REAL  match_num={match_num}: "
+                        f"'{viejo_local}' vs '{viejo_visit}'  →  "
+                        f"'{p['team1']}' vs '{p['team2']}'"
+                    )
+                    # Eliminar la clave vieja del índice por nombre
+                    clave_vieja = clave(viejo_local, viejo_visit)
+                    indice.pop(clave_vieja, None)
+                    # Actualizar los nombres en el registro existente
+                    existente_mn["local"]     = p["team1"]
+                    existente_mn["visitante"] = p["team2"]
+                    # Registrar con la nueva clave
+                    indice[k] = existente_mn
+                    existente = existente_mn
+
         if existente is None:
             m = {
                 "id": siguiente_id,
@@ -811,6 +873,7 @@ def fusionar_en_matches(nuevos: list, matches: list, estado: dict | None = None)
             }
             if match_num is not None:
                 m["match_num"] = match_num
+                indice_mn[match_num] = m
             matches.append(m)
             indice[k] = m
             siguiente_id += 1
@@ -853,6 +916,7 @@ def fusionar_en_matches(nuevos: list, matches: list, estado: dict | None = None)
             # Asignar match_num si aún no lo tiene (backfill de partidos previos)
             if match_num is not None and existente.get("match_num") is None:
                 _set("match_num", match_num)
+                indice_mn[match_num] = existente
 
             if not invertido:
                 _set("gf_local", p["gf1"]); _set("gc_local", p["gf2"])
@@ -871,6 +935,32 @@ def fusionar_en_matches(nuevos: list, matches: list, estado: dict | None = None)
             if cambios:
                 actualizados += 1
                 log.info(f"  UPD    {existente['local']} vs {existente['visitante']} -> {', '.join(cambios)}")
+
+    # ── Limpieza final: eliminar registros placeholder huérfanos ─────────────
+    # Pueden quedar en matches registros con nombres placeholder (p.ej. '3C/E')
+    # de ejecuciones anteriores que ya han sido reemplazados por el bloque
+    # de arriba. Los detectamos: tienen equipos placeholder Y (no tienen
+    # match_num O su match_num ya tiene otro registro con equipos reales).
+    mn_con_reales: set[int] = {
+        m["match_num"]
+        for m in matches
+        if m.get("match_num") is not None
+        and not _es_placeholder(m["local"])
+        and not _es_placeholder(m["visitante"])
+    }
+    huerfanos = [
+        m for m in matches
+        if (_es_placeholder(m["local"]) or _es_placeholder(m["visitante"]))
+        and (m.get("match_num") is None or m["match_num"] in mn_con_reales)
+    ]
+    if huerfanos:
+        for h in huerfanos:
+            log.info(
+                f"  BORRADO placeholder huérfano: '{h['local']}' vs '{h['visitante']}' "
+                f"(id={h['id']}, match_num={h.get('match_num')})"
+            )
+        ids_huerfanos = {h["id"] for h in huerfanos}
+        matches = [m for m in matches if m["id"] not in ids_huerfanos]
 
     return matches, nuevos_insertados, actualizados
 
