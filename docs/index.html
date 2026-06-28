@@ -1223,7 +1223,7 @@ function renderBolilla(){
   const hayCampeon = !!(DATA.premios_finales && DATA.premios_finales.campeon);
   el.innerHTML = `
     <div class="section-title">Bolilla · ${filas.length} participantes</div>
-    ${!hayCampeon ? `<div class="empty-note" style="margin:0 2px 12px; font-size:11.5px;">El bonus de +10 al último clasificado se aplicará automáticamente en cuanto el torneo tenga campeón.</div>` : ''}
+    ${!hayCampeon ? `<div class="empty-note" style="margin:0 2px 12px; font-size:11.5px;"></div>` : ''}
     <div class="card">
       ${filas.map(f=>{
         const modo = bolillaVistaModo.get(f.nombre) || 'equipos';
