@@ -883,7 +883,7 @@
     }
   },
   "Canadá|Sudáfrica": {
-    "verificado": false,
+    "verificado": true,
     "ultimo_chequeo": "2026-06-28T21:25:38+00:00",
     "intentos": 2,
     "match_id": 73,
@@ -892,6 +892,9 @@
       "penfall_visit": 0,
       "penpar_local": 0,
       "penpar_visit": 0
-    }
+    },
+    "campos_bloqueados": [
+      "ta_visit"
+    ]
   }
 }
