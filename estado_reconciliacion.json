@@ -811,9 +811,9 @@
     }
   },
   "Croacia|Ghana": {
-    "verificado": false,
-    "ultimo_chequeo": "2026-06-27T23:07:45+00:00",
-    "intentos": 1,
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-28T01:35:05+00:00",
+    "intentos": 2,
     "match_id": 72,
     "valores_espn_aplicados": {
       "penfall_local": 0,
@@ -824,9 +824,21 @@
   },
   "Inglaterra|Panamá": {
     "verificado": true,
-    "ultimo_chequeo": "2026-06-27T23:07:45+00:00",
-    "intentos": 1,
+    "ultimo_chequeo": "2026-06-28T01:35:05+00:00",
+    "intentos": 2,
     "match_id": 71,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Colombia|Portugal": {
+    "verificado": false,
+    "ultimo_chequeo": "2026-06-28T01:35:05+00:00",
+    "intentos": 1,
+    "match_id": 65,
     "valores_espn_aplicados": {
       "penfall_local": 0,
       "penfall_visit": 0,

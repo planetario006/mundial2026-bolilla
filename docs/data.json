@@ -1,8 +1,8 @@
 {
   "meta": {
-    "actualizado": "2026-06-27T23:07:45+00:00",
-    "total_partidos_jugados": 68,
-    "total_partidos": 116,
+    "actualizado": "2026-06-28T01:35:05+00:00",
+    "total_partidos_jugados": 69,
+    "total_partidos": 119,
     "fase_grupos_terminada": false
   },
   "ranking": [
@@ -99,6 +99,29 @@
       "pos": 4
     },
     {
+      "equipo": "Colombia",
+      "grupo": "K",
+      "bombo": "Bombo 3",
+      "gf": 4,
+      "gc": 1,
+      "ta": 3,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": 12,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": 4,
+      "bonus_ronda_dieciseisavos": 0,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 5
+    },
+    {
       "equipo": "Japón",
       "grupo": "F",
       "bombo": "Bombo 4",
@@ -119,7 +142,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 5
+      "pos": 6
     },
     {
       "equipo": "México",
@@ -137,29 +160,6 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": 3,
-      "bonus_ronda_dieciseisavos": 0,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 6
-    },
-    {
-      "equipo": "Colombia",
-      "grupo": "K",
-      "bombo": "Bombo 3",
-      "gf": 4,
-      "gc": 1,
-      "ta": 3,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": 10,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": 2,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -237,6 +237,29 @@
       "pos": 10
     },
     {
+      "equipo": "Portugal",
+      "grupo": "K",
+      "bombo": "Bombo 2",
+      "gf": 6,
+      "gc": 1,
+      "ta": 4,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": 9,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": 0,
+      "bonus_ronda_dieciseisavos": 0,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 11
+    },
+    {
       "equipo": "Argentina",
       "grupo": "J",
       "bombo": "Bombo 1",
@@ -252,29 +275,6 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -1,
-      "bonus_ronda_dieciseisavos": 0,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 11
-    },
-    {
-      "equipo": "Portugal",
-      "grupo": "K",
-      "bombo": "Bombo 2",
-      "gf": 6,
-      "gc": 1,
-      "ta": 4,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": 7,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": -2,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -352,52 +352,6 @@
       "pos": 15
     },
     {
-      "equipo": "Croacia",
-      "grupo": "L",
-      "bombo": "Bombo 2",
-      "gf": 5,
-      "gc": 5,
-      "ta": 1,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": 2,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": -11,
-      "bonus_ronda_dieciseisavos": 0,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 16
-    },
-    {
-      "equipo": "Ghana",
-      "grupo": "L",
-      "bombo": "Bombo 8",
-      "gf": 2,
-      "gc": 2,
-      "ta": 2,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": -1,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": -11,
-      "bonus_ronda_dieciseisavos": 0,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 17
-    },
-    {
       "equipo": "Bélgica",
       "grupo": "G",
       "bombo": "Bombo 2",
@@ -418,7 +372,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 18
+      "pos": 16
     },
     {
       "equipo": "Costa de Marfil",
@@ -441,7 +395,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 19
+      "pos": 17
     },
     {
       "equipo": "Austria",
@@ -459,6 +413,52 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -13,
+      "bonus_ronda_dieciseisavos": 0,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 18
+    },
+    {
+      "equipo": "Croacia",
+      "grupo": "L",
+      "bombo": "Bombo 2",
+      "gf": 5,
+      "gc": 5,
+      "ta": 2,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": 2,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": -14,
+      "bonus_ronda_dieciseisavos": 0,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 19
+    },
+    {
+      "equipo": "Ghana",
+      "grupo": "L",
+      "bombo": "Bombo 8",
+      "gf": 2,
+      "gc": 2,
+      "ta": 3,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": -1,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": -14,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -4149,6 +4149,52 @@
       }
     },
     {
+      "id": 65,
+      "match_num": null,
+      "fecha": "2026-06-27",
+      "fase": "Fase de Grupos",
+      "grupo": "K",
+      "local": "Colombia",
+      "visitante": "Portugal",
+      "gf_local": 0,
+      "gf_visit": 0,
+      "ta_local": 0,
+      "doblea_local": 0,
+      "rd_local": 0,
+      "ta_visit": 0,
+      "doblea_visit": 0,
+      "rd_visit": 0,
+      "penfall_local": 0,
+      "penpar_local": 0,
+      "penfall_visit": 0,
+      "penpar_visit": 0,
+      "pen_tanda_local": null,
+      "pen_tanda_visit": null,
+      "jugado": true,
+      "puntos_local": {
+        "gf": 0,
+        "gc": 0,
+        "ta": 0,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": 2,
+        "total": 2
+      },
+      "puntos_visit": {
+        "gf": 0,
+        "gc": 0,
+        "ta": 0,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": 2,
+        "total": 2
+      }
+    },
+    {
       "id": 71,
       "match_num": null,
       "fecha": "2026-06-27",
@@ -4204,10 +4250,10 @@
       "visitante": "Ghana",
       "gf_local": 2,
       "gf_visit": 1,
-      "ta_local": 0,
+      "ta_local": 1,
       "doblea_local": 0,
       "rd_local": 0,
-      "ta_visit": 0,
+      "ta_visit": 1,
       "doblea_visit": 0,
       "rd_visit": 0,
       "penfall_local": 0,
@@ -4220,24 +4266,24 @@
       "puntos_local": {
         "gf": 2,
         "gc": -3,
-        "ta": 0,
+        "ta": -3,
         "doblea": 0,
         "rd": 0,
         "penfall": 0,
         "penpar": 0,
         "bonus_resultado": 5,
-        "total": 4
+        "total": 1
       },
       "puntos_visit": {
         "gf": 1,
         "gc": -6,
-        "ta": 0,
+        "ta": -3,
         "doblea": 0,
         "rd": 0,
         "penfall": 0,
         "penpar": 0,
         "bonus_resultado": -8,
-        "total": -13
+        "total": -16
       }
     }
   ],
@@ -7613,27 +7659,27 @@
         {
           "pos": 1,
           "equipo": "Colombia",
-          "pj": 2,
+          "pj": 3,
           "pg": 2,
-          "pe": 0,
+          "pe": 1,
           "pp": 0,
           "gf": 4,
           "gc": 1,
           "dg": 3,
-          "pts": 6,
+          "pts": 7,
           "empate_no_resuelto": false
         },
         {
           "pos": 2,
           "equipo": "Portugal",
-          "pj": 2,
+          "pj": 3,
           "pg": 1,
-          "pe": 1,
+          "pe": 2,
           "pp": 0,
           "gf": 6,
           "gc": 1,
           "dg": 5,
-          "pts": 4,
+          "pts": 5,
           "empate_no_resuelto": false
         },
         {
@@ -7856,8 +7902,8 @@
           "grupo": "K",
           "local": "Colombia",
           "visitante": "Portugal",
-          "gf_local": null,
-          "gf_visit": null,
+          "gf_local": 0,
+          "gf_visit": 0,
           "ta_local": 0,
           "doblea_local": 0,
           "rd_local": 0,
@@ -7870,9 +7916,29 @@
           "penpar_visit": 0,
           "pen_tanda_local": null,
           "pen_tanda_visit": null,
-          "jugado": false,
-          "puntos_local": null,
-          "puntos_visit": null
+          "jugado": true,
+          "puntos_local": {
+            "gf": 0,
+            "gc": 0,
+            "ta": 0,
+            "doblea": 0,
+            "rd": 0,
+            "penfall": 0,
+            "penpar": 0,
+            "bonus_resultado": 2,
+            "total": 2
+          },
+          "puntos_visit": {
+            "gf": 0,
+            "gc": 0,
+            "ta": 0,
+            "doblea": 0,
+            "rd": 0,
+            "penfall": 0,
+            "penpar": 0,
+            "bonus_resultado": 2,
+            "total": 2
+          }
         },
         {
           "id": 66,
@@ -8204,10 +8270,10 @@
           "visitante": "Ghana",
           "gf_local": 2,
           "gf_visit": 1,
-          "ta_local": 0,
+          "ta_local": 1,
           "doblea_local": 0,
           "rd_local": 0,
-          "ta_visit": 0,
+          "ta_visit": 1,
           "doblea_visit": 0,
           "rd_visit": 0,
           "penfall_local": 0,
@@ -8220,24 +8286,24 @@
           "puntos_local": {
             "gf": 2,
             "gc": -3,
-            "ta": 0,
+            "ta": -3,
             "doblea": 0,
             "rd": 0,
             "penfall": 0,
             "penpar": 0,
             "bonus_resultado": 5,
-            "total": 4
+            "total": 1
           },
           "puntos_visit": {
             "gf": 1,
             "gc": -6,
-            "ta": 0,
+            "ta": -3,
             "doblea": 0,
             "rd": 0,
             "penfall": 0,
             "penpar": 0,
             "bonus_resultado": -8,
-            "total": -13
+            "total": -16
           }
         }
       ]
@@ -9000,6 +9066,32 @@
         "puntos_visit": null
       },
       {
+        "id": 117,
+        "match_num": 80,
+        "fecha": "2026-07-01",
+        "fase": "Dieciseisavos de final",
+        "grupo": "",
+        "local": "Inglaterra",
+        "visitante": "3I/K",
+        "gf_local": null,
+        "gf_visit": null,
+        "ta_local": 0,
+        "doblea_local": 0,
+        "rd_local": 0,
+        "ta_visit": 0,
+        "doblea_visit": 0,
+        "rd_visit": 0,
+        "penfall_local": 0,
+        "penpar_local": 0,
+        "penfall_visit": 0,
+        "penpar_visit": 0,
+        "pen_tanda_local": null,
+        "pen_tanda_visit": null,
+        "jugado": false,
+        "puntos_local": null,
+        "puntos_visit": null
+      },
+      {
         "id": 83,
         "match_num": 84,
         "fecha": "2026-07-02",
@@ -9162,6 +9254,32 @@
         "fase": "Dieciseisavos de final",
         "grupo": "",
         "local": "2K",
+        "visitante": "Croacia",
+        "gf_local": null,
+        "gf_visit": null,
+        "ta_local": 0,
+        "doblea_local": 0,
+        "rd_local": 0,
+        "ta_visit": 0,
+        "doblea_visit": 0,
+        "rd_visit": 0,
+        "penfall_local": 0,
+        "penpar_local": 0,
+        "penfall_visit": 0,
+        "penpar_visit": 0,
+        "pen_tanda_local": null,
+        "pen_tanda_visit": null,
+        "jugado": false,
+        "puntos_local": null,
+        "puntos_visit": null
+      },
+      {
+        "id": 118,
+        "match_num": 83,
+        "fecha": "2026-07-02",
+        "fase": "Dieciseisavos de final",
+        "grupo": "",
+        "local": "Portugal",
         "visitante": "Croacia",
         "gf_local": null,
         "gf_visit": null,
@@ -9388,6 +9506,32 @@
         "jugado": false,
         "puntos_local": null,
         "puntos_visit": null
+      },
+      {
+        "id": 119,
+        "match_num": 87,
+        "fecha": "2026-07-03",
+        "fase": "Dieciseisavos de final",
+        "grupo": "",
+        "local": "Colombia",
+        "visitante": "Ghana",
+        "gf_local": null,
+        "gf_visit": null,
+        "ta_local": 0,
+        "doblea_local": 0,
+        "rd_local": 0,
+        "ta_visit": 0,
+        "doblea_visit": 0,
+        "rd_visit": 0,
+        "penfall_local": 0,
+        "penpar_local": 0,
+        "penfall_visit": 0,
+        "penpar_visit": 0,
+        "pen_tanda_local": null,
+        "pen_tanda_visit": null,
+        "jugado": false,
+        "puntos_local": null,
+        "puntos_visit": null
       }
     ],
     "Octavos de final": [],
@@ -9437,21 +9581,21 @@
       },
       {
         "equipo": "Portugal",
-        "puntos": -2
-      },
-      {
-        "equipo": "Croacia",
-        "puntos": -11
+        "puntos": 0
       },
       {
         "equipo": "Bélgica",
         "puntos": -12
+      },
+      {
+        "equipo": "Croacia",
+        "puntos": -14
       }
     ],
     "Bombo 3": [
       {
         "equipo": "Colombia",
-        "puntos": 2
+        "puntos": 4
       },
       {
         "equipo": "Canadá",
@@ -9585,7 +9729,7 @@
       },
       {
         "equipo": "Ghana",
-        "puntos": -11
+        "puntos": -14
       },
       {
         "equipo": "Irán",
