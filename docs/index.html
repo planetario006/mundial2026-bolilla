@@ -199,6 +199,32 @@
   .bombo-resumen-progreso{font-size:10.5px; color:var(--chalk-dim); margin-top:6px;}
   .bombo-resumen-progreso b{color:var(--chalk);}
   .bombo-reset-sel{background:none; border:1px solid var(--line); color:var(--chalk-dim); border-radius:14px; padding:4px 10px; font-size:10.5px; font-weight:600; font-family:'Inter',sans-serif; flex-shrink:0;}
+  /* ---------- Bolilla: ranking de participantes ---------- */
+  details.participante-row{display:block; padding:0;}
+  details.participante-row > summary{list-style:none; cursor:pointer; display:flex; align-items:center; gap:11px; padding:12px 13px; width:100%;}
+  details.participante-row > summary::-webkit-details-marker{display:none;}
+  .participante-pos{font-family:'JetBrains Mono',monospace; font-weight:700; font-size:13px; color:var(--chalk-dim); width:20px; text-align:right; flex-shrink:0;}
+  .participante-pos.top1{color:var(--amber);}
+  .participante-nombre{flex:1; min-width:0; font-weight:600; font-size:14.5px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .participante-bonus-tag{font-size:9.5px; color:var(--amber); background:rgba(255,182,39,0.1); border:1px solid var(--amber-dim); border-radius:6px; padding:1px 6px; margin-left:6px; flex-shrink:0; white-space:nowrap;}
+  .participante-desglose{padding:0 13px 13px; display:flex; flex-direction:column; gap:0;}
+  .pd-row{display:flex; align-items:center; justify-content:space-between; gap:10px; padding:8px 0; border-top:1px solid var(--line);}
+  .pd-row .pd-bombo{font-size:10px; color:var(--chalk-dim); text-transform:uppercase; letter-spacing:0.04em; width:62px; flex-shrink:0;}
+  .pd-row .pd-equipo{flex:1; min-width:0; font-size:13px; font-weight:500; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .pd-row .pd-bonus{font-size:11px; color:var(--amber); flex-shrink:0;}
+  .pd-toggle{margin:2px 0 10px; width:fit-content;}
+  .pd-toggle button{padding:5px 12px; font-size:10.5px;}
+  .pd-desempeno-hint{font-size:10.5px; color:var(--chalk-dim); margin-bottom:8px;}
+  .pd-desempeno-bloque{padding:9px 0; border-top:1px solid var(--line);}
+  .pd-desempeno-bloque:first-of-type{border-top:none;}
+  .pd-desempeno-cab{display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:2px;}
+  .pd-desempeno-cab .pd-bombo{width:62px; flex-shrink:0;}
+  .pd-desempeno-cab .pd-equipo{flex:1; min-width:0; font-size:13px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .pd-desempeno-nota{font-size:10.5px; color:var(--chalk-dim); padding-top:2px;}
+  .pd-desempeno-bloque .breakdown-h{border-top:none; padding:6px 0 2px;}
+  .pd-toggle-3{flex-wrap:wrap; width:100%;}
+  .pd-toggle-3 button{flex:1; white-space:nowrap;}
+  .pd-totales-grid{border-top:none; padding:4px 0 10px;}
   .intro-card{padding:14px; font-size:12.5px; color:var(--chalk-dim); line-height:1.5;}
   .intro-card b{color:var(--chalk);}
   /* ---------- Bottom nav ---------- */
@@ -355,6 +381,10 @@
     <svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="3"/><circle cx="8.3" cy="8.3" r="1.1" fill="currentColor" stroke="none"/><circle cx="15.7" cy="8.3" r="1.1" fill="currentColor" stroke="none"/><circle cx="8.3" cy="15.7" r="1.1" fill="currentColor" stroke="none"/><circle cx="15.7" cy="15.7" r="1.1" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.1" fill="currentColor" stroke="none"/></svg>
     Bombos
   </button>
+  <button data-view="bolilla">
+    <svg viewBox="0 0 24 24"><path d="M16 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"/><path d="M3 20c0-3.5 3-6 6.5-6M21 20c0-2.8-1.9-5-4.5-5.8"/><circle cx="18" cy="9" r="2.6"/></svg>
+    Bolilla
+  </button>
 </nav>
 <script>
 const $ = (sel, el=document) => el.querySelector(sel);
@@ -423,6 +453,7 @@ function tiempoRelativo(iso){
     return `hace ${d} d`;
   }catch(e){ return ''; }
 }
+let PARTICIPANTES = [];
 async function cargar(){
   try{
     const res = await fetch('data.json', {cache:'no-store'});
@@ -431,6 +462,12 @@ async function cargar(){
     grupoActivo = Object.keys(DATA.grupos)[0];
     $('#updated-text').textContent = tiempoRelativo(DATA.meta.actualizado);
     $('#tabbar').style.display = 'flex';
+    try{
+      const resP = await fetch('participantes.json', {cache:'no-store'});
+      PARTICIPANTES = resP.ok ? await resP.json() : [];
+    }catch(e){
+      PARTICIPANTES = []; // si no existe o falla, la pestaña Bolilla se muestra vacía sin romper el resto
+    }
     render();
   }catch(e){
     $('#app').innerHTML = `<div class="err"><b>No se pudo cargar data.json</b>${e.message}<br><br>Comprueba que el fichero existe junto a index.html y que la última ejecución del workflow terminó bien.</div>`;
@@ -444,12 +481,14 @@ function render(){
     <div class="view" id="view-grupos"></div>
     <div class="view" id="view-eliminacion"></div>
     <div class="view" id="view-bombos"></div>
+    <div class="view" id="view-bolilla"></div>
   `;
   renderRanking();
   renderPartidos();
   renderGrupos();
   renderEliminacion();
   renderBombos();
+  renderBolilla();
   $$('nav.tabbar button').forEach(btn=>{
     btn.addEventListener('click', ()=>{
       $$('nav.tabbar button').forEach(b=>b.classList.remove('active'));
@@ -1096,10 +1135,247 @@ function renderBombos(){
     });
   }
 }
-cargar();
+// Normaliza texto para emparejar nombres con pequeñas diferencias de
+// tilde/abreviatura (p.ej. "Vinícius Jr." en participantes.json vs
+// "Vinícius Júnior" en data.json) sin tener que mantenerlos idénticos a mano.
+function _normTxt(s){
+  return (s||'').toString().toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g,'') // quita tildes
+    .replace(/[.\u00ba\u00aa]/g,'')                   // quita puntos, º, ª
+    .replace(/\s+/g,' ').trim();
+}
+function _buscarGoleadorTop5(top5, nombreElegido){
+  const norm = _normTxt(nombreElegido);
+  // 1) coincidencia exacta normalizada
+  let idx = top5.findIndex(g => _normTxt(g.jugador) === norm);
+  if(idx !== -1) return idx;
+  // 2) coincidencia parcial (uno contiene al otro) por si el nombre está abreviado
+  idx = top5.findIndex(g => {
+    const ng = _normTxt(g.jugador);
+    return ng.includes(norm) || norm.includes(ng);
+  });
+  return idx; // -1 si no aparece en el top5 actual
+}
+// Calcula el desglose y total de UN participante (sin el bonus de último puesto,
+// que se aplica después de calcular a todos, porque depende de comparar entre todos).
+function calcularPuntosParticipante(participante){
+  const nombresBombos = Object.keys(DATA.bombos || {});
+  const top5 = (DATA.goleadores || []).slice(0,5);
+  const desglose = [];
+  let total = 0;
+  nombresBombos.forEach(nombreBombo=>{
+    const equipoElegido = participante.elecciones?.[nombreBombo];
+    const item = equipoElegido != null
+      ? (DATA.bombos[nombreBombo]||[]).find(e=>e.equipo===equipoElegido)
+      : null;
+    const pts = item ? item.puntos : 0;
+    total += pts;
+    desglose.push({ bombo: nombreBombo, valor: equipoElegido || '—', equipo: equipoElegido || null, puntos: pts, esGoleador:false });
+  });
+  const NB_GOL = 'Máximo goleador';
+  const jugadorElegido = participante.elecciones?.[NB_GOL];
+  let ptsGoleador = 0;
+  if(jugadorElegido != null){
+    const idx = _buscarGoleadorTop5(top5, jugadorElegido);
+    ptsGoleador = idx === 0 ? PUNTOS_GOLEADOR_TOP1 : 0;
+  }
+  total += ptsGoleador;
+  desglose.push({ bombo: NB_GOL, valor: jugadorElegido || '—', equipo: null, puntos: ptsGoleador, esGoleador:true });
+  return { total, desglose };
+}
+function calcularBolilla(){
+  const filas = (PARTICIPANTES||[]).map(p=>{
+    const { total, desglose } = calcularPuntosParticipante(p);
+    return { nombre: p.nombre, total, desglose, bonusUltimo:false };
+  });
+  // Bonus automático: +10 al de MENOR puntuación, solo si el torneo ya
+  // tiene campeón decidido en premios_finales (manual_overrides.json).
+  const hayCampeon = !!(DATA.premios_finales && DATA.premios_finales.campeon);
+  if(hayCampeon && filas.length){
+    let peor = filas[0];
+    filas.forEach(f=>{ if(f.total < peor.total) peor = f; });
+    peor.total += 10;
+    peor.bonusUltimo = true;
+  }
+  filas.sort((a,b)=>b.total - a.total);
+  filas.forEach((f,i)=> f._pos = i+1);
+  return filas;
+}
+// Qué vista está usando cada participante (por nombre): 'equipos' (por
+// defecto), 'desempeno' (desglose por concepto, equipo a equipo) o
+// 'totales' (desglose por concepto, sumando todos sus equipos elegidos).
+let bolillaVistaModo = new Map();
+function _buscarEquipoRanking(nombreEquipo){
+  if(!nombreEquipo || !DATA.ranking) return null;
+  return DATA.ranking.find(r => r.equipo === nombreEquipo) || null;
+}
+function renderBolilla(){
+  const el = $('#view-bolilla');
+  if(!DATA){ el.innerHTML = ''; return; }
+  if(!PARTICIPANTES || !PARTICIPANTES.length){
+    el.innerHTML = `
+      <div class="section-title">Bolilla · participantes</div>
+      <div class="empty-note">No se ha encontrado <code>participantes.json</code> (o está vacío). Añádelo junto a <code>index.html</code> con la lista de elecciones de cada participante para ver esta clasificación.</div>
+    `;
+    return;
+  }
+  const filas = calcularBolilla();
+  const hayCampeon = !!(DATA.premios_finales && DATA.premios_finales.campeon);
+  el.innerHTML = `
+    <div class="section-title">Bolilla · ${filas.length} participantes</div>
+    ${!hayCampeon ? `<div class="empty-note" style="margin:0 2px 12px; font-size:11.5px;">El bonus de +10 al último clasificado se aplicará automáticamente en cuanto el torneo tenga campeón.</div>` : ''}
+    <div class="card">
+      ${filas.map(f=>{
+        const modo = bolillaVistaModo.get(f.nombre) || 'equipos';
+        return `
+        <details class="rank-row participante-row">
+          <summary>
+            <span class="participante-pos${f._pos<=1?' top1':''}">${f._pos}</span>
+            <span class="participante-nombre">${f.nombre}${f.bonusUltimo?'<span class="participante-bonus-tag">+10 último</span>':''}</span>
+            <span class="scorebox ${scoreClass(f.total)}">${fmtPts(f.total)}</span>
+          </summary>
+          <div class="participante-desglose">
+            <div class="segmented pd-toggle pd-toggle-3" data-nombre="${f.nombre}">
+              <button data-modo="equipos" class="${modo==='equipos'?'active':''}">Equipos</button>
+              <button data-modo="desempeno" class="${modo==='desempeno'?'active':''}">Desempeño</button>
+              <button data-modo="totales" class="${modo==='totales'?'active':''}">Totales por categoría</button>
+            </div>
+            ${modo==='desempeno' ? pdDesempenoHTML(f) : modo==='totales' ? pdTotalesHTML(f) : pdEquiposHTML(f)}
+          </div>
+        </details>`;
+      }).join('')}
+    </div>
+  `;
+  $$('#view-bolilla .pd-toggle button').forEach(b=>{
+    b.addEventListener('click', (ev)=>{
+      ev.preventDefault();
+      ev.stopPropagation();
+      const nombre = b.closest('.pd-toggle').dataset.nombre;
+      bolillaVistaModo.set(nombre, b.dataset.modo);
+      renderBolilla();
+      // Mantener abierto el acordeón de este participante tras redibujar
+      const det = $$('#view-bolilla details.participante-row').find(d=>d.querySelector('.participante-nombre').textContent.startsWith(nombre));
+      if(det) det.open = true;
+    });
+  });
+}
+// Vista simple: equipo/jugador elegido en cada bombo + puntos que ese bombo aporta a la bolilla.
+function pdEquiposHTML(f){
+  return `
+    ${f.desglose.map(d=>`
+      <div class="pd-row">
+        <span class="pd-bombo">${d.esGoleador ? 'Goleador' : d.bombo}</span>
+        <span class="pd-equipo">${d.valor}</span>
+        <span class="mono ${scoreClass(d.puntos)}">${fmtPts(d.puntos)}</span>
+      </div>`).join('')}
+    ${f.bonusUltimo ? `
+      <div class="pd-row">
+        <span class="pd-bombo">Bonus</span>
+        <span class="pd-equipo">Última posición de la bolilla</span>
+        <span class="pd-bonus mono">+10</span>
+      </div>` : ''}
+  `;
+}
+// Vista de desempeño: para cada equipo elegido, el desglose de puntos por
+// concepto (GF, GC, tarjetas, rondas...) — el mismo cálculo que usa la
+// pestaña Ranking (CATEGORIAS), no una suma aparte.
+function pdDesempenoHTML(f){
+  const bloques = f.desglose.map(d=>{
+    if(d.esGoleador){
+      return `
+        <div class="pd-desempeno-bloque">
+          <div class="pd-desempeno-cab">
+            <span class="pd-bombo">Goleador</span>
+            <span class="pd-equipo">${d.valor}</span>
+            <span class="mono ${scoreClass(d.puntos)}">${fmtPts(d.puntos)}</span>
+          </div>
+          <div class="pd-desempeno-nota">Puntúa solo si es el máximo goleador del torneo (top 1): +${PUNTOS_GOLEADOR_TOP1} si lo es, +0 en cualquier otra posición.</div>
+        </div>`;
+    }
+    const equipoData = _buscarEquipoRanking(d.equipo);
+    if(!equipoData){
+      return `
+        <div class="pd-desempeno-bloque">
+          <div class="pd-desempeno-cab">
+            <span class="pd-bombo">${d.bombo}</span>
+            <span class="pd-equipo">${d.valor}</span>
+            <span class="mono ${scoreClass(d.puntos)}">${fmtPts(d.puntos)}</span>
+          </div>
+          <div class="pd-desempeno-nota">Sin datos de desempeño todavía para este equipo.</div>
+        </div>`;
+    }
+    return `
+      <div class="pd-desempeno-bloque">
+        <div class="pd-desempeno-cab">
+          <span class="pd-bombo">${d.bombo}</span>
+          <span class="pd-equipo">${d.valor}</span>
+          <span class="mono ${scoreClass(equipoData.puntos_totales)}">${fmtPts(equipoData.puntos_totales)}</span>
+        </div>
+        <div class="breakdown-h">
+          ${CATEGORIAS.map(c=>`
+            <div class="breakdown-h-item" title="${c.label}">
+              <div class="lbl">${c.icon} ${c.short}</div>
+              <div class="val">${fmtPts(c.calc(equipoData))}</div>
+            </div>`).join('')}
+        </div>
+      </div>`;
+  }).join('');
+  return `
+    <div class="pd-desempeno-hint">Desglose real de puntos de cada equipo elegido (igual que en Ranking).</div>
+    ${bloques}
+    ${f.bonusUltimo ? `
+      <div class="pd-row">
+        <span class="pd-bombo">Bonus</span>
+        <span class="pd-equipo">Última posición de la bolilla</span>
+        <span class="pd-bonus mono">+10</span>
+      </div>` : ''}
+  `;
+}
+// Vista de totales por categoría: en vez de ver cada equipo por separado,
+// suma cuánto han aportado TODOS los equipos elegidos por el participante
+// en cada concepto (GF, GC, tarjetas...) — para ver de un vistazo en qué
+// categorías está ganando o perdiendo puntos en conjunto. El goleador
+// elegido no entra aquí (no tiene GF/GC/tarjetas propios): se muestra
+// aparte con su aportación total, igual que en las otras dos vistas.
+function pdTotalesHTML(f){
+  const equiposConDatos = f.desglose
+    .filter(d => !d.esGoleador)
+    .map(d => _buscarEquipoRanking(d.equipo))
+    .filter(Boolean);
+  const sinDatos = f.desglose.filter(d => !d.esGoleador).length - equiposConDatos.length;
+  const totalesPorCategoria = CATEGORIAS.map(c=>({
+    short: c.short, icon: c.icon, label: c.label,
+    valor: equiposConDatos.reduce((acc, eq) => acc + c.calc(eq), 0),
+  }));
+  const dGoleador = f.desglose.find(d => d.esGoleador);
+  return `
+    <div class="pd-desempeno-hint">Suma, categoría a categoría, de los puntos que aportan entre todos los equipos que ha elegido este participante (${equiposConDatos.length} equipo${equiposConDatos.length===1?'':'s'} con datos${sinDatos>0?`, ${sinDatos} sin datos todavía`:''}).</div>
+    <div class="breakdown-h pd-totales-grid">
+      ${totalesPorCategoria.map(t=>`
+        <div class="breakdown-h-item" title="${t.label}">
+          <div class="lbl">${t.icon} ${t.short}</div>
+          <div class="val ${scoreClass(t.valor)}">${fmtPts(t.valor)}</div>
+        </div>`).join('')}
+    </div>
+    ${dGoleador ? `
+      <div class="pd-row">
+        <span class="pd-bombo">Goleador</span>
+        <span class="pd-equipo">${dGoleador.valor}</span>
+        <span class="mono ${scoreClass(dGoleador.puntos)}">${fmtPts(dGoleador.puntos)}</span>
+      </div>` : ''}
+    ${f.bonusUltimo ? `
+      <div class="pd-row">
+        <span class="pd-bombo">Bonus</span>
+        <span class="pd-equipo">Última posición de la bolilla</span>
+        <span class="pd-bonus mono">+10</span>
+      </div>` : ''}
+  `;
+}
+
 if('serviceWorker' in navigator){
   window.addEventListener('load', ()=> navigator.serviceWorker.register('sw.js').catch(()=>{}));
 }
+cargar();
 </script>
 </body>
-  </html>
+</html>
