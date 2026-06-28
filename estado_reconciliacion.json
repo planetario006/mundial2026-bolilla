@@ -881,5 +881,17 @@
       "penpar_local": 0,
       "penpar_visit": 0
     }
+  },
+  "Canadá|Sudáfrica": {
+    "verificado": false,
+    "ultimo_chequeo": "2026-06-28T21:07:46+00:00",
+    "intentos": 1,
+    "match_id": 73,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
   }
 }

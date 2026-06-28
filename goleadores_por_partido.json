@@ -1346,5 +1346,13 @@
       "minuto": "80'",
       "tipo": "Gol"
     }
+  ],
+  "Canadá|Sudáfrica|2026-06-28": [
+    {
+      "jugador": "Stephen Eustáquio",
+      "equipo": "Canadá",
+      "minuto": "90'+2'",
+      "tipo": "Gol"
+    }
   ]
 }
