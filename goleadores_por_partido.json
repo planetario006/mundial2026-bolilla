@@ -1354,5 +1354,25 @@
       "minuto": "90'+2'",
       "tipo": "Gol"
     }
+  ],
+  "Brasil|Japón|2026-06-29": [
+    {
+      "jugador": "Kaishu Sano",
+      "equipo": "Japón",
+      "minuto": "29'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Casemiro",
+      "equipo": "Brasil",
+      "minuto": "56'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Gabriel Martinelli",
+      "equipo": "Brasil",
+      "minuto": "90'+5'",
+      "tipo": "Gol"
+    }
   ]
 }

@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "ref": "Brasil|Japón::ta_local",
+    "match_id": 89,
+    "local": "Brasil",
+    "visitante": "Japón",
+    "campo": "ta_local",
+    "valor_wiki": 0,
+    "valor_scraper": 2,
+    "detectado": "2026-06-29T20:05:19+00:00"
+  },
+  {
+    "ref": "Brasil|Japón::ta_visit",
+    "match_id": 89,
+    "local": "Brasil",
+    "visitante": "Japón",
+    "campo": "ta_visit",
+    "valor_wiki": 0,
+    "valor_scraper": 3,
+    "detectado": "2026-06-29T20:05:19+00:00"
+  }
+]
