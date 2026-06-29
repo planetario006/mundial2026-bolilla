@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-06-29T20:05:19+00:00",
+    "actualizado": "2026-06-29T21:53:35+00:00",
     "total_partidos_jugados": 74,
     "total_partidos": 96,
     "fase_grupos_terminada": true
@@ -12,7 +12,7 @@
       "bombo": "Bombo 1",
       "gf": 9,
       "gc": 2,
-      "ta": 5,
+      "ta": 7,
       "doblea": 0,
       "rd": 0,
       "penfall": 0,
@@ -21,7 +21,7 @@
       "bonus_grupo": 15,
       "premio_final": 0,
       "goleador": 0,
-      "puntos_totales": 45,
+      "puntos_totales": 39,
       "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -76,29 +76,6 @@
       "pos": 3
     },
     {
-      "equipo": "Japón",
-      "grupo": "F",
-      "bombo": "Bombo 4",
-      "gf": 8,
-      "gc": 5,
-      "ta": 1,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": 1,
-      "bonus_grupo": 10,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": 26,
-      "bonus_ronda_dieciseisavos": 25,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 4
-    },
-    {
       "equipo": "Inglaterra",
       "grupo": "L",
       "bombo": "Bombo 1",
@@ -119,7 +96,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 5
+      "pos": 4
     },
     {
       "equipo": "Argentina",
@@ -142,7 +119,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 6
+      "pos": 5
     },
     {
       "equipo": "Canadá",
@@ -165,7 +142,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 7
+      "pos": 6
     },
     {
       "equipo": "México",
@@ -184,6 +161,29 @@
       "goleador": 0,
       "puntos_totales": 18,
       "bonus_ronda_dieciseisavos": 0,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 7
+    },
+    {
+      "equipo": "Japón",
+      "grupo": "F",
+      "bombo": "Bombo 4",
+      "gf": 8,
+      "gc": 5,
+      "ta": 4,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": 1,
+      "bonus_grupo": 10,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": 17,
+      "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
@@ -4480,10 +4480,10 @@
       "visitante": "Japón",
       "gf_local": 2,
       "gf_visit": 1,
-      "ta_local": 0,
+      "ta_local": 2,
       "doblea_local": 0,
       "rd_local": 0,
-      "ta_visit": 0,
+      "ta_visit": 3,
       "doblea_visit": 0,
       "rd_visit": 0,
       "penfall_local": 0,
@@ -4496,24 +4496,24 @@
       "puntos_local": {
         "gf": 2,
         "gc": -3,
-        "ta": 0,
+        "ta": -6,
         "doblea": 0,
         "rd": 0,
         "penfall": 0,
         "penpar": 0,
         "bonus_resultado": 5,
-        "total": 4
+        "total": -2
       },
       "puntos_visit": {
         "gf": 1,
         "gc": -6,
-        "ta": 0,
+        "ta": -9,
         "doblea": 0,
         "rd": 0,
         "penfall": 0,
         "penpar": 0,
         "bonus_resultado": -8,
-        "total": -13
+        "total": -22
       }
     }
   ],
@@ -8657,10 +8657,10 @@
         "visitante": "Japón",
         "gf_local": 2,
         "gf_visit": 1,
-        "ta_local": 0,
+        "ta_local": 2,
         "doblea_local": 0,
         "rd_local": 0,
-        "ta_visit": 0,
+        "ta_visit": 3,
         "doblea_visit": 0,
         "rd_visit": 0,
         "penfall_local": 0,
@@ -8673,24 +8673,24 @@
         "puntos_local": {
           "gf": 2,
           "gc": -3,
-          "ta": 0,
+          "ta": -6,
           "doblea": 0,
           "rd": 0,
           "penfall": 0,
           "penpar": 0,
           "bonus_resultado": 5,
-          "total": 4
+          "total": -2
         },
         "puntos_visit": {
           "gf": 1,
           "gc": -6,
-          "ta": 0,
+          "ta": -9,
           "doblea": 0,
           "rd": 0,
           "penfall": 0,
           "penpar": 0,
           "bonus_resultado": -8,
-          "total": -13
+          "total": -22
         }
       },
       {
@@ -9276,7 +9276,7 @@
     "Bombo 1": [
       {
         "equipo": "Brasil",
-        "puntos": 45
+        "puntos": 39
       },
       {
         "equipo": "Francia",
@@ -9354,7 +9354,7 @@
     "Bombo 4": [
       {
         "equipo": "Japón",
-        "puntos": 26
+        "puntos": 17
       },
       {
         "equipo": "Suiza",

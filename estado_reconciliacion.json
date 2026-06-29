@@ -898,9 +898,9 @@
     ]
   },
   "Brasil|Japón": {
-    "verificado": false,
-    "ultimo_chequeo": "2026-06-29T20:05:19+00:00",
-    "intentos": 1,
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-29T21:53:35+00:00",
+    "intentos": 2,
     "match_id": 89,
     "valores_espn_aplicados": {
       "penfall_local": 0,
