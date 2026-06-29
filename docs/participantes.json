@@ -966,6 +966,20 @@
     }
   },
   {
+    "nombre": "Axa",
+    "elecciones": {
+      "Bombo 1": "España",
+      "Bombo 2": "Portugal",
+      "Bombo 3": "Noruega",
+      "Bombo 4": "Ecuador",
+      "Bombo 5": "Turquía",
+      "Bombo 6": "Egipto",
+      "Bombo 7": "Catar",
+      "Bombo 8": "Curazao",
+      "Máximo goleador": "Oyarzabal"
+    }
+  },
+  {
     "nombre": "Jesús Noli (Chaparro)",
     "elecciones": {
       "Bombo 1": "España",
