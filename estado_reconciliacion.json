@@ -1,0 +1,914 @@
+{
+  "México|Sudáfrica": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 1,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Chequia|Corea del Sur": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 2,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Bosnia|Canadá": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 7,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "EE.UU.|Paraguay": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 19,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Catar|Suiza": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 8,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Brasil|Marruecos": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 13,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Escocia|Haití": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 14,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Australia|Turquía": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 20,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Alemania|Curazao": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 25,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Japón|Países Bajos": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 31,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Costa de Marfil|Ecuador": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 26,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Suecia|Túnez": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 32,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Cabo Verde|España": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 43,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Bélgica|Egipto": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 37,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Arabia Saudí|Uruguay": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 44,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Irán|Nueva Zelanda": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 38,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Francia|Senegal": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 49,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Irak|Noruega": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 50,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Argelia|Argentina": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 55,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Austria|Jordania": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 56,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Portugal|R. D. Congo": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 61,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Croacia|Inglaterra": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 67,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Ghana|Panamá": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 68,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Colombia|Uzbekistán": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 62,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Chequia|Sudáfrica": {
+    "verificado": false,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 3,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Bosnia|Suiza": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 9,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Canadá|Catar": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 10,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Corea del Sur|México": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 4,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Australia|EE.UU.": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 21,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Escocia|Marruecos": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 15,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Brasil|Haití": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 16,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Paraguay|Turquía": {
+    "verificado": false,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 22,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Países Bajos|Suecia": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 33,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Alemania|Costa de Marfil": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 27,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Curazao|Ecuador": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 28,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Japón|Túnez": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 34,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Arabia Saudí|España": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 45,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Bélgica|Irán": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 39,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Cabo Verde|Uruguay": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 46,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Egipto|Nueva Zelanda": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 40,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Argentina|Austria": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 57,
+    "valores_espn_aplicados": {
+      "penfall_local": 1,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 1
+    }
+  },
+  "Francia|Irak": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 51,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Noruega|Senegal": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 52,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Argelia|Jordania": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 58,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Portugal|Uzbekistán": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 63,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Ghana|Inglaterra": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 69,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Croacia|Panamá": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 70,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Colombia|R. D. Congo": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 64,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Bosnia|Catar": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 12,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Canadá|Suiza": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 11,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Haití|Marruecos": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 18,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Brasil|Escocia": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 17,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Chequia|México": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 5,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Corea del Sur|Sudáfrica": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 6,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Costa de Marfil|Curazao": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 30,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Alemania|Ecuador": {
+    "verificado": false,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 29,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Japón|Suecia": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 35,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Países Bajos|Túnez": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 36,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Australia|Paraguay": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 24,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "EE.UU.|Turquía": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 23,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Francia|Noruega": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 53,
+    "valores_espn_aplicados": {
+      "penfall_local": 1,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 1
+    }
+  },
+  "Irak|Senegal": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 54,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Arabia Saudí|Cabo Verde": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 48,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "España|Uruguay": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 47,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Egipto|Irán": {
+    "verificado": false,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 42,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 1,
+      "penpar_local": 1,
+      "penpar_visit": 0
+    }
+  },
+  "Bélgica|Nueva Zelanda": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 41,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Croacia|Ghana": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 72,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Inglaterra|Panamá": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 71,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Colombia|Portugal": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 65,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "R. D. Congo|Uzbekistán": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 66,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Argelia|Austria": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 60,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Argentina|Jordania": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 59,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Canadá|Sudáfrica": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 73,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Brasil|Japón": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 74,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Alemania|Paraguay": {
+    "verificado": false,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 75,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Marruecos|Países Bajos": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-06-30T18:27:50+00:00",
+    "intentos": 1,
+    "match_id": 76,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  }
+}
