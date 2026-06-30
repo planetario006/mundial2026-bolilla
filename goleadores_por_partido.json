@@ -1402,5 +1402,25 @@
       "minuto": "90'+1'",
       "tipo": "Gol"
     }
+  ],
+  "Costa de Marfil|Noruega|2026-06-30": [
+    {
+      "jugador": "Antonio Nusa",
+      "equipo": "Noruega",
+      "minuto": "39'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Amad Diallo",
+      "equipo": "Costa de Marfil",
+      "minuto": "74'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Erling Haaland",
+      "equipo": "Noruega",
+      "minuto": "86'",
+      "tipo": "Gol"
+    }
   ]
 }

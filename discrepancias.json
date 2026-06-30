@@ -7,7 +7,7 @@
     "campo": "ta_local",
     "valor_wiki": 0,
     "valor_scraper": 1,
-    "detectado": "2026-06-30T18:27:50+00:00"
+    "detectado": "2026-06-30T19:21:25+00:00"
   },
   {
     "ref": "Chequia|Sudáfrica::ta_visit",
@@ -17,7 +17,7 @@
     "campo": "ta_visit",
     "valor_wiki": 0,
     "valor_scraper": 2,
-    "detectado": "2026-06-30T18:27:50+00:00"
+    "detectado": "2026-06-30T19:21:25+00:00"
   },
   {
     "ref": "Paraguay|Turquía::ta_local",
@@ -27,7 +27,7 @@
     "campo": "ta_local",
     "valor_wiki": 2,
     "valor_scraper": 1,
-    "detectado": "2026-06-30T18:27:50+00:00"
+    "detectado": "2026-06-30T19:21:25+00:00"
   },
   {
     "ref": "Paraguay|Turquía::ta_visit",
@@ -37,7 +37,7 @@
     "campo": "ta_visit",
     "valor_wiki": 2,
     "valor_scraper": 1,
-    "detectado": "2026-06-30T18:27:50+00:00"
+    "detectado": "2026-06-30T19:21:25+00:00"
   },
   {
     "ref": "Alemania|Ecuador::ta_local",
@@ -47,7 +47,7 @@
     "campo": "ta_local",
     "valor_wiki": 0,
     "valor_scraper": 3,
-    "detectado": "2026-06-30T18:27:50+00:00"
+    "detectado": "2026-06-30T19:21:25+00:00"
   },
   {
     "ref": "Alemania|Ecuador::ta_visit",
@@ -57,7 +57,7 @@
     "campo": "ta_visit",
     "valor_wiki": 0,
     "valor_scraper": 1,
-    "detectado": "2026-06-30T18:27:50+00:00"
+    "detectado": "2026-06-30T19:21:25+00:00"
   },
   {
     "ref": "Egipto|Irán::gf_local",
@@ -67,7 +67,7 @@
     "campo": "gf_local",
     "valor_wiki": null,
     "valor_scraper": 1,
-    "detectado": "2026-06-30T18:27:50+00:00"
+    "detectado": "2026-06-30T19:21:25+00:00"
   },
   {
     "ref": "Egipto|Irán::gf_visit",
@@ -77,7 +77,7 @@
     "campo": "gf_visit",
     "valor_wiki": null,
     "valor_scraper": 1,
-    "detectado": "2026-06-30T18:27:50+00:00"
+    "detectado": "2026-06-30T19:21:25+00:00"
   },
   {
     "ref": "Alemania|Paraguay::ta_local",
@@ -87,7 +87,7 @@
     "campo": "ta_local",
     "valor_wiki": 4,
     "valor_scraper": 2,
-    "detectado": "2026-06-30T18:27:50+00:00"
+    "detectado": "2026-06-30T19:21:25+00:00"
   },
   {
     "ref": "Alemania|Paraguay::ta_visit",
@@ -97,6 +97,36 @@
     "campo": "ta_visit",
     "valor_wiki": 4,
     "valor_scraper": 2,
-    "detectado": "2026-06-30T18:27:50+00:00"
+    "detectado": "2026-06-30T19:21:25+00:00"
+  },
+  {
+    "ref": "Costa de Marfil|Noruega::gf_local",
+    "match_id": 77,
+    "local": "Costa de Marfil",
+    "visitante": "Noruega",
+    "campo": "gf_local",
+    "valor_wiki": null,
+    "valor_scraper": 1,
+    "detectado": "2026-06-30T19:21:25+00:00"
+  },
+  {
+    "ref": "Costa de Marfil|Noruega::gf_visit",
+    "match_id": 77,
+    "local": "Costa de Marfil",
+    "visitante": "Noruega",
+    "campo": "gf_visit",
+    "valor_wiki": null,
+    "valor_scraper": 2,
+    "detectado": "2026-06-30T19:21:25+00:00"
+  },
+  {
+    "ref": "Costa de Marfil|Noruega::ta_visit",
+    "match_id": 77,
+    "local": "Costa de Marfil",
+    "visitante": "Noruega",
+    "campo": "ta_visit",
+    "valor_wiki": 0,
+    "valor_scraper": 1,
+    "detectado": "2026-06-30T19:21:25+00:00"
   }
 ]
