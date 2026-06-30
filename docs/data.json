@@ -1,7 +1,7 @@
 {
   "meta": {
-    "actualizado": "2026-06-30T19:21:25+00:00",
-    "total_partidos_jugados": 75,
+    "actualizado": "2026-06-30T21:16:25+00:00",
+    "total_partidos_jugados": 76,
     "total_partidos": 96,
     "fase_grupos_terminada": false
   },
@@ -260,6 +260,29 @@
       "pos": 11
     },
     {
+      "equipo": "Noruega",
+      "grupo": "I",
+      "bombo": "Bombo 3",
+      "gf": 10,
+      "gc": 8,
+      "ta": 2,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 1,
+      "penpar": 0,
+      "bonus_resultado": 7,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": 2,
+      "bonus_ronda_dieciseisavos": 25,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 12
+    },
+    {
       "equipo": "Colombia",
       "grupo": "K",
       "bombo": "Bombo 3",
@@ -280,7 +303,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 12
+      "pos": 13
     },
     {
       "equipo": "Suiza",
@@ -303,7 +326,30 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 13
+      "pos": 14
+    },
+    {
+      "equipo": "Costa de Marfil",
+      "grupo": "E",
+      "bombo": "Bombo 6",
+      "gf": 5,
+      "gc": 4,
+      "ta": 4,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": -6,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": 0,
+      "bonus_ronda_dieciseisavos": 25,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 15
     },
     {
       "equipo": "Portugal",
@@ -326,7 +372,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 14
+      "pos": 16
     },
     {
       "equipo": "Egipto",
@@ -349,7 +395,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 15
+      "pos": 17
     },
     {
       "equipo": "Irán",
@@ -372,7 +418,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 16
+      "pos": 18
     },
     {
       "equipo": "Cabo Verde",
@@ -395,7 +441,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 17
+      "pos": 19
     },
     {
       "equipo": "Ecuador",
@@ -418,7 +464,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 18
+      "pos": 20
     },
     {
       "equipo": "Bélgica",
@@ -441,30 +487,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 19
-    },
-    {
-      "equipo": "Costa de Marfil",
-      "grupo": "E",
-      "bombo": "Bombo 6",
-      "gf": 4,
-      "gc": 2,
-      "ta": 4,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": 2,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": -12,
-      "bonus_ronda_dieciseisavos": 0,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 20
+      "pos": 21
     },
     {
       "equipo": "Croacia",
@@ -487,7 +510,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 21
+      "pos": 22
     },
     {
       "equipo": "Ghana",
@@ -510,7 +533,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 22
+      "pos": 23
     },
     {
       "equipo": "EE.UU.",
@@ -533,7 +556,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 23
+      "pos": 24
     },
     {
       "equipo": "Argelia",
@@ -556,7 +579,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 24
+      "pos": 25
     },
     {
       "equipo": "Australia",
@@ -579,7 +602,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 25
+      "pos": 26
     },
     {
       "equipo": "Austria",
@@ -602,7 +625,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 26
+      "pos": 27
     },
     {
       "equipo": "R. D. Congo",
@@ -620,29 +643,6 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -21,
-      "bonus_ronda_dieciseisavos": 0,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 27
-    },
-    {
-      "equipo": "Noruega",
-      "grupo": "I",
-      "bombo": "Bombo 3",
-      "gf": 8,
-      "gc": 7,
-      "ta": 1,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 1,
-      "penpar": 0,
-      "bonus_resultado": 2,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": -24,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -4560,6 +4560,52 @@
         "penpar": 0,
         "bonus_resultado": 2,
         "total": -3
+      }
+    },
+    {
+      "id": 77,
+      "match_num": 78,
+      "fecha": "2026-06-30",
+      "fase": "Dieciseisavos de final",
+      "grupo": "",
+      "local": "Costa de Marfil",
+      "visitante": "Noruega",
+      "gf_local": 1,
+      "gf_visit": 2,
+      "ta_local": 0,
+      "doblea_local": 0,
+      "rd_local": 0,
+      "ta_visit": 1,
+      "doblea_visit": 0,
+      "rd_visit": 0,
+      "penfall_local": 0,
+      "penpar_local": 0,
+      "penfall_visit": 0,
+      "penpar_visit": 0,
+      "pen_tanda_local": null,
+      "pen_tanda_visit": null,
+      "jugado": true,
+      "puntos_local": {
+        "gf": 1,
+        "gc": -6,
+        "ta": 0,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": -8,
+        "total": -13
+      },
+      "puntos_visit": {
+        "gf": 2,
+        "gc": -3,
+        "ta": -3,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": 5,
+        "total": 1
       }
     }
   ],
@@ -8819,12 +8865,12 @@
         "grupo": "",
         "local": "Costa de Marfil",
         "visitante": "Noruega",
-        "gf_local": null,
-        "gf_visit": null,
+        "gf_local": 1,
+        "gf_visit": 2,
         "ta_local": 0,
         "doblea_local": 0,
         "rd_local": 0,
-        "ta_visit": 0,
+        "ta_visit": 1,
         "doblea_visit": 0,
         "rd_visit": 0,
         "penfall_local": 0,
@@ -8833,9 +8879,29 @@
         "penpar_visit": 0,
         "pen_tanda_local": null,
         "pen_tanda_visit": null,
-        "jugado": false,
-        "puntos_local": null,
-        "puntos_visit": null
+        "jugado": true,
+        "puntos_local": {
+          "gf": 1,
+          "gc": -6,
+          "ta": 0,
+          "doblea": 0,
+          "rd": 0,
+          "penfall": 0,
+          "penpar": 0,
+          "bonus_resultado": -8,
+          "total": -13
+        },
+        "puntos_visit": {
+          "gf": 2,
+          "gc": -3,
+          "ta": -3,
+          "doblea": 0,
+          "rd": 0,
+          "penfall": 0,
+          "penpar": 0,
+          "bonus_resultado": 5,
+          "total": 1
+        }
       },
       {
         "id": 78,
@@ -9397,12 +9463,12 @@
         "puntos": 8
       },
       {
-        "equipo": "Colombia",
-        "puntos": 1
+        "equipo": "Noruega",
+        "puntos": 2
       },
       {
-        "equipo": "Noruega",
-        "puntos": -24
+        "equipo": "Colombia",
+        "puntos": 1
       },
       {
         "equipo": "Senegal",
@@ -9471,12 +9537,12 @@
     ],
     "Bombo 6": [
       {
-        "equipo": "Egipto",
-        "puntos": -4
+        "equipo": "Costa de Marfil",
+        "puntos": 0
       },
       {
-        "equipo": "Costa de Marfil",
-        "puntos": -12
+        "equipo": "Egipto",
+        "puntos": -4
       },
       {
         "equipo": "Austria",
