@@ -1374,5 +1374,19 @@
       "minuto": "90'+5'",
       "tipo": "Gol"
     }
+  ],
+  "Alemania|Paraguay|2026-06-29": [
+    {
+      "jugador": "Julio Enciso",
+      "equipo": "Paraguay",
+      "minuto": "42'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Kai Havertz",
+      "equipo": "Alemania",
+      "minuto": "54'",
+      "tipo": "Gol"
+    }
   ]
 }

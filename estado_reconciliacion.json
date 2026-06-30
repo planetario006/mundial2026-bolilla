@@ -899,9 +899,21 @@
   },
   "Brasil|Japón": {
     "verificado": true,
-    "ultimo_chequeo": "2026-06-29T23:02:56+00:00",
-    "intentos": 3,
+    "ultimo_chequeo": "2026-06-30T01:32:00+00:00",
+    "intentos": 4,
     "match_id": 89,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Alemania|Paraguay": {
+    "verificado": false,
+    "ultimo_chequeo": "2026-06-30T01:32:00+00:00",
+    "intentos": 1,
+    "match_id": 103,
     "valores_espn_aplicados": {
       "penfall_local": 0,
       "penfall_visit": 0,
