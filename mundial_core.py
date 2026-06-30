@@ -107,7 +107,6 @@ PUNTOS_PREMIO_FINAL = {
     "cuarto": 60,
 }
 PUNTOS_MAXIMO_GOLEADOR = 25
-PUNTOS_BONUS_ULTIMO = 10  # bonus dinámico: siempre lo lleva quien menos puntos tenga
 # ─────────────────────────────────────────────────────────────────────────
 # AGREGADOS POR EQUIPO A PARTIR DE LOS PARTIDOS
 # ─────────────────────────────────────────────────────────────────────────
@@ -123,38 +122,12 @@ def jugado(p: dict) -> bool:
     """Un partido cuenta como jugado si tiene goles registrados en ambos lados."""
     return p.get("gf_local") is not None and p.get("gf_visit") is not None
 def resultado_local(p: dict) -> str:
-    """'V' / 'E' / 'L' desde el punto de vista del equipo local.
-    En fase eliminatoria, si el partido queda empatado a goles, se
-    desempata con la tanda de penaltis (pen_tanda_local/pen_tanda_visit)
-    cuando ya está registrada — así un partido de eliminatorias resuelto
-    en penaltis cuenta como Victoria/Derrota (y no como Empate) a todos
-    los efectos de puntuación. En fase de grupos nunca se mira la tanda
-    (allí un empate es un empate de verdad)."""
+    """'V' / 'E' / 'L' desde el punto de vista del equipo local."""
     if p["gf_local"] > p["gf_visit"]:
         return "V"
     if p["gf_local"] < p["gf_visit"]:
         return "L"
-    if p.get("fase") != FASE_GRUPOS_TXT:
-        pt_l, pt_v = p.get("pen_tanda_local"), p.get("pen_tanda_visit")
-        if pt_l is not None and pt_v is not None and pt_l != pt_v:
-            return "V" if pt_l > pt_v else "L"
     return "E"
-
-
-def ganador_partido(p: dict) -> str | None:
-    """Devuelve el nombre del equipo ganador de un partido ya jugado,
-    teniendo en cuenta la tanda de penaltis en fase eliminatoria (vía
-    resultado_local). Devuelve None si el partido no está jugado, o si
-    sigue empatado (fase de grupos, o cruce eliminatorio cuya tanda de
-    penaltis aún no se ha registrado)."""
-    if not jugado(p):
-        return None
-    res = resultado_local(p)
-    if res == "V":
-        return p["local"]
-    if res == "L":
-        return p["visitante"]
-    return None
 def calcular_stats_globales(matches: list[dict]) -> dict:
     stats = {eq: _nuevo_marcador() for eq in TODOS_LOS_EQUIPOS}
     for p in matches:
@@ -361,50 +334,14 @@ def equipos_que_jugaron_fase(matches: list[dict], fase: str) -> set[str]:
             s.add(p["local"])
             s.add(p["visitante"])
     return s
-def calcular_bonus_ronda(matches: list[dict], clasificaciones: dict, mejores_terceros: set[str]) -> dict:
-    """Bonus por RONDA ALCANZADA (clasificación a esa ronda), no por haber
-    jugado el partido de esa ronda:
-      - Dieciseisavos: se otorga en cuanto el equipo se clasifica de su
-        grupo (1º/2º de grupo, o 3º entre los mejores terceros) — misma
-        condición que usa bonus_grupo para decidir quién pasa.
-      - Octavos / Cuartos / Semifinales / Final: se otorgan en cuanto el
-        equipo GANA su partido de la ronda anterior (con ganador_partido,
-        que ya tiene en cuenta la tanda de penaltis), sin esperar a que
-        se juegue o termine el partido de la ronda siguiente.
-    """
+def calcular_bonus_ronda(matches: list[dict]) -> dict:
     bonus = {eq: {fk: 0 for fk in FASES_KEYS.values()} for eq in TODOS_LOS_EQUIPOS}
-    if not fase_grupos_terminada(matches):
-        # Sin fase de grupos terminada todavía no hay clasificados
-        # fiables a ninguna ronda eliminatoria.
-        return bonus
-
-    # Dieciseisavos: clasificados directamente de la fase de grupos.
-    for tabla in clasificaciones.values():
-        for fila in tabla:
-            clasifica = fila["pos"] in (1, 2) or (
-                fila["pos"] == 3 and fila["equipo"] in mejores_terceros
-            )
-            if not clasifica:
-                continue
-            eq = fila["equipo"]
+    for fase, puntos in PUNTOS_BONUS_RONDA.items():
+        fase_key = FASES_KEYS[fase]
+        for eq in equipos_que_jugaron_fase(matches, fase):
             if eq not in bonus:
                 bonus[eq] = {fk: 0 for fk in FASES_KEYS.values()}
-            bonus[eq]["dieciseisavos"] = PUNTOS_BONUS_RONDA["Dieciseisavos de final"]
-
-    # Resto de rondas: bonus por GANAR el partido de la ronda anterior.
-    for i in range(1, len(FASES_ELIMINACION)):
-        fase_anterior = FASES_ELIMINACION[i - 1]
-        fase_actual = FASES_ELIMINACION[i]
-        fase_key_actual = FASES_KEYS[fase_actual]
-        for p in matches:
-            if p.get("fase") != fase_anterior:
-                continue
-            ganador = ganador_partido(p)
-            if ganador is None:
-                continue
-            if ganador not in bonus:
-                bonus[ganador] = {fk: 0 for fk in FASES_KEYS.values()}
-            bonus[ganador][fase_key_actual] = PUNTOS_BONUS_RONDA[fase_actual]
+            bonus[eq][fase_key] = puntos
     return bonus
 def calcular_bonus_grupo(matches: list[dict], clasificaciones: dict, mejores_terceros: set[str]) -> dict:
     bonus = {}
@@ -433,7 +370,7 @@ def calcular_puntos_totales(matches: list[dict], manual: dict):
     else:
         mejores_terceros, tabla_terceros = set(), []
     bonus_grupo = calcular_bonus_grupo(matches, clasificaciones, mejores_terceros)
-    bonus_ronda = calcular_bonus_ronda(matches, clasificaciones, mejores_terceros)
+    bonus_ronda = calcular_bonus_ronda(matches)
     premios = manual.get("premios_finales", {})
     goleador_equipo = manual.get("goleador_equipo") or None
     resultado = {}
@@ -471,25 +408,11 @@ def calcular_puntos_totales(matches: list[dict], manual: dict):
             "bonus_grupo": b_grupo,
             "premio_final": premio_final,
             "goleador": pts_goleador,
-            "bonus_ultimo": 0,
             "puntos_totales": total,
         }
         for fase_key in FASES_KEYS.values():
             fila[f"bonus_ronda_{fase_key}"] = b_ronda_fases.get(fase_key, 0)
         resultado[eq] = fila
-
-    # Bonus dinámico a la selección "farolillo rojo" (la que menos puntos
-    # tiene en este momento): siempre lleva +10, y si en una próxima
-    # actualización otra selección pasa a ser la última, el bonus se
-    # mueve automáticamente a esa otra (aquí no se "guarda" en ningún
-    # sitio: se recalcula desde cero en cada ejecución a partir de los
-    # totales ya calculados, así que siempre refleja la última peor).
-    # Desempate en caso de empate a puntos: orden alfabético del nombre
-    # del equipo, para que el resultado sea determinista.
-    peor_equipo = min(resultado.values(), key=lambda f: (f["puntos_totales"], f["equipo"]))["equipo"]
-    resultado[peor_equipo]["bonus_ultimo"] = PUNTOS_BONUS_ULTIMO
-    resultado[peor_equipo]["puntos_totales"] += PUNTOS_BONUS_ULTIMO
-
     return resultado, clasificaciones, tabla_terceros
 def _desglose_puntos_partido(gf: int, gc: int, ta: int, da: int, rd: int, pf: int, pp: int, pts_resultado: int) -> dict:
     """Desglose de puntos fantasy que aporta UN equipo en UN partido concreto.
