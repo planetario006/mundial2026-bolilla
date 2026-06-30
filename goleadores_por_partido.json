@@ -1388,5 +1388,19 @@
       "minuto": "54'",
       "tipo": "Gol"
     }
+  ],
+  "Marruecos|Países Bajos|2026-06-30": [
+    {
+      "jugador": "Cody Gakpo",
+      "equipo": "Países Bajos",
+      "minuto": "72'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Issa Diop",
+      "equipo": "Marruecos",
+      "minuto": "90'+1'",
+      "tipo": "Gol"
+    }
   ]
 }

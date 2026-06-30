@@ -5,9 +5,9 @@
     "local": "Alemania",
     "visitante": "Paraguay",
     "campo": "ta_local",
-    "valor_wiki": 0,
+    "valor_wiki": 4,
     "valor_scraper": 2,
-    "detectado": "2026-06-30T01:32:00+00:00"
+    "detectado": "2026-06-30T06:17:26+00:00"
   },
   {
     "ref": "Alemania|Paraguay::ta_visit",
@@ -15,8 +15,8 @@
     "local": "Alemania",
     "visitante": "Paraguay",
     "campo": "ta_visit",
-    "valor_wiki": 0,
+    "valor_wiki": 4,
     "valor_scraper": 2,
-    "detectado": "2026-06-30T01:32:00+00:00"
+    "detectado": "2026-06-30T06:17:26+00:00"
   }
 ]
