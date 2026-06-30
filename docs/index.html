@@ -414,6 +414,7 @@ const CATEGORIAS = [
   { key:'bonus_ronda_final',         label:'Final',                  short:'FIN', icon:'🏆', calc:f=>f.bonus_ronda_final },
   { key:'premio_final',    label:'Premio final',         short:'PRE', icon:'🥇', calc:f=>f.premio_final },
   { key:'goleador',        label:'Máximo goleador',      short:'GOL', icon:'👟', calc:f=>f.goleador },
+  { key:'bonus_ultimo',    label:'Farolillo rojo (última en la tabla)', short:'ULT', icon:'🔴', calc:f=>f.bonus_ultimo },
 ];
 let filtroSel = new Set(CATEGORIAS.map(c=>c.key));   // por defecto: todas activas
 // Subconjunto de conceptos que aplican a UN partido (sin posición de grupo,
