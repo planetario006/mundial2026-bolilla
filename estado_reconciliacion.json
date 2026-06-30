@@ -899,8 +899,8 @@
   },
   "Brasil|Japón": {
     "verificado": true,
-    "ultimo_chequeo": "2026-06-30T17:25:32+00:00",
-    "intentos": 9,
+    "ultimo_chequeo": "2026-06-30T18:19:54+00:00",
+    "intentos": 10,
     "match_id": 89,
     "valores_espn_aplicados": {
       "penfall_local": 0,
@@ -911,8 +911,8 @@
   },
   "Alemania|Paraguay": {
     "verificado": false,
-    "ultimo_chequeo": "2026-06-30T17:25:32+00:00",
-    "intentos": 6,
+    "ultimo_chequeo": "2026-06-30T18:19:54+00:00",
+    "intentos": 7,
     "match_id": 103,
     "valores_espn_aplicados": {
       "penfall_local": 0,
@@ -923,8 +923,8 @@
   },
   "Marruecos|Países Bajos": {
     "verificado": true,
-    "ultimo_chequeo": "2026-06-30T17:25:32+00:00",
-    "intentos": 5,
+    "ultimo_chequeo": "2026-06-30T18:19:54+00:00",
+    "intentos": 6,
     "match_id": 90,
     "valores_espn_aplicados": {
       "penfall_local": 0,
