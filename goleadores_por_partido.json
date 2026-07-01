@@ -1422,5 +1422,25 @@
       "minuto": "86'",
       "tipo": "Gol"
     }
+  ],
+  "Francia|Suecia|2026-06-30": [
+    {
+      "jugador": "Kylian Mbappé",
+      "equipo": "Francia",
+      "minuto": "45'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Bradley Barcola",
+      "equipo": "Francia",
+      "minuto": "53'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Kylian Mbappé",
+      "equipo": "Francia",
+      "minuto": "74'",
+      "tipo": "Gol"
+    }
   ]
 }

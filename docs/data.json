@@ -1,11 +1,34 @@
 {
   "meta": {
-    "actualizado": "2026-06-30T22:52:25+00:00",
-    "total_partidos_jugados": 76,
+    "actualizado": "2026-07-01T00:12:39+00:00",
+    "total_partidos_jugados": 77,
     "total_partidos": 96,
     "fase_grupos_terminada": false
   },
   "ranking": [
+    {
+      "equipo": "Francia",
+      "grupo": "I",
+      "bombo": "Bombo 1",
+      "gf": 13,
+      "gc": 2,
+      "ta": 1,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 1,
+      "bonus_resultado": 20,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": 54,
+      "bonus_ronda_dieciseisavos": 25,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 1
+    },
     {
       "equipo": "Marruecos",
       "grupo": "C",
@@ -27,7 +50,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 1
+      "pos": 2
     },
     {
       "equipo": "Países Bajos",
@@ -50,7 +73,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 2
+      "pos": 3
     },
     {
       "equipo": "Brasil",
@@ -69,29 +92,6 @@
       "goleador": 0,
       "puntos_totales": 24,
       "bonus_ronda_dieciseisavos": 25,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 3
-    },
-    {
-      "equipo": "Francia",
-      "grupo": "I",
-      "bombo": "Bombo 1",
-      "gf": 10,
-      "gc": 2,
-      "ta": 1,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 1,
-      "bonus_resultado": 15,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": 21,
-      "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
@@ -651,6 +651,29 @@
       "pos": 28
     },
     {
+      "equipo": "Suecia",
+      "grupo": "F",
+      "bombo": "Bombo 3",
+      "gf": 7,
+      "gc": 10,
+      "ta": 5,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": -9,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": -22,
+      "bonus_ronda_dieciseisavos": 25,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 29
+    },
+    {
       "equipo": "Senegal",
       "grupo": "I",
       "bombo": "Bombo 3",
@@ -671,7 +694,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 29
+      "pos": 30
     },
     {
       "equipo": "Sudáfrica",
@@ -694,7 +717,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 30
+      "pos": 31
     },
     {
       "equipo": "Chequia",
@@ -717,7 +740,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 31
+      "pos": 32
     },
     {
       "equipo": "Corea del Sur",
@@ -731,29 +754,6 @@
       "penfall": 0,
       "penpar": 0,
       "bonus_resultado": -11,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": -30,
-      "bonus_ronda_dieciseisavos": 0,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 32
-    },
-    {
-      "equipo": "Suecia",
-      "grupo": "F",
-      "bombo": "Bombo 3",
-      "gf": 7,
-      "gc": 7,
-      "ta": 5,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": -1,
       "bonus_grupo": 0,
       "premio_final": 0,
       "goleador": 0,
@@ -4606,6 +4606,52 @@
         "penpar": 0,
         "bonus_resultado": 5,
         "total": 1
+      }
+    },
+    {
+      "id": 78,
+      "match_num": 77,
+      "fecha": "2026-06-30",
+      "fase": "Dieciseisavos de final",
+      "grupo": "",
+      "local": "Francia",
+      "visitante": "Suecia",
+      "gf_local": 3,
+      "gf_visit": 0,
+      "ta_local": 0,
+      "doblea_local": 0,
+      "rd_local": 0,
+      "ta_visit": 0,
+      "doblea_visit": 0,
+      "rd_visit": 0,
+      "penfall_local": 0,
+      "penpar_local": 0,
+      "penfall_visit": 0,
+      "penpar_visit": 0,
+      "pen_tanda_local": null,
+      "pen_tanda_visit": null,
+      "jugado": true,
+      "puntos_local": {
+        "gf": 3,
+        "gc": 0,
+        "ta": 0,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": 5,
+        "total": 8
+      },
+      "puntos_visit": {
+        "gf": 0,
+        "gc": -9,
+        "ta": 0,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": -8,
+        "total": -17
       }
     }
   ],
@@ -8911,8 +8957,8 @@
         "grupo": "",
         "local": "Francia",
         "visitante": "Suecia",
-        "gf_local": null,
-        "gf_visit": null,
+        "gf_local": 3,
+        "gf_visit": 0,
         "ta_local": 0,
         "doblea_local": 0,
         "rd_local": 0,
@@ -8925,9 +8971,29 @@
         "penpar_visit": 0,
         "pen_tanda_local": null,
         "pen_tanda_visit": null,
-        "jugado": false,
-        "puntos_local": null,
-        "puntos_visit": null
+        "jugado": true,
+        "puntos_local": {
+          "gf": 3,
+          "gc": 0,
+          "ta": 0,
+          "doblea": 0,
+          "rd": 0,
+          "penfall": 0,
+          "penpar": 0,
+          "bonus_resultado": 5,
+          "total": 8
+        },
+        "puntos_visit": {
+          "gf": 0,
+          "gc": -9,
+          "ta": 0,
+          "doblea": 0,
+          "rd": 0,
+          "penfall": 0,
+          "penpar": 0,
+          "bonus_resultado": -8,
+          "total": -17
+        }
       },
       {
         "id": 79,
@@ -9224,7 +9290,7 @@
         "fase": "Octavos de final",
         "grupo": "",
         "local": "Paraguay",
-        "visitante": "Ganador Partido 77",
+        "visitante": "Francia",
         "gf_local": null,
         "gf_visit": null,
         "ta_local": 0,
@@ -9407,12 +9473,12 @@
   "bombos": {
     "Bombo 1": [
       {
-        "equipo": "Brasil",
-        "puntos": 24
+        "equipo": "Francia",
+        "puntos": 54
       },
       {
-        "equipo": "Francia",
-        "puntos": 21
+        "equipo": "Brasil",
+        "puntos": 24
       },
       {
         "equipo": "Alemania",
@@ -9471,12 +9537,12 @@
         "puntos": 1
       },
       {
-        "equipo": "Senegal",
-        "puntos": -27
+        "equipo": "Suecia",
+        "puntos": -22
       },
       {
-        "equipo": "Suecia",
-        "puntos": -30
+        "equipo": "Senegal",
+        "puntos": -27
       },
       {
         "equipo": "Uruguay",
@@ -9619,21 +9685,21 @@
   "goleador_equipo": null,
   "goleadores": [
     {
+      "jugador": "Kylian Mbappé",
+      "equipo": "Francia",
+      "goles": 6,
+      "pos": 1
+    },
+    {
       "jugador": "Lionel Messi",
       "equipo": "Argentina",
       "goles": 6,
-      "pos": 1
+      "pos": 2
     },
     {
       "jugador": "Erling Haaland",
       "equipo": "Noruega",
       "goles": 5,
-      "pos": 2
-    },
-    {
-      "jugador": "Kylian Mbappé",
-      "equipo": "Francia",
-      "goles": 4,
       "pos": 3
     },
     {
@@ -9739,212 +9805,212 @@
       "pos": 20
     },
     {
+      "jugador": "Bradley Barcola",
+      "equipo": "Francia",
+      "goles": 2,
+      "pos": 21
+    },
+    {
       "jugador": "Cristiano Ronaldo",
       "equipo": "Portugal",
       "goles": 2,
-      "pos": 21
+      "pos": 22
     },
     {
       "jugador": "Crysencio Summerville",
       "equipo": "Países Bajos",
       "goles": 2,
-      "pos": 22
+      "pos": 23
     },
     {
       "jugador": "Cyle Larin",
       "equipo": "Canadá",
       "goles": 2,
-      "pos": 23
+      "pos": 24
     },
     {
       "jugador": "Daichi Kamada",
       "equipo": "Japón",
       "goles": 2,
-      "pos": 24
+      "pos": 25
     },
     {
       "jugador": "Daniel Muñoz",
       "equipo": "Colombia",
       "goles": 2,
-      "pos": 25
+      "pos": 26
     },
     {
       "jugador": "Ermin Mahmic",
       "equipo": "Bosnia",
       "goles": 2,
-      "pos": 26
+      "pos": 27
     },
     {
       "jugador": "Folarin Balogun",
       "equipo": "EE.UU.",
       "goles": 2,
-      "pos": 27
+      "pos": 28
     },
     {
       "jugador": "Jude Bellingham",
       "equipo": "Inglaterra",
       "goles": 2,
-      "pos": 28
+      "pos": 29
     },
     {
       "jugador": "Julián Quiñones",
       "equipo": "México",
       "goles": 2,
-      "pos": 29
+      "pos": 30
     },
     {
       "jugador": "Leandro Trossard",
       "equipo": "Bélgica",
       "goles": 2,
-      "pos": 30
+      "pos": 31
     },
     {
       "jugador": "Marko Arnautovic",
       "equipo": "Austria",
       "goles": 2,
-      "pos": 31
+      "pos": 32
     },
     {
       "jugador": "Maxi Araújo",
       "equipo": "Uruguay",
       "goles": 2,
-      "pos": 32
+      "pos": 33
     },
     {
       "jugador": "Mikel Oyarzabal",
       "equipo": "España",
       "goles": 2,
-      "pos": 33
+      "pos": 34
     },
     {
       "jugador": "Nicolas Pépé",
       "equipo": "Costa de Marfil",
       "goles": 2,
-      "pos": 34
+      "pos": 35
     },
     {
       "jugador": "Pape Gueye",
       "equipo": "Senegal",
       "goles": 2,
-      "pos": 35
+      "pos": 36
     },
     {
       "jugador": "Ramin Rezaeian",
       "equipo": "Irán",
       "goles": 2,
-      "pos": 36
+      "pos": 37
     },
     {
       "jugador": "Riyad Mahrez",
       "equipo": "Argelia",
       "goles": 2,
-      "pos": 37
+      "pos": 38
     },
     {
       "jugador": "Rubén Vargas",
       "equipo": "Suiza",
       "goles": 2,
-      "pos": 38
+      "pos": 39
     },
     {
       "jugador": "Yasin Ayari",
       "equipo": "Suecia",
       "goles": 2,
-      "pos": 39
+      "pos": 40
     },
     {
       "jugador": "Abbosbek Fayzullaev",
       "equipo": "Uzbekistán",
       "goles": 1,
-      "pos": 40
+      "pos": 41
     },
     {
       "jugador": "Abdulelah Al-Amri",
       "equipo": "Arabia Saudí",
       "goles": 1,
-      "pos": 41
+      "pos": 42
     },
     {
       "jugador": "Achraf Hakimi",
       "equipo": "Marruecos",
       "goles": 1,
-      "pos": 42
+      "pos": 43
     },
     {
       "jugador": "Agustín Canobbio",
       "equipo": "Uruguay",
       "goles": 1,
-      "pos": 43
+      "pos": 44
     },
     {
       "jugador": "Alex Freeman",
       "equipo": "EE.UU.",
       "goles": 1,
-      "pos": 44
+      "pos": 45
     },
     {
       "jugador": "Alexander Isak",
       "equipo": "Suecia",
       "goles": 1,
-      "pos": 45
+      "pos": 46
     },
     {
       "jugador": "Alexis Saelemaekers",
       "equipo": "Bélgica",
       "goles": 1,
-      "pos": 46
+      "pos": 47
     },
     {
       "jugador": "Ali Olwan",
       "equipo": "Jordania",
       "goles": 1,
-      "pos": 47
+      "pos": 48
     },
     {
       "jugador": "Amine Gouiri",
       "equipo": "Argelia",
       "goles": 1,
-      "pos": 48
+      "pos": 49
     },
     {
       "jugador": "Ante Budimir",
       "equipo": "Croacia",
       "goles": 1,
-      "pos": 49
+      "pos": 50
     },
     {
       "jugador": "Antonio Nusa",
       "equipo": "Noruega",
       "goles": 1,
-      "pos": 50
+      "pos": 51
     },
     {
       "jugador": "Arda Güler",
       "equipo": "Turquía",
       "goles": 1,
-      "pos": 51
+      "pos": 52
     },
     {
       "jugador": "Auston Trusty",
       "equipo": "EE.UU.",
       "goles": 1,
-      "pos": 52
+      "pos": 53
     },
     {
       "jugador": "Aymen Hussein",
       "equipo": "Irak",
       "goles": 1,
-      "pos": 53
+      "pos": 54
     },
     {
       "jugador": "Baris Alper Yilmaz",
       "equipo": "Turquía",
-      "goles": 1,
-      "pos": 54
-    },
-    {
-      "jugador": "Bradley Barcola",
-      "equipo": "Francia",
       "goles": 1,
       "pos": 55
     },
