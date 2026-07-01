@@ -1456,5 +1456,25 @@
       "minuto": "31'",
       "tipo": "Gol"
     }
+  ],
+  "Inglaterra|R. D. Congo|2026-07-01": [
+    {
+      "jugador": "Brian Cipenga",
+      "equipo": "R. D. Congo",
+      "minuto": "7'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Harry Kane",
+      "equipo": "Inglaterra",
+      "minuto": "75'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Harry Kane",
+      "equipo": "Inglaterra",
+      "minuto": "86'",
+      "tipo": "Gol"
+    }
   ]
 }
