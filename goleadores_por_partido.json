@@ -1442,5 +1442,19 @@
       "minuto": "74'",
       "tipo": "Gol"
     }
+  ],
+  "Ecuador|México|2026-07-01": [
+    {
+      "jugador": "Julián Quiñones",
+      "equipo": "México",
+      "minuto": "22'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Raúl Jiménez",
+      "equipo": "México",
+      "minuto": "31'",
+      "tipo": "Gol"
+    }
   ]
 }
