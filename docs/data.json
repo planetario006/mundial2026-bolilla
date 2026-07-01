@@ -1,7 +1,7 @@
 {
   "meta": {
-    "actualizado": "2026-07-01T15:21:17+00:00",
-    "total_partidos_jugados": 77,
+    "actualizado": "2026-07-01T17:30:43+00:00",
+    "total_partidos_jugados": 78,
     "total_partidos": 96,
     "fase_grupos_terminada": false
   },
@@ -30,6 +30,29 @@
       "pos": 1
     },
     {
+      "equipo": "México",
+      "grupo": "A",
+      "bombo": "Bombo 2",
+      "gf": 8,
+      "gc": 0,
+      "ta": 2,
+      "doblea": 0,
+      "rd": 1,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": 20,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": 35,
+      "bonus_ronda_dieciseisavos": 25,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 2
+    },
+    {
       "equipo": "Marruecos",
       "grupo": "C",
       "bombo": "Bombo 2",
@@ -50,7 +73,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 2
+      "pos": 3
     },
     {
       "equipo": "Países Bajos",
@@ -73,7 +96,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 3
+      "pos": 4
     },
     {
       "equipo": "Brasil",
@@ -96,7 +119,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 4
+      "pos": 5
     },
     {
       "equipo": "Alemania",
@@ -119,7 +142,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 5
+      "pos": 6
     },
     {
       "equipo": "España",
@@ -142,7 +165,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 6
+      "pos": 7
     },
     {
       "equipo": "Canadá",
@@ -165,7 +188,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 7
+      "pos": 8
     },
     {
       "equipo": "Japón",
@@ -188,7 +211,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 8
+      "pos": 9
     },
     {
       "equipo": "Inglaterra",
@@ -211,7 +234,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 9
+      "pos": 10
     },
     {
       "equipo": "Argentina",
@@ -229,29 +252,6 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": 4,
-      "bonus_ronda_dieciseisavos": 0,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 10
-    },
-    {
-      "equipo": "México",
-      "grupo": "A",
-      "bombo": "Bombo 2",
-      "gf": 6,
-      "gc": 0,
-      "ta": 2,
-      "doblea": 0,
-      "rd": 1,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": 15,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": 3,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -352,6 +352,29 @@
       "pos": 15
     },
     {
+      "equipo": "Ecuador",
+      "grupo": "E",
+      "bombo": "Bombo 4",
+      "gf": 2,
+      "gc": 4,
+      "ta": 2,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": -9,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": 0,
+      "bonus_ronda_dieciseisavos": 25,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 16
+    },
+    {
       "equipo": "Portugal",
       "grupo": "K",
       "bombo": "Bombo 2",
@@ -372,7 +395,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 16
+      "pos": 17
     },
     {
       "equipo": "Egipto",
@@ -395,7 +418,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 17
+      "pos": 18
     },
     {
       "equipo": "Irán",
@@ -418,7 +441,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 18
+      "pos": 19
     },
     {
       "equipo": "Cabo Verde",
@@ -436,29 +459,6 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -10,
-      "bonus_ronda_dieciseisavos": 0,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 19
-    },
-    {
-      "equipo": "Ecuador",
-      "grupo": "E",
-      "bombo": "Bombo 4",
-      "gf": 2,
-      "gc": 2,
-      "ta": 2,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": -1,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": -11,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -4652,6 +4652,52 @@
         "penpar": 0,
         "bonus_resultado": -8,
         "total": -17
+      }
+    },
+    {
+      "id": 79,
+      "match_num": 79,
+      "fecha": "2026-06-30",
+      "fase": "Dieciseisavos de final",
+      "grupo": "",
+      "local": "México",
+      "visitante": "Ecuador",
+      "gf_local": 2,
+      "gf_visit": 0,
+      "ta_local": 0,
+      "doblea_local": 0,
+      "rd_local": 0,
+      "ta_visit": 0,
+      "doblea_visit": 0,
+      "rd_visit": 0,
+      "penfall_local": 0,
+      "penpar_local": 0,
+      "penfall_visit": 0,
+      "penpar_visit": 0,
+      "pen_tanda_local": null,
+      "pen_tanda_visit": null,
+      "jugado": true,
+      "puntos_local": {
+        "gf": 2,
+        "gc": 0,
+        "ta": 0,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": 5,
+        "total": 7
+      },
+      "puntos_visit": {
+        "gf": 0,
+        "gc": -6,
+        "ta": 0,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": -8,
+        "total": -14
       }
     }
   ],
@@ -9003,8 +9049,8 @@
         "grupo": "",
         "local": "México",
         "visitante": "Ecuador",
-        "gf_local": null,
-        "gf_visit": null,
+        "gf_local": 2,
+        "gf_visit": 0,
         "ta_local": 0,
         "doblea_local": 0,
         "rd_local": 0,
@@ -9017,9 +9063,29 @@
         "penpar_visit": 0,
         "pen_tanda_local": null,
         "pen_tanda_visit": null,
-        "jugado": false,
-        "puntos_local": null,
-        "puntos_visit": null
+        "jugado": true,
+        "puntos_local": {
+          "gf": 2,
+          "gc": 0,
+          "ta": 0,
+          "doblea": 0,
+          "rd": 0,
+          "penfall": 0,
+          "penpar": 0,
+          "bonus_resultado": 5,
+          "total": 7
+        },
+        "puntos_visit": {
+          "gf": 0,
+          "gc": -6,
+          "ta": 0,
+          "doblea": 0,
+          "rd": 0,
+          "penfall": 0,
+          "penpar": 0,
+          "bonus_resultado": -8,
+          "total": -14
+        }
       },
       {
         "id": 80,
@@ -9499,16 +9565,16 @@
     ],
     "Bombo 2": [
       {
+        "equipo": "México",
+        "puntos": 35
+      },
+      {
         "equipo": "Marruecos",
         "puntos": 28
       },
       {
         "equipo": "Países Bajos",
         "puntos": 26
-      },
-      {
-        "equipo": "México",
-        "puntos": 3
       },
       {
         "equipo": "Portugal",
@@ -9560,7 +9626,7 @@
       },
       {
         "equipo": "Ecuador",
-        "puntos": -11
+        "puntos": 0
       },
       {
         "equipo": "EE.UU.",
