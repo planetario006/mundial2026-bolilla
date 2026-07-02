@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-07-02T15:25:19+00:00",
+    "actualizado": "2026-07-02T15:25:57+00:00",
     "total_partidos_jugados": 81,
     "total_partidos": 88,
     "fase_grupos_terminada": false
@@ -651,29 +651,6 @@
       "pos": 28
     },
     {
-      "equipo": "Ecuador",
-      "grupo": "E",
-      "bombo": "Bombo 4",
-      "gf": 2,
-      "gc": 4,
-      "ta": 5,
-      "doblea": 0,
-      "rd": 1,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": -9,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "premio_menos_puntos": 0,
-      "puntos_totales": -21,
-      "bonus_ronda_dieciseisavos": 25,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 29
-    },
-    {
       "equipo": "Suecia",
       "grupo": "F",
       "bombo": "Bombo 3",
@@ -694,7 +671,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 30
+      "pos": 29
     },
     {
       "equipo": "Corea del Sur",
@@ -713,6 +690,29 @@
       "premio_menos_puntos": 0,
       "puntos_totales": -30,
       "bonus_ronda_dieciseisavos": 0,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 30
+    },
+    {
+      "equipo": "Ecuador",
+      "grupo": "E",
+      "bombo": "Bombo 4",
+      "gf": 2,
+      "gc": 4,
+      "ta": 8,
+      "doblea": 0,
+      "rd": 1,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": -9,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "premio_menos_puntos": 0,
+      "puntos_totales": -30,
+      "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
@@ -3698,7 +3698,7 @@
       "visitante": "Alemania",
       "gf_local": 2,
       "gf_visit": 1,
-      "ta_local": 0,
+      "ta_local": 3,
       "doblea_local": 0,
       "rd_local": 0,
       "ta_visit": 0,
@@ -3714,13 +3714,13 @@
       "puntos_local": {
         "gf": 2,
         "gc": -3,
-        "ta": 0,
+        "ta": -9,
         "doblea": 0,
         "rd": 0,
         "penfall": 0,
         "penpar": 0,
         "bonus_resultado": 5,
-        "total": 4
+        "total": -5
       },
       "puntos_visit": {
         "gf": 1,
@@ -6456,7 +6456,7 @@
           "visitante": "Alemania",
           "gf_local": 2,
           "gf_visit": 1,
-          "ta_local": 0,
+          "ta_local": 3,
           "doblea_local": 0,
           "rd_local": 0,
           "ta_visit": 0,
@@ -6472,13 +6472,13 @@
           "puntos_local": {
             "gf": 2,
             "gc": -3,
-            "ta": 0,
+            "ta": -9,
             "doblea": 0,
             "rd": 0,
             "penfall": 0,
             "penpar": 0,
             "bonus_resultado": 5,
-            "total": 4
+            "total": -5
           },
           "puntos_visit": {
             "gf": 1,
@@ -9619,7 +9619,7 @@
       },
       {
         "equipo": "Ecuador",
-        "puntos": -21
+        "puntos": -30
       },
       {
         "equipo": "Chequia",
