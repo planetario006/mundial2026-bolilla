@@ -872,16 +872,19 @@ def fusionar_en_matches(nuevos: list, matches: list, estado: dict | None = None)
         existente = indice.get(k)
 
         # ── Búsqueda por match_num cuando no hay coincidencia por nombre ──
-        # Caso típico: antes era '3C/E' (placeholder) y ahora es 'Ecuador'
-        # (nombre real). La clave por nombre no coincide, pero el match_num sí.
+        # Actualiza los equipos si el match_num coincide pero los nombres no,
+        # ya sea porque antes había un placeholder o porque hubo un error previo.
         if existente is None and match_num is not None:
             existente_mn = indice_mn.get(match_num)
             if existente_mn is not None:
                 viejo_local = existente_mn["local"]
                 viejo_visit = existente_mn["visitante"]
-                if _es_placeholder(viejo_local) or _es_placeholder(viejo_visit):
+                
+                # MODIFICACIÓN: Comparamos directamente si los nombres son distintos,
+                # sin importar si son placeholders o países reales.
+                if viejo_local != p["team1"] or viejo_visit != p["team2"]:
                     log.info(
-                        f"  PLACEHOLDER→REAL  match_num={match_num}: "
+                        f"  ACTUALIZACIÓN DE EQUIPOS match_num={match_num}: "
                         f"'{viejo_local}' vs '{viejo_visit}'  →  "
                         f"'{p['team1']}' vs '{p['team2']}'"
                     )
