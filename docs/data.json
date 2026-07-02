@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-07-02T15:26:34+00:00",
+    "actualizado": "2026-07-02T15:27:08+00:00",
     "total_partidos_jugados": 81,
     "total_partidos": 88,
     "fase_grupos_terminada": false
@@ -7180,7 +7180,7 @@
           "grupo": "G",
           "local": "Egipto",
           "visitante": "Irán",
-          "gf_local": null,
+          "gf_local": 1,
           "gf_visit": null,
           "ta_local": 3,
           "doblea_local": 0,
