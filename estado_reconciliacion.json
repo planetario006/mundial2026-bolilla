@@ -1010,7 +1010,7 @@
     ]
   },
   "Austria|España": {
-    "verificado": false,
+    "verificado": true,
     "ultimo_chequeo": "2026-07-02T21:14:00+00:00",
     "intentos": 1,
     "match_id": 83,
@@ -1019,6 +1019,9 @@
       "penfall_visit": 0,
       "penpar_local": 0,
       "penpar_visit": 0
-    }
+    },
+    "campos_bloqueados": [
+      "ta_visit"
+    ]
   }
 }

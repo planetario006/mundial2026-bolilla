@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-07-02T21:27:33+00:00",
+    "actualizado": "2026-07-02T21:28:01+00:00",
     "total_partidos_jugados": 83,
     "total_partidos": 96,
     "fase_grupos_terminada": true
@@ -587,7 +587,7 @@
       "bombo": "Bombo 6",
       "gf": 6,
       "gc": 9,
-      "ta": 4,
+      "ta": 5,
       "doblea": 0,
       "rd": 0,
       "penfall": 0,
@@ -596,7 +596,7 @@
       "bonus_grupo": 10,
       "premio_final": 0,
       "premio_menos_puntos": 0,
-      "puntos_totales": -2,
+      "puntos_totales": -5,
       "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -4897,7 +4897,7 @@
       "ta_local": 0,
       "doblea_local": 0,
       "rd_local": 0,
-      "ta_visit": 0,
+      "ta_visit": 1,
       "doblea_visit": 0,
       "rd_visit": 0,
       "penfall_local": 0,
@@ -4921,13 +4921,13 @@
       "puntos_visit": {
         "gf": 0,
         "gc": -9,
-        "ta": 0,
+        "ta": -3,
         "doblea": 0,
         "rd": 0,
         "penfall": 0,
         "penpar": 0,
         "bonus_resultado": -8,
-        "total": -17
+        "total": -20
       }
     }
   ],
@@ -9488,7 +9488,7 @@
         "ta_local": 0,
         "doblea_local": 0,
         "rd_local": 0,
-        "ta_visit": 0,
+        "ta_visit": 1,
         "doblea_visit": 0,
         "rd_visit": 0,
         "penfall_local": 0,
@@ -9512,13 +9512,13 @@
         "puntos_visit": {
           "gf": 0,
           "gc": -9,
-          "ta": 0,
+          "ta": -3,
           "doblea": 0,
           "rd": 0,
           "penfall": 0,
           "penpar": 0,
           "bonus_resultado": -8,
-          "total": -17
+          "total": -20
         }
       },
       {
@@ -10012,7 +10012,7 @@
       },
       {
         "equipo": "Austria",
-        "puntos": -2
+        "puntos": -5
       },
       {
         "equipo": "Sudáfrica",

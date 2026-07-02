@@ -1,12 +1,1 @@
-[
-  {
-    "ref": "Austria|España::ta_visit",
-    "match_id": 83,
-    "local": "España",
-    "visitante": "Austria",
-    "campo": "ta_visit",
-    "valor_wiki": 0,
-    "valor_scraper": 1,
-    "detectado": "2026-07-02T21:14:00+00:00"
-  }
-]
+[]
