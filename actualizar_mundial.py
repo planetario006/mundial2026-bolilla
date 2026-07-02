@@ -309,6 +309,38 @@ def extraer_tarjetas_desde_bloque(bloque: str):
     return tarjetas_local, tarjetas_visit
 
 
+def extraer_penaltis_desde_bloque(bloque: str) -> dict:
+    """
+    Extrae información de penaltis desde un bloque de partido.
+    Busca los campos 'penaltis1' y 'penaltis2' que contienen las tandas de penalti
+    en formato wiki (con plantillas {{pengol}} y {{penfallo}}).
+    
+    Devuelve un diccionario con:
+    - 'penaltis_local': número de penaltis anotados por el equipo local
+    - 'penaltis_visit': número de penaltis anotados por el equipo visitante
+    - 'resultado_penalti': string con el resultado de la tanda (ej: "3:4")
+    """
+    penaltis_local = 0
+    penaltis_visit = 0
+    resultado_penalti = ""
+    
+    # Buscar el resultado de la tanda de penaltis
+    resultado_penalti_raw = _campo(bloque, "resultado penalti") or _campo(bloque, "resultado_penalti") or ""
+    if resultado_penalti_raw:
+        # Extraer solo el número:número (ej: "3:4" de "3:4")
+        m_res = re.search(r"(\d+)\s*[:|-]\s*(\d+)", resultado_penalti_raw)
+        if m_res:
+            resultado_penalti = f"{m_res.group(1)}:{m_res.group(2)}"
+            penaltis_local = int(m_res.group(1))
+            penaltis_visit = int(m_res.group(2))
+    
+    return {
+        "penaltis_local": penaltis_local,
+        "penaltis_visit": penaltis_visit,
+        "resultado_penalti": resultado_penalti,
+    }
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 # ESTADIOS — identificación canónica de sede
 # ─────────────────────────────────────────────────────────────────────────────
@@ -447,6 +479,11 @@ def parsear_bloque(bloque: str, fase_txt: str, grupo_letra: str) -> dict | None:
             fecha = ""
 
     cards1, cards2 = extraer_tarjetas_desde_bloque(bloque)
+    
+    # ── Penaltis ────────────────────────────────────────────────────────
+    # Se extraen solo cuando hay tanda de penaltis (partidos que van a prórroga
+    # en fases eliminatorias)
+    penaltis_info = extraer_penaltis_desde_bloque(bloque)
 
     # ── Estadio / sede del partido ──────────────────────────────────────
     # Necesario para asignar match_num en fases eliminatorias (ver
@@ -466,6 +503,9 @@ def parsear_bloque(bloque: str, fase_txt: str, grupo_letra: str) -> dict | None:
         "team1": t1, "team2": t2, "fecha": fecha, "gf1": gf1, "gf2": gf2,
         "cards1": cards1, "cards2": cards2, "fase": fase_txt, "grupo": grupo_letra,
         "estadio_raw": estadio_raw, "ciudad_raw": ciudad_raw, "estadio_id": estadio_id,
+        "penaltis_local": penaltis_info["penaltis_local"],
+        "penaltis_visit": penaltis_info["penaltis_visit"],
+        "resultado_penalti": penaltis_info["resultado_penalti"],
     }
 
 
@@ -870,6 +910,9 @@ def fusionar_en_matches(nuevos: list, matches: list, estado: dict | None = None)
                 "ta_visit": p["cards2"]["ta"], "doblea_visit": p["cards2"]["doble_a"], "rd_visit": p["cards2"]["rd"],
                 "penfall_visit": 0, "penpar_visit": 0,
                 "pen_tanda_local": None, "pen_tanda_visit": None,
+                "penaltis_local": p.get("penaltis_local", 0),
+                "penaltis_visit": p.get("penaltis_visit", 0),
+                "resultado_penalti": p.get("resultado_penalti", ""),
             }
             if match_num is not None:
                 m["match_num"] = match_num
@@ -878,8 +921,11 @@ def fusionar_en_matches(nuevos: list, matches: list, estado: dict | None = None)
             indice[k] = m
             siguiente_id += 1
             nuevos_insertados += 1
-            log.info(f"  NUEVO  {p['team1']} {p['gf1']}-{p['gf2']} {p['team2']}  [{p['fase']}]"
-                     + (f"  match_num={match_num}" if match_num else ""))
+            log_msg = f"  NUEVO  {p['team1']} {p['gf1']}-{p['gf2']} {p['team2']}  [{p['fase']}]"
+            if p.get("resultado_penalti"):
+                log_msg += f"  (penaltis {p['resultado_penalti']})"
+            log_msg += f"  match_num={match_num}" if match_num else ""
+            log.info(log_msg)
         else:
             invertido = existente["local"] != p["team1"]
             cambios = []
@@ -923,11 +969,21 @@ def fusionar_en_matches(nuevos: list, matches: list, estado: dict | None = None)
                 _set("ta_local", p["cards1"]["ta"]); _set("doblea_local", p["cards1"]["doble_a"]); _set("rd_local", p["cards1"]["rd"])
                 _set("gf_visit", p["gf2"]); _set("gc_visit", p["gf1"])
                 _set("ta_visit", p["cards2"]["ta"]); _set("doblea_visit", p["cards2"]["doble_a"]); _set("rd_visit", p["cards2"]["rd"])
+                # Penaltis: si hay resultado de penalti, actualizar
+                if p.get("resultado_penalti"):
+                    _set("penaltis_local", p.get("penaltis_local", 0))
+                    _set("penaltis_visit", p.get("penaltis_visit", 0))
+                    _set("resultado_penalti", p.get("resultado_penalti", ""))
             else:
                 _set("gf_local", p["gf2"]); _set("gc_local", p["gf1"])
                 _set("ta_local", p["cards2"]["ta"]); _set("doblea_local", p["cards2"]["doble_a"]); _set("rd_local", p["cards2"]["rd"])
                 _set("gf_visit", p["gf1"]); _set("gc_visit", p["gf2"])
                 _set("ta_visit", p["cards1"]["ta"]); _set("doblea_visit", p["cards1"]["doble_a"]); _set("rd_visit", p["cards1"]["rd"])
+                # Penaltis: si hay resultado de penalti, actualizar (invertido)
+                if p.get("resultado_penalti"):
+                    _set("penaltis_local", p.get("penaltis_visit", 0))
+                    _set("penaltis_visit", p.get("penaltis_local", 0))
+                    _set("resultado_penalti", p.get("resultado_penalti", ""))
 
             # penfall_*/penpar_* NUNCA se tocan aquí (se quedan con lo que ya
             # hubiera, manual). Si la fila es nueva, ya se crearon a 0 arriba.
