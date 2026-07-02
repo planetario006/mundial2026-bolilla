@@ -1476,5 +1476,37 @@
       "minuto": "86'",
       "tipo": "Gol"
     }
+  ],
+  "Bélgica|Senegal|2026-07-01": [
+    {
+      "jugador": "Habib Diarra",
+      "equipo": "Senegal",
+      "minuto": "25'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Ismaïla Sarr",
+      "equipo": "Senegal",
+      "minuto": "51'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Romelu Lukaku",
+      "equipo": "Bélgica",
+      "minuto": "86'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Youri Tielemans",
+      "equipo": "Bélgica",
+      "minuto": "89'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Youri Tielemans",
+      "equipo": "Bélgica",
+      "minuto": "120'+5'",
+      "tipo": "Penalti"
+    }
   ]
 }
