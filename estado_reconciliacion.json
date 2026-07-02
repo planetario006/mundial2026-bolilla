@@ -969,8 +969,8 @@
   },
   "Inglaterra|R. D. Congo": {
     "verificado": true,
-    "ultimo_chequeo": "2026-07-02T15:10:48+00:00",
-    "intentos": 1,
+    "ultimo_chequeo": "2026-07-02T15:42:32+00:00",
+    "intentos": 2,
     "match_id": 80,
     "valores_espn_aplicados": {
       "penfall_local": 0,
@@ -981,8 +981,8 @@
   },
   "Bélgica|Senegal": {
     "verificado": true,
-    "ultimo_chequeo": "2026-07-02T15:10:48+00:00",
-    "intentos": 1,
+    "ultimo_chequeo": "2026-07-02T15:42:32+00:00",
+    "intentos": 2,
     "match_id": 81,
     "valores_espn_aplicados": {
       "penfall_local": 0,
@@ -996,8 +996,8 @@
   },
   "Bosnia|EE.UU.": {
     "verificado": false,
-    "ultimo_chequeo": "2026-07-02T15:10:48+00:00",
-    "intentos": 1,
+    "ultimo_chequeo": "2026-07-02T15:42:32+00:00",
+    "intentos": 2,
     "match_id": 82,
     "valores_espn_aplicados": {
       "penfall_local": 0,
