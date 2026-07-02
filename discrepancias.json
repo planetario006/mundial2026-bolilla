@@ -1,15 +1,5 @@
 [
   {
-    "ref": "Bélgica|Senegal::ta_local",
-    "match_id": 81,
-    "local": "Bélgica",
-    "visitante": "Senegal",
-    "campo": "ta_local",
-    "valor_wiki": 2,
-    "valor_scraper": 1,
-    "detectado": "2026-07-02T15:10:48+00:00"
-  },
-  {
     "ref": "Bosnia|EE.UU.::ta_visit",
     "match_id": 82,
     "local": "EE.UU.",
