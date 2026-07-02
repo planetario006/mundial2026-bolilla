@@ -1,15 +1,5 @@
 [
   {
-    "ref": "Egipto|Irán::gf_visit",
-    "match_id": 42,
-    "local": "Egipto",
-    "visitante": "Irán",
-    "campo": "gf_visit",
-    "valor_wiki": null,
-    "valor_scraper": 1,
-    "detectado": "2026-07-02T15:10:48+00:00"
-  },
-  {
     "ref": "Alemania|Paraguay::ta_local",
     "match_id": 75,
     "local": "Alemania",
