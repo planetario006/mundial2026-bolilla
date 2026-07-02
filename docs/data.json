@@ -1,7 +1,7 @@
 {
   "meta": {
-    "actualizado": "2026-07-02T00:13:46+00:00",
-    "total_partidos_jugados": 80,
+    "actualizado": "2026-07-02T04:42:51+00:00",
+    "total_partidos_jugados": 81,
     "total_partidos": 96,
     "fase_grupos_terminada": false
   },
@@ -145,6 +145,29 @@
       "pos": 6
     },
     {
+      "equipo": "EE.UU.",
+      "grupo": "D",
+      "bombo": "Bombo 4",
+      "gf": 10,
+      "gc": 4,
+      "ta": 5,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": 7,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": 15,
+      "bonus_ronda_dieciseisavos": 25,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 7
+    },
+    {
       "equipo": "Alemania",
       "grupo": "E",
       "bombo": "Bombo 1",
@@ -165,7 +188,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 7
+      "pos": 8
     },
     {
       "equipo": "España",
@@ -188,7 +211,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 8
+      "pos": 9
     },
     {
       "equipo": "Bélgica",
@@ -211,7 +234,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 9
+      "pos": 10
     },
     {
       "equipo": "Canadá",
@@ -234,7 +257,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 10
+      "pos": 11
     },
     {
       "equipo": "Japón",
@@ -257,7 +280,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 11
+      "pos": 12
     },
     {
       "equipo": "Argentina",
@@ -280,7 +303,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 12
+      "pos": 13
     },
     {
       "equipo": "Noruega",
@@ -303,7 +326,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 13
+      "pos": 14
     },
     {
       "equipo": "Colombia",
@@ -326,7 +349,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 14
+      "pos": 15
     },
     {
       "equipo": "Suiza",
@@ -349,7 +372,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 15
+      "pos": 16
     },
     {
       "equipo": "Costa de Marfil",
@@ -372,7 +395,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 16
+      "pos": 17
     },
     {
       "equipo": "Portugal",
@@ -395,7 +418,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 17
+      "pos": 18
     },
     {
       "equipo": "Egipto",
@@ -418,7 +441,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 18
+      "pos": 19
     },
     {
       "equipo": "Irán",
@@ -441,7 +464,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 19
+      "pos": 20
     },
     {
       "equipo": "Cabo Verde",
@@ -464,7 +487,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 20
+      "pos": 21
     },
     {
       "equipo": "R. D. Congo",
@@ -487,7 +510,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 21
+      "pos": 22
     },
     {
       "equipo": "Croacia",
@@ -510,7 +533,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 22
+      "pos": 23
     },
     {
       "equipo": "Ghana",
@@ -528,29 +551,6 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -14,
-      "bonus_ronda_dieciseisavos": 0,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 23
-    },
-    {
-      "equipo": "EE.UU.",
-      "grupo": "D",
-      "bombo": "Bombo 4",
-      "gf": 8,
-      "gc": 4,
-      "ta": 5,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": 2,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": -17,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -789,6 +789,29 @@
       "pos": 34
     },
     {
+      "equipo": "Bosnia",
+      "grupo": "B",
+      "bombo": "Bombo 5",
+      "gf": 5,
+      "gc": 8,
+      "ta": 6,
+      "doblea": 0,
+      "rd": 1,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": -9,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "goleador": 0,
+      "puntos_totales": -33,
+      "bonus_ronda_dieciseisavos": 25,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 35
+    },
+    {
       "equipo": "Paraguay",
       "grupo": "D",
       "bombo": "Bombo 5",
@@ -809,7 +832,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 35
+      "pos": 36
     },
     {
       "equipo": "Arabia Saudí",
@@ -832,7 +855,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 36
+      "pos": 37
     },
     {
       "equipo": "Escocia",
@@ -855,7 +878,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 37
+      "pos": 38
     },
     {
       "equipo": "Uruguay",
@@ -873,29 +896,6 @@
       "premio_final": 0,
       "goleador": 0,
       "puntos_totales": -40,
-      "bonus_ronda_dieciseisavos": 0,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 38
-    },
-    {
-      "equipo": "Bosnia",
-      "grupo": "B",
-      "bombo": "Bombo 5",
-      "gf": 5,
-      "gc": 6,
-      "ta": 6,
-      "doblea": 0,
-      "rd": 1,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": -1,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "goleador": 0,
-      "puntos_totales": -44,
       "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -4790,6 +4790,52 @@
         "penpar": 0,
         "bonus_resultado": -8,
         "total": -18
+      }
+    },
+    {
+      "id": 82,
+      "match_num": 81,
+      "fecha": "2026-07-01",
+      "fase": "Dieciseisavos de final",
+      "grupo": "",
+      "local": "EE.UU.",
+      "visitante": "Bosnia",
+      "gf_local": 2,
+      "gf_visit": 0,
+      "ta_local": 0,
+      "doblea_local": 0,
+      "rd_local": 0,
+      "ta_visit": 0,
+      "doblea_visit": 0,
+      "rd_visit": 0,
+      "penfall_local": 0,
+      "penpar_local": 0,
+      "penfall_visit": 0,
+      "penpar_visit": 0,
+      "pen_tanda_local": null,
+      "pen_tanda_visit": null,
+      "jugado": true,
+      "puntos_local": {
+        "gf": 2,
+        "gc": 0,
+        "ta": 0,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": 5,
+        "total": 7
+      },
+      "puntos_visit": {
+        "gf": 0,
+        "gc": -6,
+        "ta": 0,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": -8,
+        "total": -14
       }
     }
   ],
@@ -9279,8 +9325,8 @@
         "grupo": "",
         "local": "EE.UU.",
         "visitante": "Bosnia",
-        "gf_local": null,
-        "gf_visit": null,
+        "gf_local": 2,
+        "gf_visit": 0,
         "ta_local": 0,
         "doblea_local": 0,
         "rd_local": 0,
@@ -9293,9 +9339,29 @@
         "penpar_visit": 0,
         "pen_tanda_local": null,
         "pen_tanda_visit": null,
-        "jugado": false,
-        "puntos_local": null,
-        "puntos_visit": null
+        "jugado": true,
+        "puntos_local": {
+          "gf": 2,
+          "gc": 0,
+          "ta": 0,
+          "doblea": 0,
+          "rd": 0,
+          "penfall": 0,
+          "penpar": 0,
+          "bonus_resultado": 5,
+          "total": 7
+        },
+        "puntos_visit": {
+          "gf": 0,
+          "gc": -6,
+          "ta": 0,
+          "doblea": 0,
+          "rd": 0,
+          "penfall": 0,
+          "penpar": 0,
+          "bonus_resultado": -8,
+          "total": -14
+        }
       },
       {
         "id": 83,
@@ -9565,8 +9631,8 @@
         "fecha": "2026-07-06",
         "fase": "Octavos de final",
         "grupo": "",
-        "local": "Bélgica",
-        "visitante": "Ganador Partido 84",
+        "local": "EE.UU.",
+        "visitante": "Bélgica",
         "gf_local": null,
         "gf_visit": null,
         "ta_local": 0,
@@ -9749,16 +9815,16 @@
     ],
     "Bombo 4": [
       {
+        "equipo": "EE.UU.",
+        "puntos": 15
+      },
+      {
         "equipo": "Japón",
         "puntos": 7
       },
       {
         "equipo": "Suiza",
         "puntos": 1
-      },
-      {
-        "equipo": "EE.UU.",
-        "puntos": -17
       },
       {
         "equipo": "Ecuador",
@@ -9783,6 +9849,10 @@
         "puntos": -32
       },
       {
+        "equipo": "Bosnia",
+        "puntos": -33
+      },
+      {
         "equipo": "Paraguay",
         "puntos": -34
       },
@@ -9793,10 +9863,6 @@
       {
         "equipo": "Escocia",
         "puntos": -37
-      },
-      {
-        "equipo": "Bosnia",
-        "puntos": -44
       }
     ],
     "Bombo 6": [
@@ -9949,110 +10015,110 @@
       "pos": 11
     },
     {
+      "jugador": "Folarin Balogun",
+      "equipo": "EE.UU.",
+      "goles": 3,
+      "pos": 12
+    },
+    {
       "jugador": "Ismael Saibari",
       "equipo": "Marruecos",
       "goles": 3,
-      "pos": 12
+      "pos": 13
     },
     {
       "jugador": "Johan Manzambi",
       "equipo": "Suiza",
       "goles": 3,
-      "pos": 13
+      "pos": 14
     },
     {
       "jugador": "Jonathan David",
       "equipo": "Canadá",
       "goles": 3,
-      "pos": 14
+      "pos": 15
     },
     {
       "jugador": "Julián Quiñones",
       "equipo": "México",
       "goles": 3,
-      "pos": 15
+      "pos": 16
     },
     {
       "jugador": "Kai Havertz",
       "equipo": "Alemania",
       "goles": 3,
-      "pos": 16
+      "pos": 17
     },
     {
       "jugador": "Matheus Cunha",
       "equipo": "Brasil",
       "goles": 3,
-      "pos": 17
+      "pos": 18
     },
     {
       "jugador": "Yoane Wissa",
       "equipo": "R. D. Congo",
       "goles": 3,
-      "pos": 18
+      "pos": 19
     },
     {
       "jugador": "Amad Diallo",
       "equipo": "Costa de Marfil",
       "goles": 2,
-      "pos": 19
+      "pos": 20
     },
     {
       "jugador": "Anthony Elanga",
       "equipo": "Suecia",
       "goles": 2,
-      "pos": 20
+      "pos": 21
     },
     {
       "jugador": "Ayase Ueda",
       "equipo": "Japón",
       "goles": 2,
-      "pos": 21
+      "pos": 22
     },
     {
       "jugador": "Bradley Barcola",
       "equipo": "Francia",
       "goles": 2,
-      "pos": 22
+      "pos": 23
     },
     {
       "jugador": "Cristiano Ronaldo",
       "equipo": "Portugal",
       "goles": 2,
-      "pos": 23
+      "pos": 24
     },
     {
       "jugador": "Crysencio Summerville",
       "equipo": "Países Bajos",
       "goles": 2,
-      "pos": 24
+      "pos": 25
     },
     {
       "jugador": "Cyle Larin",
       "equipo": "Canadá",
       "goles": 2,
-      "pos": 25
+      "pos": 26
     },
     {
       "jugador": "Daichi Kamada",
       "equipo": "Japón",
       "goles": 2,
-      "pos": 26
+      "pos": 27
     },
     {
       "jugador": "Daniel Muñoz",
       "equipo": "Colombia",
       "goles": 2,
-      "pos": 27
+      "pos": 28
     },
     {
       "jugador": "Ermin Mahmic",
       "equipo": "Bosnia",
-      "goles": 2,
-      "pos": 28
-    },
-    {
-      "jugador": "Folarin Balogun",
-      "equipo": "EE.UU.",
       "goles": 2,
       "pos": 29
     },
@@ -10537,262 +10603,268 @@
       "pos": 109
     },
     {
+      "jugador": "Malik Tillman",
+      "equipo": "EE.UU.",
+      "goles": 1,
+      "pos": 110
+    },
+    {
       "jugador": "Marcel Sabitzer",
       "equipo": "Austria",
       "goles": 1,
-      "pos": 110
+      "pos": 111
     },
     {
       "jugador": "Marcus Holmgren Pedersen",
       "equipo": "Noruega",
       "goles": 1,
-      "pos": 111
+      "pos": 112
     },
     {
       "jugador": "Marcus Rashford",
       "equipo": "Inglaterra",
       "goles": 1,
-      "pos": 112
+      "pos": 113
     },
     {
       "jugador": "Martin Baturina",
       "equipo": "Croacia",
       "goles": 1,
-      "pos": 113
+      "pos": 114
     },
     {
       "jugador": "Mateo Chávez",
       "equipo": "México",
       "goles": 1,
-      "pos": 114
+      "pos": 115
     },
     {
       "jugador": "Mattias Svanberg",
       "equipo": "Suecia",
       "goles": 1,
-      "pos": 115
+      "pos": 116
     },
     {
       "jugador": "Matías Galarza",
       "equipo": "Paraguay",
       "goles": 1,
-      "pos": 116
+      "pos": 117
     },
     {
       "jugador": "Maurício",
       "equipo": "Paraguay",
       "goles": 1,
-      "pos": 117
+      "pos": 118
     },
     {
       "jugador": "Michal Sadílek",
       "equipo": "Chequia",
       "goles": 1,
-      "pos": 118
+      "pos": 119
     },
     {
       "jugador": "Mohamed Salah",
       "equipo": "Egipto",
       "goles": 1,
-      "pos": 119
+      "pos": 120
     },
     {
       "jugador": "Mohammad Mohebbi",
       "equipo": "Irán",
       "goles": 1,
-      "pos": 120
+      "pos": 121
     },
     {
       "jugador": "Mostafa Zico",
       "equipo": "Egipto",
       "goles": 1,
-      "pos": 121
+      "pos": 122
     },
     {
       "jugador": "Mousa Al-Tamari",
       "equipo": "Jordania",
       "goles": 1,
-      "pos": 122
+      "pos": 123
     },
     {
       "jugador": "Nadhir Benbouali",
       "equipo": "Argelia",
       "goles": 1,
-      "pos": 123
+      "pos": 124
     },
     {
       "jugador": "Nathan Saliba",
       "equipo": "Canadá",
       "goles": 1,
-      "pos": 124
+      "pos": 125
     },
     {
       "jugador": "Nathaniel Brown",
       "equipo": "Alemania",
       "goles": 1,
-      "pos": 125
+      "pos": 126
     },
     {
       "jugador": "Nestory Irankunda",
       "equipo": "Australia",
       "goles": 1,
-      "pos": 126
+      "pos": 127
     },
     {
       "jugador": "Nico Schlotterbeck",
       "equipo": "Alemania",
       "goles": 1,
-      "pos": 127
+      "pos": 128
     },
     {
       "jugador": "Nikola Vlasic",
       "equipo": "Croacia",
       "goles": 1,
-      "pos": 128
+      "pos": 129
     },
     {
       "jugador": "Nilson Angulo",
       "equipo": "Ecuador",
       "goles": 1,
-      "pos": 129
+      "pos": 130
     },
     {
       "jugador": "Nizar Al-Rashdan",
       "equipo": "Jordania",
       "goles": 1,
-      "pos": 130
+      "pos": 131
     },
     {
       "jugador": "Nuno Mendes",
       "equipo": "Portugal",
       "goles": 1,
-      "pos": 131
+      "pos": 132
     },
     {
       "jugador": "Oh Hyeon-Gyu",
       "equipo": "Corea del Sur",
       "goles": 1,
-      "pos": 132
+      "pos": 133
     },
     {
       "jugador": "Omar Rekik",
       "equipo": "Túnez",
       "goles": 1,
-      "pos": 133
+      "pos": 134
     },
     {
       "jugador": "Petar Musa",
       "equipo": "Croacia",
       "goles": 1,
-      "pos": 134
+      "pos": 135
     },
     {
       "jugador": "Petar Sucic",
       "equipo": "Croacia",
       "goles": 1,
-      "pos": 135
+      "pos": 136
     },
     {
       "jugador": "Promise David",
       "equipo": "Canadá",
       "goles": 1,
-      "pos": 136
+      "pos": 137
     },
     {
       "jugador": "Rafael Leão",
       "equipo": "Portugal",
       "goles": 1,
-      "pos": 137
+      "pos": 138
     },
     {
       "jugador": "Rafik Belghali",
       "equipo": "Argelia",
       "goles": 1,
-      "pos": 138
+      "pos": 139
     },
     {
       "jugador": "Romano Schmid",
       "equipo": "Austria",
       "goles": 1,
-      "pos": 139
+      "pos": 140
     },
     {
       "jugador": "Sasa Kalajdzic",
       "equipo": "Austria",
       "goles": 1,
-      "pos": 140
+      "pos": 141
     },
     {
       "jugador": "Sebastian Berhalter",
       "equipo": "EE.UU.",
       "goles": 1,
-      "pos": 141
+      "pos": 142
     },
     {
       "jugador": "Soufiane Rahimi",
       "equipo": "Marruecos",
       "goles": 1,
-      "pos": 142
+      "pos": 143
     },
     {
       "jugador": "Stephen Eustáquio",
       "equipo": "Canadá",
       "goles": 1,
-      "pos": 143
+      "pos": 144
     },
     {
       "jugador": "Teboho Mokoena",
       "equipo": "Sudáfrica",
       "goles": 1,
-      "pos": 144
+      "pos": 145
     },
     {
       "jugador": "Thapelo Maseko",
       "equipo": "Sudáfrica",
       "goles": 1,
-      "pos": 145
+      "pos": 146
     },
     {
       "jugador": "Thelo Aasgaard",
       "equipo": "Noruega",
       "goles": 1,
-      "pos": 146
+      "pos": 147
     },
     {
       "jugador": "Trézéguet",
       "equipo": "Egipto",
       "goles": 1,
-      "pos": 147
+      "pos": 148
     },
     {
       "jugador": "Viktor Gyökeres",
       "equipo": "Suecia",
       "goles": 1,
-      "pos": 148
+      "pos": 149
     },
     {
       "jugador": "Virgil van Dijk",
       "equipo": "Países Bajos",
       "goles": 1,
-      "pos": 149
+      "pos": 150
     },
     {
       "jugador": "Wilson Isidor",
       "equipo": "Haití",
       "goles": 1,
-      "pos": 150
+      "pos": 151
     },
     {
       "jugador": "Álex Baena",
       "equipo": "España",
       "goles": 1,
-      "pos": 151
+      "pos": 152
     },
     {
       "jugador": "Álvaro Fidalgo",
       "equipo": "México",
       "goles": 1,
-      "pos": 152
+      "pos": 153
     }
   ]
 }

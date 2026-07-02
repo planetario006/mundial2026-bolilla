@@ -1481,7 +1481,7 @@
     {
       "jugador": "Habib Diarra",
       "equipo": "Senegal",
-      "minuto": "25'",
+      "minuto": "24'",
       "tipo": "Gol"
     },
     {
@@ -1507,6 +1507,20 @@
       "equipo": "Bélgica",
       "minuto": "120'+5'",
       "tipo": "Penalti"
+    }
+  ],
+  "Bosnia|EE.UU.|2026-07-02": [
+    {
+      "jugador": "Folarin Balogun",
+      "equipo": "EE.UU.",
+      "minuto": "45'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Malik Tillman",
+      "equipo": "EE.UU.",
+      "minuto": "82'",
+      "tipo": "Gol"
     }
   ]
 }
