@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-07-02T15:10:48+00:00",
+    "actualizado": "2026-07-02T15:21:40+00:00",
     "total_partidos_jugados": 81,
     "total_partidos": 88,
     "fase_grupos_terminada": false
@@ -720,29 +720,6 @@
       "pos": 31
     },
     {
-      "equipo": "Chequia",
-      "grupo": "A",
-      "bombo": "Bombo 4",
-      "gf": 2,
-      "gc": 6,
-      "ta": 0,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": -14,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "premio_menos_puntos": 0,
-      "puntos_totales": -30,
-      "bonus_ronda_dieciseisavos": 0,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 32
-    },
-    {
       "equipo": "Corea del Sur",
       "grupo": "A",
       "bombo": "Bombo 5",
@@ -763,7 +740,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 33
+      "pos": 32
     },
     {
       "equipo": "Turquía",
@@ -786,7 +763,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 34
+      "pos": 33
     },
     {
       "equipo": "Bosnia",
@@ -805,6 +782,29 @@
       "premio_menos_puntos": 0,
       "puntos_totales": -33,
       "bonus_ronda_dieciseisavos": 25,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 34
+    },
+    {
+      "equipo": "Chequia",
+      "grupo": "A",
+      "bombo": "Bombo 4",
+      "gf": 2,
+      "gc": 6,
+      "ta": 1,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": -14,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "premio_menos_puntos": 0,
+      "puntos_totales": -33,
+      "bonus_ronda_dieciseisavos": 0,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
@@ -2226,7 +2226,7 @@
       "visitante": "Sudáfrica",
       "gf_local": 1,
       "gf_visit": 1,
-      "ta_local": 0,
+      "ta_local": 1,
       "doblea_local": 0,
       "rd_local": 0,
       "ta_visit": 0,
@@ -2242,13 +2242,13 @@
       "puntos_local": {
         "gf": 1,
         "gc": -3,
-        "ta": 0,
+        "ta": -3,
         "doblea": 0,
         "rd": 0,
         "penfall": 0,
         "penpar": 0,
         "bonus_resultado": 2,
-        "total": 0
+        "total": -3
       },
       "puntos_visit": {
         "gf": 1,
@@ -5004,7 +5004,7 @@
           "visitante": "Sudáfrica",
           "gf_local": 1,
           "gf_visit": 1,
-          "ta_local": 0,
+          "ta_local": 1,
           "doblea_local": 0,
           "rd_local": 0,
           "ta_visit": 0,
@@ -5020,13 +5020,13 @@
           "puntos_local": {
             "gf": 1,
             "gc": -3,
-            "ta": 0,
+            "ta": -3,
             "doblea": 0,
             "rd": 0,
             "penfall": 0,
             "penpar": 0,
             "bonus_resultado": 2,
-            "total": 0
+            "total": -3
           },
           "puntos_visit": {
             "gf": 1,
@@ -9623,7 +9623,7 @@
       },
       {
         "equipo": "Chequia",
-        "puntos": -30
+        "puntos": -33
       },
       {
         "equipo": "Túnez",
