@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-07-02T15:21:40+00:00",
+    "actualizado": "2026-07-02T15:22:42+00:00",
     "total_partidos_jugados": 81,
     "total_partidos": 88,
     "fase_grupos_terminada": false
@@ -697,29 +697,6 @@
       "pos": 30
     },
     {
-      "equipo": "Sudáfrica",
-      "grupo": "A",
-      "bombo": "Bombo 6",
-      "gf": 2,
-      "gc": 4,
-      "ta": 3,
-      "doblea": 0,
-      "rd": 2,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": -9,
-      "bonus_grupo": 0,
-      "premio_final": 0,
-      "premio_menos_puntos": 0,
-      "puntos_totales": -27,
-      "bonus_ronda_dieciseisavos": 25,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 31
-    },
-    {
       "equipo": "Corea del Sur",
       "grupo": "A",
       "bombo": "Bombo 5",
@@ -740,7 +717,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 32
+      "pos": 31
     },
     {
       "equipo": "Turquía",
@@ -763,7 +740,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 33
+      "pos": 32
     },
     {
       "equipo": "Bosnia",
@@ -786,7 +763,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 34
+      "pos": 33
     },
     {
       "equipo": "Chequia",
@@ -805,6 +782,29 @@
       "premio_menos_puntos": 0,
       "puntos_totales": -33,
       "bonus_ronda_dieciseisavos": 0,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 34
+    },
+    {
+      "equipo": "Sudáfrica",
+      "grupo": "A",
+      "bombo": "Bombo 6",
+      "gf": 2,
+      "gc": 4,
+      "ta": 5,
+      "doblea": 0,
+      "rd": 2,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": -9,
+      "bonus_grupo": 0,
+      "premio_final": 0,
+      "premio_menos_puntos": 0,
+      "puntos_totales": -33,
+      "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
@@ -2229,7 +2229,7 @@
       "ta_local": 1,
       "doblea_local": 0,
       "rd_local": 0,
-      "ta_visit": 0,
+      "ta_visit": 2,
       "doblea_visit": 0,
       "rd_visit": 0,
       "penfall_local": 0,
@@ -2253,13 +2253,13 @@
       "puntos_visit": {
         "gf": 1,
         "gc": -3,
-        "ta": 0,
+        "ta": -6,
         "doblea": 0,
         "rd": 0,
         "penfall": 0,
         "penpar": 0,
         "bonus_resultado": 2,
-        "total": 0
+        "total": -6
       }
     },
     {
@@ -5007,7 +5007,7 @@
           "ta_local": 1,
           "doblea_local": 0,
           "rd_local": 0,
-          "ta_visit": 0,
+          "ta_visit": 2,
           "doblea_visit": 0,
           "rd_visit": 0,
           "penfall_local": 0,
@@ -5031,13 +5031,13 @@
           "puntos_visit": {
             "gf": 1,
             "gc": -3,
-            "ta": 0,
+            "ta": -6,
             "doblea": 0,
             "rd": 0,
             "penfall": 0,
             "penpar": 0,
             "bonus_resultado": 2,
-            "total": 0
+            "total": -6
           }
         },
         {
@@ -9675,7 +9675,7 @@
       },
       {
         "equipo": "Sudáfrica",
-        "puntos": -27
+        "puntos": -33
       },
       {
         "equipo": "Nueva Zelanda",
