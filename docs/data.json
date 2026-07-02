@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-07-02T15:28:52+00:00",
+    "actualizado": "2026-07-02T15:30:12+00:00",
     "total_partidos_jugados": 82,
     "total_partidos": 88,
     "fase_grupos_terminada": true
@@ -283,6 +283,29 @@
       "pos": 12
     },
     {
+      "equipo": "Alemania",
+      "grupo": "E",
+      "bombo": "Bombo 1",
+      "gf": 11,
+      "gc": 5,
+      "ta": 4,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": 4,
+      "bonus_grupo": 15,
+      "premio_final": 0,
+      "premio_menos_puntos": 0,
+      "puntos_totales": 28,
+      "bonus_ronda_dieciseisavos": 25,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 13
+    },
+    {
       "equipo": "Egipto",
       "grupo": "G",
       "bombo": "Bombo 6",
@@ -298,29 +321,6 @@
       "premio_final": 0,
       "premio_menos_puntos": 0,
       "puntos_totales": 27,
-      "bonus_ronda_dieciseisavos": 25,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 13
-    },
-    {
-      "equipo": "Alemania",
-      "grupo": "E",
-      "bombo": "Bombo 1",
-      "gf": 11,
-      "gc": 5,
-      "ta": 5,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": 4,
-      "bonus_grupo": 15,
-      "premio_final": 0,
-      "premio_menos_puntos": 0,
-      "puntos_totales": 25,
       "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -4526,7 +4526,7 @@
       "visitante": "Paraguay",
       "gf_local": 1,
       "gf_visit": 1,
-      "ta_local": 4,
+      "ta_local": 3,
       "doblea_local": 0,
       "rd_local": 0,
       "ta_visit": 4,
@@ -4542,13 +4542,13 @@
       "puntos_local": {
         "gf": 1,
         "gc": -3,
-        "ta": -12,
+        "ta": -9,
         "doblea": 0,
         "rd": 0,
         "penfall": 0,
         "penpar": 0,
         "bonus_resultado": 2,
-        "total": -12
+        "total": -9
       },
       "puntos_visit": {
         "gf": 1,
@@ -9071,7 +9071,7 @@
         "visitante": "Paraguay",
         "gf_local": 1,
         "gf_visit": 1,
-        "ta_local": 4,
+        "ta_local": 3,
         "doblea_local": 0,
         "rd_local": 0,
         "ta_visit": 4,
@@ -9087,13 +9087,13 @@
         "puntos_local": {
           "gf": 1,
           "gc": -3,
-          "ta": -12,
+          "ta": -9,
           "doblea": 0,
           "rd": 0,
           "penfall": 0,
           "penpar": 0,
           "bonus_resultado": 2,
-          "total": -12
+          "total": -9
         },
         "puntos_visit": {
           "gf": 1,
@@ -9615,7 +9615,7 @@
       },
       {
         "equipo": "Alemania",
-        "puntos": 25
+        "puntos": 28
       }
     ],
     "Bombo 2": [
