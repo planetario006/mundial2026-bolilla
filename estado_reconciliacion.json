@@ -904,7 +904,7 @@
     }
   },
   "Alemania|Paraguay": {
-    "verificado": false,
+    "verificado": true,
     "ultimo_chequeo": "2026-07-02T15:10:48+00:00",
     "intentos": 1,
     "match_id": 75,
@@ -915,7 +915,8 @@
       "penpar_visit": 0
     },
     "campos_bloqueados": [
-      "ta_local"
+      "ta_local",
+      "ta_visit"
     ]
   },
   "Marruecos|Países Bajos": {
