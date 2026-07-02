@@ -330,7 +330,7 @@ def calcular_mejores_terceros(clasificaciones: dict, stats: dict, ranking_fifa: 
 def equipos_que_jugaron_fase(matches: list[dict], fase: str) -> set[str]:
     s = set()
     for p in matches:
-        if jugado(p) and p.get("fase") == fase:
+        if p.get("fase") == fase:
             s.add(p["local"])
             s.add(p["visitante"])
     return s
@@ -359,6 +359,33 @@ def calcular_bonus_grupo(matches: list[dict], clasificaciones: dict, mejores_ter
                 bonus[eq] = PUNTOS_POS_GRUPO.get(pos, 0)
     return bonus
 
+def determinar_premios_finales(matches: list[dict]) -> dict:
+    premios = {}
+    for p in matches:
+        if not jugado(p):
+            continue
+        fase = p.get("fase")
+        if fase in ("Final", "Tercer Puesto"):
+            if p["gf_local"] > p["gf_visit"]:
+                ganador, perdedor = p["local"], p["visitante"]
+            elif p["gf_local"] < p["gf_visit"]:
+                ganador, perdedor = p["visitante"], p["local"]
+            else:
+                pl = p.get("pen_tanda_local") or 0
+                pv = p.get("pen_tanda_visit") or 0
+                if pl > pv:
+                    ganador, perdedor = p["local"], p["visitante"]
+                else:
+                    ganador, perdedor = p["visitante"], p["local"]
+            
+            if fase == "Final":
+                premios["campeon"] = ganador
+                premios["subcampeon"] = perdedor
+            elif fase == "Tercer Puesto":
+                premios["tercero"] = ganador
+                premios["cuarto"] = perdedor
+    return premios
+
 def calcular_puntos_totales(matches: list[dict], manual: dict):
     stats = calcular_stats_globales(matches)
     partidos_grupos = [p for p in matches if p.get("fase") == FASE_GRUPOS_TXT]
@@ -371,9 +398,12 @@ def calcular_puntos_totales(matches: list[dict], manual: dict):
         mejores_terceros, tabla_terceros = set(), []
     bonus_grupo = calcular_bonus_grupo(matches, clasificaciones, mejores_terceros)
     bonus_ronda = calcular_bonus_ronda(matches)
-    premios = manual.get("premios_finales", {})
-    goleador_equipo = manual.get("goleador_equipo") or None
-    resultado = {}
+    
+    # 1. Obtener premios de posiciones finales
+    premios = determinar_premios_finales(matches)
+    
+    # PASADA 1: Calcular los puntajes base de todos para saber quién va último
+    puntos_base = {}
     for eq in TODOS_LOS_EQUIPOS:
         s = stats[eq]
         pts_resultado = s["PtsResultado"]
@@ -383,8 +413,8 @@ def calcular_puntos_totales(matches: list[dict], manual: dict):
         premio_final = PUNTOS_PREMIO_FINAL.get(
             next((k for k, v in premios.items() if v == eq), None), 0
         )
-        pts_goleador = PUNTOS_MAXIMO_GOLEADOR if goleador_equipo == eq else 0
-        total = (
+        
+        base_total = (
             s["GF"] * PUNTOS_GOL_FAVOR
             + s["GC"] * PUNTOS_GOL_CONTRA
             + s["TA"] * PUNTOS_TARJETA_AMARILLA
@@ -396,8 +426,29 @@ def calcular_puntos_totales(matches: list[dict], manual: dict):
             + b_grupo
             + b_ronda_total
             + premio_final
-            + pts_goleador
         )
+        puntos_base[eq] = base_total
+
+    # 2. Identificar automáticamente la selección con menos puntos
+    equipo_colista = min(TODOS_LOS_EQUIPOS, key=lambda eq: puntos_base[eq])
+    premios["menos_puntos"] = equipo_colista
+
+    # PASADA 2: Armar el resultado final aplicando el bono de +10 al colista detectado
+    resultado = {}
+    for eq in TODOS_LOS_EQUIPOS:
+        s = stats[eq]
+        pts_resultado = s["PtsResultado"]
+        b_grupo = bonus_grupo.get(eq, 0)
+        b_ronda_fases = bonus_ronda.get(eq, {fk: 0 for fk in FASES_KEYS.values()})
+        b_ronda_total = sum(b_ronda_fases.values())
+        premio_final = PUNTOS_PREMIO_FINAL.get(
+            next((k for k, v in premios.items() if v == eq), None), 0
+        )
+        
+        # Asignar los 10 puntos si es el colista actual
+        pts_menos_puntos = 10 if eq == equipo_colista else 0
+        total = puntos_base[eq] + pts_menos_puntos
+        
         fila = {
             "equipo": eq,
             "grupo": EQUIPO_A_GRUPO[eq],
@@ -407,13 +458,15 @@ def calcular_puntos_totales(matches: list[dict], manual: dict):
             "bonus_resultado": pts_resultado,
             "bonus_grupo": b_grupo,
             "premio_final": premio_final,
-            "goleador": pts_goleador,
+            "premio_menos_puntos": pts_menos_puntos, # Guardamos el desglose individual
             "puntos_totales": total,
         }
         for fase_key in FASES_KEYS.values():
             fila[f"bonus_ronda_{fase_key}"] = b_ronda_fases.get(fase_key, 0)
         resultado[eq] = fila
-    return resultado, clasificaciones, tabla_terceros
+        
+    return resultado, clasificaciones, tabla_terceros, premios
+
 def _desglose_puntos_partido(gf: int, gc: int, ta: int, da: int, rd: int, pf: int, pp: int, pts_resultado: int) -> dict:
     """Desglose de puntos fantasy que aporta UN equipo en UN partido concreto.
     Usa exactamente las mismas constantes que calcular_puntos_totales, así que
@@ -463,14 +516,15 @@ def _partido_resumen(p: dict) -> dict:
         "ta_visit": ta_v, "doblea_visit": da_v, "rd_visit": rd_v,
         "penfall_local": pf_l, "penpar_local": pp_l,
         "penfall_visit": pf_v, "penpar_visit": pp_v,
-        "pen_tanda_local": p.get("pen_tanda_local"),
-        "pen_tanda_visit": p.get("pen_tanda_visit"),
+        "pen_tanda_local": p.get("penaltis_local"),
+        "pen_tanda_visit": p.get("penaltis_visit"),
         "jugado": j,
         "puntos_local": puntos_local,
         "puntos_visit": puntos_visit,
     }
 def generar_data_json(matches: list[dict], manual: dict) -> dict:
-    puntos, clasificaciones, tabla_terceros = calcular_puntos_totales(matches, manual)
+    # Recogemos también "premios" del retorno modificado
+    puntos, clasificaciones, tabla_terceros, premios = calcular_puntos_totales(matches, manual)
     ranking = sorted(puntos.values(), key=lambda d: d["puntos_totales"], reverse=True)
     for i, fila in enumerate(ranking, start=1):
         fila["pos"] = i
@@ -516,8 +570,7 @@ def generar_data_json(matches: list[dict], manual: dict) -> dict:
         "eliminacion": eliminacion_out,
         "bombos": bombos_out,
         "mejores_terceros": tabla_terceros,
-        "premios_finales": manual.get("premios_finales", {}),
-        "goleador_equipo": manual.get("goleador_equipo"),
+        "premios_finales": premios,
     }
 def cargar_json(path: Path, default):
     if not Path(path).exists():
