@@ -1,15 +1,5 @@
 [
   {
-    "ref": "Bosnia|EE.UU.::ta_visit",
-    "match_id": 82,
-    "local": "EE.UU.",
-    "visitante": "Bosnia",
-    "campo": "ta_visit",
-    "valor_wiki": 2,
-    "valor_scraper": 1,
-    "detectado": "2026-07-02T21:14:00+00:00"
-  },
-  {
     "ref": "Austria|España::ta_visit",
     "match_id": 83,
     "local": "España",
