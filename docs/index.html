@@ -134,6 +134,8 @@
   .match-team{flex:1; min-width:0; font-size:14px; font-weight:500;}
   .match-team.right{text-align:right;}
   .match-score{display:flex; flex-direction:column; align-items:center; gap:2px; flex-shrink:0; min-width:60px;}
+  .match-penalty {margin-top: 2px;font-size: 11px;color: var(--chalk-dim);font-weight: 600;line-height: 1;font-family: 'JetBrains Mono', monospace;}
+  .match-penalty .winner {color: var(--win);font-weight: 700;}
   .match-meta{display:grid; grid-template-columns: 1fr auto 1fr; align-items:center; padding:0 12px 10px; font-size:10px; color:var(--chalk-dim);}
   .meta-fase{text-align:center; font-size:10px;}
   .meta-cards-left{text-align:left;}
@@ -412,8 +414,7 @@ const CATEGORIAS = [
   { key:'bonus_ronda_cuartos',       label:'Cuartos de final',       short:'C4',  icon:'🏆', calc:f=>f.bonus_ronda_cuartos },
   { key:'bonus_ronda_semifinal',     label:'Semifinal',              short:'SF',  icon:'🏆', calc:f=>f.bonus_ronda_semifinal },
   { key:'bonus_ronda_final',         label:'Final',                  short:'FIN', icon:'🏆', calc:f=>f.bonus_ronda_final },
-  { key:'premio_final',    label:'Premio final',         short:'PRE', icon:'🥇', calc:f=>f.premio_final },
-  { key:'goleador',        label:'Máximo goleador',      short:'GOL', icon:'👟', calc:f=>f.goleador },
+  { key:'premio_final', label:'Premio final', short:'PRE', icon:'🥇', calc: f => (f.premio_final || 0) + (f.premio_menos_puntos || 0) },
 ];
 let filtroSel = new Set(CATEGORIAS.map(c=>c.key));   // por defecto: todas activas
 // Subconjunto de conceptos que aplican a UN partido (sin posición de grupo,
@@ -646,12 +647,28 @@ function matchRow(p){
   const golesVisitante = (p.gf_visit !== null) ? p.gf_visit : "";
   
   const displayScore = `${golesLocal} - ${golesVisitante}`;
+
+  // CONTROL ESTRICTO: Solo es válido si ambos valores son números reales
+  // CONTROL SEGURO: Solo hay penaltis si el partido quedó empate Y alguien anotó en la tanda
+  const hasPen = p.pen_tanda_local != null && 
+                 p.pen_tanda_visit != null && 
+                 p.gf_local === p.gf_visit && 
+                 (p.pen_tanda_local > 0 || p.pen_tanda_visit > 0);
+  const penWinLocal = hasPen && p.pen_tanda_local > p.pen_tanda_visit;
+  const penWinVisit = hasPen && p.pen_tanda_visit > p.pen_tanda_local;
+  
+  // HTML compacto que se acopla debajo de la caja del marcador
+  const penRow = hasPen ? `
+      <div class="match-penalty">
+        (<span class="${penWinLocal ? 'winner' : ''}">${p.pen_tanda_local}</span>-<span class="${penWinVisit ? 'winner' : ''}">${p.pen_tanda_visit}</span>)
+      </div>` : '';
   
   const cabecera = `
       <div class="match-row">
         <div class="match-team">${p.local}</div>
         <div class="match-score">
           <span class="scorebox amber">${displayScore}</span>
+          ${penRow}
         </div>
         <div class="match-team right">${p.visitante}</div>
       </div>
@@ -661,9 +678,7 @@ function matchRow(p){
         <div class="meta-cards-right">${tarjetas(false)}</div>
       </div>
   `;
-  // Si el partido no se ha jugado, o el data.json todavía no trae el
-  // desglose de puntos (versión antigua de mundial_core.py), se muestra
-  // igual que antes, sin la parte desplegable.
+
   if(!p.jugado || !p.puntos_local || !p.puntos_visit){
     return `<div class="match-item">${cabecera}</div>`;
   }
@@ -863,7 +878,7 @@ function bracketHTML(elim){
 
   const BRACKET_SLOTS = {
     r32L:  [74, 77, 73, 75, 83, 84, 81, 82],
-    r16L:  [89, 90, 93, 94],
+    r16L:  [89, 90, 94, 93],
     qfL:   [97, 98],
     sfL:   [101],
     final: [104],
@@ -1160,7 +1175,6 @@ function _buscarGoleadorTop5(top5, nombreElegido){
 // que se aplica después de calcular a todos, porque depende de comparar entre todos).
 function calcularPuntosParticipante(participante){
   const nombresBombos = Object.keys(DATA.bombos || {});
-  const top5 = (DATA.goleadores || []).slice(0,5);
   const desglose = [];
   let total = 0;
   nombresBombos.forEach(nombreBombo=>{
@@ -1170,17 +1184,8 @@ function calcularPuntosParticipante(participante){
       : null;
     const pts = item ? item.puntos : 0;
     total += pts;
-    desglose.push({ bombo: nombreBombo, valor: equipoElegido || '—', equipo: equipoElegido || null, puntos: pts, esGoleador:false });
+    desglose.push({ bombo: nombreBombo, valor: equipoElegido || '—', equipo: equipoElegido || null, puntos: pts });
   });
-  const NB_GOL = 'Máximo goleador';
-  const jugadorElegido = participante.elecciones?.[NB_GOL];
-  let ptsGoleador = 0;
-  if(jugadorElegido != null){
-    const idx = _buscarGoleadorTop5(top5, jugadorElegido);
-    ptsGoleador = idx === 0 ? PUNTOS_GOLEADOR_TOP1 : 0;
-  }
-  total += ptsGoleador;
-  desglose.push({ bombo: NB_GOL, valor: jugadorElegido || '—', equipo: null, puntos: ptsGoleador, esGoleador:true });
   return { total, desglose };
 }
 function calcularBolilla(){
@@ -1223,7 +1228,7 @@ function renderBolilla(){
   const hayCampeon = !!(DATA.premios_finales && DATA.premios_finales.campeon);
   el.innerHTML = `
     <div class="section-title">Bolilla · ${filas.length} participantes</div>
-    ${!hayCampeon ? `<div class="empty-note" style="margin:0 2px 12px; font-size:11.5px;"></div>` : ''}
+    ${!hayCampeon ? `<div class="empty-note" style="margin:0 2px 12px; font-size:11.5px;">El bonus de +10 al último clasificado se aplicará automáticamente en cuanto el torneo tenga campeón.</div>` : ''}
     <div class="card">
       ${filas.map(f=>{
         const modo = bolillaVistaModo.get(f.nombre) || 'equipos';
@@ -1264,7 +1269,7 @@ function pdEquiposHTML(f){
   return `
     ${f.desglose.map(d=>`
       <div class="pd-row">
-        <span class="pd-bombo">${d.esGoleador ? 'Goleador' : d.bombo}</span>
+        <span class="pd-bombo">${d.bombo}</span>
         <span class="pd-equipo">${d.valor}</span>
         <span class="mono ${scoreClass(d.puntos)}">${fmtPts(d.puntos)}</span>
       </div>`).join('')}
@@ -1281,17 +1286,6 @@ function pdEquiposHTML(f){
 // pestaña Ranking (CATEGORIAS), no una suma aparte.
 function pdDesempenoHTML(f){
   const bloques = f.desglose.map(d=>{
-    if(d.esGoleador){
-      return `
-        <div class="pd-desempeno-bloque">
-          <div class="pd-desempeno-cab">
-            <span class="pd-bombo">Goleador</span>
-            <span class="pd-equipo">${d.valor}</span>
-            <span class="mono ${scoreClass(d.puntos)}">${fmtPts(d.puntos)}</span>
-          </div>
-          <div class="pd-desempeno-nota">Puntúa solo si es el máximo goleador del torneo (top 1): +${PUNTOS_GOLEADOR_TOP1} si lo es, +0 en cualquier otra posición.</div>
-        </div>`;
-    }
     const equipoData = _buscarEquipoRanking(d.equipo);
     if(!equipoData){
       return `
@@ -1334,20 +1328,17 @@ function pdDesempenoHTML(f){
 // Vista de totales por categoría: en vez de ver cada equipo por separado,
 // suma cuánto han aportado TODOS los equipos elegidos por el participante
 // en cada concepto (GF, GC, tarjetas...) — para ver de un vistazo en qué
-// categorías está ganando o perdiendo puntos en conjunto. El goleador
-// elegido no entra aquí (no tiene GF/GC/tarjetas propios): se muestra
-// aparte con su aportación total, igual que en las otras dos vistas.
+// categorías está ganando o perdiendo puntos en conjunto.
 function pdTotalesHTML(f){
   const equiposConDatos = f.desglose
-    .filter(d => !d.esGoleador)
     .map(d => _buscarEquipoRanking(d.equipo))
     .filter(Boolean);
-  const sinDatos = f.desglose.filter(d => !d.esGoleador).length - equiposConDatos.length;
+  const sinDatos = f.desglose.length - equiposConDatos.length;
   const totalesPorCategoria = CATEGORIAS.map(c=>({
     short: c.short, icon: c.icon, label: c.label,
     valor: equiposConDatos.reduce((acc, eq) => acc + c.calc(eq), 0),
   }));
-  const dGoleador = f.desglose.find(d => d.esGoleador);
+  
   return `
     <div class="pd-desempeno-hint">Suma, categoría a categoría, de los puntos que aportan entre todos los equipos que ha elegido este participante (${equiposConDatos.length} equipo${equiposConDatos.length===1?'':'s'} con datos${sinDatos>0?`, ${sinDatos} sin datos todavía`:''}).</div>
     <div class="breakdown-h pd-totales-grid">
@@ -1357,12 +1348,6 @@ function pdTotalesHTML(f){
           <div class="val ${scoreClass(t.valor)}">${fmtPts(t.valor)}</div>
         </div>`).join('')}
     </div>
-    ${dGoleador ? `
-      <div class="pd-row">
-        <span class="pd-bombo">Goleador</span>
-        <span class="pd-equipo">${dGoleador.valor}</span>
-        <span class="mono ${scoreClass(dGoleador.puntos)}">${fmtPts(dGoleador.puntos)}</span>
-      </div>` : ''}
     ${f.bonusUltimo ? `
       <div class="pd-row">
         <span class="pd-bombo">Bonus</span>
