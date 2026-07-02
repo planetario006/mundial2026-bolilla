@@ -1522,5 +1522,25 @@
       "minuto": "82'",
       "tipo": "Gol"
     }
+  ],
+  "Austria|España|2026-07-02": [
+    {
+      "jugador": "Mikel Oyarzabal",
+      "equipo": "España",
+      "minuto": "36'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Pedro Porro",
+      "equipo": "España",
+      "minuto": "66'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Mikel Oyarzabal",
+      "equipo": "España",
+      "minuto": "89'",
+      "tipo": "Gol"
+    }
   ]
 }
