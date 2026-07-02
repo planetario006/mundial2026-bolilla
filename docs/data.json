@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-07-02T21:31:47+00:00",
+    "actualizado": "2026-07-02T22:31:40+00:00",
     "total_partidos_jugados": 83,
     "total_partidos": 96,
     "fase_grupos_terminada": true
@@ -30,6 +30,29 @@
       "pos": 1
     },
     {
+      "equipo": "España",
+      "grupo": "H",
+      "bombo": "Bombo 1",
+      "gf": 8,
+      "gc": 0,
+      "ta": 2,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": 17,
+      "bonus_grupo": 15,
+      "premio_final": 0,
+      "premio_menos_puntos": 0,
+      "puntos_totales": 94,
+      "bonus_ronda_dieciseisavos": 25,
+      "bonus_ronda_octavos": 35,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 2
+    },
+    {
       "equipo": "México",
       "grupo": "A",
       "bombo": "Bombo 2",
@@ -50,7 +73,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 2
+      "pos": 3
     },
     {
       "equipo": "Inglaterra",
@@ -73,7 +96,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 3
+      "pos": 4
     },
     {
       "equipo": "Brasil",
@@ -96,7 +119,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 4
+      "pos": 5
     },
     {
       "equipo": "Marruecos",
@@ -119,7 +142,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 5
+      "pos": 6
     },
     {
       "equipo": "Bélgica",
@@ -139,29 +162,6 @@
       "puntos_totales": 59,
       "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 35,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 6
-    },
-    {
-      "equipo": "España",
-      "grupo": "H",
-      "bombo": "Bombo 1",
-      "gf": 8,
-      "gc": 0,
-      "ta": 2,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": 17,
-      "bonus_grupo": 15,
-      "premio_final": 0,
-      "premio_menos_puntos": 0,
-      "puntos_totales": 59,
-      "bonus_ronda_dieciseisavos": 25,
-      "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
@@ -9763,8 +9763,8 @@
         "fecha": "2026-07-06",
         "fase": "Octavos de final",
         "grupo": "",
-        "local": "EE.UU.",
-        "visitante": "Bélgica",
+        "local": "Ganador Partido 83",
+        "visitante": "España",
         "gf_local": null,
         "gf_visit": null,
         "ta_local": 0,
@@ -9789,8 +9789,8 @@
         "fecha": "2026-07-06",
         "fase": "Octavos de final",
         "grupo": "",
-        "local": "Ganador Partido 81",
-        "visitante": "Ganador Partido 82",
+        "local": "EE.UU.",
+        "visitante": "Bélgica",
         "gf_local": null,
         "gf_visit": null,
         "ta_local": 0,
@@ -9873,16 +9873,16 @@
         "puntos": 104
       },
       {
+        "equipo": "España",
+        "puntos": 94
+      },
+      {
         "equipo": "Inglaterra",
         "puntos": 82
       },
       {
         "equipo": "Brasil",
         "puntos": 74
-      },
-      {
-        "equipo": "España",
-        "puntos": 59
       },
       {
         "equipo": "Argentina",
