@@ -5,18 +5,8 @@
     "local": "EE.UU.",
     "visitante": "Bosnia",
     "campo": "ta_visit",
-    "valor_wiki": 0,
+    "valor_wiki": 2,
     "valor_scraper": 1,
-    "detectado": "2026-07-02T15:42:32+00:00"
-  },
-  {
-    "ref": "Bosnia|EE.UU.::rd_local",
-    "match_id": 82,
-    "local": "EE.UU.",
-    "visitante": "Bosnia",
-    "campo": "rd_local",
-    "valor_wiki": 0,
-    "valor_scraper": 1,
-    "detectado": "2026-07-02T15:42:32+00:00"
+    "detectado": "2026-07-02T17:54:07+00:00"
   }
 ]

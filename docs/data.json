@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-07-02T15:42:32+00:00",
+    "actualizado": "2026-07-02T17:54:07+00:00",
     "total_partidos_jugados": 82,
     "total_partidos": 96,
     "fase_grupos_terminada": true
@@ -122,29 +122,6 @@
       "pos": 5
     },
     {
-      "equipo": "EE.UU.",
-      "grupo": "D",
-      "bombo": "Bombo 4",
-      "gf": 10,
-      "gc": 4,
-      "ta": 5,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": 7,
-      "bonus_grupo": 15,
-      "premio_final": 0,
-      "premio_menos_puntos": 0,
-      "puntos_totales": 65,
-      "bonus_ronda_dieciseisavos": 25,
-      "bonus_ronda_octavos": 35,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 6
-    },
-    {
       "equipo": "Bélgica",
       "grupo": "G",
       "bombo": "Bombo 2",
@@ -165,7 +142,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 7
+      "pos": 6
     },
     {
       "equipo": "Canadá",
@@ -180,6 +157,29 @@
       "penpar": 0,
       "bonus_resultado": 4,
       "bonus_grupo": 10,
+      "premio_final": 0,
+      "premio_menos_puntos": 0,
+      "puntos_totales": 53,
+      "bonus_ronda_dieciseisavos": 25,
+      "bonus_ronda_octavos": 35,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 7
+    },
+    {
+      "equipo": "EE.UU.",
+      "grupo": "D",
+      "bombo": "Bombo 4",
+      "gf": 10,
+      "gc": 4,
+      "ta": 5,
+      "doblea": 0,
+      "rd": 1,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": 7,
+      "bonus_grupo": 15,
       "premio_final": 0,
       "premio_menos_puntos": 0,
       "puntos_totales": 53,
@@ -720,29 +720,6 @@
       "pos": 31
     },
     {
-      "equipo": "Bosnia",
-      "grupo": "B",
-      "bombo": "Bombo 5",
-      "gf": 5,
-      "gc": 8,
-      "ta": 6,
-      "doblea": 0,
-      "rd": 1,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": -9,
-      "bonus_grupo": 5,
-      "premio_final": 0,
-      "premio_menos_puntos": 0,
-      "puntos_totales": -28,
-      "bonus_ronda_dieciseisavos": 25,
-      "bonus_ronda_octavos": 0,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 32
-    },
-    {
       "equipo": "Irán",
       "grupo": "G",
       "bombo": "Bombo 8",
@@ -763,7 +740,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 33
+      "pos": 32
     },
     {
       "equipo": "Corea del Sur",
@@ -786,7 +763,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 34
+      "pos": 33
     },
     {
       "equipo": "Turquía",
@@ -809,7 +786,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 35
+      "pos": 34
     },
     {
       "equipo": "Chequia",
@@ -828,6 +805,29 @@
       "premio_menos_puntos": 0,
       "puntos_totales": -33,
       "bonus_ronda_dieciseisavos": 0,
+      "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 35
+    },
+    {
+      "equipo": "Bosnia",
+      "grupo": "B",
+      "bombo": "Bombo 5",
+      "gf": 5,
+      "gc": 8,
+      "ta": 8,
+      "doblea": 0,
+      "rd": 1,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": -9,
+      "bonus_grupo": 5,
+      "premio_final": 0,
+      "premio_menos_puntos": 0,
+      "puntos_totales": -34,
+      "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
@@ -4850,8 +4850,8 @@
       "gf_visit": 0,
       "ta_local": 0,
       "doblea_local": 0,
-      "rd_local": 0,
-      "ta_visit": 0,
+      "rd_local": 1,
+      "ta_visit": 2,
       "doblea_visit": 0,
       "rd_visit": 0,
       "penfall_local": 0,
@@ -4866,22 +4866,22 @@
         "gc": 0,
         "ta": 0,
         "doblea": 0,
-        "rd": 0,
+        "rd": -12,
         "penfall": 0,
         "penpar": 0,
         "bonus_resultado": 5,
-        "total": 7
+        "total": -5
       },
       "puntos_visit": {
         "gf": 0,
         "gc": -6,
-        "ta": 0,
+        "ta": -6,
         "doblea": 0,
         "rd": 0,
         "penfall": 0,
         "penpar": 0,
         "bonus_resultado": -8,
-        "total": -14
+        "total": -20
       }
     }
   ],
@@ -9395,8 +9395,8 @@
         "gf_visit": 0,
         "ta_local": 0,
         "doblea_local": 0,
-        "rd_local": 0,
-        "ta_visit": 0,
+        "rd_local": 1,
+        "ta_visit": 2,
         "doblea_visit": 0,
         "rd_visit": 0,
         "penfall_local": 0,
@@ -9411,22 +9411,22 @@
           "gc": 0,
           "ta": 0,
           "doblea": 0,
-          "rd": 0,
+          "rd": -12,
           "penfall": 0,
           "penpar": 0,
           "bonus_resultado": 5,
-          "total": 7
+          "total": -5
         },
         "puntos_visit": {
           "gf": 0,
           "gc": -6,
-          "ta": 0,
+          "ta": -6,
           "doblea": 0,
           "rd": 0,
           "penfall": 0,
           "penpar": 0,
           "bonus_resultado": -8,
-          "total": -14
+          "total": -20
         }
       },
       {
@@ -9882,7 +9882,7 @@
     "Bombo 4": [
       {
         "equipo": "EE.UU.",
-        "puntos": 65
+        "puntos": 53
       },
       {
         "equipo": "Suiza",
@@ -9911,16 +9911,16 @@
         "puntos": 12
       },
       {
-        "equipo": "Bosnia",
-        "puntos": -28
-      },
-      {
         "equipo": "Corea del Sur",
         "puntos": -30
       },
       {
         "equipo": "Turquía",
         "puntos": -32
+      },
+      {
+        "equipo": "Bosnia",
+        "puntos": -34
       },
       {
         "equipo": "Arabia Saudí",
