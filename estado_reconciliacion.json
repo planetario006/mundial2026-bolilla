@@ -1011,8 +1011,8 @@
   },
   "Austria|España": {
     "verificado": true,
-    "ultimo_chequeo": "2026-07-03T01:18:25+00:00",
-    "intentos": 6,
+    "ultimo_chequeo": "2026-07-03T04:26:57+00:00",
+    "intentos": 7,
     "match_id": 83,
     "valores_espn_aplicados": {
       "penfall_local": 0,
@@ -1026,8 +1026,8 @@
   },
   "Croacia|Portugal": {
     "verificado": true,
-    "ultimo_chequeo": "2026-07-03T01:18:25+00:00",
-    "intentos": 1,
+    "ultimo_chequeo": "2026-07-03T04:26:57+00:00",
+    "intentos": 2,
     "match_id": 84,
     "valores_espn_aplicados": {
       "penfall_local": 0,
