@@ -1576,5 +1576,13 @@
       "minuto": "46'",
       "tipo": "Gol"
     }
+  ],
+  "Australia|Egipto|2026-07-03": [
+    {
+      "jugador": "Emam Ashour",
+      "equipo": "Egipto",
+      "minuto": "13'",
+      "tipo": "Gol"
+    }
   ]
 }
