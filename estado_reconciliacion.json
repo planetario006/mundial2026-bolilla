@@ -1025,7 +1025,7 @@
     ]
   },
   "Croacia|Portugal": {
-    "verificado": false,
+    "verificado": true,
     "ultimo_chequeo": "2026-07-03T01:18:25+00:00",
     "intentos": 1,
     "match_id": 84,
@@ -1036,7 +1036,8 @@
       "penpar_visit": 0
     },
     "campos_bloqueados": [
-      "ta_local"
+      "ta_local",
+      "ta_visit"
     ]
   }
 }

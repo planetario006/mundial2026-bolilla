@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-07-03T01:19:17+00:00",
+    "actualizado": "2026-07-03T01:19:51+00:00",
     "total_partidos_jugados": 84,
     "total_partidos": 96,
     "fase_grupos_terminada": true
@@ -564,7 +564,7 @@
       "bombo": "Bombo 2",
       "gf": 6,
       "gc": 7,
-      "ta": 2,
+      "ta": 4,
       "doblea": 0,
       "rd": 0,
       "penfall": 0,
@@ -573,7 +573,7 @@
       "bonus_grupo": 10,
       "premio_final": 0,
       "premio_menos_puntos": 0,
-      "puntos_totales": 8,
+      "puntos_totales": 2,
       "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 0,
       "bonus_ronda_cuartos": 0,
@@ -4943,7 +4943,7 @@
       "ta_local": 1,
       "doblea_local": 0,
       "rd_local": 0,
-      "ta_visit": 0,
+      "ta_visit": 2,
       "doblea_visit": 0,
       "rd_visit": 0,
       "penfall_local": 0,
@@ -4967,13 +4967,13 @@
       "puntos_visit": {
         "gf": 1,
         "gc": -6,
-        "ta": 0,
+        "ta": -6,
         "doblea": 0,
         "rd": 0,
         "penfall": 0,
         "penpar": 0,
         "bonus_resultado": -8,
-        "total": -13
+        "total": -19
       }
     }
   ],
@@ -9580,7 +9580,7 @@
         "ta_local": 1,
         "doblea_local": 0,
         "rd_local": 0,
-        "ta_visit": 0,
+        "ta_visit": 2,
         "doblea_visit": 0,
         "rd_visit": 0,
         "penfall_local": 0,
@@ -9604,13 +9604,13 @@
         "puntos_visit": {
           "gf": 1,
           "gc": -6,
-          "ta": 0,
+          "ta": -6,
           "doblea": 0,
           "rd": 0,
           "penfall": 0,
           "penpar": 0,
           "bonus_resultado": -8,
-          "total": -13
+          "total": -19
         }
       },
       {
@@ -9982,7 +9982,7 @@
       },
       {
         "equipo": "Croacia",
-        "puntos": 8
+        "puntos": 2
       }
     ],
     "Bombo 3": [
