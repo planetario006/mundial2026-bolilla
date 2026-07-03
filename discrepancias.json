@@ -1,15 +1,5 @@
 [
   {
-    "ref": "Croacia|Portugal::ta_local",
-    "match_id": 84,
-    "local": "Portugal",
-    "visitante": "Croacia",
-    "campo": "ta_local",
-    "valor_wiki": 0,
-    "valor_scraper": 1,
-    "detectado": "2026-07-03T01:18:25+00:00"
-  },
-  {
     "ref": "Croacia|Portugal::ta_visit",
     "match_id": 84,
     "local": "Portugal",
