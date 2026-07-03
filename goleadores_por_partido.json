@@ -1542,5 +1542,25 @@
       "minuto": "89'",
       "tipo": "Gol"
     }
+  ],
+  "Croacia|Portugal|2026-07-02": [
+    {
+      "jugador": "Ivan Perisic",
+      "equipo": "Croacia",
+      "minuto": "53'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Cristiano Ronaldo",
+      "equipo": "Portugal",
+      "minuto": "68'",
+      "tipo": "Penalti"
+    },
+    {
+      "jugador": "Gonçalo Ramos",
+      "equipo": "Portugal",
+      "minuto": "90'+4'",
+      "tipo": "Gol"
+    }
   ]
 }
