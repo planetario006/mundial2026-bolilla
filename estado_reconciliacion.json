@@ -1011,8 +1011,8 @@
   },
   "Austria|España": {
     "verificado": true,
-    "ultimo_chequeo": "2026-07-03T04:26:57+00:00",
-    "intentos": 7,
+    "ultimo_chequeo": "2026-07-03T07:47:47+00:00",
+    "intentos": 8,
     "match_id": 83,
     "valores_espn_aplicados": {
       "penfall_local": 0,
@@ -1026,8 +1026,8 @@
   },
   "Croacia|Portugal": {
     "verificado": true,
-    "ultimo_chequeo": "2026-07-03T04:26:57+00:00",
-    "intentos": 2,
+    "ultimo_chequeo": "2026-07-03T07:47:47+00:00",
+    "intentos": 3,
     "match_id": 84,
     "valores_espn_aplicados": {
       "penfall_local": 0,
@@ -1039,5 +1039,17 @@
       "ta_local",
       "ta_visit"
     ]
+  },
+  "Argelia|Suiza": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-07-03T07:47:47+00:00",
+    "intentos": 1,
+    "match_id": 85,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
   }
 }

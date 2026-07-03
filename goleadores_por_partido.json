@@ -1562,5 +1562,19 @@
       "minuto": "90'+4'",
       "tipo": "Gol"
     }
+  ],
+  "Argelia|Suiza|2026-07-03": [
+    {
+      "jugador": "Breel Embolo",
+      "equipo": "Suiza",
+      "minuto": "10'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Dan Ndoye",
+      "equipo": "Suiza",
+      "minuto": "46'",
+      "tipo": "Gol"
+    }
   ]
 }
