@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "ref": "Australia|Egipto::ta_visit",
+    "match_id": 86,
+    "local": "Australia",
+    "visitante": "Egipto",
+    "campo": "ta_visit",
+    "valor_wiki": 3,
+    "valor_scraper": 2,
+    "detectado": "2026-07-04T18:05:48+00:00"
+  }
+]

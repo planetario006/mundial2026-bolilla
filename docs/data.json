@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-07-04T16:33:24+00:00",
+    "actualizado": "2026-07-04T18:05:48+00:00",
     "total_partidos_jugados": 88,
     "total_partidos": 96,
     "fase_grupos_terminada": true
@@ -260,29 +260,6 @@
       "pos": 11
     },
     {
-      "equipo": "Egipto",
-      "grupo": "G",
-      "bombo": "Bombo 6",
-      "gf": 6,
-      "gc": 4,
-      "ta": 8,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 1,
-      "bonus_resultado": 11,
-      "bonus_grupo": 10,
-      "premio_final": 0,
-      "premio_menos_puntos": 0,
-      "puntos_totales": 56,
-      "bonus_ronda_dieciseisavos": 25,
-      "bonus_ronda_octavos": 35,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 12
-    },
-    {
       "equipo": "Canadá",
       "grupo": "B",
       "bombo": "Bombo 3",
@@ -303,7 +280,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 13
+      "pos": 12
     },
     {
       "equipo": "EE.UU.",
@@ -318,6 +295,29 @@
       "penpar": 0,
       "bonus_resultado": 7,
       "bonus_grupo": 15,
+      "premio_final": 0,
+      "premio_menos_puntos": 0,
+      "puntos_totales": 53,
+      "bonus_ronda_dieciseisavos": 25,
+      "bonus_ronda_octavos": 35,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 13
+    },
+    {
+      "equipo": "Egipto",
+      "grupo": "G",
+      "bombo": "Bombo 6",
+      "gf": 6,
+      "gc": 4,
+      "ta": 9,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 1,
+      "bonus_resultado": 11,
+      "bonus_grupo": 10,
       "premio_final": 0,
       "premio_menos_puntos": 0,
       "puntos_totales": 53,
@@ -5035,7 +5035,7 @@
       "ta_local": 0,
       "doblea_local": 0,
       "rd_local": 0,
-      "ta_visit": 2,
+      "ta_visit": 3,
       "doblea_visit": 0,
       "rd_visit": 0,
       "penfall_local": 0,
@@ -5059,13 +5059,13 @@
       "puntos_visit": {
         "gf": 1,
         "gc": -3,
-        "ta": -6,
+        "ta": -9,
         "doblea": 0,
         "rd": 0,
         "penfall": 0,
         "penpar": 0,
         "bonus_resultado": 2,
-        "total": -6
+        "total": -9
       }
     },
     {
@@ -9856,7 +9856,7 @@
         "ta_local": 0,
         "doblea_local": 0,
         "rd_local": 0,
-        "ta_visit": 2,
+        "ta_visit": 3,
         "doblea_visit": 0,
         "rd_visit": 0,
         "penfall_local": 0,
@@ -9880,13 +9880,13 @@
         "puntos_visit": {
           "gf": 1,
           "gc": -3,
-          "ta": -6,
+          "ta": -9,
           "doblea": 0,
           "rd": 0,
           "penfall": 0,
           "penpar": 0,
           "bonus_resultado": 2,
-          "total": -6
+          "total": -9
         }
       },
       {
@@ -10330,7 +10330,7 @@
     "Bombo 6": [
       {
         "equipo": "Egipto",
-        "puntos": 56
+        "puntos": 53
       },
       {
         "equipo": "Australia",
