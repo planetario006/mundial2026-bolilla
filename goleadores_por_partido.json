@@ -1610,5 +1610,13 @@
       "minuto": "103'",
       "tipo": "Gol"
     }
+  ],
+  "Colombia|Ghana|2026-07-04": [
+    {
+      "jugador": "Jhon Arias",
+      "equipo": "Colombia",
+      "minuto": "14'",
+      "tipo": "Gol"
+    }
   ]
 }
