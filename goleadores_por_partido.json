@@ -1584,5 +1584,31 @@
       "minuto": "13'",
       "tipo": "Gol"
     }
+  ],
+  "Argentina|Cabo Verde|2026-07-03": [
+    {
+      "jugador": "Lionel Messi",
+      "equipo": "Argentina",
+      "minuto": "29'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Deroy Duarte",
+      "equipo": "Cabo Verde",
+      "minuto": "59'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Lisandro Martínez",
+      "equipo": "Argentina",
+      "minuto": "92'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Sidny Lopes Cabral",
+      "equipo": "Cabo Verde",
+      "minuto": "103'",
+      "tipo": "Gol"
+    }
   ]
 }

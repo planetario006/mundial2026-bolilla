@@ -1,12 +1,22 @@
 [
   {
-    "ref": "Australia|Egipto::ta_visit",
-    "match_id": 86,
-    "local": "Australia",
-    "visitante": "Egipto",
+    "ref": "Argentina|Cabo Verde::ta_local",
+    "match_id": 87,
+    "local": "Argentina",
+    "visitante": "Cabo Verde",
+    "campo": "ta_local",
+    "valor_wiki": 0,
+    "valor_scraper": 1,
+    "detectado": "2026-07-04T01:03:19+00:00"
+  },
+  {
+    "ref": "Argentina|Cabo Verde::ta_visit",
+    "match_id": 87,
+    "local": "Argentina",
+    "visitante": "Cabo Verde",
     "campo": "ta_visit",
     "valor_wiki": 0,
-    "valor_scraper": 2,
-    "detectado": "2026-07-04T00:09:30+00:00"
+    "valor_scraper": 1,
+    "detectado": "2026-07-04T01:03:19+00:00"
   }
 ]

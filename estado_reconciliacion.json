@@ -1053,10 +1053,22 @@
     }
   },
   "Australia|Egipto": {
-    "verificado": false,
-    "ultimo_chequeo": "2026-07-04T00:09:30+00:00",
-    "intentos": 4,
+    "verificado": true,
+    "ultimo_chequeo": "2026-07-04T01:03:19+00:00",
+    "intentos": 5,
     "match_id": 86,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Argentina|Cabo Verde": {
+    "verificado": false,
+    "ultimo_chequeo": "2026-07-04T01:03:19+00:00",
+    "intentos": 1,
+    "match_id": 87,
     "valores_espn_aplicados": {
       "penfall_local": 0,
       "penfall_visit": 0,
