@@ -1,7 +1,7 @@
 {
   "meta": {
-    "actualizado": "2026-07-04T18:05:48+00:00",
-    "total_partidos_jugados": 88,
+    "actualizado": "2026-07-04T19:46:26+00:00",
+    "total_partidos_jugados": 89,
     "total_partidos": 96,
     "fase_grupos_terminada": true
   },
@@ -191,29 +191,6 @@
       "pos": 8
     },
     {
-      "equipo": "Marruecos",
-      "grupo": "C",
-      "bombo": "Bombo 2",
-      "gf": 7,
-      "gc": 4,
-      "ta": 2,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": 14,
-      "bonus_grupo": 10,
-      "premio_final": 0,
-      "premio_menos_puntos": 0,
-      "puntos_totales": 73,
-      "bonus_ronda_dieciseisavos": 25,
-      "bonus_ronda_octavos": 35,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 9
-    },
-    {
       "equipo": "Portugal",
       "grupo": "K",
       "bombo": "Bombo 2",
@@ -229,6 +206,29 @@
       "premio_final": 0,
       "premio_menos_puntos": 0,
       "puntos_totales": 71,
+      "bonus_ronda_dieciseisavos": 25,
+      "bonus_ronda_octavos": 35,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 9
+    },
+    {
+      "equipo": "Marruecos",
+      "grupo": "C",
+      "bombo": "Bombo 2",
+      "gf": 10,
+      "gc": 4,
+      "ta": 6,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": 19,
+      "bonus_grupo": 10,
+      "premio_final": 0,
+      "premio_menos_puntos": 0,
+      "puntos_totales": 69,
       "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 35,
       "bonus_ronda_cuartos": 0,
@@ -260,29 +260,6 @@
       "pos": 11
     },
     {
-      "equipo": "Canadá",
-      "grupo": "B",
-      "bombo": "Bombo 3",
-      "gf": 9,
-      "gc": 3,
-      "ta": 7,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": 4,
-      "bonus_grupo": 10,
-      "premio_final": 0,
-      "premio_menos_puntos": 0,
-      "puntos_totales": 53,
-      "bonus_ronda_dieciseisavos": 25,
-      "bonus_ronda_octavos": 35,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 12
-    },
-    {
       "equipo": "EE.UU.",
       "grupo": "D",
       "bombo": "Bombo 4",
@@ -303,7 +280,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 13
+      "pos": 12
     },
     {
       "equipo": "Egipto",
@@ -326,7 +303,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 14
+      "pos": 13
     },
     {
       "equipo": "Noruega",
@@ -349,7 +326,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 15
+      "pos": 14
     },
     {
       "equipo": "Países Bajos",
@@ -372,7 +349,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 16
+      "pos": 15
     },
     {
       "equipo": "Alemania",
@@ -392,6 +369,29 @@
       "puntos_totales": 28,
       "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 0,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 16
+    },
+    {
+      "equipo": "Canadá",
+      "grupo": "B",
+      "bombo": "Bombo 3",
+      "gf": 9,
+      "gc": 6,
+      "ta": 11,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": -4,
+      "bonus_grupo": 10,
+      "premio_final": 0,
+      "premio_menos_puntos": 0,
+      "puntos_totales": 24,
+      "bonus_ronda_dieciseisavos": 25,
+      "bonus_ronda_octavos": 35,
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
@@ -5158,6 +5158,52 @@
         "penpar": 0,
         "bonus_resultado": -8,
         "total": -20
+      }
+    },
+    {
+      "id": 89,
+      "match_num": 90,
+      "fecha": "2026-07-04",
+      "fase": "Octavos de final",
+      "grupo": "",
+      "local": "Canadá",
+      "visitante": "Marruecos",
+      "gf_local": 0,
+      "gf_visit": 3,
+      "ta_local": 4,
+      "doblea_local": 0,
+      "rd_local": 0,
+      "ta_visit": 4,
+      "doblea_visit": 0,
+      "rd_visit": 0,
+      "penfall_local": 0,
+      "penpar_local": 0,
+      "penfall_visit": 0,
+      "penpar_visit": 0,
+      "pen_tanda_local": 0,
+      "pen_tanda_visit": 0,
+      "jugado": true,
+      "puntos_local": {
+        "gf": 0,
+        "gc": -9,
+        "ta": -12,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": -8,
+        "total": -29
+      },
+      "puntos_visit": {
+        "gf": 3,
+        "gc": 0,
+        "ta": -12,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": 5,
+        "total": -4
       }
     }
   ],
@@ -9991,12 +10037,12 @@
         "grupo": "",
         "local": "Canadá",
         "visitante": "Marruecos",
-        "gf_local": null,
-        "gf_visit": null,
-        "ta_local": 0,
+        "gf_local": 0,
+        "gf_visit": 3,
+        "ta_local": 4,
         "doblea_local": 0,
         "rd_local": 0,
-        "ta_visit": 0,
+        "ta_visit": 4,
         "doblea_visit": 0,
         "rd_visit": 0,
         "penfall_local": 0,
@@ -10005,9 +10051,29 @@
         "penpar_visit": 0,
         "pen_tanda_local": 0,
         "pen_tanda_visit": 0,
-        "jugado": false,
-        "puntos_local": null,
-        "puntos_visit": null
+        "jugado": true,
+        "puntos_local": {
+          "gf": 0,
+          "gc": -9,
+          "ta": -12,
+          "doblea": 0,
+          "rd": 0,
+          "penfall": 0,
+          "penpar": 0,
+          "bonus_resultado": -8,
+          "total": -29
+        },
+        "puntos_visit": {
+          "gf": 3,
+          "gc": 0,
+          "ta": -12,
+          "doblea": 0,
+          "rd": 0,
+          "penfall": 0,
+          "penpar": 0,
+          "bonus_resultado": 5,
+          "total": -4
+        }
       },
       {
         "id": 90,
@@ -10229,12 +10295,12 @@
         "puntos": 85
       },
       {
-        "equipo": "Marruecos",
-        "puntos": 73
-      },
-      {
         "equipo": "Portugal",
         "puntos": 71
+      },
+      {
+        "equipo": "Marruecos",
+        "puntos": 69
       },
       {
         "equipo": "Bélgica",
@@ -10255,12 +10321,12 @@
         "puntos": 76
       },
       {
-        "equipo": "Canadá",
-        "puntos": 53
-      },
-      {
         "equipo": "Noruega",
         "puntos": 47
+      },
+      {
+        "equipo": "Canadá",
+        "puntos": 24
       },
       {
         "equipo": "Senegal",
@@ -10689,826 +10755,832 @@
       "pos": 24
     },
     {
+      "jugador": "Azzedine Ounahi",
+      "equipo": "Marruecos",
+      "goles": 2,
+      "pos": 25
+    },
+    {
       "jugador": "Bradley Barcola",
       "equipo": "Francia",
       "goles": 2,
-      "pos": 25
+      "pos": 26
     },
     {
       "jugador": "Breel Embolo",
       "equipo": "Suiza",
       "goles": 2,
-      "pos": 26
+      "pos": 27
     },
     {
       "jugador": "Crysencio Summerville",
       "equipo": "Países Bajos",
       "goles": 2,
-      "pos": 27
+      "pos": 28
     },
     {
       "jugador": "Cyle Larin",
       "equipo": "Canadá",
       "goles": 2,
-      "pos": 28
+      "pos": 29
     },
     {
       "jugador": "Daichi Kamada",
       "equipo": "Japón",
       "goles": 2,
-      "pos": 29
+      "pos": 30
     },
     {
       "jugador": "Daniel Muñoz",
       "equipo": "Colombia",
       "goles": 2,
-      "pos": 30
+      "pos": 31
     },
     {
       "jugador": "Emam Ashour",
       "equipo": "Egipto",
       "goles": 2,
-      "pos": 31
+      "pos": 32
     },
     {
       "jugador": "Ermin Mahmic",
       "equipo": "Bosnia",
       "goles": 2,
-      "pos": 32
+      "pos": 33
     },
     {
       "jugador": "Habib Diarra",
       "equipo": "Senegal",
       "goles": 2,
-      "pos": 33
+      "pos": 34
     },
     {
       "jugador": "Jude Bellingham",
       "equipo": "Inglaterra",
       "goles": 2,
-      "pos": 34
+      "pos": 35
     },
     {
       "jugador": "Leandro Trossard",
       "equipo": "Bélgica",
       "goles": 2,
-      "pos": 35
+      "pos": 36
     },
     {
       "jugador": "Marko Arnautovic",
       "equipo": "Austria",
       "goles": 2,
-      "pos": 36
+      "pos": 37
     },
     {
       "jugador": "Maxi Araújo",
       "equipo": "Uruguay",
       "goles": 2,
-      "pos": 37
+      "pos": 38
     },
     {
       "jugador": "Nicolas Pépé",
       "equipo": "Costa de Marfil",
       "goles": 2,
-      "pos": 38
+      "pos": 39
     },
     {
       "jugador": "Pape Gueye",
       "equipo": "Senegal",
       "goles": 2,
-      "pos": 39
+      "pos": 40
     },
     {
       "jugador": "Ramin Rezaeian",
       "equipo": "Irán",
       "goles": 2,
-      "pos": 40
+      "pos": 41
     },
     {
       "jugador": "Raúl Jiménez",
       "equipo": "México",
       "goles": 2,
-      "pos": 41
+      "pos": 42
     },
     {
       "jugador": "Riyad Mahrez",
       "equipo": "Argelia",
       "goles": 2,
-      "pos": 42
+      "pos": 43
     },
     {
       "jugador": "Romelu Lukaku",
       "equipo": "Bélgica",
       "goles": 2,
-      "pos": 43
+      "pos": 44
     },
     {
       "jugador": "Rubén Vargas",
       "equipo": "Suiza",
       "goles": 2,
-      "pos": 44
+      "pos": 45
+    },
+    {
+      "jugador": "Soufiane Rahimi",
+      "equipo": "Marruecos",
+      "goles": 2,
+      "pos": 46
     },
     {
       "jugador": "Yasin Ayari",
       "equipo": "Suecia",
       "goles": 2,
-      "pos": 45
+      "pos": 47
     },
     {
       "jugador": "Youri Tielemans",
       "equipo": "Bélgica",
       "goles": 2,
-      "pos": 46
+      "pos": 48
     },
     {
       "jugador": "Abbosbek Fayzullaev",
       "equipo": "Uzbekistán",
       "goles": 1,
-      "pos": 47
+      "pos": 49
     },
     {
       "jugador": "Abdulelah Al-Amri",
       "equipo": "Arabia Saudí",
       "goles": 1,
-      "pos": 48
+      "pos": 50
     },
     {
       "jugador": "Achraf Hakimi",
       "equipo": "Marruecos",
       "goles": 1,
-      "pos": 49
+      "pos": 51
     },
     {
       "jugador": "Agustín Canobbio",
       "equipo": "Uruguay",
       "goles": 1,
-      "pos": 50
+      "pos": 52
     },
     {
       "jugador": "Alex Freeman",
       "equipo": "EE.UU.",
       "goles": 1,
-      "pos": 51
+      "pos": 53
     },
     {
       "jugador": "Alexander Isak",
       "equipo": "Suecia",
       "goles": 1,
-      "pos": 52
+      "pos": 54
     },
     {
       "jugador": "Alexis Saelemaekers",
       "equipo": "Bélgica",
       "goles": 1,
-      "pos": 53
+      "pos": 55
     },
     {
       "jugador": "Ali Olwan",
       "equipo": "Jordania",
       "goles": 1,
-      "pos": 54
+      "pos": 56
     },
     {
       "jugador": "Amine Gouiri",
       "equipo": "Argelia",
       "goles": 1,
-      "pos": 55
+      "pos": 57
     },
     {
       "jugador": "Ante Budimir",
       "equipo": "Croacia",
       "goles": 1,
-      "pos": 56
+      "pos": 58
     },
     {
       "jugador": "Antonio Nusa",
       "equipo": "Noruega",
       "goles": 1,
-      "pos": 57
+      "pos": 59
     },
     {
       "jugador": "Arda Güler",
       "equipo": "Turquía",
       "goles": 1,
-      "pos": 58
+      "pos": 60
     },
     {
       "jugador": "Auston Trusty",
       "equipo": "EE.UU.",
       "goles": 1,
-      "pos": 59
+      "pos": 61
     },
     {
       "jugador": "Aymen Hussein",
       "equipo": "Irak",
       "goles": 1,
-      "pos": 60
+      "pos": 62
     },
     {
       "jugador": "Baris Alper Yilmaz",
       "equipo": "Turquía",
       "goles": 1,
-      "pos": 61
+      "pos": 63
     },
     {
       "jugador": "Brian Cipenga",
       "equipo": "R. D. Congo",
       "goles": 1,
-      "pos": 62
+      "pos": 64
     },
     {
       "jugador": "Caleb Yirenkyi",
       "equipo": "Ghana",
       "goles": 1,
-      "pos": 63
+      "pos": 65
     },
     {
       "jugador": "Casemiro",
       "equipo": "Brasil",
       "goles": 1,
-      "pos": 64
+      "pos": 66
     },
     {
       "jugador": "Connor Metcalfe",
       "equipo": "Australia",
       "goles": 1,
-      "pos": 65
+      "pos": 67
     },
     {
       "jugador": "Daizen Maeda",
       "equipo": "Japón",
       "goles": 1,
-      "pos": 66
+      "pos": 68
     },
     {
       "jugador": "Dan Ndoye",
       "equipo": "Suiza",
       "goles": 1,
-      "pos": 67
+      "pos": 69
     },
     {
       "jugador": "Deroy Duarte",
       "equipo": "Cabo Verde",
       "goles": 1,
-      "pos": 68
+      "pos": 70
     },
     {
       "jugador": "Derrick Luckassen",
       "equipo": "Ghana",
       "goles": 1,
-      "pos": 69
+      "pos": 71
     },
     {
       "jugador": "Désiré Doué",
       "equipo": "Francia",
       "goles": 1,
-      "pos": 70
+      "pos": 72
     },
     {
       "jugador": "Eldor Shomurodov",
       "equipo": "Uzbekistán",
       "goles": 1,
-      "pos": 71
+      "pos": 73
     },
     {
       "jugador": "Felix Nmecha",
       "equipo": "Alemania",
       "goles": 1,
-      "pos": 72
+      "pos": 74
     },
     {
       "jugador": "Finn Surman",
       "equipo": "Nueva Zelanda",
       "goles": 1,
-      "pos": 73
+      "pos": 75
     },
     {
       "jugador": "Fiston Mayele",
       "equipo": "R. D. Congo",
       "goles": 1,
-      "pos": 74
+      "pos": 76
     },
     {
       "jugador": "Franck Kessié",
       "equipo": "Costa de Marfil",
       "goles": 1,
-      "pos": 75
+      "pos": 77
     },
     {
       "jugador": "Gabriel Martinelli",
       "equipo": "Brasil",
       "goles": 1,
-      "pos": 76
+      "pos": 78
     },
     {
       "jugador": "Gessime Yassine",
       "equipo": "Marruecos",
       "goles": 1,
-      "pos": 77
+      "pos": 79
     },
     {
       "jugador": "Giovani Lo Celso",
       "equipo": "Argentina",
       "goles": 1,
-      "pos": 78
+      "pos": 80
     },
     {
       "jugador": "Giovanni Reyna",
       "equipo": "EE.UU.",
       "goles": 1,
-      "pos": 79
+      "pos": 81
     },
     {
       "jugador": "Gonzalo Plata",
       "equipo": "Ecuador",
       "goles": 1,
-      "pos": 80
+      "pos": 82
     },
     {
       "jugador": "Gonçalo Ramos",
       "equipo": "Portugal",
       "goles": 1,
-      "pos": 81
+      "pos": 83
     },
     {
       "jugador": "Granit Xhaka",
       "equipo": "Suiza",
       "goles": 1,
-      "pos": 82
+      "pos": 84
     },
     {
       "jugador": "Hassan Al-Haydos",
       "equipo": "Catar",
       "goles": 1,
-      "pos": 83
+      "pos": 85
     },
     {
       "jugador": "Hazem Mastouri",
       "equipo": "Túnez",
       "goles": 1,
-      "pos": 84
+      "pos": 86
     },
     {
       "jugador": "Hwang In-Beom",
       "equipo": "Corea del Sur",
       "goles": 1,
-      "pos": 85
+      "pos": 87
     },
     {
       "jugador": "Hélio Varela",
       "equipo": "Cabo Verde",
       "goles": 1,
-      "pos": 86
+      "pos": 88
     },
     {
       "jugador": "Ibrahim Mbaye",
       "equipo": "Senegal",
       "goles": 1,
-      "pos": 87
+      "pos": 89
     },
     {
       "jugador": "Iliman Ndiaye",
       "equipo": "Senegal",
       "goles": 1,
-      "pos": 88
+      "pos": 90
     },
     {
       "jugador": "Issa Diop",
       "equipo": "Marruecos",
       "goles": 1,
-      "pos": 89
+      "pos": 91
     },
     {
       "jugador": "Ivan Perisic",
       "equipo": "Croacia",
       "goles": 1,
-      "pos": 90
+      "pos": 92
     },
     {
       "jugador": "Jamal Musiala",
       "equipo": "Alemania",
       "goles": 1,
-      "pos": 91
+      "pos": 93
     },
     {
       "jugador": "Jan Paul van Hecke",
       "equipo": "Países Bajos",
       "goles": 1,
-      "pos": 92
+      "pos": 94
     },
     {
       "jugador": "Jhon Arias",
       "equipo": "Colombia",
       "goles": 1,
-      "pos": 93
+      "pos": 95
     },
     {
       "jugador": "John McGinn",
       "equipo": "Escocia",
       "goles": 1,
-      "pos": 94
+      "pos": 96
     },
     {
       "jugador": "Jovo Lukic",
       "equipo": "Bosnia",
       "goles": 1,
-      "pos": 95
+      "pos": 97
     },
     {
       "jugador": "João Neves",
       "equipo": "Portugal",
       "goles": 1,
-      "pos": 96
+      "pos": 98
     },
     {
       "jugador": "Julio Enciso",
       "equipo": "Paraguay",
       "goles": 1,
-      "pos": 97
+      "pos": 99
     },
     {
       "jugador": "Junya Ito",
       "equipo": "Japón",
       "goles": 1,
-      "pos": 98
+      "pos": 100
     },
     {
       "jugador": "Jáminton Campaz",
       "equipo": "Colombia",
       "goles": 1,
-      "pos": 99
+      "pos": 101
     },
     {
       "jugador": "Kaan Ayhan",
       "equipo": "Turquía",
       "goles": 1,
-      "pos": 100
+      "pos": 102
     },
     {
       "jugador": "Kaishu Sano",
       "equipo": "Japón",
       "goles": 1,
-      "pos": 101
+      "pos": 103
     },
     {
       "jugador": "Keito Nakamura",
       "equipo": "Japón",
       "goles": 1,
-      "pos": 102
+      "pos": 104
     },
     {
       "jugador": "Kerim Alajbegovic",
       "equipo": "Bosnia",
       "goles": 1,
-      "pos": 103
+      "pos": 105
     },
     {
       "jugador": "Kevin De Bruyne",
       "equipo": "Bélgica",
       "goles": 1,
-      "pos": 104
+      "pos": 106
     },
     {
       "jugador": "Kevin Pina",
       "equipo": "Cabo Verde",
       "goles": 1,
-      "pos": 105
+      "pos": 107
     },
     {
       "jugador": "Ladislav Krejcí",
       "equipo": "Chequia",
       "goles": 1,
-      "pos": 106
+      "pos": 108
     },
     {
       "jugador": "Lamine Yamal",
       "equipo": "España",
       "goles": 1,
-      "pos": 107
+      "pos": 109
     },
     {
       "jugador": "Lautaro Martínez",
       "equipo": "Argentina",
       "goles": 1,
-      "pos": 108
+      "pos": 110
     },
     {
       "jugador": "Leo Østigard",
       "equipo": "Noruega",
       "goles": 1,
-      "pos": 109
+      "pos": 111
     },
     {
       "jugador": "Leroy Sané",
       "equipo": "Alemania",
       "goles": 1,
-      "pos": 110
+      "pos": 112
     },
     {
       "jugador": "Lisandro Martínez",
       "equipo": "Argentina",
       "goles": 1,
-      "pos": 111
+      "pos": 113
     },
     {
       "jugador": "Livano Comenencia",
       "equipo": "Curazao",
       "goles": 1,
-      "pos": 112
+      "pos": 114
     },
     {
       "jugador": "Luis Díaz",
       "equipo": "Colombia",
       "goles": 1,
-      "pos": 113
+      "pos": 115
     },
     {
       "jugador": "Luis Romo",
       "equipo": "México",
       "goles": 1,
-      "pos": 114
+      "pos": 116
     },
     {
       "jugador": "Mahmoud Saber",
       "equipo": "Egipto",
       "goles": 1,
-      "pos": 115
+      "pos": 117
     },
     {
       "jugador": "Malik Tillman",
       "equipo": "EE.UU.",
       "goles": 1,
-      "pos": 116
+      "pos": 118
     },
     {
       "jugador": "Marcel Sabitzer",
       "equipo": "Austria",
       "goles": 1,
-      "pos": 117
+      "pos": 119
     },
     {
       "jugador": "Marcus Holmgren Pedersen",
       "equipo": "Noruega",
       "goles": 1,
-      "pos": 118
+      "pos": 120
     },
     {
       "jugador": "Marcus Rashford",
       "equipo": "Inglaterra",
       "goles": 1,
-      "pos": 119
+      "pos": 121
     },
     {
       "jugador": "Martin Baturina",
       "equipo": "Croacia",
       "goles": 1,
-      "pos": 120
+      "pos": 122
     },
     {
       "jugador": "Mateo Chávez",
       "equipo": "México",
       "goles": 1,
-      "pos": 121
+      "pos": 123
     },
     {
       "jugador": "Mattias Svanberg",
       "equipo": "Suecia",
       "goles": 1,
-      "pos": 122
+      "pos": 124
     },
     {
       "jugador": "Matías Galarza",
       "equipo": "Paraguay",
       "goles": 1,
-      "pos": 123
+      "pos": 125
     },
     {
       "jugador": "Maurício",
       "equipo": "Paraguay",
       "goles": 1,
-      "pos": 124
+      "pos": 126
     },
     {
       "jugador": "Michal Sadílek",
       "equipo": "Chequia",
       "goles": 1,
-      "pos": 125
+      "pos": 127
     },
     {
       "jugador": "Mohamed Salah",
       "equipo": "Egipto",
       "goles": 1,
-      "pos": 126
+      "pos": 128
     },
     {
       "jugador": "Mohammad Mohebbi",
       "equipo": "Irán",
       "goles": 1,
-      "pos": 127
+      "pos": 129
     },
     {
       "jugador": "Mostafa Zico",
       "equipo": "Egipto",
       "goles": 1,
-      "pos": 128
+      "pos": 130
     },
     {
       "jugador": "Mousa Al-Tamari",
       "equipo": "Jordania",
       "goles": 1,
-      "pos": 129
+      "pos": 131
     },
     {
       "jugador": "Nadhir Benbouali",
       "equipo": "Argelia",
       "goles": 1,
-      "pos": 130
+      "pos": 132
     },
     {
       "jugador": "Nathan Saliba",
       "equipo": "Canadá",
       "goles": 1,
-      "pos": 131
+      "pos": 133
     },
     {
       "jugador": "Nathaniel Brown",
       "equipo": "Alemania",
       "goles": 1,
-      "pos": 132
+      "pos": 134
     },
     {
       "jugador": "Nestory Irankunda",
       "equipo": "Australia",
       "goles": 1,
-      "pos": 133
+      "pos": 135
     },
     {
       "jugador": "Nico Schlotterbeck",
       "equipo": "Alemania",
       "goles": 1,
-      "pos": 134
+      "pos": 136
     },
     {
       "jugador": "Nikola Vlasic",
       "equipo": "Croacia",
       "goles": 1,
-      "pos": 135
+      "pos": 137
     },
     {
       "jugador": "Nilson Angulo",
       "equipo": "Ecuador",
       "goles": 1,
-      "pos": 136
+      "pos": 138
     },
     {
       "jugador": "Nizar Al-Rashdan",
       "equipo": "Jordania",
       "goles": 1,
-      "pos": 137
+      "pos": 139
     },
     {
       "jugador": "Nuno Mendes",
       "equipo": "Portugal",
       "goles": 1,
-      "pos": 138
+      "pos": 140
     },
     {
       "jugador": "Oh Hyeon-Gyu",
       "equipo": "Corea del Sur",
       "goles": 1,
-      "pos": 139
+      "pos": 141
     },
     {
       "jugador": "Omar Rekik",
       "equipo": "Túnez",
       "goles": 1,
-      "pos": 140
+      "pos": 142
     },
     {
       "jugador": "Pedro Porro",
       "equipo": "España",
       "goles": 1,
-      "pos": 141
+      "pos": 143
     },
     {
       "jugador": "Petar Musa",
       "equipo": "Croacia",
       "goles": 1,
-      "pos": 142
+      "pos": 144
     },
     {
       "jugador": "Petar Sucic",
       "equipo": "Croacia",
       "goles": 1,
-      "pos": 143
+      "pos": 145
     },
     {
       "jugador": "Promise David",
       "equipo": "Canadá",
       "goles": 1,
-      "pos": 144
+      "pos": 146
     },
     {
       "jugador": "Rafael Leão",
       "equipo": "Portugal",
       "goles": 1,
-      "pos": 145
+      "pos": 147
     },
     {
       "jugador": "Rafik Belghali",
       "equipo": "Argelia",
       "goles": 1,
-      "pos": 146
+      "pos": 148
     },
     {
       "jugador": "Romano Schmid",
       "equipo": "Austria",
       "goles": 1,
-      "pos": 147
+      "pos": 149
     },
     {
       "jugador": "Sasa Kalajdzic",
       "equipo": "Austria",
       "goles": 1,
-      "pos": 148
+      "pos": 150
     },
     {
       "jugador": "Sebastian Berhalter",
       "equipo": "EE.UU.",
       "goles": 1,
-      "pos": 149
+      "pos": 151
     },
     {
       "jugador": "Sidny Lopes Cabral",
       "equipo": "Cabo Verde",
       "goles": 1,
-      "pos": 150
-    },
-    {
-      "jugador": "Soufiane Rahimi",
-      "equipo": "Marruecos",
-      "goles": 1,
-      "pos": 151
+      "pos": 152
     },
     {
       "jugador": "Stephen Eustáquio",
       "equipo": "Canadá",
       "goles": 1,
-      "pos": 152
+      "pos": 153
     },
     {
       "jugador": "Teboho Mokoena",
       "equipo": "Sudáfrica",
       "goles": 1,
-      "pos": 153
+      "pos": 154
     },
     {
       "jugador": "Thapelo Maseko",
       "equipo": "Sudáfrica",
       "goles": 1,
-      "pos": 154
+      "pos": 155
     },
     {
       "jugador": "Thelo Aasgaard",
       "equipo": "Noruega",
       "goles": 1,
-      "pos": 155
+      "pos": 156
     },
     {
       "jugador": "Trézéguet",
       "equipo": "Egipto",
       "goles": 1,
-      "pos": 156
+      "pos": 157
     },
     {
       "jugador": "Viktor Gyökeres",
       "equipo": "Suecia",
       "goles": 1,
-      "pos": 157
+      "pos": 158
     },
     {
       "jugador": "Virgil van Dijk",
       "equipo": "Países Bajos",
       "goles": 1,
-      "pos": 158
+      "pos": 159
     },
     {
       "jugador": "Wilson Isidor",
       "equipo": "Haití",
       "goles": 1,
-      "pos": 159
+      "pos": 160
     },
     {
       "jugador": "Álex Baena",
       "equipo": "España",
       "goles": 1,
-      "pos": 160
+      "pos": 161
     },
     {
       "jugador": "Álvaro Fidalgo",
       "equipo": "México",
       "goles": 1,
-      "pos": 161
+      "pos": 162
     }
   ]
 }

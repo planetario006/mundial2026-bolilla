@@ -1618,5 +1618,25 @@
       "minuto": "14'",
       "tipo": "Gol"
     }
+  ],
+  "Canadá|Marruecos|2026-07-04": [
+    {
+      "jugador": "Azzedine Ounahi",
+      "equipo": "Marruecos",
+      "minuto": "50'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Azzedine Ounahi",
+      "equipo": "Marruecos",
+      "minuto": "82'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Soufiane Rahimi",
+      "equipo": "Marruecos",
+      "minuto": "90'+8'",
+      "tipo": "Gol"
+    }
   ]
 }
