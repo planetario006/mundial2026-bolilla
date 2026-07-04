@@ -1093,9 +1093,21 @@
   },
   "Canadá|Marruecos": {
     "verificado": true,
-    "ultimo_chequeo": "2026-07-04T22:29:44+00:00",
-    "intentos": 4,
+    "ultimo_chequeo": "2026-07-04T23:37:11+00:00",
+    "intentos": 5,
     "match_id": 89,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Francia|Paraguay": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-07-04T23:37:11+00:00",
+    "intentos": 1,
+    "match_id": 90,
     "valores_espn_aplicados": {
       "penfall_local": 0,
       "penfall_visit": 0,

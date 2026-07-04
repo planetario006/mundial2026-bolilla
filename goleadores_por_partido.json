@@ -1638,5 +1638,13 @@
       "minuto": "90'+8'",
       "tipo": "Gol"
     }
+  ],
+  "Francia|Paraguay|2026-07-04": [
+    {
+      "jugador": "Kylian Mbappé",
+      "equipo": "Francia",
+      "minuto": "70'",
+      "tipo": "Penalti"
+    }
   ]
 }
