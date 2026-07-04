@@ -1,11 +1,34 @@
 {
   "meta": {
-    "actualizado": "2026-07-04T19:46:26+00:00",
+    "actualizado": "2026-07-04T21:03:22+00:00",
     "total_partidos_jugados": 89,
-    "total_partidos": 96,
+    "total_partidos": 100,
     "fase_grupos_terminada": true
   },
   "ranking": [
+    {
+      "equipo": "Marruecos",
+      "grupo": "C",
+      "bombo": "Bombo 2",
+      "gf": 10,
+      "gc": 4,
+      "ta": 6,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": 19,
+      "bonus_grupo": 10,
+      "premio_final": 0,
+      "premio_menos_puntos": 0,
+      "puntos_totales": 119,
+      "bonus_ronda_dieciseisavos": 25,
+      "bonus_ronda_octavos": 35,
+      "bonus_ronda_cuartos": 50,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 1
+    },
     {
       "equipo": "Francia",
       "grupo": "I",
@@ -27,7 +50,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 1
+      "pos": 2
     },
     {
       "equipo": "España",
@@ -50,7 +73,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 2
+      "pos": 3
     },
     {
       "equipo": "México",
@@ -73,7 +96,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 3
+      "pos": 4
     },
     {
       "equipo": "Suiza",
@@ -96,7 +119,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 4
+      "pos": 5
     },
     {
       "equipo": "Inglaterra",
@@ -119,7 +142,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 5
+      "pos": 6
     },
     {
       "equipo": "Argentina",
@@ -142,7 +165,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 6
+      "pos": 7
     },
     {
       "equipo": "Colombia",
@@ -165,7 +188,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 7
+      "pos": 8
     },
     {
       "equipo": "Brasil",
@@ -188,7 +211,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 8
+      "pos": 9
     },
     {
       "equipo": "Portugal",
@@ -206,29 +229,6 @@
       "premio_final": 0,
       "premio_menos_puntos": 0,
       "puntos_totales": 71,
-      "bonus_ronda_dieciseisavos": 25,
-      "bonus_ronda_octavos": 35,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 9
-    },
-    {
-      "equipo": "Marruecos",
-      "grupo": "C",
-      "bombo": "Bombo 2",
-      "gf": 10,
-      "gc": 4,
-      "ta": 6,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": 19,
-      "bonus_grupo": 10,
-      "premio_final": 0,
-      "premio_menos_puntos": 0,
-      "puntos_totales": 69,
       "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 35,
       "bonus_ronda_cuartos": 0,
@@ -10258,7 +10258,112 @@
         "puntos_visit": null
       }
     ],
-    "Cuartos de final": [],
+    "Cuartos de final": [
+      {
+        "id": 97,
+        "match_num": 97,
+        "fecha": "2026-07-09",
+        "fase": "Cuartos de final",
+        "grupo": "",
+        "local": "Ganador Partido 89",
+        "visitante": "Marruecos",
+        "gf_local": null,
+        "gf_visit": null,
+        "ta_local": 0,
+        "doblea_local": 0,
+        "rd_local": 0,
+        "ta_visit": 0,
+        "doblea_visit": 0,
+        "rd_visit": 0,
+        "penfall_local": 0,
+        "penpar_local": 0,
+        "penfall_visit": 0,
+        "penpar_visit": 0,
+        "pen_tanda_local": 0,
+        "pen_tanda_visit": 0,
+        "jugado": false,
+        "puntos_local": null,
+        "puntos_visit": null
+      },
+      {
+        "id": 98,
+        "match_num": 98,
+        "fecha": "2026-07-10",
+        "fase": "Cuartos de final",
+        "grupo": "",
+        "local": "Ganador Partido 93",
+        "visitante": "Ganador Partido 94",
+        "gf_local": null,
+        "gf_visit": null,
+        "ta_local": 0,
+        "doblea_local": 0,
+        "rd_local": 0,
+        "ta_visit": 0,
+        "doblea_visit": 0,
+        "rd_visit": 0,
+        "penfall_local": 0,
+        "penpar_local": 0,
+        "penfall_visit": 0,
+        "penpar_visit": 0,
+        "pen_tanda_local": 0,
+        "pen_tanda_visit": 0,
+        "jugado": false,
+        "puntos_local": null,
+        "puntos_visit": null
+      },
+      {
+        "id": 99,
+        "match_num": 99,
+        "fecha": "2026-07-11",
+        "fase": "Cuartos de final",
+        "grupo": "",
+        "local": "Ganador Partido 91",
+        "visitante": "Ganador Partido 92",
+        "gf_local": null,
+        "gf_visit": null,
+        "ta_local": 0,
+        "doblea_local": 0,
+        "rd_local": 0,
+        "ta_visit": 0,
+        "doblea_visit": 0,
+        "rd_visit": 0,
+        "penfall_local": 0,
+        "penpar_local": 0,
+        "penfall_visit": 0,
+        "penpar_visit": 0,
+        "pen_tanda_local": 0,
+        "pen_tanda_visit": 0,
+        "jugado": false,
+        "puntos_local": null,
+        "puntos_visit": null
+      },
+      {
+        "id": 100,
+        "match_num": 100,
+        "fecha": "2026-07-11",
+        "fase": "Cuartos de final",
+        "grupo": "",
+        "local": "Ganador Partido 95",
+        "visitante": "Ganador Partido 96",
+        "gf_local": null,
+        "gf_visit": null,
+        "ta_local": 0,
+        "doblea_local": 0,
+        "rd_local": 0,
+        "ta_visit": 0,
+        "doblea_visit": 0,
+        "rd_visit": 0,
+        "penfall_local": 0,
+        "penpar_local": 0,
+        "penfall_visit": 0,
+        "penpar_visit": 0,
+        "pen_tanda_local": 0,
+        "pen_tanda_visit": 0,
+        "jugado": false,
+        "puntos_local": null,
+        "puntos_visit": null
+      }
+    ],
     "Semifinales": [],
     "Final": []
   },
@@ -10291,16 +10396,16 @@
     ],
     "Bombo 2": [
       {
+        "equipo": "Marruecos",
+        "puntos": 119
+      },
+      {
         "equipo": "México",
         "puntos": 85
       },
       {
         "equipo": "Portugal",
         "puntos": 71
-      },
-      {
-        "equipo": "Marruecos",
-        "puntos": 69
       },
       {
         "equipo": "Bélgica",

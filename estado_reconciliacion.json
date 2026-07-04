@@ -1054,8 +1054,8 @@
   },
   "Australia|Egipto": {
     "verificado": false,
-    "ultimo_chequeo": "2026-07-04T19:46:26+00:00",
-    "intentos": 14,
+    "ultimo_chequeo": "2026-07-04T21:03:22+00:00",
+    "intentos": 15,
     "match_id": 86,
     "valores_espn_aplicados": {
       "penfall_local": 0,
@@ -1066,8 +1066,8 @@
   },
   "Argentina|Cabo Verde": {
     "verificado": true,
-    "ultimo_chequeo": "2026-07-04T19:46:26+00:00",
-    "intentos": 10,
+    "ultimo_chequeo": "2026-07-04T21:03:22+00:00",
+    "intentos": 11,
     "match_id": 87,
     "valores_espn_aplicados": {
       "penfall_local": 0,
@@ -1078,8 +1078,8 @@
   },
   "Colombia|Ghana": {
     "verificado": true,
-    "ultimo_chequeo": "2026-07-04T19:46:26+00:00",
-    "intentos": 9,
+    "ultimo_chequeo": "2026-07-04T21:03:22+00:00",
+    "intentos": 10,
     "match_id": 88,
     "valores_espn_aplicados": {
       "penfall_local": 0,
@@ -1090,8 +1090,8 @@
   },
   "Canadá|Marruecos": {
     "verificado": true,
-    "ultimo_chequeo": "2026-07-04T19:46:26+00:00",
-    "intentos": 1,
+    "ultimo_chequeo": "2026-07-04T21:03:22+00:00",
+    "intentos": 2,
     "match_id": 89,
     "valores_espn_aplicados": {
       "penfall_local": 0,
