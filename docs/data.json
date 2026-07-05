@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-07-05T22:16:23+00:00",
+    "actualizado": "2026-07-05T22:32:17+00:00",
     "total_partidos_jugados": 91,
     "total_partidos": 100,
     "fase_grupos_terminada": true
@@ -311,7 +311,7 @@
       "bombo": "Bombo 1",
       "gf": 10,
       "gc": 4,
-      "ta": 7,
+      "ta": 8,
       "doblea": 0,
       "rd": 0,
       "penfall": 1,
@@ -320,7 +320,7 @@
       "bonus_grupo": 15,
       "premio_final": 0,
       "premio_menos_puntos": 0,
-      "puntos_totales": 51,
+      "puntos_totales": 48,
       "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 35,
       "bonus_ronda_cuartos": 0,
@@ -5262,7 +5262,7 @@
       "visitante": "Noruega",
       "gf_local": 1,
       "gf_visit": 2,
-      "ta_local": 0,
+      "ta_local": 1,
       "doblea_local": 0,
       "rd_local": 0,
       "ta_visit": 0,
@@ -5278,13 +5278,13 @@
       "puntos_local": {
         "gf": 1,
         "gc": -6,
-        "ta": 0,
+        "ta": -3,
         "doblea": 0,
         "rd": 0,
         "penfall": -10,
         "penpar": 0,
         "bonus_resultado": -8,
-        "total": -23
+        "total": -26
       },
       "puntos_visit": {
         "gf": 2,
@@ -10223,7 +10223,7 @@
         "visitante": "Noruega",
         "gf_local": 1,
         "gf_visit": 2,
-        "ta_local": 0,
+        "ta_local": 1,
         "doblea_local": 0,
         "rd_local": 0,
         "ta_visit": 0,
@@ -10239,13 +10239,13 @@
         "puntos_local": {
           "gf": 1,
           "gc": -6,
-          "ta": 0,
+          "ta": -3,
           "doblea": 0,
           "rd": 0,
           "penfall": -10,
           "penpar": 0,
           "bonus_resultado": -8,
-          "total": -23
+          "total": -26
         },
         "puntos_visit": {
           "gf": 2,
@@ -10519,7 +10519,7 @@
       },
       {
         "equipo": "Brasil",
-        "puntos": 51
+        "puntos": 48
       },
       {
         "equipo": "Alemania",
