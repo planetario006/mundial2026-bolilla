@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "ref": "Brasil|Noruega::ta_local",
+    "match_id": 91,
+    "local": "Brasil",
+    "visitante": "Noruega",
+    "campo": "ta_local",
+    "valor_wiki": 0,
+    "valor_scraper": 1,
+    "detectado": "2026-07-05T22:16:22+00:00"
+  }
+]

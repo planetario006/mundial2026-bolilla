@@ -1646,5 +1646,25 @@
       "minuto": "70'",
       "tipo": "Penalti"
     }
+  ],
+  "Brasil|Noruega|2026-07-05": [
+    {
+      "jugador": "Erling Haaland",
+      "equipo": "Noruega",
+      "minuto": "79'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Erling Haaland",
+      "equipo": "Noruega",
+      "minuto": "90'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Neymar",
+      "equipo": "Brasil",
+      "minuto": "90'+10'",
+      "tipo": "Penalti"
+    }
   ]
 }
