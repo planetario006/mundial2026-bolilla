@@ -1666,5 +1666,37 @@
       "minuto": "90'+10'",
       "tipo": "Penalti"
     }
+  ],
+  "Inglaterra|México|2026-07-06": [
+    {
+      "jugador": "Jude Bellingham",
+      "equipo": "Inglaterra",
+      "minuto": "36'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Jude Bellingham",
+      "equipo": "Inglaterra",
+      "minuto": "38'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Julián Quiñones",
+      "equipo": "México",
+      "minuto": "42'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Harry Kane",
+      "equipo": "Inglaterra",
+      "minuto": "60'",
+      "tipo": "Penalti"
+    },
+    {
+      "jugador": "Raúl Jiménez",
+      "equipo": "México",
+      "minuto": "69'",
+      "tipo": "Penalti"
+    }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "actualizado": "2026-07-06T00:11:21+00:00",
-    "total_partidos_jugados": 91,
+    "actualizado": "2026-07-06T04:53:36+00:00",
+    "total_partidos_jugados": 92,
     "total_partidos": 100,
     "fase_grupos_terminada": true
   },
@@ -53,6 +53,29 @@
       "pos": 2
     },
     {
+      "equipo": "Inglaterra",
+      "grupo": "L",
+      "bombo": "Bombo 1",
+      "gf": 11,
+      "gc": 5,
+      "ta": 7,
+      "doblea": 0,
+      "rd": 1,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": 22,
+      "bonus_grupo": 15,
+      "premio_final": 0,
+      "premio_menos_puntos": 0,
+      "puntos_totales": 110,
+      "bonus_ronda_dieciseisavos": 25,
+      "bonus_ronda_octavos": 35,
+      "bonus_ronda_cuartos": 50,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 3
+    },
+    {
       "equipo": "Noruega",
       "grupo": "I",
       "bombo": "Bombo 3",
@@ -73,7 +96,7 @@
       "bonus_ronda_cuartos": 50,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 3
+      "pos": 4
     },
     {
       "equipo": "España",
@@ -91,29 +114,6 @@
       "premio_final": 0,
       "premio_menos_puntos": 0,
       "puntos_totales": 94,
-      "bonus_ronda_dieciseisavos": 25,
-      "bonus_ronda_octavos": 35,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 4
-    },
-    {
-      "equipo": "México",
-      "grupo": "A",
-      "bombo": "Bombo 2",
-      "gf": 8,
-      "gc": 0,
-      "ta": 2,
-      "doblea": 0,
-      "rd": 1,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": 20,
-      "bonus_grupo": 15,
-      "premio_final": 0,
-      "premio_menos_puntos": 0,
-      "puntos_totales": 85,
       "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 35,
       "bonus_ronda_cuartos": 0,
@@ -145,29 +145,6 @@
       "pos": 6
     },
     {
-      "equipo": "Inglaterra",
-      "grupo": "L",
-      "bombo": "Bombo 1",
-      "gf": 8,
-      "gc": 3,
-      "ta": 3,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": 17,
-      "bonus_grupo": 15,
-      "premio_final": 0,
-      "premio_menos_puntos": 0,
-      "puntos_totales": 82,
-      "bonus_ronda_dieciseisavos": 25,
-      "bonus_ronda_octavos": 35,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 7
-    },
-    {
       "equipo": "Argentina",
       "grupo": "J",
       "bombo": "Bombo 1",
@@ -188,7 +165,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 8
+      "pos": 7
     },
     {
       "equipo": "Colombia",
@@ -211,7 +188,7 @@
       "bonus_ronda_cuartos": 0,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 9
+      "pos": 8
     },
     {
       "equipo": "Portugal",
@@ -229,6 +206,29 @@
       "premio_final": 0,
       "premio_menos_puntos": 0,
       "puntos_totales": 71,
+      "bonus_ronda_dieciseisavos": 25,
+      "bonus_ronda_octavos": 35,
+      "bonus_ronda_cuartos": 0,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 9
+    },
+    {
+      "equipo": "México",
+      "grupo": "A",
+      "bombo": "Bombo 2",
+      "gf": 10,
+      "gc": 3,
+      "ta": 4,
+      "doblea": 0,
+      "rd": 1,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": 12,
+      "bonus_grupo": 15,
+      "premio_final": 0,
+      "premio_menos_puntos": 0,
+      "puntos_totales": 64,
       "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 35,
       "bonus_ronda_cuartos": 0,
@@ -5297,6 +5297,52 @@
         "bonus_resultado": 5,
         "total": 9
       }
+    },
+    {
+      "id": 92,
+      "match_num": 92,
+      "fecha": "2026-07-05",
+      "fase": "Octavos de final",
+      "grupo": "",
+      "local": "México",
+      "visitante": "Inglaterra",
+      "gf_local": 2,
+      "gf_visit": 3,
+      "ta_local": 2,
+      "doblea_local": 0,
+      "rd_local": 0,
+      "ta_visit": 4,
+      "doblea_visit": 0,
+      "rd_visit": 1,
+      "penfall_local": 0,
+      "penpar_local": 0,
+      "penfall_visit": 0,
+      "penpar_visit": 0,
+      "pen_tanda_local": 0,
+      "pen_tanda_visit": 0,
+      "jugado": true,
+      "puntos_local": {
+        "gf": 2,
+        "gc": -9,
+        "ta": -6,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": -8,
+        "total": -21
+      },
+      "puntos_visit": {
+        "gf": 3,
+        "gc": -6,
+        "ta": -12,
+        "doblea": 0,
+        "rd": -12,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": 5,
+        "total": -22
+      }
     }
   ],
   "grupos": {
@@ -10267,23 +10313,43 @@
         "grupo": "",
         "local": "México",
         "visitante": "Inglaterra",
-        "gf_local": null,
-        "gf_visit": null,
-        "ta_local": 0,
+        "gf_local": 2,
+        "gf_visit": 3,
+        "ta_local": 2,
         "doblea_local": 0,
         "rd_local": 0,
-        "ta_visit": 0,
+        "ta_visit": 4,
         "doblea_visit": 0,
-        "rd_visit": 0,
+        "rd_visit": 1,
         "penfall_local": 0,
         "penpar_local": 0,
         "penfall_visit": 0,
         "penpar_visit": 0,
         "pen_tanda_local": 0,
         "pen_tanda_visit": 0,
-        "jugado": false,
-        "puntos_local": null,
-        "puntos_visit": null
+        "jugado": true,
+        "puntos_local": {
+          "gf": 2,
+          "gc": -9,
+          "ta": -6,
+          "doblea": 0,
+          "rd": 0,
+          "penfall": 0,
+          "penpar": 0,
+          "bonus_resultado": -8,
+          "total": -21
+        },
+        "puntos_visit": {
+          "gf": 3,
+          "gc": -6,
+          "ta": -12,
+          "doblea": 0,
+          "rd": -12,
+          "penfall": 0,
+          "penpar": 0,
+          "bonus_resultado": 5,
+          "total": -22
+        }
       },
       {
         "id": 93,
@@ -10450,7 +10516,7 @@
         "fase": "Cuartos de final",
         "grupo": "",
         "local": "Noruega",
-        "visitante": "Ganador Partido 92",
+        "visitante": "Inglaterra",
         "gf_local": null,
         "gf_visit": null,
         "ta_local": 0,
@@ -10506,12 +10572,12 @@
         "puntos": 151
       },
       {
-        "equipo": "España",
-        "puntos": 94
+        "equipo": "Inglaterra",
+        "puntos": 110
       },
       {
-        "equipo": "Inglaterra",
-        "puntos": 82
+        "equipo": "España",
+        "puntos": 94
       },
       {
         "equipo": "Argentina",
@@ -10532,12 +10598,12 @@
         "puntos": 119
       },
       {
-        "equipo": "México",
-        "puntos": 85
-      },
-      {
         "equipo": "Portugal",
         "puntos": 71
+      },
+      {
+        "equipo": "México",
+        "puntos": 64
       },
       {
         "equipo": "Bélgica",
@@ -10868,7 +10934,7 @@
     {
       "jugador": "Harry Kane",
       "equipo": "Inglaterra",
-      "goles": 5,
+      "goles": 6,
       "pos": 4
     },
     {
@@ -10878,224 +10944,224 @@
       "pos": 5
     },
     {
+      "jugador": "Jude Bellingham",
+      "equipo": "Inglaterra",
+      "goles": 4,
+      "pos": 6
+    },
+    {
+      "jugador": "Julián Quiñones",
+      "equipo": "México",
+      "goles": 4,
+      "pos": 7
+    },
+    {
       "jugador": "Mikel Oyarzabal",
       "equipo": "España",
       "goles": 4,
-      "pos": 6
+      "pos": 8
     },
     {
       "jugador": "Ousmane Dembélé",
       "equipo": "Francia",
       "goles": 4,
-      "pos": 7
+      "pos": 9
     },
     {
       "jugador": "Vinícius Júnior",
       "equipo": "Brasil",
       "goles": 4,
-      "pos": 8
+      "pos": 10
     },
     {
       "jugador": "Brian Brobbey",
       "equipo": "Países Bajos",
       "goles": 3,
-      "pos": 9
+      "pos": 11
     },
     {
       "jugador": "Cody Gakpo",
       "equipo": "Países Bajos",
       "goles": 3,
-      "pos": 10
+      "pos": 12
     },
     {
       "jugador": "Cristiano Ronaldo",
       "equipo": "Portugal",
       "goles": 3,
-      "pos": 11
+      "pos": 13
     },
     {
       "jugador": "Deniz Undav",
       "equipo": "Alemania",
       "goles": 3,
-      "pos": 12
+      "pos": 14
     },
     {
       "jugador": "Elijah Just",
       "equipo": "Nueva Zelanda",
       "goles": 3,
-      "pos": 13
+      "pos": 15
     },
     {
       "jugador": "Folarin Balogun",
       "equipo": "EE.UU.",
       "goles": 3,
-      "pos": 14
+      "pos": 16
     },
     {
       "jugador": "Ismael Saibari",
       "equipo": "Marruecos",
       "goles": 3,
-      "pos": 15
+      "pos": 17
     },
     {
       "jugador": "Johan Manzambi",
       "equipo": "Suiza",
       "goles": 3,
-      "pos": 16
+      "pos": 18
     },
     {
       "jugador": "Jonathan David",
       "equipo": "Canadá",
       "goles": 3,
-      "pos": 17
-    },
-    {
-      "jugador": "Julián Quiñones",
-      "equipo": "México",
-      "goles": 3,
-      "pos": 18
+      "pos": 19
     },
     {
       "jugador": "Kai Havertz",
       "equipo": "Alemania",
       "goles": 3,
-      "pos": 19
+      "pos": 20
     },
     {
       "jugador": "Matheus Cunha",
       "equipo": "Brasil",
       "goles": 3,
-      "pos": 20
+      "pos": 21
+    },
+    {
+      "jugador": "Raúl Jiménez",
+      "equipo": "México",
+      "goles": 3,
+      "pos": 22
     },
     {
       "jugador": "Yoane Wissa",
       "equipo": "R. D. Congo",
       "goles": 3,
-      "pos": 21
+      "pos": 23
     },
     {
       "jugador": "Amad Diallo",
       "equipo": "Costa de Marfil",
       "goles": 2,
-      "pos": 22
+      "pos": 24
     },
     {
       "jugador": "Anthony Elanga",
       "equipo": "Suecia",
       "goles": 2,
-      "pos": 23
+      "pos": 25
     },
     {
       "jugador": "Ayase Ueda",
       "equipo": "Japón",
       "goles": 2,
-      "pos": 24
+      "pos": 26
     },
     {
       "jugador": "Azzedine Ounahi",
       "equipo": "Marruecos",
       "goles": 2,
-      "pos": 25
+      "pos": 27
     },
     {
       "jugador": "Bradley Barcola",
       "equipo": "Francia",
       "goles": 2,
-      "pos": 26
+      "pos": 28
     },
     {
       "jugador": "Breel Embolo",
       "equipo": "Suiza",
       "goles": 2,
-      "pos": 27
+      "pos": 29
     },
     {
       "jugador": "Crysencio Summerville",
       "equipo": "Países Bajos",
       "goles": 2,
-      "pos": 28
+      "pos": 30
     },
     {
       "jugador": "Cyle Larin",
       "equipo": "Canadá",
       "goles": 2,
-      "pos": 29
+      "pos": 31
     },
     {
       "jugador": "Daichi Kamada",
       "equipo": "Japón",
       "goles": 2,
-      "pos": 30
+      "pos": 32
     },
     {
       "jugador": "Daniel Muñoz",
       "equipo": "Colombia",
       "goles": 2,
-      "pos": 31
+      "pos": 33
     },
     {
       "jugador": "Emam Ashour",
       "equipo": "Egipto",
       "goles": 2,
-      "pos": 32
+      "pos": 34
     },
     {
       "jugador": "Ermin Mahmic",
       "equipo": "Bosnia",
       "goles": 2,
-      "pos": 33
+      "pos": 35
     },
     {
       "jugador": "Habib Diarra",
       "equipo": "Senegal",
       "goles": 2,
-      "pos": 34
-    },
-    {
-      "jugador": "Jude Bellingham",
-      "equipo": "Inglaterra",
-      "goles": 2,
-      "pos": 35
+      "pos": 36
     },
     {
       "jugador": "Leandro Trossard",
       "equipo": "Bélgica",
       "goles": 2,
-      "pos": 36
+      "pos": 37
     },
     {
       "jugador": "Marko Arnautovic",
       "equipo": "Austria",
       "goles": 2,
-      "pos": 37
+      "pos": 38
     },
     {
       "jugador": "Maxi Araújo",
       "equipo": "Uruguay",
       "goles": 2,
-      "pos": 38
+      "pos": 39
     },
     {
       "jugador": "Nicolas Pépé",
       "equipo": "Costa de Marfil",
       "goles": 2,
-      "pos": 39
+      "pos": 40
     },
     {
       "jugador": "Pape Gueye",
       "equipo": "Senegal",
       "goles": 2,
-      "pos": 40
+      "pos": 41
     },
     {
       "jugador": "Ramin Rezaeian",
       "equipo": "Irán",
-      "goles": 2,
-      "pos": 41
-    },
-    {
-      "jugador": "Raúl Jiménez",
-      "equipo": "México",
       "goles": 2,
       "pos": 42
     },

@@ -1117,14 +1117,26 @@
   },
   "Brasil|Noruega": {
     "verificado": true,
-    "ultimo_chequeo": "2026-07-06T00:11:21+00:00",
-    "intentos": 3,
+    "ultimo_chequeo": "2026-07-06T04:53:36+00:00",
+    "intentos": 4,
     "match_id": 91,
     "valores_espn_aplicados": {
       "penfall_local": 1,
       "penfall_visit": 0,
       "penpar_local": 0,
       "penpar_visit": 1
+    }
+  },
+  "Inglaterra|México": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-07-06T04:53:36+00:00",
+    "intentos": 1,
+    "match_id": 92,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
     }
   }
 }
