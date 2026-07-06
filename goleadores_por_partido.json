@@ -1698,5 +1698,13 @@
       "minuto": "69'",
       "tipo": "Penalti"
     }
+  ],
+  "España|Portugal|2026-07-06": [
+    {
+      "jugador": "Mikel Merino",
+      "equipo": "España",
+      "minuto": "90'+1'",
+      "tipo": "Gol"
+    }
   ]
 }
