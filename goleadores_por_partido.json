@@ -1738,5 +1738,37 @@
       "minuto": "90'+3'",
       "tipo": "Gol"
     }
+  ],
+  "Argentina|Egipto|2026-07-07": [
+    {
+      "jugador": "Yasser Ibrahim",
+      "equipo": "Egipto",
+      "minuto": "15'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Mostafa Zico",
+      "equipo": "Egipto",
+      "minuto": "67'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Cristian Romero",
+      "equipo": "Argentina",
+      "minuto": "79'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Lionel Messi",
+      "equipo": "Argentina",
+      "minuto": "83'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Enzo Fernández",
+      "equipo": "Argentina",
+      "minuto": "90'+2'",
+      "tipo": "Gol"
+    }
   ]
 }

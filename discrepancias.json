@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "ref": "Argentina|Egipto::ta_visit",
+    "match_id": 95,
+    "local": "Argentina",
+    "visitante": "Egipto",
+    "campo": "ta_visit",
+    "valor_wiki": 0,
+    "valor_scraper": 4,
+    "detectado": "2026-07-07T19:05:36+00:00"
+  }
+]
