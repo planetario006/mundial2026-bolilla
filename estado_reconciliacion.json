@@ -1165,8 +1165,8 @@
   },
   "Argentina|Egipto": {
     "verificado": false,
-    "ultimo_chequeo": "2026-07-07T21:07:42+00:00",
-    "intentos": 2,
+    "ultimo_chequeo": "2026-07-07T22:38:59+00:00",
+    "intentos": 3,
     "match_id": 95,
     "valores_espn_aplicados": {
       "penfall_local": 1,
