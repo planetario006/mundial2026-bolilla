@@ -1706,5 +1706,37 @@
       "minuto": "90'+1'",
       "tipo": "Gol"
     }
+  ],
+  "Bélgica|EE.UU.|2026-07-07": [
+    {
+      "jugador": "Charles De Ketelaere",
+      "equipo": "Bélgica",
+      "minuto": "9'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Malik Tillman",
+      "equipo": "EE.UU.",
+      "minuto": "31'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Charles De Ketelaere",
+      "equipo": "Bélgica",
+      "minuto": "33'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Hans Vanaken",
+      "equipo": "Bélgica",
+      "minuto": "57'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Romelu Lukaku",
+      "equipo": "Bélgica",
+      "minuto": "90'+3'",
+      "tipo": "Gol"
+    }
   ]
 }
