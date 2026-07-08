@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-07-08T00:01:41+00:00",
+    "actualizado": "2026-07-08T03:55:39+00:00",
     "total_partidos_jugados": 96,
     "total_partidos": 100,
     "fase_grupos_terminada": true
@@ -58,7 +58,7 @@
       "bombo": "Bombo 4",
       "gf": 9,
       "gc": 3,
-      "ta": 3,
+      "ta": 6,
       "doblea": 0,
       "rd": 0,
       "penfall": 0,
@@ -67,7 +67,7 @@
       "bonus_grupo": 15,
       "premio_final": 0,
       "premio_menos_puntos": 0,
-      "puntos_totales": 135,
+      "puntos_totales": 126,
       "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 35,
       "bonus_ronda_cuartos": 50,
@@ -196,7 +196,7 @@
       "bombo": "Bombo 3",
       "gf": 5,
       "gc": 1,
-      "ta": 6,
+      "ta": 8,
       "doblea": 0,
       "rd": 0,
       "penfall": 0,
@@ -205,7 +205,7 @@
       "bonus_grupo": 15,
       "premio_final": 0,
       "premio_menos_puntos": 0,
-      "puntos_totales": 78,
+      "puntos_totales": 72,
       "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 35,
       "bonus_ronda_cuartos": 0,
@@ -5492,10 +5492,10 @@
       "visitante": "Colombia",
       "gf_local": 0,
       "gf_visit": 0,
-      "ta_local": 0,
+      "ta_local": 3,
       "doblea_local": 0,
       "rd_local": 0,
-      "ta_visit": 0,
+      "ta_visit": 2,
       "doblea_visit": 0,
       "rd_visit": 0,
       "penfall_local": 0,
@@ -5508,24 +5508,24 @@
       "puntos_local": {
         "gf": 0,
         "gc": 0,
-        "ta": 0,
+        "ta": -9,
         "doblea": 0,
         "rd": 0,
         "penfall": 0,
         "penpar": 0,
         "bonus_resultado": 2,
-        "total": 2
+        "total": -7
       },
       "puntos_visit": {
         "gf": 0,
         "gc": 0,
-        "ta": 0,
+        "ta": -6,
         "doblea": 0,
         "rd": 0,
         "penfall": 0,
         "penpar": 0,
         "bonus_resultado": 2,
-        "total": 2
+        "total": -4
       }
     }
   ],
@@ -10683,10 +10683,10 @@
         "visitante": "Colombia",
         "gf_local": 0,
         "gf_visit": 0,
-        "ta_local": 0,
+        "ta_local": 3,
         "doblea_local": 0,
         "rd_local": 0,
-        "ta_visit": 0,
+        "ta_visit": 2,
         "doblea_visit": 0,
         "rd_visit": 0,
         "penfall_local": 0,
@@ -10699,24 +10699,24 @@
         "puntos_local": {
           "gf": 0,
           "gc": 0,
-          "ta": 0,
+          "ta": -9,
           "doblea": 0,
           "rd": 0,
           "penfall": 0,
           "penpar": 0,
           "bonus_resultado": 2,
-          "total": 2
+          "total": -7
         },
         "puntos_visit": {
           "gf": 0,
           "gc": 0,
-          "ta": 0,
+          "ta": -6,
           "doblea": 0,
           "rd": 0,
           "penfall": 0,
           "penpar": 0,
           "bonus_resultado": 2,
-          "total": 2
+          "total": -4
         }
       }
     ],
@@ -10889,7 +10889,7 @@
       },
       {
         "equipo": "Colombia",
-        "puntos": 78
+        "puntos": 72
       },
       {
         "equipo": "Canadá",
@@ -10911,7 +10911,7 @@
     "Bombo 4": [
       {
         "equipo": "Suiza",
-        "puntos": 135
+        "puntos": 126
       },
       {
         "equipo": "EE.UU.",

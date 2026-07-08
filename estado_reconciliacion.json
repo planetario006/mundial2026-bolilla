@@ -1165,8 +1165,8 @@
   },
   "Argentina|Egipto": {
     "verificado": false,
-    "ultimo_chequeo": "2026-07-08T00:01:41+00:00",
-    "intentos": 4,
+    "ultimo_chequeo": "2026-07-08T03:55:39+00:00",
+    "intentos": 5,
     "match_id": 95,
     "valores_espn_aplicados": {
       "penfall_local": 1,
@@ -1176,9 +1176,9 @@
     }
   },
   "Colombia|Suiza": {
-    "verificado": false,
-    "ultimo_chequeo": "2026-07-08T00:01:41+00:00",
-    "intentos": 1,
+    "verificado": true,
+    "ultimo_chequeo": "2026-07-08T03:55:39+00:00",
+    "intentos": 2,
     "match_id": 96,
     "valores_espn_aplicados": {
       "penfall_local": 0,
