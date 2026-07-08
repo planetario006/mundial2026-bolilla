@@ -1,7 +1,7 @@
 {
   "meta": {
-    "actualizado": "2026-07-07T22:38:59+00:00",
-    "total_partidos_jugados": 95,
+    "actualizado": "2026-07-08T00:01:41+00:00",
+    "total_partidos_jugados": 96,
     "total_partidos": 100,
     "fase_grupos_terminada": true
   },
@@ -53,6 +53,29 @@
       "pos": 2
     },
     {
+      "equipo": "Suiza",
+      "grupo": "B",
+      "bombo": "Bombo 4",
+      "gf": 9,
+      "gc": 3,
+      "ta": 3,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 0,
+      "bonus_resultado": 19,
+      "bonus_grupo": 15,
+      "premio_final": 0,
+      "premio_menos_puntos": 0,
+      "puntos_totales": 135,
+      "bonus_ronda_dieciseisavos": 25,
+      "bonus_ronda_octavos": 35,
+      "bonus_ronda_cuartos": 50,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 3
+    },
+    {
       "equipo": "Argentina",
       "grupo": "J",
       "bombo": "Bombo 1",
@@ -73,7 +96,7 @@
       "bonus_ronda_cuartos": 50,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 3
+      "pos": 4
     },
     {
       "equipo": "Marruecos",
@@ -96,7 +119,7 @@
       "bonus_ronda_cuartos": 50,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 4
+      "pos": 5
     },
     {
       "equipo": "Bélgica",
@@ -119,7 +142,7 @@
       "bonus_ronda_cuartos": 50,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 5
+      "pos": 6
     },
     {
       "equipo": "Inglaterra",
@@ -142,7 +165,7 @@
       "bonus_ronda_cuartos": 50,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 6
+      "pos": 7
     },
     {
       "equipo": "Noruega",
@@ -165,29 +188,6 @@
       "bonus_ronda_cuartos": 50,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 7
-    },
-    {
-      "equipo": "Suiza",
-      "grupo": "B",
-      "bombo": "Bombo 4",
-      "gf": 9,
-      "gc": 3,
-      "ta": 3,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": 17,
-      "bonus_grupo": 15,
-      "premio_final": 0,
-      "premio_menos_puntos": 0,
-      "puntos_totales": 83,
-      "bonus_ronda_dieciseisavos": 25,
-      "bonus_ronda_octavos": 35,
-      "bonus_ronda_cuartos": 0,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
       "pos": 8
     },
     {
@@ -201,11 +201,11 @@
       "rd": 0,
       "penfall": 0,
       "penpar": 0,
-      "bonus_resultado": 17,
+      "bonus_resultado": 19,
       "bonus_grupo": 15,
       "premio_final": 0,
       "premio_menos_puntos": 0,
-      "puntos_totales": 76,
+      "puntos_totales": 78,
       "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 35,
       "bonus_ronda_cuartos": 0,
@@ -5481,6 +5481,52 @@
         "bonus_resultado": -8,
         "total": -40
       }
+    },
+    {
+      "id": 96,
+      "match_num": 96,
+      "fecha": "2026-07-07",
+      "fase": "Octavos de final",
+      "grupo": "",
+      "local": "Suiza",
+      "visitante": "Colombia",
+      "gf_local": 0,
+      "gf_visit": 0,
+      "ta_local": 0,
+      "doblea_local": 0,
+      "rd_local": 0,
+      "ta_visit": 0,
+      "doblea_visit": 0,
+      "rd_visit": 0,
+      "penfall_local": 0,
+      "penpar_local": 0,
+      "penfall_visit": 0,
+      "penpar_visit": 0,
+      "pen_tanda_local": 4,
+      "pen_tanda_visit": 3,
+      "jugado": true,
+      "puntos_local": {
+        "gf": 0,
+        "gc": 0,
+        "ta": 0,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": 2,
+        "total": 2
+      },
+      "puntos_visit": {
+        "gf": 0,
+        "gc": 0,
+        "ta": 0,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": 2,
+        "total": 2
+      }
     }
   ],
   "grupos": {
@@ -10635,8 +10681,8 @@
         "grupo": "",
         "local": "Suiza",
         "visitante": "Colombia",
-        "gf_local": null,
-        "gf_visit": null,
+        "gf_local": 0,
+        "gf_visit": 0,
         "ta_local": 0,
         "doblea_local": 0,
         "rd_local": 0,
@@ -10647,11 +10693,31 @@
         "penpar_local": 0,
         "penfall_visit": 0,
         "penpar_visit": 0,
-        "pen_tanda_local": 0,
-        "pen_tanda_visit": 0,
-        "jugado": false,
-        "puntos_local": null,
-        "puntos_visit": null
+        "pen_tanda_local": 4,
+        "pen_tanda_visit": 3,
+        "jugado": true,
+        "puntos_local": {
+          "gf": 0,
+          "gc": 0,
+          "ta": 0,
+          "doblea": 0,
+          "rd": 0,
+          "penfall": 0,
+          "penpar": 0,
+          "bonus_resultado": 2,
+          "total": 2
+        },
+        "puntos_visit": {
+          "gf": 0,
+          "gc": 0,
+          "ta": 0,
+          "doblea": 0,
+          "rd": 0,
+          "penfall": 0,
+          "penpar": 0,
+          "bonus_resultado": 2,
+          "total": 2
+        }
       }
     ],
     "Cuartos de final": [
@@ -10740,7 +10806,7 @@
         "fase": "Cuartos de final",
         "grupo": "",
         "local": "Argentina",
-        "visitante": "Ganador Partido 96",
+        "visitante": "Suiza",
         "gf_local": null,
         "gf_visit": null,
         "ta_local": 0,
@@ -10823,7 +10889,7 @@
       },
       {
         "equipo": "Colombia",
-        "puntos": 76
+        "puntos": 78
       },
       {
         "equipo": "Canadá",
@@ -10845,7 +10911,7 @@
     "Bombo 4": [
       {
         "equipo": "Suiza",
-        "puntos": 83
+        "puntos": 135
       },
       {
         "equipo": "EE.UU.",
