@@ -1770,5 +1770,19 @@
       "minuto": "90'+2'",
       "tipo": "Gol"
     }
+  ],
+  "Francia|Marruecos|2026-07-09": [
+    {
+      "jugador": "Kylian Mbappé",
+      "equipo": "Francia",
+      "minuto": "60'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Ousmane Dembélé",
+      "equipo": "Francia",
+      "minuto": "66'",
+      "tipo": "Gol"
+    }
   ]
 }

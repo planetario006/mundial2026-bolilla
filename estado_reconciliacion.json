@@ -1165,8 +1165,8 @@
   },
   "Argentina|Egipto": {
     "verificado": false,
-    "ultimo_chequeo": "2026-07-09T21:39:10+00:00",
-    "intentos": 22,
+    "ultimo_chequeo": "2026-07-09T23:16:46+00:00",
+    "intentos": 23,
     "match_id": 95,
     "valores_espn_aplicados": {
       "penfall_local": 1,
@@ -1177,14 +1177,26 @@
   },
   "Colombia|Suiza": {
     "verificado": true,
-    "ultimo_chequeo": "2026-07-09T21:39:10+00:00",
-    "intentos": 19,
+    "ultimo_chequeo": "2026-07-09T23:16:46+00:00",
+    "intentos": 20,
     "match_id": 96,
     "valores_espn_aplicados": {
       "penfall_local": 0,
       "penfall_visit": 0,
       "penpar_local": 0,
       "penpar_visit": 0
+    }
+  },
+  "Francia|Marruecos": {
+    "verificado": true,
+    "ultimo_chequeo": "2026-07-09T23:16:46+00:00",
+    "intentos": 1,
+    "match_id": 97,
+    "valores_espn_aplicados": {
+      "penfall_local": 1,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 1
     }
   }
 }

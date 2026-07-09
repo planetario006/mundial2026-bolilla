@@ -1,7 +1,7 @@
 {
   "meta": {
-    "actualizado": "2026-07-09T21:39:10+00:00",
-    "total_partidos_jugados": 96,
+    "actualizado": "2026-07-09T23:16:46+00:00",
+    "total_partidos_jugados": 97,
     "total_partidos": 100,
     "fase_grupos_terminada": true
   },
@@ -10,18 +10,18 @@
       "equipo": "Francia",
       "grupo": "I",
       "bombo": "Bombo 1",
-      "gf": 14,
+      "gf": 16,
       "gc": 2,
       "ta": 4,
       "doblea": 0,
       "rd": 0,
-      "penfall": 0,
+      "penfall": 1,
       "penpar": 1,
-      "bonus_resultado": 25,
+      "bonus_resultado": 30,
       "bonus_grupo": 15,
       "premio_final": 0,
       "premio_menos_puntos": 0,
-      "puntos_totales": 151,
+      "puntos_totales": 148,
       "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 35,
       "bonus_ronda_cuartos": 50,
@@ -99,29 +99,6 @@
       "pos": 4
     },
     {
-      "equipo": "Marruecos",
-      "grupo": "C",
-      "bombo": "Bombo 2",
-      "gf": 10,
-      "gc": 4,
-      "ta": 6,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 0,
-      "penpar": 0,
-      "bonus_resultado": 19,
-      "bonus_grupo": 10,
-      "premio_final": 0,
-      "premio_menos_puntos": 0,
-      "puntos_totales": 119,
-      "bonus_ronda_dieciseisavos": 25,
-      "bonus_ronda_octavos": 35,
-      "bonus_ronda_cuartos": 50,
-      "bonus_ronda_semifinal": 0,
-      "bonus_ronda_final": 0,
-      "pos": 5
-    },
-    {
       "equipo": "Bélgica",
       "grupo": "G",
       "bombo": "Bombo 2",
@@ -142,7 +119,7 @@
       "bonus_ronda_cuartos": 50,
       "bonus_ronda_semifinal": 0,
       "bonus_ronda_final": 0,
-      "pos": 6
+      "pos": 5
     },
     {
       "equipo": "Inglaterra",
@@ -160,6 +137,29 @@
       "premio_final": 0,
       "premio_menos_puntos": 0,
       "puntos_totales": 110,
+      "bonus_ronda_dieciseisavos": 25,
+      "bonus_ronda_octavos": 35,
+      "bonus_ronda_cuartos": 50,
+      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_final": 0,
+      "pos": 6
+    },
+    {
+      "equipo": "Marruecos",
+      "grupo": "C",
+      "bombo": "Bombo 2",
+      "gf": 10,
+      "gc": 6,
+      "ta": 7,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 0,
+      "penpar": 1,
+      "bonus_resultado": 11,
+      "bonus_grupo": 10,
+      "premio_final": 0,
+      "premio_menos_puntos": 0,
+      "puntos_totales": 107,
       "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 35,
       "bonus_ronda_cuartos": 50,
@@ -5527,6 +5527,52 @@
         "bonus_resultado": 2,
         "total": -4
       }
+    },
+    {
+      "id": 97,
+      "match_num": 97,
+      "fecha": "2026-07-09",
+      "fase": "Cuartos de final",
+      "grupo": "",
+      "local": "Francia",
+      "visitante": "Marruecos",
+      "gf_local": 2,
+      "gf_visit": 0,
+      "ta_local": 0,
+      "doblea_local": 0,
+      "rd_local": 0,
+      "ta_visit": 1,
+      "doblea_visit": 0,
+      "rd_visit": 0,
+      "penfall_local": 1,
+      "penpar_local": 0,
+      "penfall_visit": 0,
+      "penpar_visit": 1,
+      "pen_tanda_local": 0,
+      "pen_tanda_visit": 0,
+      "jugado": true,
+      "puntos_local": {
+        "gf": 2,
+        "gc": 0,
+        "ta": 0,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": -10,
+        "penpar": 0,
+        "bonus_resultado": 5,
+        "total": -3
+      },
+      "puntos_visit": {
+        "gf": 0,
+        "gc": -6,
+        "ta": -3,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 5,
+        "bonus_resultado": -8,
+        "total": -12
+      }
     }
   ],
   "grupos": {
@@ -10729,23 +10775,43 @@
         "grupo": "",
         "local": "Francia",
         "visitante": "Marruecos",
-        "gf_local": null,
-        "gf_visit": null,
+        "gf_local": 2,
+        "gf_visit": 0,
         "ta_local": 0,
         "doblea_local": 0,
         "rd_local": 0,
-        "ta_visit": 0,
+        "ta_visit": 1,
         "doblea_visit": 0,
         "rd_visit": 0,
-        "penfall_local": 0,
+        "penfall_local": 1,
         "penpar_local": 0,
         "penfall_visit": 0,
-        "penpar_visit": 0,
+        "penpar_visit": 1,
         "pen_tanda_local": 0,
         "pen_tanda_visit": 0,
-        "jugado": false,
-        "puntos_local": null,
-        "puntos_visit": null
+        "jugado": true,
+        "puntos_local": {
+          "gf": 2,
+          "gc": 0,
+          "ta": 0,
+          "doblea": 0,
+          "rd": 0,
+          "penfall": -10,
+          "penpar": 0,
+          "bonus_resultado": 5,
+          "total": -3
+        },
+        "puntos_visit": {
+          "gf": 0,
+          "gc": -6,
+          "ta": -3,
+          "doblea": 0,
+          "rd": 0,
+          "penfall": 0,
+          "penpar": 5,
+          "bonus_resultado": -8,
+          "total": -12
+        }
       },
       {
         "id": 98,
@@ -10833,7 +10899,7 @@
     "Bombo 1": [
       {
         "equipo": "Francia",
-        "puntos": 151
+        "puntos": 148
       },
       {
         "equipo": "España",
@@ -10858,12 +10924,12 @@
     ],
     "Bombo 2": [
       {
-        "equipo": "Marruecos",
-        "puntos": 119
-      },
-      {
         "equipo": "Bélgica",
         "puntos": 115
+      },
+      {
+        "equipo": "Marruecos",
+        "puntos": 107
       },
       {
         "equipo": "México",
@@ -11178,20 +11244,20 @@
   },
   "goleadores": [
     {
-      "jugador": "Lionel Messi",
-      "equipo": "Argentina",
+      "jugador": "Kylian Mbappé",
+      "equipo": "Francia",
       "goles": 8,
       "pos": 1
     },
     {
-      "jugador": "Erling Haaland",
-      "equipo": "Noruega",
-      "goles": 7,
+      "jugador": "Lionel Messi",
+      "equipo": "Argentina",
+      "goles": 8,
       "pos": 2
     },
     {
-      "jugador": "Kylian Mbappé",
-      "equipo": "Francia",
+      "jugador": "Erling Haaland",
+      "equipo": "Noruega",
       "goles": 7,
       "pos": 3
     },
@@ -11202,32 +11268,32 @@
       "pos": 4
     },
     {
+      "jugador": "Ousmane Dembélé",
+      "equipo": "Francia",
+      "goles": 5,
+      "pos": 5
+    },
+    {
       "jugador": "Ismaïla Sarr",
       "equipo": "Senegal",
       "goles": 4,
-      "pos": 5
+      "pos": 6
     },
     {
       "jugador": "Jude Bellingham",
       "equipo": "Inglaterra",
       "goles": 4,
-      "pos": 6
+      "pos": 7
     },
     {
       "jugador": "Julián Quiñones",
       "equipo": "México",
       "goles": 4,
-      "pos": 7
+      "pos": 8
     },
     {
       "jugador": "Mikel Oyarzabal",
       "equipo": "España",
-      "goles": 4,
-      "pos": 8
-    },
-    {
-      "jugador": "Ousmane Dembélé",
-      "equipo": "Francia",
       "goles": 4,
       "pos": 9
     },
