@@ -68,6 +68,7 @@ FASES_ELIMINACION = [
     "Octavos de final",
     "Cuartos de final",
     "Semifinales",
+    "Tercer puesto",
     "Final",
 ]
 FASES_KEYS = {
