@@ -1,0 +1,41 @@
+name: 🛠️ Editar Estadística Manual
+on:
+  workflow_dispatch:
+    inputs:
+      partido_id:
+        description: 'ID del partido'
+        required: true
+        type: number
+      campo_estadistica:
+        description: 'Estadística a cambiar'
+        required: true
+        type: choice
+        options:
+          - gf_local
+          - gf_visit
+          - ta_local
+          - ta_visit
+          - penpar_local
+          - penpar_visit
+      nuevo_valor:
+        description: 'Nuevo valor'
+        required: true
+        type: number
+permissions:
+  contents: write
+jobs:
+  editar-partido:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Ejecutar script
+        run: python editar_partido.py --id ${{ inputs.partido_id }} --campo ${{ inputs.campo_estadistica }} --valor ${{ inputs.nuevo_valor }}
+      - name: Commit y Push
+        run: |
+          git config --global user.name "Bot"
+          git config --global user.email "bot@github.com"
+          git add .
+          git commit -m "Edición ID ${{ inputs.partido_id }}"
+          git push
