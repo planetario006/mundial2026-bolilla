@@ -1784,5 +1784,25 @@
       "minuto": "66'",
       "tipo": "Gol"
     }
+  ],
+  "Bélgica|España|2026-07-10": [
+    {
+      "jugador": "Fabián Ruiz",
+      "equipo": "España",
+      "minuto": "30'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Charles De Ketelaere",
+      "equipo": "Bélgica",
+      "minuto": "41'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Mikel Merino",
+      "equipo": "España",
+      "minuto": "88'",
+      "tipo": "Gol"
+    }
   ]
 }
