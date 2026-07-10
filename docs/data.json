@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-07-10T22:09:46+00:00",
+    "actualizado": "2026-07-10T22:26:38+00:00",
     "total_partidos_jugados": 98,
     "total_partidos": 103,
     "fase_grupos_terminada": true
@@ -10993,6 +10993,34 @@
         "grupo": "",
         "local": "Ganador Partido 99",
         "visitante": "Ganador Partido 100",
+        "gf_local": null,
+        "gf_visit": null,
+        "ta_local": 0,
+        "doblea_local": 0,
+        "rd_local": 0,
+        "ta_visit": 0,
+        "doblea_visit": 0,
+        "rd_visit": 0,
+        "penfall_local": 0,
+        "penpar_local": 0,
+        "penfall_visit": 0,
+        "penpar_visit": 0,
+        "pen_tanda_local": 0,
+        "pen_tanda_visit": 0,
+        "jugado": false,
+        "puntos_local": null,
+        "puntos_visit": null
+      }
+    ],
+    "Tercer puesto": [
+      {
+        "id": 103,
+        "match_num": 103,
+        "fecha": "2026-07-18",
+        "fase": "Tercer puesto",
+        "grupo": "",
+        "local": "Perdedor Partido 101",
+        "visitante": "Perdedor Partido 102",
         "gf_local": null,
         "gf_visit": null,
         "ta_local": 0,
