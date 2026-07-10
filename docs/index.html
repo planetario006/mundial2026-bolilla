@@ -156,7 +156,7 @@
   .match-breakdown-table td.team-cell{font-family:'Inter',sans-serif; font-weight:600; text-align:left; font-size:11.5px; padding-left:8px; white-space:normal;}
   .match-breakdown-table tbody tr:last-child td{border-bottom:none;}
   .match-breakdown-table td.total-cell{font-weight:700;}
-  /* ---------- Pills (grupos / fases) ---------- */
+  /* ---------- Pills (grupos / ) ---------- */
   .pillbar{display:flex; gap:7px; overflow-x:auto; padding:2px 2px 4px; scrollbar-width:none;}
   .pillbar::-webkit-scrollbar{display:none;}
   .pill{flex-shrink:0; padding:7px 14px; border-radius:20px; background:var(--turf); border:1px solid var(--line); color:var(--chalk-dim); font-family:'Oswald',sans-serif; font-size:13px; letter-spacing:0.04em; cursor:pointer;}
@@ -949,15 +949,22 @@ function renderEliminacion(){
     'Octavos de final',
     'Cuartos de final',
     'Semifinales',
-    'Final',
     'Tercer puesto',
+    'Final',
   ];
   const LABELS = ['R32','R16','QF','SF','3º/4º','Final'];
 
   // Choose the deepest phase with data as default
+  // Seleccionar por defecto la primera fase que tenga partidos sin jugar
   let faseActiva = FASES[0];
-  for(const f of [...FASES].reverse()){
-    if((elim[f]||[]).length > 0){ faseActiva = f; break; }
+  for (const f of FASES) {
+    const partidos = elim[f] || [];
+    faseActiva = f; // Actualizamos a la fase que estamos revisando
+    
+    // Si la ronda no tiene partidos, o si tiene alguno que NO se ha jugado, paramos aquí.
+    if (partidos.length === 0 || partidos.some(p => !p.jugado)) {
+      break;
+    }
   }
 
   // Header labels row (mirrors the bracket columns)
