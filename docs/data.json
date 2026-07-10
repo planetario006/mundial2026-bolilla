@@ -1,8 +1,8 @@
 {
   "meta": {
-    "actualizado": "2026-07-09T23:16:46+00:00",
+    "actualizado": "2026-07-10T01:11:38+00:00",
     "total_partidos_jugados": 97,
-    "total_partidos": 100,
+    "total_partidos": 103,
     "fase_grupos_terminada": true
   },
   "ranking": [
@@ -21,11 +21,11 @@
       "bonus_grupo": 15,
       "premio_final": 0,
       "premio_menos_puntos": 0,
-      "puntos_totales": 148,
+      "puntos_totales": 218,
       "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 35,
       "bonus_ronda_cuartos": 50,
-      "bonus_ronda_semifinal": 0,
+      "bonus_ronda_semifinal": 70,
       "bonus_ronda_final": 0,
       "pos": 1
     },
@@ -10892,14 +10892,67 @@
         "puntos_visit": null
       }
     ],
-    "Semifinales": [],
+    "Semifinales": [
+      {
+        "id": 101,
+        "match_num": 101,
+        "fecha": "2026-07-14",
+        "fase": "Semifinales",
+        "grupo": "",
+        "local": "Francia",
+        "visitante": "Ganador Partido 98",
+        "gf_local": null,
+        "gf_visit": null,
+        "ta_local": 0,
+        "doblea_local": 0,
+        "rd_local": 0,
+        "ta_visit": 0,
+        "doblea_visit": 0,
+        "rd_visit": 0,
+        "penfall_local": 0,
+        "penpar_local": 0,
+        "penfall_visit": 0,
+        "penpar_visit": 0,
+        "pen_tanda_local": 0,
+        "pen_tanda_visit": 0,
+        "jugado": false,
+        "puntos_local": null,
+        "puntos_visit": null
+      },
+      {
+        "id": 102,
+        "match_num": 102,
+        "fecha": "2026-07-15",
+        "fase": "Semifinales",
+        "grupo": "",
+        "local": "Ganador Partido 99",
+        "visitante": "Ganador Partido 100",
+        "gf_local": null,
+        "gf_visit": null,
+        "ta_local": 0,
+        "doblea_local": 0,
+        "rd_local": 0,
+        "ta_visit": 0,
+        "doblea_visit": 0,
+        "rd_visit": 0,
+        "penfall_local": 0,
+        "penpar_local": 0,
+        "penfall_visit": 0,
+        "penpar_visit": 0,
+        "pen_tanda_local": 0,
+        "pen_tanda_visit": 0,
+        "jugado": false,
+        "puntos_local": null,
+        "puntos_visit": null
+      }
+    ],
     "Final": []
   },
   "bombos": {
     "Bombo 1": [
       {
         "equipo": "Francia",
-        "puntos": 148
+        "puntos": 218
       },
       {
         "equipo": "España",
