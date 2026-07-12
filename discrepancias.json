@@ -7,7 +7,7 @@
     "campo": "ta_visit",
     "valor_wiki": 6,
     "valor_scraper": 4,
-    "detectado": "2026-07-12T04:07:38+00:00"
+    "detectado": "2026-07-12T07:07:58+00:00"
   },
   {
     "ref": "Argentina|Egipto::rd_visit",
@@ -17,27 +17,7 @@
     "campo": "rd_visit",
     "valor_wiki": 1,
     "valor_scraper": 0,
-    "detectado": "2026-07-12T04:07:38+00:00"
-  },
-  {
-    "ref": "Argentina|Suiza::ta_local",
-    "match_id": 100,
-    "local": "Argentina",
-    "visitante": "Suiza",
-    "campo": "ta_local",
-    "valor_wiki": 0,
-    "valor_scraper": 3,
-    "detectado": "2026-07-12T04:07:38+00:00"
-  },
-  {
-    "ref": "Argentina|Suiza::ta_visit",
-    "match_id": 100,
-    "local": "Argentina",
-    "visitante": "Suiza",
-    "campo": "ta_visit",
-    "valor_wiki": 0,
-    "valor_scraper": 1,
-    "detectado": "2026-07-12T04:07:38+00:00"
+    "detectado": "2026-07-12T07:07:58+00:00"
   },
   {
     "ref": "Argentina|Suiza::doblea_visit",
@@ -47,7 +27,7 @@
     "campo": "doblea_visit",
     "valor_wiki": 1,
     "valor_scraper": 0,
-    "detectado": "2026-07-12T04:07:38+00:00"
+    "detectado": "2026-07-12T07:07:58+00:00"
   },
   {
     "ref": "Argentina|Suiza::rd_visit",
@@ -57,6 +37,6 @@
     "campo": "rd_visit",
     "valor_wiki": 0,
     "valor_scraper": 1,
-    "detectado": "2026-07-12T04:07:38+00:00"
+    "detectado": "2026-07-12T07:07:58+00:00"
   }
 ]
