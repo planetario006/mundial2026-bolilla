@@ -1824,5 +1824,31 @@
       "minuto": "93'",
       "tipo": "Gol"
     }
+  ],
+  "Argentina|Suiza|2026-07-12": [
+    {
+      "jugador": "Alexis Mac Allister",
+      "equipo": "Argentina",
+      "minuto": "10'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Dan Ndoye",
+      "equipo": "Suiza",
+      "minuto": "67'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Julián Álvarez",
+      "equipo": "Argentina",
+      "minuto": "112'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Lautaro Martínez",
+      "equipo": "Argentina",
+      "minuto": "120'+1'",
+      "tipo": "Gol"
+    }
   ]
 }
