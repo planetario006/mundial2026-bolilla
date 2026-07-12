@@ -7,7 +7,7 @@
     "campo": "ta_visit",
     "valor_wiki": 6,
     "valor_scraper": 4,
-    "detectado": "2026-07-11T22:55:48+00:00"
+    "detectado": "2026-07-12T00:02:54+00:00"
   },
   {
     "ref": "Argentina|Egipto::rd_visit",
@@ -17,6 +17,16 @@
     "campo": "rd_visit",
     "valor_wiki": 1,
     "valor_scraper": 0,
-    "detectado": "2026-07-11T22:55:48+00:00"
+    "detectado": "2026-07-12T00:02:54+00:00"
+  },
+  {
+    "ref": "Inglaterra|Noruega::ta_local",
+    "match_id": 99,
+    "local": "Noruega",
+    "visitante": "Inglaterra",
+    "campo": "ta_local",
+    "valor_wiki": 0,
+    "valor_scraper": 1,
+    "detectado": "2026-07-12T00:02:54+00:00"
   }
 ]

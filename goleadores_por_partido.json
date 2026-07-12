@@ -1804,5 +1804,25 @@
       "minuto": "88'",
       "tipo": "Gol"
     }
+  ],
+  "Inglaterra|Noruega|2026-07-11": [
+    {
+      "jugador": "Andreas Schjelderup",
+      "equipo": "Noruega",
+      "minuto": "36'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Jude Bellingham",
+      "equipo": "Inglaterra",
+      "minuto": "45'+2'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Jude Bellingham",
+      "equipo": "Inglaterra",
+      "minuto": "93'",
+      "tipo": "Gol"
+    }
   ]
 }
