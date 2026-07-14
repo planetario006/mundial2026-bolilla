@@ -1850,5 +1850,19 @@
       "minuto": "120'+1'",
       "tipo": "Gol"
     }
+  ],
+  "España|Francia|2026-07-14": [
+    {
+      "jugador": "Mikel Oyarzabal",
+      "equipo": "España",
+      "minuto": "22'",
+      "tipo": "Penalti"
+    },
+    {
+      "jugador": "Pedro Porro",
+      "equipo": "España",
+      "minuto": "58'",
+      "tipo": "Gol"
+    }
   ]
 }
