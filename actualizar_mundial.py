@@ -128,7 +128,7 @@ FASES_ELIMINACION = [
      "fase_txt": "Cuartos de final",},
     {"pagina": "Anexo:Semifinales de la Copa Mundial de Fútbol de 2026",
      "fase_txt": "Semifinales",},
-    {"pagina": "Anexo:Final de la Copa Mundial de Fútbol de 2026",
+    {"pagina": "Final de la Copa Mundial de Fútbol de 2026",
      "fase_txt": "Final",},
 ]
 
