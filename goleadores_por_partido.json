@@ -1,0 +1,1635 @@
+{
+  "_procesados": [
+    "Alemania|Costa de Marfil|2026-06-20",
+    "Alemania|Curazao|2026-06-14",
+    "Alemania|Ecuador|2026-06-25",
+    "Alemania|Paraguay|2026-06-29",
+    "Arabia Saudí|España|2026-06-21",
+    "Arabia Saudí|Uruguay|2026-06-15",
+    "Argelia|Argentina|2026-06-17",
+    "Argelia|Austria|2026-06-28",
+    "Argelia|Jordania|2026-06-23",
+    "Argelia|Suiza|2026-07-03",
+    "Argentina|Austria|2026-06-22",
+    "Argentina|Cabo Verde|2026-07-03",
+    "Argentina|Jordania|2026-06-28",
+    "Australia|EE.UU.|2026-06-19",
+    "Australia|Egipto|2026-07-03",
+    "Australia|Turquía|2026-06-14",
+    "Austria|España|2026-07-02",
+    "Austria|Jordania|2026-06-17",
+    "Bosnia|Canadá|2026-06-12",
+    "Bosnia|Catar|2026-06-24",
+    "Bosnia|EE.UU.|2026-07-02",
+    "Bosnia|Suiza|2026-06-18",
+    "Brasil|Escocia|2026-06-24",
+    "Brasil|Haití|2026-06-20",
+    "Brasil|Japón|2026-06-29",
+    "Brasil|Marruecos|2026-06-13",
+    "Bélgica|Egipto|2026-06-15",
+    "Bélgica|Nueva Zelanda|2026-06-27",
+    "Bélgica|Senegal|2026-07-01",
+    "Cabo Verde|Uruguay|2026-06-21",
+    "Canadá|Catar|2026-06-18",
+    "Canadá|Sudáfrica|2026-06-28",
+    "Canadá|Suiza|2026-06-24",
+    "Catar|Suiza|2026-06-13",
+    "Chequia|Corea del Sur|2026-06-12",
+    "Chequia|México|2026-06-25",
+    "Chequia|Sudáfrica|2026-06-18",
+    "Colombia|Ghana|2026-07-04",
+    "Colombia|R. D. Congo|2026-06-24",
+    "Colombia|Uzbekistán|2026-06-18",
+    "Corea del Sur|México|2026-06-19",
+    "Corea del Sur|Sudáfrica|2026-06-25",
+    "Costa de Marfil|Curazao|2026-06-25",
+    "Costa de Marfil|Ecuador|2026-06-14",
+    "Costa de Marfil|Noruega|2026-06-30",
+    "Croacia|Ghana|2026-06-27",
+    "Croacia|Inglaterra|2026-06-17",
+    "Croacia|Panamá|2026-06-23",
+    "Croacia|Portugal|2026-07-02",
+    "EE.UU.|Paraguay|2026-06-13",
+    "EE.UU.|Turquía|2026-06-26",
+    "Ecuador|México|2026-07-01",
+    "Egipto|Irán|2026-06-27",
+    "Egipto|Nueva Zelanda|2026-06-22",
+    "Escocia|Haití|2026-06-14",
+    "Escocia|Marruecos|2026-06-19",
+    "España|Uruguay|2026-06-27",
+    "Francia|Irak|2026-06-22",
+    "Francia|Noruega|2026-06-26",
+    "Francia|Senegal|2026-06-16",
+    "Francia|Suecia|2026-06-30",
+    "Ghana|Panamá|2026-06-17",
+    "Haití|Marruecos|2026-06-24",
+    "Inglaterra|Panamá|2026-06-27",
+    "Inglaterra|R. D. Congo|2026-07-01",
+    "Irak|Noruega|2026-06-16",
+    "Irak|Senegal|2026-06-26",
+    "Irán|Nueva Zelanda|2026-06-16",
+    "Japón|Países Bajos|2026-06-14",
+    "Japón|Suecia|2026-06-25",
+    "Japón|Túnez|2026-06-21",
+    "Marruecos|Países Bajos|2026-06-30",
+    "México|Sudáfrica|2026-06-11",
+    "Noruega|Senegal|2026-06-23",
+    "Paraguay|Turquía|2026-06-20",
+    "Países Bajos|Suecia|2026-06-20",
+    "Países Bajos|Túnez|2026-06-25",
+    "Portugal|R. D. Congo|2026-06-17",
+    "Portugal|Uzbekistán|2026-06-23",
+    "R. D. Congo|Uzbekistán|2026-06-27",
+    "Suecia|Túnez|2026-06-15"
+  ],
+  "jugadores": {
+    "Julián Quiñones|México": {
+      "jugador": "Julián Quiñones",
+      "equipo": "México",
+      "goles": 3,
+      "asistencias": 1
+    },
+    "Érik Lira|México": {
+      "jugador": "Érik Lira",
+      "equipo": "México",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Raúl Jiménez|México": {
+      "jugador": "Raúl Jiménez",
+      "equipo": "México",
+      "goles": 2,
+      "asistencias": 0
+    },
+    "Roberto Alvarado|México": {
+      "jugador": "Roberto Alvarado",
+      "equipo": "México",
+      "goles": 0,
+      "asistencias": 3
+    },
+    "Ladislav Krejcí|Chequia": {
+      "jugador": "Ladislav Krejcí",
+      "equipo": "Chequia",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Vladimír Coufal|Chequia": {
+      "jugador": "Vladimír Coufal",
+      "equipo": "Chequia",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Hwang In-Beom|Corea del Sur": {
+      "jugador": "Hwang In-Beom",
+      "equipo": "Corea del Sur",
+      "goles": 1,
+      "asistencias": 1
+    },
+    "Lee Kang-In|Corea del Sur": {
+      "jugador": "Lee Kang-In",
+      "equipo": "Corea del Sur",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Oh Hyeon-Gyu|Corea del Sur": {
+      "jugador": "Oh Hyeon-Gyu",
+      "equipo": "Corea del Sur",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Jovo Lukic|Bosnia": {
+      "jugador": "Jovo Lukic",
+      "equipo": "Bosnia",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Sead Kolasinac|Bosnia": {
+      "jugador": "Sead Kolasinac",
+      "equipo": "Bosnia",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Cyle Larin|Canadá": {
+      "jugador": "Cyle Larin",
+      "equipo": "Canadá",
+      "goles": 2,
+      "asistencias": 0
+    },
+    "Promise David|Canadá": {
+      "jugador": "Promise David",
+      "equipo": "Canadá",
+      "goles": 1,
+      "asistencias": 1
+    },
+    "Folarin Balogun|EE.UU.": {
+      "jugador": "Folarin Balogun",
+      "equipo": "EE.UU.",
+      "goles": 3,
+      "asistencias": 0
+    },
+    "Christian Pulisic|EE.UU.": {
+      "jugador": "Christian Pulisic",
+      "equipo": "EE.UU.",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Malik Tillman|EE.UU.": {
+      "jugador": "Malik Tillman",
+      "equipo": "EE.UU.",
+      "goles": 1,
+      "asistencias": 1
+    },
+    "Maurício|Paraguay": {
+      "jugador": "Maurício",
+      "equipo": "Paraguay",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Julio Enciso|Paraguay": {
+      "jugador": "Julio Enciso",
+      "equipo": "Paraguay",
+      "goles": 1,
+      "asistencias": 2
+    },
+    "Giovanni Reyna|EE.UU.": {
+      "jugador": "Giovanni Reyna",
+      "equipo": "EE.UU.",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Alex Freeman|EE.UU.": {
+      "jugador": "Alex Freeman",
+      "equipo": "EE.UU.",
+      "goles": 1,
+      "asistencias": 1
+    },
+    "Breel Embolo|Suiza": {
+      "jugador": "Breel Embolo",
+      "equipo": "Suiza",
+      "goles": 2,
+      "asistencias": 2
+    },
+    "Ismael Saibari|Marruecos": {
+      "jugador": "Ismael Saibari",
+      "equipo": "Marruecos",
+      "goles": 3,
+      "asistencias": 0
+    },
+    "Brahim Díaz|Marruecos": {
+      "jugador": "Brahim Díaz",
+      "equipo": "Marruecos",
+      "goles": 0,
+      "asistencias": 2
+    },
+    "Vinícius Júnior|Brasil": {
+      "jugador": "Vinícius Júnior",
+      "equipo": "Brasil",
+      "goles": 4,
+      "asistencias": 1
+    },
+    "Bruno Guimarães|Brasil": {
+      "jugador": "Bruno Guimarães",
+      "equipo": "Brasil",
+      "goles": 0,
+      "asistencias": 4
+    },
+    "John McGinn|Escocia": {
+      "jugador": "John McGinn",
+      "equipo": "Escocia",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Nestory Irankunda|Australia": {
+      "jugador": "Nestory Irankunda",
+      "equipo": "Australia",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Paul Okon-Engstler|Australia": {
+      "jugador": "Paul Okon-Engstler",
+      "equipo": "Australia",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Connor Metcalfe|Australia": {
+      "jugador": "Connor Metcalfe",
+      "equipo": "Australia",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Felix Nmecha|Alemania": {
+      "jugador": "Felix Nmecha",
+      "equipo": "Alemania",
+      "goles": 1,
+      "asistencias": 1
+    },
+    "Florian Wirtz|Alemania": {
+      "jugador": "Florian Wirtz",
+      "equipo": "Alemania",
+      "goles": 0,
+      "asistencias": 3
+    },
+    "Livano Comenencia|Curazao": {
+      "jugador": "Livano Comenencia",
+      "equipo": "Curazao",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Nico Schlotterbeck|Alemania": {
+      "jugador": "Nico Schlotterbeck",
+      "equipo": "Alemania",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Nathaniel Brown|Alemania": {
+      "jugador": "Nathaniel Brown",
+      "equipo": "Alemania",
+      "goles": 1,
+      "asistencias": 1
+    },
+    "Kai Havertz|Alemania": {
+      "jugador": "Kai Havertz",
+      "equipo": "Alemania",
+      "goles": 3,
+      "asistencias": 0
+    },
+    "Jamal Musiala|Alemania": {
+      "jugador": "Jamal Musiala",
+      "equipo": "Alemania",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Joshua Kimmich|Alemania": {
+      "jugador": "Joshua Kimmich",
+      "equipo": "Alemania",
+      "goles": 0,
+      "asistencias": 2
+    },
+    "Deniz Undav|Alemania": {
+      "jugador": "Deniz Undav",
+      "equipo": "Alemania",
+      "goles": 3,
+      "asistencias": 2
+    },
+    "Virgil van Dijk|Países Bajos": {
+      "jugador": "Virgil van Dijk",
+      "equipo": "Países Bajos",
+      "goles": 1,
+      "asistencias": 1
+    },
+    "Ryan Gravenberch|Países Bajos": {
+      "jugador": "Ryan Gravenberch",
+      "equipo": "Países Bajos",
+      "goles": 0,
+      "asistencias": 2
+    },
+    "Keito Nakamura|Japón": {
+      "jugador": "Keito Nakamura",
+      "equipo": "Japón",
+      "goles": 1,
+      "asistencias": 1
+    },
+    "Takefusa Kubo|Japón": {
+      "jugador": "Takefusa Kubo",
+      "equipo": "Japón",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Crysencio Summerville|Países Bajos": {
+      "jugador": "Crysencio Summerville",
+      "equipo": "Países Bajos",
+      "goles": 2,
+      "asistencias": 2
+    },
+    "Daichi Kamada|Japón": {
+      "jugador": "Daichi Kamada",
+      "equipo": "Japón",
+      "goles": 2,
+      "asistencias": 0
+    },
+    "Koki Ogawa|Japón": {
+      "jugador": "Koki Ogawa",
+      "equipo": "Japón",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Amad Diallo|Costa de Marfil": {
+      "jugador": "Amad Diallo",
+      "equipo": "Costa de Marfil",
+      "goles": 2,
+      "asistencias": 0
+    },
+    "Wilfried Singo|Costa de Marfil": {
+      "jugador": "Wilfried Singo",
+      "equipo": "Costa de Marfil",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Yasin Ayari|Suecia": {
+      "jugador": "Yasin Ayari",
+      "equipo": "Suecia",
+      "goles": 2,
+      "asistencias": 0
+    },
+    "Alexander Isak|Suecia": {
+      "jugador": "Alexander Isak",
+      "equipo": "Suecia",
+      "goles": 1,
+      "asistencias": 3
+    },
+    "Viktor Gyökeres|Suecia": {
+      "jugador": "Viktor Gyökeres",
+      "equipo": "Suecia",
+      "goles": 1,
+      "asistencias": 2
+    },
+    "Omar Rekik|Túnez": {
+      "jugador": "Omar Rekik",
+      "equipo": "Túnez",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Hannibal Mejbri|Túnez": {
+      "jugador": "Hannibal Mejbri",
+      "equipo": "Túnez",
+      "goles": 0,
+      "asistencias": 2
+    },
+    "Mattias Svanberg|Suecia": {
+      "jugador": "Mattias Svanberg",
+      "equipo": "Suecia",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Lucas Bergvall|Suecia": {
+      "jugador": "Lucas Bergvall",
+      "equipo": "Suecia",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Emam Ashour|Egipto": {
+      "jugador": "Emam Ashour",
+      "equipo": "Egipto",
+      "goles": 2,
+      "asistencias": 0
+    },
+    "Mohamed Salah|Egipto": {
+      "jugador": "Mohamed Salah",
+      "equipo": "Egipto",
+      "goles": 1,
+      "asistencias": 2
+    },
+    "Abdulelah Al-Amri|Arabia Saudí": {
+      "jugador": "Abdulelah Al-Amri",
+      "equipo": "Arabia Saudí",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Maxi Araújo|Uruguay": {
+      "jugador": "Maxi Araújo",
+      "equipo": "Uruguay",
+      "goles": 2,
+      "asistencias": 1
+    },
+    "Elijah Just|Nueva Zelanda": {
+      "jugador": "Elijah Just",
+      "equipo": "Nueva Zelanda",
+      "goles": 3,
+      "asistencias": 0
+    },
+    "Chris Wood|Nueva Zelanda": {
+      "jugador": "Chris Wood",
+      "equipo": "Nueva Zelanda",
+      "goles": 0,
+      "asistencias": 2
+    },
+    "Ramin Rezaeian|Irán": {
+      "jugador": "Ramin Rezaeian",
+      "equipo": "Irán",
+      "goles": 2,
+      "asistencias": 1
+    },
+    "Mohammad Mohebbi|Irán": {
+      "jugador": "Mohammad Mohebbi",
+      "equipo": "Irán",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Kylian Mbappé|Francia": {
+      "jugador": "Kylian Mbappé",
+      "equipo": "Francia",
+      "goles": 6,
+      "asistencias": 2
+    },
+    "Michael Olise|Francia": {
+      "jugador": "Michael Olise",
+      "equipo": "Francia",
+      "goles": 0,
+      "asistencias": 5
+    },
+    "Bradley Barcola|Francia": {
+      "jugador": "Bradley Barcola",
+      "equipo": "Francia",
+      "goles": 2,
+      "asistencias": 1
+    },
+    "Adrien Rabiot|Francia": {
+      "jugador": "Adrien Rabiot",
+      "equipo": "Francia",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Ibrahim Mbaye|Senegal": {
+      "jugador": "Ibrahim Mbaye",
+      "equipo": "Senegal",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Iliman Ndiaye|Senegal": {
+      "jugador": "Iliman Ndiaye",
+      "equipo": "Senegal",
+      "goles": 1,
+      "asistencias": 2
+    },
+    "Erling Haaland|Noruega": {
+      "jugador": "Erling Haaland",
+      "equipo": "Noruega",
+      "goles": 5,
+      "asistencias": 0
+    },
+    "David Møller Wolfe|Noruega": {
+      "jugador": "David Møller Wolfe",
+      "equipo": "Noruega",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Aymen Hussein|Irak": {
+      "jugador": "Aymen Hussein",
+      "equipo": "Irak",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Amir Al-Ammari|Irak": {
+      "jugador": "Amir Al-Ammari",
+      "equipo": "Irak",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Leo Østigard|Noruega": {
+      "jugador": "Leo Østigard",
+      "equipo": "Noruega",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Martin Ødegaard|Noruega": {
+      "jugador": "Martin Ødegaard",
+      "equipo": "Noruega",
+      "goles": 0,
+      "asistencias": 3
+    },
+    "Lionel Messi|Argentina": {
+      "jugador": "Lionel Messi",
+      "equipo": "Argentina",
+      "goles": 7,
+      "asistencias": 0
+    },
+    "Rodrigo De Paul|Argentina": {
+      "jugador": "Rodrigo De Paul",
+      "equipo": "Argentina",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Nico González|Argentina": {
+      "jugador": "Nico González",
+      "equipo": "Argentina",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Romano Schmid|Austria": {
+      "jugador": "Romano Schmid",
+      "equipo": "Austria",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Xaver Schlager|Austria": {
+      "jugador": "Xaver Schlager",
+      "equipo": "Austria",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Ali Olwan|Jordania": {
+      "jugador": "Ali Olwan",
+      "equipo": "Jordania",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Noor Al-Rawabdeh|Jordania": {
+      "jugador": "Noor Al-Rawabdeh",
+      "equipo": "Jordania",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Marko Arnautovic|Austria": {
+      "jugador": "Marko Arnautovic",
+      "equipo": "Austria",
+      "goles": 2,
+      "asistencias": 0
+    },
+    "João Neves|Portugal": {
+      "jugador": "João Neves",
+      "equipo": "Portugal",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Pedro Neto|Portugal": {
+      "jugador": "Pedro Neto",
+      "equipo": "Portugal",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Yoane Wissa|R. D. Congo": {
+      "jugador": "Yoane Wissa",
+      "equipo": "R. D. Congo",
+      "goles": 3,
+      "asistencias": 0
+    },
+    "Arthur Masuaku|R. D. Congo": {
+      "jugador": "Arthur Masuaku",
+      "equipo": "R. D. Congo",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Harry Kane|Inglaterra": {
+      "jugador": "Harry Kane",
+      "equipo": "Inglaterra",
+      "goles": 5,
+      "asistencias": 0
+    },
+    "Martin Baturina|Croacia": {
+      "jugador": "Martin Baturina",
+      "equipo": "Croacia",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Petar Sucic|Croacia": {
+      "jugador": "Petar Sucic",
+      "equipo": "Croacia",
+      "goles": 1,
+      "asistencias": 1
+    },
+    "Declan Rice|Inglaterra": {
+      "jugador": "Declan Rice",
+      "equipo": "Inglaterra",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Petar Musa|Croacia": {
+      "jugador": "Petar Musa",
+      "equipo": "Croacia",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Ivan Perisic|Croacia": {
+      "jugador": "Ivan Perisic",
+      "equipo": "Croacia",
+      "goles": 1,
+      "asistencias": 1
+    },
+    "Jude Bellingham|Inglaterra": {
+      "jugador": "Jude Bellingham",
+      "equipo": "Inglaterra",
+      "goles": 2,
+      "asistencias": 1
+    },
+    "Elliot Anderson|Inglaterra": {
+      "jugador": "Elliot Anderson",
+      "equipo": "Inglaterra",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Marcus Rashford|Inglaterra": {
+      "jugador": "Marcus Rashford",
+      "equipo": "Inglaterra",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Bukayo Saka|Inglaterra": {
+      "jugador": "Bukayo Saka",
+      "equipo": "Inglaterra",
+      "goles": 0,
+      "asistencias": 2
+    },
+    "Caleb Yirenkyi|Ghana": {
+      "jugador": "Caleb Yirenkyi",
+      "equipo": "Ghana",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Brandon Thomas-Asante|Ghana": {
+      "jugador": "Brandon Thomas-Asante",
+      "equipo": "Ghana",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Daniel Muñoz|Colombia": {
+      "jugador": "Daniel Muñoz",
+      "equipo": "Colombia",
+      "goles": 2,
+      "asistencias": 0
+    },
+    "Luis Díaz|Colombia": {
+      "jugador": "Luis Díaz",
+      "equipo": "Colombia",
+      "goles": 1,
+      "asistencias": 1
+    },
+    "Abbosbek Fayzullaev|Uzbekistán": {
+      "jugador": "Abbosbek Fayzullaev",
+      "equipo": "Uzbekistán",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Gustavo Puerta|Colombia": {
+      "jugador": "Gustavo Puerta",
+      "equipo": "Colombia",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Jáminton Campaz|Colombia": {
+      "jugador": "Jáminton Campaz",
+      "equipo": "Colombia",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Cucho Hernández|Colombia": {
+      "jugador": "Cucho Hernández",
+      "equipo": "Colombia",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Michal Sadílek|Chequia": {
+      "jugador": "Michal Sadílek",
+      "equipo": "Chequia",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Alexandr Sojka|Chequia": {
+      "jugador": "Alexandr Sojka",
+      "equipo": "Chequia",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Teboho Mokoena|Sudáfrica": {
+      "jugador": "Teboho Mokoena",
+      "equipo": "Sudáfrica",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Johan Manzambi|Suiza": {
+      "jugador": "Johan Manzambi",
+      "equipo": "Suiza",
+      "goles": 3,
+      "asistencias": 2
+    },
+    "Rubén Vargas|Suiza": {
+      "jugador": "Rubén Vargas",
+      "equipo": "Suiza",
+      "goles": 2,
+      "asistencias": 1
+    },
+    "Ermin Mahmic|Bosnia": {
+      "jugador": "Ermin Mahmic",
+      "equipo": "Bosnia",
+      "goles": 2,
+      "asistencias": 0
+    },
+    "Granit Xhaka|Suiza": {
+      "jugador": "Granit Xhaka",
+      "equipo": "Suiza",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Jonathan David|Canadá": {
+      "jugador": "Jonathan David",
+      "equipo": "Canadá",
+      "goles": 3,
+      "asistencias": 0
+    },
+    "Nathan Saliba|Canadá": {
+      "jugador": "Nathan Saliba",
+      "equipo": "Canadá",
+      "goles": 1,
+      "asistencias": 2
+    },
+    "Luis Romo|México": {
+      "jugador": "Luis Romo",
+      "equipo": "México",
+      "goles": 1,
+      "asistencias": 1
+    },
+    "Matheus Cunha|Brasil": {
+      "jugador": "Matheus Cunha",
+      "equipo": "Brasil",
+      "goles": 3,
+      "asistencias": 0
+    },
+    "Lucas Paquetá|Brasil": {
+      "jugador": "Lucas Paquetá",
+      "equipo": "Brasil",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Matías Galarza|Paraguay": {
+      "jugador": "Matías Galarza",
+      "equipo": "Paraguay",
+      "goles": 1,
+      "asistencias": 1
+    },
+    "Brian Brobbey|Países Bajos": {
+      "jugador": "Brian Brobbey",
+      "equipo": "Países Bajos",
+      "goles": 3,
+      "asistencias": 0
+    },
+    "Cody Gakpo|Países Bajos": {
+      "jugador": "Cody Gakpo",
+      "equipo": "Países Bajos",
+      "goles": 3,
+      "asistencias": 1
+    },
+    "Denzel Dumfries|Países Bajos": {
+      "jugador": "Denzel Dumfries",
+      "equipo": "Países Bajos",
+      "goles": 0,
+      "asistencias": 2
+    },
+    "Anthony Elanga|Suecia": {
+      "jugador": "Anthony Elanga",
+      "equipo": "Suecia",
+      "goles": 2,
+      "asistencias": 0
+    },
+    "Memphis Depay|Países Bajos": {
+      "jugador": "Memphis Depay",
+      "equipo": "Países Bajos",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Franck Kessié|Costa de Marfil": {
+      "jugador": "Franck Kessié",
+      "equipo": "Costa de Marfil",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Nadiem Amiri|Alemania": {
+      "jugador": "Nadiem Amiri",
+      "equipo": "Alemania",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Ayase Ueda|Japón": {
+      "jugador": "Ayase Ueda",
+      "equipo": "Japón",
+      "goles": 2,
+      "asistencias": 1
+    },
+    "Kou Itakura|Japón": {
+      "jugador": "Kou Itakura",
+      "equipo": "Japón",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Junya Ito|Japón": {
+      "jugador": "Junya Ito",
+      "equipo": "Japón",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Kaishu Sano|Japón": {
+      "jugador": "Kaishu Sano",
+      "equipo": "Japón",
+      "goles": 1,
+      "asistencias": 1
+    },
+    "Lamine Yamal|España": {
+      "jugador": "Lamine Yamal",
+      "equipo": "España",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Mikel Oyarzabal|España": {
+      "jugador": "Mikel Oyarzabal",
+      "equipo": "España",
+      "goles": 4,
+      "asistencias": 1
+    },
+    "Aymeric Laporte|España": {
+      "jugador": "Aymeric Laporte",
+      "equipo": "España",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Dani Olmo|España": {
+      "jugador": "Dani Olmo",
+      "equipo": "España",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Kevin Pina|Cabo Verde": {
+      "jugador": "Kevin Pina",
+      "equipo": "Cabo Verde",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Agustín Canobbio|Uruguay": {
+      "jugador": "Agustín Canobbio",
+      "equipo": "Uruguay",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Hélio Varela|Cabo Verde": {
+      "jugador": "Hélio Varela",
+      "equipo": "Cabo Verde",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Finn Surman|Nueva Zelanda": {
+      "jugador": "Finn Surman",
+      "equipo": "Nueva Zelanda",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Tim Payne|Nueva Zelanda": {
+      "jugador": "Tim Payne",
+      "equipo": "Nueva Zelanda",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Mostafa Zico|Egipto": {
+      "jugador": "Mostafa Zico",
+      "equipo": "Egipto",
+      "goles": 1,
+      "asistencias": 1
+    },
+    "Mohamed Hany|Egipto": {
+      "jugador": "Mohamed Hany",
+      "equipo": "Egipto",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Trézéguet|Egipto": {
+      "jugador": "Trézéguet",
+      "equipo": "Egipto",
+      "goles": 1,
+      "asistencias": 1
+    },
+    "Facundo Medina|Argentina": {
+      "jugador": "Facundo Medina",
+      "equipo": "Argentina",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Ousmane Dembélé|Francia": {
+      "jugador": "Ousmane Dembélé",
+      "equipo": "Francia",
+      "goles": 4,
+      "asistencias": 2
+    },
+    "Marcus Holmgren Pedersen|Noruega": {
+      "jugador": "Marcus Holmgren Pedersen",
+      "equipo": "Noruega",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Ismaïla Sarr|Senegal": {
+      "jugador": "Ismaïla Sarr",
+      "equipo": "Senegal",
+      "goles": 4,
+      "asistencias": 1
+    },
+    "Sadio Mané|Senegal": {
+      "jugador": "Sadio Mané",
+      "equipo": "Senegal",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Patrick Berg|Noruega": {
+      "jugador": "Patrick Berg",
+      "equipo": "Noruega",
+      "goles": 0,
+      "asistencias": 2
+    },
+    "Nicolas Jackson|Senegal": {
+      "jugador": "Nicolas Jackson",
+      "equipo": "Senegal",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Nizar Al-Rashdan|Jordania": {
+      "jugador": "Nizar Al-Rashdan",
+      "equipo": "Jordania",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Mousa Al-Tamari|Jordania": {
+      "jugador": "Mousa Al-Tamari",
+      "equipo": "Jordania",
+      "goles": 1,
+      "asistencias": 1
+    },
+    "Nadhir Benbouali|Argelia": {
+      "jugador": "Nadhir Benbouali",
+      "equipo": "Argelia",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Riyad Mahrez|Argelia": {
+      "jugador": "Riyad Mahrez",
+      "equipo": "Argelia",
+      "goles": 2,
+      "asistencias": 1
+    },
+    "Amine Gouiri|Argelia": {
+      "jugador": "Amine Gouiri",
+      "equipo": "Argelia",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Cristiano Ronaldo|Portugal": {
+      "jugador": "Cristiano Ronaldo",
+      "equipo": "Portugal",
+      "goles": 3,
+      "asistencias": 0
+    },
+    "João Cancelo|Portugal": {
+      "jugador": "João Cancelo",
+      "equipo": "Portugal",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Nuno Mendes|Portugal": {
+      "jugador": "Nuno Mendes",
+      "equipo": "Portugal",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Bruno Fernandes|Portugal": {
+      "jugador": "Bruno Fernandes",
+      "equipo": "Portugal",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Rafael Leão|Portugal": {
+      "jugador": "Rafael Leão",
+      "equipo": "Portugal",
+      "goles": 1,
+      "asistencias": 1
+    },
+    "Ante Budimir|Croacia": {
+      "jugador": "Ante Budimir",
+      "equipo": "Croacia",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Josip Stanisic|Croacia": {
+      "jugador": "Josip Stanisic",
+      "equipo": "Croacia",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Juan Fernando Quintero|Colombia": {
+      "jugador": "Juan Fernando Quintero",
+      "equipo": "Colombia",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Kerim Alajbegovic|Bosnia": {
+      "jugador": "Kerim Alajbegovic",
+      "equipo": "Bosnia",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Ivan Basic|Bosnia": {
+      "jugador": "Ivan Basic",
+      "equipo": "Bosnia",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Hassan Al-Haydos|Catar": {
+      "jugador": "Hassan Al-Haydos",
+      "equipo": "Catar",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Edmílson Junior|Catar": {
+      "jugador": "Edmílson Junior",
+      "equipo": "Catar",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Dennis Hadzikadunic|Bosnia": {
+      "jugador": "Dennis Hadzikadunic",
+      "equipo": "Bosnia",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Achraf Hakimi|Marruecos": {
+      "jugador": "Achraf Hakimi",
+      "equipo": "Marruecos",
+      "goles": 1,
+      "asistencias": 1
+    },
+    "Wilson Isidor|Haití": {
+      "jugador": "Wilson Isidor",
+      "equipo": "Haití",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Jean-Kévin Duverne|Haití": {
+      "jugador": "Jean-Kévin Duverne",
+      "equipo": "Haití",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Soufiane Rahimi|Marruecos": {
+      "jugador": "Soufiane Rahimi",
+      "equipo": "Marruecos",
+      "goles": 1,
+      "asistencias": 1
+    },
+    "Chadi Riad|Marruecos": {
+      "jugador": "Chadi Riad",
+      "equipo": "Marruecos",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Gessime Yassine|Marruecos": {
+      "jugador": "Gessime Yassine",
+      "equipo": "Marruecos",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Rayan|Brasil": {
+      "jugador": "Rayan",
+      "equipo": "Brasil",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Mateo Chávez|México": {
+      "jugador": "Mateo Chávez",
+      "equipo": "México",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Jorge Sánchez|México": {
+      "jugador": "Jorge Sánchez",
+      "equipo": "México",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Álvaro Fidalgo|México": {
+      "jugador": "Álvaro Fidalgo",
+      "equipo": "México",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Thapelo Maseko|Sudáfrica": {
+      "jugador": "Thapelo Maseko",
+      "equipo": "Sudáfrica",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Tshepang Moremi|Sudáfrica": {
+      "jugador": "Tshepang Moremi",
+      "equipo": "Sudáfrica",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Nicolas Pépé|Costa de Marfil": {
+      "jugador": "Nicolas Pépé",
+      "equipo": "Costa de Marfil",
+      "goles": 2,
+      "asistencias": 1
+    },
+    "Yan Diomande|Costa de Marfil": {
+      "jugador": "Yan Diomande",
+      "equipo": "Costa de Marfil",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Ibrahim Sangaré|Costa de Marfil": {
+      "jugador": "Ibrahim Sangaré",
+      "equipo": "Costa de Marfil",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Leroy Sané|Alemania": {
+      "jugador": "Leroy Sané",
+      "equipo": "Alemania",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Nilson Angulo|Ecuador": {
+      "jugador": "Nilson Angulo",
+      "equipo": "Ecuador",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Pedro Vite|Ecuador": {
+      "jugador": "Pedro Vite",
+      "equipo": "Ecuador",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Gonzalo Plata|Ecuador": {
+      "jugador": "Gonzalo Plata",
+      "equipo": "Ecuador",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Kevin Rodríguez|Ecuador": {
+      "jugador": "Kevin Rodríguez",
+      "equipo": "Ecuador",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Daizen Maeda|Japón": {
+      "jugador": "Daizen Maeda",
+      "equipo": "Japón",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Ritsu Doan|Japón": {
+      "jugador": "Ritsu Doan",
+      "equipo": "Japón",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Hazem Mastouri|Túnez": {
+      "jugador": "Hazem Mastouri",
+      "equipo": "Túnez",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Jan Paul van Hecke|Países Bajos": {
+      "jugador": "Jan Paul van Hecke",
+      "equipo": "Países Bajos",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Tijjani Reijnders|Países Bajos": {
+      "jugador": "Tijjani Reijnders",
+      "equipo": "Países Bajos",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Auston Trusty|EE.UU.": {
+      "jugador": "Auston Trusty",
+      "equipo": "EE.UU.",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Sebastian Berhalter|EE.UU.": {
+      "jugador": "Sebastian Berhalter",
+      "equipo": "EE.UU.",
+      "goles": 1,
+      "asistencias": 1
+    },
+    "Arda Güler|Turquía": {
+      "jugador": "Arda Güler",
+      "equipo": "Turquía",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Baris Alper Yilmaz|Turquía": {
+      "jugador": "Baris Alper Yilmaz",
+      "equipo": "Turquía",
+      "goles": 1,
+      "asistencias": 1
+    },
+    "Orkun Kökçü|Turquía": {
+      "jugador": "Orkun Kökçü",
+      "equipo": "Turquía",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Kaan Ayhan|Turquía": {
+      "jugador": "Kaan Ayhan",
+      "equipo": "Turquía",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Thelo Aasgaard|Noruega": {
+      "jugador": "Thelo Aasgaard",
+      "equipo": "Noruega",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Andreas Schjelderup|Noruega": {
+      "jugador": "Andreas Schjelderup",
+      "equipo": "Noruega",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Aurélien Tchouaméni|Francia": {
+      "jugador": "Aurélien Tchouaméni",
+      "equipo": "Francia",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Désiré Doué|Francia": {
+      "jugador": "Désiré Doué",
+      "equipo": "Francia",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Habib Diarra|Senegal": {
+      "jugador": "Habib Diarra",
+      "equipo": "Senegal",
+      "goles": 2,
+      "asistencias": 0
+    },
+    "Abdoulaye Seck|Senegal": {
+      "jugador": "Abdoulaye Seck",
+      "equipo": "Senegal",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Lamine Camara|Senegal": {
+      "jugador": "Lamine Camara",
+      "equipo": "Senegal",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Pape Gueye|Senegal": {
+      "jugador": "Pape Gueye",
+      "equipo": "Senegal",
+      "goles": 2,
+      "asistencias": 1
+    },
+    "Álex Baena|España": {
+      "jugador": "Álex Baena",
+      "equipo": "España",
+      "goles": 1,
+      "asistencias": 1
+    },
+    "Marcos Llorente|España": {
+      "jugador": "Marcos Llorente",
+      "equipo": "España",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Mahmoud Saber|Egipto": {
+      "jugador": "Mahmoud Saber",
+      "equipo": "Egipto",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Leandro Trossard|Bélgica": {
+      "jugador": "Leandro Trossard",
+      "equipo": "Bélgica",
+      "goles": 2,
+      "asistencias": 1
+    },
+    "Hans Vanaken|Bélgica": {
+      "jugador": "Hans Vanaken",
+      "equipo": "Bélgica",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Kevin De Bruyne|Bélgica": {
+      "jugador": "Kevin De Bruyne",
+      "equipo": "Bélgica",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Romelu Lukaku|Bélgica": {
+      "jugador": "Romelu Lukaku",
+      "equipo": "Bélgica",
+      "goles": 2,
+      "asistencias": 1
+    },
+    "Nicolas Raskin|Bélgica": {
+      "jugador": "Nicolas Raskin",
+      "equipo": "Bélgica",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Alexis Saelemaekers|Bélgica": {
+      "jugador": "Alexis Saelemaekers",
+      "equipo": "Bélgica",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Mateo Kovacic|Croacia": {
+      "jugador": "Mateo Kovacic",
+      "equipo": "Croacia",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Derrick Luckassen|Ghana": {
+      "jugador": "Derrick Luckassen",
+      "equipo": "Ghana",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Ernest Nuamah|Ghana": {
+      "jugador": "Ernest Nuamah",
+      "equipo": "Ghana",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Nikola Vlasic|Croacia": {
+      "jugador": "Nikola Vlasic",
+      "equipo": "Croacia",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Luka Modric|Croacia": {
+      "jugador": "Luka Modric",
+      "equipo": "Croacia",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Eldor Shomurodov|Uzbekistán": {
+      "jugador": "Eldor Shomurodov",
+      "equipo": "Uzbekistán",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Akmal Mozgovoy|Uzbekistán": {
+      "jugador": "Akmal Mozgovoy",
+      "equipo": "Uzbekistán",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Fiston Mayele|R. D. Congo": {
+      "jugador": "Fiston Mayele",
+      "equipo": "R. D. Congo",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Meschack Elia|R. D. Congo": {
+      "jugador": "Meschack Elia",
+      "equipo": "R. D. Congo",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "David Alaba|Austria": {
+      "jugador": "David Alaba",
+      "equipo": "Austria",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Rafik Belghali|Argelia": {
+      "jugador": "Rafik Belghali",
+      "equipo": "Argelia",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Marcel Sabitzer|Austria": {
+      "jugador": "Marcel Sabitzer",
+      "equipo": "Austria",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Konrad Laimer|Austria": {
+      "jugador": "Konrad Laimer",
+      "equipo": "Austria",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Houssem Aouar|Argelia": {
+      "jugador": "Houssem Aouar",
+      "equipo": "Argelia",
+      "goles": 0,
+      "asistencias": 2
+    },
+    "Sasa Kalajdzic|Austria": {
+      "jugador": "Sasa Kalajdzic",
+      "equipo": "Austria",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Michael Gregoritsch|Austria": {
+      "jugador": "Michael Gregoritsch",
+      "equipo": "Austria",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Giovani Lo Celso|Argentina": {
+      "jugador": "Giovani Lo Celso",
+      "equipo": "Argentina",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Lautaro Martínez|Argentina": {
+      "jugador": "Lautaro Martínez",
+      "equipo": "Argentina",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Ehsan Haddad|Jordania": {
+      "jugador": "Ehsan Haddad",
+      "equipo": "Jordania",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Stephen Eustáquio|Canadá": {
+      "jugador": "Stephen Eustáquio",
+      "equipo": "Canadá",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Casemiro|Brasil": {
+      "jugador": "Casemiro",
+      "equipo": "Brasil",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Gabriel Magalhães|Brasil": {
+      "jugador": "Gabriel Magalhães",
+      "equipo": "Brasil",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Gabriel Martinelli|Brasil": {
+      "jugador": "Gabriel Martinelli",
+      "equipo": "Brasil",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Issa Diop|Marruecos": {
+      "jugador": "Issa Diop",
+      "equipo": "Marruecos",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Chemsdine Talbi|Marruecos": {
+      "jugador": "Chemsdine Talbi",
+      "equipo": "Marruecos",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Antonio Nusa|Noruega": {
+      "jugador": "Antonio Nusa",
+      "equipo": "Noruega",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Brian Cipenga|R. D. Congo": {
+      "jugador": "Brian Cipenga",
+      "equipo": "R. D. Congo",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Chancel Mbemba|R. D. Congo": {
+      "jugador": "Chancel Mbemba",
+      "equipo": "R. D. Congo",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Anthony Gordon|Inglaterra": {
+      "jugador": "Anthony Gordon",
+      "equipo": "Inglaterra",
+      "goles": 0,
+      "asistencias": 2
+    },
+    "Moussa Niakhaté|Senegal": {
+      "jugador": "Moussa Niakhaté",
+      "equipo": "Senegal",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Thomas Meunier|Bélgica": {
+      "jugador": "Thomas Meunier",
+      "equipo": "Bélgica",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Youri Tielemans|Bélgica": {
+      "jugador": "Youri Tielemans",
+      "equipo": "Bélgica",
+      "goles": 2,
+      "asistencias": 0
+    },
+    "Marc Cucurella|España": {
+      "jugador": "Marc Cucurella",
+      "equipo": "España",
+      "goles": 0,
+      "asistencias": 2
+    },
+    "Pedro Porro|España": {
+      "jugador": "Pedro Porro",
+      "equipo": "España",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Gonçalo Ramos|Portugal": {
+      "jugador": "Gonçalo Ramos",
+      "equipo": "Portugal",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Dan Ndoye|Suiza": {
+      "jugador": "Dan Ndoye",
+      "equipo": "Suiza",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Karim Hafez|Egipto": {
+      "jugador": "Karim Hafez",
+      "equipo": "Egipto",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Lisandro Martínez|Argentina": {
+      "jugador": "Lisandro Martínez",
+      "equipo": "Argentina",
+      "goles": 1,
+      "asistencias": 1
+    },
+    "Deroy Duarte|Cabo Verde": {
+      "jugador": "Deroy Duarte",
+      "equipo": "Cabo Verde",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Ryan Mendes|Cabo Verde": {
+      "jugador": "Ryan Mendes",
+      "equipo": "Cabo Verde",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Alexis Mac Allister|Argentina": {
+      "jugador": "Alexis Mac Allister",
+      "equipo": "Argentina",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Sidny Lopes Cabral|Cabo Verde": {
+      "jugador": "Sidny Lopes Cabral",
+      "equipo": "Cabo Verde",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Yannick Semedo|Cabo Verde": {
+      "jugador": "Yannick Semedo",
+      "equipo": "Cabo Verde",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Jhon Arias|Colombia": {
+      "jugador": "Jhon Arias",
+      "equipo": "Colombia",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Luis Suárez|Colombia": {
+      "jugador": "Luis Suárez",
+      "equipo": "Colombia",
+      "goles": 0,
+      "asistencias": 1
+    }
+  }
+}
