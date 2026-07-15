@@ -1024,7 +1024,7 @@ function renderEliminacion(){
 }
 
 // Puntos fijos del bombo "Máximo goleador": solo el 1º del top 5 da puntos.
-const PUNTOS_GOLEADOR_TOP1 = 20;
+const PUNTOS_GOLEADOR_TOP1 = 25;
 
 // Selección del usuario: { [nombreBombo]: equipo, 'Máximo goleador': jugador }
 const BOMBO_SEL_KEY = 'bolilla_seleccion_bombos_v1';
@@ -1071,7 +1071,7 @@ function renderBombos(){
     </div>`;
   }).join('');
 
-  const filasGoleador = top5.map((g,i)=>{
+const filasGoleador = top5.map((g,i)=>{
     const puntos = i === 0 ? PUNTOS_GOLEADOR_TOP1 : 0;
     const sel = seleccionBombos[NB_GOL] === g.jugador;
     return `
@@ -1084,7 +1084,7 @@ function renderBombos(){
           <div class="jugador">${g.jugador}</div>
           <div class="equipo">${g.equipo}</div>
         </div>
-        <span class="goles">${g.goles} ${g.goles===1?'gol':'goles'}</span>
+        <span class="goles">${g.goles} ${g.goles===1?'gol':'goles'} (${g.asistencias} asist)</span>
         <span class="scorebox ${scoreClass(puntos)}" style="min-width:auto; flex-shrink:0;">${fmtPts(puntos)}</span>
       </div>`;
   }).join('');
@@ -1184,6 +1184,8 @@ function calcularPuntosParticipante(participante){
   const nombresBombos = Object.keys(DATA.bombos || {});
   const desglose = [];
   let total = 0;
+  
+  // 1. Calcular puntos de equipos en los bombos estándar
   nombresBombos.forEach(nombreBombo=>{
     const equipoElegido = participante.elecciones?.[nombreBombo];
     const item = equipoElegido != null
@@ -1193,6 +1195,24 @@ function calcularPuntosParticipante(participante){
     total += pts;
     desglose.push({ bombo: nombreBombo, valor: equipoElegido || '—', equipo: equipoElegido || null, puntos: pts });
   });
+
+  // 2. Calcular puntos del Máximo Goleador
+  const nbGol = nombreBomboGoleador();
+  const goleadorElegido = participante.elecciones?.[nbGol];
+  let ptsGoleador = 0;
+  
+  if (goleadorElegido && DATA.goleadores) {
+    const top5 = DATA.goleadores.slice(0, 5);
+    const idx = _buscarGoleadorTop5(top5, goleadorElegido);
+    // Solo se otorgan los 20 puntos (PUNTOS_GOLEADOR_TOP1) si el jugador está en la posición 1 (idx === 0)
+    if (idx === 0) {
+      ptsGoleador = PUNTOS_GOLEADOR_TOP1;
+    }
+  }
+  
+  total += ptsGoleador;
+  desglose.push({ bombo: nbGol, valor: goleadorElegido || '—', equipo: null, puntos: ptsGoleador });
+
   return { total, desglose };
 }
 function calcularBolilla(){
