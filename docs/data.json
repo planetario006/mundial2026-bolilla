@@ -1,7 +1,7 @@
 {
   "meta": {
-    "actualizado": "2026-07-15T21:08:42+00:00",
-    "total_partidos_jugados": 101,
+    "actualizado": "2026-07-15T21:13:02+00:00",
+    "total_partidos_jugados": 102,
     "total_partidos": 103,
     "fase_grupos_terminada": true
   },
@@ -56,18 +56,18 @@
       "equipo": "Argentina",
       "grupo": "J",
       "bombo": "Bombo 1",
-      "gf": 17,
-      "gc": 6,
+      "gf": 19,
+      "gc": 7,
       "ta": 6,
       "doblea": 0,
       "rd": 0,
       "penfall": 2,
       "penpar": 0,
-      "bonus_resultado": 30,
+      "bonus_resultado": 35,
       "bonus_grupo": 15,
       "premio_final": 0,
       "premio_menos_puntos": 0,
-      "puntos_totales": 186,
+      "puntos_totales": 190,
       "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 35,
       "bonus_ronda_cuartos": 50,
@@ -79,18 +79,18 @@
       "equipo": "Inglaterra",
       "grupo": "L",
       "bombo": "Bombo 1",
-      "gf": 13,
-      "gc": 6,
+      "gf": 14,
+      "gc": 8,
       "ta": 7,
       "doblea": 0,
       "rd": 1,
       "penfall": 0,
       "penpar": 0,
-      "bonus_resultado": 27,
+      "bonus_resultado": 19,
       "bonus_grupo": 15,
       "premio_final": 0,
       "premio_menos_puntos": 0,
-      "puntos_totales": 184,
+      "puntos_totales": 171,
       "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 35,
       "bonus_ronda_cuartos": 50,
@@ -5757,6 +5757,52 @@
         "bonus_resultado": 5,
         "total": 4
       }
+    },
+    {
+      "id": 102,
+      "match_num": 102,
+      "fecha": "2026-07-15",
+      "fase": "Semifinales",
+      "grupo": "",
+      "local": "Inglaterra",
+      "visitante": "Argentina",
+      "gf_local": 1,
+      "gf_visit": 2,
+      "ta_local": 0,
+      "doblea_local": 0,
+      "rd_local": 0,
+      "ta_visit": 0,
+      "doblea_visit": 0,
+      "rd_visit": 0,
+      "penfall_local": 0,
+      "penpar_local": 0,
+      "penfall_visit": 0,
+      "penpar_visit": 0,
+      "pen_tanda_local": 0,
+      "pen_tanda_visit": 0,
+      "jugado": true,
+      "puntos_local": {
+        "gf": 1,
+        "gc": -6,
+        "ta": 0,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": -8,
+        "total": -13
+      },
+      "puntos_visit": {
+        "gf": 2,
+        "gc": -3,
+        "ta": 0,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": 5,
+        "total": 4
+      }
     }
   ],
   "grupos": {
@@ -11191,8 +11237,8 @@
         "grupo": "",
         "local": "Inglaterra",
         "visitante": "Argentina",
-        "gf_local": null,
-        "gf_visit": null,
+        "gf_local": 1,
+        "gf_visit": 2,
         "ta_local": 0,
         "doblea_local": 0,
         "rd_local": 0,
@@ -11205,9 +11251,29 @@
         "penpar_visit": 0,
         "pen_tanda_local": 0,
         "pen_tanda_visit": 0,
-        "jugado": false,
-        "puntos_local": null,
-        "puntos_visit": null
+        "jugado": true,
+        "puntos_local": {
+          "gf": 1,
+          "gc": -6,
+          "ta": 0,
+          "doblea": 0,
+          "rd": 0,
+          "penfall": 0,
+          "penpar": 0,
+          "bonus_resultado": -8,
+          "total": -13
+        },
+        "puntos_visit": {
+          "gf": 2,
+          "gc": -3,
+          "ta": 0,
+          "doblea": 0,
+          "rd": 0,
+          "penfall": 0,
+          "penpar": 0,
+          "bonus_resultado": 5,
+          "total": 4
+        }
       }
     ],
     "Tercer puesto": [
@@ -11218,7 +11284,7 @@
         "fase": "Tercer puesto",
         "grupo": "",
         "local": "Francia",
-        "visitante": "Perdedor Partido 102",
+        "visitante": "Inglaterra",
         "gf_local": null,
         "gf_visit": null,
         "ta_local": 0,
@@ -11252,11 +11318,11 @@
       },
       {
         "equipo": "Argentina",
-        "puntos": 186
+        "puntos": 190
       },
       {
         "equipo": "Inglaterra",
-        "puntos": 184
+        "puntos": 171
       },
       {
         "equipo": "Brasil",
