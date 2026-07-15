@@ -508,7 +508,83 @@ def parsear_bloque(bloque: str, fase_txt: str, grupo_letra: str) -> dict | None:
         "resultado_penalti": penaltis_info["resultado_penalti"],
     }
 
+def parsear_final_alternativo(wikitext: str, fase_txt: str) -> dict | None:
+    """
+    Fallback específico para la Final en caso de que Wikipedia no use
+    la plantilla estándar de partido, extrayendo datos de la Ficha de evento.
+    """
+    # Buscar el bloque de la ficha de evento
+    m_ficha = re.search(r"\{\{Ficha de evento(.*?)\n\}\}", wikitext, re.DOTALL | re.IGNORECASE)
+    bloque_ficha = m_ficha.group(1) if m_ficha else wikitext
+    
+    t1, t2 = None, None
+    
+    # Intento 1: Extraer equipos del campo 'nombre' en la ficha
+    m_nombre = re.search(r"\|\s*nombre\s*=.*?\{\{bandera\|[^}]+\}\}\s*([a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+?)\s*-\s*([a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+?)\s*\{\{bandera", bloque_ficha, re.IGNORECASE)
+    if m_nombre:
+        t1, t2 = m_nombre.group(1).strip(), m_nombre.group(2).strip()
+        
+    # Intento 2: Extraer de la introducción del artículo
+    if not t1 or not t2:
+        m_intro = re.search(r"La disputarán.*?semifinales.*?\[\[(?:selección de fútbol de )?([^|\]]+).*? y .*?\[\[(?:selección de fútbol de )?([^|\]]+)", wikitext, re.IGNORECASE)
+        if m_intro:
+            t1 = m_intro.group(1).split("|")[-1].strip()
+            t2 = m_intro.group(2).split("|")[-1].strip()
+            
+    # Intento 3: Extraer directamente de la tabla manual del partido
+    if not t1 or not t2:
+        m_partido = re.search(r"!width=50% colspan=1\|.*?\{\{tc\|Selección de fútbol de [^|]+\|([^}]+)\}\}.*?!width=50% colspan=2\|.*?\{\{tc\|Selección de fútbol de [^|]+\|([^}]+)\}\}", wikitext, re.DOTALL | re.IGNORECASE)
+        if m_partido:
+            t1, t2 = m_partido.group(1).strip(), m_partido.group(2).strip()
 
+    # Si por ninguno de los métodos encontramos a los equipos, abortamos
+    if not t1 or not t2:
+        return None
+
+    # Estandarizamos nombres
+    t1, t2 = traducir(t1), traducir(t2)
+
+    gf1, gf2 = None, None
+    
+    # Buscar resultado en el campo 'resultado' de la ficha
+    m_res = re.search(r"\|\s*resultado\s*=\s*.*?(\d+)\s*[:\-]\s*(\d+)", bloque_ficha, re.IGNORECASE)
+    if m_res:
+        gf1, gf2 = int(m_res.group(1)), int(m_res.group(2))
+    else:
+        # Buscar resultado si ya ha sido insertado en el <div> de la tabla manual
+        m_res2 = re.search(r"<div style=\"font-size:150%;\">\s*(\d+)\s*[:\-]\s*(\d+)\s*</div>", wikitext, re.IGNORECASE)
+        if m_res2:
+            gf1, gf2 = int(m_res2.group(1)), int(m_res2.group(2))
+
+    fecha = ""
+    # Buscar la plantilla de fecha en la ficha
+    m_fecha = re.search(r"\|\s*fecha\s*=\s*\{\{fecha\|(\d{1,2})\|(\d{1,2})\|(\d{4})", bloque_ficha, re.IGNORECASE)
+    if m_fecha:
+        fecha = f"{m_fecha.group(3)}-{int(m_fecha.group(2)):02d}-{int(m_fecha.group(1)):02d}"
+
+    # Extraer el lugar/estadio manualmente mediante regex simples 
+    estadio_raw, ciudad_raw = "", ""
+    m_lugar = re.search(r"\|\s*lugar\s*=\s*([^\n]+)", bloque_ficha, re.IGNORECASE)
+    if m_lugar: 
+        estadio_raw = _limpiar_plantillas(m_lugar.group(1))
+        
+    m_ubi = re.search(r"\|\s*ubicación\s*=\s*([^\n]+)", bloque_ficha, re.IGNORECASE)
+    if m_ubi: 
+        ciudad_raw = _limpiar_plantillas(m_ubi.group(1))
+
+    # Aprovechar el mapeo existente
+    estadio_id = _detectar_estadio_id(estadio_raw, ciudad_raw)
+
+    return {
+        "team1": t1, "team2": t2, "fecha": fecha, "gf1": gf1, "gf2": gf2,
+        "cards1": {"ta": 0, "doble_a": 0, "rd": 0},
+        "cards2": {"ta": 0, "doble_a": 0, "rd": 0},
+        "fase": fase_txt, "grupo": "",
+        "estadio_raw": estadio_raw, "ciudad_raw": ciudad_raw, "estadio_id": estadio_id,
+        "penaltis_local": 0, "penaltis_visit": 0,
+        "resultado_penalti": "",
+    }
+  
 def partidos_de_pagina(pagina: str, fase_txt: str, grupo_letra: str = "") -> list:
     log.info(f"  -> Página: «{pagina}»")
     try:
@@ -516,10 +592,22 @@ def partidos_de_pagina(pagina: str, fase_txt: str, grupo_letra: str = "") -> lis
     except Exception as e:
         log.warning(f"     No disponible todavía (o error de red): {e}")
         return []
+        
     bloques = extraer_bloques_partido(wikitext)
     log.info(f"     {len(bloques)} bloque(s) de partido detectados")
+    
     resultados = [parsear_bloque(b, fase_txt, grupo_letra) for b in bloques]
     resultados = [p for p in resultados if p]
+    
+    # ── FALLBACK PARA LA FINAL ──
+    # Si estamos comprobando la Final y no se obtuvo ningún resultado con
+    # las plantillas estándar, disparamos el parser alternativo.
+    if not resultados and fase_txt.lower() == "final":
+        log.info("     Aplicando parser alternativo para extraer la Final...")
+        final_alt = parsear_final_alternativo(wikitext, fase_txt)
+        if final_alt:
+            resultados.append(final_alt)
+            
     log.info(f"     {len(resultados)} partido(s) con resultado")
     return resultados
 
