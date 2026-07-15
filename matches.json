@@ -2810,5 +2810,33 @@
     "penaltis_visit": 0,
     "resultado_penalti": "",
     "match_num": 103
+  },
+  {
+    "id": 104,
+    "fecha": "2026-07-19",
+    "fase": "Final",
+    "grupo": "",
+    "local": "España",
+    "gf_local": null,
+    "gc_local": null,
+    "ta_local": 0,
+    "doblea_local": 0,
+    "rd_local": 0,
+    "penfall_local": 0,
+    "penpar_local": 0,
+    "visitante": "Argentina",
+    "gf_visit": null,
+    "gc_visit": null,
+    "ta_visit": 0,
+    "doblea_visit": 0,
+    "rd_visit": 0,
+    "penfall_visit": 0,
+    "penpar_visit": 0,
+    "pen_tanda_local": null,
+    "pen_tanda_visit": null,
+    "penaltis_local": 0,
+    "penaltis_visit": 0,
+    "resultado_penalti": "",
+    "match_num": 104
   }
 ]
