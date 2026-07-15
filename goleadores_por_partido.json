@@ -13,6 +13,7 @@
     "Argentina|Austria|2026-06-22",
     "Argentina|Cabo Verde|2026-07-03",
     "Argentina|Egipto|2026-07-07",
+    "Argentina|Inglaterra|2026-07-15",
     "Argentina|Jordania|2026-06-28",
     "Argentina|Suiza|2026-07-12",
     "Australia|EE.UU.|2026-06-19",
@@ -62,6 +63,7 @@
     "Egipto|Nueva Zelanda|2026-06-22",
     "Escocia|Haití|2026-06-14",
     "Escocia|Marruecos|2026-06-19",
+    "España|Francia|2026-07-14",
     "España|Portugal|2026-07-06",
     "España|Uruguay|2026-06-27",
     "Francia|Irak|2026-06-22",
@@ -542,7 +544,7 @@
       "jugador": "Lionel Messi",
       "equipo": "Argentina",
       "goles": 8,
-      "asistencias": 2
+      "asistencias": 4
     },
     "Rodrigo De Paul|Argentina": {
       "jugador": "Rodrigo De Paul",
@@ -871,7 +873,7 @@
     "Mikel Oyarzabal|España": {
       "jugador": "Mikel Oyarzabal",
       "equipo": "España",
-      "goles": 4,
+      "goles": 5,
       "asistencias": 1
     },
     "Aymeric Laporte|España": {
@@ -884,7 +886,7 @@
       "jugador": "Dani Olmo",
       "equipo": "España",
       "goles": 0,
-      "asistencias": 1
+      "asistencias": 2
     },
     "Kevin Pina|Cabo Verde": {
       "jugador": "Kevin Pina",
@@ -1477,7 +1479,7 @@
     "Lautaro Martínez|Argentina": {
       "jugador": "Lautaro Martínez",
       "equipo": "Argentina",
-      "goles": 2,
+      "goles": 3,
       "asistencias": 1
     },
     "Ehsan Haddad|Jordania": {
@@ -1543,7 +1545,7 @@
     "Anthony Gordon|Inglaterra": {
       "jugador": "Anthony Gordon",
       "equipo": "Inglaterra",
-      "goles": 0,
+      "goles": 1,
       "asistencias": 3
     },
     "Moussa Niakhaté|Senegal": {
@@ -1573,7 +1575,7 @@
     "Pedro Porro|España": {
       "jugador": "Pedro Porro",
       "equipo": "España",
-      "goles": 1,
+      "goles": 2,
       "asistencias": 0
     },
     "Gonçalo Ramos|Portugal": {
@@ -1705,7 +1707,7 @@
     "Enzo Fernández|Argentina": {
       "jugador": "Enzo Fernández",
       "equipo": "Argentina",
-      "goles": 1,
+      "goles": 2,
       "asistencias": 0
     },
     "Fabián Ruiz|España": {
@@ -1735,6 +1737,12 @@
     "José Manuel López|Argentina": {
       "jugador": "José Manuel López",
       "equipo": "Argentina",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Morgan Rogers|Inglaterra": {
+      "jugador": "Morgan Rogers",
+      "equipo": "Inglaterra",
       "goles": 0,
       "asistencias": 1
     }
