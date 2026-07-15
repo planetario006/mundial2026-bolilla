@@ -61,7 +61,6 @@ def cargar_discrepancias(path: Path) -> list[dict]:
     return cargar_json(path, [])
 def guardar_discrepancias(path: Path, discrepancias: list[dict]) -> None:
     guardar_json(path, discrepancias)
-
 def fechas_pendientes(matches: list[dict], estado: dict) -> set:
     """Decide qué fechas hace falta volver a pedirle a ESPN: únicamente
     las de partidos que YA EXISTEN en matches.json (es decir, ya los
@@ -115,7 +114,6 @@ def _registrar_o_actualizar_discrepancia(
     return discrepancias
 def _quitar_discrepancia(discrepancias: list[dict], ref: str) -> list[dict]:
     return [d for d in discrepancias if d["ref"] != ref]
-
 def conciliar(
     matches: list[dict],
     resumenes_espn: list[dict],
