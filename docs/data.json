@@ -1,8 +1,8 @@
 {
   "meta": {
-    "actualizado": "2026-07-15T22:05:46+00:00",
+    "actualizado": "2026-07-15T22:15:02+00:00",
     "total_partidos_jugados": 102,
-    "total_partidos": 103,
+    "total_partidos": 104,
     "fase_grupos_terminada": true
   },
   "ranking": [
@@ -21,13 +21,36 @@
       "bonus_grupo": 15,
       "premio_final": 0,
       "premio_menos_puntos": 0,
-      "puntos_totales": 219,
+      "puntos_totales": 319,
       "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 35,
       "bonus_ronda_cuartos": 50,
       "bonus_ronda_semifinal": 70,
-      "bonus_ronda_final": 0,
+      "bonus_ronda_final": 100,
       "pos": 1
+    },
+    {
+      "equipo": "Argentina",
+      "grupo": "J",
+      "bombo": "Bombo 1",
+      "gf": 19,
+      "gc": 7,
+      "ta": 9,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 2,
+      "penpar": 0,
+      "bonus_resultado": 35,
+      "bonus_grupo": 15,
+      "premio_final": 0,
+      "premio_menos_puntos": 0,
+      "puntos_totales": 281,
+      "bonus_ronda_dieciseisavos": 25,
+      "bonus_ronda_octavos": 35,
+      "bonus_ronda_cuartos": 50,
+      "bonus_ronda_semifinal": 70,
+      "bonus_ronda_final": 100,
+      "pos": 2
     },
     {
       "equipo": "Francia",
@@ -45,29 +68,6 @@
       "premio_final": 0,
       "premio_menos_puntos": 0,
       "puntos_totales": 198,
-      "bonus_ronda_dieciseisavos": 25,
-      "bonus_ronda_octavos": 35,
-      "bonus_ronda_cuartos": 50,
-      "bonus_ronda_semifinal": 70,
-      "bonus_ronda_final": 0,
-      "pos": 2
-    },
-    {
-      "equipo": "Argentina",
-      "grupo": "J",
-      "bombo": "Bombo 1",
-      "gf": 19,
-      "gc": 7,
-      "ta": 9,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 2,
-      "penpar": 0,
-      "bonus_resultado": 35,
-      "bonus_grupo": 15,
-      "premio_final": 0,
-      "premio_menos_puntos": 0,
-      "puntos_totales": 181,
       "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 35,
       "bonus_ronda_cuartos": 50,
@@ -11304,21 +11304,48 @@
         "puntos_visit": null
       }
     ],
-    "Final": []
+    "Final": [
+      {
+        "id": 104,
+        "match_num": 104,
+        "fecha": "2026-07-19",
+        "fase": "Final",
+        "grupo": "",
+        "local": "España",
+        "visitante": "Argentina",
+        "gf_local": null,
+        "gf_visit": null,
+        "ta_local": 0,
+        "doblea_local": 0,
+        "rd_local": 0,
+        "ta_visit": 0,
+        "doblea_visit": 0,
+        "rd_visit": 0,
+        "penfall_local": 0,
+        "penpar_local": 0,
+        "penfall_visit": 0,
+        "penpar_visit": 0,
+        "pen_tanda_local": 0,
+        "pen_tanda_visit": 0,
+        "jugado": false,
+        "puntos_local": null,
+        "puntos_visit": null
+      }
+    ]
   },
   "bombos": {
     "Bombo 1": [
       {
         "equipo": "España",
-        "puntos": 219
+        "puntos": 319
+      },
+      {
+        "equipo": "Argentina",
+        "puntos": 281
       },
       {
         "equipo": "Francia",
         "puntos": 198
-      },
-      {
-        "equipo": "Argentina",
-        "puntos": 181
       },
       {
         "equipo": "Inglaterra",
