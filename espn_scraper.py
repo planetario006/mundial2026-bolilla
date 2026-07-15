@@ -182,9 +182,12 @@ def obtener_detalles_partido(partido_id: str) -> dict:
             or (type_text in _TXT_GOL or type_text in _TXT_AUTOGOL)
         )
         if es_gol and periodo_n <= 4:
+            tipo_gol = _clasificar_gol(es_autogol, es_penalti, type_text)
             detalles["goles"].append({
                 "minuto": minuto, "jugador": jugador, "equipo_raw": equipo_raw,
-                "tipo": _clasificar_gol(es_autogol, es_penalti, type_text),
+                "tipo": tipo_gol,
+                # Un autogol no tiene asistente relevante para la tabla
+                "asistente": "" if tipo_gol == "Autogol" else _extraer_asistente(ev),
             })
             continue
 
@@ -220,6 +223,23 @@ def _extraer_jugador(evento: dict) -> str:
             return a["displayName"]
     atleta = evento.get("athlete") or {}
     return atleta.get("displayName", "")
+
+
+def _extraer_asistente(evento: dict) -> str:
+    """Devuelve el nombre del asistente de un gol, si ESPN lo trae.
+
+    ESPN no etiqueta el rol de cada participante en `participants`
+    (no hay campo "type"/"role" tipo "assist"): en un evento de gol,
+    el orden es posicional — participants[0] es el goleador y
+    participants[1], cuando existe, es quien dio la asistencia
+    (confirmado contra el texto libre de ESPN, p.ej. "...Assisted by
+    Érik Lira."). Si el gol solo trae un participante (sin asistencia
+    registrada) o el array viene vacío, no hay asistente que devolver.
+    """
+    participantes = evento.get("participants") or []
+    if len(participantes) < 2:
+        return ""
+    return (participantes[1].get("athlete") or {}).get("displayName", "")
 
 
 def _tarjeta(minuto, jugador, equipo_raw, tipo) -> dict:
@@ -294,6 +314,7 @@ def _agregar_partido(base: dict, detalles: dict) -> dict:
         goleadores.append({
             "jugador": g["jugador"], "equipo": equipo,
             "minuto": g["minuto"], "tipo": g["tipo"],
+            "asistente": g.get("asistente", ""),
         })
 
     return {
