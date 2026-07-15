@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-07-15T21:13:02+00:00",
+    "actualizado": "2026-07-15T22:05:46+00:00",
     "total_partidos_jugados": 102,
     "total_partidos": 103,
     "fase_grupos_terminada": true
@@ -58,7 +58,7 @@
       "bombo": "Bombo 1",
       "gf": 19,
       "gc": 7,
-      "ta": 6,
+      "ta": 9,
       "doblea": 0,
       "rd": 0,
       "penfall": 2,
@@ -67,7 +67,7 @@
       "bonus_grupo": 15,
       "premio_final": 0,
       "premio_menos_puntos": 0,
-      "puntos_totales": 190,
+      "puntos_totales": 181,
       "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 35,
       "bonus_ronda_cuartos": 50,
@@ -81,7 +81,7 @@
       "bombo": "Bombo 1",
       "gf": 14,
       "gc": 8,
-      "ta": 7,
+      "ta": 8,
       "doblea": 0,
       "rd": 1,
       "penfall": 0,
@@ -90,7 +90,7 @@
       "bonus_grupo": 15,
       "premio_final": 0,
       "premio_menos_puntos": 0,
-      "puntos_totales": 171,
+      "puntos_totales": 168,
       "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 35,
       "bonus_ronda_cuartos": 50,
@@ -5768,10 +5768,10 @@
       "visitante": "Argentina",
       "gf_local": 1,
       "gf_visit": 2,
-      "ta_local": 0,
+      "ta_local": 1,
       "doblea_local": 0,
       "rd_local": 0,
-      "ta_visit": 0,
+      "ta_visit": 3,
       "doblea_visit": 0,
       "rd_visit": 0,
       "penfall_local": 0,
@@ -5784,24 +5784,24 @@
       "puntos_local": {
         "gf": 1,
         "gc": -6,
-        "ta": 0,
+        "ta": -3,
         "doblea": 0,
         "rd": 0,
         "penfall": 0,
         "penpar": 0,
         "bonus_resultado": -8,
-        "total": -13
+        "total": -16
       },
       "puntos_visit": {
         "gf": 2,
         "gc": -3,
-        "ta": 0,
+        "ta": -9,
         "doblea": 0,
         "rd": 0,
         "penfall": 0,
         "penpar": 0,
         "bonus_resultado": 5,
-        "total": 4
+        "total": -5
       }
     }
   ],
@@ -11239,10 +11239,10 @@
         "visitante": "Argentina",
         "gf_local": 1,
         "gf_visit": 2,
-        "ta_local": 0,
+        "ta_local": 1,
         "doblea_local": 0,
         "rd_local": 0,
-        "ta_visit": 0,
+        "ta_visit": 3,
         "doblea_visit": 0,
         "rd_visit": 0,
         "penfall_local": 0,
@@ -11255,24 +11255,24 @@
         "puntos_local": {
           "gf": 1,
           "gc": -6,
-          "ta": 0,
+          "ta": -3,
           "doblea": 0,
           "rd": 0,
           "penfall": 0,
           "penpar": 0,
           "bonus_resultado": -8,
-          "total": -13
+          "total": -16
         },
         "puntos_visit": {
           "gf": 2,
           "gc": -3,
-          "ta": 0,
+          "ta": -9,
           "doblea": 0,
           "rd": 0,
           "penfall": 0,
           "penpar": 0,
           "bonus_resultado": 5,
-          "total": 4
+          "total": -5
         }
       }
     ],
@@ -11318,11 +11318,11 @@
       },
       {
         "equipo": "Argentina",
-        "puntos": 190
+        "puntos": 181
       },
       {
         "equipo": "Inglaterra",
-        "puntos": 171
+        "puntos": 168
       },
       {
         "equipo": "Brasil",
