@@ -12,6 +12,7 @@
     "Argelia|Suiza|2026-07-03",
     "Argentina|Austria|2026-06-22",
     "Argentina|Cabo Verde|2026-07-03",
+    "Argentina|Egipto|2026-07-07",
     "Argentina|Jordania|2026-06-28",
     "Australia|EE.UU.|2026-06-19",
     "Australia|Egipto|2026-07-03",
@@ -26,11 +27,14 @@
     "Brasil|Haití|2026-06-20",
     "Brasil|Japón|2026-06-29",
     "Brasil|Marruecos|2026-06-13",
+    "Brasil|Noruega|2026-07-05",
+    "Bélgica|EE.UU.|2026-07-07",
     "Bélgica|Egipto|2026-06-15",
     "Bélgica|Nueva Zelanda|2026-06-27",
     "Bélgica|Senegal|2026-07-01",
     "Cabo Verde|Uruguay|2026-06-21",
     "Canadá|Catar|2026-06-18",
+    "Canadá|Marruecos|2026-07-04",
     "Canadá|Sudáfrica|2026-06-28",
     "Canadá|Suiza|2026-06-24",
     "Catar|Suiza|2026-06-13",
@@ -56,13 +60,16 @@
     "Egipto|Nueva Zelanda|2026-06-22",
     "Escocia|Haití|2026-06-14",
     "Escocia|Marruecos|2026-06-19",
+    "España|Portugal|2026-07-06",
     "España|Uruguay|2026-06-27",
     "Francia|Irak|2026-06-22",
     "Francia|Noruega|2026-06-26",
+    "Francia|Paraguay|2026-07-04",
     "Francia|Senegal|2026-06-16",
     "Francia|Suecia|2026-06-30",
     "Ghana|Panamá|2026-06-17",
     "Haití|Marruecos|2026-06-24",
+    "Inglaterra|México|2026-07-06",
     "Inglaterra|Panamá|2026-06-27",
     "Inglaterra|R. D. Congo|2026-07-01",
     "Irak|Noruega|2026-06-16",
@@ -86,7 +93,7 @@
     "Julián Quiñones|México": {
       "jugador": "Julián Quiñones",
       "equipo": "México",
-      "goles": 3,
+      "goles": 4,
       "asistencias": 1
     },
     "Érik Lira|México": {
@@ -98,7 +105,7 @@
     "Raúl Jiménez|México": {
       "jugador": "Raúl Jiménez",
       "equipo": "México",
-      "goles": 2,
+      "goles": 3,
       "asistencias": 0
     },
     "Roberto Alvarado|México": {
@@ -176,7 +183,7 @@
     "Malik Tillman|EE.UU.": {
       "jugador": "Malik Tillman",
       "equipo": "EE.UU.",
-      "goles": 1,
+      "goles": 2,
       "asistencias": 1
     },
     "Maurício|Paraguay": {
@@ -219,7 +226,7 @@
       "jugador": "Brahim Díaz",
       "equipo": "Marruecos",
       "goles": 0,
-      "asistencias": 2
+      "asistencias": 4
     },
     "Vinícius Júnior|Brasil": {
       "jugador": "Vinícius Júnior",
@@ -458,7 +465,7 @@
     "Kylian Mbappé|Francia": {
       "jugador": "Kylian Mbappé",
       "equipo": "Francia",
-      "goles": 6,
+      "goles": 7,
       "asistencias": 2
     },
     "Michael Olise|Francia": {
@@ -494,7 +501,7 @@
     "Erling Haaland|Noruega": {
       "jugador": "Erling Haaland",
       "equipo": "Noruega",
-      "goles": 5,
+      "goles": 7,
       "asistencias": 0
     },
     "David Møller Wolfe|Noruega": {
@@ -530,8 +537,8 @@
     "Lionel Messi|Argentina": {
       "jugador": "Lionel Messi",
       "equipo": "Argentina",
-      "goles": 7,
-      "asistencias": 0
+      "goles": 8,
+      "asistencias": 1
     },
     "Rodrigo De Paul|Argentina": {
       "jugador": "Rodrigo De Paul",
@@ -602,8 +609,8 @@
     "Harry Kane|Inglaterra": {
       "jugador": "Harry Kane",
       "equipo": "Inglaterra",
-      "goles": 5,
-      "asistencias": 0
+      "goles": 6,
+      "asistencias": 1
     },
     "Martin Baturina|Croacia": {
       "jugador": "Martin Baturina",
@@ -638,7 +645,7 @@
     "Jude Bellingham|Inglaterra": {
       "jugador": "Jude Bellingham",
       "equipo": "Inglaterra",
-      "goles": 2,
+      "goles": 4,
       "asistencias": 1
     },
     "Elliot Anderson|Inglaterra": {
@@ -657,7 +664,7 @@
       "jugador": "Bukayo Saka",
       "equipo": "Inglaterra",
       "goles": 0,
-      "asistencias": 2
+      "asistencias": 3
     },
     "Caleb Yirenkyi|Ghana": {
       "jugador": "Caleb Yirenkyi",
@@ -908,7 +915,7 @@
     "Mostafa Zico|Egipto": {
       "jugador": "Mostafa Zico",
       "equipo": "Egipto",
-      "goles": 1,
+      "goles": 2,
       "asistencias": 1
     },
     "Mohamed Hany|Egipto": {
@@ -1077,7 +1084,7 @@
       "jugador": "Achraf Hakimi",
       "equipo": "Marruecos",
       "goles": 1,
-      "asistencias": 1
+      "asistencias": 2
     },
     "Wilson Isidor|Haití": {
       "jugador": "Wilson Isidor",
@@ -1094,7 +1101,7 @@
     "Soufiane Rahimi|Marruecos": {
       "jugador": "Soufiane Rahimi",
       "equipo": "Marruecos",
-      "goles": 1,
+      "goles": 2,
       "asistencias": 1
     },
     "Chadi Riad|Marruecos": {
@@ -1269,7 +1276,7 @@
       "jugador": "Andreas Schjelderup",
       "equipo": "Noruega",
       "goles": 0,
-      "asistencias": 1
+      "asistencias": 3
     },
     "Aurélien Tchouaméni|Francia": {
       "jugador": "Aurélien Tchouaméni",
@@ -1329,13 +1336,13 @@
       "jugador": "Leandro Trossard",
       "equipo": "Bélgica",
       "goles": 2,
-      "asistencias": 1
+      "asistencias": 2
     },
     "Hans Vanaken|Bélgica": {
       "jugador": "Hans Vanaken",
       "equipo": "Bélgica",
-      "goles": 0,
-      "asistencias": 1
+      "goles": 1,
+      "asistencias": 2
     },
     "Kevin De Bruyne|Bélgica": {
       "jugador": "Kevin De Bruyne",
@@ -1346,14 +1353,14 @@
     "Romelu Lukaku|Bélgica": {
       "jugador": "Romelu Lukaku",
       "equipo": "Bélgica",
-      "goles": 2,
+      "goles": 3,
       "asistencias": 1
     },
     "Nicolas Raskin|Bélgica": {
       "jugador": "Nicolas Raskin",
       "equipo": "Bélgica",
       "goles": 0,
-      "asistencias": 1
+      "asistencias": 2
     },
     "Alexis Saelemaekers|Bélgica": {
       "jugador": "Alexis Saelemaekers",
@@ -1467,7 +1474,7 @@
       "jugador": "Lautaro Martínez",
       "equipo": "Argentina",
       "goles": 1,
-      "asistencias": 0
+      "asistencias": 1
     },
     "Ehsan Haddad|Jordania": {
       "jugador": "Ehsan Haddad",
@@ -1630,6 +1637,72 @@
       "equipo": "Colombia",
       "goles": 0,
       "asistencias": 1
+    },
+    "Azzedine Ounahi|Marruecos": {
+      "jugador": "Azzedine Ounahi",
+      "equipo": "Marruecos",
+      "goles": 2,
+      "asistencias": 0
+    },
+    "Neymar|Brasil": {
+      "jugador": "Neymar",
+      "equipo": "Brasil",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Mikel Merino|España": {
+      "jugador": "Mikel Merino",
+      "equipo": "España",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Ferran Torres|España": {
+      "jugador": "Ferran Torres",
+      "equipo": "España",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Charles De Ketelaere|Bélgica": {
+      "jugador": "Charles De Ketelaere",
+      "equipo": "Bélgica",
+      "goles": 2,
+      "asistencias": 1
+    },
+    "Yasser Ibrahim|Egipto": {
+      "jugador": "Yasser Ibrahim",
+      "equipo": "Egipto",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Marawan Attia|Egipto": {
+      "jugador": "Marawan Attia",
+      "equipo": "Egipto",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Haissem Hassan|Egipto": {
+      "jugador": "Haissem Hassan",
+      "equipo": "Egipto",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Cristian Romero|Argentina": {
+      "jugador": "Cristian Romero",
+      "equipo": "Argentina",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Gonzalo Montiel|Argentina": {
+      "jugador": "Gonzalo Montiel",
+      "equipo": "Argentina",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Enzo Fernández|Argentina": {
+      "jugador": "Enzo Fernández",
+      "equipo": "Argentina",
+      "goles": 1,
+      "asistencias": 0
     }
   }
 }
