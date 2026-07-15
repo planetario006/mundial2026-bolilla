@@ -1165,8 +1165,8 @@
   },
   "Argentina|Egipto": {
     "verificado": false,
-    "ultimo_chequeo": "2026-07-15T20:35:23+00:00",
-    "intentos": 99,
+    "ultimo_chequeo": "2026-07-15T21:08:42+00:00",
+    "intentos": 100,
     "match_id": 95,
     "valores_espn_aplicados": {
       "penfall_local": 1,
@@ -1177,8 +1177,8 @@
   },
   "Colombia|Suiza": {
     "verificado": true,
-    "ultimo_chequeo": "2026-07-15T20:35:23+00:00",
-    "intentos": 96,
+    "ultimo_chequeo": "2026-07-15T21:08:42+00:00",
+    "intentos": 97,
     "match_id": 96,
     "valores_espn_aplicados": {
       "penfall_local": 0,
@@ -1213,8 +1213,8 @@
   },
   "Inglaterra|Noruega": {
     "verificado": true,
-    "ultimo_chequeo": "2026-07-15T20:35:23+00:00",
-    "intentos": 50,
+    "ultimo_chequeo": "2026-07-15T21:08:42+00:00",
+    "intentos": 51,
     "match_id": 99,
     "valores_espn_aplicados": {
       "penfall_local": 0,
@@ -1225,8 +1225,8 @@
   },
   "Argentina|Suiza": {
     "verificado": false,
-    "ultimo_chequeo": "2026-07-15T20:35:23+00:00",
-    "intentos": 49,
+    "ultimo_chequeo": "2026-07-15T21:08:42+00:00",
+    "intentos": 50,
     "match_id": 100,
     "valores_espn_aplicados": {
       "penfall_local": 0,
@@ -1240,6 +1240,18 @@
     "ultimo_chequeo": "2026-07-14T21:31:49+00:00",
     "intentos": 1,
     "match_id": 101,
+    "valores_espn_aplicados": {
+      "penfall_local": 0,
+      "penfall_visit": 0,
+      "penpar_local": 0,
+      "penpar_visit": 0
+    }
+  },
+  "Argentina|Inglaterra": {
+    "verificado": false,
+    "ultimo_chequeo": "2026-07-15T21:08:42+00:00",
+    "intentos": 1,
+    "match_id": 102,
     "valores_espn_aplicados": {
       "penfall_local": 0,
       "penfall_visit": 0,

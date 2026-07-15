@@ -1864,5 +1864,25 @@
       "minuto": "58'",
       "tipo": "Gol"
     }
+  ],
+  "Argentina|Inglaterra|2026-07-15": [
+    {
+      "jugador": "Anthony Gordon",
+      "equipo": "Inglaterra",
+      "minuto": "55'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Enzo Fernández",
+      "equipo": "Argentina",
+      "minuto": "85'",
+      "tipo": "Gol"
+    },
+    {
+      "jugador": "Lautaro Martínez",
+      "equipo": "Argentina",
+      "minuto": "90'+2'",
+      "tipo": "Gol"
+    }
   ]
 }
