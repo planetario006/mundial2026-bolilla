@@ -14,6 +14,7 @@
     "Argentina|Cabo Verde|2026-07-03",
     "Argentina|Egipto|2026-07-07",
     "Argentina|Jordania|2026-06-28",
+    "Argentina|Suiza|2026-07-12",
     "Australia|EE.UU.|2026-06-19",
     "Australia|Egipto|2026-07-03",
     "Australia|Turquía|2026-06-14",
@@ -30,6 +31,7 @@
     "Brasil|Noruega|2026-07-05",
     "Bélgica|EE.UU.|2026-07-07",
     "Bélgica|Egipto|2026-06-15",
+    "Bélgica|España|2026-07-10",
     "Bélgica|Nueva Zelanda|2026-06-27",
     "Bélgica|Senegal|2026-07-01",
     "Cabo Verde|Uruguay|2026-06-21",
@@ -63,6 +65,7 @@
     "España|Portugal|2026-07-06",
     "España|Uruguay|2026-06-27",
     "Francia|Irak|2026-06-22",
+    "Francia|Marruecos|2026-07-09",
     "Francia|Noruega|2026-06-26",
     "Francia|Paraguay|2026-07-04",
     "Francia|Senegal|2026-06-16",
@@ -70,6 +73,7 @@
     "Ghana|Panamá|2026-06-17",
     "Haití|Marruecos|2026-06-24",
     "Inglaterra|México|2026-07-06",
+    "Inglaterra|Noruega|2026-07-11",
     "Inglaterra|Panamá|2026-06-27",
     "Inglaterra|R. D. Congo|2026-07-01",
     "Irak|Noruega|2026-06-16",
@@ -465,8 +469,8 @@
     "Kylian Mbappé|Francia": {
       "jugador": "Kylian Mbappé",
       "equipo": "Francia",
-      "goles": 7,
-      "asistencias": 2
+      "goles": 8,
+      "asistencias": 3
     },
     "Michael Olise|Francia": {
       "jugador": "Michael Olise",
@@ -532,13 +536,13 @@
       "jugador": "Martin Ødegaard",
       "equipo": "Noruega",
       "goles": 0,
-      "asistencias": 3
+      "asistencias": 4
     },
     "Lionel Messi|Argentina": {
       "jugador": "Lionel Messi",
       "equipo": "Argentina",
       "goles": 8,
-      "asistencias": 1
+      "asistencias": 2
     },
     "Rodrigo De Paul|Argentina": {
       "jugador": "Rodrigo De Paul",
@@ -645,7 +649,7 @@
     "Jude Bellingham|Inglaterra": {
       "jugador": "Jude Bellingham",
       "equipo": "Inglaterra",
-      "goles": 4,
+      "goles": 6,
       "asistencias": 1
     },
     "Elliot Anderson|Inglaterra": {
@@ -939,7 +943,7 @@
     "Ousmane Dembélé|Francia": {
       "jugador": "Ousmane Dembélé",
       "equipo": "Francia",
-      "goles": 4,
+      "goles": 5,
       "asistencias": 2
     },
     "Marcus Holmgren Pedersen|Noruega": {
@@ -1275,7 +1279,7 @@
     "Andreas Schjelderup|Noruega": {
       "jugador": "Andreas Schjelderup",
       "equipo": "Noruega",
-      "goles": 0,
+      "goles": 1,
       "asistencias": 3
     },
     "Aurélien Tchouaméni|Francia": {
@@ -1288,7 +1292,7 @@
       "jugador": "Désiré Doué",
       "equipo": "Francia",
       "goles": 1,
-      "asistencias": 0
+      "asistencias": 1
     },
     "Habib Diarra|Senegal": {
       "jugador": "Habib Diarra",
@@ -1473,7 +1477,7 @@
     "Lautaro Martínez|Argentina": {
       "jugador": "Lautaro Martínez",
       "equipo": "Argentina",
-      "goles": 1,
+      "goles": 2,
       "asistencias": 1
     },
     "Ehsan Haddad|Jordania": {
@@ -1540,7 +1544,7 @@
       "jugador": "Anthony Gordon",
       "equipo": "Inglaterra",
       "goles": 0,
-      "asistencias": 2
+      "asistencias": 3
     },
     "Moussa Niakhaté|Senegal": {
       "jugador": "Moussa Niakhaté",
@@ -1581,7 +1585,7 @@
     "Dan Ndoye|Suiza": {
       "jugador": "Dan Ndoye",
       "equipo": "Suiza",
-      "goles": 1,
+      "goles": 2,
       "asistencias": 0
     },
     "Karim Hafez|Egipto": {
@@ -1611,7 +1615,7 @@
     "Alexis Mac Allister|Argentina": {
       "jugador": "Alexis Mac Allister",
       "equipo": "Argentina",
-      "goles": 0,
+      "goles": 1,
       "asistencias": 1
     },
     "Sidny Lopes Cabral|Cabo Verde": {
@@ -1653,7 +1657,7 @@
     "Mikel Merino|España": {
       "jugador": "Mikel Merino",
       "equipo": "España",
-      "goles": 1,
+      "goles": 2,
       "asistencias": 0
     },
     "Ferran Torres|España": {
@@ -1665,7 +1669,7 @@
     "Charles De Ketelaere|Bélgica": {
       "jugador": "Charles De Ketelaere",
       "equipo": "Bélgica",
-      "goles": 2,
+      "goles": 3,
       "asistencias": 1
     },
     "Yasser Ibrahim|Egipto": {
@@ -1703,6 +1707,36 @@
       "equipo": "Argentina",
       "goles": 1,
       "asistencias": 0
+    },
+    "Fabián Ruiz|España": {
+      "jugador": "Fabián Ruiz",
+      "equipo": "España",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Timothy Castagne|Bélgica": {
+      "jugador": "Timothy Castagne",
+      "equipo": "Bélgica",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Ricardo Rodríguez|Suiza": {
+      "jugador": "Ricardo Rodríguez",
+      "equipo": "Suiza",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Julián Álvarez|Argentina": {
+      "jugador": "Julián Álvarez",
+      "equipo": "Argentina",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "José Manuel López|Argentina": {
+      "jugador": "José Manuel López",
+      "equipo": "Argentina",
+      "goles": 0,
+      "asistencias": 1
     }
   }
 }
