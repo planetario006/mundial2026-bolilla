@@ -366,7 +366,7 @@ def determinar_premios_finales(matches: list[dict]) -> dict:
         if not jugado(p):
             continue
         fase = p.get("fase")
-        if fase in ("Final", "Tercer Puesto"):
+        if fase in ("Final", "Tercer puesto"):
             if p["gf_local"] > p["gf_visit"]:
                 ganador, perdedor = p["local"], p["visitante"]
             elif p["gf_local"] < p["gf_visit"]:
@@ -382,7 +382,7 @@ def determinar_premios_finales(matches: list[dict]) -> dict:
             if fase == "Final":
                 premios["campeon"] = ganador
                 premios["subcampeon"] = perdedor
-            elif fase == "Tercer Puesto":
+            elif fase == "Tercer puesto":
                 premios["tercero"] = ganador
                 premios["cuarto"] = perdedor
     return premios
