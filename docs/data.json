@@ -1,7 +1,7 @@
 {
   "meta": {
-    "actualizado": "2026-07-18T22:26:52+00:00",
-    "total_partidos_jugados": 102,
+    "actualizado": "2026-07-18T23:24:49+00:00",
+    "total_partidos_jugados": 103,
     "total_partidos": 104,
     "fase_grupos_terminada": true
   },
@@ -56,18 +56,18 @@
       "equipo": "Francia",
       "grupo": "I",
       "bombo": "Bombo 1",
-      "gf": 16,
-      "gc": 4,
+      "gf": 20,
+      "gc": 10,
       "ta": 6,
       "doblea": 0,
       "rd": 0,
       "penfall": 1,
       "penpar": 1,
-      "bonus_resultado": 22,
+      "bonus_resultado": 14,
       "bonus_grupo": 15,
       "premio_final": 0,
       "premio_menos_puntos": 0,
-      "puntos_totales": 198,
+      "puntos_totales": 176,
       "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 35,
       "bonus_ronda_cuartos": 50,
@@ -79,18 +79,18 @@
       "equipo": "Inglaterra",
       "grupo": "L",
       "bombo": "Bombo 1",
-      "gf": 14,
-      "gc": 8,
+      "gf": 20,
+      "gc": 12,
       "ta": 8,
       "doblea": 0,
       "rd": 1,
       "penfall": 0,
       "penpar": 0,
-      "bonus_resultado": 19,
+      "bonus_resultado": 24,
       "bonus_grupo": 15,
       "premio_final": 0,
       "premio_menos_puntos": 0,
-      "puntos_totales": 168,
+      "puntos_totales": 167,
       "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 35,
       "bonus_ronda_cuartos": 50,
@@ -5803,6 +5803,52 @@
         "bonus_resultado": 5,
         "total": -5
       }
+    },
+    {
+      "id": 103,
+      "match_num": 103,
+      "fecha": "2026-07-18",
+      "fase": "Tercer puesto",
+      "grupo": "",
+      "local": "Francia",
+      "visitante": "Inglaterra",
+      "gf_local": 4,
+      "gf_visit": 6,
+      "ta_local": 0,
+      "doblea_local": 0,
+      "rd_local": 0,
+      "ta_visit": 0,
+      "doblea_visit": 0,
+      "rd_visit": 0,
+      "penfall_local": 0,
+      "penpar_local": 0,
+      "penfall_visit": 0,
+      "penpar_visit": 0,
+      "pen_tanda_local": 0,
+      "pen_tanda_visit": 0,
+      "jugado": true,
+      "puntos_local": {
+        "gf": 4,
+        "gc": -18,
+        "ta": 0,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": -8,
+        "total": -22
+      },
+      "puntos_visit": {
+        "gf": 6,
+        "gc": -12,
+        "ta": 0,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": 5,
+        "total": -1
+      }
     }
   ],
   "grupos": {
@@ -11285,8 +11331,8 @@
         "grupo": "",
         "local": "Francia",
         "visitante": "Inglaterra",
-        "gf_local": null,
-        "gf_visit": null,
+        "gf_local": 4,
+        "gf_visit": 6,
         "ta_local": 0,
         "doblea_local": 0,
         "rd_local": 0,
@@ -11299,9 +11345,29 @@
         "penpar_visit": 0,
         "pen_tanda_local": 0,
         "pen_tanda_visit": 0,
-        "jugado": false,
-        "puntos_local": null,
-        "puntos_visit": null
+        "jugado": true,
+        "puntos_local": {
+          "gf": 4,
+          "gc": -18,
+          "ta": 0,
+          "doblea": 0,
+          "rd": 0,
+          "penfall": 0,
+          "penpar": 0,
+          "bonus_resultado": -8,
+          "total": -22
+        },
+        "puntos_visit": {
+          "gf": 6,
+          "gc": -12,
+          "ta": 0,
+          "doblea": 0,
+          "rd": 0,
+          "penfall": 0,
+          "penpar": 0,
+          "bonus_resultado": 5,
+          "total": -1
+        }
       }
     ],
     "Final": [
@@ -11345,11 +11411,11 @@
       },
       {
         "equipo": "Francia",
-        "puntos": 198
+        "puntos": 176
       },
       {
         "equipo": "Inglaterra",
-        "puntos": 168
+        "puntos": 167
       },
       {
         "equipo": "Brasil",
@@ -11682,45 +11748,45 @@
   },
   "goleadores": [
     {
-      "jugador": "Lionel Messi",
-      "equipo": "Argentina",
-      "goles": 8,
+      "jugador": "Kylian Mbappé",
+      "equipo": "Francia",
+      "goles": 10,
       "asistencias": 4,
       "pos": 1
     },
     {
-      "jugador": "Kylian Mbappé",
-      "equipo": "Francia",
+      "jugador": "Lionel Messi",
+      "equipo": "Argentina",
       "goles": 8,
-      "asistencias": 3,
+      "asistencias": 4,
       "pos": 2
+    },
+    {
+      "jugador": "Jude Bellingham",
+      "equipo": "Inglaterra",
+      "goles": 7,
+      "asistencias": 1,
+      "pos": 3
     },
     {
       "jugador": "Erling Haaland",
       "equipo": "Noruega",
       "goles": 7,
       "asistencias": 0,
-      "pos": 3
+      "pos": 4
+    },
+    {
+      "jugador": "Ousmane Dembélé",
+      "equipo": "Francia",
+      "goles": 6,
+      "asistencias": 2,
+      "pos": 5
     },
     {
       "jugador": "Harry Kane",
       "equipo": "Inglaterra",
       "goles": 6,
       "asistencias": 1,
-      "pos": 4
-    },
-    {
-      "jugador": "Jude Bellingham",
-      "equipo": "Inglaterra",
-      "goles": 6,
-      "asistencias": 1,
-      "pos": 5
-    },
-    {
-      "jugador": "Ousmane Dembélé",
-      "equipo": "Francia",
-      "goles": 5,
-      "asistencias": 2,
       "pos": 6
     },
     {
@@ -11752,1859 +11818,1880 @@
       "pos": 10
     },
     {
+      "jugador": "Bukayo Saka",
+      "equipo": "Inglaterra",
+      "goles": 3,
+      "asistencias": 3,
+      "pos": 11
+    },
+    {
       "jugador": "Deniz Undav",
       "equipo": "Alemania",
       "goles": 3,
       "asistencias": 2,
-      "pos": 11
+      "pos": 12
     },
     {
       "jugador": "Johan Manzambi",
       "equipo": "Suiza",
       "goles": 3,
       "asistencias": 2,
-      "pos": 12
+      "pos": 13
+    },
+    {
+      "jugador": "Bradley Barcola",
+      "equipo": "Francia",
+      "goles": 3,
+      "asistencias": 1,
+      "pos": 14
     },
     {
       "jugador": "Charles De Ketelaere",
       "equipo": "Bélgica",
       "goles": 3,
       "asistencias": 1,
-      "pos": 13
+      "pos": 15
     },
     {
       "jugador": "Cody Gakpo",
       "equipo": "Países Bajos",
       "goles": 3,
       "asistencias": 1,
-      "pos": 14
+      "pos": 16
     },
     {
       "jugador": "Lautaro Martínez",
       "equipo": "Argentina",
       "goles": 3,
       "asistencias": 1,
-      "pos": 15
+      "pos": 17
     },
     {
       "jugador": "Romelu Lukaku",
       "equipo": "Bélgica",
       "goles": 3,
       "asistencias": 1,
-      "pos": 16
+      "pos": 18
     },
     {
       "jugador": "Brian Brobbey",
       "equipo": "Países Bajos",
       "goles": 3,
       "asistencias": 0,
-      "pos": 17
+      "pos": 19
     },
     {
       "jugador": "Cristiano Ronaldo",
       "equipo": "Portugal",
       "goles": 3,
       "asistencias": 0,
-      "pos": 18
+      "pos": 20
     },
     {
       "jugador": "Elijah Just",
       "equipo": "Nueva Zelanda",
       "goles": 3,
       "asistencias": 0,
-      "pos": 19
+      "pos": 21
     },
     {
       "jugador": "Folarin Balogun",
       "equipo": "EE.UU.",
       "goles": 3,
       "asistencias": 0,
-      "pos": 20
+      "pos": 22
     },
     {
       "jugador": "Ismael Saibari",
       "equipo": "Marruecos",
       "goles": 3,
       "asistencias": 0,
-      "pos": 21
+      "pos": 23
     },
     {
       "jugador": "Jonathan David",
       "equipo": "Canadá",
       "goles": 3,
       "asistencias": 0,
-      "pos": 22
+      "pos": 24
     },
     {
       "jugador": "Kai Havertz",
       "equipo": "Alemania",
       "goles": 3,
       "asistencias": 0,
-      "pos": 23
+      "pos": 25
     },
     {
       "jugador": "Matheus Cunha",
       "equipo": "Brasil",
       "goles": 3,
       "asistencias": 0,
-      "pos": 24
+      "pos": 26
     },
     {
       "jugador": "Raúl Jiménez",
       "equipo": "México",
       "goles": 3,
       "asistencias": 0,
-      "pos": 25
+      "pos": 27
     },
     {
       "jugador": "Yoane Wissa",
       "equipo": "R. D. Congo",
       "goles": 3,
       "asistencias": 0,
-      "pos": 26
+      "pos": 28
     },
     {
       "jugador": "Breel Embolo",
       "equipo": "Suiza",
       "goles": 2,
       "asistencias": 2,
-      "pos": 27
+      "pos": 29
     },
     {
       "jugador": "Crysencio Summerville",
       "equipo": "Países Bajos",
       "goles": 2,
       "asistencias": 2,
-      "pos": 28
+      "pos": 30
     },
     {
       "jugador": "Leandro Trossard",
       "equipo": "Bélgica",
       "goles": 2,
       "asistencias": 2,
-      "pos": 29
+      "pos": 31
     },
     {
       "jugador": "Ayase Ueda",
       "equipo": "Japón",
       "goles": 2,
       "asistencias": 1,
-      "pos": 30
-    },
-    {
-      "jugador": "Bradley Barcola",
-      "equipo": "Francia",
-      "goles": 2,
-      "asistencias": 1,
-      "pos": 31
+      "pos": 32
     },
     {
       "jugador": "Malik Tillman",
       "equipo": "EE.UU.",
       "goles": 2,
       "asistencias": 1,
-      "pos": 32
+      "pos": 33
     },
     {
       "jugador": "Maxi Araújo",
       "equipo": "Uruguay",
       "goles": 2,
       "asistencias": 1,
-      "pos": 33
+      "pos": 34
     },
     {
       "jugador": "Mostafa Zico",
       "equipo": "Egipto",
       "goles": 2,
       "asistencias": 1,
-      "pos": 34
+      "pos": 35
     },
     {
       "jugador": "Nicolas Pépé",
       "equipo": "Costa de Marfil",
       "goles": 2,
       "asistencias": 1,
-      "pos": 35
+      "pos": 36
     },
     {
       "jugador": "Pape Gueye",
       "equipo": "Senegal",
       "goles": 2,
       "asistencias": 1,
-      "pos": 36
+      "pos": 37
     },
     {
       "jugador": "Ramin Rezaeian",
       "equipo": "Irán",
       "goles": 2,
       "asistencias": 1,
-      "pos": 37
+      "pos": 38
     },
     {
       "jugador": "Riyad Mahrez",
       "equipo": "Argelia",
       "goles": 2,
       "asistencias": 1,
-      "pos": 38
+      "pos": 39
     },
     {
       "jugador": "Rubén Vargas",
       "equipo": "Suiza",
       "goles": 2,
       "asistencias": 1,
-      "pos": 39
+      "pos": 40
     },
     {
       "jugador": "Soufiane Rahimi",
       "equipo": "Marruecos",
       "goles": 2,
       "asistencias": 1,
-      "pos": 40
+      "pos": 41
     },
     {
       "jugador": "Amad Diallo",
       "equipo": "Costa de Marfil",
       "goles": 2,
       "asistencias": 0,
-      "pos": 41
+      "pos": 42
     },
     {
       "jugador": "Anthony Elanga",
       "equipo": "Suecia",
       "goles": 2,
       "asistencias": 0,
-      "pos": 42
+      "pos": 43
     },
     {
       "jugador": "Azzedine Ounahi",
       "equipo": "Marruecos",
       "goles": 2,
       "asistencias": 0,
-      "pos": 43
+      "pos": 44
     },
     {
       "jugador": "Cyle Larin",
       "equipo": "Canadá",
       "goles": 2,
       "asistencias": 0,
-      "pos": 44
+      "pos": 45
     },
     {
       "jugador": "Daichi Kamada",
       "equipo": "Japón",
       "goles": 2,
       "asistencias": 0,
-      "pos": 45
+      "pos": 46
     },
     {
       "jugador": "Dan Ndoye",
       "equipo": "Suiza",
       "goles": 2,
       "asistencias": 0,
-      "pos": 46
+      "pos": 47
     },
     {
       "jugador": "Daniel Muñoz",
       "equipo": "Colombia",
       "goles": 2,
       "asistencias": 0,
-      "pos": 47
+      "pos": 48
     },
     {
       "jugador": "Emam Ashour",
       "equipo": "Egipto",
       "goles": 2,
       "asistencias": 0,
-      "pos": 48
+      "pos": 49
     },
     {
       "jugador": "Enzo Fernández",
       "equipo": "Argentina",
       "goles": 2,
       "asistencias": 0,
-      "pos": 49
+      "pos": 50
     },
     {
       "jugador": "Ermin Mahmic",
       "equipo": "Bosnia",
       "goles": 2,
       "asistencias": 0,
-      "pos": 50
+      "pos": 51
     },
     {
       "jugador": "Habib Diarra",
       "equipo": "Senegal",
       "goles": 2,
       "asistencias": 0,
-      "pos": 51
+      "pos": 52
     },
     {
       "jugador": "Marko Arnautovic",
       "equipo": "Austria",
       "goles": 2,
       "asistencias": 0,
-      "pos": 52
+      "pos": 53
     },
     {
       "jugador": "Mikel Merino",
       "equipo": "España",
       "goles": 2,
       "asistencias": 0,
-      "pos": 53
+      "pos": 54
     },
     {
       "jugador": "Pedro Porro",
       "equipo": "España",
       "goles": 2,
       "asistencias": 0,
-      "pos": 54
+      "pos": 55
     },
     {
       "jugador": "Yasin Ayari",
       "equipo": "Suecia",
       "goles": 2,
       "asistencias": 0,
-      "pos": 55
+      "pos": 56
     },
     {
       "jugador": "Youri Tielemans",
       "equipo": "Bélgica",
       "goles": 2,
       "asistencias": 0,
-      "pos": 56
+      "pos": 57
     },
     {
       "jugador": "Alexander Isak",
       "equipo": "Suecia",
       "goles": 1,
       "asistencias": 3,
-      "pos": 57
+      "pos": 58
     },
     {
       "jugador": "Andreas Schjelderup",
       "equipo": "Noruega",
       "goles": 1,
       "asistencias": 3,
-      "pos": 58
+      "pos": 59
     },
     {
       "jugador": "Anthony Gordon",
       "equipo": "Inglaterra",
       "goles": 1,
       "asistencias": 3,
-      "pos": 59
+      "pos": 60
     },
     {
       "jugador": "Achraf Hakimi",
       "equipo": "Marruecos",
       "goles": 1,
       "asistencias": 2,
-      "pos": 60
+      "pos": 61
+    },
+    {
+      "jugador": "Declan Rice",
+      "equipo": "Inglaterra",
+      "goles": 1,
+      "asistencias": 2,
+      "pos": 62
     },
     {
       "jugador": "Hans Vanaken",
       "equipo": "Bélgica",
       "goles": 1,
       "asistencias": 2,
-      "pos": 61
+      "pos": 63
     },
     {
       "jugador": "Iliman Ndiaye",
       "equipo": "Senegal",
       "goles": 1,
       "asistencias": 2,
-      "pos": 62
+      "pos": 64
     },
     {
       "jugador": "Julio Enciso",
       "equipo": "Paraguay",
       "goles": 1,
       "asistencias": 2,
-      "pos": 63
+      "pos": 65
     },
     {
       "jugador": "Mohamed Salah",
       "equipo": "Egipto",
       "goles": 1,
       "asistencias": 2,
-      "pos": 64
+      "pos": 66
     },
     {
       "jugador": "Nathan Saliba",
       "equipo": "Canadá",
       "goles": 1,
       "asistencias": 2,
-      "pos": 65
+      "pos": 67
     },
     {
       "jugador": "Viktor Gyökeres",
       "equipo": "Suecia",
       "goles": 1,
       "asistencias": 2,
-      "pos": 66
+      "pos": 68
     },
     {
       "jugador": "Alex Freeman",
       "equipo": "EE.UU.",
       "goles": 1,
       "asistencias": 1,
-      "pos": 67
+      "pos": 69
     },
     {
       "jugador": "Alexis Mac Allister",
       "equipo": "Argentina",
       "goles": 1,
       "asistencias": 1,
-      "pos": 68
+      "pos": 70
     },
     {
       "jugador": "Baris Alper Yilmaz",
       "equipo": "Turquía",
       "goles": 1,
       "asistencias": 1,
-      "pos": 69
+      "pos": 71
     },
     {
       "jugador": "Désiré Doué",
       "equipo": "Francia",
       "goles": 1,
       "asistencias": 1,
-      "pos": 70
+      "pos": 72
     },
     {
       "jugador": "Felix Nmecha",
       "equipo": "Alemania",
       "goles": 1,
       "asistencias": 1,
-      "pos": 71
+      "pos": 73
     },
     {
       "jugador": "Hwang In-Beom",
       "equipo": "Corea del Sur",
       "goles": 1,
       "asistencias": 1,
-      "pos": 72
+      "pos": 74
     },
     {
       "jugador": "Ivan Perisic",
       "equipo": "Croacia",
       "goles": 1,
       "asistencias": 1,
-      "pos": 73
+      "pos": 75
     },
     {
       "jugador": "Kaishu Sano",
       "equipo": "Japón",
       "goles": 1,
       "asistencias": 1,
-      "pos": 74
+      "pos": 76
     },
     {
       "jugador": "Keito Nakamura",
       "equipo": "Japón",
       "goles": 1,
       "asistencias": 1,
-      "pos": 75
+      "pos": 77
     },
     {
       "jugador": "Lisandro Martínez",
       "equipo": "Argentina",
       "goles": 1,
       "asistencias": 1,
-      "pos": 76
+      "pos": 78
     },
     {
       "jugador": "Luis Díaz",
       "equipo": "Colombia",
       "goles": 1,
       "asistencias": 1,
-      "pos": 77
+      "pos": 79
     },
     {
       "jugador": "Luis Romo",
       "equipo": "México",
       "goles": 1,
       "asistencias": 1,
-      "pos": 78
+      "pos": 80
+    },
+    {
+      "jugador": "Marcus Rashford",
+      "equipo": "Inglaterra",
+      "goles": 1,
+      "asistencias": 1,
+      "pos": 81
     },
     {
       "jugador": "Matías Galarza",
       "equipo": "Paraguay",
       "goles": 1,
       "asistencias": 1,
-      "pos": 79
+      "pos": 82
     },
     {
       "jugador": "Mousa Al-Tamari",
       "equipo": "Jordania",
       "goles": 1,
       "asistencias": 1,
-      "pos": 80
+      "pos": 83
     },
     {
       "jugador": "Nathaniel Brown",
       "equipo": "Alemania",
       "goles": 1,
       "asistencias": 1,
-      "pos": 81
+      "pos": 84
     },
     {
       "jugador": "Petar Sucic",
       "equipo": "Croacia",
       "goles": 1,
       "asistencias": 1,
-      "pos": 82
+      "pos": 85
     },
     {
       "jugador": "Promise David",
       "equipo": "Canadá",
       "goles": 1,
       "asistencias": 1,
-      "pos": 83
+      "pos": 86
     },
     {
       "jugador": "Rafael Leão",
       "equipo": "Portugal",
       "goles": 1,
       "asistencias": 1,
-      "pos": 84
+      "pos": 87
     },
     {
       "jugador": "Sebastian Berhalter",
       "equipo": "EE.UU.",
       "goles": 1,
       "asistencias": 1,
-      "pos": 85
+      "pos": 88
     },
     {
       "jugador": "Trézéguet",
       "equipo": "Egipto",
       "goles": 1,
       "asistencias": 1,
-      "pos": 86
+      "pos": 89
     },
     {
       "jugador": "Virgil van Dijk",
       "equipo": "Países Bajos",
       "goles": 1,
       "asistencias": 1,
-      "pos": 87
+      "pos": 90
     },
     {
       "jugador": "Álex Baena",
       "equipo": "España",
       "goles": 1,
       "asistencias": 1,
-      "pos": 88
+      "pos": 91
     },
     {
       "jugador": "Abbosbek Fayzullaev",
       "equipo": "Uzbekistán",
       "goles": 1,
       "asistencias": 0,
-      "pos": 89
+      "pos": 92
     },
     {
       "jugador": "Abdulelah Al-Amri",
       "equipo": "Arabia Saudí",
       "goles": 1,
       "asistencias": 0,
-      "pos": 90
+      "pos": 93
     },
     {
       "jugador": "Agustín Canobbio",
       "equipo": "Uruguay",
       "goles": 1,
       "asistencias": 0,
-      "pos": 91
+      "pos": 94
     },
     {
       "jugador": "Alexis Saelemaekers",
       "equipo": "Bélgica",
       "goles": 1,
       "asistencias": 0,
-      "pos": 92
+      "pos": 95
     },
     {
       "jugador": "Ali Olwan",
       "equipo": "Jordania",
       "goles": 1,
       "asistencias": 0,
-      "pos": 93
+      "pos": 96
     },
     {
       "jugador": "Amine Gouiri",
       "equipo": "Argelia",
       "goles": 1,
       "asistencias": 0,
-      "pos": 94
+      "pos": 97
     },
     {
       "jugador": "Ante Budimir",
       "equipo": "Croacia",
       "goles": 1,
       "asistencias": 0,
-      "pos": 95
+      "pos": 98
     },
     {
       "jugador": "Antonio Nusa",
       "equipo": "Noruega",
       "goles": 1,
       "asistencias": 0,
-      "pos": 96
+      "pos": 99
     },
     {
       "jugador": "Arda Güler",
       "equipo": "Turquía",
       "goles": 1,
       "asistencias": 0,
-      "pos": 97
+      "pos": 100
     },
     {
       "jugador": "Auston Trusty",
       "equipo": "EE.UU.",
       "goles": 1,
       "asistencias": 0,
-      "pos": 98
+      "pos": 101
     },
     {
       "jugador": "Aymen Hussein",
       "equipo": "Irak",
       "goles": 1,
       "asistencias": 0,
-      "pos": 99
+      "pos": 102
     },
     {
       "jugador": "Brian Cipenga",
       "equipo": "R. D. Congo",
       "goles": 1,
       "asistencias": 0,
-      "pos": 100
+      "pos": 103
     },
     {
       "jugador": "Caleb Yirenkyi",
       "equipo": "Ghana",
       "goles": 1,
       "asistencias": 0,
-      "pos": 101
+      "pos": 104
     },
     {
       "jugador": "Casemiro",
       "equipo": "Brasil",
       "goles": 1,
       "asistencias": 0,
-      "pos": 102
+      "pos": 105
     },
     {
       "jugador": "Connor Metcalfe",
       "equipo": "Australia",
       "goles": 1,
       "asistencias": 0,
-      "pos": 103
+      "pos": 106
     },
     {
       "jugador": "Cristian Romero",
       "equipo": "Argentina",
       "goles": 1,
       "asistencias": 0,
-      "pos": 104
+      "pos": 107
     },
     {
       "jugador": "Daizen Maeda",
       "equipo": "Japón",
       "goles": 1,
       "asistencias": 0,
-      "pos": 105
+      "pos": 108
     },
     {
       "jugador": "Deroy Duarte",
       "equipo": "Cabo Verde",
       "goles": 1,
       "asistencias": 0,
-      "pos": 106
+      "pos": 109
     },
     {
       "jugador": "Derrick Luckassen",
       "equipo": "Ghana",
       "goles": 1,
       "asistencias": 0,
-      "pos": 107
+      "pos": 110
     },
     {
       "jugador": "Eldor Shomurodov",
       "equipo": "Uzbekistán",
       "goles": 1,
       "asistencias": 0,
-      "pos": 108
+      "pos": 111
+    },
+    {
+      "jugador": "Ezri Konsa",
+      "equipo": "Inglaterra",
+      "goles": 1,
+      "asistencias": 0,
+      "pos": 112
     },
     {
       "jugador": "Fabián Ruiz",
       "equipo": "España",
       "goles": 1,
       "asistencias": 0,
-      "pos": 109
+      "pos": 113
     },
     {
       "jugador": "Finn Surman",
       "equipo": "Nueva Zelanda",
       "goles": 1,
       "asistencias": 0,
-      "pos": 110
+      "pos": 114
     },
     {
       "jugador": "Fiston Mayele",
       "equipo": "R. D. Congo",
       "goles": 1,
       "asistencias": 0,
-      "pos": 111
+      "pos": 115
     },
     {
       "jugador": "Franck Kessié",
       "equipo": "Costa de Marfil",
       "goles": 1,
       "asistencias": 0,
-      "pos": 112
+      "pos": 116
     },
     {
       "jugador": "Gabriel Martinelli",
       "equipo": "Brasil",
       "goles": 1,
       "asistencias": 0,
-      "pos": 113
+      "pos": 117
     },
     {
       "jugador": "Gessime Yassine",
       "equipo": "Marruecos",
       "goles": 1,
       "asistencias": 0,
-      "pos": 114
+      "pos": 118
     },
     {
       "jugador": "Giovani Lo Celso",
       "equipo": "Argentina",
       "goles": 1,
       "asistencias": 0,
-      "pos": 115
+      "pos": 119
     },
     {
       "jugador": "Giovanni Reyna",
       "equipo": "EE.UU.",
       "goles": 1,
       "asistencias": 0,
-      "pos": 116
+      "pos": 120
     },
     {
       "jugador": "Gonzalo Plata",
       "equipo": "Ecuador",
       "goles": 1,
       "asistencias": 0,
-      "pos": 117
+      "pos": 121
     },
     {
       "jugador": "Gonçalo Ramos",
       "equipo": "Portugal",
       "goles": 1,
       "asistencias": 0,
-      "pos": 118
+      "pos": 122
     },
     {
       "jugador": "Granit Xhaka",
       "equipo": "Suiza",
       "goles": 1,
       "asistencias": 0,
-      "pos": 119
+      "pos": 123
     },
     {
       "jugador": "Hassan Al-Haydos",
       "equipo": "Catar",
       "goles": 1,
       "asistencias": 0,
-      "pos": 120
+      "pos": 124
     },
     {
       "jugador": "Hazem Mastouri",
       "equipo": "Túnez",
       "goles": 1,
       "asistencias": 0,
-      "pos": 121
+      "pos": 125
     },
     {
       "jugador": "Hélio Varela",
       "equipo": "Cabo Verde",
       "goles": 1,
       "asistencias": 0,
-      "pos": 122
+      "pos": 126
     },
     {
       "jugador": "Ibrahim Mbaye",
       "equipo": "Senegal",
       "goles": 1,
       "asistencias": 0,
-      "pos": 123
+      "pos": 127
     },
     {
       "jugador": "Issa Diop",
       "equipo": "Marruecos",
       "goles": 1,
       "asistencias": 0,
-      "pos": 124
+      "pos": 128
     },
     {
       "jugador": "Jamal Musiala",
       "equipo": "Alemania",
       "goles": 1,
       "asistencias": 0,
-      "pos": 125
+      "pos": 129
     },
     {
       "jugador": "Jan Paul van Hecke",
       "equipo": "Países Bajos",
       "goles": 1,
       "asistencias": 0,
-      "pos": 126
+      "pos": 130
     },
     {
       "jugador": "Jhon Arias",
       "equipo": "Colombia",
       "goles": 1,
       "asistencias": 0,
-      "pos": 127
+      "pos": 131
     },
     {
       "jugador": "John McGinn",
       "equipo": "Escocia",
       "goles": 1,
       "asistencias": 0,
-      "pos": 128
+      "pos": 132
     },
     {
       "jugador": "Jovo Lukic",
       "equipo": "Bosnia",
       "goles": 1,
       "asistencias": 0,
-      "pos": 129
+      "pos": 133
     },
     {
       "jugador": "João Neves",
       "equipo": "Portugal",
       "goles": 1,
       "asistencias": 0,
-      "pos": 130
+      "pos": 134
     },
     {
       "jugador": "Julián Álvarez",
       "equipo": "Argentina",
       "goles": 1,
       "asistencias": 0,
-      "pos": 131
+      "pos": 135
     },
     {
       "jugador": "Junya Ito",
       "equipo": "Japón",
       "goles": 1,
       "asistencias": 0,
-      "pos": 132
+      "pos": 136
     },
     {
       "jugador": "Jáminton Campaz",
       "equipo": "Colombia",
       "goles": 1,
       "asistencias": 0,
-      "pos": 133
+      "pos": 137
     },
     {
       "jugador": "Kaan Ayhan",
       "equipo": "Turquía",
       "goles": 1,
       "asistencias": 0,
-      "pos": 134
+      "pos": 138
     },
     {
       "jugador": "Kerim Alajbegovic",
       "equipo": "Bosnia",
       "goles": 1,
       "asistencias": 0,
-      "pos": 135
+      "pos": 139
     },
     {
       "jugador": "Kevin De Bruyne",
       "equipo": "Bélgica",
       "goles": 1,
       "asistencias": 0,
-      "pos": 136
+      "pos": 140
     },
     {
       "jugador": "Kevin Pina",
       "equipo": "Cabo Verde",
       "goles": 1,
       "asistencias": 0,
-      "pos": 137
+      "pos": 141
     },
     {
       "jugador": "Ladislav Krejcí",
       "equipo": "Chequia",
       "goles": 1,
       "asistencias": 0,
-      "pos": 138
+      "pos": 142
     },
     {
       "jugador": "Lamine Yamal",
       "equipo": "España",
       "goles": 1,
       "asistencias": 0,
-      "pos": 139
+      "pos": 143
     },
     {
       "jugador": "Leo Østigard",
       "equipo": "Noruega",
       "goles": 1,
       "asistencias": 0,
-      "pos": 140
+      "pos": 144
     },
     {
       "jugador": "Leroy Sané",
       "equipo": "Alemania",
       "goles": 1,
       "asistencias": 0,
-      "pos": 141
+      "pos": 145
     },
     {
       "jugador": "Livano Comenencia",
       "equipo": "Curazao",
       "goles": 1,
       "asistencias": 0,
-      "pos": 142
+      "pos": 146
     },
     {
       "jugador": "Mahmoud Saber",
       "equipo": "Egipto",
       "goles": 1,
       "asistencias": 0,
-      "pos": 143
+      "pos": 147
     },
     {
       "jugador": "Marcel Sabitzer",
       "equipo": "Austria",
       "goles": 1,
       "asistencias": 0,
-      "pos": 144
+      "pos": 148
     },
     {
       "jugador": "Marcus Holmgren Pedersen",
       "equipo": "Noruega",
       "goles": 1,
       "asistencias": 0,
-      "pos": 145
-    },
-    {
-      "jugador": "Marcus Rashford",
-      "equipo": "Inglaterra",
-      "goles": 1,
-      "asistencias": 0,
-      "pos": 146
+      "pos": 149
     },
     {
       "jugador": "Martin Baturina",
       "equipo": "Croacia",
       "goles": 1,
       "asistencias": 0,
-      "pos": 147
+      "pos": 150
     },
     {
       "jugador": "Mateo Chávez",
       "equipo": "México",
       "goles": 1,
       "asistencias": 0,
-      "pos": 148
+      "pos": 151
     },
     {
       "jugador": "Mattias Svanberg",
       "equipo": "Suecia",
       "goles": 1,
       "asistencias": 0,
-      "pos": 149
+      "pos": 152
     },
     {
       "jugador": "Maurício",
       "equipo": "Paraguay",
       "goles": 1,
       "asistencias": 0,
-      "pos": 150
+      "pos": 153
     },
     {
       "jugador": "Michal Sadílek",
       "equipo": "Chequia",
       "goles": 1,
       "asistencias": 0,
-      "pos": 151
+      "pos": 154
     },
     {
       "jugador": "Mohammad Mohebbi",
       "equipo": "Irán",
       "goles": 1,
       "asistencias": 0,
-      "pos": 152
+      "pos": 155
     },
     {
       "jugador": "Nadhir Benbouali",
       "equipo": "Argelia",
       "goles": 1,
       "asistencias": 0,
-      "pos": 153
+      "pos": 156
     },
     {
       "jugador": "Nestory Irankunda",
       "equipo": "Australia",
       "goles": 1,
       "asistencias": 0,
-      "pos": 154
+      "pos": 157
     },
     {
       "jugador": "Neymar",
       "equipo": "Brasil",
       "goles": 1,
       "asistencias": 0,
-      "pos": 155
+      "pos": 158
     },
     {
       "jugador": "Nico Schlotterbeck",
       "equipo": "Alemania",
       "goles": 1,
       "asistencias": 0,
-      "pos": 156
+      "pos": 159
     },
     {
       "jugador": "Nikola Vlasic",
       "equipo": "Croacia",
       "goles": 1,
       "asistencias": 0,
-      "pos": 157
+      "pos": 160
     },
     {
       "jugador": "Nilson Angulo",
       "equipo": "Ecuador",
       "goles": 1,
       "asistencias": 0,
-      "pos": 158
+      "pos": 161
     },
     {
       "jugador": "Nizar Al-Rashdan",
       "equipo": "Jordania",
       "goles": 1,
       "asistencias": 0,
-      "pos": 159
+      "pos": 162
     },
     {
       "jugador": "Nuno Mendes",
       "equipo": "Portugal",
       "goles": 1,
       "asistencias": 0,
-      "pos": 160
+      "pos": 163
     },
     {
       "jugador": "Oh Hyeon-Gyu",
       "equipo": "Corea del Sur",
       "goles": 1,
       "asistencias": 0,
-      "pos": 161
+      "pos": 164
     },
     {
       "jugador": "Omar Rekik",
       "equipo": "Túnez",
       "goles": 1,
       "asistencias": 0,
-      "pos": 162
+      "pos": 165
     },
     {
       "jugador": "Petar Musa",
       "equipo": "Croacia",
       "goles": 1,
       "asistencias": 0,
-      "pos": 163
+      "pos": 166
     },
     {
       "jugador": "Rafik Belghali",
       "equipo": "Argelia",
       "goles": 1,
       "asistencias": 0,
-      "pos": 164
+      "pos": 167
     },
     {
       "jugador": "Romano Schmid",
       "equipo": "Austria",
       "goles": 1,
       "asistencias": 0,
-      "pos": 165
+      "pos": 168
     },
     {
       "jugador": "Sasa Kalajdzic",
       "equipo": "Austria",
       "goles": 1,
       "asistencias": 0,
-      "pos": 166
+      "pos": 169
     },
     {
       "jugador": "Sidny Lopes Cabral",
       "equipo": "Cabo Verde",
       "goles": 1,
       "asistencias": 0,
-      "pos": 167
+      "pos": 170
     },
     {
       "jugador": "Stephen Eustáquio",
       "equipo": "Canadá",
       "goles": 1,
       "asistencias": 0,
-      "pos": 168
+      "pos": 171
     },
     {
       "jugador": "Teboho Mokoena",
       "equipo": "Sudáfrica",
       "goles": 1,
       "asistencias": 0,
-      "pos": 169
+      "pos": 172
     },
     {
       "jugador": "Thapelo Maseko",
       "equipo": "Sudáfrica",
       "goles": 1,
       "asistencias": 0,
-      "pos": 170
+      "pos": 173
     },
     {
       "jugador": "Thelo Aasgaard",
       "equipo": "Noruega",
       "goles": 1,
       "asistencias": 0,
-      "pos": 171
+      "pos": 174
     },
     {
       "jugador": "Wilson Isidor",
       "equipo": "Haití",
       "goles": 1,
       "asistencias": 0,
-      "pos": 172
+      "pos": 175
     },
     {
       "jugador": "Yasser Ibrahim",
       "equipo": "Egipto",
       "goles": 1,
       "asistencias": 0,
-      "pos": 173
+      "pos": 176
     },
     {
       "jugador": "Álvaro Fidalgo",
       "equipo": "México",
       "goles": 1,
       "asistencias": 0,
-      "pos": 174
+      "pos": 177
     },
     {
       "jugador": "Michael Olise",
       "equipo": "Francia",
       "goles": 0,
-      "asistencias": 5,
-      "pos": 175
+      "asistencias": 7,
+      "pos": 178
     },
     {
       "jugador": "Brahim Díaz",
       "equipo": "Marruecos",
       "goles": 0,
       "asistencias": 4,
-      "pos": 176
+      "pos": 179
     },
     {
       "jugador": "Bruno Guimarães",
       "equipo": "Brasil",
       "goles": 0,
       "asistencias": 4,
-      "pos": 177
+      "pos": 180
     },
     {
       "jugador": "Martin Ødegaard",
       "equipo": "Noruega",
       "goles": 0,
       "asistencias": 4,
-      "pos": 178
-    },
-    {
-      "jugador": "Bukayo Saka",
-      "equipo": "Inglaterra",
-      "goles": 0,
-      "asistencias": 3,
-      "pos": 179
+      "pos": 181
     },
     {
       "jugador": "Florian Wirtz",
       "equipo": "Alemania",
       "goles": 0,
       "asistencias": 3,
-      "pos": 180
+      "pos": 182
     },
     {
       "jugador": "Roberto Alvarado",
       "equipo": "México",
       "goles": 0,
       "asistencias": 3,
-      "pos": 181
+      "pos": 183
     },
     {
       "jugador": "Chris Wood",
       "equipo": "Nueva Zelanda",
       "goles": 0,
       "asistencias": 2,
-      "pos": 182
+      "pos": 184
     },
     {
       "jugador": "Dani Olmo",
       "equipo": "España",
       "goles": 0,
       "asistencias": 2,
-      "pos": 183
+      "pos": 185
     },
     {
       "jugador": "Denzel Dumfries",
       "equipo": "Países Bajos",
       "goles": 0,
       "asistencias": 2,
-      "pos": 184
+      "pos": 186
     },
     {
       "jugador": "Hannibal Mejbri",
       "equipo": "Túnez",
       "goles": 0,
       "asistencias": 2,
-      "pos": 185
+      "pos": 187
     },
     {
       "jugador": "Houssem Aouar",
       "equipo": "Argelia",
       "goles": 0,
       "asistencias": 2,
-      "pos": 186
+      "pos": 188
     },
     {
       "jugador": "Joshua Kimmich",
       "equipo": "Alemania",
       "goles": 0,
       "asistencias": 2,
-      "pos": 187
+      "pos": 189
     },
     {
       "jugador": "Marc Cucurella",
       "equipo": "España",
       "goles": 0,
       "asistencias": 2,
-      "pos": 188
+      "pos": 190
     },
     {
       "jugador": "Nicolas Raskin",
       "equipo": "Bélgica",
       "goles": 0,
       "asistencias": 2,
-      "pos": 189
+      "pos": 191
     },
     {
       "jugador": "Patrick Berg",
       "equipo": "Noruega",
       "goles": 0,
       "asistencias": 2,
-      "pos": 190
+      "pos": 192
     },
     {
       "jugador": "Ryan Gravenberch",
       "equipo": "Países Bajos",
       "goles": 0,
       "asistencias": 2,
-      "pos": 191
+      "pos": 193
     },
     {
       "jugador": "Abdoulaye Seck",
       "equipo": "Senegal",
       "goles": 0,
       "asistencias": 1,
-      "pos": 192
+      "pos": 194
     },
     {
       "jugador": "Adrien Rabiot",
       "equipo": "Francia",
       "goles": 0,
       "asistencias": 1,
-      "pos": 193
+      "pos": 195
     },
     {
       "jugador": "Akmal Mozgovoy",
       "equipo": "Uzbekistán",
       "goles": 0,
       "asistencias": 1,
-      "pos": 194
+      "pos": 196
     },
     {
       "jugador": "Alexandr Sojka",
       "equipo": "Chequia",
       "goles": 0,
       "asistencias": 1,
-      "pos": 195
+      "pos": 197
     },
     {
       "jugador": "Amir Al-Ammari",
       "equipo": "Irak",
       "goles": 0,
       "asistencias": 1,
-      "pos": 196
+      "pos": 198
     },
     {
       "jugador": "Arthur Masuaku",
       "equipo": "R. D. Congo",
       "goles": 0,
       "asistencias": 1,
-      "pos": 197
+      "pos": 199
     },
     {
       "jugador": "Aurélien Tchouaméni",
       "equipo": "Francia",
       "goles": 0,
       "asistencias": 1,
-      "pos": 198
+      "pos": 200
     },
     {
       "jugador": "Aymeric Laporte",
       "equipo": "España",
       "goles": 0,
       "asistencias": 1,
-      "pos": 199
+      "pos": 201
     },
     {
       "jugador": "Brandon Thomas-Asante",
       "equipo": "Ghana",
       "goles": 0,
       "asistencias": 1,
-      "pos": 200
+      "pos": 202
     },
     {
       "jugador": "Bruno Fernandes",
       "equipo": "Portugal",
       "goles": 0,
       "asistencias": 1,
-      "pos": 201
+      "pos": 203
     },
     {
       "jugador": "Chadi Riad",
       "equipo": "Marruecos",
       "goles": 0,
       "asistencias": 1,
-      "pos": 202
+      "pos": 204
     },
     {
       "jugador": "Chancel Mbemba",
       "equipo": "R. D. Congo",
       "goles": 0,
       "asistencias": 1,
-      "pos": 203
+      "pos": 205
     },
     {
       "jugador": "Chemsdine Talbi",
       "equipo": "Marruecos",
       "goles": 0,
       "asistencias": 1,
-      "pos": 204
+      "pos": 206
     },
     {
       "jugador": "Christian Pulisic",
       "equipo": "EE.UU.",
       "goles": 0,
       "asistencias": 1,
-      "pos": 205
+      "pos": 207
     },
     {
       "jugador": "Cucho Hernández",
       "equipo": "Colombia",
       "goles": 0,
       "asistencias": 1,
-      "pos": 206
+      "pos": 208
     },
     {
       "jugador": "David Alaba",
       "equipo": "Austria",
       "goles": 0,
       "asistencias": 1,
-      "pos": 207
+      "pos": 209
     },
     {
       "jugador": "David Møller Wolfe",
       "equipo": "Noruega",
       "goles": 0,
       "asistencias": 1,
-      "pos": 208
+      "pos": 210
     },
     {
-      "jugador": "Declan Rice",
-      "equipo": "Inglaterra",
+      "jugador": "Dayot Upamecano",
+      "equipo": "Francia",
       "goles": 0,
       "asistencias": 1,
-      "pos": 209
+      "pos": 211
     },
     {
       "jugador": "Dennis Hadzikadunic",
       "equipo": "Bosnia",
       "goles": 0,
       "asistencias": 1,
-      "pos": 210
-    },
-    {
-      "jugador": "Edmílson Junior",
-      "equipo": "Catar",
-      "goles": 0,
-      "asistencias": 1,
-      "pos": 211
-    },
-    {
-      "jugador": "Ehsan Haddad",
-      "equipo": "Jordania",
-      "goles": 0,
-      "asistencias": 1,
       "pos": 212
     },
     {
-      "jugador": "Elliot Anderson",
+      "jugador": "Eberechi Eze",
       "equipo": "Inglaterra",
       "goles": 0,
       "asistencias": 1,
       "pos": 213
     },
     {
+      "jugador": "Edmílson Junior",
+      "equipo": "Catar",
+      "goles": 0,
+      "asistencias": 1,
+      "pos": 214
+    },
+    {
+      "jugador": "Ehsan Haddad",
+      "equipo": "Jordania",
+      "goles": 0,
+      "asistencias": 1,
+      "pos": 215
+    },
+    {
+      "jugador": "Elliot Anderson",
+      "equipo": "Inglaterra",
+      "goles": 0,
+      "asistencias": 1,
+      "pos": 216
+    },
+    {
       "jugador": "Ernest Nuamah",
       "equipo": "Ghana",
       "goles": 0,
       "asistencias": 1,
-      "pos": 214
+      "pos": 217
     },
     {
       "jugador": "Facundo Medina",
       "equipo": "Argentina",
       "goles": 0,
       "asistencias": 1,
-      "pos": 215
+      "pos": 218
     },
     {
       "jugador": "Ferran Torres",
       "equipo": "España",
       "goles": 0,
       "asistencias": 1,
-      "pos": 216
+      "pos": 219
     },
     {
       "jugador": "Gabriel Magalhães",
       "equipo": "Brasil",
       "goles": 0,
       "asistencias": 1,
-      "pos": 217
+      "pos": 220
     },
     {
       "jugador": "Gonzalo Montiel",
       "equipo": "Argentina",
       "goles": 0,
       "asistencias": 1,
-      "pos": 218
+      "pos": 221
     },
     {
       "jugador": "Gustavo Puerta",
       "equipo": "Colombia",
       "goles": 0,
       "asistencias": 1,
-      "pos": 219
+      "pos": 222
     },
     {
       "jugador": "Haissem Hassan",
       "equipo": "Egipto",
       "goles": 0,
       "asistencias": 1,
-      "pos": 220
+      "pos": 223
     },
     {
       "jugador": "Ibrahim Sangaré",
       "equipo": "Costa de Marfil",
       "goles": 0,
       "asistencias": 1,
-      "pos": 221
+      "pos": 224
     },
     {
       "jugador": "Ivan Basic",
       "equipo": "Bosnia",
       "goles": 0,
       "asistencias": 1,
-      "pos": 222
+      "pos": 225
     },
     {
       "jugador": "Jean-Kévin Duverne",
       "equipo": "Haití",
       "goles": 0,
       "asistencias": 1,
-      "pos": 223
+      "pos": 226
     },
     {
       "jugador": "Jorge Sánchez",
       "equipo": "México",
       "goles": 0,
       "asistencias": 1,
-      "pos": 224
+      "pos": 227
     },
     {
       "jugador": "Josip Stanisic",
       "equipo": "Croacia",
       "goles": 0,
       "asistencias": 1,
-      "pos": 225
+      "pos": 228
     },
     {
       "jugador": "José Manuel López",
       "equipo": "Argentina",
       "goles": 0,
       "asistencias": 1,
-      "pos": 226
+      "pos": 229
     },
     {
       "jugador": "João Cancelo",
       "equipo": "Portugal",
       "goles": 0,
       "asistencias": 1,
-      "pos": 227
+      "pos": 230
     },
     {
       "jugador": "Juan Fernando Quintero",
       "equipo": "Colombia",
       "goles": 0,
       "asistencias": 1,
-      "pos": 228
+      "pos": 231
     },
     {
       "jugador": "Karim Hafez",
       "equipo": "Egipto",
       "goles": 0,
       "asistencias": 1,
-      "pos": 229
+      "pos": 232
     },
     {
       "jugador": "Kevin Rodríguez",
       "equipo": "Ecuador",
       "goles": 0,
       "asistencias": 1,
-      "pos": 230
+      "pos": 233
     },
     {
       "jugador": "Koki Ogawa",
       "equipo": "Japón",
       "goles": 0,
       "asistencias": 1,
-      "pos": 231
+      "pos": 234
     },
     {
       "jugador": "Konrad Laimer",
       "equipo": "Austria",
       "goles": 0,
       "asistencias": 1,
-      "pos": 232
+      "pos": 235
     },
     {
       "jugador": "Kou Itakura",
       "equipo": "Japón",
       "goles": 0,
       "asistencias": 1,
-      "pos": 233
+      "pos": 236
     },
     {
       "jugador": "Lamine Camara",
       "equipo": "Senegal",
       "goles": 0,
       "asistencias": 1,
-      "pos": 234
+      "pos": 237
     },
     {
       "jugador": "Lee Kang-In",
       "equipo": "Corea del Sur",
       "goles": 0,
       "asistencias": 1,
-      "pos": 235
+      "pos": 238
     },
     {
       "jugador": "Lucas Bergvall",
       "equipo": "Suecia",
       "goles": 0,
       "asistencias": 1,
-      "pos": 236
+      "pos": 239
     },
     {
       "jugador": "Lucas Paquetá",
       "equipo": "Brasil",
       "goles": 0,
       "asistencias": 1,
-      "pos": 237
+      "pos": 240
     },
     {
       "jugador": "Luis Suárez",
       "equipo": "Colombia",
       "goles": 0,
       "asistencias": 1,
-      "pos": 238
+      "pos": 241
     },
     {
       "jugador": "Luka Modric",
       "equipo": "Croacia",
       "goles": 0,
       "asistencias": 1,
-      "pos": 239
+      "pos": 242
     },
     {
       "jugador": "Marawan Attia",
       "equipo": "Egipto",
       "goles": 0,
       "asistencias": 1,
-      "pos": 240
+      "pos": 243
     },
     {
       "jugador": "Marcos Llorente",
       "equipo": "España",
       "goles": 0,
       "asistencias": 1,
-      "pos": 241
+      "pos": 244
     },
     {
       "jugador": "Mateo Kovacic",
       "equipo": "Croacia",
       "goles": 0,
       "asistencias": 1,
-      "pos": 242
+      "pos": 245
     },
     {
       "jugador": "Memphis Depay",
       "equipo": "Países Bajos",
       "goles": 0,
       "asistencias": 1,
-      "pos": 243
+      "pos": 246
     },
     {
       "jugador": "Meschack Elia",
       "equipo": "R. D. Congo",
       "goles": 0,
       "asistencias": 1,
-      "pos": 244
+      "pos": 247
     },
     {
       "jugador": "Michael Gregoritsch",
       "equipo": "Austria",
       "goles": 0,
       "asistencias": 1,
-      "pos": 245
+      "pos": 248
     },
     {
       "jugador": "Mohamed Hany",
       "equipo": "Egipto",
       "goles": 0,
       "asistencias": 1,
-      "pos": 246
+      "pos": 249
     },
     {
       "jugador": "Morgan Rogers",
       "equipo": "Inglaterra",
       "goles": 0,
       "asistencias": 1,
-      "pos": 247
+      "pos": 250
     },
     {
       "jugador": "Moussa Niakhaté",
       "equipo": "Senegal",
       "goles": 0,
       "asistencias": 1,
-      "pos": 248
+      "pos": 251
     },
     {
       "jugador": "Nadiem Amiri",
       "equipo": "Alemania",
       "goles": 0,
       "asistencias": 1,
-      "pos": 249
+      "pos": 252
     },
     {
       "jugador": "Nico González",
       "equipo": "Argentina",
       "goles": 0,
       "asistencias": 1,
-      "pos": 250
+      "pos": 253
     },
     {
       "jugador": "Nicolas Jackson",
       "equipo": "Senegal",
       "goles": 0,
       "asistencias": 1,
-      "pos": 251
+      "pos": 254
     },
     {
       "jugador": "Noor Al-Rawabdeh",
       "equipo": "Jordania",
       "goles": 0,
       "asistencias": 1,
-      "pos": 252
+      "pos": 255
     },
     {
       "jugador": "Orkun Kökçü",
       "equipo": "Turquía",
       "goles": 0,
       "asistencias": 1,
-      "pos": 253
+      "pos": 256
     },
     {
       "jugador": "Paul Okon-Engstler",
       "equipo": "Australia",
       "goles": 0,
       "asistencias": 1,
-      "pos": 254
+      "pos": 257
     },
     {
       "jugador": "Pedro Neto",
       "equipo": "Portugal",
       "goles": 0,
       "asistencias": 1,
-      "pos": 255
+      "pos": 258
     },
     {
       "jugador": "Pedro Vite",
       "equipo": "Ecuador",
       "goles": 0,
       "asistencias": 1,
-      "pos": 256
+      "pos": 259
     },
     {
       "jugador": "Rayan",
       "equipo": "Brasil",
       "goles": 0,
       "asistencias": 1,
-      "pos": 257
+      "pos": 260
     },
     {
       "jugador": "Ricardo Rodríguez",
       "equipo": "Suiza",
       "goles": 0,
       "asistencias": 1,
-      "pos": 258
+      "pos": 261
     },
     {
       "jugador": "Ritsu Doan",
       "equipo": "Japón",
       "goles": 0,
       "asistencias": 1,
-      "pos": 259
+      "pos": 262
     },
     {
       "jugador": "Rodrigo De Paul",
       "equipo": "Argentina",
       "goles": 0,
       "asistencias": 1,
-      "pos": 260
+      "pos": 263
     },
     {
       "jugador": "Ryan Mendes",
       "equipo": "Cabo Verde",
       "goles": 0,
       "asistencias": 1,
-      "pos": 261
+      "pos": 264
     },
     {
       "jugador": "Sadio Mané",
       "equipo": "Senegal",
       "goles": 0,
       "asistencias": 1,
-      "pos": 262
+      "pos": 265
     },
     {
       "jugador": "Sead Kolasinac",
       "equipo": "Bosnia",
       "goles": 0,
       "asistencias": 1,
-      "pos": 263
+      "pos": 266
     },
     {
       "jugador": "Takefusa Kubo",
       "equipo": "Japón",
       "goles": 0,
       "asistencias": 1,
-      "pos": 264
+      "pos": 267
     },
     {
       "jugador": "Thomas Meunier",
       "equipo": "Bélgica",
       "goles": 0,
       "asistencias": 1,
-      "pos": 265
+      "pos": 268
     },
     {
       "jugador": "Tijjani Reijnders",
       "equipo": "Países Bajos",
       "goles": 0,
       "asistencias": 1,
-      "pos": 266
+      "pos": 269
     },
     {
       "jugador": "Tim Payne",
       "equipo": "Nueva Zelanda",
       "goles": 0,
       "asistencias": 1,
-      "pos": 267
+      "pos": 270
     },
     {
       "jugador": "Timothy Castagne",
       "equipo": "Bélgica",
       "goles": 0,
       "asistencias": 1,
-      "pos": 268
+      "pos": 271
     },
     {
       "jugador": "Tshepang Moremi",
       "equipo": "Sudáfrica",
       "goles": 0,
       "asistencias": 1,
-      "pos": 269
+      "pos": 272
     },
     {
       "jugador": "Vladimír Coufal",
       "equipo": "Chequia",
       "goles": 0,
       "asistencias": 1,
-      "pos": 270
+      "pos": 273
     },
     {
       "jugador": "Wilfried Singo",
       "equipo": "Costa de Marfil",
       "goles": 0,
       "asistencias": 1,
-      "pos": 271
+      "pos": 274
     },
     {
       "jugador": "Xaver Schlager",
       "equipo": "Austria",
       "goles": 0,
       "asistencias": 1,
-      "pos": 272
+      "pos": 275
     },
     {
       "jugador": "Yan Diomande",
       "equipo": "Costa de Marfil",
       "goles": 0,
       "asistencias": 1,
-      "pos": 273
+      "pos": 276
     },
     {
       "jugador": "Yannick Semedo",
       "equipo": "Cabo Verde",
       "goles": 0,
       "asistencias": 1,
-      "pos": 274
+      "pos": 277
     },
     {
       "jugador": "Érik Lira",
       "equipo": "México",
       "goles": 0,
       "asistencias": 1,
-      "pos": 275
+      "pos": 278
     }
   ]
 }

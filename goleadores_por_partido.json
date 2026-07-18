@@ -66,6 +66,7 @@
     "España|Francia|2026-07-14",
     "España|Portugal|2026-07-06",
     "España|Uruguay|2026-06-27",
+    "Francia|Inglaterra|2026-07-18",
     "Francia|Irak|2026-06-22",
     "Francia|Marruecos|2026-07-09",
     "Francia|Noruega|2026-06-26",
@@ -471,19 +472,19 @@
     "Kylian Mbappé|Francia": {
       "jugador": "Kylian Mbappé",
       "equipo": "Francia",
-      "goles": 8,
-      "asistencias": 3
+      "goles": 10,
+      "asistencias": 4
     },
     "Michael Olise|Francia": {
       "jugador": "Michael Olise",
       "equipo": "Francia",
       "goles": 0,
-      "asistencias": 5
+      "asistencias": 7
     },
     "Bradley Barcola|Francia": {
       "jugador": "Bradley Barcola",
       "equipo": "Francia",
-      "goles": 2,
+      "goles": 3,
       "asistencias": 1
     },
     "Adrien Rabiot|Francia": {
@@ -633,8 +634,8 @@
     "Declan Rice|Inglaterra": {
       "jugador": "Declan Rice",
       "equipo": "Inglaterra",
-      "goles": 0,
-      "asistencias": 1
+      "goles": 1,
+      "asistencias": 2
     },
     "Petar Musa|Croacia": {
       "jugador": "Petar Musa",
@@ -651,7 +652,7 @@
     "Jude Bellingham|Inglaterra": {
       "jugador": "Jude Bellingham",
       "equipo": "Inglaterra",
-      "goles": 6,
+      "goles": 7,
       "asistencias": 1
     },
     "Elliot Anderson|Inglaterra": {
@@ -664,12 +665,12 @@
       "jugador": "Marcus Rashford",
       "equipo": "Inglaterra",
       "goles": 1,
-      "asistencias": 0
+      "asistencias": 1
     },
     "Bukayo Saka|Inglaterra": {
       "jugador": "Bukayo Saka",
       "equipo": "Inglaterra",
-      "goles": 0,
+      "goles": 3,
       "asistencias": 3
     },
     "Caleb Yirenkyi|Ghana": {
@@ -945,7 +946,7 @@
     "Ousmane Dembélé|Francia": {
       "jugador": "Ousmane Dembélé",
       "equipo": "Francia",
-      "goles": 5,
+      "goles": 6,
       "asistencias": 2
     },
     "Marcus Holmgren Pedersen|Noruega": {
@@ -1743,6 +1744,24 @@
     "Morgan Rogers|Inglaterra": {
       "jugador": "Morgan Rogers",
       "equipo": "Inglaterra",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Ezri Konsa|Inglaterra": {
+      "jugador": "Ezri Konsa",
+      "equipo": "Inglaterra",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "Eberechi Eze|Inglaterra": {
+      "jugador": "Eberechi Eze",
+      "equipo": "Inglaterra",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Dayot Upamecano|Francia": {
+      "jugador": "Dayot Upamecano",
+      "equipo": "Francia",
       "goles": 0,
       "asistencias": 1
     }
