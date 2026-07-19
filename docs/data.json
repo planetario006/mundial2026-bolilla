@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-07-19T23:07:41+00:00",
+    "actualizado": "2026-07-19T23:16:40+00:00",
     "total_partidos_jugados": 103,
     "total_partidos": 104,
     "fase_grupos_terminada": true
@@ -11379,7 +11379,7 @@
         "grupo": "",
         "local": "España",
         "visitante": "Argentina",
-        "gf_local": null,
+        "gf_local": 1,
         "gf_visit": null,
         "ta_local": 0,
         "doblea_local": 0,

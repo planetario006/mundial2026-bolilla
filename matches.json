@@ -2817,7 +2817,7 @@
     "fase": "Final",
     "grupo": "",
     "local": "España",
-    "gf_local": null,
+    "gf_local": 1,
     "gc_local": null,
     "ta_local": 0,
     "doblea_local": 0,
