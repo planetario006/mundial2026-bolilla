@@ -13,6 +13,7 @@
     "Argentina|Austria|2026-06-22",
     "Argentina|Cabo Verde|2026-07-03",
     "Argentina|Egipto|2026-07-07",
+    "Argentina|España|2026-07-19",
     "Argentina|Inglaterra|2026-07-15",
     "Argentina|Jordania|2026-06-28",
     "Argentina|Suiza|2026-07-12",
@@ -1666,7 +1667,7 @@
     "Ferran Torres|España": {
       "jugador": "Ferran Torres",
       "equipo": "España",
-      "goles": 0,
+      "goles": 1,
       "asistencias": 1
     },
     "Charles De Ketelaere|Bélgica": {
@@ -1762,6 +1763,12 @@
     "Dayot Upamecano|Francia": {
       "jugador": "Dayot Upamecano",
       "equipo": "Francia",
+      "goles": 0,
+      "asistencias": 1
+    },
+    "Nico Williams|España": {
+      "jugador": "Nico Williams",
+      "equipo": "España",
       "goles": 0,
       "asistencias": 1
     }
