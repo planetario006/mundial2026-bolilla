@@ -1,6 +1,6 @@
 {
   "meta": {
-    "actualizado": "2026-07-18T23:29:10+00:00",
+    "actualizado": "2026-07-19T00:04:26+00:00",
     "total_partidos_jugados": 103,
     "total_partidos": 104,
     "fase_grupos_terminada": true
@@ -53,29 +53,6 @@
       "pos": 2
     },
     {
-      "equipo": "Francia",
-      "grupo": "I",
-      "bombo": "Bombo 1",
-      "gf": 20,
-      "gc": 10,
-      "ta": 6,
-      "doblea": 0,
-      "rd": 0,
-      "penfall": 1,
-      "penpar": 1,
-      "bonus_resultado": 14,
-      "bonus_grupo": 15,
-      "premio_final": 0,
-      "premio_menos_puntos": 0,
-      "puntos_totales": 176,
-      "bonus_ronda_dieciseisavos": 25,
-      "bonus_ronda_octavos": 35,
-      "bonus_ronda_cuartos": 50,
-      "bonus_ronda_semifinal": 70,
-      "bonus_ronda_final": 0,
-      "pos": 3
-    },
-    {
       "equipo": "Inglaterra",
       "grupo": "L",
       "bombo": "Bombo 1",
@@ -88,9 +65,32 @@
       "penpar": 0,
       "bonus_resultado": 24,
       "bonus_grupo": 15,
-      "premio_final": 0,
+      "premio_final": 100,
       "premio_menos_puntos": 0,
-      "puntos_totales": 167,
+      "puntos_totales": 267,
+      "bonus_ronda_dieciseisavos": 25,
+      "bonus_ronda_octavos": 35,
+      "bonus_ronda_cuartos": 50,
+      "bonus_ronda_semifinal": 70,
+      "bonus_ronda_final": 0,
+      "pos": 3
+    },
+    {
+      "equipo": "Francia",
+      "grupo": "I",
+      "bombo": "Bombo 1",
+      "gf": 20,
+      "gc": 10,
+      "ta": 6,
+      "doblea": 0,
+      "rd": 0,
+      "penfall": 1,
+      "penpar": 1,
+      "bonus_resultado": 14,
+      "bonus_grupo": 15,
+      "premio_final": 60,
+      "premio_menos_puntos": 0,
+      "puntos_totales": 236,
       "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 35,
       "bonus_ronda_cuartos": 50,
@@ -11410,12 +11410,12 @@
         "puntos": 281
       },
       {
-        "equipo": "Francia",
-        "puntos": 176
+        "equipo": "Inglaterra",
+        "puntos": 267
       },
       {
-        "equipo": "Inglaterra",
-        "puntos": 167
+        "equipo": "Francia",
+        "puntos": 236
       },
       {
         "equipo": "Brasil",
@@ -11744,6 +11744,8 @@
     }
   ],
   "premios_finales": {
+    "tercero": "Inglaterra",
+    "cuarto": "Francia",
     "menos_puntos": "Irak"
   },
   "goleadores": [
