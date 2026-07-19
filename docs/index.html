@@ -1172,10 +1172,19 @@ function _buscarGoleadorTop5(top5, nombreElegido){
   let idx = top5.findIndex(g => _normTxt(g.jugador) === norm);
   if(idx !== -1) return idx;
   // 2) coincidencia parcial (uno contiene al otro) por si el nombre está abreviado
+  //    (cubre casos como "Vinicius" vs "Vinícius Júnior")
   idx = top5.findIndex(g => {
     const ng = _normTxt(g.jugador);
     return ng.includes(norm) || norm.includes(ng);
   });
+  if(idx !== -1) return idx;
+  // 3) coincidencia por apellido (última palabra), para casos tipo "K. Mbappé"
+  //    vs "Kylian Mbappé", donde ninguna de las dos cadenas contiene a la otra
+  //    como substring literal por culpa de la inicial abreviada.
+  const apellido = norm.split(' ').pop();
+  if(apellido){
+    idx = top5.findIndex(g => _normTxt(g.jugador).split(' ').pop() === apellido);
+  }
   return idx; // -1 si no aparece en el top5 actual
 }
 // Calcula el desglose y total de UN participante (sin el bonus de último puesto,
