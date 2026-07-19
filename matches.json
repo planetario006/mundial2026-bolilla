@@ -2825,7 +2825,7 @@
     "penfall_local": 0,
     "penpar_local": 0,
     "visitante": "Argentina",
-    "gf_visit": null,
+    "gf_visit": 0,
     "gc_visit": null,
     "ta_visit": 0,
     "doblea_visit": 0,

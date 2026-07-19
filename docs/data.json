@@ -1,7 +1,7 @@
 {
   "meta": {
-    "actualizado": "2026-07-19T23:16:40+00:00",
-    "total_partidos_jugados": 103,
+    "actualizado": "2026-07-19T23:17:29+00:00",
+    "total_partidos_jugados": 104,
     "total_partidos": 104,
     "fase_grupos_terminada": true
   },
@@ -10,18 +10,18 @@
       "equipo": "España",
       "grupo": "H",
       "bombo": "Bombo 1",
-      "gf": 13,
+      "gf": 14,
       "gc": 1,
       "ta": 6,
       "doblea": 0,
       "rd": 0,
       "penfall": 0,
       "penpar": 0,
-      "bonus_resultado": 32,
+      "bonus_resultado": 37,
       "bonus_grupo": 15,
-      "premio_final": 0,
+      "premio_final": 170,
       "premio_menos_puntos": 0,
-      "puntos_totales": 319,
+      "puntos_totales": 495,
       "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 35,
       "bonus_ronda_cuartos": 50,
@@ -34,17 +34,17 @@
       "grupo": "J",
       "bombo": "Bombo 1",
       "gf": 19,
-      "gc": 7,
+      "gc": 8,
       "ta": 9,
       "doblea": 0,
       "rd": 0,
       "penfall": 2,
       "penpar": 0,
-      "bonus_resultado": 35,
+      "bonus_resultado": 27,
       "bonus_grupo": 15,
-      "premio_final": 0,
+      "premio_final": 130,
       "premio_menos_puntos": 0,
-      "puntos_totales": 281,
+      "puntos_totales": 400,
       "bonus_ronda_dieciseisavos": 25,
       "bonus_ronda_octavos": 35,
       "bonus_ronda_cuartos": 50,
@@ -5849,6 +5849,52 @@
         "bonus_resultado": 5,
         "total": -1
       }
+    },
+    {
+      "id": 104,
+      "match_num": 104,
+      "fecha": "2026-07-19",
+      "fase": "Final",
+      "grupo": "",
+      "local": "España",
+      "visitante": "Argentina",
+      "gf_local": 1,
+      "gf_visit": 0,
+      "ta_local": 0,
+      "doblea_local": 0,
+      "rd_local": 0,
+      "ta_visit": 0,
+      "doblea_visit": 0,
+      "rd_visit": 0,
+      "penfall_local": 0,
+      "penpar_local": 0,
+      "penfall_visit": 0,
+      "penpar_visit": 0,
+      "pen_tanda_local": 0,
+      "pen_tanda_visit": 0,
+      "jugado": true,
+      "puntos_local": {
+        "gf": 1,
+        "gc": 0,
+        "ta": 0,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": 5,
+        "total": 6
+      },
+      "puntos_visit": {
+        "gf": 0,
+        "gc": -3,
+        "ta": 0,
+        "doblea": 0,
+        "rd": 0,
+        "penfall": 0,
+        "penpar": 0,
+        "bonus_resultado": -8,
+        "total": -11
+      }
     }
   ],
   "grupos": {
@@ -11380,7 +11426,7 @@
         "local": "España",
         "visitante": "Argentina",
         "gf_local": 1,
-        "gf_visit": null,
+        "gf_visit": 0,
         "ta_local": 0,
         "doblea_local": 0,
         "rd_local": 0,
@@ -11393,9 +11439,29 @@
         "penpar_visit": 0,
         "pen_tanda_local": 0,
         "pen_tanda_visit": 0,
-        "jugado": false,
-        "puntos_local": null,
-        "puntos_visit": null
+        "jugado": true,
+        "puntos_local": {
+          "gf": 1,
+          "gc": 0,
+          "ta": 0,
+          "doblea": 0,
+          "rd": 0,
+          "penfall": 0,
+          "penpar": 0,
+          "bonus_resultado": 5,
+          "total": 6
+        },
+        "puntos_visit": {
+          "gf": 0,
+          "gc": -3,
+          "ta": 0,
+          "doblea": 0,
+          "rd": 0,
+          "penfall": 0,
+          "penpar": 0,
+          "bonus_resultado": -8,
+          "total": -11
+        }
       }
     ]
   },
@@ -11403,11 +11469,11 @@
     "Bombo 1": [
       {
         "equipo": "España",
-        "puntos": 319
+        "puntos": 495
       },
       {
         "equipo": "Argentina",
-        "puntos": 281
+        "puntos": 400
       },
       {
         "equipo": "Inglaterra",
@@ -11746,6 +11812,8 @@
   "premios_finales": {
     "tercero": "Inglaterra",
     "cuarto": "Francia",
+    "campeon": "España",
+    "subcampeon": "Argentina",
     "menos_puntos": "Irak"
   },
   "goleadores": [

@@ -150,16 +150,6 @@
     "detectado": "2026-07-19T23:07:41+00:00"
   },
   {
-    "ref": "Argentina|España::gf_visit",
-    "match_id": 104,
-    "local": "España",
-    "visitante": "Argentina",
-    "campo": "gf_visit",
-    "valor_wiki": null,
-    "valor_scraper": 0,
-    "detectado": "2026-07-19T23:07:41+00:00"
-  },
-  {
     "ref": "Argentina|España::ta_visit",
     "match_id": 104,
     "local": "España",

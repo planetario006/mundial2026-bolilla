@@ -1251,7 +1251,8 @@
       "penpar_visit": 0
     },
     "campos_bloqueados": [
-      "gf_local"
+      "gf_local",
+      "gf_visit"
     ]
   }
 }
